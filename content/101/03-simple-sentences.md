@@ -9,7 +9,7 @@ description: ''
 Now that you know how to read Toki Pona, it's time to learn words and sentences!  
 Here are some words for things and actions:
 
-| sitelen pona | sitelen Lasina | Meaning                                            |
+| 󱥠󱥔 | sitelen Lasina | Meaning                                            |
 |-------------:|----------------|----------------------------------------------------|
 | 󱥢            | soweli         | land animal, like a cat, dog, cow, mouse, elephant |
 | 󱥴            | waso           | bird, like a pigeon, goose, owl                    |
@@ -21,7 +21,7 @@ Here are some words for things and actions:
 
 A very common kind of sentence is called a "subject-verb-object" sentence, because, which have one thing (the subject) doing something to another thing (the object). Let's make a few sentences:
 
-| sitelen pona | sitelen Lasina          | Meaning                    |
+| 󱥠󱥔 | sitelen Lasina          | Meaning                    |
 |--------------|-------------------------|----------------------------|
 | 󱥢󱤧󱤶󱤉󱤗        | soweli li moku e kasi.  | The animal eats plants.    |
 | 󱥴󱤧󱤶󱤉󱥑        | waso li moku e pipi.    | The bird eats bugs.        |
@@ -42,7 +42,7 @@ Fill in the blanks:
 <table>
   <thead>
     <tr>
-      <th>sitelen pona</th>
+      <th>󱥠󱥔</th>
       <th>sitelen Lasina</th>
       <th>Meaning</th>
     </tr>

@@ -9,7 +9,7 @@ Pointing at things is nice, but sometimes it's nice to be more specific. Introdu
 
 Let's learn the words for some things that often have names:
 
-| sitelen pona | sitelen Lasina | Meaning                             |
+| 󱥠󱥔 | sitelen Lasina | Meaning                             |
 |--------------|----------------|-------------------------------------|
 | 󱤑            | jan            | person                              |
 | 󱥠            | sitelen        | image, writing; to draw, to write   |
@@ -18,7 +18,7 @@ Let's learn the words for some things that often have names:
 
 You already know one name: *sitelen Lasina*! Let's look at a few more names:
 
-| sitelen pona | sitelen Lasina | Meaning               | Where the name comes from |
+| 󱥠󱥔 | sitelen Lasina | Meaning               | Where the name comes from |
 |--------------|----------------|-----------------------|---------------------------|
 | 󱤑󱦐󱥁󱥆󱥴󱤂󱦑        | jan Nowa       | person named Noah     | English 'Noah'            |
 | 󱤑󱦐󱤉󱤴󱤂󱦑        | jan Ema        | person named Emma     | English 'Emma'            |

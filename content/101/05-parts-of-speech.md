@@ -25,7 +25,7 @@ In fact, the same is true of *all words*: if something is a noun, verb, or modif
 
 Let's practice using these words as nouns, verbs, and modifiers:
 
-| sitelen pona | sitelen Lasina                     | Meaning                                     |
+| 󱥠󱥔 | sitelen Lasina                     | Meaning                                     |
 |--------------|------------------------------------|---------------------------------------------|
 | 󱤮󱤧󱥔󱤉󱥡        | lukin li pona e sona.              | Eyes improve knowledge.                     |
 | 󱤶󱤧󱥣󱤉󱥑        | moku li suli e pipi.               | Food makes the bugs grow bigger.            |
@@ -35,7 +35,7 @@ Let's practice using these words as nouns, verbs, and modifiers:
 
 Since any noun can be a modifier, and any modifier can be a noun, word order really matters! Notice how these two phrases mean different things:
 
-| sitelen pona | sitelen Lasina                     | Meaning                                     |
+| 󱥠󱥔 | sitelen Lasina                     | Meaning                                     |
 |--------------|------------------------------------|---------------------------------------------|
 | 󱥢󱥣      | soweli suli | big animal  |
 | 󱥣󱥢      | suli soweli | the size of an animal  |
@@ -45,7 +45,7 @@ Since any noun can be a modifier, and any modifier can be a noun, word order rea
 
 Remember how li and e seemed a little unnecessary? Now that we know any meaningful word can be used anywhere, as a noun, verb, or modifier, we can finally see how important they are. Thanks to them, we can distinguish these three very different sentences:
 
-| sitelen pona | sitelen Lasina              | Meaning                                |
+| 󱥠󱥔 | sitelen Lasina              | Meaning                                |
 |--------------|-----------------------------|----------------------------------------|
 | 󱥢󱥡           | soweli sona                 | wise animal                            |
 | 󱥡󱥔           | sona pona                   | good knowledge; to know well           |

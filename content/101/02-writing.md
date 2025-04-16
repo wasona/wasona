@@ -13,7 +13,7 @@ Let's take a look at a short poem and compare *sitelen Lasina* and *sitelen pona
 <table>
   <thead>
     <tr>
-      <th>sitelen pona</th>
+      <th>󱥠󱥔 sitelen pona</th>
       <th>sitelen Lasina</th>
       <th>Translation</th>
     </tr>
@@ -34,4 +34,4 @@ Here are some things to notice here:
 
 * Sentences in *sitelen Lasina* start with lowercase letters, unlike English!
 * *sitelen Lasina* uses punctuation like English, but *sitelen pona* doesn't.
-* *sitelen pona* is very intuitive! The glyph for "love" is hearts. The glyph for "conflict" is swords. The glyph for "make worse" is a frown.
+* 󱥠󱥔 *sitelen pona* is very intuitive! The glyph for "love" is hearts. The glyph for "conflict" is swords. The glyph for "make worse" is a frown.

@@ -8,7 +8,7 @@ description: ''
 Now you know some nouns (things) and verbs (actions). Time to add adjectives (descriptions)!  
 Let's memorise a few of them:
 
-| sitelen pona | sitelen Lasina | Meaning             |
+| 󱥠󱥔 | sitelen Lasina | Meaning             |
 |-------------:|----------------|---------------------|
 | 󱥣            | suli           | large, important    |
 | 󱤨            | lili           | small, young        |
@@ -21,7 +21,7 @@ In English, adjectives go before the noun: *good dog*, *wise bird*. But in Toki 
 
 Let's make some sentences with descriptions:
 
-| sitelen pona | sitelen Lasina                   | Meaning                              |
+| 󱥠󱥔 | sitelen Lasina                   | Meaning                              |
 |--------------|----------------------------------|--------------------------------------|
 | 󱥴󱤧󱤮󱤉󱥢󱤨       | waso li lukin e soweli lili.     | The bird sees a small animal.        |
 | 󱥢󱥵󱤧󱤶󱤉󱤗󱥣      | soweli wawa li moku e kasi suli. | The strong animal eats large plants. |

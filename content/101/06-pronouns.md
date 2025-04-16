@@ -6,7 +6,7 @@ description: ''
 
 You're probably tired of long sentences and parts-of-speech shenanigans. Let's take it down a notch, by pointing at things:
 
-| sitelen pona | sitelen Lasina | Meaning             |
+| 󱥠󱥔 | sitelen Lasina | Meaning             |
 |--------------|----------------|---------------------|
 | 󱥁            | ni             | this, that          |
 | 󱥁󱤧󱥢          | ni li soweli.    | This is an animal.      |
@@ -21,7 +21,7 @@ These are our first *sentences without an object*, and so there is no **e** in t
 
 Now that we've looked at one pronoun, let's get some more:
 
-| sitelen pona | sitelen Lasina |                 Meaning                 |
+| 󱥠󱥔 | sitelen Lasina |                 Meaning                 |
 |--------------|----------------|---------------------|
 | 󱤴            | mi             | I, we; my, our                          |
 | 󱥞            | sina           | you; your                               |
@@ -29,7 +29,7 @@ Now that we've looked at one pronoun, let's get some more:
 
 Let's practice using **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, and **󱥁 ni** in sentences:
 
-| sitelen pona |         sitelen Lasina         |           Meaning          |
+| 󱥠󱥔 |         sitelen Lasina         |           Meaning          |
 |--------------|--------------------------------|----------------------------|
 | 󱤗󱥁󱤧󱥣         | kasi ni li suli.               | This plant is big.         |
 | 󱥡󱥞󱤧󱥵         | sona sina li wawa.             | Your knowledge is amazing. |
@@ -40,7 +40,7 @@ Let's practice using **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, and **󱥁 ni** i
 
 They act like normal! But something strange happens when **󱤴 mi** or **󱥞 sina** is the subject of the sentence:
 
-| sitelen pona |     sitelen Lasina     |           Meaning          |
+| 󱥠󱥔 |     sitelen Lasina     |           Meaning          |
 |--------------|------------------------|----------------------------|
 | 󱤴󱥵           | mi wawa.               | I am strong.               |
 | 󱥞󱤮󱤉󱤶         | sina lukin e moku.     | You see food.              |

@@ -54,6 +54,11 @@ hr {
 
 table {
     width: 100%;
+    text-align: initial;
+}
+
+th {
+    border-bottom: 1px solid black;
 }
 table,
 th,
@@ -63,8 +68,6 @@ td {
 }
 th,
 td {
-    overflow: hidden;
-    white-space: nowrap;
     padding: 5px 10px;
 }
 
