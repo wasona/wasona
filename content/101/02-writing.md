@@ -2,11 +2,7 @@
 title: 'toki pona 101: two writing systems'
 description: ''
 ---
-<style>
-table, th, td {
-    border: 1px solid black;
-}
-</style>
+
 
 ## Two writing systems
 

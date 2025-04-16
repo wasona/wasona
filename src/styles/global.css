@@ -68,6 +68,7 @@ td {
     padding: 5px 10px;
 }
 
+th,
 tr:nth-child(even) {
     background-color: var(--bg-1);
 }
