@@ -10,7 +10,7 @@ Pointing at things is nice, but sometimes it's nice to be more specific. Introdu
 Let's learn the words for some things that often have names:
 
 | 󱥠󱥔 | sitelen Lasina | Meaning                             |
-|--------------|----------------|-------------------------------------|
+|-------------:|----------------|-------------------------------------|
 | 󱤑            | jan            | person                              |
 | 󱥠            | sitelen        | image, writing; to draw, to write   |
 | 󱥬            | toki           | speech, language; to talk, to speak |
@@ -18,13 +18,13 @@ Let's learn the words for some things that often have names:
 
 You already know one name: *sitelen Lasina*! Let's look at a few more names:
 
-| 󱥠󱥔 | sitelen Lasina | Meaning               | Where the name comes from |
-|--------------|----------------|-----------------------|---------------------------|
-| 󱤑󱦐󱥁󱥆󱥴󱤂󱦑        | jan Nowa       | person named Noah     | English 'Noah'            |
-| 󱤑󱦐󱤉󱤴󱤂󱦑        | jan Ema        | person named Emma     | English 'Emma'            |
-| 󱥬󱦐󱤗󱤂󱥁󱥞󱤉󱦑      | toki Kanse     | language named French | French 'français'         |
-| 󱤰󱦐󱥬󱥆󱥞󱤏󱦑       | ma Tosi        | land named Germany    | German 'Deutsch'          |
-| 󱥠󱦐󱤧󱤂󱥞󱤍󱥁󱤂󱦑      | sitelen Lasina | writing named Latin   | Latin 'Latīna'            |
+| Toki Pona | Meaning               | Where the name comes from |
+|:------------:|----------------|-----------------------|
+| 󱤑󱦐󱥁󱥆󱥴󱤂󱦑<br>jan Nowa       | person named Noah     | English 'Noah'            |
+| 󱤑󱦐󱤉󱤴󱤂󱦑<br>jan Ema        | person named Emma     | English 'Emma'            |
+| 󱥬󱦐󱤗󱤂󱥁󱥞󱤉󱦑<br>toki Kanse     | language named French | French 'français'         |
+| 󱤰󱦐󱥬󱥆󱥞󱤏󱦑<br>ma Tosi        | land named Germany    | German 'Deutsch'          |
+| 󱥠󱦐󱤧󱤂󱥞󱤍󱥁󱤂󱦑<br>sitelen Lasina | writing named Latin   | Latin 'Latīna'            |
 
 Here's what we can learn from these examples:
 

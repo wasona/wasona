@@ -22,7 +22,7 @@ These are our first *sentences without an object*, and so there is no **e** in t
 Now that we've looked at one pronoun, let's get some more:
 
 | 󱥠󱥔 | sitelen Lasina |                 Meaning                 |
-|--------------|----------------|---------------------|
+|-------------:|----------------|---------------------|
 | 󱤴            | mi             | I, we; my, our                          |
 | 󱥞            | sina           | you; your                               |
 | 󱥆            | ona            | she, he, it, they; her, his, its, their |
