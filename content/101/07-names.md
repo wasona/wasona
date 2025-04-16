@@ -2,17 +2,6 @@
 title: 'toki pona 101: names'
 description: ''
 ---
-<style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 5px 10px;
-} 
-</style>
 
 ## Names
 

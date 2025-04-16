@@ -2,17 +2,6 @@
 title: 'toki pona 101: modifiers'
 description: ''
 ---
-<style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 5px 10px;
-} 
-</style>
 
 ## Describe!
 
@@ -20,7 +9,7 @@ Now you know some nouns (things) and verbs (actions). Time to add adjectives (de
 Let's memorise a few of them:
 
 | sitelen pona | sitelen Lasina | Meaning             |
-|--------------|----------------|---------------------|
+|-------------:|----------------|---------------------|
 | 󱥣            | suli           | large, important    |
 | 󱤨            | lili           | small, young        |
 | 󱥔            | pona           | good, pleasant      |

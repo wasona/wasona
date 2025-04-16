@@ -2,18 +2,6 @@
 title: 'toki pona 101: parts of speech'
 description: ''
 ---
-<style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 5px 10px;
-} 
-</style>
-
 ## Parts of speech
 
 Some of you may have spotted that I introduced the word **󱥡 sona** twice, first as a verb 'to know', then as a modifier 'wise'. So which is it? And how do you know?

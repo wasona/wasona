@@ -8,6 +8,7 @@
 
 :root {
     --bg: #ffffff;
+    --bg-1: #f2f2f2;
     --txt: #080808;
     --grey: #333;
     --accent: #de6500;
@@ -15,9 +16,9 @@
 
 body {
     margin: 10px;
-    font-family: "nasin-nanpa", Helvetica, Arial, sans-serif;
+    font-family: "nasin-nanpa", serif;
     color: var(--txt);
-    line-height: 1.6;
+    line-height: 30px;
     font-size: 16px;
 }
 
@@ -49,4 +50,39 @@ h1 {
 
 hr {
     color: var(--accent);
+}
+
+table {
+    width: 100%;
+}
+table,
+th,
+td {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+}
+th,
+td {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 10px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--bg-1);
+}
+
+.spoiler {
+    background-color: #aaa;
+    color: transparent;
+    cursor: pointer;
+    transition:
+        color 0.1s ease-in-out,
+        background-color 0.1s ease-in-out;
+    user-select: none;
+}
+
+.spoiler.revealed {
+    color: inherit;
+    background-color: #ddd;
 }

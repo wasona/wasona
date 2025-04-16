@@ -19,15 +19,7 @@ description: ''
     width: calc(100% - 1px);
     margin: auto;
 }
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 5px 10px;
-} 
+
 </style>
 
 ## Pronunciation

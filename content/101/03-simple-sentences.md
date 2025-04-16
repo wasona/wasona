@@ -2,30 +2,7 @@
 title: 'toki pona 101: simple sentences'
 description: ''
 ---
-<style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 5px 10px;
-} 
 
-.spoiler {
-    background-color: #aaa;
-    color: transparent;
-    cursor: pointer;
-    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
-    user-select: none;
-}
-
-.spoiler.revealed {
-    color: inherit;
-    background-color: #ddd;
-}
-</style>
 
 ## Simple sentences
 
