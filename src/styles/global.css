@@ -15,7 +15,7 @@
 }
 
 body {
-    margin: 5px;
+    margin: 0px;
     font-family: "nasin-nanpa", serif;
     color: var(--txt);
     line-height: 1.8em;
@@ -53,7 +53,13 @@ h1 {
     margin: 0.75em 0;
     font-size: 1.75em;
 }
-
+h1,
+h2,
+h3,
+p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
 hr {
     color: var(--accent);
 }
@@ -74,7 +80,7 @@ td {
 }
 th,
 td {
-    padding: 5px;
+    padding: 10px;
 }
 
 th,
