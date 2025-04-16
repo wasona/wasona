@@ -33,3 +33,14 @@ Here's what we can learn from these examples:
 * Names are often not from English. We like to use *endonyms*: self-names of countries, languages, people, and so on. The name for French comes from French!
 * When names enter Toki Pona, they *change* to the sound system of Toki Pona. There is no **d** in Toki Pona, so the word Deutsch starts with a **t**. The change is sometimes small, like *Noah* ~ *Nowa*, sometimes large, like *français* ~ *Kanse*.
 * In *sitelen pona*, names are written using blocks, and each sound in the name is spelled out one by one, using words that start with that sound. We call these blocks *cartouches*, like the Egyptian ones.
+
+Let's practice using the new words and names in sentences:
+
+| 󱥠󱥔                    | sitelen Lasina                      | Meaning                     |
+|-----------------------|-------------------------------------|-----------------------------|
+| 󱥴󱤧󱤮󱤉󱤰                 | waso li lukin e ma.                 | The bird looks at the land. |
+| 󱤑󱦐󱤗󱤉󱥁󱥬󱤂󱦑<br>󱤧󱥠󱤉󱥑          | jan Kenta li sitelen e pipi.        | Kenta draws a bug.          |
+| 󱤑󱤧󱥬                   | jan li toki.                        | People speak.               |
+| 󱤑󱦐󱥁󱤍󱥁󱤂󱦑<br>󱤧󱥬󱦐󱥬󱥆󱥞󱤏󱦑       | jan Nina li toki Tosi.              | Nina speaks German.         |
+| 󱤑󱥔󱤧󱥬󱥔                 | jan pona li toki pona.              | Pleasant people speak well. |
+| 󱤑󱦐󱥞󱥱󱥁󱤍󱥬󱤂󱦑<br>󱤧󱥡󱥔󱤉󱤰󱦐󱤗󱤂󱥁󱥞󱤉󱦑 | jan Sunita li sona pona e ma Kanse. | Sunita knows France well.   |
