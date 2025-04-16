@@ -18,8 +18,14 @@ body {
     margin: 10px;
     font-family: "nasin-nanpa", serif;
     color: var(--txt);
-    line-height: 30px;
+    line-height: 1.8em;
     font-size: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 14px;
+    }
 }
 
 main {
