@@ -1,0 +1,47 @@
+---
+title: 'toki pona 101: two writing systems'
+description: ''
+---
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 10px;
+} 
+</style>
+
+## Two writing systems
+
+You've already seen how Toki Pona uses the Latin alphabet, which we call *sitelen Lasina*. But many of us also use our own unique script called *sitelen pona*, meaning *good writing*. It is a logography: every word in Toki Pona gets its own little character. It's a lot of fun to use, and also helps you memorise words!
+
+Let's take a look at a short poem and compare *sitelen Lasina* and *sitelen pona*:
+
+<table>
+  <thead>
+    <tr>
+      <th>sitelen pona</th>
+      <th>sitelen Lasina</th>
+      <th>Translation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>󱥞󱥅󱤉󱥱<br>󱥨󱥞󱥡󱤂<br>󱥱󱤧󱤍󱤉󱥞</td>
+      <td>sina olin e utala.<br>taso sina sona ala:<br>utala li ike e sina.</td>
+      <td>You love conflict.<br>But you don’t understand<br>that conflict makes you worse.</td>
+    </tr>
+  </tbody>
+</table>
+
+(from [utala](https://utala.pona.la/toki-musi-lili/#utala) by jan Ateneja, 2020)  
+Pronounce the poem aloud, then listen to the audio!
+
+Here are some things to notice here:
+
+* Sentences in *sitelen Lasina* start with lowercase letters, unlike English!
+* *sitelen Lasina* uses punctuation like English, but *sitelen pona* doesn't.
+* *sitelen pona* is very intuitive! The glyph for "love" is hearts. The glyph for "conflict" is swords. The glyph for "make worse" is a frown.

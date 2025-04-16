@@ -1,0 +1,32 @@
+---
+interface Props {
+    prev: string;
+    next: string;
+}
+
+const { prev, next } = Astro.props;
+---
+
+<style>
+    nav {
+        width: 100%;
+        padding: 10px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+    span:first-child {
+        text-align: left;
+    }
+    span:last-child {
+        text-align: right;
+    }
+</style>
+
+<hr />
+<nav>
+    <span>{prev ? <a href={"./" + prev}><span aria-hidden="true">«</span> Previous</a> : ""}</span>
+    <span><a href={"./"}>Index</a></span>
+    <span>{next ? <a href={"./" + next}>Next <span aria-hidden="true">»</span></a> : ""} </span>
+</nav>
+<hr />

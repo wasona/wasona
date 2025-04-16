@@ -1,0 +1,44 @@
+:root {
+    --bg: #ffffff;
+    --txt: #080808;
+    --grey: #333;
+    --accent: #de6500;
+}
+
+body {
+    margin: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--txt);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+a {
+    color: var(--accent);
+    text-decoration: underline dotted;
+    text-underline-position: under;
+    font-weight: bold;
+}
+header a:has(img) {
+    display: block; /*fix focus styling on main header*/
+}
+
+a:visited {
+    color: var(--accent);
+}
+
+h1 {
+    text-align: center;
+    margin: 0.75em 0;
+    font-size: 1.75em;
+}
+
+hr {
+    color: var(--accent);
+}
