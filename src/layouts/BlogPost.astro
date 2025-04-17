@@ -1,16 +1,13 @@
 ---
+import BaseHead from "@components/BaseHead.astro";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import PrevNext from "@components/PrevNext.astro";
 import type { CollectionEntry } from "astro:content";
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import FormattedDate from "../components/FormattedDate.astro";
-import PrevNext from "../components/PrevNext.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, prev, next } = Astro.props;
-
-import { Debug } from "astro:components";
-import Footer from "../components/Footer.astro";
 ---
 
 <!-- <Debug answer={Astro.props} /> -->
