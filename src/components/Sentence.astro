@@ -12,7 +12,7 @@ interface Props {
 }
 const onclick = "this.classList.toggle('revealed')";
 const { sp, sl, m, hide } = Astro.props;
-const sp_ = sp ? sp : encode(sl);
+const sp_ = sp || encode(sl);
 ---
 
 <tr>
