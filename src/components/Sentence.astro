@@ -1,0 +1,32 @@
+---
+interface Props {
+    // sitelen pona
+    sp?: String;
+    // sitelen Lasina
+    sl: String;
+    // translation
+    m: String;
+    // spoiler shield for practice
+    hide: "sp" | "sl" | "m";
+}
+const onclick = "this.classList.toggle('revealed')";
+const { sp, sl, m, hide } = Astro.props;
+---
+
+<tr>
+    <td
+        class={hide == "sp" ? "spoiler" : ""}
+        onclick={hide == "sp" ? onclick : ""}
+        >{sp}
+    </td>
+    <td
+        class={hide == "sl" ? "spoiler" : ""}
+        onclick={hide == "sl" ? onclick : ""}
+        >{sl}
+    </td>
+    <td
+        class={hide == "m" ? "spoiler" : ""}
+        onclick={hide == "m" ? onclick : ""}
+        >{m}
+    </td>
+</tr>

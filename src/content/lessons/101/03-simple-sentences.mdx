@@ -2,6 +2,7 @@
 title: 'lesson 3: simple sentences'
 description: ''
 ---
+import Sentence from '../../../components/Sentence.astro';
 
 
 ## Simple sentences
@@ -48,25 +49,29 @@ Fill in the blanks:
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>󱥢󱤧󱥡󱤉󱥑</td>
-      <td>soweli li sona e pipi.</td>
-      <td class="spoiler" onclick="this.classList.toggle('revealed')"> The animal knows the bug. </td>
-    </tr>
-    <tr>
-      <td>󱥑󱤧󱤶󱤉󱤗</td>
-      <td class="spoiler" onclick="this.classList.toggle('revealed')"> pipi li moku e kasi. </td>
-      <td>The bug eats plants.</td>
-    </tr>
-    <tr>
-      <td class="spoiler" onclick="this.classList.toggle('revealed')"> 󱥴󱤧󱤮󱤉󱤗 </td>
-      <td>waso li lukin e kasi.</td>
-      <td>The bird sees plants.</td>
-    </tr>
-    <tr>
-      <td>󱥴󱤧󱥡󱤉󱥢</td>
-      <td class="spoiler" onclick="this.classList.toggle('revealed')"> waso li sona e soweli. </td>
-      <td>The bird knows the animal.</td>
-    </tr>
+    <Sentence
+      sp="󱥢󱤧󱥡󱤉󱥑"
+      sl="soweli li sona e pipi."
+      m="The animal knows the bug."
+      hide="m"
+    />
+    <Sentence
+      sp="󱥑󱤧󱤶󱤉󱤗"
+      sl="pipi li moku e kasi."
+      m="The bug eats plants."
+      hide="sl"
+    />
+    <Sentence
+      sp="󱥴󱤧󱤮󱤉󱤗"
+      sl="waso li lukin e kasi."
+      m="The bird sees plants."
+      hide="sp"
+    />
+    <Sentence
+      sp="󱥴󱤧󱥡󱤉󱥢"
+      sl="waso li sona e soweli."
+      m="The bird knows the animal."
+      hide="sl"
+    />
   </tbody>
 </table>
