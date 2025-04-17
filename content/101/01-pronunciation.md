@@ -1,5 +1,5 @@
 ---
-title: 'toki pona 101: pronunciation'
+title: 'lesson 1: pronunciation'
 description: ''
 ---
 <style>

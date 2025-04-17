@@ -1,5 +1,5 @@
 ---
-title: 'toki pona 101: simple sentences'
+title: 'lesson 3: simple sentences'
 description: ''
 ---
 

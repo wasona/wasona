@@ -1,5 +1,5 @@
 ---
-title: 'toki pona 101: pronouns'
+title: 'lesson 6: pronouns'
 description: ''
 ---
 ## Pronouns

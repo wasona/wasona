@@ -1,5 +1,5 @@
 ---
-title: 'toki pona 101: parts of speech'
+title: 'lesson 5: parts of speech'
 description: ''
 ---
 ## Parts of speech

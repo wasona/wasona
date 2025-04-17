@@ -1,5 +1,5 @@
 ---
-title: 'toki pona 101: two writing systems'
+title: 'lesson 2: two writing systems'
 description: ''
 ---
 

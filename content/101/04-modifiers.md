@@ -1,5 +1,5 @@
 ---
-title: 'toki pona 101: modifiers'
+title: 'lesson 4: modifiers'
 description: ''
 ---
 
