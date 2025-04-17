@@ -1,50 +1,102 @@
 ---
-title: 'lesson 6: pronouns'
-description: ''
+title: "lesson 6: pronouns"
+description: ""
 ---
+
+import Sentence from "@components/Sentence.astro";
+import SentenceGrid from "@components/SentenceGrid.astro";
+
 ## Pronouns
 
 You're probably tired of long sentences and parts-of-speech shenanigans. Let's take it down a notch, by pointing at things:
 
-| 󱥠󱥔 | sitelen Lasina | Meaning             |
-|--------------|----------------|---------------------|
-| 󱥁            | ni             | this, that          |
-| 󱥁󱤧󱥢          | ni li soweli.    | This is an animal.      |
-| 󱥁󱤧󱤗          | ni li kasi.      | This is a plant.        |
-| 󱥁󱤧󱤶󱥔         | ni li moku pona. | This is good food.      |
-| 󱥁󱤧󱥣          | ni li suli.      | This is important.      |
-| 󱥁󱤧󱥔 󱥵        | ni li pona wawa. | This is amazingly good. |
+<SentenceGrid>
+  <Sentence
+    sl="ni"
+    m="this, that"
+  />
+  <Sentence
+    sl="ni li soweli."
+    m="This is an animal."
+  />
+  <Sentence
+    sl="ni li kasi."
+    m="This is a plant."
+  />
+  <Sentence
+    sl="ni li moku pona."
+    m="This is good food."
+  />
+  <Sentence
+    sl="ni li suli."
+    m="This is important."
+  />
+  <Sentence
+    sl="ni li pona wawa."
+    m="This is amazingly good."
+  />
+</SentenceGrid>
 
-These are our first *sentences without an object*, and so there is no **e** in these sentences!
+These are our first _sentences without an object_, and so there is no **e** in these sentences!
 
 (You might wonder, shouldn't "an animal, a plant, important" and so on, be the object? And it makes sense in English! You see a noun, verb, noun. But in many languages, including Toki Pona, "to be" doesn't exist as its own word. Instead, **li** introduces a verb "to-be-blank". This can be **soweli** "to be an animal", **suli** "to be important" and so on.)
 
 Now that we've looked at one pronoun, let's get some more:
 
-| 󱥠󱥔 | sitelen Lasina |                 Meaning                 |
-|-------------:|----------------|---------------------|
-| 󱤴            | mi             | I, we; my, our                          |
-| 󱥞            | sina           | you; your                               |
-| 󱥆            | ona            | she, he, it, they; her, his, its, their |
+|  󱥠󱥔 | sitelen Lasina | Meaning                                 |
+| --: | -------------- | --------------------------------------- |
+|   󱤴 | mi             | I, we; my, our                          |
+|   󱥞 | sina           | you; your                               |
+|   󱥆 | ona            | she, he, it, they; her, his, its, their |
 
 Let's practice using **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, and **󱥁 ni** in sentences:
 
-| 󱥠󱥔 |         sitelen Lasina         |           Meaning          |
-|--------------|--------------------------------|----------------------------|
-| 󱤗󱥁󱤧󱥣         | kasi ni li suli.               | This plant is big.         |
-| 󱥡󱥞󱤧󱥵         | sona sina li wawa.             | Your knowledge is amazing. |
-| 󱥑󱥁󱤧󱥑󱤴        | pipi ni li pipi mi.            | This bug is my bug.        |
-| 󱥴󱥞󱤧󱤮󱤉󱤴       | waso sina li lukin e mi.       | Your bird sees me.         |
-| 󱥴󱤧󱤶󱤉󱥑󱥁       | waso li moku e pipi ni.        | The bird eats this bug.    |
-| 󱥢󱤴󱤧󱤶󱤉󱤗󱥞      | soweli mi li moku e kasi ona.  | My animal eats its plant. |
+<SentenceGrid>
+  <Sentence
+    sl="kasi ni li suli."
+    m="This plant is big."
+  />
+  <Sentence
+    sl="sona sina li wawa."
+    m="Your knowledge is amazing."
+  />
+  <Sentence
+    sl="pipi ni li pipi mi."
+    m="This bug is my bug."
+  />
+  <Sentence
+    sl="waso sina li lukin e mi."
+    m="Your bird sees me."
+  />
+  <Sentence
+    sl="waso li moku e pipi ni."
+    m="The bird eats this bug."
+  />
+  <Sentence
+    sl="soweli mi li moku e kasi ona."
+    m="My animal eats its plant."
+  />
+</SentenceGrid>
 
 They act like normal! But something strange happens when **󱤴 mi** or **󱥞 sina** is the subject of the sentence:
 
-| 󱥠󱥔 |     sitelen Lasina     |           Meaning          |
-|--------------|------------------------|----------------------------|
-| 󱤴󱥵           | mi wawa.               | I am strong.               |
-| 󱥞󱤮󱤉󱤶         | sina lukin e moku.     | You see food.              |
-| 󱤴󱥡󱤉󱤗󱥣        | mi sona e kasi suli.   | I know the big plant.      |
-| 󱥞󱥡󱤉󱥣󱤗        | sina sona e suli kasi. | You know the plant's size. |
+<SentenceGrid>
+  <Sentence
+    sl="mi wawa."
+    m="I am strong."
+  />
+  <Sentence
+    sl="sina lukin e moku."
+    m="You see food."
+  />
+  <Sentence
+    sl="mi sona e kasi suli."
+    m="I know the big plant."
+  />
+  <Sentence
+    sl="sina sona e suli kasi."
+    m="You know the plant's size."
+  />
+</SentenceGrid>
 
 Toki Pona has a special rule: when **󱤴 mi** or **󱥞 sina** is the subject of the sentence, the **󱤧 li** that would normally follow them disappears. This is because sentences starting with **󱤴 mi** or **󱥞 sina** are extremely common!

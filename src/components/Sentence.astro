@@ -8,17 +8,18 @@ interface Props {
     // translation
     m: string;
     // spoiler shield for practice
-    hide: "sp" | "sl" | "m";
+    hide?: "sp" | "sl" | "m";
 }
 const onclick = "this.classList.toggle('revealed')";
 const { sp, sl, m, hide } = Astro.props;
+const sp_ = sp ? sp : encode(sl);
 ---
 
 <tr>
     <td
         class={hide == "sp" ? "sp spoiler" : "sp"}
         onclick={hide == "sp" ? onclick : ""}
-        >{sp ? sp : encode(sl)}
+        >{sp_}
     </td>
     <td
         class={hide == "sl" ? "spoiler" : ""}

@@ -154,7 +154,7 @@ const alphabet: Record<string, string> = {
   p: "󱥔",
   t: "󱥬",
   k: "󱤗",
-  s: "󱥡",
+  s: "󱥣",
   w: "󱥴",
   l: "󱤧",
   j: "󱤑",

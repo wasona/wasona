@@ -1,44 +1,58 @@
 ---
-title: 'lesson 3: simple sentences'
-description: ''
+title: "lesson 3: simple sentences"
+description: ""
 ---
-import Sentence from '@components/Sentence.astro';
-import SentenceGrid from '@components/SentenceGrid.astro';
+
+import Sentence from "@components/Sentence.astro";
+import SentenceGrid from "@components/SentenceGrid.astro";
 
 ## Simple sentences
 
 Now that you know how to read Toki Pona, it's time to learn words and sentences!  
 Here are some words for things and actions:
 
-| 󱥠󱥔 | sitelen Lasina | Meaning                                            |
-|-------------:|----------------|----------------------------------------------------|
-| 󱥢            | soweli         | land animal, like a cat, dog, cow, mouse, elephant |
-| 󱥴            | waso           | bird, like a pigeon, goose, owl                    |
-| 󱥑            | pipi           | insect, like a beetle, ant, butterfly, spider      |
-| 󱤗            | kasi           | plant, like a clover, birch tree, cactus, moss     |
-| 󱤶            | moku           | to consume                                         |
-| 󱤮            | lukin          | to see                                             |
-| 󱥡            | sona           | to know                                            |
+|  󱥠󱥔 | sitelen Lasina | Meaning                                            |
+| --: | -------------- | -------------------------------------------------- |
+|   󱥢 | soweli         | land animal, like a cat, dog, cow, mouse, elephant |
+|   󱥴 | waso           | bird, like a pigeon, goose, owl                    |
+|   󱥑 | pipi           | insect, like a beetle, ant, butterfly, spider      |
+|   󱤗 | kasi           | plant, like a clover, birch tree, cactus, moss     |
+|   󱤶 | moku           | to consume                                         |
+|   󱤮 | lukin          | to see                                             |
+|   󱥡 | sona           | to know                                            |
 
 A very common kind of sentence is called a "subject-verb-object" sentence, because, which have one thing (the subject) doing something to another thing (the object). Let's make a few sentences:
 
-| 󱥠󱥔 | sitelen Lasina          | Meaning                    |
-|--------------|-------------------------|----------------------------|
-| 󱥢󱤧󱤶󱤉󱤗        | soweli li moku e kasi.  | The animal eats plants.    |
-| 󱥴󱤧󱤶󱤉󱥑        | waso li moku e pipi.    | The bird eats bugs.        |
-| 󱥑󱤧󱤮󱤉󱥢        | pipi li lukin e soweli. | The insect sees an animal. |
-| 󱥴󱤧󱥡󱤉󱤗        | waso li sona e kasi.    | The bird knows the tree.   |
+<SentenceGrid>
+  <Sentence
+    sl="soweli li moku e kasi."
+    m="The animal eats plants."
+  />
+  <Sentence
+    sl="waso li moku e pipi."
+    m="The bird eats bugs."
+  />
+  <Sentence
+    sl="pipi li lukin e soweli."
+    m="The insect sees an animal."
+  />
+  <Sentence
+    sl="waso li sona e kasi."
+    m="The bird knows the tree."
+  />
+</SentenceGrid>
 
 Here's what we can learn:
 
-* The word order is the same as in English: subject, verb, object.
-* **󱤧 li** is a particle that starts the verb.
-* **󱤉 e** is a particle that starts the object.
-* The English translation includes words and word-pieces like "the", "an", "-s", but those are guesses! The Toki Pona sentence doesn't specify if we're talking about "*a* bird" or "*the* bird". In longer conversations, it becomes pretty clear!
+- The word order is the same as in English: subject, verb, object.
+- **󱤧 li** is a particle that starts the verb.
+- **󱤉 e** is a particle that starts the object.
+- The English translation includes words and word-pieces like "the", "an", "-s", but those are guesses! The Toki Pona sentence doesn't specify if we're talking about "_a_ bird" or "_the_ bird". In longer conversations, it becomes pretty clear!
 
 (**󱤧 li** and **󱤉 e** may seem unnecessary at first. We will learn about why they are required, but to do that, we first need to learn more about parts of speech!)
 
 ## Practice!
+
 Fill in the blanks:
 
 <SentenceGrid>
@@ -47,16 +61,8 @@ Fill in the blanks:
     m="The animal knows the bug."
     hide="m"
   />
-  <Sentence
-    sl="pipi li moku e kasi."
-    m="The bug eats plants."
-    hide="sl"
-  />
-  <Sentence
-    sl="waso li lukin e kasi."
-    m="The bird sees plants."
-    hide="sp"
-  />
+  <Sentence sl="pipi li moku e kasi." m="The bug eats plants." hide="sl" />
+  <Sentence sl="waso li lukin e kasi." m="The bird sees plants." hide="sp" />
   <Sentence
     sl="waso li sona e soweli."
     m="The bird knows the animal."
