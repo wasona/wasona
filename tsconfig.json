@@ -9,6 +9,7 @@
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
       "@consts": ["src/consts.ts"]
     }
   }

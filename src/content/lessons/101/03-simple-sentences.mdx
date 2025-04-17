@@ -2,7 +2,8 @@
 title: 'lesson 3: simple sentences'
 description: ''
 ---
-import Sentence from '../../../components/Sentence.astro';
+import Sentence from '@components/Sentence.astro';
+import SentenceGrid from '@components/SentenceGrid.astro';
 
 ## Simple sentences
 
@@ -39,38 +40,26 @@ Here's what we can learn:
 
 ## Practice!
 Fill in the blanks:
-<table>
-  <thead>
-    <tr>
-      <th>󱥠󱥔</th>
-      <th>sitelen Lasina</th>
-      <th>Meaning</th>
-    </tr>
-  </thead>
-  <tbody>
-    <Sentence
-      sp="󱥢󱤧󱥡󱤉󱥑"
-      sl="soweli li sona e pipi."
-      m="The animal knows the bug."
-      hide="m"
-    />
-    <Sentence
-      sp="󱥑󱤧󱤶󱤉󱤗"
-      sl="pipi li moku e kasi."
-      m="The bug eats plants."
-      hide="sl"
-    />
-    <Sentence
-      sp="󱥴󱤧󱤮󱤉󱤗"
-      sl="waso li lukin e kasi."
-      m="The bird sees plants."
-      hide="sp"
-    />
-    <Sentence
-      sp="󱥴󱤧󱥡󱤉󱥢"
-      sl="waso li sona e soweli."
-      m="The bird knows the animal."
-      hide="sl"
-    />
-  </tbody>
-</table>
+
+<SentenceGrid>
+  <Sentence
+    sl="soweli li sona e pipi."
+    m="The animal knows the bug."
+    hide="m"
+  />
+  <Sentence
+    sl="pipi li moku e kasi."
+    m="The bug eats plants."
+    hide="sl"
+  />
+  <Sentence
+    sl="waso li lukin e kasi."
+    m="The bird sees plants."
+    hide="sp"
+  />
+  <Sentence
+    sl="waso li sona e soweli."
+    m="The bird knows the animal."
+    hide="sl"
+  />
+</SentenceGrid>

@@ -102,3 +102,7 @@ tr:nth-child(even) {
     color: inherit;
     background-color: #ddd;
 }
+
+.sp {
+    font-size: 150%;
+}

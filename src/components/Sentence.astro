@@ -1,11 +1,12 @@
 ---
+import { encode } from "@utils/ucsur";
 interface Props {
     // sitelen pona
-    sp?: String;
+    sp?: string;
     // sitelen Lasina
-    sl: String;
+    sl: string;
     // translation
-    m: String;
+    m: string;
     // spoiler shield for practice
     hide: "sp" | "sl" | "m";
 }
@@ -15,9 +16,9 @@ const { sp, sl, m, hide } = Astro.props;
 
 <tr>
     <td
-        class={hide == "sp" ? "spoiler" : ""}
+        class={hide == "sp" ? "sp spoiler" : "sp"}
         onclick={hide == "sp" ? onclick : ""}
-        >{sp}
+        >{sp ? sp : encode(sl)}
     </td>
     <td
         class={hide == "sl" ? "spoiler" : ""}
