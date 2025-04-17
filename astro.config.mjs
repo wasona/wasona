@@ -11,9 +11,6 @@ const deploy = import.meta.env.PROD
 export default defineConfig({
   ...deploy,
   ...{
-    integrations: [
-      // mdx(),
-      sitemap(),
-    ],
+    integrations: [mdx(), sitemap()],
   },
 });
