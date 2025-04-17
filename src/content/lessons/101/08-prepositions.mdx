@@ -3,9 +3,8 @@ title: "lesson 8: prepositions"
 description: ""
 ---
 
-{/* import Footer from '../../../components/Footer.astro'; */}
-
-{/* <Footer /> */}
+import Sentence from "@components/Sentence.astro";
+import SentenceGrid from "@components/SentenceGrid.astro";
 
 ## Prepositions
 
@@ -23,25 +22,59 @@ Now that we know some countries, let's talk about travel! But how do you say "go
 
 In Toki Pona, prepositions can be used one of two ways. Firstly, we can use prepositions at the end of a sentence:
 
-| 󱥠󱥔     | sitelen Lasina             | Meaning                            |
-| ------ | -------------------------- | ---------------------------------- |
-| 󱤴󱥌󱤉󱥴󱥩󱤗 | mi pana e waso tawa kasi.  | I put a bird onto a tree.          |
-| 󱥴󱤧󱤈󱤬󱤗  | waso li awen lon kasi.     | The bird remains on a tree.        |
-| 󱥞󱥶󱤉󱥴󱥧󱤗 | sina weka e waso tan kasi. | You remove the bird from the tree. |
+<SentenceGrid>
+  <Sentence
+    sl="mi pana e waso tawa kasi."
+    m="I put a bird onto a tree."
+  />
+  <Sentence
+    sl="waso li awen lon kasi."
+    m="The bird remains on a tree."
+  />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="You remove the bird from the tree."
+  />
+</SentenceGrid>
 
 But secondly, they can also fill the verb slot all by themselves:
 
-| 󱥠󱥔                | sitelen Lasina            | Meaning                |
-| ----------------- | ------------------------- | ---------------------- |
-| 󱤑󱦐󱤉󱤰󱤈󱦑󱤧󱥩󱤰󱦐󱥁󱤍󱤑󱥆󱥁󱦑  | jan Ema li tawa ma Nijon. | Emma goes to Japan.    |
-| 󱤑󱦐󱥁󱤍󱥁󱤈󱦑󱤧󱤬󱤰󱦐󱤧󱥱󱥞󱤍󱦑  | jan Nina li lon ma Lusi.  | Nina is in Russia.     |
-| 󱤑󱦐󱤴󱤍󱤧󱤍󱦑󱤧󱥧󱤰󱦐󱤗󱤂󱥁󱥞󱤉󱦑 | jan Mili li tan ma Kanse. | Millie is from France. |
+<SentenceGrid>
+  <Sentence
+    sl="jan Ema li tawa ma Nijon."
+    m="Emma goes to Japan."
+  />
+  <Sentence
+    sl="jan Nina li lon ma Lusi."
+    m="Nina is in Russia."
+  />
+  <Sentence
+    sl="jan Mili li tan ma Kanse."
+    m="Millie is from France."
+  />
+</SentenceGrid>
 
 Let's practice with these sentences:
-| 󱥠󱥔 | sitelen Lasina | Meaning |
-|---|---------------------------------|-------------------------------------------------------|
-| | mi tawa ma kasi. | I go to the plant land. (perhaps the forest.) |
-| | sona li weka tan mi. | Knowledge went away from me. (I forgot.) |
-| | soweli lili li pona tawa mi. | Small animals are good to me. (I like small animals.) |
-| | jan Nowa li toki tawa Ema. | Noah speaks to Emma. |
-| | jan li toki Kanse lon ma Kanse. | People speak French in France. |
+
+<SentenceGrid>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="I go to the plant land. (perhaps the forest.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="Knowledge went away from me. (I forgot.)"
+  />
+  <Sentence
+    sl="soweli lili li pona tawa mi."
+    m="Small animals are good to me. (I like small animals.)"
+  />
+  <Sentence
+    sl="jan Nowa li toki tawa Ema."
+    m="Noah speaks to Emma."
+  />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="People speak German in Germany."
+  />
+</SentenceGrid>
