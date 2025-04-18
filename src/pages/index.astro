@@ -19,19 +19,8 @@ const { Content: Meta } = await render(meta);
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
         <style>
             ul {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 2rem;
                 list-style-type: none;
                 padding: 0;
-                line-height: 1.3;
-            }
-            ul li {
-                width: 100%;
-            }
-            .date {
-                margin: 0;
-                color: var(--grey);
             }
         </style>
     </head>
@@ -43,16 +32,13 @@ const { Content: Meta } = await render(meta);
             </section>
             <section>
                 <h2>Lessons</h2>
-                <ul>
-                    {
-                        posts.reverse().map((post) => (
-                            <li>
-                                <p class="date" />
-                                <a href={`./${post.id}/`}>{post.data.title}</a>
-                            </li>
-                        ))
-                    }
-                </ul>
+                {
+                    posts.reverse().map((post) => (
+                        <p>
+                            <a href={`./${post.id}/`}>{post.data.title}</a>
+                        </p>
+                    ))
+                }
             </section>
         </main>
         <Footer />
