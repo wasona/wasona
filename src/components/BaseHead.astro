@@ -1,15 +1,16 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
-import "@styles/global.css";
 import { SITE_URL } from "@consts";
+import "@styles/global.css";
 
 interface Props {
     title: string;
     description: string;
     image?: string;
 }
-
+const siteUrl = new URL(import.meta.env.BASE_URL, Astro.site);
+const socialImageURL = new URL("./public/logo.png", siteUrl);
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = "./logo.png" } = Astro.props;
@@ -41,11 +42,11 @@ const { title, description, image = "./logo.png" } = Astro.props;
 <meta property="og:site_name" content={SITE_URL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={Astro.url + image} />
+<meta property="og:image" content={socialImageURL} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={Astro.url + image} />
+<meta property="twitter:image" content={socialImageURL} />
