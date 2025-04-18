@@ -1,0 +1,113 @@
+---
+const play = (text: string) =>
+    `https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/ipa/${text.replaceAll(/[\.\!\?]/g, "").replaceAll(" ", "-")}.mp3`;
+---
+
+<style>
+    #phono,
+    td {
+        text-align: center;
+    }
+    #phono {
+        display: flex;
+        flex-direction: column;
+    }
+    @media only screen and (min-width: 600px) {
+        #phono {
+            flex-direction: row;
+        }
+    }
+
+    #phono table {
+        table-layout: fixed;
+        width: calc(100% - 1px);
+        margin: auto;
+    }
+    td:not(.no-audio) {
+        font-size: 120%;
+        cursor: pointer;
+        transition: background-color 0.1s ease-out;
+    }
+    td:not(.no-audio):hover {
+        background-color: var(--bg-3);
+    }
+</style>
+
+<div id="phono">
+    <div id="consonants">
+        <span>
+            <b>Consonants</b>
+        </span>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Labial</th>
+                    <th>Coronal</th>
+                    <th>Dorsal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="no-audio">Nasal</td>
+                    <td onclick={`new Audio("${play("m")}").play();`}>m</td>
+                    <td onclick={`new Audio("${play("n")}").play();`}>n</td>
+                    <td class="no-audio"></td>
+                </tr>
+                <tr>
+                    <td class="no-audio">Stop</td>
+                    <td onclick={`new Audio("${play("p")}").play();`}>p</td>
+                    <td onclick={`new Audio("${play("t")}").play();`}>t</td>
+                    <td onclick={`new Audio("${play("k")}").play();`}>k</td>
+                </tr>
+                <tr>
+                    <td class="no-audio">Fric.</td>
+                    <td class="no-audio"></td>
+                    <td onclick={`new Audio("${play("s")}").play();`}>s</td>
+                    <td class="no-audio"></td>
+                </tr>
+                <tr>
+                    <td class="no-audio">Appr.</td>
+                    <td onclick={`new Audio("${play("w")}").play();`}>w</td>
+                    <td onclick={`new Audio("${play("l")}").play();`}>l</td>
+                    <td onclick={`new Audio("${play("j")}").play();`}>j</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="vowels">
+        <span>
+            <b>Vowels</b>
+        </span>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Front</th>
+                    <th>Central</th>
+                    <th>Back</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="no-audio">High</td>
+                    <td onclick={`new Audio("${play("i")}").play();`}>i</td>
+                    <td class="no-audio"></td>
+                    <td onclick={`new Audio("${play("u")}").play();`}>u</td>
+                </tr>
+                <tr>
+                    <td class="no-audio">Mid</td>
+                    <td onclick={`new Audio("${play("e")}").play();`}>e</td>
+                    <td class="no-audio"></td>
+                    <td onclick={`new Audio("${play("o")}").play();`}>o</td>
+                </tr>
+                <tr>
+                    <td class="no-audio">Low</td>
+                    <td class="no-audio"></td>
+                    <td onclick={`new Audio("${play("a")}").play();`}>a</td>
+                    <td class="no-audio"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

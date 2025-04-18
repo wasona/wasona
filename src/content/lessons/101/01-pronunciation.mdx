@@ -2,52 +2,14 @@
 title: 'lesson 1: pronunciation'
 description: ''
 ---
-<style>
-{`
-#phono {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-}
-@media only screen and (min-width: 600px) {
-    #phono {
-        flex-direction: row;
-    }
-}
 
-#phono table {
-    table-layout: fixed;
-    width: calc(100% - 1px);
-    margin: auto;
-}
-`}
-</style>
+import PhonoTable from "@components/PhonoTable.astro";
 
 ## Pronunciation
 
 Toki Pona has only 9 consonants and 5 vowels. Click on each one to hear what they sound like!
 
-<div id="phono">
-<div id="consonants">
-<span><b>Consonants</b></span>
-
-|       | Labial | Coronal | Dorsal |
-|:-----:|:------:|:-------:|:------:|
-| Nasal |    m   |    n    |        |
-|  Stop |    p   |    t    |    k   |
-| Fric. |        |    s    |        |
-| Appr. |    w   |    l    |    j   |
-</div>
-<div id="vowels">
-<span><b>Vowels</b></span>
-
-|       | Front | Central | Back |
-|:-----:|:-----:|:-------:|:----:|
-| High  |   i   |         |   u  |
-|  Mid  |   e   |         |   o  |
-|  Low  |       |    a    |      |
-</div>
-</div>
+<PhonoTable />
 
 If you speak English, most of these will be familiar to you! But there are two differences you should pay close attention to:
 
