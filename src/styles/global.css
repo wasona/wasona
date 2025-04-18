@@ -40,9 +40,6 @@ a {
     text-underline-position: under;
     font-weight: bold;
 }
-header a:has(img) {
-    display: block; /*fix focus styling on main header*/
-}
 
 a:visited {
     color: var(--accent);
@@ -53,13 +50,7 @@ h1 {
     margin: 0.75em 0;
     font-size: 1.75em;
 }
-h1,
-h2,
-h3,
-p {
-    margin-right: 10px;
-    margin-left: 10px;
-}
+
 hr {
     color: var(--accent);
 }
@@ -67,22 +58,17 @@ hr {
 table {
     width: 100%;
     text-align: initial;
-}
-
-th {
-    border-bottom: 1px solid black;
-}
-table,
-th,
-td {
-    /* border: 1px solid black; */
     border-collapse: collapse;
 }
-th,
-td {
+th {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
     padding: 5px 10px;
 }
-
+td {
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
 th,
 tr:nth-child(even) {
     background-color: var(--bg-1);
@@ -103,10 +89,6 @@ tr:nth-child(even) {
     background-color: #ddd;
 }
 
-.sentence {
-    padding-left: 20px;
-    /* border-left: 10px solid var(--bg-1); */
-}
 .sp {
     font-size: 150%;
     line-height: 1.8;
