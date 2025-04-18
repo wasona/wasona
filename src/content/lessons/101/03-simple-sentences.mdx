@@ -4,26 +4,27 @@ description: ""
 ---
 
 import Sentence from "@components/Sentence.astro";
-import Sentences from "@components/Sentences.astro";
+import List from "@components/List.astro";
+import Word from "@components/Word.astro";
 
 ## Simple sentences
 
 Now that you know how to read Toki Pona, it's time to learn words and sentences!  
 Here are some words for things and actions:
 
-|  󱥠󱥔 | sitelen Lasina | Meaning                                            |
-| --: | -------------- | -------------------------------------------------- |
-|   󱥢 | soweli         | land animal, like a cat, dog, cow, mouse, elephant |
-|   󱥴 | waso           | bird, like a pigeon, goose, owl                    |
-|   󱥑 | pipi           | insect, like a beetle, ant, butterfly, spider      |
-|   󱤗 | kasi           | plant, like a clover, birch tree, cactus, moss     |
-|   󱤶 | moku           | to consume                                         |
-|   󱤮 | lukin          | to see                                             |
-|   󱥡 | sona           | to know                                            |
+<List>
+    <Word sl="soweli" m="land animal, like a cat, dog, cow, mouse, elephant"></Word>
+    <Word sl="waso" m="bird, like a pigeon, goose, owl"></Word>
+    <Word sl="pipi" m="insect, like a beetle, ant, butterfly, spider"></Word>
+    <Word sl="kasi" m="plant, like a clover, birch tree, cactus, moss"></Word>
+    <Word sl="moku" m="to consume"></Word>
+    <Word sl="lukin" m="to see"></Word>
+    <Word sl="sona" m="to know"></Word>
+</List>
 
 A very common kind of sentence is called a "subject-verb-object" sentence, because, which have one thing (the subject) doing something to another thing (the object). Let's make a few sentences:
 
-<Sentences>
+<List>
   <Sentence
     sl="soweli li moku e kasi."
     m="The animal eats plants."
@@ -40,7 +41,7 @@ A very common kind of sentence is called a "subject-verb-object" sentence, becau
     sl="waso li sona e kasi."
     m="The bird knows the tree."
   />
-</Sentences>
+</List>
 
 Here's what we can learn:
 
@@ -55,7 +56,7 @@ Here's what we can learn:
 
 Fill in the blanks:
 
-<Sentences>
+<List>
   <Sentence
     sl="soweli li sona e pipi."
     m="The animal knows the bug."
@@ -68,4 +69,4 @@ Fill in the blanks:
     m="The bird knows the animal."
     hide="sl"
   />
-</Sentences>
+</List>

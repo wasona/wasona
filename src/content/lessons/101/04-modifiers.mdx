@@ -4,27 +4,28 @@ description: ""
 ---
 
 import Sentence from "@components/Sentence.astro";
-import Sentences from "@components/Sentences.astro";
+import List from "@components/List.astro";
+import Word from "@components/Word.astro";
 
 ## Describe!
 
 Now you know some nouns (things) and verbs (actions). Time to add adjectives (descriptions)!  
 Let's memorise a few of them:
 
-|  󱥠󱥔 | sitelen Lasina | Meaning             |
-| --: | -------------- | ------------------- |
-|   󱥣 | suli           | large, important    |
-|   󱤨 | lili           | small, young        |
-|   󱥔 | pona           | good, pleasant      |
-|   󱤍 | ike            | bad, unpleasant     |
-|   󱥵 | wawa           | powerful, amazing   |
-|   󱥡 | sona           | knowledgeable, wise |
+<List>
+    <Word sl="suli" m="large, important"></Word>
+    <Word sl="lili" m="small, young"></Word>
+    <Word sl="pona" m="good, pleasant"></Word>
+    <Word sl="ike" m="bad, unpleasant"></Word>
+    <Word sl="wawa" m="powerful, amazing"></Word>
+    <Word sl="sona" m="knowledgeable, wise"></Word>
+</List>
 
 In English, adjectives go before the noun: _good dog_, _wise bird_. But in Toki Pona, they always go after: _soweli pona_, _waso sona_. This is how it works in French, Irish, Arabic, Malay, and many other languages. Think of it this way: the first word is always the most important!
 
 Let's make some sentences with descriptions:
 
-<Sentences>
+<List>
   <Sentence
     sl="waso li lukin e soweli lili."
     m="The bird sees a small animal."
@@ -41,7 +42,7 @@ Let's make some sentences with descriptions:
     sl="waso sona li sona pona e pipi."
     m="The wise bird knows bugs well."
   />
-</Sentences>
+</List>
 
 If these sentences feel long and tiresome, don't worry! We will look at some shorter sentences soon. Remember: the sentence structure is actually quite simple! You can always tell which part is the subject, the verb, and the object, by looking at **󱤧 li** and **󱤉 e**.
 

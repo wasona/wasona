@@ -4,7 +4,8 @@ description: ""
 ---
 
 import Sentence from "@components/Sentence.astro";
-import Sentences from "@components/Sentences.astro";
+import List from "@components/List.astro";
+import Word from "@components/Word.astro";
 
 ## Names
 
@@ -12,16 +13,16 @@ Pointing at things is nice, but sometimes it's nice to be more specific. Introdu
 
 Let's learn the words for some things that often have names:
 
-|  󱥠󱥔 | sitelen Lasina | Meaning                             |
-| --: | -------------- | ----------------------------------- |
-|   󱤑 | jan            | person                              |
-|   󱥠 | sitelen        | image, writing; to draw, to write   |
-|   󱥬 | toki           | speech, language; to talk, to speak |
-|   󱤰 | ma             | land, country                       |
+<List>
+  <Word sl="jan" m="person"></Word>
+  <Word sl="sitelen" m="image, writing; to draw, to write"></Word>
+  <Word sl="toki" m="speech, language; to talk, to speak"></Word>
+  <Word sl="ma" m="land, country"></Word>
+</List>
 
 You already know one name: _sitelen Lasina_! Let's look at a few more names:
 
-<Sentences>
+<List>
   <Sentence
     sl="jan Nowa"
     m="person named Noah (from English 'Noah')"
@@ -42,7 +43,7 @@ You already know one name: _sitelen Lasina_! Let's look at a few more names:
     sl="sitelen Lasina"
     m="writing named Latin (from Latin 'Latīna')"
   />
-</Sentences>
+</List>
 
 Here's what we can learn from these examples:
 
@@ -54,7 +55,7 @@ Here's what we can learn from these examples:
 
 Let's practice using the new words and names in sentences:
 
-<Sentences>
+<List>
   <Sentence
     sl="jan li toki."
     m="People speak."
@@ -79,4 +80,4 @@ Let's practice using the new words and names in sentences:
     sl="jan Ema li sona pona e ma Tosi."
     m="Ema knows Germany well."
   />
-</Sentences>
+</List>

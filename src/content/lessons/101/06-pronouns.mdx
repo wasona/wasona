@@ -4,17 +4,15 @@ description: ""
 ---
 
 import Sentence from "@components/Sentence.astro";
-import Sentences from "@components/Sentences.astro";
+import List from "@components/List.astro";
+import Word from "@components/Word.astro";
 
 ## Pronouns
 
 You're probably tired of long sentences and parts-of-speech shenanigans. Let's take it down a notch, by pointing at things:
 
-<Sentences>
-  <Sentence
-    sl="ni"
-    m="this, that"
-  />
+<List>
+  <Word sl="ni" m="this, that"></Word>
   <Sentence
     sl="ni li soweli."
     m="This is an animal."
@@ -35,7 +33,7 @@ You're probably tired of long sentences and parts-of-speech shenanigans. Let's t
     sl="ni li pona wawa."
     m="This is amazingly good."
   />
-</Sentences>
+</List>
 
 These are our first _sentences without an object_, and so there is no **e** in these sentences!
 
@@ -43,15 +41,15 @@ These are our first _sentences without an object_, and so there is no **e** in t
 
 Now that we've looked at one pronoun, let's get some more:
 
-|  󱥠󱥔 | sitelen Lasina | Meaning                                 |
-| --: | -------------- | --------------------------------------- |
-|   󱤴 | mi             | I, we; my, our                          |
-|   󱥞 | sina           | you; your                               |
-|   󱥆 | ona            | she, he, it, they; her, his, its, their |
+<List>
+  <Word sl="mi" m="I, we; my, our"></Word>
+  <Word sl="sina" m="you; your"></Word>
+  <Word sl="ona" m="she, he, it, they; her, his, its, their"></Word>
+</List>
 
 Let's practice using **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, and **󱥁 ni** in sentences:
 
-<Sentences>
+<List>
   <Sentence
     sl="kasi ni li suli."
     m="This plant is big."
@@ -76,11 +74,11 @@ Let's practice using **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, and **󱥁 ni** i
     sl="soweli mi li moku e kasi ona."
     m="My animal eats its plant."
   />
-</Sentences>
+</List>
 
 They act like normal! But something strange happens when **󱤴 mi** or **󱥞 sina** is the subject of the sentence:
 
-<Sentences>
+<List>
   <Sentence
     sl="mi wawa."
     m="I am strong."
@@ -97,6 +95,6 @@ They act like normal! But something strange happens when **󱤴 mi** or **󱥞 s
     sl="sina sona e suli kasi."
     m="You know the plant's size."
   />
-</Sentences>
+</List>
 
 Toki Pona has a special rule: when **󱤴 mi** or **󱥞 sina** is the subject of the sentence, the **󱤧 li** that would normally follow them disappears. This is because sentences starting with **󱤴 mi** or **󱥞 sina** are extremely common!
