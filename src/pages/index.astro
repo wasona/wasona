@@ -2,6 +2,7 @@
 import BaseHead from "@components/BaseHead.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
+import List from "@components/List.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "@consts";
 import { getCollection, render } from "astro:content";
 
@@ -13,7 +14,18 @@ const meta = (await getCollection("meta")).find((post) => post.id == "index")!;
 const { Content: Meta } = await render(meta);
 ---
 
-<!doctype html>
+<style>
+    .post {
+        padding: 10px 15px;
+    }
+    .post:nth-child(odd) {
+        background-color: var(--bg-1);
+    }
+    .post * {
+        margin: 0px;
+    }
+</style>
+
 <html lang="en">
     <head>
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
@@ -32,13 +44,20 @@ const { Content: Meta } = await render(meta);
             </section>
             <section>
                 <h2>Lessons</h2>
-                {
-                    posts.reverse().map((post) => (
-                        <p>
-                            <a href={`./${post.id}/`}>{post.data.title}</a>
-                        </p>
-                    ))
-                }
+                <List>
+                    {
+                        posts.reverse().map((post) => (
+                            <div class="post">
+                                <h3>
+                                    <a href={`./${post.id}/`}>
+                                        {post.data.title}
+                                    </a>
+                                </h3>
+                                <p>{post.data.description}</p>
+                            </div>
+                        ))
+                    }
+                </List>
             </section>
         </main>
         <Footer />
