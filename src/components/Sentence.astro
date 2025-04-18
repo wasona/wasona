@@ -15,20 +15,20 @@ const { sp, sl, m, hide } = Astro.props;
 const sp_ = sp || encode(sl);
 ---
 
-<tr>
-    <td
-        class={hide == "sp" ? "sp spoiler" : "sp"}
-        onclick={hide == "sp" ? onclick : ""}
-        >{sp_}
-    </td>
-    <td
-        class={hide == "sl" ? "spoiler" : ""}
-        onclick={hide == "sl" ? onclick : ""}
-        >{sl}
-    </td>
-    <td
-        class={hide == "m" ? "spoiler" : ""}
-        onclick={hide == "m" ? onclick : ""}
-        >{m}
-    </td>
-</tr>
+<style>
+    .sentence {
+        padding: 5px 15px;
+        border-left: 1px solid black;
+        margin-left: 5px;
+    }
+    .sentence:nth-child(odd) {
+        background-color: var(--bg-1);
+    }
+</style>
+<div class="sentence">
+    <span class="sp">{sp_}</span>
+    <br />
+    <span class="sl">{sl}</span>
+    <br />
+    <span>{m}</span>
+</div>

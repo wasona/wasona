@@ -29,7 +29,7 @@ body {
 }
 
 main {
-    max-width: 900px;
+    max-width: 700px;
     margin: auto;
     margin-bottom: 35px;
     text-align: justify;
@@ -80,7 +80,7 @@ td {
 }
 th,
 td {
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 th,
@@ -103,6 +103,14 @@ tr:nth-child(even) {
     background-color: #ddd;
 }
 
+.sentence {
+    padding-left: 20px;
+    /* border-left: 10px solid var(--bg-1); */
+}
 .sp {
-    font-size: 125%;
+    font-size: 150%;
+    line-height: 1.8;
+}
+.sl {
+    font-style: italic;
 }
