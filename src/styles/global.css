@@ -9,6 +9,7 @@
 :root {
     --bg: #ffffff;
     --bg-1: #f7f7f7;
+    --bg-2: #eeeeee;
     --txt: #080808;
     --grey: #333;
     --accent: #de6500;
@@ -101,6 +102,7 @@ tr:nth-child(even) {
 details {
     border-left: 2px dotted var(--grey);
     text-align: initial;
+    margin: 10px 0px;
 }
 /* details: */
 details * {
@@ -110,10 +112,11 @@ details * {
 .sp-details *:not(summary) {
     font-size: 150%;
 }
-details *:nth-child(odd) {
+details *:not(summary):nth-child(odd) {
     background-color: var(--bg-1);
 }
 summary {
+    background-color: var(--bg-2);
     border-bottom: 1px solid black;
     font-weight: bold;
 }
