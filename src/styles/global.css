@@ -97,3 +97,22 @@ tr:nth-child(even) {
 .sl {
     font-style: italic;
 }
+
+details {
+    border-left: 2px dotted var(--grey);
+    text-align: initial;
+}
+/* details: */
+details * {
+    padding: 10px;
+    margin: 0;
+}
+.sp-details *:not(summary) {
+    font-size: 150%;
+}
+details *:nth-child(odd) {
+    background-color: var(--bg-1);
+}
+summary {
+    border-bottom: 1px solid black;
+}
