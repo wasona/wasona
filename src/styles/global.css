@@ -32,7 +32,7 @@ main {
     max-width: 700px;
     margin: auto;
     margin-bottom: 35px;
-    padding: 0px 5px;
+    padding: 0px 10px;
     text-align: justify;
 }
 a {
@@ -50,11 +50,6 @@ h1 {
     text-align: center;
     margin: 0.75em 0;
     font-size: 1.75em;
-}
-h2,
-h3,
-p {
-    padding-left: 10px;
 }
 
 hr {
