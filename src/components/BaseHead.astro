@@ -10,7 +10,7 @@ interface Props {
     image?: string;
 }
 const siteUrl = new URL(import.meta.env.BASE_URL, Astro.site);
-const socialImageURL = new URL("./public/logo.png", siteUrl);
+const socialImageURL = new URL("./logo.png", siteUrl);
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = "./logo.png" } = Astro.props;
