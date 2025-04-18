@@ -1,8 +1,3 @@
----
-const play = (text: string) =>
-    `https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/ipa/${text.replaceAll(/[\.\!\?]/g, "").replaceAll(" ", "-")}.mp3`;
----
-
 <style>
     #phono,
     td {
@@ -33,6 +28,15 @@ const play = (text: string) =>
     }
 </style>
 
+<script lang="javascript">
+    const link = (text) =>
+        `https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/ipa/${text.replaceAll(/[\.\!\?]/g, "").replaceAll(" ", "-")}.mp3`;
+
+    const play = (letter) => {
+        new Audio(link(letter)).play().catch((e) => {});
+    };
+</script>
+
 <div id="phono">
     <div id="consonants">
         <span>
@@ -50,27 +54,27 @@ const play = (text: string) =>
             <tbody>
                 <tr>
                     <td class="no-audio">Nasal</td>
-                    <td onclick={`new Audio("${play("m")}").play();`}>m</td>
-                    <td onclick={`new Audio("${play("n")}").play();`}>n</td>
+                    <td onclick="play('m')">m</td>
+                    <td onclick="play('n')">n</td>
                     <td class="no-audio"></td>
                 </tr>
                 <tr>
                     <td class="no-audio">Stop</td>
-                    <td onclick={`new Audio("${play("p")}").play();`}>p</td>
-                    <td onclick={`new Audio("${play("t")}").play();`}>t</td>
-                    <td onclick={`new Audio("${play("k")}").play();`}>k</td>
+                    <td onclick="play('p')">p</td>
+                    <td onclick="play('t')">t</td>
+                    <td onclick="play('k')">k</td>
                 </tr>
                 <tr>
                     <td class="no-audio">Fric.</td>
                     <td class="no-audio"></td>
-                    <td onclick={`new Audio("${play("s")}").play();`}>s</td>
+                    <td onclick="play('s')">s</td>
                     <td class="no-audio"></td>
                 </tr>
                 <tr>
                     <td class="no-audio">Appr.</td>
-                    <td onclick={`new Audio("${play("w")}").play();`}>w</td>
-                    <td onclick={`new Audio("${play("l")}").play();`}>l</td>
-                    <td onclick={`new Audio("${play("j")}").play();`}>j</td>
+                    <td onclick="play('w')">w</td>
+                    <td onclick="play('l')">l</td>
+                    <td onclick="play('j')">j</td>
                 </tr>
             </tbody>
         </table>
@@ -91,20 +95,20 @@ const play = (text: string) =>
             <tbody>
                 <tr>
                     <td class="no-audio">High</td>
-                    <td onclick={`new Audio("${play("i")}").play();`}>i</td>
+                    <td onclick="play('i')">i</td>
                     <td class="no-audio"></td>
-                    <td onclick={`new Audio("${play("u")}").play();`}>u</td>
+                    <td onclick="play('u')">u</td>
                 </tr>
                 <tr>
                     <td class="no-audio">Mid</td>
-                    <td onclick={`new Audio("${play("e")}").play();`}>e</td>
+                    <td onclick="play('e')">e</td>
                     <td class="no-audio"></td>
-                    <td onclick={`new Audio("${play("o")}").play();`}>o</td>
+                    <td onclick="play('o')">o</td>
                 </tr>
                 <tr>
                     <td class="no-audio">Low</td>
                     <td class="no-audio"></td>
-                    <td onclick={`new Audio("${play("a")}").play();`}>a</td>
+                    <td onclick="play('a')">a</td>
                     <td class="no-audio"></td>
                 </tr>
             </tbody>
