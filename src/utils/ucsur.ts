@@ -178,7 +178,7 @@ function encodeName(word: string) {
 
 export function encode(text: string) {
   return text
-    .replaceAll(/[\.\!\?]/g, "")
+    .replaceAll(/[\.\,\!\?]/g, "")
     .split(" ")
     .map((word) => (word in dictionary ? dictionary[word] : encodeName(word)))
     .join("");
