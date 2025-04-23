@@ -53,7 +53,10 @@ const { Content: Meta } = await render(meta);
                                         {post.data.title}
                                     </a>
                                 </h3>
-                                <p>{post.data.description}</p>
+                                <p>
+                                    {post.data.richDescription ||
+                                        post.data.description}
+                                </p>
                             </div>
                         ))
                     }
