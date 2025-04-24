@@ -6,26 +6,12 @@ interface Props {
 const { posts } = Astro.props;
 ---
 
-<style>
-    .post {
-        padding: 10px 15px;
-    }
-    .post:nth-child(odd) {
-        background-color: var(--bg-1);
-    }
-    .post * {
-        margin: 0px;
-    }
-</style>
-<List>
+<ul>
     {
         posts.reverse().map((post) => (
-            <div class="post">
-                <h3>
-                    <a href={`./${post.id}/`}>{post.data.title}</a>
-                </h3>
-                <p>{post.data.richDescription || post.data.description}</p>
-            </div>
+            <li class="post">
+                <a href={`./${post.id}/`}>{post.data.title}</a>
+            </li>
         ))
     }
-</List>
+</ul>

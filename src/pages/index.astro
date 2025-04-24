@@ -18,12 +18,6 @@ const { Content: Meta } = await render(meta);
 <html lang="en">
     <head>
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-        <style>
-            ul {
-                list-style-type: none;
-                padding: 0;
-            }
-        </style>
     </head>
     <body>
         <Header />
@@ -40,7 +34,7 @@ const { Content: Meta } = await render(meta);
                 </p>
                 <PostList
                     posts={posts.filter((post) =>
-                        post.filePath!.includes("basics-1"),
+                        post.filePath!.includes("/basics-1"),
                     )}
                 />
                 <h2>Part 2: keep going!</h2>
@@ -51,7 +45,7 @@ const { Content: Meta } = await render(meta);
                 </p>
                 <PostList
                     posts={posts.filter((post) =>
-                        post.filePath!.includes("basics-2"),
+                        post.filePath!.includes("/basics-2"),
                     )}
                 />
                 <h2>Part 3: wrapping up!</h2>
@@ -61,7 +55,17 @@ const { Content: Meta } = await render(meta);
                 </p>
                 <PostList
                     posts={posts.filter((post) =>
-                        post.filePath!.includes("basics-3"),
+                        post.filePath!.includes("/basics-3"),
+                    )}
+                />
+                <h2>Learn more!</h2>
+                <p>
+                    Do you have some unanswered questions? There is always more
+                    to learn!
+                </p>
+                <PostList
+                    posts={posts.filter((post) =>
+                        post.filePath!.includes("/more"),
                     )}
                 />
             </section>
