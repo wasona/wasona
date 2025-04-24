@@ -27,6 +27,7 @@ const sp_ = sp || encode(sl);
         font-family: "nasin-nanpa", sans-serif;
         max-width: 559px;
         text-align: initial;
+        display: none;
     }
     .left span {
         border-bottom-left-radius: 0;
@@ -38,4 +39,20 @@ const sp_ = sp || encode(sl);
         border-bottom-right-radius: 0;
     }
 </style>
-<p class={right ? "right" : "left"}><span set:html={sl} /></p>
+
+<style is:global>
+    .messenger-sp span:nth-child(1) {
+        display: initial;
+    }
+    .messenger-sl span:nth-child(2) {
+        display: initial;
+    }
+    .messenger-m span:nth-child(3) {
+        display: initial;
+    }
+</style>
+<p class={right ? "right" : "left"}>
+    <span class="sp" set:html={sp_} /><span set:html={sl} /><span
+        set:html={m}
+    />
+</p>
