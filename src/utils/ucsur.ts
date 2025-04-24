@@ -178,8 +178,16 @@ function encodeName(word: string) {
 
 export function encode(text: string) {
   return text
-    .replaceAll(/[\.\,\!\?]/g, "")
-    .split(" ")
-    .map((word) => (word in dictionary ? dictionary[word] : encodeName(word)))
-    .join("");
+    .replaceAll(/(?<=[\.\!\?\:]) /g, "<br />")
+    .split("<br />")
+    .map((sentence) =>
+      sentence
+        .replaceAll(/[\.\,\!\?\:]/g, "")
+        .split(" ")
+        .map((word) =>
+          word in dictionary ? dictionary[word] : encodeName(word),
+        )
+        .join(""),
+    )
+    .join("<br />");
 }
