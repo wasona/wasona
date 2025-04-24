@@ -1,0 +1,41 @@
+---
+import { encode } from "@utils/ucsur";
+interface Props {
+    right: boolean;
+    left: boolean;
+    // sitelen pona
+    sp?: string;
+    // sitelen Lasina
+    sl: string;
+    // translation
+    m: string;
+}
+const onclick = "this.classList.toggle('revealed')";
+const { sp, sl, m, right } = Astro.props;
+const sp_ = sp || encode(sl);
+---
+
+<style>
+    p {
+        display: flex;
+        margin: 10px 0;
+    }
+    span {
+        padding: 10px 15px;
+        background-color: var(--accent-1);
+        border-radius: 20px;
+        font-family: "nasin-nanpa", sans-serif;
+        max-width: 559px;
+        text-align: initial;
+    }
+    .left span {
+        border-bottom-left-radius: 0;
+    }
+    .right {
+        flex-direction: row-reverse;
+    }
+    .right span {
+        border-bottom-right-radius: 0;
+    }
+</style>
+<p class={right ? "right" : "left"}><span set:html={sl} /></p>
