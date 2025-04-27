@@ -8,6 +8,7 @@ richDescription: "Learn 󱥹 kin, 󱦆 n, 󱤹 mu, 󱥕 pu, 󱦈 ku, 󱦀 kijete
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
+import SentenceBuilder from "@/components/Exercise.tsx";
 
 <List>
   <Word sl="kin" m="" />
@@ -17,3 +18,5 @@ import Word from "@/components/Word.astro";
   <Word sl="ku" m="" />
   <Word sl="kijetesantakalu" m="" />
 </List>
+
+<SentenceBuilder client:only="react" />
