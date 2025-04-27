@@ -12,18 +12,8 @@ const shuffleArray = (array: any[]) => {
 };
 
 const SentenceBuilder: React.FC = () => {
-  const l1Sentence = "Does the trans raccoon steal mushrooms?";
-  const l2Words = [
-    "kijetesantakalu",
-    "tonsi",
-    "li",
-    "lanpan",
-    "ala",
-    "lanpan",
-    "e",
-    "soko",
-    "?",
-  ];
+  const l1Sentence = "Where is the library?";
+  const l2Words = ["Donde", "esta", "la", "biblioteca", "?"];
 
   const initialAvailable = shuffleArray(
     l2Words.map((word, index) => ({ id: `${index}-${word}`, word })),
@@ -49,8 +39,9 @@ const SentenceBuilder: React.FC = () => {
     e: React.DragEvent<HTMLSpanElement>,
     chip: Chip,
     from: "available" | "sentence",
+    index?: number,
   ) => {
-    e.dataTransfer.setData("text/plain", JSON.stringify({ chip, from }));
+    e.dataTransfer.setData("text/plain", JSON.stringify({ chip, from, index }));
   };
 
   const handleDropAvailable = (e: React.DragEvent<HTMLDivElement>) => {
@@ -69,7 +60,31 @@ const SentenceBuilder: React.FC = () => {
     }
   };
 
-  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
+  const handleDropOnChip = (
+    e: React.DragEvent<HTMLSpanElement>,
+    targetIndex: number,
+  ) => {
+    e.preventDefault();
+    const data = JSON.parse(e.dataTransfer.getData("text/plain"));
+
+    if (data.from === "sentence") {
+      const draggedChip: Chip = data.chip;
+      const draggedIndex: number = data.index;
+
+      if (draggedIndex === targetIndex) return;
+
+      setSentenceChips((prev) => {
+        const updated = [...prev];
+        updated.splice(draggedIndex, 1);
+        updated.splice(targetIndex, 0, draggedChip);
+        return updated;
+      });
+    }
+  };
+
+  const handleDragOver = (
+    e: React.DragEvent<HTMLDivElement> | React.DragEvent<HTMLSpanElement>,
+  ) => {
     e.preventDefault();
   };
 
@@ -90,11 +105,13 @@ const SentenceBuilder: React.FC = () => {
         onDrop={handleDropSentence}
         onDragOver={handleDragOver}
       >
-        {sentenceChips.map((chip) => (
+        {sentenceChips.map((chip, index) => (
           <span
             key={chip.id}
             draggable
-            onDragStart={(e) => handleDragStart(e, chip, "sentence")}
+            onDragStart={(e) => handleDragStart(e, chip, "sentence", index)}
+            onDragOver={handleDragOver}
+            onDrop={(e) => handleDropOnChip(e, index)}
             onClick={() => handleClickSentence(chip)}
             style={{
               display: "inline-block",
@@ -103,6 +120,7 @@ const SentenceBuilder: React.FC = () => {
               border: "1px solid #aaa",
               borderRadius: "10px",
               backgroundColor: "#eef",
+              cursor: "move",
             }}
           >
             {chip.word}
@@ -128,6 +146,7 @@ const SentenceBuilder: React.FC = () => {
               border: "1px solid #ccc",
               borderRadius: "10px",
               backgroundColor: "#f9f9f9",
+              cursor: "move",
             }}
           >
             {chip.word}
