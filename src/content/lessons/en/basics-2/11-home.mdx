@@ -3,6 +3,21 @@ slug: "en/basics/11"
 title: "lesson 11: home"
 description: "Learn ilo, lipu, poki, supa, lupa, len, open, pini, jo, ijo!"
 richDescription: "Learn 󱤎 ilo, 󱤪 lipu, 󱥓 poki, 󱥥 supa, 󱤯 lupa, 󱤥 len, 󱥇 open, 󱥐 pini, 󱤓 jo, 󱤌 ijo!"
+practice:
+  - l1: "You close the door."
+    l2: "sina pini e lupa."
+  - l1: "There is a cat in my house."
+    l2: "soweli li lon tomo mi."
+  - l1: "My house contains a cat."
+    l2: "tomo mi li jo e soweli."
+  - l1: "Your bird needs food."
+    l2: "waso sina li wile e moku."
+  - l1: "Sunita can sing well."
+    l2: "jan Sunita li ken kalama pona."
+  - l1: "I want to speak about a sewing machine."
+    l2: "mi wile toki e ilo len."
+  - l1: "Someone put the book about bugs on the desk."
+    l2: "jan li pana e lipu pipi tawa supa."
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -51,3 +66,5 @@ Inside a box, we may find clothes, papers, tools, photos... All sorts of stuff! 
   <Sentence sl="jan li sitelen e ijo suwi." m="Someone is drawing something cute." />
   <Sentence sl="mi wile toki e ijo kasi." m="I would like to talk about something related to plants." />
 </List>
+
+<Practice exercises={frontmatter.practice} client:only="react" />

@@ -3,6 +3,19 @@ slug: "en/basics/12"
 title: "lesson 12: requests"
 description: "Learn o!"
 richDescription: "Learn 󱥄 o!"
+practice:
+  - l1: "Emma, try to sleep!"
+    l2: "jan Ema o alasa lape!"
+  - l1: "Hey bird, sing to me!"
+    l2: "waso o kalama tawa mi!"
+  - l1: "Hey, Kenta!"
+    l2: "jan Kenta o!"
+  - l1: "Talk to Nina!"
+    l2: "o toki tawa jan Nina!"
+  - l1: "Draw something strange!"
+    l2: "o sitelen e ijo nasa!"
+  - l1: "Maya, give me the spoon!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -40,3 +53,5 @@ We can use those separately:
   <Sentence sl="jan Ema o!" m="Hey, Emma!" />
   <Sentence sl="o pini e lupa tomo!" m="Please close the door!" />
 </List>
+
+<Practice exercises={frontmatter.practice} client:only="react" />
