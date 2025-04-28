@@ -24,6 +24,9 @@ const Exercise: React.FC<{
   const sfx_no = new Audio(
     "https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/no.mp3",
   );
+  const sfx_done = new Audio(
+    "https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/done.mp3",
+  );
 
   const handleCheck = () => {
     const userAnswer = assembledSentence.join(" ").trim();
@@ -46,6 +49,7 @@ const Exercise: React.FC<{
       setChecked(false);
     } else {
       setStatusMessage("🎉 All exercises completed!");
+      sfx_done.play();
     }
   };
 
