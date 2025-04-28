@@ -51,7 +51,8 @@ const Exercise: React.FC<{
 
   return (
     <div className="exercise">
-      <h2>Translate: {currentExercise.l1}</h2>
+      <h2>Translate the sentence</h2>
+      <h3>{currentExercise.l1}</h3>
       <ChipBuilder
         availableWords={l2Words}
         assembledSentence={assembledSentence}

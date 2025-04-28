@@ -24,6 +24,15 @@ function without(array: number[], element: number): number[] {
   return array.filter((c) => c !== element);
 }
 
+function play(word: string) {
+  word = word.replaceAll(/[\.\,\?\!\:]/g, "");
+  new Audio(
+    `https://raw.githubusercontent.com/lipu-linku/ijo/main/kalama/kalaasi/${word}.mp3`,
+  )
+    .play()
+    .catch((e) => {});
+}
+
 const ChipBuilder: React.FC<ChipBuilderProps> = ({
   availableWords,
   assembledSentence,
@@ -47,9 +56,11 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
 
   const addUnused = (chip: number) => {
     setAssembled(without(assembled, chip));
+    play(words[chip]);
   };
   const addAssembled = (chip: number) => {
     setAssembled(appended(without(assembled, chip), chip));
+    play(words[chip]);
   };
   const insertAssembled = (chip: number, at: number) => {
     setAssembled((prev) => inserted(without(prev, chip), chip, at));
@@ -62,6 +73,7 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
   ) => {
     e.dataTransfer.setData("id", `${idx}`);
     e.dataTransfer.setData("from", from);
+    play(words[idx]);
   };
 
   const onDragOver = (e: React.DragEvent<HTMLDivElement>) => {
