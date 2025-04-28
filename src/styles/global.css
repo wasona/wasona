@@ -132,6 +132,7 @@ summary {
 .exercise-progress-container {
     height: 20px;
     border: 1px solid var(--grey);
+    background-color: var(--bg-2);
     border-radius: 10px;
 }
 .exercise-progress {
