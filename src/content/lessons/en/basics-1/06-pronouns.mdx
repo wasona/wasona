@@ -3,11 +3,29 @@ slug: "en/basics/06"
 title: "lesson 6: pronouns"
 description: "Learn ni, mi, sina, ona!"
 richDescription: "Learn 󱥁 ni, 󱤴 mi, 󱥞 sina, 󱥆 ona!"
+practice:
+  - l1: "This is a sweet plant."
+    l2: "ni li kasi suwi."
+  - l1: "These are big eyes."
+    l2: "ni li lukin suli."
+  - l1: "Your eyes are big."
+    l2: "lukin sina li suli."
+  - l1: "This bird is tiny."
+    l2: "waso ni li lili."
+  - l1: "Mean bugs ate my plant."
+    l2: "pipi ike li moku e kasi mi."
+  - l1: "You are cute."
+    l2: "sina suwi."
+  - l1: "I see them."
+    l2: "mi lukin e ona."
+  - l1: "They eat well."
+    l2: "ona li moku pona."
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
 
 ## Pronouns
 
@@ -55,3 +73,5 @@ You should already be familiar with sentences like these! In most positions in t
 </List>
 
 Toki Pona has a special rule: when **󱤴 mi** or **󱥞 sina** is the subject of the sentence, we remove the **󱤧 li** that would normally follow the subject. This is because sentences starting with **󱤴 mi** or **󱥞 sina** are extremely common!
+
+<Practice exercises={frontmatter.practice} client:only="react" />

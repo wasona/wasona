@@ -2,11 +2,27 @@
 slug: "en/basics/05"
 title: "lesson 5: parts of speech"
 description: "Learn about nouns, verbs, and adjectives!"
+practice:
+  - l1: "a strong bug"
+    l2: "pipi wawa"
+  - l1: "the strength of the bug"
+    l2: "wawa pipi"
+  - l1: "a big eye"
+    l2: "lukin suli"
+  - l1: "good food"
+    l2: "moku pona"
+  - l1: "amazingly good"
+    l2: "pona wawa"
+  - l1: "Food makes eyes better."
+    l2: "moku li pona e lukin."
+  - l1: "Animals know the cuteness of birds."
+    l2: "soweli li sona e suwi waso."
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
 
 ## Parts of speech
 
@@ -83,3 +99,5 @@ Remember how li and e seemed a little unnecessary? Now that we know any meaningf
 If you are ever confused about how to read or write a sentence, start by asking:
 "Where is the subject? Where is the verb? Where is the object?", and everything
 neatly separates into small phrases!
+
+<Practice exercises={frontmatter.practice} client:only="react" />

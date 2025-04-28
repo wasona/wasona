@@ -4,14 +4,14 @@ title: "lesson 3: simple sentences"
 description: "Learn li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
 richDescription: "Learn 󱤧 li, 󱤉 e, 󱥢 soweli, 󱥴 waso, 󱥑 pipi, 󱤗 kasi, 󱤶 moku, 󱤮 lukin, 󱥡 sona!"
 practice:
-  - l1: "Do you know this?"
-    l2: "sina sona ala sona e ni?"
   - l1: "The animal knows the bug."
     l2: "soweli li sona e pipi."
   - l1: "The bug eats plants."
     l2: "pipi li moku e kasi."
   - l1: "The bird sees plants."
     l2: "waso li lukin e kasi."
+  - l1: "The bird knows the animal."
+    l2: "waso li sona e soweli."
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -51,24 +51,5 @@ Here's what we can learn:
 - The English translation includes words and word-pieces like "the", "an", "-s", but those are guesses! The Toki Pona sentence doesn't specify if we're talking about "_a_ bird" or "_the_ bird". In longer conversations, it becomes pretty clear!
 
 (**󱤧 li** and **󱤉 e** may seem unnecessary at first. We will learn about why they are required, but to do that, we first need to learn more about parts of speech!)
-
-## Practice!
-
-Fill in the blanks:
-
-<List>
-  <Sentence
-    sl="soweli li sona e pipi."
-    m="The animal knows the bug."
-    hide="m"
-  />
-  <Sentence sl="pipi li moku e kasi." m="The bug eats plants." hide="sl" />
-  <Sentence sl="waso li lukin e kasi." m="The bird sees plants." hide="sp" />
-  <Sentence
-    sl="waso li sona e soweli."
-    m="The bird knows the animal."
-    hide="sl"
-  />
-</List>
 
 <Practice exercises={frontmatter.practice} client:only="react" />

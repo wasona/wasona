@@ -3,11 +3,27 @@ slug: "en/basics/07"
 title: "lesson 7: names"
 description: "Learn nimi, jan, sitelen, toki, ma, tomo!"
 richDescription: "Learn 󱥂 nimi, 󱤑 jan, 󱥠 sitelen, 󱥬 toki, 󱤰 ma, 󱥭 tomo!"
+practice:
+  - l1: "I draw the land."
+    l2: "mi sitelen e ma."
+  - l1: "Your picture is large."
+    l2: "sitelen sina li suli."
+  - l1: "People talk about buildings."
+    l2: "jan li toki e tomo."
+  - l1: "Your name is Maya."
+    l2: "nimi sina li jan Maja."
+  - l1: "Iman speaks Arabic."
+    l2: "jan Iman li toki Alapi."
+  - l1: "The city of Toronto is large."
+    l2: "ma tomo Towano li suli."
+  - l1: "I see Cyrillic writing."
+    l2: "mi lukin e sitelen Kililisa."
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
 
 ## Names
 
@@ -67,3 +83,5 @@ Let's practice using the new words and names in sentences:
   <Sentence sl="jan Nina li toki Kanse." m="Nina speaks French." />
   <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma knows Germany well." />
 </List>
+
+<Practice exercises={frontmatter.practice} client:only="react" />
