@@ -3,6 +3,25 @@ slug: "en/basics/15"
 title: "lesson 15: with and like"
 description: "Learn sama, kepeken, leko, ante, pali!"
 richDescription: "Learn 󱥖 sama, 󱤙 kepeken, 󱥼 leko, 󱤆 ante, 󱥉 pali!"
+practice:
+  - l1: "I translate."
+    l2: "mi ante e toki."
+  - l1: "You are still working on a novel."
+    l2: "sina awen pali e lipu suli."
+  - l1: "He has fun using drawings."
+    l2: "ona li musi kepeken sitelen."
+  - l1: "Ali fixed the desk with glue."
+    l2: "jan Ali li pona e supa kepeken ko."
+  - l1: "I sing like Noah."
+    l2: "mi kalama sama jan Nowa."
+  - l1: "I use Wikipedia."
+    l2: "mi kepeken lipu Wikipesija."
+  - l1: "This rock is like a cat."
+    l2: "kiwen ni li sama soweli."
+  - l1: "I don't want to move."
+    l2: "mi wile ala tawa."
+  - l1: "The large bird moves like an animal."
+    l2: "waso suli li tawa sama soweli."
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -84,3 +103,5 @@ Make sure not to confuse these pairs:
   <Sentence sl="mi lon ma." m="I'm on land. (preposition)" />
   <Sentence sl="mi lon e ma." m="I summon land into reality. (verb)" />
 </List>
+
+<Practice exercises={frontmatter.practice} client:only="react" />

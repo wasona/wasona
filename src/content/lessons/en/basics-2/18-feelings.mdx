@@ -3,6 +3,21 @@ slug: "en/basics/18"
 title: "lesson 18: feelings"
 description: "Learn pilin, jaki, monsuta, pakala, a!"
 richDescription: "Learn 󱥎 pilin, 󱤐 jaki, 󱥽 monsuta, 󱥈 pakala, 󱤀 a!"
+practice:
+  - l1: "I feel bad because of work."
+    l2: "mi pilin ike tan pali."
+  - l1: "Please remove the filth!"
+    l2: "o weka e jaki!"
+  - l1: "Welcome! This is a language group."
+    l2: "kama pona! ni li kulupu toki."
+  - l1: "I see. I should sing like you."
+    l2: "sona. mi o kalama sama sina."
+  - l1: "Hello! You are Emma, right?"
+    l2: "toki! sina jan Ema anu seme?"
+  - l1: "This animal feels scared because of the ocean."
+    l2: "soweli ni li pilin monsuta tan telo suli."
+  - l1: "Did the large animal damage the house?"
+    l2: "soweli suli li pakala ala pakala e tomo?"
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -79,3 +94,5 @@ When used in full sentences, it emphasises whatever it comes after:
 <List>
     <Sentence sl="mi sona ala a e ni!" m="I do <i>not</i> know that!" />
 </List>
+
+<Practice exercises={frontmatter.practice} client:only="react" />
