@@ -3,6 +3,21 @@ slug: "en/basics/09"
 title: "lesson 9: activities"
 description: "Learn utala, lape, musi, nasa, kalama, wile, ken, alasa!"
 richDescription: "Learn 󱥱 utala, 󱤢 lape, 󱤻 musi, 󱤾 nasa, 󱤕 kalama, 󱥷 wile, 󱤘 ken, 󱤃 alasa!"
+practice:
+  - l1: "A cute bird sleeps."
+    l2: "waso suwi li lape."
+  - l1: "Its name is long."
+    l2: "nimi ona li suli."
+  - l1: "to want to have fun"
+    l2: "wile musi"
+  - l1: "to try to sing"
+    l2: "alasa kalama"
+  - l1: "I start to draw the plant."
+    l2: "mi kama sitelen e kasi."
+  - l1: "The cub can fight playfully."
+    l2: "soweli lili li ken utala musi."
+  - l1: "I try to go to China."
+    l2: "mi alasa tawa ma Sonko."
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -77,3 +92,5 @@ Let's try to use preverbs in sentences:
     m="His speech is still strange to me."
   />
 </List>
+
+<Practice exercises={frontmatter.practice} client:only="react" />
