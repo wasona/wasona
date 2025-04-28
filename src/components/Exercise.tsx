@@ -6,66 +6,81 @@ interface ChipBuilderProps {
   onAssembledSentenceChange: (words: string[]) => void;
 }
 
+function shuffleArray(array: number[]) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function withIndex(arr: number[], idx: number): number[] {
+  return [...arr, idx];
+}
+
+function withoutIndex(arr: number[], idx: number): number[] {
+  const copy = [...arr];
+  const index = copy.indexOf(idx);
+  if (index > -1) copy.splice(index, 1);
+  return copy;
+}
+
 const ChipBuilder: React.FC<ChipBuilderProps> = ({
   availableWords,
   assembledSentence,
   onAssembledSentenceChange,
 }) => {
-  const [unusedWords, setUnusedWords] = useState<string[]>([]);
+  const [unused, setUnused] = useState<number[]>([]);
+  const [assembled, setAssembled] = useState<number[]>([]);
 
   useEffect(() => {
-    setUnusedWords(shuffleArray(availableWords));
+    const indices = availableWords.map((_, idx) => idx);
+    setUnused(shuffleArray(indices));
+    setAssembled([]);
   }, [JSON.stringify(availableWords)]);
 
-  function shuffleArray(array: string[]) {
-    const arr = [...array];
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    return arr;
-  }
+  useEffect(() => {
+    const sentence = assembled.map((idx) => availableWords[idx]);
+    onAssembledSentenceChange(sentence);
+  }, [assembled]);
 
-  const handleChipClick = (word: string) => {
-    if (assembledSentence.includes(word)) {
-      // Remove from assembled
-      onAssembledSentenceChange(assembledSentence.filter((w) => w !== word));
-      setUnusedWords([...unusedWords, word]);
+  const handleChipClick = (idx: number, from: "unused" | "assembled") => {
+    if (from === "unused") {
+      setUnused(withoutIndex(unused, idx));
+      setAssembled(withIndex(assembled, idx));
     } else {
-      // Add to assembled
-      onAssembledSentenceChange([...assembledSentence, word]);
-      setUnusedWords(unusedWords.filter((w) => w !== word));
+      setAssembled(withoutIndex(assembled, idx));
+      setUnused(withIndex(unused, idx));
     }
   };
 
   const onDragStart = (
     e: React.DragEvent<HTMLSpanElement>,
-    word: string,
+    idx: number,
     source: "unused" | "assembled",
   ) => {
-    e.dataTransfer.setData("word", word);
+    e.dataTransfer.setData("index", idx.toString());
     e.dataTransfer.setData("source", source);
   };
 
   const onDropUnused = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
-    const word = e.dataTransfer.getData("word");
+    const idx = parseInt(e.dataTransfer.getData("index"), 10);
     const source = e.dataTransfer.getData("source");
     if (source === "assembled") {
-      onAssembledSentenceChange(assembledSentence.filter((w) => w !== word));
-      setUnusedWords([...unusedWords, word]);
+      setAssembled(withoutIndex(assembled, idx));
+      setUnused(withIndex(unused, idx));
     }
   };
 
   const onDropAssembled = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
-    const word = e.dataTransfer.getData("word");
+    const idx = parseInt(e.dataTransfer.getData("index"), 10);
     const source = e.dataTransfer.getData("source");
     if (source === "unused") {
-      setUnusedWords(unusedWords.filter((w) => w !== word));
-      onAssembledSentenceChange([...assembledSentence, word]);
-    } else {
-      console.log("dropped assembled on not unused");
+      setUnused(withoutIndex(unused, idx));
+      setAssembled(withIndex(assembled, idx));
     }
   };
 
@@ -86,15 +101,15 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
           borderRadius: "8px",
         }}
       >
-        {assembledSentence.map((word, index) => (
+        {assembled.map((idx, i) => (
           <span
-            key={index}
+            key={`assembled-${i}-${idx}`}
             draggable
-            onDragStart={(e) => onDragStart(e, word, "assembled")}
-            onClick={() => handleChipClick(word)}
+            onDragStart={(e) => onDragStart(e, idx, "assembled")}
+            onClick={() => handleChipClick(idx, "assembled")}
             style={chipStyle}
           >
-            {word}
+            {availableWords[idx]}
           </span>
         ))}
       </div>
@@ -108,15 +123,15 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
           borderRadius: "8px",
         }}
       >
-        {unusedWords.map((word, index) => (
+        {unused.map((idx, i) => (
           <span
-            key={index}
+            key={`unused-${i}-${idx}`}
             draggable
-            onDragStart={(e) => onDragStart(e, word, "unused")}
-            onClick={() => handleChipClick(word)}
+            onDragStart={(e) => onDragStart(e, idx, "unused")}
+            onClick={() => handleChipClick(idx, "unused")}
             style={chipStyle}
           >
-            {word}
+            {availableWords[idx]}
           </span>
         ))}
       </div>

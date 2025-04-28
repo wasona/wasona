@@ -8,9 +8,10 @@ interface IExercise {
 }
 
 const exercises: IExercise[] = [
-  { id: 1, l1: "The animal knows the bug.", l2: "soweli li sona e pipi." },
-  { id: 2, l1: "The bug eats plants.", l2: "pipi li moku e kasi." },
-  { id: 3, l1: "The bird sees plants.", l2: "waso li lukin e kasi." },
+  { id: 1, l1: "Do you know this?", l2: "sina sona ala sona e ni?" },
+  { id: 2, l1: "The animal knows the bug.", l2: "soweli li sona e pipi." },
+  { id: 3, l1: "The bug eats plants.", l2: "pipi li moku e kasi." },
+  { id: 4, l1: "The bird sees plants.", l2: "waso li lukin e kasi." },
 ];
 
 const Exercise: React.FC = () => {
