@@ -167,7 +167,7 @@ summary {
     font-family: inherit;
     /* font-family: "nasin-nanpa", Arial, sans-serif; */
 }
-.chip:active {
+.chip:not(.hidden):active {
     box-shadow: 0 0;
     transform: translate(0, 2px);
     /* background-color: #400; */
