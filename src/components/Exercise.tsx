@@ -7,15 +7,8 @@ interface ChipBuilderProps {
 }
 
 // Types for a Chip
-interface Chip {
-  id: number;
-  word: string;
-}
-
-// Types for a Chip
 interface DroppedChip {
   id: string;
-  word: string;
   from: "unused" | "assembled";
 }
 
@@ -24,16 +17,16 @@ const shuffleArray = (array: any[]) => {
   return [...array].sort(() => Math.random() - 0.5);
 };
 
-function withChip(chips: Chip[], chip: Chip): Chip[] {
-  return [...chips, chip]; // TODO: at: number;
+function with_(array: number[], element: number): number[] {
+  return [...array, element]; // TODO: at: number;
 }
 
-function withoutChip(chips: Chip[], chip: Chip): Chip[] {
-  return chips.filter((c) => c.id !== chip.id);
+function without(array: number[], element: number): number[] {
+  return array.filter((c) => c !== element);
 }
 
-function chip(dropped: DroppedChip): Chip {
-  return { id: parseInt(dropped.id), word: dropped.word };
+function chip(dropped: DroppedChip): number {
+  return parseInt(dropped.id);
 }
 
 const ChipBuilder: React.FC<ChipBuilderProps> = ({
@@ -41,61 +34,59 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
   assembledSentence,
   onAssembledSentenceChange,
 }) => {
-  const [unused, setUnused] = useState<Chip[]>([]);
-  const [assembled, setAssembled] = useState<Chip[]>([]);
+  const [words, setWords] = useState<string[]>([]);
+  const [assembled, setAssembled] = useState<number[]>([]);
 
-  console.log("Unused:", unused, "Assembled:", assembled);
+  const unused = words.map((_, i) => i).filter((i) => !assembled.includes(i));
+  console.log(assembled, unused);
 
   // Initialise unused and assembled when receiving a new sentence
   useEffect(() => {
-    setUnused(shuffleArray(availableWords.map((word, id) => ({ id, word }))));
+    setWords(shuffleArray(availableWords));
     setAssembled([]);
   }, [JSON.stringify(availableWords)]);
 
   // Output current assembled sentence when it updates
   useEffect(() => {
-    onAssembledSentenceChange(assembled.map((chip) => availableWords[chip.id]));
+    onAssembledSentenceChange(assembled.map((i) => words[i]));
   }, [assembled]);
 
-  const removeChip = (chip: Chip) => {
-    setAssembled((prev) => withoutChip(assembled, chip));
-    setUnused(withoutChip(unused, chip));
+  const removeChip = (chip: number) => {
+    setAssembled((prev) => without(assembled, chip));
+    // setWords(without(words, chip));
   };
-  const addUnused = (chip: Chip) => {
+  const addUnused = (chip: number) => {
     removeChip(chip);
-    setUnused(withChip(unused, chip));
+    // setWords(with_(words, chip));
   };
-  const addAssembled = (chip: Chip) => {
+  const addAssembled = (chip: number) => {
     removeChip(chip);
-    setAssembled(withChip(assembled, chip));
+    setAssembled(with_(assembled, chip));
   };
-  const insertAssembled = (chip: Chip, at: Chip) => {
-    setUnused(withoutChip(unused, chip));
+  const insertAssembled = (chip: number, at: number) => {
+    // setWords(without(words, chip));
     setAssembled((prev) => {
-      const targetIndex = prev.indexOf(at);
-      const updated = withoutChip(prev, chip);
-      console.log(targetIndex);
-      updated.splice(targetIndex, 0, chip);
+      // const targetIndex = prev.indexOf(at);
+      const updated = without(prev, chip);
+      // console.log(targetIndex);
+      updated.splice(at, 0, chip);
       return updated;
     });
   };
 
   const onDragStart = (
     e: React.DragEvent<HTMLSpanElement>,
-    chip: Chip,
+    idx: number,
     from: "unused" | "assembled",
   ) => {
-    e.dataTransfer.setData(
-      "text/plain",
-      JSON.stringify({ id: chip.id, word: chip.word, from }),
-    );
+    e.dataTransfer.setData("text/plain", JSON.stringify({ id: idx, from }));
   };
 
   const onDragOver = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
   };
 
-  const onDropAt = (e: React.DragEvent<HTMLSpanElement>, at: Chip) => {
+  const onDropAt = (e: React.DragEvent<HTMLSpanElement>, at: number) => {
     e.preventDefault();
     const dropped: DroppedChip = JSON.parse(
       e.dataTransfer.getData("text/plain"),
@@ -136,16 +127,16 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
           borderRadius: "8px",
         }}
       >
-        {assembled.map((chip, i) => (
+        {assembled.map((idx, i) => (
           <span
-            key={`assembled-${i}-${chip.id}`}
+            key={`assembled-${i}-${idx}`}
             draggable
-            onDragStart={(e) => onDragStart(e, chip, "assembled")}
-            onDrop={(e) => onDropAt(e, chip)}
-            onClick={() => addUnused(chip)}
+            onDragStart={(e) => onDragStart(e, idx, "assembled")}
+            onDrop={(e) => onDropAt(e, i)}
+            onClick={() => addUnused(idx)}
             style={chipStyle}
           >
-            {availableWords[chip.id]}
+            {words[idx]}
           </span>
         ))}
       </div>
@@ -159,15 +150,15 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
           borderRadius: "8px",
         }}
       >
-        {unused.map((chip, i) => (
+        {unused.map((idx, i) => (
           <span
-            key={`unused-${i}-${chip.id}`}
+            key={`unused-${i}-${idx}`}
             draggable
-            onDragStart={(e) => onDragStart(e, chip, "unused")}
-            onClick={() => addAssembled(chip)}
+            onDragStart={(e) => onDragStart(e, idx, "unused")}
+            onClick={() => addAssembled(idx)}
             style={chipStyle}
           >
-            {availableWords[chip.id]}
+            {words[idx]}
           </span>
         ))}
       </div>
