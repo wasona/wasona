@@ -1,155 +1,122 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-// Types for a Chip
-interface Chip {
-  id: string;
-  word: string;
+interface ChipBuilderProps {
+  availableWords: string[];
+  assembledSentence: string[];
+  onAssembledSentenceChange: (words: string[]) => void;
 }
 
-// Helper to shuffle words
-const shuffleArray = (array: any[]) => {
-  return [...array].sort(() => Math.random() - 0.5);
-};
+const ChipBuilder: React.FC<ChipBuilderProps> = ({
+  availableWords,
+  assembledSentence,
+  onAssembledSentenceChange,
+}) => {
+  const [unusedWords, setUnusedWords] = useState<string[]>([]);
 
-const SentenceBuilder: React.FC = () => {
-  const l1Sentence = "Where is the library?";
-  const l2Words = ["Donde", "esta", "la", "biblioteca", "?"];
+  useEffect(() => {
+    setUnusedWords(shuffleArray(availableWords));
+  }, [JSON.stringify(availableWords)]);
 
-  const initialAvailable = shuffleArray(
-    l2Words.map((word, index) => ({ id: `${index}-${word}`, word })),
-  );
+  function shuffleArray(array: string[]) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
 
-  const [availableChips, setAvailableChips] =
-    useState<Chip[]>(initialAvailable);
-  const [sentenceChips, setSentenceChips] = useState<Chip[]>([]);
-
-  // Handlers for click
-  const handleClickAvailable = (chip: Chip) => {
-    setAvailableChips((prev) => prev.filter((c) => c.id !== chip.id));
-    setSentenceChips((prev) => [...prev, chip]);
+  const handleChipClick = (word: string) => {
+    if (assembledSentence.includes(word)) {
+      // Remove from assembled
+      onAssembledSentenceChange(assembledSentence.filter((w) => w !== word));
+      setUnusedWords([...unusedWords, word]);
+    } else {
+      // Add to assembled
+      onAssembledSentenceChange([...assembledSentence, word]);
+      setUnusedWords(unusedWords.filter((w) => w !== word));
+    }
   };
 
-  const handleClickSentence = (chip: Chip) => {
-    setSentenceChips((prev) => prev.filter((c) => c.id !== chip.id));
-    setAvailableChips((prev) => [...prev, chip]);
-  };
-
-  // Handlers for drag
-  const handleDragStart = (
+  const onDragStart = (
     e: React.DragEvent<HTMLSpanElement>,
-    chip: Chip,
-    from: "available" | "sentence",
-    index?: number,
+    word: string,
+    source: "unused" | "assembled",
   ) => {
-    e.dataTransfer.setData("text/plain", JSON.stringify({ chip, from, index }));
+    e.dataTransfer.setData("word", word);
+    e.dataTransfer.setData("source", source);
   };
 
-  const handleDropAvailable = (e: React.DragEvent<HTMLDivElement>) => {
+  const onDropUnused = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
-    const data = JSON.parse(e.dataTransfer.getData("text/plain"));
-    if (data.from === "sentence") {
-      handleClickSentence(data.chip);
+    const word = e.dataTransfer.getData("word");
+    const source = e.dataTransfer.getData("source");
+    if (source === "assembled") {
+      onAssembledSentenceChange(assembledSentence.filter((w) => w !== word));
+      setUnusedWords([...unusedWords, word]);
     }
   };
 
-  const handleDropSentence = (e: React.DragEvent<HTMLDivElement>) => {
+  const onDropAssembled = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
-    const data = JSON.parse(e.dataTransfer.getData("text/plain"));
-    if (data.from === "available") {
-      handleClickAvailable(data.chip);
+    const word = e.dataTransfer.getData("word");
+    const source = e.dataTransfer.getData("source");
+    if (source === "unused") {
+      setUnusedWords(unusedWords.filter((w) => w !== word));
+      onAssembledSentenceChange([...assembledSentence, word]);
+    } else {
+      console.log("dropped assembled on not unused");
     }
   };
 
-  const handleDropOnChip = (
-    e: React.DragEvent<HTMLSpanElement>,
-    targetIndex: number,
-  ) => {
-    e.preventDefault();
-    const data = JSON.parse(e.dataTransfer.getData("text/plain"));
-
-    if (data.from === "sentence") {
-      const draggedChip: Chip = data.chip;
-      const draggedIndex: number = data.index;
-
-      if (draggedIndex === targetIndex) return;
-
-      setSentenceChips((prev) => {
-        const updated = [...prev];
-        updated.splice(draggedIndex, 1);
-        updated.splice(targetIndex, 0, draggedChip);
-        return updated;
-      });
-    }
-  };
-
-  const handleDragOver = (
-    e: React.DragEvent<HTMLDivElement> | React.DragEvent<HTMLSpanElement>,
-  ) => {
+  const allowDrop = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
   };
 
   return (
-    <div style={{ fontFamily: "sans-serif", padding: 20 }}>
-      <h2>Translate the following:</h2>
-      <p>
-        <strong>{l1Sentence}</strong>
-      </p>
-
+    <div>
       <div
+        onDrop={onDropAssembled}
+        onDragOver={allowDrop}
         style={{
-          minHeight: 50,
-          border: "1px solid gray",
-          padding: 10,
-          marginBottom: 20,
+          minHeight: "50px",
+          border: "1px dashed #ccc",
+          padding: "10px",
+          marginBottom: "20px",
+          borderRadius: "8px",
         }}
-        onDrop={handleDropSentence}
-        onDragOver={handleDragOver}
       >
-        {sentenceChips.map((chip, index) => (
+        {assembledSentence.map((word, index) => (
           <span
-            key={chip.id}
+            key={index}
             draggable
-            onDragStart={(e) => handleDragStart(e, chip, "sentence", index)}
-            onDragOver={handleDragOver}
-            onDrop={(e) => handleDropOnChip(e, index)}
-            onClick={() => handleClickSentence(chip)}
-            style={{
-              display: "inline-block",
-              margin: "5px",
-              padding: "5px 10px",
-              border: "1px solid #aaa",
-              borderRadius: "10px",
-              backgroundColor: "#eef",
-              cursor: "move",
-            }}
+            onDragStart={(e) => onDragStart(e, word, "assembled")}
+            onClick={() => handleChipClick(word)}
+            style={chipStyle}
           >
-            {chip.word}
+            {word}
           </span>
         ))}
       </div>
-
       <div
-        style={{ minHeight: 50, border: "1px dashed gray", padding: 10 }}
-        onDrop={handleDropAvailable}
-        onDragOver={handleDragOver}
+        onDrop={onDropUnused}
+        onDragOver={allowDrop}
+        style={{
+          minHeight: "50px",
+          border: "1px dashed #ccc",
+          padding: "10px",
+          borderRadius: "8px",
+        }}
       >
-        {availableChips.map((chip) => (
+        {unusedWords.map((word, index) => (
           <span
-            key={chip.id}
+            key={index}
             draggable
-            onDragStart={(e) => handleDragStart(e, chip, "available")}
-            onClick={() => handleClickAvailable(chip)}
-            style={{
-              display: "inline-block",
-              margin: "5px",
-              padding: "5px 10px",
-              border: "1px solid #ccc",
-              borderRadius: "10px",
-              backgroundColor: "#f9f9f9",
-              cursor: "move",
-            }}
+            onDragStart={(e) => onDragStart(e, word, "unused")}
+            onClick={() => handleChipClick(word)}
+            style={chipStyle}
           >
-            {chip.word}
+            {word}
           </span>
         ))}
       </div>
@@ -157,4 +124,14 @@ const SentenceBuilder: React.FC = () => {
   );
 };
 
-export default SentenceBuilder;
+const chipStyle: React.CSSProperties = {
+  display: "inline-block",
+  backgroundColor: "#f0f0f0",
+  padding: "8px 12px",
+  borderRadius: "16px",
+  margin: "4px",
+  cursor: "pointer",
+  userSelect: "none",
+};
+
+export default ChipBuilder;

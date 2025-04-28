@@ -8,6 +8,7 @@ richDescription: "Learn 󱤧 li, 󱤉 e, 󱥢 soweli, 󱥴 waso, 󱥑 pipi, 󱤗
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
+import SentenceBuilder from "@/components/ExerciseManager.tsx";
 
 ## Simple sentences
 
@@ -60,3 +61,5 @@ Fill in the blanks:
     hide="sl"
   />
 </List>
+
+<SentenceBuilder client:only="react" />
