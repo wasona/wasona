@@ -22,13 +22,13 @@ const Exercise: React.FC<{
   // console.log(l2Words);
 
   const sfx_yes = new Audio(
-    "https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/yes.mp3",
+    "https://raw.githubusercontent.com/wasona/wasona/main/public/audio/yes.mp3",
   );
   const sfx_no = new Audio(
-    "https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/no.mp3",
+    "https://raw.githubusercontent.com/wasona/wasona/main/public/audio/no.mp3",
   );
   const sfx_done = new Audio(
-    "https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/done.mp3",
+    "https://raw.githubusercontent.com/wasona/wasona/main/public/audio/done.mp3",
   );
 
   const handleCheck = () => {

@@ -30,7 +30,7 @@
 
 <script lang="javascript">
     const link = (text) =>
-        `https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/ipa/${text.replaceAll(/[\.\!\?]/g, "").replaceAll(" ", "-")}.mp3`;
+        `https://raw.githubusercontent.com/wasona/wasona/main/public/audio/ipa/${text.replaceAll(/[\.\!\?]/g, "").replaceAll(" ", "-")}.mp3`;
 
     const play = (letter) => {
         new Audio(link(letter)).play().catch((e) => {});

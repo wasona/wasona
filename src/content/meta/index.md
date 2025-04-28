@@ -1,6 +1,6 @@
 ---
 ---
-# toki pona 101: a crash course into Toki Pona
+# Wasona: a crash course into Toki Pona
 
 Welcome! This course is not finished. If you're here by accident, please do not read it. Take a look at some good, finished courses instead:
 * [lipu sona pona](https://lipu-sona.pona.la/) by jan Lentan
