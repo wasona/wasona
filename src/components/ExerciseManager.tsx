@@ -1,4 +1,4 @@
-import ChipBuilder from "@/components/Exercise.tsx";
+import ChipExercise from "@/components/ChipExercise.tsx";
 import React, { useState } from "react";
 
 interface IExercise {
@@ -72,7 +72,7 @@ const Exercise: React.FC<{
         <>
           <h2>Translate the sentence</h2>
           <h3>{currentExercise.l1}</h3>
-          <ChipBuilder
+          <ChipExercise
             availableWords={l2Words}
             assembledSentence={assembledSentence}
             onAssembledSentenceChange={setAssembledSentence}

@@ -33,7 +33,7 @@ function play(word: string) {
     .catch((e) => {});
 }
 
-const ChipBuilder: React.FC<ChipBuilderProps> = ({
+const ChipExercise: React.FC<ChipBuilderProps> = ({
   availableWords,
   assembledSentence,
   onAssembledSentenceChange,
@@ -151,4 +151,4 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
   );
 };
 
-export default ChipBuilder;
+export default ChipExercise;
