@@ -1,15 +1,15 @@
 import ChipExercise from "@/components/ChipExercise.tsx";
 import React, { useState } from "react";
 
-interface IExercise {
+interface Exercise {
   l1: string;
   l2: string;
 }
 
-const Exercise: React.FC<{
-  exercises: IExercise[];
+const Practice: React.FC<{
+  exercises: Exercise[];
 }> = ({ exercises }) => {
-  const [exerciseQueue, setExerciseQueue] = useState<IExercise[]>(exercises);
+  const [exerciseQueue, setExerciseQueue] = useState<Exercise[]>(exercises);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [completed, setCompleted] = useState(0);
   const [assembledSentence, setAssembledSentence] = useState<string[]>([]);
@@ -92,4 +92,4 @@ const Exercise: React.FC<{
   );
 };
 
-export default Exercise;
+export default Practice;
