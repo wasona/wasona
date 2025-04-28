@@ -6,12 +6,6 @@ interface ChipBuilderProps {
   onAssembledSentenceChange: (words: string[]) => void;
 }
 
-// Types for a Chip
-interface DroppedChip {
-  id: string;
-  from: "unused" | "assembled";
-}
-
 // Helper to shuffle words
 const shuffleArray = (array: any[]) => {
   return [...array].sort(() => Math.random() - 0.5);

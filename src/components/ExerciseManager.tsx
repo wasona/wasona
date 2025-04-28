@@ -2,16 +2,15 @@ import ChipBuilder from "@/components/Exercise.tsx";
 import React, { useState } from "react";
 
 interface IExercise {
-  id: number;
   l1: string;
   l2: string;
 }
 
 const exercises: IExercise[] = [
-  { id: 2, l1: "Do you know this?", l2: "sina sona ala sona e ni?" },
-  { id: 3, l1: "The animal knows the bug.", l2: "soweli li sona e pipi." },
-  { id: 4, l1: "The bug eats plants.", l2: "pipi li moku e kasi." },
-  { id: 5, l1: "The bird sees plants.", l2: "waso li lukin e kasi." },
+  { l1: "Do you know this?", l2: "sina sona ala sona e ni?" },
+  { l1: "The animal knows the bug.", l2: "soweli li sona e pipi." },
+  { l1: "The bug eats plants.", l2: "pipi li moku e kasi." },
+  { l1: "The bird sees plants.", l2: "waso li lukin e kasi." },
 ];
 
 const Exercise: React.FC = () => {
