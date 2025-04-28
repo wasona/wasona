@@ -23,8 +23,14 @@ const Exercise: React.FC<{
     const correctAnswer = currentExercise.l2.trim();
     if (userAnswer === correctAnswer) {
       setStatusMessage("✅ Correct! Well done!");
+      new Audio(
+        "https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/yes.mp3",
+      ).play();
     } else {
       setStatusMessage(`❌ Not quite. Correct answer: "${correctAnswer}"`);
+      new Audio(
+        "https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/no.mp3",
+      ).play();
     }
     setChecked(true);
   };
