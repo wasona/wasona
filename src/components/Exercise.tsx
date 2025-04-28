@@ -27,7 +27,7 @@ function without(array: number[], element: number): number[] {
 function play(word: string) {
   word = word.replaceAll(/[\.\,\?\!\:]/g, "");
   new Audio(
-    `https://raw.githubusercontent.com/lipu-linku/ijo/main/kalama/kalaasi/${word}.mp3`,
+    `https://raw.githubusercontent.com/lipu-linku/ijo/main/kalama/jlakuse/${word}.mp3`,
   )
     .play()
     .catch((e) => {});
