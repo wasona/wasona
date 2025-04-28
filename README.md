@@ -1,4 +1,4 @@
-# toki pona 101
+# Wasona
 
 A WIP crash course to Toki Pona.
 
