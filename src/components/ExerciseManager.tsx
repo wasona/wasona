@@ -46,7 +46,7 @@ const Exercise: React.FC = () => {
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "600px", margin: "auto" }}>
+    <div className="exercise">
       <h2>Translate: {currentExercise.l1}</h2>
       <ChipBuilder
         availableWords={l2Words}
@@ -56,12 +56,7 @@ const Exercise: React.FC = () => {
       {statusMessage && <p style={{ marginTop: "20px" }}>{statusMessage}</p>}
       <button
         onClick={checked ? handleContinue : handleCheck}
-        style={{
-          marginTop: "20px",
-          padding: "10px 20px",
-          fontSize: "16px",
-          cursor: "pointer",
-        }}
+        className="exercise-button"
       >
         {checked ? "Continue" : "Check"}
       </button>

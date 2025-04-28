@@ -13,6 +13,7 @@
     --bg-3: #ccc;
     --txt: #080808;
     --grey: #333;
+    --grey-1: #999;
     --accent: #de6500;
     --accent-1: #f4cbaa;
 }
@@ -121,4 +122,58 @@ summary {
     background-color: var(--bg-2);
     border-bottom: 1px solid black;
     font-weight: bold;
+}
+
+.exercise {
+    padding: 20px;
+    /* max-width: 600px; */
+    margin: auto;
+}
+.exercise-assembled {
+    min-height: 60px;
+    /* border: 1px dashed #ccc; */
+    padding: 10px;
+    margin-bottom: 20px;
+    /* border-radius: 8px; */
+    border-top: 2px dotted var(--grey);
+    border-bottom: 2px dotted var(--grey);
+}
+.exercise-unused {
+    min-height: 60px;
+    /* border: 1px dashed #ccc; */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+.exercise-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.chip {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 10px 17px;
+    border-radius: 15px;
+    border: 1px solid var(--grey-1);
+    box-shadow: 0px 2px var(--grey-1);
+    margin: 4px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 120%;
+    font-family: inherit;
+    /* font-family: "nasin-nanpa", Arial, sans-serif; */
+}
+.chip:active {
+    box-shadow: 0 0;
+    transform: translate(0, 2px);
+    /* background-color: #400; */
+}
+.hidden {
+    cursor: initial;
+    color: var(--grey-1);
+    background-color: var(--grey-1);
 }

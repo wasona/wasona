@@ -97,76 +97,46 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
       <div
         onDrop={onDropAssembled}
         onDragOver={onDragOver}
-        style={{
-          minHeight: "50px",
-          border: "1px dashed #ccc",
-          padding: "10px",
-          marginBottom: "20px",
-          borderRadius: "8px",
-        }}
+        className="exercise-assembled"
       >
         {assembled.map((idx, i) => (
-          <span
+          <button
             key={`assembled-${i}-${idx}`}
             draggable
             onDragStart={(e) => onDragStart(e, idx, "assembled")}
             onDrop={(e) => onDropAt(e, i)}
             onClick={() => addUnused(idx)}
-            style={chipStyle}
+            className="chip"
           >
             {words[idx]}
-          </span>
+          </button>
         ))}
       </div>
       <div
         onDrop={onDropUnused}
         onDragOver={onDragOver}
-        style={{
-          minHeight: "50px",
-          border: "1px dashed #ccc",
-          padding: "10px",
-          borderRadius: "8px",
-        }}
+        className="exercise-unused"
       >
         {words.map((word, i) =>
           unused.includes(i) ? (
-            <span
+            <button
               key={`unused-${i}`}
               draggable
               onDragStart={(e) => onDragStart(e, i, "unused")}
               onClick={() => addAssembled(i)}
-              style={chipStyle}
+              className="chip"
             >
               {words[i]}
-            </span>
+            </button>
           ) : (
-            <span key={`unused-${i}`} style={hiddenChipStyle}>
+            <button key={`unused-${i}`} className="chip hidden">
               {words[i]}
-            </span>
+            </button>
           ),
         )}
       </div>
     </div>
   );
-};
-
-const chipStyle: React.CSSProperties = {
-  display: "inline-block",
-  backgroundColor: "#f0f0f0",
-  padding: "8px 12px",
-  borderRadius: "16px",
-  margin: "4px",
-  cursor: "pointer",
-  userSelect: "none",
-};
-const hiddenChipStyle: React.CSSProperties = {
-  display: "inline-block",
-  backgroundColor: "#f0f0f0",
-  padding: "8px 12px",
-  borderRadius: "16px",
-  margin: "4px",
-  userSelect: "none",
-  color: "#f0f0f0",
 };
 
 export default ChipBuilder;
