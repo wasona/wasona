@@ -17,8 +17,13 @@ const shuffleArray = (array: any[]) => {
   return [...array].sort(() => Math.random() - 0.5);
 };
 
-function with_(array: number[], element: number): number[] {
-  return [...array, element]; // TODO: at: number;
+function appended(array: number[], element: number): number[] {
+  return [...array, element];
+}
+
+function inserted(array: number[], element: number, at: number): number[] {
+  array.splice(at, 0, element);
+  return array;
 }
 
 function without(array: number[], element: number): number[] {
@@ -38,7 +43,6 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
   const [assembled, setAssembled] = useState<number[]>([]);
 
   const unused = words.map((_, i) => i).filter((i) => !assembled.includes(i));
-  console.log(assembled, unused);
 
   // Initialise unused and assembled when receiving a new sentence
   useEffect(() => {
@@ -51,27 +55,14 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
     onAssembledSentenceChange(assembled.map((i) => words[i]));
   }, [assembled]);
 
-  const removeChip = (chip: number) => {
-    setAssembled((prev) => without(assembled, chip));
-    // setWords(without(words, chip));
-  };
   const addUnused = (chip: number) => {
-    removeChip(chip);
-    // setWords(with_(words, chip));
+    setAssembled(without(assembled, chip));
   };
   const addAssembled = (chip: number) => {
-    removeChip(chip);
-    setAssembled(with_(assembled, chip));
+    setAssembled(appended(without(assembled, chip), chip));
   };
   const insertAssembled = (chip: number, at: number) => {
-    // setWords(without(words, chip));
-    setAssembled((prev) => {
-      // const targetIndex = prev.indexOf(at);
-      const updated = without(prev, chip);
-      // console.log(targetIndex);
-      updated.splice(at, 0, chip);
-      return updated;
-    });
+    setAssembled((prev) => inserted(without(prev, chip), chip, at));
   };
 
   const onDragStart = (
