@@ -9,13 +9,15 @@ interface IExercise {
 const Exercise: React.FC<{
   exercises: IExercise[];
 }> = ({ exercises }) => {
+  const [exerciseQueue, setExerciseQueue] = useState<IExercise[]>(exercises);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [completed, setCompleted] = useState(0);
   const [assembledSentence, setAssembledSentence] = useState<string[]>([]);
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
+  const [allDone, setAllDone] = useState(false);
 
-  const currentExercise = exercises[currentIndex];
+  const currentExercise = exerciseQueue[currentIndex];
   const l2Words = currentExercise.l2.split(" ").map((w) => w.trim());
   // console.log(l2Words);
 
@@ -38,19 +40,20 @@ const Exercise: React.FC<{
       sfx_yes.play();
     } else {
       setStatusMessage(`❌ Not quite. Correct answer: "${correctAnswer}"`);
+      setExerciseQueue((prev) => [...prev, prev[currentIndex]]);
       sfx_no.play();
     }
     setChecked(true);
   };
 
   const handleContinue = () => {
-    if (currentIndex < exercises.length - 1) {
+    if (currentIndex < exerciseQueue.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setAssembledSentence([]);
       setStatusMessage(null);
       setChecked(false);
     } else {
-      setStatusMessage("🎉 All exercises completed!");
+      setAllDone(true);
       sfx_done.play();
     }
   };
@@ -60,23 +63,31 @@ const Exercise: React.FC<{
       <div className="exercise-progress-container">
         <div
           className="exercise-progress"
-          style={{ width: `${(completed / exercises.length) * 100}%` }}
+          style={{ width: `${(completed / exerciseQueue.length) * 100}%` }}
         ></div>
       </div>
-      <h2>Translate the sentence</h2>
-      <h3>{currentExercise.l1}</h3>
-      <ChipBuilder
-        availableWords={l2Words}
-        assembledSentence={assembledSentence}
-        onAssembledSentenceChange={setAssembledSentence}
-      />
-      {statusMessage && <p style={{ marginTop: "20px" }}>{statusMessage}</p>}
-      <button
-        onClick={checked ? handleContinue : handleCheck}
-        className="exercise-button"
-      >
-        {checked ? "Continue" : "Check"}
-      </button>
+      {allDone ? (
+        <h2>🎉 All exercises completed!</h2>
+      ) : (
+        <>
+          <h2>Translate the sentence</h2>
+          <h3>{currentExercise.l1}</h3>
+          <ChipBuilder
+            availableWords={l2Words}
+            assembledSentence={assembledSentence}
+            onAssembledSentenceChange={setAssembledSentence}
+          />
+          {statusMessage && (
+            <p style={{ marginTop: "20px" }}>{statusMessage}</p>
+          )}
+          <button
+            onClick={checked ? handleContinue : handleCheck}
+            className="exercise-button"
+          >
+            {checked ? "Continue" : "Check"}
+          </button>
+        </>
+      )}
     </div>
   );
 };
