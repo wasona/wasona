@@ -30,10 +30,6 @@ function without(array: number[], element: number): number[] {
   return array.filter((c) => c !== element);
 }
 
-function chip(dropped: DroppedChip): number {
-  return parseInt(dropped.id);
-}
-
 const ChipBuilder: React.FC<ChipBuilderProps> = ({
   availableWords,
   assembledSentence,
@@ -70,7 +66,8 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
     idx: number,
     from: "unused" | "assembled",
   ) => {
-    e.dataTransfer.setData("text/plain", JSON.stringify({ id: idx, from }));
+    e.dataTransfer.setData("id", `${idx}`);
+    e.dataTransfer.setData("from", from);
   };
 
   const onDragOver = (e: React.DragEvent<HTMLDivElement>) => {
@@ -79,29 +76,25 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
 
   const onDropAt = (e: React.DragEvent<HTMLSpanElement>, at: number) => {
     e.preventDefault();
-    const dropped: DroppedChip = JSON.parse(
-      e.dataTransfer.getData("text/plain"),
-    );
-    insertAssembled(chip(dropped), at);
+    const idx = e.dataTransfer.getData("id");
+    insertAssembled(parseInt(idx), at);
   };
 
   const onDropAssembled = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
-    const dropped: DroppedChip = JSON.parse(
-      e.dataTransfer.getData("text/plain"),
-    );
-    if (dropped.from === "unused") {
-      addAssembled(chip(dropped));
+    const idx = e.dataTransfer.getData("id");
+    const from = e.dataTransfer.getData("from");
+    if (from === "unused") {
+      addAssembled(parseInt(idx));
     }
   };
 
   const onDropUnused = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
-    const dropped: DroppedChip = JSON.parse(
-      e.dataTransfer.getData("text/plain"),
-    );
-    if (dropped.from === "assembled") {
-      addUnused(chip(dropped));
+    const idx = e.dataTransfer.getData("id");
+    const from = e.dataTransfer.getData("from");
+    if (from === "assembled") {
+      addUnused(parseInt(idx));
     }
   };
 
@@ -141,17 +134,23 @@ const ChipBuilder: React.FC<ChipBuilderProps> = ({
           borderRadius: "8px",
         }}
       >
-        {unused.map((idx, i) => (
-          <span
-            key={`unused-${i}-${idx}`}
-            draggable
-            onDragStart={(e) => onDragStart(e, idx, "unused")}
-            onClick={() => addAssembled(idx)}
-            style={chipStyle}
-          >
-            {words[idx]}
-          </span>
-        ))}
+        {words.map((word, i) =>
+          unused.includes(i) ? (
+            <span
+              key={`unused-${i}`}
+              draggable
+              onDragStart={(e) => onDragStart(e, i, "unused")}
+              onClick={() => addAssembled(i)}
+              style={chipStyle}
+            >
+              {words[i]}
+            </span>
+          ) : (
+            <span key={`unused-${i}`} style={hiddenChipStyle}>
+              {words[i]}
+            </span>
+          ),
+        )}
       </div>
     </div>
   );
@@ -165,6 +164,15 @@ const chipStyle: React.CSSProperties = {
   margin: "4px",
   cursor: "pointer",
   userSelect: "none",
+};
+const hiddenChipStyle: React.CSSProperties = {
+  display: "inline-block",
+  backgroundColor: "#f0f0f0",
+  padding: "8px 12px",
+  borderRadius: "16px",
+  margin: "4px",
+  userSelect: "none",
+  color: "#f0f0f0",
 };
 
 export default ChipBuilder;
