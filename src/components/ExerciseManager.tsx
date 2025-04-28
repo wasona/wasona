@@ -18,19 +18,22 @@ const Exercise: React.FC<{
   const l2Words = currentExercise.l2.split(" ").map((w) => w.trim());
   // console.log(l2Words);
 
+  const sfx_yes = new Audio(
+    "https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/yes.mp3",
+  );
+  const sfx_no = new Audio(
+    "https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/no.mp3",
+  );
+
   const handleCheck = () => {
     const userAnswer = assembledSentence.join(" ").trim();
     const correctAnswer = currentExercise.l2.trim();
     if (userAnswer === correctAnswer) {
       setStatusMessage("✅ Correct! Well done!");
-      new Audio(
-        "https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/yes.mp3",
-      ).play();
+      sfx_yes.play();
     } else {
       setStatusMessage(`❌ Not quite. Correct answer: "${correctAnswer}"`);
-      new Audio(
-        "https://raw.githubusercontent.com/AcipenserSturio/toki-pona-101/main/public/audio/no.mp3",
-      ).play();
+      sfx_no.play();
     }
     setChecked(true);
   };
