@@ -10,6 +10,7 @@ const Exercise: React.FC<{
   exercises: IExercise[];
 }> = ({ exercises }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [completed, setCompleted] = useState(0);
   const [assembledSentence, setAssembledSentence] = useState<string[]>([]);
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
@@ -31,6 +32,7 @@ const Exercise: React.FC<{
   const handleCheck = () => {
     const userAnswer = assembledSentence.join(" ").trim();
     const correctAnswer = currentExercise.l2.trim();
+    setCompleted(completed + 1);
     if (userAnswer === correctAnswer) {
       setStatusMessage("✅ Correct! Well done!");
       sfx_yes.play();
@@ -55,6 +57,12 @@ const Exercise: React.FC<{
 
   return (
     <div className="exercise">
+      <div className="exercise-progress-container">
+        <div
+          className="exercise-progress"
+          style={{ width: `${(completed / exercises.length) * 100}%` }}
+        ></div>
+      </div>
       <h2>Translate the sentence</h2>
       <h3>{currentExercise.l1}</h3>
       <ChipBuilder

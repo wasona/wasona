@@ -129,6 +129,17 @@ summary {
     /* max-width: 600px; */
     margin: auto;
 }
+.exercise-progress-container {
+    height: 20px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+}
+.exercise-progress {
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--accent);
+    transition: width 0.5s ease;
+}
 .exercise-assembled {
     min-height: 60px;
     /* border: 1px dashed #ccc; */
