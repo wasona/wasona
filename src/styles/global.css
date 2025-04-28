@@ -24,7 +24,7 @@ body {
     margin: 0px;
     font-family: "nasin-nanpa", "Lato", sans-serif;
     color: var(--txt);
-    line-height: 1.8em;
+    line-height: 1.7em;
     font-size: 18px;
 }
 
@@ -98,7 +98,7 @@ tr:nth-child(even) {
 
 .sp {
     font-size: 150%;
-    line-height: 1.8;
+    /* line-height: 1.8; */
 }
 .sl {
     font-style: italic;
