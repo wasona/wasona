@@ -5,9 +5,9 @@ import "@/styles/global.css";
 import { SITE_URL } from "@consts";
 
 interface Props {
-    title: string;
-    description: string;
-    image?: string;
+  title: string;
+  description: string;
+  image?: string;
 }
 const siteUrl = new URL(import.meta.env.BASE_URL, Astro.site);
 const socialImageURL = new URL("./logo.png", siteUrl);

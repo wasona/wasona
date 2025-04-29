@@ -1,48 +1,48 @@
 ---
 interface Props {
-    id: string;
+  id: string;
 }
 const { id } = Astro.props;
 const onclick = (option: string) =>
-    `document.getElementById("messenger-${id}").className = "messenger-${option}";`;
+  `document.getElementById("messenger-${id}").className = "messenger-${option}";`;
 ---
 
 <style>
-    .messenger-sp,
-    .messenger-sl,
-    .messenger-m {
-        border-left: 2px dotted var(--grey);
-        border-right: 2px dotted var(--grey);
-    }
-    .messenger-box {
-        padding: 10px;
-        background-color: var(--bg-1);
-    }
-    .messenger-selector {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    button {
-        padding: 10px;
-        border: 0;
-        font-family: inherit;
-        font-size: inherit;
-        background-color: var(--bg-2);
-        border-bottom: 1px black solid;
-        transition: background-color 0.1s ease-out;
-    }
-    button:hover {
-        background-color: var(--bg-3);
-    }
+  .messenger-sp,
+  .messenger-sl,
+  .messenger-m {
+    border-left: 2px dotted var(--grey);
+    border-right: 2px dotted var(--grey);
+  }
+  .messenger-box {
+    padding: 10px;
+    background-color: var(--bg-1);
+  }
+  .messenger-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  button {
+    padding: 10px;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--bg-2);
+    border-bottom: 1px black solid;
+    transition: background-color 0.1s ease-out;
+  }
+  button:hover {
+    background-color: var(--bg-3);
+  }
 </style>
 
 <div id={`messenger-${id}`} class="messenger-sp">
-    <div class="messenger-selector">
-        <button onclick={onclick("sp")}>sitelen pona</button>
-        <button onclick={onclick("sl")}>sitelen Lasina</button>
-        <button onclick={onclick("m")}>Translation</button>
-    </div>
-    <div class="messenger-box">
-        <slot />
-    </div>
+  <div class="messenger-selector">
+    <button onclick={onclick("sp")}>sitelen pona</button>
+    <button onclick={onclick("sl")}>sitelen Lasina</button>
+    <button onclick={onclick("m")}>Translation</button>
+  </div>
+  <div class="messenger-box">
+    <slot />
+  </div>
 </div>

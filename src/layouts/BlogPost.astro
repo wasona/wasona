@@ -12,22 +12,22 @@ const { title, description, prev, next } = Astro.props;
 
 <!-- <Debug answer={Astro.props} /> -->
 <html lang="en">
-    <head>
-        <BaseHead title={title} description={description} />
-    </head>
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
 
-    <body>
-        <Header />
-        <main>
-            <article>
-                <h1>{title}</h1>
-                <PrevNext prev={prev} next={next} />
-                <section>
-                    <slot />
-                </section>
-                <PrevNext prev={prev} next={next} />
-            </article>
-        </main>
-        <Footer />
-    </body>
+  <body>
+    <Header />
+    <main>
+      <article>
+        <h1>{title}</h1>
+        <PrevNext prev={prev} next={next} />
+        <section>
+          <slot />
+        </section>
+        <PrevNext prev={prev} next={next} />
+      </article>
+    </main>
+    <Footer />
+  </body>
 </html>

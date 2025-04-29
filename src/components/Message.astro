@@ -1,14 +1,14 @@
 ---
 import { encode } from "@/utils/ucsur";
 interface Props {
-    right: boolean;
-    left: boolean;
-    // sitelen pona
-    sp?: string;
-    // sitelen Lasina
-    sl: string;
-    // translation
-    m: string;
+  right: boolean;
+  left: boolean;
+  // sitelen pona
+  sp?: string;
+  // sitelen Lasina
+  sl: string;
+  // translation
+  m: string;
 }
 const onclick = "this.classList.toggle('revealed')";
 const { sp, sl, m, right } = Astro.props;
@@ -16,43 +16,41 @@ const sp_ = sp || encode(sl);
 ---
 
 <style>
-    p {
-        display: flex;
-        margin: 10px 0;
-    }
-    span {
-        padding: 10px 15px;
-        background-color: var(--accent-1);
-        border-radius: 20px;
-        /* font-family: "nasin-nanpa", sans-serif; */
-        max-width: 559px;
-        text-align: initial;
-        display: none;
-    }
-    .left span {
-        border-bottom-left-radius: 0;
-    }
-    .right {
-        flex-direction: row-reverse;
-    }
-    .right span {
-        border-bottom-right-radius: 0;
-    }
+  p {
+    display: flex;
+    margin: 10px 0;
+  }
+  span {
+    padding: 10px 15px;
+    background-color: var(--accent-1);
+    border-radius: 20px;
+    /* font-family: "nasin-nanpa", sans-serif; */
+    max-width: 559px;
+    text-align: initial;
+    display: none;
+  }
+  .left span {
+    border-bottom-left-radius: 0;
+  }
+  .right {
+    flex-direction: row-reverse;
+  }
+  .right span {
+    border-bottom-right-radius: 0;
+  }
 </style>
 
 <style is:global>
-    .messenger-sp span:nth-child(1) {
-        display: initial;
-    }
-    .messenger-sl span:nth-child(2) {
-        display: initial;
-    }
-    .messenger-m span:nth-child(3) {
-        display: initial;
-    }
+  .messenger-sp span:nth-child(1) {
+    display: initial;
+  }
+  .messenger-sl span:nth-child(2) {
+    display: initial;
+  }
+  .messenger-m span:nth-child(3) {
+    display: initial;
+  }
 </style>
 <p class={right ? "right" : "left"}>
-    <span class="sp" set:html={sp_} /><span set:html={sl} /><span
-        set:html={m}
-    />
+  <span class="sp" set:html={sp_} /><span set:html={sl} /><span set:html={m} />
 </p>

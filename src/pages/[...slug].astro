@@ -3,20 +3,20 @@ import BlogPost from "@/layouts/BlogPost.astro";
 import { type CollectionEntry, getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
-    const posts = (await getCollection("blog")).sort((a, b) =>
-        a.filePath > b.filePath ? -1 : b.filePath > a.filePath ? 1 : 0,
-    );
-    const paths = posts.map((post, i) => ({
-        params: { slug: post.id },
-        props: {
-            ...post,
-            prevnext: {
-                prev: i + 1 === posts.length ? "" : posts[i + 1].id,
-                next: i === 0 ? "" : posts[i - 1].id,
-            },
-        },
-    }));
-    return paths;
+  const posts = (await getCollection("blog")).sort((a, b) =>
+    a.filePath > b.filePath ? -1 : b.filePath > a.filePath ? 1 : 0,
+  );
+  const paths = posts.map((post, i) => ({
+    params: { slug: post.id },
+    props: {
+      ...post,
+      prevnext: {
+        prev: i + 1 === posts.length ? "" : posts[i + 1].id,
+        next: i === 0 ? "" : posts[i - 1].id,
+      },
+    },
+  }));
+  return paths;
 }
 type Props = CollectionEntry<"blog">;
 
@@ -25,5 +25,5 @@ const { Content } = await render(post);
 ---
 
 <BlogPost {...{ ...post.data, ...post.prevnext }}>
-    <Content />
+  <Content />
 </BlogPost>
