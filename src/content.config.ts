@@ -9,6 +9,11 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     richDescription: z.string().optional(),
+    order: z.string(),
+    practice: z
+      .array(z.object({ l1: z.string(), l2: z.string() }))
+      .nonempty()
+      .optional(),
   }),
 });
 

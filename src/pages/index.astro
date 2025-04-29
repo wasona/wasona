@@ -7,7 +7,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "@consts";
 import { getCollection, render } from "astro:content";
 
 const posts = (await getCollection("blog")).sort((a, b) =>
-  a.filePath > b.filePath ? -1 : b.filePath > a.filePath ? 1 : 0,
+  a.data.order > b.data.order ? -1 : b.data.order > a.data.order ? 1 : 0,
 );
 const meta = (await getCollection("meta")).find((post) => post.id == "index")!;
 
@@ -51,9 +51,10 @@ const { Content: Meta } = await render(meta);
         <PostList
           posts={posts.filter((post) => post.filePath!.includes("/basics-3"))}
         />
-        <h2>Learn more!</h2>
+        <h2>Q&A!</h2>
         <p>
-          Do you have some unanswered questions? There is always more to learn!
+          Some finer details that aren't necessary to know, but you might be
+          interested in!
         </p>
         <PostList
           posts={posts.filter((post) => post.filePath!.includes("/more"))}
