@@ -171,6 +171,9 @@ summary {
     gap: 10px;
     align-items: center;
 }
+.exercise-footer p {
+    margin: 0;
+}
 .exercise-button {
     padding: 10px 20px;
     font-size: 16px;
