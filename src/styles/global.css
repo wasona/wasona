@@ -166,8 +166,12 @@ summary {
     max-width: 500px;
     margin: auto;
 }
+.exercise-footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 .exercise-button {
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;

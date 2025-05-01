@@ -77,15 +77,15 @@ const Practice: React.FC<{
             assembledSentence={assembledSentence}
             onAssembledSentenceChange={setAssembledSentence}
           />
-          {statusMessage && (
-            <p style={{ marginTop: "20px" }}>{statusMessage}</p>
-          )}
-          <button
-            onClick={checked ? handleContinue : handleCheck}
-            className="exercise-button"
-          >
-            {checked ? "Continue" : "Check"}
-          </button>
+          <div className="exercise-footer">
+            <button
+              onClick={checked ? handleContinue : handleCheck}
+              className="exercise-button"
+            >
+              {checked ? "Continue" : "Check"}
+            </button>
+            {statusMessage && <p>{statusMessage}</p>}
+          </div>
         </>
       )}
     </div>
