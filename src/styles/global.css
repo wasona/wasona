@@ -67,10 +67,6 @@ h1 {
     line-height: 120%;
 }
 
-hr {
-    color: var(--accent);
-}
-
 table {
     width: 100%;
     text-align: initial;
