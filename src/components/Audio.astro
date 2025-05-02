@@ -38,6 +38,18 @@ const action = `new Audio('${link}').play().catch((e) => {})`;
   }
   button {
     min-width: 30px;
+    background-color: var(--bg-2);
+    border-bottom: 2px solid var(--button-out);
+    border-right: 2px solid var(--button-out);
+    border-top: 2px solid var(--button-in);
+    border-left: 2px solid var(--button-in);
+  }
+  button:active {
+    background-color: var(--bg-3);
+    border-bottom: 2px solid var(--button-in);
+    border-right: 2px solid var(--button-in);
+    border-top: 2px solid var(--button-out);
+    border-left: 2px solid var(--button-out);
   }
 </style>
 {

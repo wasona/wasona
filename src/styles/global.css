@@ -18,6 +18,8 @@
     --grey-1: #999;
     --accent: #de6500;
     --accent-1: #f4cbaa;
+    --button-in: #e3e3e3;
+    --button-out: #979797;
 }
 
 body {
