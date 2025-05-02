@@ -80,9 +80,9 @@ const Practice: React.FC<{
           <div className="exercise-footer">
             <button
               onClick={checked ? handleContinue : handleCheck}
-              className="exercise-button"
+              className="exercise-button chip"
             >
-              {checked ? "Continue" : "Check"}
+              {checked ? "continue" : "check"}
             </button>
             {statusMessage && <p>{statusMessage}</p>}
           </div>
