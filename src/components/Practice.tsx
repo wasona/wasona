@@ -76,6 +76,7 @@ const Practice: React.FC<{
             availableWords={l2Words}
             assembledSentence={assembledSentence}
             onAssembledSentenceChange={setAssembledSentence}
+            locked={checked}
           />
           <div className="exercise-footer">
             <button

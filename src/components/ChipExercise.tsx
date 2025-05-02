@@ -4,6 +4,7 @@ interface ChipBuilderProps {
   availableWords: string[];
   assembledSentence: string[];
   onAssembledSentenceChange: (words: string[]) => void;
+  locked: boolean;
 }
 
 // Helper to shuffle words
@@ -37,6 +38,7 @@ const ChipExercise: React.FC<ChipBuilderProps> = ({
   availableWords,
   assembledSentence,
   onAssembledSentenceChange,
+  locked,
 }) => {
   const [words, setWords] = useState<string[]>([]);
   const [assembled, setAssembled] = useState<number[]>([]);
@@ -55,14 +57,17 @@ const ChipExercise: React.FC<ChipBuilderProps> = ({
   }, [assembled]);
 
   const addUnused = (chip: number) => {
+    if (locked) return;
     setAssembled(without(assembled, chip));
     play(words[chip]);
   };
   const addAssembled = (chip: number) => {
+    if (locked) return;
     setAssembled(appended(without(assembled, chip), chip));
     play(words[chip]);
   };
   const insertAssembled = (chip: number, at: number) => {
+    if (locked) return;
     setAssembled((prev) => inserted(without(prev, chip), chip, at));
   };
 
