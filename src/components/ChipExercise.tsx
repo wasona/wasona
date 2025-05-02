@@ -78,7 +78,7 @@ const ChipExercise: React.FC<ChipBuilderProps> = ({
   ) => {
     e.dataTransfer.setData("id", `${idx}`);
     e.dataTransfer.setData("from", from);
-    play(words[idx]);
+    // play(words[idx]);
   };
 
   const onDragOver = (e: React.DragEvent<HTMLDivElement>) => {
