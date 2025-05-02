@@ -1,7 +1,4 @@
----
-const link: Record<string, string> = {
-  ŋwiəŋ:
-    "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/16/Nguyen.ogg/Nguyen.ogg.mp3",
+export const ipaRecordings: Record<string, string> = {
   b: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Voiced_bilabial_plosive.ogg",
   p: "https://upload.wikimedia.org/wikipedia/commons/5/51/Voiceless_bilabial_plosive.ogg",
 
@@ -128,21 +125,7 @@ const link: Record<string, string> = {
   ʎ: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Palatal_lateral_approximant.ogg",
   ʟ: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Velar_lateral_approximant.ogg",
   // :  "https://upload.wikimedia.org/wikipedia/commons/7/73/Uvular_lateral_approximant.ogg",
+
+  ŋwiəŋ:
+    "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/16/Nguyen.ogg/Nguyen.ogg.mp3",
 };
-
-interface Props {
-  src?: string;
-  ipa?: string;
-}
-const { src, ipa } = Astro.props;
----
-
-<style>
-  button {
-    font-size: inherit;
-    font-family: inherit;
-  }
-</style>
-<button onclick={`new Audio('${ipa ? link[ipa] : src}').play()`}
-  ><slot /></button
->

@@ -1,7 +1,20 @@
-<style>
-  #phono,
-  td {
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style is:global>
+  #phono * {
     text-align: center;
+  }
+</style>
+<style>
+  h3 {
+    margin: 5px;
+  }
+  #phono table {
+    table-layout: fixed;
+    width: calc(100% - 1px);
+    margin: auto;
   }
   #phono {
     display: flex;
@@ -12,36 +25,11 @@
       flex-direction: row;
     }
   }
-
-  #phono table {
-    table-layout: fixed;
-    width: calc(100% - 1px);
-    margin: auto;
-  }
-  td:not(.no-audio) {
-    font-size: 120%;
-    cursor: pointer;
-    transition: background-color 0.1s ease-out;
-  }
-  td:not(.no-audio):hover {
-    background-color: var(--bg-3);
-  }
 </style>
-
-<script lang="javascript">
-  const link = (text) =>
-    `https://raw.githubusercontent.com/wasona/wasona/main/public/audio/ipa/${text.replaceAll(/[\.\!\?]/g, "").replaceAll(" ", "-")}.mp3`;
-
-  const play = (letter) => {
-    new Audio(link(letter)).play().catch((e) => {});
-  };
-</script>
 
 <div id="phono">
   <div id="consonants">
-    <span>
-      <b>Consonants</b>
-    </span>
+    <h3>Consonants</h3>
     <table>
       <thead>
         <tr>
@@ -53,36 +41,34 @@
       </thead>
       <tbody>
         <tr>
-          <td class="no-audio">Nasal</td>
-          <td onclick="play('m')">m</td>
-          <td onclick="play('n')">n</td>
-          <td class="no-audio"></td>
+          <td>Nasal</td>
+          <Audio td from="ipa" file="m" />
+          <Audio td from="ipa" file="n" />
+          <td></td>
         </tr>
         <tr>
-          <td class="no-audio">Stop</td>
-          <td onclick="play('p')">p</td>
-          <td onclick="play('t')">t</td>
-          <td onclick="play('k')">k</td>
+          <td>Stop</td>
+          <Audio td from="ipa" file="p" />
+          <Audio td from="ipa" file="t" />
+          <Audio td from="ipa" file="k" />
         </tr>
         <tr>
-          <td class="no-audio">Fric.</td>
-          <td class="no-audio"></td>
-          <td onclick="play('s')">s</td>
-          <td class="no-audio"></td>
+          <td>Fric.</td>
+          <td></td>
+          <Audio td from="ipa" file="s" />
+          <td></td>
         </tr>
         <tr>
-          <td class="no-audio">Appr.</td>
-          <td onclick="play('w')">w</td>
-          <td onclick="play('l')">l</td>
-          <td onclick="play('j')">j</td>
+          <td>Appr.</td>
+          <Audio td from="ipa" file="w" />
+          <Audio td from="ipa" file="l" />
+          <Audio td from="ipa" file="j" />
         </tr>
       </tbody>
     </table>
   </div>
   <div id="vowels">
-    <span>
-      <b>Vowels</b>
-    </span>
+    <h3>Vowels</h3>
     <table>
       <thead>
         <tr>
@@ -94,22 +80,22 @@
       </thead>
       <tbody>
         <tr>
-          <td class="no-audio">High</td>
-          <td onclick="play('i')">i</td>
-          <td class="no-audio"></td>
-          <td onclick="play('u')">u</td>
+          <td>High</td>
+          <Audio td from="ipa" file="i" />
+          <td></td>
+          <Audio td from="ipa" file="u" />
         </tr>
         <tr>
-          <td class="no-audio">Mid</td>
-          <td onclick="play('e')">e</td>
-          <td class="no-audio"></td>
-          <td onclick="play('o')">o</td>
+          <td>Mid</td>
+          <Audio td from="ipa" file="e" />
+          <td></td>
+          <Audio td from="ipa" file="o" />
         </tr>
         <tr>
-          <td class="no-audio">Low</td>
-          <td class="no-audio"></td>
-          <td onclick="play('a')">a</td>
-          <td class="no-audio"></td>
+          <td>Low</td>
+          <td></td>
+          <Audio td from="ipa" file="a" />
+          <td></td>
         </tr>
       </tbody>
     </table>

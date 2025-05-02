@@ -1,0 +1,51 @@
+---
+import { ipaRecordings } from "@/utils/audio";
+
+interface Props {
+  td?: boolean;
+  from: "ipa" | "linku/asi";
+  file: string;
+  text?: string;
+}
+const { td, from, file, text } = Astro.props;
+
+const link =
+  from == "ipa"
+    ? ipaRecordings[file]
+    : `https://raw.githubusercontent.com/lipu-linku/ijo/main/kalama/kalaasi2023/${file}.mp3`;
+
+const action = `new Audio('${link}').play().catch((e) => {})`;
+---
+
+<style>
+  button {
+    font-size: inherit;
+    font-family: inherit;
+  }
+</style>
+<style>
+  td {
+    transition: background-color 0.1s ease-out;
+    cursor: pointer;
+  }
+  td:hover {
+    background-color: var(--bg-3);
+  }
+  td.ipa {
+    font-size: 120%;
+  }
+  button {
+    min-width: 30px;
+  }
+</style>
+{
+  td ? (
+    <td class={from == "ipa" ? "ipa" : ""} onclick={action}>
+      {text ? text : file}
+    </td>
+  ) : (
+    <button class={from == "ipa" ? "ipa" : ""} onclick={action}>
+      {text ? text : file}
+    </button>
+  )
+}

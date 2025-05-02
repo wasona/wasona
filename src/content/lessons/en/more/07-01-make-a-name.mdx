@@ -5,7 +5,7 @@ description: "Learn to making a new proper name!"
 order: "1-07-01"
 ---
 
-import AudioButton from "@/components/AudioButton.astro";
+import Audio from "@/components/Audio.astro";
 
 Two disclaimers:
 
@@ -51,7 +51,7 @@ If you want, you can also just come up with something different! [jan Tokawi](ht
 
 ## 3. How do we make the name work in Toki Pona?
 
-You might know the Vietnamese surname Nguyen, pronounced <AudioButton ipa="ŋwiəŋ">[ŋwiəŋ]</AudioButton>. But in English, these sounds can't go in that order. So when English speakers say Ngyuen, they adapt it to what English allows -- "win".
+You might know the Vietnamese surname Nguyen, pronounced <Audio ipa="ŋwiəŋ">[ŋwiəŋ]</Audio>. But in English, these sounds can't go in that order. So when English speakers say Ngyuen, they adapt it to what English allows -- "win".
 
 When saying names in Toki Pona, we do something similar: we change the shape of the name to make it pronounceable. We call this process *tokiponisation*. Some parts of it can be explained in [guidelines](https://jan-ne.github.io/tp/tpize). Other parts are more art-like, like knowing what to experiment with.
 
@@ -61,17 +61,17 @@ Let's go over the guidelines briefly.
 
 **First**, many consonants from your language may change:
 
-* <AudioButton ipa="b">[b]</AudioButton>, <AudioButton ipa="p">[p]</AudioButton>, <AudioButton ipa="f">[f]</AudioButton> all become p.
-* <AudioButton ipa="d">[d]</AudioButton>, <AudioButton ipa="t">[t]</AudioButton> both become t.
-* <AudioButton ipa="g">[g]</AudioButton>, <AudioButton ipa="k">[k]</AudioButton>, <AudioButton ipa="χ">[χ]</AudioButton>, <AudioButton ipa="ʁ">[ʁ]</AudioButton> all become k.
-* <AudioButton ipa="θ">[θ]</AudioButton> becomes t or s.
-* <AudioButton ipa="s">[s]</AudioButton>, <AudioButton ipa="z">[z]</AudioButton>, <AudioButton ipa="ʃ">[ʃ]</AudioButton>, <AudioButton ipa="ʒ">[ʒ]</AudioButton>, <AudioButton ipa="tʃ">[tʃ]</AudioButton>, <AudioButton ipa="dʒ">[dʒ]</AudioButton> all become s.
-* <AudioButton ipa="w">[w]</AudioButton>, <AudioButton ipa="v">[v]</AudioButton>, <AudioButton ipa="ɻʷ">[ɹ]</AudioButton> all become w.
-* <AudioButton ipa="r">[r]</AudioButton>, <AudioButton ipa="ɾ">[ɾ]</AudioButton>, <AudioButton ipa="l">[l]</AudioButton> all become l.
-* <AudioButton ipa="h">[h]</AudioButton> disappears completely.
+* <Audio from="ipa" file="b" />, <Audio from="ipa" file="p" />, <Audio from="ipa" file="f" /> all become p.
+* <Audio from="ipa" file="d" />, <Audio from="ipa" file="t" /> both become t.
+* <Audio from="ipa" file="g" />, <Audio from="ipa" file="k" />, <Audio from="ipa" file="χ" />, <Audio from="ipa" file="ʁ" /> all become k.
+* <Audio from="ipa" file="θ" /> becomes t or s.
+* <Audio from="ipa" file="s" />, <Audio from="ipa" file="z" />, <Audio from="ipa" file="ʃ" />, <Audio from="ipa" file="ʒ" />, <Audio from="ipa" file="tʃ" />, <Audio from="ipa" file="dʒ" /> all become s.
+* <Audio from="ipa" file="w" />, <Audio from="ipa" file="v" />, <Audio from="ipa" file="ɻʷ" text="ɹ" /> all become w.
+* <Audio from="ipa" file="r" />, <Audio from="ipa" file="ɾ" />, <Audio from="ipa" file="l" /> all become l.
+* <Audio from="ipa" file="h" /> disappears completely.
 
 More consonants exist in other languages, of course, but these are enough to give you the overall picture.  
-Something interesting to notice here are the sounds <AudioButton ipa="ɻʷ">[ɹ]</AudioButton>, <AudioButton ipa="r">[r]</AudioButton>, <AudioButton ipa="ʁ">[ʁ]</AudioButton>. In many European languages, these sounds are spelled with "r". English has the first one, Russian has the second one, French has the third one. But in Toki Pona, they remain different: w, l, and k!
+Something interesting to notice here are the sounds <Audio from="ipa" file="ɻʷ" text="ɹ" />, <Audio from="ipa" file="r" />, <Audio from="ipa" file="ʁ" />. In many European languages, these sounds are spelled with "r". English has the first one, Russian has the second one, French has the third one. But in Toki Pona, they remain different: w, l, and k!
 
 **Second**, your word may have *diphthongs*: vowels during which the tongue has to move. In English, names like *Jake, Joe, Ryan, Roy, Howard* have diphthongs. While tokiponising, think of diphthongs as a sequence of vowel + j or w. For example, the five names from before become *Sejk, Sow, Wajan, Woj, Awat* at this stage.
 
