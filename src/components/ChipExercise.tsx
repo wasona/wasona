@@ -69,6 +69,7 @@ const ChipExercise: React.FC<ChipBuilderProps> = ({
   const insertAssembled = (chip: number, at: number) => {
     if (locked) return;
     setAssembled((prev) => inserted(without(prev, chip), chip, at));
+    play(words[chip]);
   };
 
   const onDragStart = (
