@@ -4,6 +4,13 @@ title: "lesson 28: moo!"
 description: "Learn taso, n, mu, pu, ku, kijetesantakalu!"
 richDescription: "Learn 󱥨 taso, 󱦆 n, 󱤹 mu, 󱥕 pu, 󱦈 ku, 󱦀 kijetesantakalu!"
 order: "0-28"
+practice:
+  - l1: "I see a lone turquoise duck."
+    l2: "mi lukin e waso laso taso."
+  - l1: "The raccoon loves you."
+    l2: "kijetesantakalu li olin e sina."
+  - l1: "If you want to, please read 'Toki Pona: The Language of Good' by Sonja Lang."
+    l2: "sina wile la o pu."
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -53,8 +60,8 @@ It's so long! And so specific! This is because it was created by jan Sonja for t
 These two words also require a history note:
 
 <List>
-  <Word sl="pu" m="<i>Toki Pona: The Language of Good (2014)</i>, by jan Sonja" />
-  <Word sl="ku" m="<i>Toki Pona Dictionary (2021)</i>, by jan Sonja" />
+  <Word sl="pu" m="(to interact with) <i>Toki Pona: The Language of Good (2014)</i>, by jan Sonja" />
+  <Word sl="ku" m="(to interact with) <i>Toki Pona Dictionary (2021)</i>, by jan Sonja" />
 </List>
 
 These words refer specifically to books made by [jan Sonja](https://tokipona.org), the creator of Toki Pona. They are good books! Why do they have specialised words? Probably because it's funny.
@@ -70,3 +77,5 @@ You might not know the word **󱦅 lanpan**, but you can see the translation, an
 
 ## See also
 * [Q: what is jan Sonja up to these days?](en/more/jan-sonja/)
+
+<Practice exercises={frontmatter.practice} client:only="react" />

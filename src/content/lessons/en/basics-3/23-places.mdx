@@ -4,6 +4,19 @@ title: "lesson 23: places"
 description: "Learn pi, selo, insa, monsi, sinpin, anpa!"
 richDescription: "Learn 󱥍 pi, 󱥘 selo, 󱤏 insa, 󱤸 monsi, 󱥟 sinpin, 󱤅 anpa!"
 order: "0-23"
+practice:
+  - l1: "The tree bark protects the insides of a plant."
+    l2: "selo kasi li awen e insa kasi."
+  - l1: "The walls of a house are damaged."
+    l2: "sinpin tomo li pakala."
+  - l1: "The wall of this house requires bricks."
+    l2: "sinpin pi tomo ni li wile e leko."
+  - l1: "Sunita's bird is cute."
+    l2: "waso pi jan Sunita li suwi."
+  - l1: "Belgium is next to France."
+    l2: "ma Pesije li lon poka pi ma Kanse."
+  - l1: "Your frog is behind mine."
+    l2: "akesi sina li lon monsi pi akesi mi."
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -45,3 +58,5 @@ Let's use them in some sentences:
 </List>
 
 Protip: since **󱥍 pi** only exists for rebracketing, it will never occur before just one word! There are always two words or more after it.
+
+<Practice exercises={frontmatter.practice} client:only="react" />

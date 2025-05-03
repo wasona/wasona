@@ -4,6 +4,23 @@ title: "lesson 22: very lovely cats"
 description: "Learn pi!"
 richDescription: "Learn 󱥍 pi!"
 order: "0-22"
+practice:
+  - l1: "a lot of snow"
+    l2: "ko lete mute."
+  - l1: "very cold snow"
+    l2: "ko pi lete mute."
+  - l1: "my many mistakes"
+    l2: "pakala mi mute."
+  - l1: "our mistake"
+    l2: "pakala pi mi mute."
+  - l1: "the other language-book"
+    l2: "lipu toki ante."
+  - l1: "a book in another language"
+    l2: "lipu pi toki ante."
+  - l1: "someone's small room"
+    l2: "tomo jan lili."
+  - l1: "A room for someone small"
+    l2: "tomo pi jan lili."
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -79,12 +96,4 @@ Of course, **󱤼 mute** isn't the only word **󱥍 pi** helps out with! Let's t
 
 But in Toki Pona, nouns, verbs, and adjectives can all become one another. So they can't help! Instead, Toki Pona uses just one particle to rebracket.
 
-{/*<List>
-  <Word sl="pi" m="" />
-  <Word sl="selo" m="skin, peel, shell, bark" />
-  <Word sl="insa" m="the inside, centre, middle" />
-  <Word sl="monsi" m="back, rear" />
-  <Word sl="sinpin" m="face, front, <abbr title='A wall is a face of a house!'>wall</abbr>" />
-  <Word sl="anpa" m="bottom; to defeat" />
-</List>
-*/}
+<Practice exercises={frontmatter.practice} client:only="react" />

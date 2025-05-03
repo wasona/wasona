@@ -4,6 +4,21 @@ title: "lesson 20: time"
 description: "Learn la, tenpo, sike, mun, suno, sin, poka!"
 richDescription: "Learn 󱤡 la, 󱥫 tenpo, 󱥜 sike, 󱤺 mun, 󱥤 suno, 󱥝 sin, 󱥒 poka!"
 order: "0-20"
+practice:
+  - l1: "Plants photosynthesise."
+    l2: "kasi li moku e suno."
+  - l1: "The Moon moves along an ellipse."
+    l2: "mun li tawa lon sike."
+  - l1: "They are by your side."
+    l2: "ona li lon poka sina."
+  - l1: "I used to be a child."
+    l2: "tenpo pini la mi lili."
+  - l1: "Funnily enough, the bird speaks like a person."
+    l2: "musi la waso li toki sama jan."
+  - l1: "When it is cold, bugs disappear."
+    l2: "kon li lete la, pipi li weka."
+  - l1: "You may if you want."
+    l2: "sina wile la, sina ken."
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -47,3 +62,13 @@ Time often serves as a sort of "scene", a "context" for the rest of the speech. 
   <Sentence sl="sin la mi wile toki e ni:" m="Once again, I just want to say that..." />
   <Sentence sl="mi pali e ni lon tenpo kama poka." m="I will work on this soon." />
 </List>
+
+**󱤡 la** can also be used between two sentences, connecting them into one. The first sentence then becomes a condition *'if or when ...'*, and the second is the result: *'then ...'*.
+
+<List>
+  <Word sl="suno li pini." m="The sun sets." />
+  <Word sl="mi lape." m="I sleep." />
+  <Sentence sl="suno li pini la, mi lape." m="When the sun sets, I sleep." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:only="react" />

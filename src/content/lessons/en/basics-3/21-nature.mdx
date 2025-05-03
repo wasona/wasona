@@ -4,6 +4,19 @@ title: "lesson 21: nature"
 description: "Learn akesi, kala, pan, kili, soko, misikeke, namako!"
 richDescription: "Learn 󱤁 akesi, 󱤔 kala, 󱥋 pan, 󱤚 kili, 󱦁 soko, 󱦇 misikeke, 󱥸 namako!"
 order: "0-21"
+practice:
+  - l1: "Fungi consume diseased plants."
+    l2: "soko li moku e kasi moli."
+  - l1: "Bake the dough."
+    l2: "o seli e ko pan."
+  - l1: "I dug up the potato."
+    l2: "mi weka e kili tan ma."
+  - l1: "I am scared of snakes."
+    l2: "mi pilin monsuta tan akesi linja."
+  - l1: "Plants need water, sunlight, and land."
+    l2: "kasi li wile e telo, e suno, e ma."
+  - l1: "People talk, have fun, sing, and sleep."
+    l2: "jan li toki, li musi, li kalama, li lape."
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -49,7 +62,18 @@ But how do we put them together into a single sentence? We just repeat the objec
 
 <List>
   <Sentence
-  sl="pan li jo e soweli e kili e namako."
-  m="The pizza contains meat, vegetables, (and) condiments."
-/>
+    sl="pan li jo e soweli e kili e namako."
+    m="The pizza contains meat, vegetables, (and) condiments."
+  />
 </List>
+
+This is not special to just **󱤉 e**! You can combine several related ideas into one sentence with **󱤧 li**, **󱤡 la**, and prepositions too. For now let's just look at **󱤧 li**:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="The person hunts fish. (= the person fishes)." />
+  <Sentence sl="jan li seli e ona." m="The person cooks them." />
+  <Sentence sl="jan li moku e ona." m="The person eats them." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="The person hunts fish, cooks them, eats them." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:only="react" />

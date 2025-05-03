@@ -4,6 +4,17 @@ title: "lesson 27: colours"
 description: "Learn kule, walo, pimeja, laso, loje, jelo, kin!"
 richDescription: "Learn 󱤞 kule, 󱥲 walo, 󱥏 pimeja, 󱤣 laso, 󱤫 loje, 󱤒 jelo, 󱥹 kin!"
 order: "0-27"
+practice:
+  - l1: "At night, I party."
+    l2: "tenpo pimeja la mi musi."
+  - l1: "There is yellow dust on the bee."
+    l2: "ko jelo li lon pipi."
+  - l1: "I, too, play with colourful bricks."
+    l2: "mi kin li musi kepeken leko kule."
+  - l1: "All this snow is blinding me."
+    l2: "mi ken ala lukin tan ko walo."
+  - l1: "Blue, white, and red are on the flag."
+    l2: "laso en walo en loje li lon lipu."
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -14,7 +25,7 @@ import Practice from "@/components/Practice.tsx";
 Let's talk colours!
 
 <List>
-  <Word sl="kule" m="colour, kind" />
+  <Word sl="kule" m="colour, kind; colourful" />
   <Word sl="walo" m="white, pale" />
   <Word sl="pimeja" m="black, dark" />
   <Word sl="loje" m="red, purple" />
@@ -49,3 +60,5 @@ There's a big difference between a white house and the White House:
 </List>
 
 I only bring it up now, because colours are the most obvious example, but the same actually applies to any phrase! Before using adjectives, it's often useful to stop and think: are these adjectives getting the important part you wanted to talk about, or are they just shorthand for something else?
+
+<Practice exercises={frontmatter.practice} client:only="react" />
