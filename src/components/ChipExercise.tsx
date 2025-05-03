@@ -26,12 +26,9 @@ function without(array: number[], element: number): number[] {
 }
 
 function play(word: string) {
-  word = word.replaceAll(/[\.\,\?\!\:]/g, "");
-  new Audio(
-    `https://raw.githubusercontent.com/lipu-linku/ijo/main/kalama/jlakuse/${word}.mp3`,
-  )
-    .play()
-    .catch((e) => {});
+  let audio = document.getElementById(`audio-${word}`);
+  if (!(audio instanceof HTMLAudioElement)) return;
+  audio.play();
 }
 
 const ChipExercise: React.FC<ChipBuilderProps> = ({
@@ -112,6 +109,22 @@ const ChipExercise: React.FC<ChipBuilderProps> = ({
 
   return (
     <div>
+      <div style={{ display: "none" }}>
+        {words
+          .filter(
+            // Unique values
+            (value: any, index: any, array: any) =>
+              array.indexOf(value) === index,
+          )
+          .map((word, i) => (
+            <audio
+              id={`audio-${word}`}
+              key={`audio-${word}`}
+              preload="auto"
+              src={`https://raw.githubusercontent.com/lipu-linku/ijo/main/kalama/jlakuse/${word.replaceAll(/[\.\,\?\!\:]/g, "")}.mp3`}
+            />
+          ))}
+      </div>
       <div
         onDrop={onDropAssembled}
         onDragOver={onDragOver}
