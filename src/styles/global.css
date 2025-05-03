@@ -109,50 +109,15 @@ tr:nth-child(even) {
     background-color: var(--bg-1);
 }
 
-.spoiler {
-    background-color: #aaa;
-    color: transparent;
-    cursor: pointer;
-    transition:
-        color 0.1s ease-in-out,
-        background-color 0.1s ease-in-out;
-    user-select: none;
+hr {
+    color: var(--grey-1);
 }
 
-.spoiler.revealed {
-    color: inherit;
-    background-color: #ddd;
-}
-
-.sp {
-    font-size: 150%;
-    /* line-height: 1.8; */
-}
-.sl {
-    font-style: italic;
-}
-
-details {
-    border-left: 2px dotted var(--grey);
-    text-align: initial;
-    margin: 10px 0px;
-}
-/* details: */
-details * {
-    padding: 10px;
-    margin: 0;
-}
-.sp-details *:not(summary) {
-    font-size: 150%;
-}
-details *:not(summary):nth-child(odd) {
-    background-color: var(--bg-1);
-}
-summary {
-    background-color: var(--bg-2);
-    border-bottom: 1px solid black;
-    font-weight: bold;
-}
+/*
+Section dedicated to the React widget;
+I don't like React's native CSS handling
+So into global.css it goes
+*/
 
 .exercise {
     padding: 20px;
