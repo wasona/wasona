@@ -21,6 +21,19 @@
     --button-in: #e3e3e3;
     --button-out: #979797;
 }
+.dark {
+    --bg: #0f0f0f;
+    --bg-1: #1b1b1b;
+    --bg-2: #2f2f2f;
+    --bg-3: #4c4c4c;
+    --txt: #dbdbdb;
+    --grey: #a9a9a9;
+    --grey-1: #999;
+    --accent: #e78533;
+    --accent-1: #3c200a;
+    --button-in: #616161;
+    --button-out: #202020;
+}
 
 body {
     margin: 0px;
@@ -28,6 +41,14 @@ body {
     color: var(--txt);
     line-height: 1.7em;
     font-size: 18px;
+    background-color: var(--bg);
+}
+
+* {
+    transition:
+        color 0.2s,
+        background-color 0.2s,
+        border 0.2s;
 }
 
 @media only screen and (max-width: 800px) {
@@ -183,7 +204,7 @@ summary {
 }
 .chip {
     display: inline-block;
-    background-color: #f0f0f0;
+    background-color: var(--bg-2);
     padding: 10px 17px;
     border-radius: 15px;
     border: 1px solid var(--grey-1);
@@ -193,12 +214,10 @@ summary {
     user-select: none;
     font-size: 120%;
     font-family: inherit;
-    /* font-family: "nasin-nanpa", Arial, sans-serif; */
 }
 .chip:not(.hidden):active {
     box-shadow: 0 0;
     transform: translate(0, 2px);
-    /* background-color: #400; */
 }
 .hidden {
     cursor: initial;

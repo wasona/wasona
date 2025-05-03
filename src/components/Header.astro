@@ -1,5 +1,10 @@
+---
+import DarkModeToggle from "@/components/DarkModeToggle.astro";
+---
+
 <style>
   header {
+    position: relative;
     max-width: 850px;
     text-align: center;
     border-bottom: 5px dotted var(--accent);
@@ -11,6 +16,9 @@
     max-width: 100%;
     max-height: 150px;
   }
+  a {
+    text-decoration: none;
+  }
 </style>
 
 <header>
@@ -19,4 +27,5 @@
     <!-- <span>sin kulupu</span> -->
     <img alt="Wasona" src="./header.svg" />
   </a>
+  <DarkModeToggle />
 </header>
