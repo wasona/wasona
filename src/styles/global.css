@@ -113,6 +113,12 @@ hr {
     color: var(--grey-1);
 }
 
+.sp {
+    font-size: 150%;
+}
+.sl {
+    font-style: italic;
+}
 /*
 Section dedicated to the React widget;
 I don't like React's native CSS handling
