@@ -4,17 +4,17 @@ interface Props {
 }
 const { id } = Astro.props;
 const onclick = (option: string) =>
-  `document.getElementById("messenger-${id}").className = "messenger-${option}";`;
+  `document.getElementById("tabbed-${id}").className = "tabbed-${option}";`;
 ---
 
 <style>
-  .messenger-box {
+  .tabbed-box {
     padding: 10px;
     /* background-color: var(--bg-1); */
     border-left: 2px dotted var(--grey);
     border-right: 2px dotted var(--grey);
   }
-  .messenger-selector {
+  .tabbed-selector {
     display: grid;
     position: sticky;
     top: 0;
@@ -33,9 +33,9 @@ const onclick = (option: string) =>
     border-right: 1px solid var(--bg-2);
     transition: background-color 0.1s ease-out;
   }
-  .messenger-sp .button-sp,
-  .messenger-sl .button-sl,
-  .messenger-m .button-m {
+  .tabbed-sp .button-sp,
+  .tabbed-sl .button-sl,
+  .tabbed-m .button-m {
     color: var(--txt);
     border-bottom: 1px solid var(--bg);
     border-top: 1px solid var(--grey);
@@ -48,17 +48,17 @@ const onclick = (option: string) =>
   }
 </style>
 <style is:global>
-  messenger-box *:nth-child(even) {
+  tabbed-box *:nth-child(even) {
     background-color: var(#400);
   }
 </style>
-<div id={`messenger-${id}`} class="messenger-sp">
-  <div class="messenger-selector">
+<div id={`tabbed-${id}`} class="tabbed-sp">
+  <div class="tabbed-selector">
     <button class="button-sp" onclick={onclick("sp")}>sitelen pona</button>
     <button class="button-sl" onclick={onclick("sl")}>sitelen Lasina</button>
     <button class="button-m" onclick={onclick("m")}>Translation</button>
   </div>
-  <div class="messenger-box">
+  <div class="tabbed-box">
     <slot />
   </div>
 </div>
