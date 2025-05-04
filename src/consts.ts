@@ -3,4 +3,4 @@
 
 export const SITE_URL = "wasona.com";
 export const SITE_TITLE = "Wasona";
-export const SITE_DESCRIPTION = "A WIP toki pona crash course.";
+export const SITE_DESCRIPTION = "A Toki Pona crash course!";
