@@ -121,7 +121,7 @@ const ChipExercise: React.FC<ChipBuilderProps> = ({
               id={`audio-${word}`}
               key={`audio-${word}`}
               preload="auto"
-              src={`https://raw.githubusercontent.com/lipu-linku/ijo/main/kalama/jlakuse/${word.replaceAll(/[\.\,\?\!\:]/g, "")}.mp3`}
+              src={`https://raw.githubusercontent.com/lipu-linku/ijo/main/kalama/jlakuse/${word.replaceAll(/[\.\,\?\!\:]/g, "").toLowerCase()}.mp3`}
             />
           ))}
       </div>
