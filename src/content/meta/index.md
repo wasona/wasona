@@ -4,7 +4,7 @@
 
 ## What is Toki Pona?
 
-Toki Pona is a constructed language created in 2001 by Canadian polyglot Sonja Lang. Mild successful at first, the language rapidly grew in popularity since 2020. It is now the second most widely spoken conlang after Esperanto!
+Toki Pona is a constructed language created in 2001 by Canadian polyglot Sonja Lang. Mildly successful at first, the language rapidly grew in popularity since 2020. It is now the second most widely spoken conlang after Esperanto!
 
 Toki Pona is designed with simplicity and fun in mind. Its sounds are easy to pick up. Its 130-ish words are broad in meaning, and every single one has something interesting about it. Its grammar is simple by default, and powerful when needed.
 
