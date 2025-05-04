@@ -31,6 +31,12 @@ function play(word: string) {
   audio.play();
 }
 
+function audioLink(word: string) {
+  word = word.replaceAll(/[\.\,\?\!\:]/g, "");
+  const dir = word === word.toLowerCase() ? "words" : "names";
+  return `https://raw.githubusercontent.com/wasona/kalama/main/jan-lakuse/${dir}/${word}.mp3`;
+}
+
 const ChipExercise: React.FC<ChipBuilderProps> = ({
   availableWords,
   assembledSentence,
@@ -121,7 +127,7 @@ const ChipExercise: React.FC<ChipBuilderProps> = ({
               id={`audio-${word}`}
               key={`audio-${word}`}
               preload="auto"
-              src={`https://raw.githubusercontent.com/lipu-linku/ijo/main/kalama/jlakuse/${word.replaceAll(/[\.\,\?\!\:]/g, "").toLowerCase()}.mp3`}
+              src={audioLink(word)}
             />
           ))}
       </div>
