@@ -4,6 +4,7 @@ import React, { useState } from "react";
 interface Exercise {
   l1: string;
   l2: string;
+  audio?: string;
 }
 
 const Practice: React.FC<{
@@ -58,6 +59,14 @@ const Practice: React.FC<{
     }
   };
 
+  const playCurrentAudio = () => {
+    new Audio(
+      `https://raw.githubusercontent.com/wasona/kalama/main/jan-lakuse/sentences/${currentExercise.audio}.mp3`,
+    )
+      .play()
+      .catch((e) => {});
+  };
+
   return (
     <div className="exercise">
       <div className="exercise-progress-container">
@@ -71,7 +80,15 @@ const Practice: React.FC<{
       ) : (
         <>
           <h2>Translate the sentence</h2>
-          <h3>{currentExercise.l1}</h3>
+          <h3>
+            <button
+              className="exercise-button-audio"
+              onClick={playCurrentAudio}
+            >
+              listen
+            </button>
+            {currentExercise.l1}
+          </h3>
           <ChipExercise
             availableWords={l2Words}
             assembledSentence={assembledSentence}
