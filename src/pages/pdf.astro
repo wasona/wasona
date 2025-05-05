@@ -44,6 +44,8 @@ const posts = (await getCollection("blog")).sort((a, b) =>
             posts.reverse().map(async (post, i) => (
               <li>
                 <a href={`#article-${i}`}>{post.data.title}</a>
+                <br />
+                {post.data.richDescription || post.data.description}
               </li>
             ))
           }
