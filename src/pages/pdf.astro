@@ -37,12 +37,24 @@ const posts = (await getCollection("blog")).sort((a, b) =>
   <body>
     <Header />
     <main>
+      <article>
+        <h1>Contents</h1>
+        <ul>
+          {
+            posts.reverse().map(async (post, i) => (
+              <li>
+                <a href={`#article-${i}`}>{post.data.title}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
       {
-        posts.reverse().map(async (post, i) => {
+        posts.map(async (post, i) => {
           // if (i != 14) return;
           const { Content } = await render(post);
           return (
-            <article>
+            <article id={`article-${i}`}>
               <h1>{post.data.title}</h1>
               <section>
                 <Content
