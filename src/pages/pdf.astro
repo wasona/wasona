@@ -1,0 +1,70 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import Message from "@/components/Message.astro";
+import Sentence from "@/components/Sentence.astro";
+import Embed from "@/components/Embed.astro";
+import { SITE_TITLE } from "@consts";
+import { type CollectionEntry, getCollection, render } from "astro:content";
+import List from "@/components/List.astro";
+import PhonoExamples from "@/components/PhonoExamples.astro";
+import PhonoTable from "@/components/PhonoTable.astro";
+import Row from "@/components/Row.astro";
+import Tabbed from "@/components/Tabbed.astro";
+import Word from "@/components/Word.astro";
+import Audio from "@/components/Audio.astro";
+
+const posts = (await getCollection("blog")).sort((a, b) =>
+  a.data.order > b.data.order ? -1 : b.data.order > a.data.order ? 1 : 0,
+);
+---
+
+<html lang="en">
+  <head>
+    <BaseHead
+      title={SITE_TITLE}
+      description={"All lessons in one page: for pdf printing!"}
+    />
+    <style>
+      @media print {
+        article {
+          break-after: page;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      {
+        posts.reverse().map(async (post, i) => {
+          // if (i != 14) return;
+          const { Content } = await render(post);
+          return (
+            <article>
+              <h1>{post.data.title}</h1>
+              <section>
+                <Content
+                  components={{
+                    PhonoExamples: PhonoExamples,
+                    PhonoTable: PhonoTable,
+                    Row: Row,
+                    Tabbed: Tabbed,
+                    Word: Word,
+                    Message: Message,
+                    Audio: Audio,
+                    Embed: Embed,
+                    List: List,
+                    Sentence: Sentence,
+                  }}
+                />
+              </section>
+            </article>
+          );
+        })
+      }
+    </main>
+    <Footer />
+  </body>
+</html>
