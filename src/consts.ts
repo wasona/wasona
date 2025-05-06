@@ -4,3 +4,4 @@
 export const SITE_URL = "wasona.com";
 export const SITE_TITLE = "Wasona";
 export const SITE_DESCRIPTION = "A Toki Pona crash course!";
+export const KALAMA = "https://raw.githubusercontent.com/wasona/kalama/main";

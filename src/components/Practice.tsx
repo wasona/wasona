@@ -1,4 +1,5 @@
 import ChipExercise from "@/components/ChipExercise.tsx";
+import { KALAMA } from "@/consts";
 import React, { useState } from "react";
 
 interface Exercise {
@@ -21,15 +22,9 @@ const Practice: React.FC<{
   const l2Words = currentExercise.l2.split(" ").map((w) => w.trim());
   // console.log(l2Words);
 
-  const sfx_yes = new Audio(
-    "https://raw.githubusercontent.com/wasona/wasona/main/public/audio/yes.mp3",
-  );
-  const sfx_no = new Audio(
-    "https://raw.githubusercontent.com/wasona/wasona/main/public/audio/no.mp3",
-  );
-  const sfx_done = new Audio(
-    "https://raw.githubusercontent.com/wasona/wasona/main/public/audio/done.mp3",
-  );
+  const sfx_yes = new Audio(`${KALAMA}/sfx/yes.mp3`);
+  const sfx_no = new Audio(`${KALAMA}/sfx/no.mp3`);
+  const sfx_done = new Audio(`${KALAMA}/sfx/done.mp3`);
 
   const handleCheck = () => {
     const userAnswer = assembledSentence.join(" ").trim();

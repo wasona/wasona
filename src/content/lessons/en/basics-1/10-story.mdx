@@ -7,6 +7,7 @@ order: "0-10"
 
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
+import { KALAMA } from "@/consts";
 
 Nouns, verbs, adjectives, pronouns, prepositions, preverbs -- you have learned a lot by now! Let's slow down. As you know, language learning often focuses on drilling sentence after sentence. But getting good isn't just about repetitive bits of practice. It's also about listening, and reading, and talking to people.
 
@@ -16,7 +17,7 @@ For this lesson, let's read a short story in Toki Pona! It only uses the words a
 
 Listen to an audio recording, and follow along in the text. 
 
-<audio controls preload src="https://raw.githubusercontent.com/wasona/kalama/main/kala-asi/story/1.mp3" />
+<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 After you're done listening, try to read the text aloud. See if you can follow the meaning of the text! Once you're done practicing reading and listening, you can check the translation!
 
@@ -33,7 +34,7 @@ After you're done listening, try to read the text aloud. See if you can follow t
 
 ## part 2: waso li kalama
 
-<audio controls preload src="https://raw.githubusercontent.com/wasona/kalama/main/kala-asi/story/2.mp3" />
+<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="There came a cute little sparrow." />
@@ -49,7 +50,7 @@ After you're done listening, try to read the text aloud. See if you can follow t
 
 ## part 3: waso li moku pona
 
-<audio controls preload src="https://raw.githubusercontent.com/wasona/kalama/main/kala-asi/story/3.mp3" />
+<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="This saddened Mumu." />

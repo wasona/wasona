@@ -1,3 +1,4 @@
+import { KALAMA } from "@/consts";
 import React, { useEffect, useState } from "react";
 
 interface ChipBuilderProps {
@@ -34,7 +35,7 @@ function play(word: string) {
 function audioLink(word: string) {
   word = word.replaceAll(/[\.\,\?\!\:]/g, "");
   const dir = word === word.toLowerCase() ? "words" : "names";
-  return `https://raw.githubusercontent.com/wasona/kalama/main/jan-lakuse/${dir}/${word}.mp3`;
+  return `${KALAMA}/jan-lakuse/${dir}/${word}.mp3`;
 }
 
 const ChipExercise: React.FC<ChipBuilderProps> = ({
