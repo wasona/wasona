@@ -1,6 +1,5 @@
 ---
-import Message from "@/layouts/Message.astro";
-
+import Message from "@/components/Message.astro";
 import BlogPost from "@/layouts/BlogPost.astro";
 import { type CollectionEntry, getCollection, render } from "astro:content";
 
@@ -28,4 +27,5 @@ const { Content } = await render(post);
 
 <BlogPost {...{ ...post.data, ...post.prevnext }}>
   <Content />
+  <Message right left={false} sl="" m="" />
 </BlogPost>
