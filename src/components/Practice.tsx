@@ -22,9 +22,16 @@ const Practice: React.FC<{
   const l2Words = currentExercise.l2.split(" ").map((w) => w.trim());
   // console.log(l2Words);
 
-  const sfx_yes = new Audio(`${KALAMA}/sfx/yes.mp3`);
-  const sfx_no = new Audio(`${KALAMA}/sfx/no.mp3`);
-  const sfx_done = new Audio(`${KALAMA}/sfx/done.mp3`);
+  // Audio doesn't exist server-side, this is a wrapper to avoid that
+  const [sfx_yes] = useState(
+    typeof Audio !== "undefined" && new Audio(`${KALAMA}/sfx/yes.mp3`),
+  );
+  const [sfx_no] = useState(
+    typeof Audio !== "undefined" && new Audio(`${KALAMA}/sfx/no.mp3`),
+  );
+  const [sfx_done] = useState(
+    typeof Audio !== "undefined" && new Audio(`${KALAMA}/sfx/done.mp3`),
+  );
 
   const handleCheck = () => {
     const userAnswer = assembledSentence.join(" ").trim();
