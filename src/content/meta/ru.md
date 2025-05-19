@@ -66,7 +66,7 @@
 * [Q: различается ли произношение токи поны у разных токипонистов?](ru/sound-variation)
 * [Q: чем мне печатать sitelen pona?](ru/fonts)
 * [Q: какая третья по популярности письменность для токи поны?](ru/sitelen-sitelen)
-* [Q: does 'li' mean 'is'?](ru/li-and-is)
+* [Q: разве 'li' не глагольная связка?](ru/li-and-is)
 * [Q: как будет моё имя на токи поне?](en/make-a-name)
 * [Q: имена в sitelen pona выглядят длинными. Как их сократить?](en/simpler-cartouches)
 * [Q: нужно ли заучивать названия стран и языков?](en/languages-countries)
