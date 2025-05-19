@@ -7,7 +7,7 @@ export const by =
   (a: T, b: T) =>
     (ascending ? 1 : -1) * (key(a) > key(b) ? 1 : -1);
 
-const POSTS = "src/content/lessons/";
+const POSTS = "content/";
 
 export const getLang = (post: CollectionEntry<"blog">) =>
   post.filePath!.replace(POSTS, "").split("/")[0];
