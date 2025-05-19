@@ -1,5 +1,6 @@
 ---
 import BlogPost from "@/layouts/BlogPost.astro";
+import { getLang, prevnexts } from "@/utils/content";
 import { type CollectionEntry, getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -19,11 +20,19 @@ export async function getStaticPaths() {
   return paths;
 }
 type Props = CollectionEntry<"blog">;
-
 const post = Astro.props;
 const { Content } = await render(post);
+const prevnext = prevnexts[getLang(post)][post.id];
 ---
 
-<BlogPost {...{ ...post.data, ...post.prevnext }}>
+<BlogPost
+  {...{
+    ...post.data,
+    ...{
+      prev: prevnext.prev ? prevnext.prev.id : undefined,
+      next: prevnext.next ? prevnext.next.id : undefined,
+    },
+  }}
+>
   <Content />
 </BlogPost>
