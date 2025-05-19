@@ -1,12 +1,6 @@
 import { KALAMA } from "@/consts";
+import { tokeniseSentence, type Exercise } from "@/utils/exercise";
 import React, { useEffect, useState } from "react";
-
-interface ChipBuilderProps {
-  availableWords: string[];
-  assembledSentence: string[];
-  onAssembledSentenceChange: (words: string[]) => void;
-  locked: boolean;
-}
 
 // Helper to shuffle words
 const shuffleArray = (array: any[]) => {
@@ -38,22 +32,21 @@ function audioLink(word: string) {
   return `${KALAMA}/jan-lakuse/${dir}/${word}.mp3`;
 }
 
-const ChipExercise: React.FC<ChipBuilderProps> = ({
-  availableWords,
-  assembledSentence,
-  onAssembledSentenceChange,
-  locked,
-}) => {
+const ChipExercise: React.FC<{
+  exercise: Exercise;
+  onAssembledSentenceChange: (words: string[]) => void;
+  locked: boolean;
+}> = ({ exercise, onAssembledSentenceChange, locked }) => {
   const [words, setWords] = useState<string[]>([]);
   const [assembled, setAssembled] = useState<number[]>([]);
 
   const unused = words.map((_, i) => i).filter((i) => !assembled.includes(i));
 
-  // Initialise unused and assembled when receiving a new sentence
+  // Initialise unused and assembled when receiving a new exercise
   useEffect(() => {
-    setWords(shuffleArray(availableWords));
+    setWords(shuffleArray(tokeniseSentence(exercise.l2)));
     setAssembled([]);
-  }, [JSON.stringify(availableWords)]);
+  }, [JSON.stringify(exercise)]);
 
   // Output current assembled sentence when it updates
   useEffect(() => {
