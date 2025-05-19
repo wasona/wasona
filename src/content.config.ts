@@ -8,18 +8,17 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    richDescription: z.string().optional(),
-    order: z.string(),
     practice: z
-      .array(z.object({ l1: z.string(), l2: z.string() }))
+      .array(
+        z.object({
+          l1: z.string(),
+          l2: z.string(),
+          alsoAccept: z.string().array().nonempty().optional(),
+        }),
+      )
       .nonempty()
       .optional(),
   }),
 });
 
-const meta = defineCollection({
-  loader: glob({ base: "./src/content/meta/", pattern: "**/*.{md,mdx}" }),
-  schema: z.object({}),
-});
-
-export const collections = { blog, meta };
+export const collections = { blog };

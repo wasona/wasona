@@ -1,13 +1,8 @@
 ---
+slug: "/"
+title: "Wasona: a crash course into Toki Pona"
+description: "Read, play, and learn a new language!"
 ---
-# Wasona: a crash course into Toki Pona
-
-<center>
-
-**English** · [русский](ru)
-
-</center>
-
 ## Part 1: first steps!
 
 Talk about animals, people, places, and activities.  
