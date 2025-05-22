@@ -3,6 +3,28 @@ slug: "ru"
 title: "Wasona: курс токи поны для чайников"
 description: "Играй, читай, и освой новый язык!"
 ---
+
+<div style="
+    margin: 10px 0;
+    padding: 2px 15px;
+    background: #ffff0022;
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-image: repeating-linear-gradient(
+        45deg,
+        black,
+        black              5px,
+        gold 5px,
+        gold 10px
+    ) 10;
+">
+
+## Перевод не окончен!
+
+Пока что переведены 22 занятия.
+
+</div>
+
 ## Часть 1: первые шаги!
 
 Поговорим о животных, людях, местах и занятиях.  
