@@ -1,0 +1,96 @@
+---
+slug: "ru/08"
+title: "занятие 8: предлоги"
+description: "Выучим weka, pana, kama, awen, tawa, lon, tan!"
+practice:
+  - l1: "в Англии"
+    l2: "lon ma Inli"
+  - l1: "к Али"
+    l2: "tawa jan Ali"
+  - l1: "Ты устраняешь букашку из дома."
+    l2: "sina weka e pipi tan tomo."
+  - l1: "Растения нравятся мне."
+    l2: "kasi li pona tawa mi."
+  - l1: "Я дала птице гусеницу."
+    l2: "mi pana e pipi tawa waso."
+  - l1: "Люди остаются дома. (в доме.)"
+    l2: "jan li awen lon tomo."
+  - l1: "Ной отправляется во Францию."
+    l2: "jan Nowa li tawa ma Kanse."
+  - l1: "Торонто находится в Канаде."
+    l2: "ma tomo Towano li lon ma Kanata."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Предлоги
+
+Раз уж теперь мы знаем ряд стран, поговорим о путешествиях! Но как сказать «поехать в» или «приехать из»? Для этого нам понадобятся предлоги и несколько новых глаголов:
+
+<List>
+  <Word sl="weka" m="избавиться, уйти; отсутствующий, прочь" />
+  <Word sl="pana" m="давать, класть" />
+  <Word sl="kama" m="приходить, прибывать" />
+  <Word sl="awen" m="оставаться, защищать" />
+  <Word sl="tawa" m="к (кому-то, чему-то)" />
+  <Word sl="lon" m="в, на (чём-то)" />
+  <Word sl="tan" m="из, от, по причине (кого-то, чего-то)" />
+</List>
+
+_Предлог_ — это слово, которое ставится перед другим словом и показывает, как оно связано с предложением. Предлог и присоединённое к нему слово вместе называются _предложной группой_:
+
+<List>
+  <Word sl="tawa soweli" m="к животному" />
+  <Word sl="lon ma" m="на земле, в стране" />
+  <Word sl="tan tomo" m="из дома" />
+</List>
+
+В токи поне предложные группы можно использовать по двум назначениям. Во-первых, мы можем добавить их в конец предложения. В русской грамматике это называется обстоятельством. Таким образом мы можем указать местоположение или направление действия:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="Я посадил птицу на дерево." />
+  <Sentence sl="waso li awen lon kasi." m="Птица остаётся на дереве." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="Ты убрала птицу с дерева."
+  />
+</List>
+
+Во-вторых, что если мы хотим сказать _только_ о местоположении или направлении _без_ какого-либо действия? Это тоже возможно. Предложные фразы могут идти сразу после **󱤧 li** и сами выступать в роли сказуемого. Находясь в сказуемом, эти предлоги означают: **󱥩 tawa** — «направляться куда-то», **󱤬 lon** — «находиться где-то», **󱥧 tan** — «быть откуда-то»:
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Эмма едет в Японию." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Нина находится в России." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Милли из Франции." />
+</List>
+
+Давайте потренируемся на примерах:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="Я иду в растительную местность.<br />(Может быть лес, луг, подобное зелёное место.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="Знание ушло от меня.<br />(Я забыла.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="Милые животные — это хорошо мне.<br />(Мне нравятся милые животные.)"
+  />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Ной говорит Эмме." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="Люди говорят по-немецки в Германии."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [Q: нужно ли заучивать названия стран и языков?](ru/languages-countries)
+* [Q: не звучит ли 'jan li toki Inli' как-то странно?](ru/named-verbs)

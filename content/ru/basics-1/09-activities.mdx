@@ -1,0 +1,94 @@
+---
+slug: "ru/09"
+title: "занятие 9: действия"
+description: "Выучим utala, lape, musi, nasa, kalama, wile, ken, alasa!"
+practice:
+  - l1: "Милая птичка спит."
+    l2: "waso suwi li lape."
+  - l1: "Её имя длинное."
+    l2: "nimi ona li suli."
+  - l1: "хотеть веселиться"
+    l2: "wile musi"
+  - l1: "пытаться петь"
+    l2: "alasa kalama"
+  - l1: "Я начинаю рисовать растение."
+    l2: "mi kama sitelen e kasi."
+  - l1: "Щенок может игриво драться."
+    l2: "soweli lili li ken utala musi."
+  - l1: "Я пытаюсь поехать в Китай."
+    l2: "mi alasa tawa ma Sonko."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Действия
+
+Давайте выучим ещё несколько слов, обозначающих всевозможные действия!
+
+<List>
+  <Word sl="utala" m="сражаться, нападать" />
+  <Word sl="lape" m="спать, отдыхать" />
+  <Word sl="kalama" m="издавать звук; звук, шум" />
+  <Word sl="musi" m="веселиться; весёлый, смешной, интересный" />
+  <Word sl="nasa" m="странный, необычный, нетрезвый" />
+</List>
+
+С этими словами всё довольно просто! Попробуем использовать их в предложениях:
+
+<List>
+  <Sentence sl="soweli li utala e jan." m="Животное на кого-то напало." />
+  <Sentence sl="sina lape lon tomo." m="Ты спишь дома." />
+  <Sentence sl="nimi ona li nasa tawa mi." m="Её имя кажется мне странным." />
+  <Sentence
+    sl="jan lili li musi tan kalama."
+    m="Ребёнку весело из-за шума."
+  />
+</List>
+
+## Модальные глаголы
+
+Иногда нам нужно говорить не только о самом действии, но и о том, как мы к нему относимся. Может быть, мы _хотим_ что-то сделать. Или _можем_. Или мы _начинаем_ или _продолжаем_ что-то делать.
+
+В русской грамматике это называется *вспомогательные* или *модальные глаголы*. Токипонисты предпочитают название *'предглагол'*, но поскольу оно пока не закрепилось в русском, будем называть их **модальными глаголами**. Модальный глагол — это дополнительный глагол, и он ставится перед основным глаголом. Некоторые из этих глаголов них вы уже знаете! Давайте посмотрим, что они означают в роли модальных:
+
+<List>
+  <Word sl="kama" m="начать ..., стать ..." />
+  <Word sl="awen" m="продолжать ..., всё ещё ..." />
+</List>
+
+В токи поне лишь несколько глаголов могут быть модальными. Поэтому давайте выучим оставшииеся:
+
+<List>
+  <Word sl="wile" m="хотеть ..." />
+  <Word sl="ken" m="мочь ..." />
+  <Word sl="alasa" m="пытаться ..." />
+</List>
+
+Модальные глаголы очень разносторонние! Вот несколько примеров фраз с ними:
+
+<List>
+  <Word sl="wile lape" m="хотеть спать" />
+  <Word sl="awen pona" m="продолжать быть хорошим" />
+  <Word sl="kama sona" m="становиться знающим, учиться" />
+  <Word sl="alasa kama wawa" m="пытаться стать сильным" />
+</List>
+
+Попробуем использовать модальные глаголы в предложениях:
+
+<List>
+  <Sentence sl="waso lili li wile lape." m="Маленькая птица хочет спать." />
+  <Sentence sl="mi kama sona e toki pona." m="Я учу токи пону." />
+  <Sentence sl="sina alasa tawa ma Tosi." m="Ты пытаешься поехать в Германию." />
+  <Sentence
+    sl="toki ona li awen nasa tawa mi."
+    m="Его речь всё ещё кажется мне странной."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [Q: есть ли ещё модальные глаголы?](ru/more-preverbs/)

@@ -1,0 +1,56 @@
+---
+slug: "ru/12"
+title: "занятие 12: просьбы"
+description: "Learn o!"
+practice:
+  - l1: "Эмма, попытайся уснуть!"
+    l2: "jan Ema o alasa lape!"
+  - l1: "Кукушка, пропой!"
+    l2: "waso o kalama tawa mi!"
+  - l1: "Эй, Кента!"
+    l2: "jan Kenta o!"
+  - l1: "Поговори с Ниной!"
+    l2: "o toki tawa jan Nina!"
+  - l1: "Нарисуй что-то странное!"
+    l2: "o sitelen e ijo nasa!"
+  - l1: "Майя, дай мне ложку!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Просьбы
+
+В токи поне, предложение с **󱤧 li** -- это констатация факта. В русской грамматике это называется *изъявительным наклонением*. Но иногда вместо простой передачи информации мы хотим о чём-то слушателя попросить. Для просьб, требований, мечтаний и тому подобного в русском два наклонения -- повелительное (-й!) и сослагательное (бы). В токи поне же всего лишь одно *повелительное*. В повелительном наклонении вместо частицы **󱤧 li** используется частица **󱥄 o**:
+
+<List>
+  <Word sl="o" m="вводит просьбу, требование, инструкцию, пожелание" />
+  <Sentence sl="ilo li sitelen e pipi." m="Телефон показывает насекомое." />
+  <Sentence sl="ilo o sitelen e waso!" m="Телефон, покажи птичку!" />
+</List>
+
+Посмотрим на ещё несколько требований:
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="Люди, прочитайте хорошую статью!" />
+  <Sentence sl="soweli mi o moku pona!" m="Котик мой, ешь хорошо!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="Пусть твой ребёнок вырастет сильным!" />
+  <Sentence sl="pona o tawa sina!" m="Да придёт тебе счастье!" />
+</List>
+
+Вы можете заметить, что эти предложения красиво делятся на две части:
+* Обращение к кому-то (до частицы **󱥄 o**)
+* Сама просьба (после частицы **󱥄 o**)
+
+Мы можем их использовать по отдельности:
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Эмма, закрой дверь!" />
+  <Sentence sl="jan Ema o!" m="Эй, Эмма!" />
+  <Sentence sl="o pini e lupa tomo!" m="Закрой дверь!" />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

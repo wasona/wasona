@@ -1,0 +1,62 @@
+---
+slug: "ru/14"
+title: "занятие 14: отрицание"
+description: "Выучим ala!"
+practice:
+  - l1: "Ты не ешь насекомых."
+    l2: "sina moku ala e pipi."
+  - l1: "Люди меня не знают."
+    l2: "jan li sona ala e mi."
+  - l1: "Никто меня не знает."
+    l2: "jan ala li sona e mi."
+  - l1: "Милли не нужна книга."
+    l2: "jan Mili li wile ala e lipu."
+  - l1: "Птицы не могут рисовать здания."
+    l2: "waso li ken ala sitelen e tomo."
+  - l1: "Анна не хочет отправиться в Германию."
+    l2: "jan Ana li tawa ala ma Tosi."
+  - l1: "Иман не в США."
+    l2: "jan Iman li lon ala ma Mewika."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Отрицание
+
+Мы только что узнали, как попросить кого-то что-то сделать. А как попросить *не* делать что-то? Самое время научиться отрицанию с помощью слова **󱤂 ala**:
+
+<List>
+  <Word sl="ala" m="не" />
+</List>
+
+В русском это довольно особенное слово, частица. А в токи поне -- вполне себе обычное прилагательное! И как любое другое прилагательное, оно ставится после главного слова. Его можно встретить как с существительными, так и с прилагательными и глаголами:
+
+<List>
+  <Word sl="jan ala" m="никто, не человек" />
+  <Sentence sl="jan ala li wile utala." m="Никто не хочет сражаться." />
+  <Word sl="suli ala" m="небольшой, неважный" />
+  <Sentence sl="ni li suli ala tawa mi." m="Для меня это не важно." />
+  <Word sl="moku ala" m="не кушать" />
+  <Sentence sl="pipi li moku ala e soweli." m="Насекомые не едят животных." />
+</List>
+
+Интересно, что **󱤂 ala** также применяется к модальным глаголам и предлогам:
+
+<List>
+  <Word sl="wile ala" m="не хотеть ..." />
+  <Sentence sl="sina wile ala moku e suwi." m="Ты не хочешь есть сладкое." />
+  <Word sl="tawa ala" m="не идти к ..." />
+  <Sentence sl="pipi li tawa ala kasi." m="Насекомое не направляется к растению." />
+</List>
+
+Вы, возможно, заметили кое-что интересное. Хотя **󱤂 ala** можно вставить где угодно, где бывает прилагательное, чаще всего оно присоединяется к первому слову в сказуемом:
+* **󱤧󱤶󱤂 li moku ala ...**
+* **󱤧󱥷󱤂 li wile ala ...**
+* **󱤧󱥩󱤂 li tawa ala ...**
+
+Вообще это логично -- если мы отрицаем первое слово в сказуемом, то отрицается всё предложение целиком, чего мы обычно и хотим добиться!
+
+<Practice exercises={frontmatter.practice} client:load />

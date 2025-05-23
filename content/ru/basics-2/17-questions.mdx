@@ -1,0 +1,104 @@
+---
+slug: "ru/17"
+title: "занятие 17: вопросы"
+description: "Learn anu, seme!"
+practice:
+  - l1: "Портит ли табак воздух?"
+    l2: "kasi nasa li ike ala ike e kon?"
+  - l1: "Это кирпич?"
+    l2: "ni li leko ala leko?"
+  - l1: "Ты можешь петь как птица?"
+    l2: "sina ken ala ken kalama sama waso?"
+  - l1: "Ты используешь Гугл?"
+    l2: "sina kepeken ala kepeken ilo Kuko?"
+  - l1: "Я в Италии?"
+    l2: "mi lon ala lon ma Italija?"
+  - l1: "Для этого нужны деньги, да?"
+    l2: "ni li wile e mani anu seme?"
+  - l1: "Ты говоришь по-немецки, не так ли?"
+    l2: "sina toki Tosi anu seme?"
+  - l1: "Где Япония?"
+    l2: "ma Nijon li lon seme?"
+  - l1: "Кто из Индии?"
+    l2: "jan seme li tan ma Palata?"
+  - l1: "Чего ты хочешь покушать?"
+    l2: "sina wile moku e seme?"
+    alsoAccept:
+      - "sina wile e moku seme?"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Вопросы
+
+Вопросы обычно бывают двух видов:
+
+* *вопросы с ответом да / нет*. Это вопросы, на которые можно ответить положительно или отрицательно.
+
+* *открытые вопросы*. Это вопросы, в которых вас просят заполнить пробелы: кто это сделал? что сделал? с кем? где? почему?
+
+## Вопросы с ответом да / нет
+
+### Вопрос
+
+Помните, как на предыдущем занятии мы научились отрицать предложение, вставляя **󱤂 ala** после первого слова сказуемого? Чтобы задать вопрос с ответом да / нет, мы делаем нечто похожее. Мы *удваиваем* первое слово сказуемого и ставим между ними **󱤂 ala**:
+
+<List>
+  <Word sl="moku ala moku" m="ест ли ...?" />
+  <Sentence sl="pipi li moku ala moku e len?" m="Мотылёк ест ткань?" />
+  <Word sl="pona ala pona" m="хороший ли ...?" />
+  <Sentence sl="kalama musi li pona ala pona tawa sina?" m="Тебе нравится музыка?" />
+  <Word sl="wile ala wile" m="хочет ли ...?" />
+  <Sentence sl="sina wile ala wile lape lon supa?" m="Вы хотите спать на кровати?" />
+  <Word sl="lon ala lon" m="находится ли ... в ...?" />
+  <Sentence sl="ona li lon ala lon ma Mewika?" m="Они находятся в США?" />
+</List>
+
+Для нас такой подход может показаться необычным! Но похожая структура есть, например, в [китайском языке](https://en.wikipedia.org/wiki/A-not-A_question#A-not-AB_form_4).
+
+### Ответ
+
+В русском есть специальное слово «да». А токи пона ведёт себя так же, как, например, финский, китайский, латынь и многие другие языки. Если ответ положительный, вы повторяете сказуемое, если отрицательный -- то сказуемое с отрицанием **󱤂 ala**.
+
+<List>
+  <Sentence sl="sitelen li musi ala musi?" m="Видео весёлое?" />
+  <Word sl="musi." m="весёлое. (= Да.)" />
+  <Word sl="musi ala." m="не весёлое. (= Нет.)" />
+</List>
+
+Шаблон **V ala V** встречается очень часто! Но есть и другой способ:
+
+<List>
+  <Word sl="seme" m="что? какой?" />
+  <Word sl="anu" m="или" />
+  <Word sl="anu seme" m="... верно? не так ли? или что?" />
+</List>
+
+Можно добавить **󱤇󱥙 anu seme** в конец любого утверждения, превращая таким образом его в вопрос:
+
+<List>
+  <Sentence sl="sitelen li musi anu seme?" m="Видео весёлое, не так ли?" />
+</List>
+
+На него можно ответить **󱤻 musi** или **󱤻󱤂 musi ala**, как и на обычный вопрос. Но подтекст получается немного другой. Если вы используете **󱤇󱥙 anu seme**, то вы скорее всего ожидаете, что собеседник с вами согласится.
+
+## Открытые вопросы
+
+Только что мы выучили, что **󱥙 seme** означает «что?», и это ключевая часть *открытых вопросов*! Слово **󱥙 seme** в предложении подобно пробелу, который должен быть заполнен вашим собеседником:
+
+<List>
+  <Sentence sl="waso li lon seme?" m="Где птица? (букв. 'Птица находится в чём?')" />
+  <Sentence sl="waso li lon tomo." m="Птица дома. (букв. 'в доме')" />
+  <Sentence sl="soweli li utala e jan seme?" m="На кого напал зверь? (букв. 'Зверь напал на какого человека?')" />
+  <Sentence sl="soweli li utala e jan Ema." m="Зверь напал на Эмму." />
+</List>
+
+Обратите внимание, что только слово **󱥙 seme** заменяется на ответ -- всё остальное в предложении остаётся неизменным! В отличие от русского, в токи поне порядок слов в вопросах не меняется.
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [Q: как сказать 'делать'?](ru/doing/)

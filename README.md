@@ -1,6 +1,6 @@
 # Wasona
 
-A WIP crash course to Toki Pona.
+A crash course to Toki Pona.
 
 ## Local development
 
@@ -11,7 +11,7 @@ npm run dev
 
 ## License
 
-Content (`/src/content/`) is dual-licensed under:
+Content (`/content/`) is dual-licensed under:
 
 - Creative Commons Attribution-ShareAlike 3.0 Unported;
 
@@ -19,4 +19,4 @@ Content (`/src/content/`) is dual-licensed under:
 
 (Dual-licensing is done to avoid any potential online encyclopedia issues).
 
-Code (the rest of `/src/`) is licensed under the GNU General Public License Version 3.
+Code (`/src/`) is licensed under the GNU General Public License Version 3.
