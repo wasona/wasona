@@ -3,8 +3,13 @@ import { tokeniseSentence, type Exercise } from "@/utils/exercise";
 import React, { useEffect, useState } from "react";
 
 // Helper to shuffle words
-const shuffleArray = (array: any[]) => {
-  return [...array].sort(() => Math.random() - 0.5);
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
 };
 
 function appended(array: number[], element: number): number[] {
