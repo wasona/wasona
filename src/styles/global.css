@@ -34,7 +34,7 @@
 }
 
 body {
-    margin: 0px;
+    margin: 1rem;
     font-family: "nasin-nanpa", "Nunito", sans-serif;
     color: var(--txt);
     line-height: 1.7em;
@@ -60,10 +60,9 @@ img {
 }
 
 main {
-    max-width: 700px;
+    max-width: 750px;
     margin: auto;
     margin-bottom: 35px;
-    padding: 0px 10px;
     text-align: justify;
 }
 a {
