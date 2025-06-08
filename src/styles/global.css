@@ -15,7 +15,8 @@
     --grey: #333;
     --grey-1: #999;
     --accent: #de6500;
-    --accent-1: #f4cbaa;
+    --accent-1: #7d3900;
+    --accent-bg: #f4cbaa;
     --button-in: #e3e3e3;
     --button-out: #979797;
 }
@@ -28,7 +29,8 @@
     --grey: #a9a9a9;
     --grey-1: #999;
     --accent: #e78533;
-    --accent-1: #3c200a;
+    --accent-1: #f3b682;
+    --accent-bg: #3c200a;
     --button-in: #616161;
     --button-out: #202020;
 }
@@ -77,6 +79,10 @@ a {
 
 a:visited {
     color: var(--accent);
+}
+a:active,
+a:hover {
+    color: var(--accent-1) !important;
 }
 
 button {
