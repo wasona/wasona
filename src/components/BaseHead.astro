@@ -2,7 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "@/styles/global.css";
-import { SITE_URL } from "@consts";
+import { GOATCOUNTER_URL, SITE_URL } from "@consts";
 
 interface Props {
   title: string;
@@ -57,3 +57,8 @@ const { title, description, image = "./logo.png" } = Astro.props;
 <meta property="twitter:image" content={socialImageURL} />
 
 <script is:inline src="./light-mode.js"></script>
+<!-- Analytics -->
+<script
+  data-goatcounter={`https://${GOATCOUNTER_URL}/count`}
+  async
+  src="//gc.zgo.at/count.js"></script>
