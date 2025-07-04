@@ -1,0 +1,73 @@
+---
+slug: "tl/04"
+title: "ika-4 na aralin: mga pang-uri"
+description: "Marutunan ang salitang suli, lili, pona, ike, wawa, at suwi!"
+practice:
+  - l1: "hayop na mahal"
+    l2: "soweli suwi"
+  - l1: "masamang insekto"
+    l2: "pipi ike"
+  - l1: "isang makapangyarihan na ibon"
+    l2: "waso wawa"
+  - l1: "Alam ng ibon ang malakas na hayop."
+    l2: "waso li sona e soweli wawa."
+  - l1: "Tinitignan ng maliit na insekto ang malaking hayop."
+    l2: "pipi lili li lukin e soweli suli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Maglarawan!
+
+Ngayon na mayroon ka nang alam na pangngalan (bagay) at pandiwa (aksyon). Ngayon matuto naman tayo ng mga pang-uri (pang-larawan)!  
+Kabisaduhin natin ang iilan nito:
+
+<List>
+  <Word sl="suli" m="malaki, importante" />
+  <Word sl="lili" m="maliit, hindi matanda" />
+  <Word sl="pona" m="mabuti, mabait" />
+  <Word sl="ike" m="masama, pangit" />
+  <Word sl="wawa" m="makapangyarihan, malakas, matibay" />
+  <Word sl="sona" m="makatarungan, nakakaalam" />
+  <Word sl="suwi" m="maganda, guwapo, matamis, cute" />
+</List>
+
+Sa Tagalog, puwede magkaroon ng pang-uri kahit bago o pagkatapos ng isang salita. Pero sa Toki Pona, palagi itong makikita pagkatapos lamang ng isang salita:
+
+<List>
+  <Word sl="soweli suli" m="malaking hayop" />
+  <Word sl="pipi lili" m="maliit na insekto" />
+  <Word sl="waso suwi" m="magandang ibon" />
+</List>
+
+Para sa mga nagsasalita ng Tagalog, hindi ito masydong mahirap. Ganito rin sa mga nagsasalita ng French, Irish, Arabic, Malay, atbp. Kailangan mo lamang itong iisipin: ang pinakaunang salita ay ang pinakaimportanteng salita.
+
+Gumawa tayo ng mga pangungusap na may paglalarawan:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="Nakikita ng ibon ang cute na hayop."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="Kinakain ng malakas na hayop ang malaking halaman."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Kinakain ng konti ng masamang insekto ang hayop."
+  />
+  <Sentence
+    sl="waso sona li sona pona e pipi."
+    m="Mabuting nakakaalam ng insekto ang makatarungang ibon."
+  />
+</List>
+
+Kung mukhang malaki't nakakapagod ang mga pangungusap na ito, oks lang iyan! Makakakita tayo ng mga mas maliit na pangungusap mamaya. Tandaan ito: Simple lang talaga ang pagbuo ng pangungusap! Kaya mo palaging malaman kung ano yung subject, verb, o object, sa pagtingin lamang ng **󱤧 li** at **󱤉 e**.
+
+Mayroon ding isang nakakainteresadong bagay sa mga pang-uri: sa Tagalog, magkahiwalay ang pang-abay at pang-uri. Pang-abay sa pandiwa, ang pang-uri sa pangngalan. Pero sa Toki Pona, magkasingparehas lang ito: _ikagat ng maliit_ ~ _moku lili_, _malaman ng mabuti_ ~ _sona pona_. Wala silang pagkakaiba sa Toki Pona.
+
+<Practice exercises={frontmatter.practice} client:load />

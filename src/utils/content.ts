@@ -21,6 +21,7 @@ export const langs = (() => {
 export const langNames: Record<string, string> = {
   en: "English",
   ru: "русский",
+  tl: "Tagalog",
 };
 
 export const prevnexts = Object.fromEntries(

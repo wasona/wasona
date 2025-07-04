@@ -1,0 +1,98 @@
+---
+slug: "tl/09"
+title: "ika-9 na aralin: mga gawain"
+description: "Matuto ang salitang utala, lape, musi, nasa, kalama, wile, ken, at alasa!"
+practice:
+  - l1: "Natutulog ang cute na ibon."
+    l2: "waso suwi li lape."
+  - l1: "Malaki ang pangalan niya."
+    l2: "nimi ona li suli."
+  - l1: "gustong magsaya"
+    l2: "wile musi"
+  - l1: "subukang kumanta"
+    l2: "alasa kalama"
+  - l1: "Nagsimula akong maglarawan ng halaman."
+    l2: "mi kama sitelen e kasi."
+  - l1: "Kayang mag-away ng masaya ang maliit na hayop."
+    l2: "soweli lili li ken utala musi."
+  - l1: "Sinubukan kong pumunta sa China."
+    l2: "mi alasa tawa ma Sonko."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Mga gawain
+
+Matuto tayo ng iilan pang mga salita tungkol sa mga gawain!
+
+<List>
+  <Word sl="utala" m="mag-away, umatake" />
+  <Word sl="lape" m="matulog, magpahinga" />
+  <Word sl="kalama" m="tumuog; ingay, tunog" />
+  <Word sl="musi" m="magsaya; nakakatawa, nakakawili" />
+  <Word sl="nasa" m="nakakaiba, di-madalas, makulit, lasing" />
+  {/*<Word sl="lipu" m="papel, karton, libro, website, isang patag na bagay na mayroong kaalaman" />*/}
+</List>
+
+Ang dali lamang ng mga salitang ito! Gamitin natin sila:
+
+<List>
+  <Sentence sl="soweli li utala e jan." m="Inatake ng hayop ang tao." />
+  <Sentence sl="sina lape lon tomo." m="Natutulog ka sa bahay." />
+  <Sentence sl="nimi ona li nasa tawa mi." m="Sa aking palagay, nakakaiba ang pangalan niya." />
+  <Sentence
+    sl="jan lili li musi tan kalama."
+    m="Nagsasaya ang bata dahil sa mga tunog."
+  />
+</List>
+
+## Mga preverbs
+
+Minsan, gusto natin na magsalita hindi lamang sa aksyon, pero kung ano yung relasyon natin dito. Baka meron tayong _gustong_ gawin. Baka _puwede_ natin itong gawin. Baka gusto natin na _magsimula_ o _manatiling_ gumagawa ng isang bagay.
+
+Sa Ingles, ito ay ang mga *auxilliary and modal verbs*. Sa Tagalog, mayroong ganito rin tayo, pero madalas ay panlapi lang sila. Ang Toki Pona ay gumagamit ng isang sitema parang ng sa Ingles, tawag namin sa kanila ay mga _preverbs_! Ang preverb ay isang nakasamang verb na nasa likod ng main verb. Alam mo na iilan sa kanila! Aralain natin kung ano ang ibig sabihin nila kung ginamit parang ganito:
+
+<List>
+  <Word sl="kama" m="Magsimulang ..., maging ..., (mag-)..." />
+  <Word sl="awen" m="Manatiling (nag-CV~)..." />
+  {/* <Word sl="sona" m="Malaman kung paano (mag-)..." /> */}
+</List>
+
+Iilan lang na pandiwa sa Toki Pona ay puwedeng maging preverb. Kaya aralin din natin ang mga natitira:
+
+<List>
+  <Word sl="wile" m="gustong (mag-)..." />
+  <Word sl="ken" m="magkaroon ng kakayahan na (mag-)..." />
+  <Word sl="alasa" m="subukan na (mag-)..." />
+</List>
+
+Mahalaga talaga ang mga preverbs! Tumingin tayo sa mga parirala na gumagamit nito:
+
+<List>
+  <Word sl="wile lape" m="gustong matulog" />
+  <Word sl="awen pona" m="manatiling maging mabuti" />
+  <Word sl="kama sona" m="maging maalamin, matuto" />
+  {/* <Word sl="sona sitelen" m="malaman kung paano magsulat" /> */}
+  <Word sl="alasa kama wawa" m="subukang maging malakas" />
+</List>
+
+Gamitin natin ito sa mga pangungusap:
+
+<List>
+  <Sentence sl="waso lili li wile lape." m="Gustong matulog ang maliit na ibon." />
+  {/* <Sentence sl="jan li sona moku e kasi." m="Alam ng tao kung paano kumain ng halaman." /> */}
+  <Sentence sl="mi kama sona e toki pona." m="Natututo ako ng Toki Pona." />
+  <Sentence sl="sina alasa tawa ma Tosi." m="Sinusubukan mong pumunta sa Germany." />
+  <Sentence
+    sl="toki ona li awen nasa tawa mi."
+    m="Nananatiling nakakaiba ang salita nila sa akin."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Puwede mo rin tignan ang...
+* [Q: Mayroon pa bang ibang preverbs?](tl/more-preverbs/)

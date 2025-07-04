@@ -1,0 +1,79 @@
+---
+slug: "tl/06"
+title: "ika-6 na aralin: mga panghalip"
+description: "Matuto ang salitang ni, mi, sina, at ona!"
+practice:
+  - l1: "Ito ay halamang matamis."
+    l2: "ni li kasi suwi."
+  - l1: "Ito ay mga malaking mata."
+    l2: "ni li lukin suli."
+  - l1: "Malaki ang mata mo."
+    l2: "lukin sina li suli."
+  - l1: "Itong ibon ay maliit."
+    l2: "waso ni li lili."
+  - l1: "Kinain ng mga masamang insekto ang halaman ko."
+    l2: "pipi ike li moku e kasi mi."
+  - l1: "Cute ka."
+    l2: "sina suwi."
+  - l1: "Nakikita ko sila."
+    l2: "mi lukin e ona."
+  - l1: "Kumakain ng mabuti sila."
+    l2: "ona li moku pona."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Mga panghalip
+
+Baka napagod ka na sa pagaaral ng mga bahagi ng pagsasalita. Pumunta na muna tayo sa isang mas simpleng aralin, sa pagtuturo sa mga bagay:
+
+<List>
+  <Word sl="ni" m="ito, iyan, iyon" />
+  <Sentence sl="ni li soweli." m="Ito'y isang hayop." />
+  <Sentence sl="ni li kasi." m="Ito'y isang halaman." />
+  <Sentence sl="ni li moku suwi." m="Ito'y pagkaing matamis." />
+  <Sentence sl="ni li suli." m="Ito'y importante." />
+  <Sentence sl="ni li pona wawa." m="Ito'y talagang mabuti." />
+</List>
+
+Iyan ay ang ating pinakaunang _pangungusap na walang object_, at dahil doon, sa pangungusap na ito, walang **󱤉 e** dito!
+
+Baka naiisip mo ito: ang **󱤧 li** ay nagsisimula ng pandiwa. Pero nasaan nga ba ang pandiwa? Sa Tagalog, wala talaga, at puwede lang natin ito mahalintulad sa "ay" o kaya sa "maging". Imbis na walang pandiwa talaga, kung ang isang salita ay ginagampanan ang papel ng pandiwa, mayroon na ang salitang "ay" o "maging" bago yung salitang ginagamit: **󱥢 soweli** 'maging isang hayop', **󱥣 suli** 'maging importante'.
+
+Ngayon na nakatingin na tayo sa isang panghalip, tignan na natin yung iba:
+
+<List>
+  <Word sl="mi" m="Ako, ko, kami; akin, amin" />
+  <Word sl="sina" m="ikaw, kayo; ninyo, niyo, iyo" />
+  <Word sl="ona" m="sila, ito, nila, nito" />
+</List>
+
+Mag-sanay tayo sa paggamit ng **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, at **󱥁 ni** sa mga pangungusap:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Malaki ang halamang ito." />
+  <Sentence sl="sona sina li wawa." m="Magaling ang iyong kaalaman." />
+  <Sentence sl="pipi ni li pipi mi." m="Itong insekto ay aking insekto." />
+  <Sentence sl="waso sina li lukin e mi." m="Kita ng iyong ibon ako." />
+  <Sentence sl="waso li moku e pipi ni." m="Kinakain ng ibon ang insektong ito." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Kinakain ng aking hayop ang halaman nila." />
+</List>
+
+Dapat alam na alam mo na ang mga pangungusap parang ganito! Kadalasan, sa maraming posisyon sa mga pangungusap, ang mga panghalip ay ginagamit parang mga pangngalan o pang-uri. Pero merong nangyayari kung ang **󱤴 mi** o **󱥞 sina** ay ang nagsasagawa ng aksyon sa isang pangungusap:
+
+<List>
+  <Sentence sl="mi wawa." m="Ako'y malakas." />
+  <Sentence sl="sina lukin e moku." m="Nakakakita ka ng pagkain." />
+  <Sentence sl="mi sona e kasi suli." m="Alam ko ang malaking halaman." />
+  <Sentence sl="sina sona e suli kasi." m="Alam mo ang laki ng halaman." />
+</List>
+
+Mayroong isang eksepsyon ang Toki Pona: kung ang *󱤴 mi** o ang **󱥞 sina** ay ang nagsasagawa ng aksyon sa isang pangungusapq, nawawala ang **󱤧 li** na kadalasang sumusunod sa nagsasagawa ng aksyon. Ito'y dahil ang mga pangungusap na nagsisimula sa **󱤴 mi** o **󱥞 sina** ay sobrang madalas na isinusulat!
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Puwede mo rin tignan ang...
+* [Q: magkaparehas lang ba ang "li" at "ay"/"maging"?](tl/li-and-is)

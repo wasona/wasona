@@ -1,0 +1,96 @@
+---
+slug: "tl/08"
+title: "ika-8 aralin: pang-ukol"
+description: "Matuto ang salitang weka, pana, kama, awen, tawa, lon, at tan!"
+practice:
+  - l1: "sa England"
+    l2: "lon ma Inli"
+  - l1: "kay Ali"
+    l2: "tawa jan Ali"
+  - l1: "Tinatanggal mo ang insekto sa bahay."
+    l2: "sina weka e pipi tan tomo."
+  - l1: "Sa aking palagay, mabuti ang halaman. (Mabuti ang halaman sa akin)"
+    l2: "kasi li pona tawa mi."
+  - l1: "Binigyan ko ng uod ang ibon. (Nagbigay ako ng uod sa ibon)"
+    l2: "mi pana e pipi tawa waso."
+  - l1: "Nananatili sa loob ang tao."
+    l2: "jan li awen lon tomo."
+  - l1: "Si Noah ay pupunta sa France."
+    l2: "jan Nowa li tawa ma Kanse."
+  - l1: "Ang Toronto ay nasa Canada."
+    l2: "ma tomo Towano li lon ma Kanata."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Mga pang-ukol
+
+Ngayon na may alam na tayong bansa, gumala na tayo! Pero paano mo sasabihin ang "pumunta sa" at "galing sa"? Ngayon, kailangan na ntin ang aksyon, o pandiwa at lokasyon, o pang-ukol:
+
+<List>
+  <Word sl="weka" m="tanggalin, tumakas; tanggal, takas" />
+  <Word sl="pana" m="bigyan, lagyan" />
+  <Word sl="kama" m="dumating" />
+  <Word sl="awen" m="manatili, magbantay" />
+  <Word sl="tawa" m="kay, pumunta ka, pumunta sa" />
+  <Word sl="lon" m="sa, doon sa" />
+  <Word sl="tan" m="galing sa, dahil" />
+</List>
+
+Ang _pang-ukol_ ay isang salita bago ang isan pang salita. Sinasabi nito ang relasyon ng parirala pagkatapos nito, at ng ibang bahagi ng salita. Ang pang-ukol at ang parirala na kasama niya ay tinatawag na _parirala ng pang-ukol_:
+
+<List>
+  <Word sl="tawa soweli" m="papunta sa hayop" />
+  <Word sl="lon ma" m="sa bansa, doon sa bansa" />
+  <Word sl="tan tomo" m="galing sa bahay" />
+</List>
+
+Sa Toki Pona, mayroong dalawang paraan sa paggamit nito. Una, puwede natin ito lagyan sa katapusan ng isang pangungusap. Puwede natin itong gamitin upang malaman ang lokasyon at direksyon ng akston sa pangungusap:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="Naglagay ako ng ibon sa puno." />
+  <Sentence sl="waso li awen lon kasi." m="Nananatili ang ibon sa puno." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="Tinatanggal mo ang ibon sa puno."
+  />
+</List>
+
+Pangalawa, paano kung gusto natin sabihin ito... na walang ibang nangyayari? Buti naman, puwede rin natin iyong gawin. Ang pariralang ito ay puwedeng nasa tabi lamang ng **󱤧 li**, at gampanan ang papel ng pandiwa. Kapag ang pang-ukol ay ginagamit parang pandiwa, ibig sabihin nila: **󱥩 tawa** 'pumunta sa', **󱤬 lon** 'maging nasa', **󱥧 tan** 'pumunta galing sa':
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Pumunta si Emma sa Japan." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Nasa Russia si Nina." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Si Millie ay galing sa France." />
+</List>
+
+Magsanay tayo gamit nitong mga pangungusap:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="Pupunta ako sa lupa ng mga halaman.<br />(Puwedeng gubat, kapatagan, o kahit saan man na mayroong maraming halaman.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="Umalis ang kaalamam galing sa akin.<br />(Nakalimutan ko.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="Sa aking palagay, mabuti ang mga cute na hayop.<br />(Mabuti ang mga cute na hayop sa akin.)"
+  />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Nagsasalita si Noah kay Emma." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="Nagsasalita ng German ang tao sa Germany."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Puwede mo rin tignan ang...
+* [Q: Kailangan ko bang kabisaduhin ang mga pangalan ng mga bansa't wika?](tl/languages-countries)
+* [Q: Hindi pa ba nakakaiba ang 'jan li toki Inli'?](tl/named-verbs)

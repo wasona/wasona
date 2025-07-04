@@ -1,0 +1,90 @@
+---
+slug: "tl/07"
+title: "ika-7 aralin: mga pangalan"
+description: "Matuto ang salitang nimi, jan, sitelen, toki, ma, at tomo!"
+practice:
+  - l1: "Sinusulat ko ang lupa."
+    l2: "mi sitelen e ma."
+  - l1: "Malaki ang larawan mo."
+    l2: "sitelen sina li suli."
+  - l1: "Nagsasalita ang tao tungkol sa mga gusali."
+    l2: "jan li toki e tomo."
+  - l1: "Panglan mo ay Maya."
+    l2: "nimi sina li jan Maja."
+  - l1: "Nagsasalita ng Arabic si Iman."
+    l2: "jan Iman li toki Alapi."
+  - l1: "Malaki ang lungsod ng Toronto."
+    l2: "ma tomo Towano li suli."
+  - l1: "May nakikita akong sulat Cyrillic."
+    l2: "mi lukin e sitelen Kililisa."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Mga pangalan
+
+Ok lang naman ang paturo sa mga bagay, pero minsan, mas magaganda ang pagiging matiyak. Ano ang solusyon natin? Mga pangalan, siyempre! Isang nakababagong inobasyon sa wika na sa paggamit nito, puwede ka nang magsalita tungkol sa isang partikular na bagay o tao.
+
+Aralin natin ang mga salitang madalas may pangalan:
+
+<List>
+  <Word sl="nimi" m="pangalan, salita" />
+  <Word sl="jan" m="tao" />
+  <Word sl="sitelen" m="imahe, larawan, sulat; paglalarawan, pagsusulat" />
+  <Word sl="toki" m="pag-uusap, wika; pagsasalita" />
+  <Word sl="ma" m="lupa, bansa" />
+  <Word sl="tomo" m="gusali, kuwarto, bahay" />
+</List>
+
+Mayroon ka nang alam na pangalan: _sitelen Lasina_! Tignan natin ang mga pangalan ng tao:
+
+<List>
+  <Sentence sl="jan Nowa" m="isang taong pinalangang Noah (galing sa Ingles na 'Noah')" />
+  <Sentence sl="jan Ema" m="isang taong pinalangang Emma (galing sa Ingles na 'Emma')" />
+</List>
+
+Galing sa mga pangalan na ito, malalaman natin na:
+
+1. Isang uri ng pang-uri ang pangalan: sumusunod sila sa isa pang salita.
+2. Nagsisimula sa malaking titik ang mga pangalan. Kung mayroon kang nakitang salitang gumagamit ng malaking titik sa Toki Pona, malalaman mo agad na pangalan ito!
+3. Sa _sitelen pona_, isinusulat namin ang mga pangalan sa isang malaking **󱥂 nimi**. Tinatawag namin ito bilang isang _cartouche_, parang yung mga ginagamit sa mga Egyptian hieroglyphs. Kada tunog sa isang pangalan, pumipili kami ng isang salita na nagsisimula sa tunog na iyon. Halimbawa, Puwedeng isulat ang pangalang 'Ema' bilang 󱤉 **e**, 󱤶 **m**oku, 󱤂 **a**la. 
+
+Hindi lang tao ang may pangalan! Rignan natin isang wika, isang bansa, at isang lungsod:
+
+<List>
+  <Sentence
+    sl="toki Kanse"
+    m="ang wikang pinangalang French (galing sa salitang French na 'français')"
+  />
+  <Sentence sl="ma Tosi" m=" ang bansang pinangalang Germany (galing sa salitang German na 'Deutsch')" />
+  <Sentence
+    sl="ma tomo Loma"
+    m="ang lupain ng mga gusaling pinalangang Rome (galing sa salitang Latin na 'Rōma')"
+  />
+</List>
+
+Ang mga langalang ito'y tumutulong sa atin na maunawaan kung paano ginagawa ang isang pangalan sa Toki Pona:
+
+4. Kapag isinasalin ang isang pangalan papunta sa Toki Pona, _nagbabago_ sila para sumunod doon sa pinapayagang ponema sa Toki Pona. Walang **d** sa Toki Pona, Kaya ang salitang Deutsch ay nagsisimula sa **t**. Minsan maliit ang pagbabago, halimbawa, ang _Noah_ → _Nowa_, minsan malaki ang pagbabago, halimbawa, ang _français_ → _Kanse_.
+5. Minsan lang nanggagaling sa Ingles ang salitang isinasalin. Ginugustohan naming gumamit ng _endonyms_: ang pangalan ng wika, bansa, kultura, at iba pa, na nanggaling sa mga miyembro nito. Ang salita para sa wikang French ay nanggagaling sa French!
+
+Magsanay tayo sa paggamit ng mga bagong salita't pangalan sa mga pangungusap:
+
+<List>
+  <Sentence sl="waso li lukin e ma." m="Tinitignan ng ibon ang lupa." />
+  <Sentence sl="jan li toki e tomo." m="Naguusap ang tao tungkol sa mga bahay." />
+  <Sentence sl="jan pona li toki pona." m="Nagsasalitang mabuti ang mga mabuting tao." />
+  <Sentence sl="nimi ona li jan Kenta." m="Pangalan niya ay Kenta." />
+  <Sentence sl="jan Sunita li sitelen e pipi." m="Naglarawan si Sunita ng isang insekto." />
+  <Sentence sl="jan Nina li toki Kanse." m="Nagsasalita si Nina ng French." />
+  <Sentence sl="jan Ema li sona pona e ma Tosi." m="Alam ng mabuti ni Emma ang tungkol sa Germany." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Puwede mo rin tignan ang...
+* [Q: Ano ang pangalan ko sa Toki Pona?](tl/make-a-name)
+* [Q: Mukhang malaki ang pangalan sa sitelen pona. Paano ko ito mapapaliit?](tl/simpler-cartouches)
