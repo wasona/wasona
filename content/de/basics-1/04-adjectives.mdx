@@ -1,0 +1,73 @@
+---
+slug: "en/04"
+title: "lesson 4: adjectives"
+description: "Learn suli, lili, pona, ike, wawa, suwi!"
+practice:
+  - l1: "a sweet animal"
+    l2: "soweli suwi"
+  - l1: "a bad insect"
+    l2: "pipi ike"
+  - l1: "a powerful bird"
+    l2: "waso wawa"
+  - l1: "The bird knows a strong animal."
+    l2: "waso li sona e soweli wawa."
+  - l1: "A tiny insect looks at a big animal."
+    l2: "pipi lili li lukin e soweli suli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Describe!
+
+Now you know some nouns (things) and verbs (actions). Time to add adjectives (descriptions)!  
+Let's memorise a few of them:
+
+<List>
+  <Word sl="suli" m="large, important" />
+  <Word sl="lili" m="small, young" />
+  <Word sl="pona" m="good, pleasant" />
+  <Word sl="ike" m="bad, unpleasant" />
+  <Word sl="wawa" m="powerful, amazing" />
+  <Word sl="sona" m="knowledgeable, wise" />
+  <Word sl="suwi" m="cute, sweet" />
+</List>
+
+In English, adjectives go before the noun. But in Toki Pona, they always go after:
+
+<List>
+  <Word sl="soweli suli" m="a large animal" />
+  <Word sl="pipi lili" m="a small bug" />
+  <Word sl="waso suwi" m="an adorable bird" />
+</List>
+
+English speakers sometimes find this order confusing, but this is how it works in French, Irish, Arabic, Malay, and many other languages. Think of it this way: the first word is always the most important!
+
+Let's make some sentences with descriptions:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="The bird sees a cute animal."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="The strong animal eats large plants."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Mean bugs bite the animal a little."
+  />
+  <Sentence
+    sl="waso sona li sona pona e pipi."
+    m="The wise bird knows bugs well."
+  />
+</List>
+
+If these sentences feel long and tiresome, don't worry! We will look at some shorter sentences soon. Remember: the sentence structure is actually quite simple! You can always tell which part is the subject, the verb, and the object, by looking at **󱤧 li** and **󱤉 e**.
+
+Here's something interesting: in English, adjectives only go on nouns. But in Toki Pona, they can go on verbs too: _to bite a little_ ~ _moku lili_, _to know well_ ~ _sona pona_. There is no difference between adjectives and adverbs in Toki Pona.
+
+<Practice exercises={frontmatter.practice} client:load />

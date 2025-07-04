@@ -1,0 +1,53 @@
+---
+slug: "en/24"
+title: "lesson 24: body"
+description: "Learn sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
+practice:
+  - l1: "I have a headache."
+    l2: "lawa mi li pakala."
+  - l1: "I heard a faint sound."
+    l2: "mi kute e kalama lili."
+  - l1: "You obey. I command."
+    l2: "sina kute. mi lawa."
+  - l1: "Spice feels hot to my mouth."
+    l2: "namako li seli tawa uta mi."
+  - l1: "Please pet the lovely dog!"
+    l2: "o luka e soweli suwi!"
+  - l1: "Medicine heals her body."
+    l2: "misikeke li pona e sijelo ona."
+  - l1: "Her hair is nice to the touch."
+    l2: "linja lawa ona li pona tawa luka."
+  - l1: "The mountain is similar to the nose on my face."
+    l2: "nena kiwen li sama nena pi sinpin mi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+We already know the words for *eyes*, *heart*, *face*, and *back*, so let's learn the remaining parts of the body!
+
+<List>
+  <Word sl="lawa" m="head; to lead" />
+  <Word sl="kute" m="ear; to hear" />
+  <Word sl="nena" m="bump, like a nose, hill, breast" />
+  <Word sl="uta" m="mouth, lips; to kiss, to bite" />
+  <Word sl="sijelo" m="body" />
+  <Word sl="luka" m="hand, arm; to touch" />
+  <Word sl="noka" m="foot, leg" />
+  <Word sl="palisa" m="long hard thing, like a branch, rod, staff" />
+  <Word sl="linja" m="long flexible thing, like a string, rope" />
+</List>
+
+Something fun to notice is how many parts of the body have an associated action! The head leads, the eyes see, the ears hear, the mouth kisses, the heart feels, the hands touch.
+
+<List>
+    <Sentence sl="mi wile suli e linja lawa mi." m="I want to grow out my hair." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="My boss heard me running my mouth." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="The mirror gives off an inversed image." />
+  <Sentence sl="sijelo mi li wile e lape." m="My body requires rest." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="My fingers are larger than my toes." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
