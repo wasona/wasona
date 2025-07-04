@@ -1,0 +1,54 @@
+---
+slug: "tl/03"
+title: "ika-3 aralin: mga simpleng pangungusap"
+description: "Matuto ang salitang li, e, soweli, waso, pipi, kasi, moku, lukin, at sona!"
+practice:
+  - l1: "Alam ng hayop ang insekto."
+    l2: "soweli li sona e pipi."
+  - l1: "Kumakain ang insekto ng halaman."
+    l2: "pipi li moku e kasi."
+  - l1: "Tinitignan ng ibon ang halaman."
+    l2: "waso li lukin e kasi."
+  - l1: "Alam ng ibon ang hayop."
+    l2: "waso li sona e soweli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Mga simpleng pangungusap
+
+Ngayon na alam mo na kung paano basahin ang Toki Pona, oras na ngayon para matuto ng mga salita't pangungusap!  
+Ito ay iilan na mga salita para sa mga bagay at aksyon:
+
+<List>
+  <Word sl="soweli" m="hayop na namumuhay sa lupa, tulad ng pusa, aso, baka, daga, kalabaw, atbp." />
+  <Word sl="waso" m="ibon, tulad ng mga pato, kalapati, agila, atbp." />
+  <Word sl="pipi" m="insekto, tulad ng mga langgam, lamok, paruparo, gagamba, atbp." />
+  <Word sl="kasi" m="halaman, tulad ng mga sampaguita, narra, lumot, atbp." />
+  <Word sl="moku" m="kain, inom" />
+  <Word sl="lukin" m="kita, tignan" />
+  <Word sl="sona" m="alam" />
+</List>
+
+Madalas, ang isang pangungusap ay naka-istraktura gamit ng subject-verb-object na format. Iba ito doon sa ginagamit natin sa Tagalog na ang verb-subject-object format, pero habang sa atin ay na ang pandiwa ay kadalasan nasa unahan ng isang pangungusap, ngayon, ito ay nasa gitna. Gumawa tayo ng iilang mga pangungusap:
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="Kinakain ng hayop ang halaman." />
+  <Sentence sl="waso li moku e pipi." m="Kinakain ng ibon ang insekto." />
+  <Sentence sl="pipi li lukin e soweli." m="Nakikita ng insekto ang hayop." />
+  <Sentence sl="waso li sona e kasi." m="Alam ng ibon ang puno." />
+</List>
+
+Ito ay ang kaya natin matutunan galing dito:
+
+- Ang istraktura ng mga salita ay magkasingparehas sa Ingles: subject, verb, object.
+- Ang **󱤧 li** ay isang partikula na nagsisimula ng verb, o pandiwa sa Tagalog.
+- Ang **󱤉 e** ay isang artikulo na nagsisimula ng object.
+- Ang isinalin na pangungusap sa Tagalog ay mayroong nga partikulang gramatika tulad ng "ang", "ng", "-in-", pero wala iyon sa Toki Pona! Hindi nagsasabi ang pangungusap sa Toki Pona kung alin yung binibigayn diin, atbp. Sa mga mahahabang pag-uusap, maiintindihan mo ang kabuoan ng sinasabi!
+
+(Sa simula, mukhang hindi importante ang **󱤧 li** at ang **󱤉 e**. Matutunan natin kung bakit nga ba kailangan ito, pero para gawin iyon, kailangan na muna natin mas matutunan ang mga bahagi ng pananalita!)
+
+<Practice exercises={frontmatter.practice} client:load />
