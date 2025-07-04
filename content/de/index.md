@@ -1,5 +1,5 @@
 ---
-slug: "/de"
+slug: "de"
 title: "Wasona: a crash course in Toki Pona"
 description: "Read, play, and learn a new language!"
 ---
