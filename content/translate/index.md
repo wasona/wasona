@@ -8,6 +8,8 @@ description: "Help us by translating the course to your language!"
 
 **Ongoing translation projects:**
 
+* [German](https://github.com/wasona/wasona/pull/9)
+
 * [Tagalog](https://github.com/wasona/wasona/pull/8)
 
 **Some notes for translators:**
