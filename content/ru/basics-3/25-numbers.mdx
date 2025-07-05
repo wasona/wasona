@@ -3,18 +3,20 @@ slug: "ru/25"
 title: "занятие 25: числа"
 description: "Learn nanpa, wan, tu, ale, kipisi!"
 practice:
-  - l1: "eight"
+  - l1: "восемь"
     l2: "luka tu wan"
-  - l1: "You slice the bread."
+  - l1: "Ты режешь хлеб."
     l2: "sina kipisi e pan."
-  - l1: "The two of us join together."
+  - l1: "Мы вдвоём объединяемся."
     l2: "mi tu li kama wan."
-  - l1: "I can speak three languages."
+  - l1: "Я умею говорить на трёх языках."
     l2: "mi sona e toki tu wan."
-  - l1: "5 Euro"
+  - l1: "5 евро"
     l2: "mani luka pi ma Elopa"
-  - l1: "April begins."
+  - l1: "Начинается апрель."
     l2: "tenpo mun nanpa tu tu li open."
+    alsoAccept:
+      - "mun nanpa tu tu li open."
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -22,58 +24,58 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
 
-## Cardinal numbers
+## Количественные числительные
 
-Let's talk numbers!
-
-<List>
-  <Word sl="wan" m="one; united" />
-  <Word sl="tu" m="two; divided" />
-  <Word sl="luka" m="five, hand" />
-  <Word sl="mute" m="many" />
-  <Word sl="ale" m="all, every" />
-  <Word sl="kipisi" m="piece, part; to split" />
-</List>
-
-Toki Pona has words for 1, 2, 5, but not 3 or 4! But this is not so strange. You can imagine **󱥳 wan**, **󱥮 tu**, **󱤭 luka** like coins worth 1, 2, and 5. Let's try counting from 1 to 10:
+Поговорим о числах!
 
 <List>
-    <Word sl="wan" m="one" />
-    <Word sl="tu" m="two" />
-    <Word sl="tu wan" m="three" />
-    <Word sl="tu tu" m="four" />
-    <Word sl="luka" m="five" />
-    <Word sl="luka wan" m="six" />
-    <Word sl="luka tu" m="seven" />
-    <Word sl="luka tu wan" m="eight" />
-    <Word sl="luka tu tu" m="nine" />
-    <Word sl="luka luka" m="ten" />
+    <Word sl="wan" m="один; единый" />
+    <Word sl="tu" m="два; разделённый" />
+    <Word sl="luka" m="пять, рука" />
+    <Word sl="mute" m="много" />
+    <Word sl="ale" m="всякий, каждый" />
+    <Word sl="kipisi" m="часть, кусок; делить" />
 </List>
 
-In many situations, just knowing small numbers will be enough. But if you want to talk about purchases or the Gregorian calendar, there's an extra page about large numbers below.
-
-## Ordinal numbers
-
-Usually, numbers are just adjectives:
+В Toki Pona есть слова для 1, 2 и 5, но нет для 3 и 4! Но это не так странно, как может показаться. Представьте себе слова **󱥳 wan**, **󱥮 tu**, **󱤭 luka** как монеты номиналом 1, 2 и 5. Давайте попробуем посчитать от 1 до 10:
 
 <List>
-    <Word sl="kala wan" m="one fish" />
-    <Word sl="soko tu tu" m="four mushrooms" />
-    <Word sl="mun luka" m="five months" />
+  <Word sl="wan" m="один" />
+  <Word sl="tu" m="два" />
+  <Word sl="tu wan" m="три" />
+  <Word sl="tu tu" m="четыре" />
+  <Word sl="luka" m="пять" />
+  <Word sl="luka wan" m="шесть" />
+  <Word sl="luka tu" m="семь" />
+  <Word sl="luka tu wan" m="восемь" />
+  <Word sl="luka tu tu" m="девять" />
+  <Word sl="luka luka" m="десять" />
 </List>
 
-But these are *cardinal* numbers: numbers that talk about quantity. There are also *ordinal* numbers: those that talk about order. To make ordinal numbers, just use **󱤽 nanpa** + a number:
+Во многих ситуациях знать небольшие числа будет достаточно. Но на случай, если вам захочется поговорить о покупках или григорианском календаре, ниже есть дополнительная страница о больших числах.
+
+## Порядковые числительные
+
+Обычно числа выступают в роли прилагательных:
 
 <List>
-    <Word sl="nanpa" m="number; the ...-th" />
-    <Word sl="kala nanpa wan" m="the first fish" />
-    <Word sl="soko nanpa tu tu" m="the fourth mushroom" />
-    <Word sl="mun nanpa luka" m="the fifth month" />
+  <Word sl="kala wan" m="одна рыба" />
+  <Word sl="soko tu tu" m="четыре гриба" />
+  <Word sl="mun luka" m="пять месяцев" />
 </List>
 
-(By the way, **󱤽 nanpa** is special! It doesn't need **󱥍 pi**.)
+Но это *количественные* числительные, то есть они сообщают о количестве. Есть ещё *порядковые* числительные: они имеют дело с порядком предмета в списке. Чтобы образовать порядковое числительное, нужно всего лишь использовать **󱤽 nanpa** + число:
+
+<List>
+  <Word sl="nanpa" m="число, номер; № ...-ый" />
+  <Word sl="kala nanpa wan" m="первая рыба" />
+  <Word sl="soko nanpa tu tu" m="четвёртый гриб" />
+  <Word sl="mun nanpa luka" m="пятый месяц" />
+</List>
+
+(Кстати, частица **󱤽 nanpa** -- особенная! Как вы видите, ей не нужна частица **󱥍 pi**.)
 
 <Practice exercises={frontmatter.practice} client:load />
 
-## See also
-* [Q: how do I talk about large numbers?](ru/large-numbers/)
+## См. также
+* [В: как говорить о больших числах?](ru/large-numbers/)
