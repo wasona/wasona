@@ -1,0 +1,55 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Wort</th>
+      <th>Bedeutung</th>
+      <th>Hilfreiche Tipps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="wan" />
+      <td>eins</td>
+      <td>Denke an die Aussprache vom Buchstaben <strong>w</strong>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kute" />
+      <td>hören</td>
+      <td>Versuche, das <strong>e</strong> am Ende nicht schwächer auszusprechen!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="taso" />
+      <td>aber</td>
+      <td>Denke an das stimmlose <strong>s</strong> - versuche, <em>tasso</em> zu sagen!
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="sin" />
+      <td>neu</td>
+      <td>Das gilt auch am Anfang vom Wort!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>Zahl</td>
+      <td>
+        Übrigens schreiben wir <strong>np</strong>, aber sprechen normalerweise <strong>mp</strong>!
+      </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>Geräusch</td>
+      <td>Übe es, die erste Silbe zu betonen!</td>
+    </tr>
+  </tbody>
+</table>
