@@ -1,0 +1,103 @@
+---
+slug: "en/05"
+title: "lesson 5: parts of speech"
+description: "Learn about nouns, verbs, and adjectives!"
+practice:
+  - l1: "a strong bug"
+    l2: "pipi wawa"
+  - l1: "the strength of the bug"
+    l2: "wawa pipi"
+  - l1: "a big eye"
+    l2: "lukin suli"
+  - l1: "good food"
+    l2: "moku pona"
+  - l1: "amazingly good"
+    l2: "pona wawa"
+  - l1: "Food makes eyes better."
+    l2: "moku li pona e lukin."
+  - l1: "Animals know the cuteness of birds."
+    l2: "soweli li sona e suwi waso."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Parts of speech
+
+Some of you may have spotted that I introduced the word **󱥡 sona** twice, first as a verb 'to know', then as an adjective 'wise'. So which is it? And how do you know?
+
+In reality, it can be either! If it follows a noun, it's an adjective. If **󱤧 li** introduces it as a verb, then it's a verb. It's all about word order in a sentence!
+
+In fact, the same is true of _all_ words: if something is a noun, verb, or adjective, it can become _any of the three_! Among the words we've already learned, let's look at some examples:
+
+<List>
+  <Word sl="lukin" m="N: eye; V: to see" />
+  <Word sl="moku" m="N: food; V: to consume, to eat" />
+  <Word sl="sona" m="N: knowledge, wisdom; V: to know; Adj: knowledgeable, wise" />
+  <Word sl="suli" m="N: size; V: to make bigger, to emphasize; Adj: big, important" />
+  <Word sl="pona" m="N: goodness; V: to make better, to improve; Adj: good, pleasant" />
+  <Word sl="waso" m="N: bird; V: to make into a bird; Adj: of a bird, bird-like" />
+</List>
+
+I've only listed *some* words we've learned so far -- just enough to see the patterns:
+* When **verbs become nouns**, they usually mean an act of doing something (*knowledge*), or something that forms a crucial part of the act (*food, eye*).
+* When **verbs become adjectives**, they mean those which do something: (*wise people ~ people who know*)
+* When **nouns become verbs**, they usually mean to turn into or apply something to something (*to turn into a bird*).
+* When **nouns become adjectives**, they mean possession or similarity (*of a bird, bird-like*)
+* When **adjectives become nouns**, they mean a quality (*goodness, size*).
+* When **adjectives become verbs**, they impart a quality (*to make better, to make bigger*).
+
+But when talking, we Toki Pona speakers don't even have to think about these patterns most of the time! They start to blend into each other. At some point you stop even thinking about whether something was originally a noun or a verb or an adjective. It becomes a coherent whole!
+
+Let's practice using these words as nouns, verbs, and adjectives:
+
+<List>
+  <Sentence sl="lukin li pona e sona." m="Eyes improve knowledge." />
+  <Sentence sl="moku li suli e pipi." m="Food makes the bugs grow bigger." />
+  <Sentence
+    sl="moku li wawa e soweli lili."
+    m="Food strengthens the small animal."
+  />
+</List>
+
+## Word order matters!
+
+Since any noun can be an adjective, and any adjective can be a noun, word order really matters! Notice how these two phrases mean different things:
+
+<List>
+  <Word sl="soweli suli" m="big animal" />
+  <Word sl="suli soweli" m="the size of an animal" />
+  <Sentence
+    sl="soweli suli li sona e suli soweli."
+    m="The big animal knows the size of an animal."
+  />
+</List>
+
+## li and e matter, too!
+
+Remember how li and e seemed a little unnecessary? Now that we know any meaningful word can be used anywhere, as a noun, verb, or adjective, we can finally see how important they are. Thanks to them, we can distinguish these three very different sentences:
+
+<List>
+  <Word sl="soweli sona" m="wise animal" />
+  <Word sl="sona pona" m="good knowledge; to know well" />
+  <Word sl="pona waso" m="goodness of the bird" />
+  <Sentence
+    sl="soweli sona li pona e waso."
+    m="The wise animal helps the bird."
+  />
+  <Sentence
+    sl="soweli li sona pona e waso."
+    m="The animal knows the bird well."
+  />
+  <Sentence
+    sl="soweli li sona e pona waso."
+    m="The animal knows how good the bird is."
+  />
+</List>
+If you are ever confused about how to read or write a sentence, start by asking:
+"Where is the subject? Where is the verb? Where is the object?", and everything
+neatly separates into small phrases!
+
+<Practice exercises={frontmatter.practice} client:load />
