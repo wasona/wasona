@@ -21,7 +21,7 @@ description: "Read, play, and learn a new language!"
 
 ## This translation is not complete!
 
-10 lessons have been translated by jan juna Jona so far!  
+20 lessons have been translated by jan juna Jona so far!  
 --kala Asi
 
 </div>
@@ -50,15 +50,15 @@ Talk about home, materials, society, and be expressive.
 Learn your next 39 words!  
 At the end of this part, you will read a dialogue.
 
-* [lesson 11: home](tl/11)
-* [lesson 12: requests](tl/12)
-* [lesson 13: elements](tl/13)
-* [lesson 14: negation](tl/14)
-* [lesson 15: with and like](tl/15)
-* [lesson 16: society](tl/16)
-* [lesson 17: questions](tl/17)
-* [lesson 18: feelings](tl/18)
-* [lesson 19: intermission 2](tl/19)
+* [ika-11 aralin: ang bahay](tl/11)
+* [ika-12 aralin: mga pakiusap](tl/12)
+* [ika-13 aralin: mga elemento](tl/13)
+* [ika-14 na aralin: negation](tl/14)
+* [ika-15 aralin: pagsasama't paghahalintulad](tl/15)
+* [ika-16 na aralin: ang lipunan](tl/16)
+* [ika-17 aralin: mga tanong](tl/17)
+* [ika-18 aralin: mga pakiramdam](tl/18)
+* [ika-19 na aralin: ika-2 panahon ng pagpapahinga](tl/19)
 
 ## Part 3: wrapping up!
 
