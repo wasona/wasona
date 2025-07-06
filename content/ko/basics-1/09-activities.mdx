@@ -1,0 +1,98 @@
+---
+slug: "en/09"
+title: "lesson 9: activities"
+description: "Learn utala, lape, musi, nasa, kalama, wile, ken, alasa!"
+practice:
+  - l1: "A cute bird sleeps."
+    l2: "waso suwi li lape."
+  - l1: "Its name is long."
+    l2: "nimi ona li suli."
+  - l1: "to want to have fun"
+    l2: "wile musi"
+  - l1: "to try to sing"
+    l2: "alasa kalama"
+  - l1: "I start to draw the plant."
+    l2: "mi kama sitelen e kasi."
+  - l1: "The cub can fight playfully."
+    l2: "soweli lili li ken utala musi."
+  - l1: "I try to go to China."
+    l2: "mi alasa tawa ma Sonko."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Activities
+
+Let's learn some more words for things you can do!
+
+<List>
+  <Word sl="utala" m="to fight, to attack" />
+  <Word sl="lape" m="to sleep, to rest" />
+  <Word sl="kalama" m="to produce a sound; sound" />
+  <Word sl="musi" m="to have fun; funny, amusing, interesting" />
+  <Word sl="nasa" m="strange, unusual, silly, drunken" />
+  {/*<Word sl="lipu" m="paper, card, book, website; a flat thing with 󱥡 info" />*/}
+</List>
+
+These words are pretty straightforward! Let's use them in sentences:
+
+<List>
+  <Sentence sl="soweli li utala e jan." m="The animal attacked someone." />
+  <Sentence sl="sina lape lon tomo." m="You sleep at home." />
+  <Sentence sl="nimi ona li nasa tawa mi." m="Her name is strange to me." />
+  <Sentence
+    sl="jan lili li musi tan kalama."
+    m="The child is having fun because of noises."
+  />
+</List>
+
+## Preverbs
+
+Sometimes we want to talk not only about the activity itself, but about how we relate to it. Maybe we _want to_ do something. Maybe we _can_ do something. Maybe we _start_ or _keep on_ doing something.
+
+In English, these are known as *auxilliary and modal verbs*. Toki Pona has a similar system, we like to call them _preverbs_! A preverb is an added verb that goes before the main verb. You already know some of them! Let's learn what they mean when they act as preverbs:
+
+<List>
+  <Word sl="kama" m="to begin to ..., to become ..." />
+  <Word sl="awen" m="to continue to ..., to still ..." />
+  {/* <Word sl="sona" m="to know how to ..." /> */}
+</List>
+
+Only a few verbs in Toki Pona are allowed to be preverbs. So let's also learn the remaining ones:
+
+<List>
+  <Word sl="wile" m="to want to ..." />
+  <Word sl="ken" m="to be able to ..." />
+  <Word sl="alasa" m="to try to ..." />
+</List>
+
+Preverbs are very versatile! Let's look at some phrases with preverbs:
+
+<List>
+  <Word sl="wile lape" m="to want to sleep" />
+  <Word sl="awen pona" m="to continue to be good" />
+  <Word sl="kama sona" m="to become knowledgeable, to learn" />
+  {/* <Word sl="sona sitelen" m="to know how to draw" /> */}
+  <Word sl="alasa kama wawa" m="to try to become strong" />
+</List>
+
+Let's try to use preverbs in sentences:
+
+<List>
+  <Sentence sl="waso lili li wile lape." m="The small bird wants to sleep." />
+  {/* <Sentence sl="jan li sona moku e kasi." m="People know how to eat plants." /> */}
+  <Sentence sl="mi kama sona e toki pona." m="I learn Toki Pona." />
+  <Sentence sl="sina alasa tawa ma Tosi." m="You try to go to Germany." />
+  <Sentence
+    sl="toki ona li awen nasa tawa mi."
+    m="His speech is still strange to me."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [Q: are there any more preverbs?](en/more-preverbs/)
