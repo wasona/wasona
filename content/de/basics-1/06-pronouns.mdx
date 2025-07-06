@@ -1,0 +1,79 @@
+---
+slug: "de/06"
+title: "Lektion 6: Pronomen"
+description: "Lerne ni, mi, sina, ona!"
+practice:
+  - l1: "Das ist eine süße Pflanze."
+    l2: "ni li kasi suwi."
+  - l1: "Das sind große Augen."
+    l2: "ni li lukin suli."
+  - l1: "Deine Augen sind groß."
+    l2: "lukin sina li suli."
+  - l1: "Dieser Vogel ist winzig."
+    l2: "waso ni li lili."
+  - l1: "Gemeine Käfer haben meine Pflanzen gegessen."
+    l2: "pipi ike li moku e kasi mi."
+  - l1: "Du bist süß."
+    l2: "sina suwi."
+  - l1: "Ich sehe sie."
+    l2: "mi lukin e ona."
+  - l1: "Sie essen gut."
+    l2: "ona li moku pona."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Pronomen
+
+Du bist vermutlich langsam ermüdet von langen Sätzen und Wortarten. Drehen wir eine Stufe runter und zeigen wir auf Dinge.
+
+<List>
+  <Word sl="ni" m="das hier, das da; dieses" />
+  <Sentence sl="ni li soweli." m="Das ist ein Tier." />
+  <Sentence sl="ni li kasi." m="Das ist eine Pflanze." />
+  <Sentence sl="ni li moku suwi." m="Das ist süßes Essen." />
+  <Sentence sl="ni li suli." m="Das ist wichtig." />
+  <Sentence sl="ni li pona wawa." m="Das ist supergut." />
+</List>
+
+Das sind unsere ersten Sätze *ohne* Objekt, also gibt es kein **󱤉 e** in diesen Sätzen!
+
+Vielleicht fragst du dich: Mit **󱤧 li** fängt das Prädikat an. Aber wo ist das Prädikat? Auf Deutsch wäre das Prädikat "sein". Auf Toki Pona gibt es kein solches Wort. Wenn Wörter also die Rolle des Prädikat in einem Satz übernehmen, haben sie automatisch "sein" in ihrer Bedeutung: **󱥢 soweli** 'ein Tier sein', **󱥣 suli** 'wichtig sein'.
+
+Wo wir uns jetzt ein Pronomen angeguckt haben, können wir auch weitere lernen:
+
+<List>
+  <Word sl="mi" m="ich, wir; mein, unser" />
+  <Word sl="sina" m="du, Sie; dein, Ihr" />
+  <Word sl="ona" m="er, sie, es; sein, ihr" />
+</List>
+
+Üben wir es, **󱤴 mi**, **󱥞 sina**, **󱥆 ona** und **󱥁 ni** in Sätzen zu nutzen:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Diese Pflanze ist groß." />
+  <Sentence sl="sona sina li wawa." m="Dein Wissen ist unglaublich." />
+  <Sentence sl="pipi ni li pipi mi." m="Dieser Käfer ist mein Käfer." />
+  <Sentence sl="waso sina li lukin e mi." m="Dein Vogel sieht mich." />
+  <Sentence sl="waso li moku e pipi ni." m="Der Vogel isst diesen Käfer." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Mein Tier isst seine Pflanze." />
+</List>
+
+Du solltest mit dieser Art Satz schon vertraut sein! In den meisten Positionen im Satz verhalten sich Pronomen wie normale Nomen und Adjektive. Es passiert aber etwas Seltsames, wenn **󱤴 mi** oder **󱥞 sina** das Subjekt von einem Satz sind:
+
+<List>
+  <Sentence sl="mi wawa." m="Ich bin stark." />
+  <Sentence sl="sina lukin e moku." m="Du siehst Essen." />
+  <Sentence sl="mi sona e kasi suli." m="Ich kenne die große Pflanze." />
+  <Sentence sl="sina sona e suli kasi." m="Du kennst die Größe der Pflanze." />
+</List>
+
+Toki Pona hat eine besondere Regel: Wenn **󱤴 mi** oder **󱥞 sina** das Subjekt des Satzes ist, entfernen wir das **󱤧 li**, das normalerweise dem Subjekt folgen würde. Das passiert, weil Sätze, die mit **󱤴 mi** oder **󱥞 sina** beginnen, extrem häufig sind!
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Siehe auch
+* [F: Bedeutet 'li' 'ist'?](de/li-and-is)

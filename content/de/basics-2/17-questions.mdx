@@ -1,0 +1,103 @@
+---
+slug: "de/17"
+title: "Lektion 17: Fragen"
+description: "Lerne anu, seme!"
+practice:
+  - l1: "Macht Tabak die Luft dreckig?"
+    l2: "kasi nasa li ike ala ike e kon?"
+  - l1: "Ist das ein Ziegelstein?"
+    l2: "ni li leko ala leko?"
+  - l1: "Kannst du wie ein Vogel singen?"
+    l2: "sina ken ala ken kalama sama waso?"
+  - l1: "Benutzt du Google?"
+    l2: "sina kepeken ala kepeken ilo Kuko?"
+  - l1: "Bin ich in Italien?"
+    l2: "mi lon ala lon ma Italija?"
+  - l1: "Das benötigt Geld, oder?"
+    l2: "ni li wile e mani anu seme?"
+  - l1: "Du sprichst deutsch, oder?"
+    l2: "sina toki Tosi anu seme?"
+  - l1: "Wo ist Japan?"
+    l2: "ma Nijon li lon seme?"
+  - l1: "Wer kommt aus Indien?"
+    l2: "jan seme li tan ma Palata?"
+  - l1: "Was willst du essen?"
+    l2: "sina wile moku e seme?"
+    alsoAccept:
+      - "sina wile e moku seme?"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Fragen
+
+Es gibt normalerweise zwei Arten von Fragen:
+
+* *Ja/Nein-Fragen*. Das sind Fragen, die positiv oder negativ mit Ja oder Nein beantwortet werden können.
+* *offene Fragen*. Das sind Fragen, bei denen eine Lücke gefüllt werden muss: Wer hat es gemacht? Was gemacht? Wem? Wo? Warum?
+
+## Ja/Nein-Fragen
+
+### Frage
+
+Erinnerst du dich daran, wie wir in den letzten Lektionen gelernt haben, einen Satz zu verneinen, indem wir das erste Wort im Prädikat finden? Für Ja/Nein-Fragen machen wir etwas Ähnliches. Wir verdoppeln das erste Wort im Prädikat, und tun ein **󱤂 ala** dazwischen.
+
+<List>
+  <Word sl="moku ala moku" m="Isst ...?" />
+  <Sentence sl="pipi li moku ala moku e len?" m="Isst die Motte das Tuch?" />
+  <Word sl="pona ala pona" m="Ist ... gut?" />
+  <Sentence sl="kalama musi li pona ala pona tawa sina?" m="Ist die Musik gut für dich? (Magst du die Musik?)" />
+  <Word sl="wile ala wile" m="Will ...?" />
+  <Sentence sl="sina wile ala wile lape lon supa?" m="Willst du im Bett schlafen?" />
+  <Word sl="lon ala lon" m="Ist ... in ...?" />
+  <Sentence sl="ona li lon ala lon ma Mewika?" m="Sind sie in den USA?" />
+</List>
+
+Es ist etwas ungewöhnlich für jemanden, der deutsch spricht! Aber etwas Ähnliches gibt es auf [Mandarin](https://en.wikipedia.org/wiki/A-not-A_question#A-not-AB_form_4) (verlinkter Artikel auf englisch).
+
+### Antwort
+
+Auf Deutsch gibt es ein eigenes Wort für 'ja'. Toki Pona macht stattdessen, was Finnisch, Mandarin, Latein und andere Sprachen machen: Man antwortet mit dem Verb für 'ja', und dem Verb + **󱤂 ala** für 'nein'.
+
+<List>
+  <Sentence sl="sitelen li musi ala musi?" m="Ist das Video lustig?" />
+  <Word sl="musi." m="Lustig. (=Ist es.)" />
+  <Word sl="musi ala." m="Nicht lustig. (=Ist es nicht.)" />
+</List>
+
+Das **V ala V**-Muster ist sehr weit verbreitet! Es gibt aber auch ein anderes:
+
+<List>
+  <Word sl="seme" m="Was? Welches?" />
+  <Word sl="anu" m="oder" />
+  <Word sl="anu seme" m="... oder? nicht? oder was?" />
+</List>
+
+Du kannst **󱤇󱥙 anu seme** ans Ende jeder Aussage tun, um eine Frage zu bilden:
+
+<List>
+  <Sentence sl="sitelen li musi anu seme?" m="The video is fun, right?" />
+</List>
+
+Du kannst mit **󱤻 musi** oder **󱤻󱤂 musi ala** antworten, wie bei einer normalen Ja/Nein-Frage! Aber das Gefühl ist etwas anders: Wenn du **󱤇󱥙 anu seme** nutzt, dann ist es wahrscheinlicher, dass du willst, dass die andere Person dir zustimmt.
+
+## Offene Fragen
+
+Wir haben gerade gelernt, dass **󱥙 seme** 'was?' bedeutet, und es ist der wichtigste Teil von *offenen Fragen*! **󱥙 seme** ist wie eine Lücke im Satz, von der du willst, dass die andere Person sie mit ihrer Information füllt:
+
+<List>
+  <Sentence sl="waso li lon seme?" m="Wo ist der Vogel? (wörtlich: Der Vogel ist bei was?)" />
+  <Sentence sl="waso li lon tomo." m="Der Vogel ist beim Haus." />
+  <Sentence sl="soweli li utala e jan seme?" m="Wen hat das Tier angegriffen? (wörtlich: Das Tier hat welche Person angegriffen?)" />
+  <Sentence sl="soweli li utala e jan Ema." m="Das Tier hat Emma angegriffen." />
+</List>
+
+Wie du siehst, wird nur **󱥙 seme** in der Antwort ausgetauscht — alles andere im Satz bleibt gleich! Das ist anders als auf Deutsch, wo Fragen die Reihenfolge der Wörter im Satz verändern.
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Siehe auch
+* [F: Wie sagt man "machen"?](de/doing/)

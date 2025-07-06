@@ -1,0 +1,103 @@
+---
+slug: "de/05"
+title: "Lektion 5: Wortarten"
+description: "Lerne Nomen, Verben und Adjektive!"
+practice:
+  - l1: "ein starker Käfer"
+    l2: "pipi wawa"
+  - l1: "die Stärke des Käfers"
+    l2: "wawa pipi"
+  - l1: "ein großes Auge"
+    l2: "lukin suli"
+  - l1: "gutes Essen"
+    l2: "moku pona"
+  - l1: "supergut"
+    l2: "pona wawa"
+  - l1: "Essen macht die Augen besser."
+    l2: "moku li pona e lukin."
+  - l1: "Tiere kennen die Süße von Vögeln."
+    l2: "soweli li sona e suwi waso."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Wortarten
+
+Manche von euch haben vielleicht bemerkt, dass ich das Wort **󱥡 sona** zweimal eingeführt habe, zuerst als Verb 'wissen', dann als Adjektiv 'weise'. Was ist es jetzt? Und woher weiß man das?
+
+Es kann in Wahrheit beides sein! Wenn es nach einem Nomen steht, dann ist es ein Adjektiv. Wenn **󱤧 li** es als Prädikat einführt, dann ist es ein Verb. Es geht um die Stellung der Worte in einem Satz!
+
+Tatsächlich ist das für *alle* Wörter der Fall: Wenn etwas ein Nomen, Verb oder Adjektiv ist, kann es _alles drei_ werden! Schauen wir uns ein paar Beispiele unter den Wörtern, die wir schon gelernt haben, an:
+
+<List>
+  <Word sl="lukin" m="N: Auge; V: sehen" />
+  <Word sl="moku" m="N: Essen; V: zu sich nehmen; essen" />
+  <Word sl="sona" m="N: Wissen, Weisheit; V: wissen; Adj: schlau, weise" />
+  <Word sl="suli" m="N: Größe; V: vergrößern, betonen; Adj: groß, wichtig" />
+  <Word sl="pona" m="N: Güte; V: verbessern; Adj: gut, gemütlich" />
+  <Word sl="waso" m="N: Vogel; V: zu einem Vogel machen; Adj: eines Vogels, wie ein Vogel" />
+</List>
+
+Ich habe nur *manche* der Wörter, die wir bis jetzt gelernt haben, erwähnt — aber genug, um die Muster zu erkennen:
+* Wenn **Verben Nomen werden**, bedeuten sie normalerweise der Akt, etwas zu tun (*Wissen*), oder etwas, das einen wichtigen Teil dieses Aktes darstellt (*Essen, Auge*).
+* Wenn **Verben Adjektive werden**, bedeuten sie die, die etwas machen (*weise Menschen ~ Menschen, die wissen*).
+* Wenn **Nomen Verben werden**, bedeuten sie normalerweise etwas zu etwas anderem machen, oder etwas auf etwas anderes anwenden (*zu einem Vogel machen*).
+* Wenn **Nomen Adjektive werden**, bedeuten sie Besitz oder Ähnlichkeit (*eines Vogels, wie ein Vogel*).
+* Wenn **Adjektive Nomen werden**, bedeuten sie eine Eigenschaft (*Güte, Größe*)
+* Wenn **Adjektive Verben werden**, bedeuten sie eine Veränderung von einer Eigenschaft (*verbessern, vergrößern*)
+
+Aber wenn wir reden, müssen wir Toki-Pona-Sprecher meistens nicht mal über diese Muster nachdenken! Die Bedeutungen fangen an, ineinander einzugehen. Irgendwann hört man damit auf, darüber nachzudenken, ob ein Wort ursprünglich ein Nomen, Verb oder Adjektiv war. Man sieht es als großes Ganzes!
+
+Üben wir, diese Wörter als Nomen, Verben und Adjektive zu nutzen!
+
+<List>
+  <Sentence sl="lukin li pona e sona." m="Augen verbessern Wissen." />
+  <Sentence sl="moku li suli e pipi." m="Essen bringt die Käfer dazu, größer zu wachsen." />
+  <Sentence
+    sl="moku li wawa e soweli lili."
+    m="Essen stärkt das kleine Tier."
+  />
+</List>
+
+## Die Reihenfolge der Wörter ist wichtig!
+
+Da jedes Nomen ein Adjektiv sein kann, und jedes Adjektiv ein Nomen, ist die Reihenfolge wirklich wichtig! Schau dir an, wie diese zwei Phrasen unterschiedliche Dinge bedeuten:
+
+<List>
+  <Word sl="soweli suli" m="großes Tier" />
+  <Word sl="suli soweli" m="die Größe des Tieres" />
+  <Sentence
+    sl="soweli suli li sona e suli soweli."
+    m="Das große Tier kennt die Größe des Tieres."
+  />
+</List>
+
+## li und e sind auch wichtig!
+
+Erinnerst du dich daran, dass li und e etwas unnötig erschienen sind? Jetzt, wo wir wissen, dass jedes Wort mit Bedeutung überall benutzt werden kann, ob als Nomen, als Verb oder als Adjektiv, können wir endlich sehen, wie wichtig sie sind. Dank ihnen können wir diese drei sehr unterschiedlichen Sätze auseinanderhalten:
+
+<List>
+  <Word sl="soweli sona" m="weises Tier" />
+  <Word sl="sona pona" m="gutes Wissen, gut wissen" />
+  <Word sl="pona waso" m="die Güte des Vogels" />
+  <Sentence
+    sl="soweli sona li pona e waso."
+    m="Das weise Tier hilft dem Vogel."
+  />
+  <Sentence
+    sl="soweli li sona pona e waso."
+    m="Das Tier kennt den Vogel gut."
+  />
+  <Sentence
+    sl="soweli li sona e pona waso."
+    m="Das Tier weiß, wie gut der Vogel ist."
+  />
+</List>
+Falls du je verwirrt bist, weil du nicht weißt, wie du einen Satz lesen oder schreiben sollst, fange an, indem du fragst:
+"Wo ist das Subjekt? Wo ist das Prädikat? Wo ist das Objekt?",
+und das meiste kann schön in kleine Teile getrennt werden!
+
+<Practice exercises={frontmatter.practice} client:load />
