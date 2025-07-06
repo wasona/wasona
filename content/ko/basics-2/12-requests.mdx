@@ -1,0 +1,56 @@
+---
+slug: "en/12"
+title: "lesson 12: requests"
+description: "Learn o!"
+practice:
+  - l1: "Emma, try to sleep!"
+    l2: "jan Ema o alasa lape!"
+  - l1: "Hey bird, sing to me!"
+    l2: "waso o kalama tawa mi!"
+  - l1: "Hey, Kenta!"
+    l2: "jan Kenta o!"
+  - l1: "Talk to Nina!"
+    l2: "o toki tawa jan Nina!"
+  - l1: "Draw something strange!"
+    l2: "o sitelen e ijo nasa!"
+  - l1: "Maya, give me the spoon!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Requests
+
+In Toki Pona, a sentence with **󱤧 li** is a statement of fact. But sometimes instead of making statements of fact, we want to make requests. Requests are how we tell other people what we want to happen. In a request, instead of **󱤧 li**, we use **󱥄 o**:
+
+<List>
+  <Word sl="o" m="starts a request, command, instruction, wish" />
+  <Sentence sl="ilo li sitelen e pipi." m="The phone is showing a bug." />
+  <Sentence sl="ilo o sitelen e waso!" m="Oh phone, please show a bird!" />
+</List>
+
+Let's let's look at a few more commands:
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="People, please read the good paper!" />
+  <Sentence sl="soweli mi o moku pona!" m="My cat, please eat well!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="May your child become strong!" />
+  <Sentence sl="pona o tawa sina!" m="May goodness go to you! (Blessings be upon you!)" />
+</List>
+
+You might notice that some of these sentences separate quite nicely in two parts:
+* The call for someone's attention (before **󱥄 o**)
+* The request itself (after **󱥄 o**)
+
+We can use those separately:
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Emma, please close the door!" />
+  <Sentence sl="jan Ema o!" m="Hey, Emma!" />
+  <Sentence sl="o pini e lupa tomo!" m="Please close the door!" />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

@@ -1,0 +1,79 @@
+---
+slug: "en/06"
+title: "lesson 6: pronouns"
+description: "Learn ni, mi, sina, ona!"
+practice:
+  - l1: "This is a sweet plant."
+    l2: "ni li kasi suwi."
+  - l1: "These are big eyes."
+    l2: "ni li lukin suli."
+  - l1: "Your eyes are big."
+    l2: "lukin sina li suli."
+  - l1: "This bird is tiny."
+    l2: "waso ni li lili."
+  - l1: "Mean bugs ate my plant."
+    l2: "pipi ike li moku e kasi mi."
+  - l1: "You are cute."
+    l2: "sina suwi."
+  - l1: "I see them."
+    l2: "mi lukin e ona."
+  - l1: "They eat well."
+    l2: "ona li moku pona."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Pronouns
+
+You're probably tired of long sentences and parts-of-speech shenanigans. Let's take it down a notch, by pointing at things:
+
+<List>
+  <Word sl="ni" m="this, that" />
+  <Sentence sl="ni li soweli." m="This is an animal." />
+  <Sentence sl="ni li kasi." m="This is a plant." />
+  <Sentence sl="ni li moku suwi." m="This is sweet food." />
+  <Sentence sl="ni li suli." m="This is important." />
+  <Sentence sl="ni li pona wawa." m="This is amazingly good." />
+</List>
+
+These are our first _sentences without an object_, and so there is no **󱤉 e** in these sentences!
+
+You might wonder: **󱤧 li** starts the verb. But where is the verb? In English, the verb is 'to be'. In Toki Pona, there is no verb 'to be'. Instead, when filling the role of the verb in the sentence, words automatically include 'to be' in their meaning: **󱥢 soweli** 'to be an animal', **󱥣 suli** 'to be important'.
+
+Now that we've looked at one pronoun, let's get some more:
+
+<List>
+  <Word sl="mi" m="I, we; my, our" />
+  <Word sl="sina" m="you; your" />
+  <Word sl="ona" m="she, he, it, they; her, his, its, their" />
+</List>
+
+Let's practice using **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, and **󱥁 ni** in sentences:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="This plant is big." />
+  <Sentence sl="sona sina li wawa." m="Your knowledge is amazing." />
+  <Sentence sl="pipi ni li pipi mi." m="This bug is my bug." />
+  <Sentence sl="waso sina li lukin e mi." m="Your bird sees me." />
+  <Sentence sl="waso li moku e pipi ni." m="The bird eats this bug." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="My animal eats its plant." />
+</List>
+
+You should already be familiar with sentences like these! In most positions in the sentence, pronouns behave just like normal nouns and adjectives. But something strange happens when **󱤴 mi** or **󱥞 sina** is the subject of the sentence:
+
+<List>
+  <Sentence sl="mi wawa." m="I am strong." />
+  <Sentence sl="sina lukin e moku." m="You see food." />
+  <Sentence sl="mi sona e kasi suli." m="I know the big plant." />
+  <Sentence sl="sina sona e suli kasi." m="You know the plant's size." />
+</List>
+
+Toki Pona has a special rule: when **󱤴 mi** or **󱥞 sina** is the subject of the sentence, we remove the **󱤧 li** that would normally follow the subject. This is because sentences starting with **󱤴 mi** or **󱥞 sina** are extremely common!
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [Q: does 'li' mean 'is'?](en/li-and-is)
