@@ -1,0 +1,69 @@
+---
+slug: "en/11"
+title: "lesson 11: home"
+description: "Learn ilo, lipu, poki, supa, lupa, len, open, pini, jo, ijo!"
+practice:
+  - l1: "You close the door."
+    l2: "sina pini e lupa."
+  - l1: "There is a cat in my house."
+    l2: "soweli li lon tomo mi."
+  - l1: "My house contains a cat."
+    l2: "tomo mi li jo e soweli."
+  - l1: "Your bird needs food."
+    l2: "waso sina li wile e moku."
+  - l1: "Sunita can sing well."
+    l2: "jan Sunita li ken kalama pona."
+  - l1: "I want to speak about a sewing machine."
+    l2: "mi wile toki e ilo len."
+  - l1: "Someone put the book about bugs on the desk."
+    l2: "jan li pana e lipu pipi tawa supa."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Home
+
+There's a lot of stuff in our homes:
+
+<List>
+  <Word sl="ilo" m="tool, like a hammer, fork, phone, app" />
+  <Word sl="lipu" m="flat thing for 󱥡 sona, like paper, card, book, website" />
+  <Word sl="poki" m="container, like a box, drawer, bottle" />
+  <Word sl="supa" m="horizontal surface, like a shelf, desk, couch" />
+  <Word sl="lupa" m="an opening, like a door, window, hole" />
+  <Word sl="len" m="a cover, like clothes, shoes, blanket" />
+</List>
+
+And here's what we do with them:
+
+<List>
+  <Word sl="open" m="to begin, to open, to turn on" />
+  <Word sl="pini" m="to end, to close, to turn off" />
+  <Word sl="jo" m="to hold, to contain, to include" />
+</List>
+
+Let's practice!
+
+<List>
+  <Sentence sl="mi open e lupa." m="I open the door." />
+  <Sentence sl="jan li pini e poki moku." m="The person closes the fridge." />
+  <Sentence sl="lipu li lon supa lape." m="The book is on the bed." />
+  <Sentence sl="poki mi li ken jo e len." m="My drawer may contain clothes." />
+  <Sentence sl="ilo mi li wile e wawa." m="My phone requires electricity." />
+</List>
+
+## Something
+
+Inside a box, we may find clothes, papers, tools, photos... All sorts of stuff! How can we talk about it all in general?
+
+<List>
+  <Word sl="ijo" m="something, thing, stuff" />
+  <Sentence sl="poki li jo e ijo." m="The box has stuff." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="Someone is drawing something cute." />
+  <Sentence sl="mi wile toki e ijo kasi." m="I would like to talk about something related to plants." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
