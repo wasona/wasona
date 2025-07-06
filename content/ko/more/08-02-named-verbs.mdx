@@ -1,0 +1,53 @@
+---
+slug: "en/named-verbs"
+title: "Q: isn't 'jan li toki Inli' a bit strange?"
+description: ""
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+You may have noticed sentences like:
+
+<List>
+  <Sentence sl="jan li toki Inli." m="The person speaks English." />
+  <Sentence sl="jan li musi Manka." m="The person plays Minecraft." />
+</List>
+
+But in English, these sentences are Subject-Verb-Object. *'English'* and *'Minecraft'* would be the object of the sentence. But there's no object in Toki Pona -- you can tell that, because there's no **󱤉 e**. How does it work, then?
+
+Well, the translation is a bit misleading. Here's what it means more literally:
+
+<List>
+  <Sentence sl="jan li toki Inli." m="The person speaks English-ly." />
+  <Sentence sl="jan li musi Manka." m="The person plays Minecraft-ly." />
+</List>
+
+We've already talked about how *adjectives* and *adverbs* are the same thing in Toki Pona, and names are adjectives. So logically, they can be adverbs, too! It's grammatically similar to sentences like:
+
+<List>
+  <Sentence sl="jan li toki suwi." m="The person speaks adorably." />
+  <Sentence sl="jan li musi pona." m="The person plays well." />
+</List>
+
+## Are there alternatives?
+
+Yes! In fact, this style with names as adverbs is relatively recent in popularity. The older style looks like this:
+
+<List>
+  <Sentence sl="jan li toki lon toki Inli." m="The person speaks in English." />
+  <Sentence sl="jan li toki kepeken toki Inli." m="The person speaks by means of English." />
+  <Sentence sl="jan li musi lon musi Manka." m="The person has fun in Minecraft." />
+  <Sentence sl="jan li musi kepeken musi Manka." m="The person has fun by means of Minecraft." />
+</List>
+
+## Can I say 'toki e toki ...' or 'musi e musi ...'?
+
+This was relatively common in the past! But nowadays, the meaning might be understood a bit different from what you want:
+
+<List>
+  <Sentence sl="jan li toki e toki Inli." m="The person speaks about English.<br />(makes sense, but in a different situation)" />
+  <Sentence sl="jan li musi e musi Manka." m="The person entertains Minecraft. (???)" />
+</List>

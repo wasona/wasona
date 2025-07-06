@@ -1,0 +1,54 @@
+---
+slug: "en/03"
+title: "lesson 3: simple sentences"
+description: "Learn li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
+practice:
+  - l1: "The animal knows the bug."
+    l2: "soweli li sona e pipi."
+  - l1: "The bug eats plants."
+    l2: "pipi li moku e kasi."
+  - l1: "The bird sees plants."
+    l2: "waso li lukin e kasi."
+  - l1: "The bird knows the animal."
+    l2: "waso li sona e soweli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Simple sentences
+
+Now that you know how to read Toki Pona, it's time to learn words and sentences!  
+Here are some words for things and actions:
+
+<List>
+  <Word sl="soweli" m="land animal, like a cat, dog, cow, mouse, elephant" />
+  <Word sl="waso" m="bird, like a pigeon, goose, owl" />
+  <Word sl="pipi" m="insect, like a beetle, ant, butterfly, spider" />
+  <Word sl="kasi" m="plant, like a clover, birch tree, cactus, moss" />
+  <Word sl="moku" m="to consume" />
+  <Word sl="lukin" m="to see" />
+  <Word sl="sona" m="to know" />
+</List>
+
+A very common kind of sentence is called a "subject-verb-object" sentence. This means that one thing (the subject) does something to another thing (the object). Let's make a few sentences:
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="The animal eats plants." />
+  <Sentence sl="waso li moku e pipi." m="The bird eats bugs." />
+  <Sentence sl="pipi li lukin e soweli." m="The insect sees an animal." />
+  <Sentence sl="waso li sona e kasi." m="The bird knows the tree." />
+</List>
+
+Here's what we can learn:
+
+- The word order is the same as in English: subject, verb, object.
+- **󱤧 li** is a particle that starts the verb.
+- **󱤉 e** is a particle that starts the object.
+- The English translation includes words and word-pieces like "the", "an", "-s", but those are guesses! The Toki Pona sentence doesn't specify if we're talking about "_a_ bird" or "_the_ bird". In longer conversations, it becomes pretty clear!
+
+(**󱤧 li** and **󱤉 e** may seem unnecessary at first. We will learn about why they are required, but to do that, we first need to learn more about parts of speech!)
+
+<Practice exercises={frontmatter.practice} client:load />
