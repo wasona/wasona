@@ -19,8 +19,8 @@ export const langs = (() => {
   return [...rawLangs].sort();
 })();
 export const langNames: Record<string, string> = {
-  de: "Deutsch",
   en: "English",
+  de: "Deutsch",
   ru: "русский",
   translate: "add language",
 };
