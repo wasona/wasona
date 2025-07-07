@@ -11,9 +11,7 @@ description: "Help us by translating the course to your language!"
 **Ongoing translation projects:**
 
 * [Tagalog](https://github.com/wasona/wasona/pull/8)
-
 * [Polish](https://github.com/wasona/wasona/pull/10)
-
 * [Korean](https://github.com/wasona/wasona/pull/11)
 
 **Some notes for translators:**
