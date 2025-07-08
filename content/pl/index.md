@@ -1,73 +1,95 @@
 ---
 slug: "pl"
-title: "Wasona: a crash course in Toki Pona"
-description: "Read, play, and learn a new language!"
+title: "Wasona: kurs błyskawiczny toki pony"
+description: "Czytaj, baw się  i naucz się nowego języka!"
 ---
-## Part 1: first steps!
+## Część 1: pierwsze kroki!
 
-Talk about animals, people, places, and activities.  
-Learn your first 40 words!  
-At the end of this part, you will read a short story.
+Rozmawiaj o zwierzętach, ludziach, miejscach i czynnościach.  
+Nauczysz się swoich pierwszych 40 słów!  
+Na końcu tej części przeczytasz krótką historyjkę.
 
-* [introduction](pl/00)
-* [lesson 1: pronunciation](pl/01)
-* [lesson 2: two writing systems](pl/02)
-* [lesson 3: simple sentences](pl/03)
-* [lesson 4: adjectives](pl/04)
-* [lesson 5: parts of speech](pl/05)
-* [lesson 6: pronouns](pl/06)
-* [lesson 7: names](pl/07)
-* [lesson 8: prepositions](pl/08)
-* [lesson 9: activities](pl/09)
-* [lesson 10: intermission 1](pl/10)
+* [wprowadzenie](pl/00)
+* [lekcja 1: wymowa](pl/01)
+* [lekcja 2: dwa systemy pisma](pl/02)
+* [lekcja 3: proste zdania](pl/03)
+* [lekcja 4: przymiotniki](pl/04)
+* [lekcja 5: części mowy](pl/05)
+* [lekcja 6: zaimki](pl/06)
+* [lekcja 7: imiona](pl/07)
+* [lekcja 8: przyimki](pl/08)
+* [lekcja 9: czynności](pl/09)
+* [lekcja 10: przerwa 1](pl/10)
 
-## Part 2: keep going!
+## Część 2: tak trzymaj!
 
-Talk about home, materials, society, and be expressive.  
-Learn your next 39 words!  
-At the end of this part, you will read a dialogue.
+Rozmawiaj o domu, materiałach, społeczeństwie, wyrażaj siebie.  
+Nauczysz się kolejnych 39 słów!  
+Na końcu tej części przeczytasz dialog.
 
-* [lesson 11: home](pl/11)
-* [lesson 12: requests](pl/12)
-* [lesson 13: elements](pl/13)
-* [lesson 14: negation](pl/14)
-* [lesson 15: with and like](pl/15)
-* [lesson 16: society](pl/16)
-* [lesson 17: questions](pl/17)
-* [lesson 18: feelings](pl/18)
-* [lesson 19: intermission 2](pl/19)
+* [lekcja 11: dom](pl/11)
+* [lekcja 12: prośby](pl/12)
+* [lekcja 13: żywioły](pl/13)
+* [lekcja 14: przeczenia](pl/14)
+* [lekcja 15: 'czymś' i 'jak coś'](pl/15)
+* [lekcja 16: społeczeństwo](pl/16)
+* [lekcja 17: pytania](pl/17)
+* [lekcja 18: uczucia](pl/18)
+* [lekcja 19: przerwa 2](pl/19)
 
-## Part 3: wrapping up!
+## Część 3: już kończymy!
 
-Talk about time, space, numbers, colours, and more!  
-Finish learning your 131 words!
+Rozmawiaj o czasie, przestrzeni, liczbach, kolorach, i więcej!  
+Zakończ naukę, znając 131 słów!
 
-* [lesson 20: time](pl/20)
-* [lesson 21: nature](pl/21)
-* [lesson 22: very lovely cats](pl/22)
-* [lesson 23: places](pl/23)
-* [lesson 24: body](pl/24)
-* [lesson 25: numbers](pl/25)
-* [lesson 26: love and identity](pl/26)
-* [lesson 27: colours](pl/27)
-* [lesson 28: moo!](pl/28)
-* [lesson 29: intermission 3](pl/29)
+* [lekcja 20: czas](pl/20)
+* [lekcja 21: przyroda](pl/21)
+* [lekcja 22: bardzo urocze koty](pl/22)
+* [lekcja 23: miejsca](pl/23)
+* [lekcja 24: ciało](pl/24)
+* [lekcja 25: liczby](pl/25)
+* [lekcja 26: miłość i tożsamość](pl/26)
+* [lekcja 27: kolory](pl/27)
+* [lekcja 28: mu!](pl/28)
+* [lekcja 29: przerwa 3](pl/29)
 
-## Q&A!
+## Pytania i odpowiedzi!
 
-Some finer details that aren't necessary to know, but you might be interested in!
+<div style="
+    margin: 10px 0;
+    padding: 2px 15px;
+    background: #ffff0022;
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-image: repeating-linear-gradient(
+        45deg,
+        black,
+        black              5px,
+        gold 5px,
+        gold 10px
+    ) 10;
+">
 
-* [Q: what other Toki Pona courses are there?](pl/other-courses)
-* [Q: does Toki Pona pronunciation vary among different speakers?](pl/sound-variation)
-* [Q: how can I type sitelen pona?](pl/fonts)
-* [Q: what's the third most popular writing system for Toki Pona?](pl/sitelen-sitelen)
-* [Q: does 'li' mean 'is'?](pl/li-and-is)
-* [Q: what's my name in Toki Pona?](pl/make-a-name)
-* [Q: in sitelen pona, names look long. How can I make them shorter?](pl/simpler-cartouches)
-* [Q: do I have to memorise language and country names?](pl/languages-countries)
-* [Q: isn't 'jan li toki Inli' a bit strange?](pl/named-verbs)
-* [Q: are there any more preverbs?](pl/more-preverbs)
-* [Q: how do you say 'to do'?](pl/doing)
-* [Q: how do I talk about large numbers?](pl/large-numbers)
-* [Q: what is jan Sonja up to these days?](pl/jan-sonja)
-* [Q: what other, uncommon words might I encounter?](pl/uncommon-words)
+## Nie skończyłem tłumaczyć
+
+Skupiłem się na tłumaczeniu głównej części kursu. Gdy tylko będę miał czas wolny, to przetłumaczę te strony! Tytuły tych stron są przetłumaczone, lecz ich treść jeszcze jest po angielsku.  
+-- jan Esuwa
+
+</div>
+
+Drobniejsze szczegóły, których nie musisz znać, ale mogą Cię zainteresować!
+
+* [P: jakie są inne kursy toki pony?](pl/other-courses)
+* [P: czy wymowa toki pony się różni wśród różnych użytkowników języka?](pl/sound-variation)
+* [P: jak mogę pisać sitelen ponę na klawiaturze?](pl/fonts)
+* [P: który system pisma toki pony jest trzeci co do popularności?](pl/sitelen-sitelen)
+* [P: czy 'li' znaczy 'jest'?](pl/li-and-is)
+* [P: jak mam na imię w toki ponie?](pl/make-a-name)
+* [P: w sitelen ponie imiona wyglądają na długie. Jak mogę je skrócić?](pl/simpler-cartouches)
+* [P: czy muszę zapamiętywać nazwy języków i krajów?](pl/languages-countries)
+* [P: czyżby 'jan li toki Inli' nie było dziwne?](pl/named-verbs)
+* [P: czy jest więcej czasowników posiłkowych?](pl/more-preverbs)
+* [P: jak powiedzieć 'robić'?](pl/doing)
+* [P: jak komunikować duże liczby?](pl/large-numbers)
+* [P: czym się obecnie zajmuje jan Sonja?](pl/jan-sonja)
+* [P: jakie są inne niezbyt częste słowa, które mogę napotkać?](pl/uncommon-words)
