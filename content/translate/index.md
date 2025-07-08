@@ -13,6 +13,7 @@ description: "Help us by translating the course to your language!"
 * [Tagalog](https://github.com/wasona/wasona/pull/8)
 * [Polish](https://github.com/wasona/wasona/pull/10)
 * [Korean](https://github.com/wasona/wasona/pull/11)
+* [Indonesian](https://github.com/wasona/wasona/pull/12)
 
 **Some notes for translators:**
 
