@@ -57,7 +57,7 @@ Al final de esta parte, leerás un diálogo.
 
 Algunos detalles más concretos que no hace falta saber, ¡pero que tal vez te interesen!
 
-* [Q: ¿Qué otros cursos de Toki Pona courses hay?](es/other-courses)
+* [Q: ¿Qué otros cursos de Toki Pona hay?](es/other-courses)
 * [Q: ¿La pronunciación de Toki Pona varía entre hablantes?](es/sound-variation)
 * [Q: ¿Cómo puedo escribir sitelen pona digitalmente?](es/fonts)
 * [Q: ¿Cuál es el tercer sistema de escritura más popular para Toki Pona?](es/sitelen-sitelen)
@@ -70,4 +70,4 @@ Algunos detalles más concretos que no hace falta saber, ¡pero que tal vez te i
 * [Q: ¿Cómo se dice 'hacer'?](es/doing)
 * [Q: ¿Cómo hablo de números grandes?](es/large-numbers)
 * [Q: ¿Qué anda haciendo jan Sonja hoy en día?](es/jan-sonja)
-* [Q: ¿Con qué palabras menos comunes podría toparme?](es/uncommon-words)
+* [Q: ¿Con qué palabras poco comunes podría toparme?](es/uncommon-words)
