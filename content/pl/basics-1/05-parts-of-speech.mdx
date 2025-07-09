@@ -1,21 +1,21 @@
 ---
 slug: "pl/05"
-title: "lekcja 5: parts of speech"
-description: "Learn about nouns, verbs, and adjectives!"
+title: "lekcja 5: części mowy"
+description: "Naucz się o rzeczownikach, czasownikach i przymiotnikach!"
 practice:
-  - l1: "a strong bug"
+  - l1: "mocny owad"
     l2: "pipi wawa"
-  - l1: "the strength of the bug"
+  - l1: "moc owada"
     l2: "wawa pipi"
-  - l1: "a big eye"
+  - l1: "duże oko"
     l2: "lukin suli"
-  - l1: "good food"
+  - l1: "dobre jedzenie"
     l2: "moku pona"
-  - l1: "amazingly good"
+  - l1: "wspaniale dobry"
     l2: "pona wawa"
-  - l1: "Food makes eyes better."
+  - l1: "Jedzenie jest dobre dla oka."
     l2: "moku li pona e lukin."
-  - l1: "Animals know the cuteness of birds."
+  - l1: "Zwierzęta znają urok ptaków."
     l2: "soweli li sona e suwi waso."
 ---
 
@@ -24,22 +24,32 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
 
-## Parts of speech
+## Części mowy
 
-Some of you may have spotted that I introduced the word **󱥡 sona** twice, first as a verb 'to know', then as an adjective 'wise'. So which is it? And how do you know?
+Niektórzy z Was mogli zauważyć, że wprowadziłem słowo **󱥡 sona** dwa razy, najpierw jako czasownik 'wiedzieć', potem jako przymiotnik 'mądry'. Więc czym jest i jak o tym wiesz?
 
-In reality, it can be either! If it follows a noun, it's an adjective. If **󱤧 li** introduces it as a verb, then it's a verb. It's all about word order in a sentence!
+Tak naprawdę może być jednym z dwóch! Jeżeli **󱤧 li** wprowadza je jako czasownik, wtedy jest czasownikiem. Wszystko zależy od szyku wyrazów w zdaniu!
 
-In fact, the same is true of _all_ words: if something is a noun, verb, or adjective, it can become _any of the three_! Among the words we've already learned, let's look at some examples:
+Jest to prawda dla _wszystkich_ słów: jeśli coś jest rzeczownikiem, czasownikiem, lub przymiotnikiem, może stać się _którymś z tych trzech_! Spośród słów, których się już nauczyliśmy, popatrzmy na kilka przykładów:
 
 <List>
-  <Word sl="lukin" m="N: eye; V: to see" />
-  <Word sl="moku" m="N: food; V: to consume, to eat" />
-  <Word sl="sona" m="N: knowledge, wisdom; V: to know; Adj: knowledgeable, wise" />
-  <Word sl="suli" m="N: size; V: to make bigger, to emphasize; Adj: big, important" />
-  <Word sl="pona" m="N: goodness; V: to make better, to improve; Adj: good, pleasant" />
-  <Word sl="waso" m="N: bird; V: to make into a bird; Adj: of a bird, bird-like" />
+  <Word sl="lukin" m="rzecz.: oko; czas.: patrzeć" />
+  <Word sl="moku" m="rzecz.: jedzenie; czas.: spożywać, jeść" />
+  <Word sl="sona" m="rzecz.: wiedza, mądrość; czas.: wiedzieć; przym.: obeznany, mądry" />
+  <Word sl="suli" m="rzecz.: rozmiar; czas.: zwiększyć, podkreślić; przym.: duży, ważny" />
+  <Word sl="pona" m="rzecz.: dobro; czas.: ulepszyć; przym.: dobry, przyjemny" />
+  <Word sl="waso" m="rzecz.: ptak; czas.: zamienić w ptaka; przym.: należący do ptaka, ptasi" />
 </List>
+
+Tu podałem tylko *kilka* słów, których się dotąd nauczyliśmy -- wystarczająco tyle, żeby zauważyć wzorce:
+* Gdy **czasowniki stają się rzeczownikami**, najczęściej oznaczają czynność (*wiedza*) lub kluczową jej część (*jedzenie, oko*).
+* Gdy **czasowniki stają się przymiotnikami**, oznaczają to, co robi coś (*mądrzy ludzie ~ ludzie, którzy wiedzą*).
+* Gdy **rzeczowniki stają się czasownikami**, najczęściej oznaczają 'zamienić w coś' lub 'zastosować coś do czegoś' (*zamienić w ptaka*).
+* Gdy **rzeczowniki stają się przymiotnikami**, oznaczają posiadanie lub podobieństwo (*należący do ptaka, ptasi*).
+* Gdy **przymiotniki stają się rzeczownikami**, oznaczają jakość (*dobro, rozmiar*).
+* Gdy **przymiotniki stają się czasownikami**, dodają jakości (*ulepszyć, zwiększyć*).
+
+Jednak podczas rozmowy my - użytkownicy toki pony - przez większość czasu nie musimy myśleć o tych wzorcach! Zaczynają się ze sobą zlewać. W pewnym momencie już nie myślisz o tym, czy coś było 
 
 I've only listed *some* words we've learned so far -- just enough to see the patterns:
 * When **verbs become nouns**, they usually mean an act of doing something (*knowledge*), or something that forms a crucial part of the act (*food, eye*).
@@ -54,11 +64,11 @@ But when talking, we Toki Pona speakers don't even have to think about these pat
 Let's practice using these words as nouns, verbs, and adjectives:
 
 <List>
-  <Sentence sl="lukin li pona e sona." m="Eyes improve knowledge." />
-  <Sentence sl="moku li suli e pipi." m="Food makes the bugs grow bigger." />
+  <Sentence sl="lukin li pona e sona." m="Oczy ulepszają wiedzę." />
+  <Sentence sl="moku li suli e pipi." m="Jedzenie sprawia, że owady rosną." />
   <Sentence
     sl="moku li wawa e soweli lili."
-    m="Food strengthens the small animal."
+    m="Jedzenie daje siłę małemu zwierzęciu."
   />
 </List>
 
