@@ -10,10 +10,11 @@ description: "Help us by translating the course to your language!"
 
 **Ongoing translation projects:**
 
-* [Tagalog](https://github.com/wasona/wasona/pull/8)
-* [Polish](https://github.com/wasona/wasona/pull/10)
-* [Korean](https://github.com/wasona/wasona/pull/11)
-* [Indonesian](https://github.com/wasona/wasona/pull/12)
+* [Tagalog](https://github.com/wasona/wasona/pull/8) by jan juna Jona
+* [Polish](https://github.com/wasona/wasona/pull/10) by jan Esuwa
+* [Korean](https://github.com/wasona/wasona/pull/11) by jyh
+* [Indonesian](https://github.com/wasona/wasona/pull/12) by jan Asipa
+* [Spanish](https://github.com/wasona/wasona/pull/15) by jan Kalo Metesin
 
 **Some notes for translators:**
 
