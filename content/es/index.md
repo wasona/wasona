@@ -1,6 +1,6 @@
 ---
 slug: "es"
-title: "Wasona: un curso de Toki Pona para principiantes"
+title: "Wasona: un curso de toki pona para principiantes"
 description: "¡Lee, juega, y aprende un idioma nuevo!"
 ---
 ## Parte 1: ¡Los primeros pasos!
@@ -57,12 +57,12 @@ Al final de esta parte, leerás un diálogo.
 
 Algunos detalles más concretos que no hace falta saber, ¡pero que tal vez te interesen!
 
-* [Q: ¿Qué otros cursos de Toki Pona hay?](es/other-courses)
-* [Q: ¿La pronunciación de Toki Pona varía entre hablantes?](es/sound-variation)
+* [Q: ¿Qué otros cursos de toki pona hay?](es/other-courses)
+* [Q: ¿La pronunciación del toki pona varía entre hablantes?](es/sound-variation)
 * [Q: ¿Cómo puedo escribir sitelen pona digitalmente?](es/fonts)
-* [Q: ¿Cuál es el tercer sistema de escritura más popular para Toki Pona?](es/sitelen-sitelen)
+* [Q: ¿Cuál es el tercer sistema de escritura más popular para el toki pona?](es/sitelen-sitelen)
 * [Q: ¿Acaso 'li' significa 'es'?](es/li-and-is)
-* [Q: ¿Cuál es mi nombre en Toki Pona?](es/make-a-name)
+* [Q: ¿Cuál es mi nombre en toki pona?](es/make-a-name)
 * [Q: En sitelen pona, los nombres me parecen largos. ¿Cómo los puedo abreviar?](es/simpler-cartouches)
 * [Q: ¿Me tengo que memorizar los nombres de idiomas y países?](es/languages-countries)
 * [Q: ¿'jan li toki Inli' no es un poco raro?](es/named-verbs)
