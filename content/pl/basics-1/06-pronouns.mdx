@@ -1,23 +1,23 @@
 ---
 slug: "pl/06"
-title: "lekcja 6: pronouns"
-description: "Learn ni, mi, sina, ona!"
+title: "lekcja 6: zaimki"
+description: "Naucz się słów: ni, mi, sina, ona!"
 practice:
-  - l1: "This is a sweet plant."
+  - l1: "To jest słodka roślina."
     l2: "ni li kasi suwi."
-  - l1: "These are big eyes."
+  - l1: "To są duże oczy."
     l2: "ni li lukin suli."
-  - l1: "Your eyes are big."
+  - l1: "Twoje oczy są duże."
     l2: "lukin sina li suli."
-  - l1: "This bird is tiny."
+  - l1: "Ten ptak jest malutki."
     l2: "waso ni li lili."
-  - l1: "Mean bugs ate my plant."
+  - l1: "Wredne owady zjadły moją roślinkę."
     l2: "pipi ike li moku e kasi mi."
-  - l1: "You are cute."
+  - l1: "Jesteś uroczy."
     l2: "sina suwi."
-  - l1: "I see them."
+  - l1: "Widzę ich."
     l2: "mi lukin e ona."
-  - l1: "They eat well."
+  - l1: "Oni dobrze jedzą."
     l2: "ona li moku pona."
 ---
 
@@ -26,54 +26,54 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
 
-## Pronouns
+## Zaimki
 
-You're probably tired of long sentences and parts-of-speech shenanigans. Let's take it down a notch, by pointing at things:
-
-<List>
-  <Word sl="ni" m="this, that" />
-  <Sentence sl="ni li soweli." m="This is an animal." />
-  <Sentence sl="ni li kasi." m="This is a plant." />
-  <Sentence sl="ni li moku suwi." m="This is sweet food." />
-  <Sentence sl="ni li suli." m="This is important." />
-  <Sentence sl="ni li pona wawa." m="This is amazingly good." />
-</List>
-
-These are our first _sentences without an object_, and so there is no **󱤉 e** in these sentences!
-
-You might wonder: **󱤧 li** starts the verb. But where is the verb? In English, the verb is 'to be'. In Toki Pona, there is no verb 'to be'. Instead, when filling the role of the verb in the sentence, words automatically include 'to be' in their meaning: **󱥢 soweli** 'to be an animal', **󱥣 suli** 'to be important'.
-
-Now that we've looked at one pronoun, let's get some more:
+Na pewno masz dosyć długich zdań i sprawy części mowy. Obniżmy poprzeczkę, wskazując na rzeczy:
 
 <List>
-  <Word sl="mi" m="I, we; my, our" />
-  <Word sl="sina" m="you; your" />
-  <Word sl="ona" m="she, he, it, they; her, his, its, their" />
+  <Word sl="ni" m="ten, tamten" />
+  <Sentence sl="ni li soweli." m="To jest zwierzę." />
+  <Sentence sl="ni li kasi." m="To jest roślina." />
+  <Sentence sl="ni li moku suwi." m="To jest słodkie jedzenie." />
+  <Sentence sl="ni li suli." m="To jest ważne." />
+  <Sentence sl="ni li pona wawa." m="To jest wspaniale dobre." />
 </List>
 
-Let's practice using **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, and **󱥁 ni** in sentences:
+To są nasze pierwsze _zdania bez dopełnienia_, więc nie ma w nich **󱤉 e**!
+
+Możesz się zastanawiać: **󱤧 li** zaczyna czasownik, ale gdzie on jest? W języku polskim jest to 'być'. W toki ponie nie ma czasownika 'być'. Zamiast tego słowa odgrywające rolę czasownika w zdaniu automatycznie zawierają 'być' w swoim znaczeniu: **󱥢 soweli** 'być zwierzęciem', **󱥣 suli** 'być ważnym'.
+
+Już spojrzeliśmy na jeden zaimek. Spójrzmy na kilka kolejnych:
 
 <List>
-  <Sentence sl="kasi ni li suli." m="This plant is big." />
-  <Sentence sl="sona sina li wawa." m="Your knowledge is amazing." />
-  <Sentence sl="pipi ni li pipi mi." m="This bug is my bug." />
-  <Sentence sl="waso sina li lukin e mi." m="Your bird sees me." />
-  <Sentence sl="waso li moku e pipi ni." m="The bird eats this bug." />
-  <Sentence sl="soweli mi li moku e kasi ona." m="My animal eats its plant." />
+  <Word sl="mi" m="ja, my; mój, nasz" />
+  <Word sl="sina" m="ty, wy; twój, wasz" />
+  <Word sl="ona" m="on, ona, ono, oni, one; jego, jej, ich" />
 </List>
 
-You should already be familiar with sentences like these! In most positions in the sentence, pronouns behave just like normal nouns and adjectives. But something strange happens when **󱤴 mi** or **󱥞 sina** is the subject of the sentence:
+Poćwiczmy używanie **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, i **󱥁 ni** w zdaniach:
 
 <List>
-  <Sentence sl="mi wawa." m="I am strong." />
-  <Sentence sl="sina lukin e moku." m="You see food." />
-  <Sentence sl="mi sona e kasi suli." m="I know the big plant." />
-  <Sentence sl="sina sona e suli kasi." m="You know the plant's size." />
+  <Sentence sl="kasi ni li suli." m="Ta roślina jest wielka." />
+  <Sentence sl="sona sina li wawa." m="Twoja wiedza jest wspaniała." />
+  <Sentence sl="pipi ni li pipi mi." m="Ten owad to mój owad." />
+  <Sentence sl="waso sina li lukin e mi." m="Twój ptak patrzy na mnie." />
+  <Sentence sl="waso li moku e pipi ni." m="Ptak je tego owada." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="To zwierzę je swoją roślinę." />
 </List>
 
-Toki Pona has a special rule: when **󱤴 mi** or **󱥞 sina** is the subject of the sentence, we remove the **󱤧 li** that would normally follow the subject. This is because sentences starting with **󱤴 mi** or **󱥞 sina** are extremely common!
+Już powinieneś znać takiego typu zdania! W większości pozycji w zdaniu zaimki zachowują się jak zwykłe rzezcowniki i przymiotniki. Ale coś dziwnego się dzieje, gdy **󱤴 mi** or **󱥞 sina** jest podmiotem w zdaniu:
+
+<List>
+  <Sentence sl="mi wawa." m="(Ja) jestem potężny." />
+  <Sentence sl="sina lukin e moku." m="(Ty) widzisz jedzenie." />
+  <Sentence sl="mi sona e kasi suli." m="(Ja) wiem o wielkiej roślinie." />
+  <Sentence sl="sina sona e suli kasi." m="(Ty) znasz wielkość rośliny." />
+</List>
+
+Toki pona ma specjalną zasadę: gdy **󱤴 mi** lub **󱥞 sina** jest podmiotem zdania, usuwamy **󱤧 li**, które zwykle następowałoby po podmiocie. To dlatego, że zdania z **󱤴 mi** lub **󱥞 sina** występują powszechnie! Można to porównać do tego, że zwykle pomijamy w języku polskim zaimki osobowe, gdy czasownik jest w pierwszej lub drugiej osobie.
 
 <Practice exercises={frontmatter.practice} client:load />
 
-## See also
-* [Q: does 'li' mean 'is'?](en/li-and-is)
+## Zobacz też
+* [P: czy 'li' znaczy 'jest'?](pl/li-and-is)
