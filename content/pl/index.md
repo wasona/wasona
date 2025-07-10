@@ -16,7 +16,7 @@ Na końcu tej części przeczytasz krótką historyjkę.
 * [lekcja 4: przymiotniki](pl/04)
 * [lekcja 5: części mowy](pl/05)
 * [lekcja 6: zaimki](pl/06)
-* [lekcja 7: imiona](pl/07)
+* [lekcja 7: imiona i nazwy](pl/07)
 * [lekcja 8: przyimki](pl/08)
 * [lekcja 9: czynności](pl/09)
 * [lekcja 10: przerwa 1](pl/10)
