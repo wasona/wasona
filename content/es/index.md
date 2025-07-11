@@ -44,7 +44,7 @@ Al final de esta parte, leerás un diálogo.
 
 * [Lección 20: El tiempo](es/20)
 * [Lección 21: La naturaleza](es/21)
-* [Lección 22: Gatos muy lindos](es/22)
+* [Lección 22: Gatos muy adorables](es/22)
 * [Lección 23: Lugares](es/23)
 * [Lección 24: El cuerpo](es/24)
 * [Lección 25: Números](es/25)
