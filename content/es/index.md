@@ -12,7 +12,7 @@ Al final de esta parte, leerás un cuento corto.
 * [Introducción](es/00)
 * [Lección 1: Pronunciación](es/01)
 * [Lección 2: Dos sistemas de escritura](es/02)
-* [Lección 3: Oraciones simples](es/03)
+* [Lección 3: Frases sencillas](es/03)
 * [Lección 4: Adjetivos](es/04)
 * [Lección 5: Categorías gramaticales](es/05)
 * [Lección 6: Pronombres](es/06)
