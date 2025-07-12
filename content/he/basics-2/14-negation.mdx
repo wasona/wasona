@@ -1,0 +1,62 @@
+---
+slug: "en/14"
+title: "lesson 14: negation"
+description: "Learn ala!"
+practice:
+  - l1: "You do not eat bugs."
+    l2: "sina moku ala e pipi."
+  - l1: "People do not know me."
+    l2: "jan li sona ala e mi."
+  - l1: "No one knows me."
+    l2: "jan ala li sona e mi."
+  - l1: "Millie does not want the book."
+    l2: "jan Mili li wile ala e lipu."
+  - l1: "Birds cannot draw houses."
+    l2: "waso li ken ala sitelen e tomo."
+  - l1: "Anna does not go to Germany."
+    l2: "jan Ana li tawa ala ma Tosi."
+  - l1: "Iman is not in the US."
+    l2: "jan Iman li lon ala ma Mewika."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Negation
+
+We've just learned how to ask someone to do something. But how do we ask someone *not* to do something? It's time to learn about negation, using **󱤂 ala**:
+
+<List>
+  <Word sl="ala" m="not" />
+</List>
+
+In English, it's kind of a special word. But in Toki Pona, its a pretty normal adjective! And like any other adjective, it goes after the word. You will often find it on nouns, adjectives, and verbs alike:
+
+<List>
+  <Word sl="jan ala" m="no person, not a person" />
+  <Sentence sl="jan ala li wile utala." m="No person wants to fight." />
+  <Word sl="suli ala" m="not big, not important" />
+  <Sentence sl="ni li suli ala tawa mi." m="This is not important to me." />
+  <Word sl="moku ala" m="not to eat" />
+  <Sentence sl="pipi li moku ala e soweli." m="Bugs do not eat animals." />
+</List>
+
+But interestingly, **󱤂 ala** also goes on prepositions and preverbs:
+
+<List>
+  <Word sl="wile ala" m="to not want to ..." />
+  <Sentence sl="sina wile ala moku e suwi." m="You do not want to eat sweets." />
+  <Word sl="tawa ala" m="to not go to ..., not towards ..." />
+  <Sentence sl="pipi li tawa ala kasi." m="The bug does not go to the plant." />
+</List>
+
+You may notice something interesting. Although **󱤂 ala** can go anywhere that an adjective can, it likes to attach to the first word in the verb:
+* **󱤧󱤶󱤂 li moku ala ...**
+* **󱤧󱥷󱤂 li wile ala ...**
+* **󱤧󱥩󱤂 li tawa ala ...**
+
+This actually makes a lot of sense -- negating the first word in the verb also negates the whole sentence, which we often want!
+
+<Practice exercises={frontmatter.practice} client:load />
