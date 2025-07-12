@@ -1,0 +1,73 @@
+---
+slug: "id/04"
+title: "pelajaran 4: kata sifat"
+description: "Pelajari suli, lili, pona, ike, wawa, suwi!"
+practice:
+  - l1: "Hewan yang lucu"
+    l2: "soweli suwi"
+  - l1: "Serangga yang buruk"
+    l2: "pipi ike"
+  - l1: "Burung kuat"
+    l2: "waso wawa"
+  - l1: "Burungnya mengenali binatang yang kuat."
+    l2: "waso li sona e soweli wawa."
+  - l1: "Serangga kecil sedang melihat binatang yang besar."
+    l2: "pipi lili li lukin e soweli suli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Deskripsikan!
+
+Karena kamu telah mengetahui beberapa kata benda dan kata kerja (tindakan). Waktunya menambahkan kata sifat (deskripsi benda)!  
+Mari kita menghafalkan beberapa dari itu:
+
+<List>
+  <Word sl="suli" m="besar, penting" />
+  <Word sl="lili" m="kecil, muda" />
+  <Word sl="pona" m="baik, ramah" />
+  <Word sl="ike" m="buruk, tak ramah" />
+  <Word sl="wawa" m="kuat, luar biasa" />
+  <Word sl="sona" m="berpengetahuan, cerdas" />
+  <Word sl="suwi" m="lucu, manis" />
+</List>
+
+Kata sifat pada Toki Pona selalu diletakkan di depan kata yang mereka deskripsikan, layaknya Bahasa Indonesia:
+
+<List>
+  <Word sl="soweli suli" m="Hewan besar" />
+  <Word sl="pipi lili" m="Serangga kecil" />
+  <Word sl="waso suwi" m="Burung yang cantik" />
+</List>
+
+Mari kita buat beberapa kalimat dengan kata sifat yang baru kita pelajari:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="Burungnya melihat burung yang lucu."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="Hewan kuat memakan tanaman yang besar."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Serangga jahat menggigit hewannya."
+  />
+  <Sentence
+    sl="waso sona li sona pona e pipi."
+    m="Burung yang cerdas mengenal dengan baik serangganya."
+  />
+</List>
+
+Terlihat memang ada penggunaan kata "yang" ketika menerjemahkannya, tetapi sebenarnya Toki Pona tidak memiliki kata tersebut. Hal itu bisa terjadi karena cara kerja kata sifat pada Bahasa Indonesia sedikit berbeda daripada Toki Pona
+
+Mungkin terlihat membingungkan tentang apa sebenarnya yang sedang dideskripsikan. Walaupun begitu kamu masih bisa melihatnya dengan bantuan Partikel **󱤧 li** dan **󱤉 e**.
+
+Ada hal yang cukup menarik: dalam Bahasa Indonesia, kata sifat hanya digunakan untuk mendeskripsikan kata benda. Namun pada Toki Pona, kata sifat bisa mendeskripsikan kata kerja juga, contohnya: _moku lili_ berarti makan _dengan kecil_ atau _menggigit_, _sona pona_ berarti mengetahui _dengan baik_.
+
+<Practice exercises={frontmatter.practice} client:load />

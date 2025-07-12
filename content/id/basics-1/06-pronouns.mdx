@@ -1,0 +1,77 @@
+---
+slug: "id/06"
+title: "pelajaran 6: kata ganti"
+description: "Pelajari ni, mi, sina, ona!"
+practice:
+  - l1: "Ini adalah tanaman yang manis."
+    l2: "ni li kasi suwi."
+  - l1: "Itu adalah mata yang besar."
+    l2: "ni li lukin suli."
+  - l1: "Matamu besar."
+    l2: "lukin sina li suli."
+  - l1: "Burung ini kecil."
+    l2: "waso ni li lili."
+  - l1: "Serangga yang jahat memakan tanamanku."
+    l2: "pipi ike li moku e kasi mi."
+  - l1: "Kamu lucu."
+    l2: "sina suwi."
+  - l1: "Aku melihat mereka."
+    l2: "mi lukin e ona."
+  - l1: "Mereka makan dengan baik."
+    l2: "ona li moku pona."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Kata ganti
+
+Mungkin kamu sudah lelah dengan kalimat-kalimat panjang dari pelajaran sebelumnya. Mari kita kecilkan sedikit lagi, dengan menunjuk pada benda-benda:
+
+<List>
+  <Word sl="ni" m="ini, itu" />
+  <Sentence sl="ni li soweli." m="Ini adalah seekor binatang." />
+  <Sentence sl="ni li kasi." m="Itu adalah tanaman." />
+  <Sentence sl="ni li moku suwi." m="Ini adalah makanan yang manis." />
+  <Sentence sl="ni li suli." m="Ini penting." />
+  <Sentence sl="ni li pona wawa." m="Ini luar biasa bagus." />
+</List>
+
+Diatas merupakan kalimat pertama kita _tanpa sebuah objek_, alhasil tidak ada penggunaan **󱤉 e** pada kalimat-kalimat diatas!
+
+Sekarang karena kita telah melihat satu kata ganti, mari kita lihat lainnya:
+
+<List>
+  <Word sl="mi" m="aku, kita, kami; -ku (milik aku)" />
+  <Word sl="sina" m="kamu, kalian; -mu (milik kamu)" />
+  <Word sl="ona" m="dia, mereka; -nya (milik dia, milik mereka)" />
+</List>
+
+Mari kita berlatih menggunakan **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, and **󱥁 ni** pada kalimat-kalimat:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Tanaman ini besar." />
+  <Sentence sl="sona sina li wawa." m="Pengetahuanmu luar biasa." />
+  <Sentence sl="pipi ni li pipi mi." m="Serangga ini adalah seranggaku." />
+  <Sentence sl="waso sina li lukin e mi." m="Burungmu melihatku." />
+  <Sentence sl="waso li moku e pipi ni." m="Burungnya memakan serangga ini." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Hewanku memakan tanamannya." />
+</List>
+
+Kamu seharusnya sudah familiar dengan kalimat-kalimat seperti ini! Yang dimana, setiap kata ganti berlaku seperti kata benda maupun kata sifat. Tetapi, hal aneh terjadi ketika **󱤴 mi** atau **󱥞 sina** merupakan subjek dari kalimatnya:
+
+<List>
+  <Sentence sl="mi wawa." m="Aku kuat." />
+  <Sentence sl="sina lukin e moku." m="Kamu melihat makanan." />
+  <Sentence sl="mi sona e kasi suli." m="Aku tahu tanaman besar." />
+  <Sentence sl="sina sona e suli kasi." m="Kamu tahu ukuran tanamannya." />
+</List>
+
+Toki Pona mempunyai aturan spesial: ketika **󱤴 mi** atau **󱥞 sina** merupakan subjek dari kalimatnya, penggunaan Partikel **󱤧 li** tidak terpakai lagi. Ini karena kalimat dengan penggunaan **󱤴 mi** atau **󱥞 sina** sangatlah umum!
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Lihat juga
+* [Q: apakah 'li' mempunyai arti 'adalah'?](id/li-and-is)
