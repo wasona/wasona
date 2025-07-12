@@ -1,0 +1,90 @@
+---
+slug: "pl/07"
+title: "lekcja 7: imiona i nazwy"
+description: "Naucz się słów: nimi, jan, sitelen, toki, ma, tomo!"
+practice:
+  - l1: "Rysuję ląd."
+    l2: "mi sitelen e ma."
+  - l1: "Twoje zdjęcie jest duże."
+    l2: "sitelen sina li suli."
+  - l1: "Ludzie rozmawiają o budynkach."
+    l2: "jan li toki e tomo."
+  - l1: "Masz na imię Maja."
+    l2: "nimi sina li jan Maja."
+  - l1: "Iman mówi po arabsku."
+    l2: "jan Iman li toki Alapi."
+  - l1: "Miasto Toronto jest wielkie."
+    l2: "ma tomo Towano li suli."
+  - l1: "Widzę napis w cyrylicy."
+    l2: "mi lukin e sitelen Kililisa."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Imiona i nazwy
+
+Dobrze jest wskazywać na rzeczy, ale czasami ładnie jest być dokładniejszym. I tutaj się przydają imiona i nazwy! To rewolucyjna technologia, która pozwala ci mówić o kimś lub czymś konkretnym.
+
+Nauczmy się słów dla rzeczy, które często jakoś się nazywają:
+
+<List>
+  <Word sl="nimi" m="imię, nazwa, słowo" />
+  <Word sl="jan" m="osoba" />
+  <Word sl="sitelen" m="obraz, napis; rysować, pisać" />
+  <Word sl="toki" m="mowa, język; rozmawiać, mówić" />
+  <Word sl="ma" m="ląd, kraj" />
+  <Word sl="tomo" m="budynek, pokój, dom" />
+</List>
+
+Już znasz jedną nazwę: _sitelen Lasina_! Popatrzmy na imiona ludzi:
+
+<List>
+  <Sentence sl="jan Nowa" m="osoba o imieniu Noah (ang. 'Noah')" />
+  <Sentence sl="jan Ema" m="osoba o imieniu Emma (ang. 'Emma')" />
+</List>
+
+Z tych imion możesz zobaczyć, że:
+
+1. Imiona to przymiotniki: występują po innym słowie.
+2. Imiona zaczynają się wielką literą. Jeśli zobaczysz w toki ponie słowo zapisane wielką literą, już wiesz, że to imię!
+3. W _sitelen ponie_, imiona zapisujemy w dużym **󱥂 nimi**. Ten blok nazywamy _kartuszem_, tak jak te używane w hieroglifach egipskich. Dla każdego dźwięku w imieniu wybieramy słowo, które zaczyna się od tego dźwięku. Na przykład imię 'Ema' może być zapisane 󱤉 **e**, 󱤶 **m**oku, 󱤂 **a**la.
+
+Nie tylko ludzie się jakoś nazywają! Zobaczmy na język, państwo, i miasto:
+
+<List>
+  <Sentence
+    sl="toki Kanse"
+    m="język zwany francuskim (fr. 'français')"
+  />
+  <Sentence sl="ma Tosi" m="państwo zwane Niemcy (niem. 'Deutsch')" />
+  <Sentence
+    sl="ma tomo Loma"
+    m="miejsce z budynkami zwane Rzym (łac. 'Rōma')"
+  />
+</List>
+
+Te nazwy mówią nam więcej o tym, jak się tworzy nazwy w toki ponie:
+
+4. Gdy nazwy wchodzą do toki pony, one się _zmieniają_, aby pasować do systemu dźwięków w toki ponie. Nie ma **d** w toki ponie, więc słowo 'Deutsch' zaczyna się od **t**. Niektóre zmiany są drobne: _Noah_ → _Nowa_, a inne są duże: _français_ → _Kanse_.
+5. Nazwy często nie pochodzą z języka polskiego. Wolimy używać _endonimów_: nazwy krajów, języków i ludzi nadane przez samych siebie. Słowo oznaczające język francuski pochodzi z języka francuskiego!
+
+Poćwiczmy używanie nowych słów i imion w zdaniach:
+
+<List>
+  <Sentence sl="waso li lukin e ma." m="Ptak patrzy na ziemię." />
+  <Sentence sl="jan li toki e tomo." m="Ludzie mówią o domu." />
+  <Sentence sl="jan pona li toki pona." m="Mili ludzie dobrze mówią." />
+  <Sentence sl="nimi ona li jan Kenta." m="On ma na imię Kenta." />
+  <Sentence sl="jan Sunita li sitelen e pipi." m="Sunita rysuje owada." />
+  <Sentence sl="jan Nina li toki Kanse." m="Nina mówi po francusku." />
+  <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma dobrze zna Niemcy." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [P: jak mam na imię w toki ponie?](pl/make-a-name)
+* [P: w sitelen ponie imiona wyglądają na długie. Jak mogę je skrócić?](en/simpler-cartouches)

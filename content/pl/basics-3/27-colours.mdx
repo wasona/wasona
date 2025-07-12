@@ -1,0 +1,62 @@
+---
+slug: "pl/27"
+title: "lekcja 27: colours"
+description: "Learn kule, walo, pimeja, laso, loje, jelo, kin!"
+practice:
+  - l1: "At night, I party."
+    l2: "tenpo pimeja la mi musi."
+  - l1: "There is yellow dust on the bee."
+    l2: "ko jelo li lon pipi."
+  - l1: "I, too, play with colourful bricks."
+    l2: "mi kin li musi kepeken leko kule."
+  - l1: "All this snow is blinding me."
+    l2: "mi ken ala lukin tan ko walo."
+  - l1: "Blue, white, and red are on the flag."
+    l2: "laso en walo en loje li lon lipu."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Let's talk colours!
+
+<List>
+  <Word sl="kule" m="colour, kind; colourful" />
+  <Word sl="walo" m="white, pale" />
+  <Word sl="pimeja" m="black, dark" />
+  <Word sl="loje" m="red, magenta" />
+  <Word sl="jelo" m="yellow" />
+  <Word sl="laso" m="green, teal, blue" />
+</List>
+
+In *sitelen pona*, many colour words look as if they were *compounds*: they consist of a triangle from **󱤞 kule** combined with another word, like **󱤂 ala**, **󱥰 uta**, **󱥤 suno**, **󱤗 kasi**. There are several other compound glyphs in *sitelen pona*, as well: **󱤶 moku**, **󱥉 pali**, **󱤙 kepeken** have a **󱤭 luka**, and **󱤕 kalama**, **󱥌 pana**, **󱥡 sona**, **󱥬 toki** use three lines we dubbed *'emitters'*. Props to you if you spotted these patterns earlier!
+
+The colour words, of course, mean a whole *range* of colours, not just the ones listed here. **󱤣 laso** is an especially interesting one: in Toki Pona, green and blue are just shades of one colour, like in Japanese, Vietnamese, Zulu and many other languages. These two sentences together makes sense in Toki Pona, but not in English:
+
+<List>
+  <Word sl="kin" m="also, too" />
+  <Sentence sl="sewi li laso." m="The sky is blue." />
+  <Sentence sl="kasi kin li laso." m="The grass, too, is green." />
+</List>
+
+## Do you need colours?
+
+Like genders, Toki Pona colours are used less frequently than you might expect. In natural languages, colours often serve as easy shortcuts to mean something much more specific: *a white lie*, *the black market*, *a greenhouse*. Toki Pona doesn't like shortcuts that don't get to the point:
+
+<List>
+  <Sentence sl="tomo laso" m="a green house" />
+  <Sentence sl="tomo kasi" m="a greenhouse" />
+</List>
+
+There's a big difference between a white house and the White House:
+
+<List>
+  <Sentence sl="tomo walo" m="a white house" />
+  <Sentence sl="tomo ni la jan li lawa e ma Mewika." m="the White House" />
+</List>
+
+I only bring it up now, because colours are the most obvious example, but the same actually applies to any phrase! Before using adjectives, it's often useful to stop and think: are these adjectives getting the important part you wanted to talk about, or are they just shorthand for something else?
+
+<Practice exercises={frontmatter.practice} client:load />

@@ -1,0 +1,54 @@
+---
+slug: "pl/03"
+title: "lekcja 3: proste zdania"
+description: "Naucz się słów: li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
+practice:
+  - l1: "Zwierzę zna owada."
+    l2: "soweli li sona e pipi."
+  - l1: "Owad je rośliny."
+    l2: "pipi li moku e kasi."
+  - l1: "Ptak widzi rośliny."
+    l2: "waso li lukin e kasi."
+  - l1: "Ptak zna zwierzę."
+    l2: "waso li sona e soweli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Proste zdania
+
+Skoro już wiesz, jak czytać toki ponę, czas się nauczyć słów i zdań!  
+Tutaj jest kilka słów oznaczających rzeczy i czynności:
+
+<List>
+  <Word sl="soweli" m="zwierzę lądowe, na przykład kot, pies, krowa, mysz, słoń" />
+  <Word sl="waso" m="ptak, na przykład gołąb, gęś, sowa" />
+  <Word sl="pipi" m="owad, na przykład żuk, mrówka, biedronka, pająk" />
+  <Word sl="kasi" m="roślina, na przykład koniczyna, brzoza, kaktus, mech" />
+  <Word sl="moku" m="spożywać" />
+  <Word sl="lukin" m="patrzeć" />
+  <Word sl="sona" m="wiedzieć" />
+</List>
+
+Powszechnym rodzajem zdania jest zdanie typu "podmiot-czasownik-dopełnienie". To oznacza, że rzecz (podmiot) robi coś z inną rzeczą (dopełnieniem). Stwórzmy kilka zdań.
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="Zwierzę je rośliny." />
+  <Sentence sl="waso li moku e pipi." m="Ptak je owady." />
+  <Sentence sl="pipi li lukin e soweli." m="Owad widzi zwierzę." />
+  <Sentence sl="waso li sona e kasi." m="Ptak zna drzewo." />
+</List>
+
+Tego można się nauczyć:
+
+- Szyk zdania jest taki sam, co w języku polskim: podmiot, orzeczenie, dopełnienie.
+- **󱤧 li** jest partykułą wprowadzającą czasownik.
+- **󱤉 e** jest partykułą wprowadzającą dopełnienie.
+- Tłumaczenie na język polski zawiera formy w liczbie mnogiej, ale to są przypuszczenia. Zdania w toki ponie też nie wskazują, czy mowa jest o czymś określonym, czy nie. W dłuższych rozmowach to staje się dość jasne!
+
+(**󱤧 li** i **󱤉 e** mogą się z początku wydawać niepotrzebne. Nauczymy się o tym, dlaczego są wymagane, ale żeby to uczynić, najpierw trzeba się nauczyć więcej o częściach mowy!)
+
+<Practice exercises={frontmatter.practice} client:load />

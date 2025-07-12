@@ -1,0 +1,79 @@
+---
+slug: "pl/06"
+title: "lekcja 6: zaimki"
+description: "Naucz się słów: ni, mi, sina, ona!"
+practice:
+  - l1: "To jest słodka roślina."
+    l2: "ni li kasi suwi."
+  - l1: "To są duże oczy."
+    l2: "ni li lukin suli."
+  - l1: "Twoje oczy są duże."
+    l2: "lukin sina li suli."
+  - l1: "Ten ptak jest malutki."
+    l2: "waso ni li lili."
+  - l1: "Wredne owady zjadły moją roślinkę."
+    l2: "pipi ike li moku e kasi mi."
+  - l1: "Jesteś uroczy."
+    l2: "sina suwi."
+  - l1: "Widzę ich."
+    l2: "mi lukin e ona."
+  - l1: "Oni dobrze jedzą."
+    l2: "ona li moku pona."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Zaimki
+
+Na pewno masz dosyć długich zdań i sprawy części mowy. Obniżmy poprzeczkę, wskazując na rzeczy:
+
+<List>
+  <Word sl="ni" m="ten, tamten" />
+  <Sentence sl="ni li soweli." m="To jest zwierzę." />
+  <Sentence sl="ni li kasi." m="To jest roślina." />
+  <Sentence sl="ni li moku suwi." m="To jest słodkie jedzenie." />
+  <Sentence sl="ni li suli." m="To jest ważne." />
+  <Sentence sl="ni li pona wawa." m="To jest wspaniale dobre." />
+</List>
+
+To są nasze pierwsze _zdania bez dopełnienia_, więc nie ma w nich **󱤉 e**!
+
+Możesz się zastanawiać: **󱤧 li** zaczyna czasownik, ale gdzie on jest? W języku polskim jest to 'być'. W toki ponie nie ma czasownika 'być'. Zamiast tego słowa odgrywające rolę czasownika w zdaniu automatycznie zawierają 'być' w swoim znaczeniu: **󱥢 soweli** 'być zwierzęciem', **󱥣 suli** 'być ważnym'.
+
+Już spojrzeliśmy na jeden zaimek. Spójrzmy na kilka kolejnych:
+
+<List>
+  <Word sl="mi" m="ja, my; mój, nasz" />
+  <Word sl="sina" m="ty, wy; twój, wasz" />
+  <Word sl="ona" m="on, ona, ono, oni, one; jego, jej, ich" />
+</List>
+
+Poćwiczmy używanie **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, i **󱥁 ni** w zdaniach:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Ta roślina jest wielka." />
+  <Sentence sl="sona sina li wawa." m="Twoja wiedza jest wspaniała." />
+  <Sentence sl="pipi ni li pipi mi." m="Ten owad to mój owad." />
+  <Sentence sl="waso sina li lukin e mi." m="Twój ptak patrzy na mnie." />
+  <Sentence sl="waso li moku e pipi ni." m="Ptak je tego owada." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="To zwierzę je swoją roślinę." />
+</List>
+
+Już powinieneś znać takiego typu zdania! W większości pozycji w zdaniu zaimki zachowują się jak zwykłe rzezcowniki i przymiotniki. Ale coś dziwnego się dzieje, gdy **󱤴 mi** or **󱥞 sina** jest podmiotem w zdaniu:
+
+<List>
+  <Sentence sl="mi wawa." m="(Ja) jestem potężny." />
+  <Sentence sl="sina lukin e moku." m="(Ty) widzisz jedzenie." />
+  <Sentence sl="mi sona e kasi suli." m="(Ja) wiem o wielkiej roślinie." />
+  <Sentence sl="sina sona e suli kasi." m="(Ty) znasz wielkość rośliny." />
+</List>
+
+Toki pona ma specjalną zasadę: gdy **󱤴 mi** lub **󱥞 sina** jest podmiotem zdania, usuwamy **󱤧 li**, które zwykle następowałoby po podmiocie. To dlatego, że zdania z **󱤴 mi** lub **󱥞 sina** występują powszechnie! Można to porównać do tego, że zwykle pomijamy w języku polskim zaimki osobowe, gdy czasownik jest w pierwszej lub drugiej osobie.
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Zobacz też
+* [P: czy 'li' znaczy 'jest'?](pl/li-and-is)

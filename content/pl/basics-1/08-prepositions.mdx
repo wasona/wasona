@@ -1,0 +1,96 @@
+---
+slug: "pl/08"
+title: "lekcja 8: przyimki"
+description: "Naucz się słów: weka, pana, kama, awen, tawa, lon, tan!"
+practice:
+  - l1: "w Anglii"
+    l2: "lon ma Inli"
+  - l1: "do Alego"
+    l2: "tawa jan Ali"
+  - l1: "Usuwasz owad z domu."
+    l2: "sina weka e pipi tan tomo."
+  - l1: "Lubię rośliny. (Rośliny są dla mnie dobre.)"
+    l2: "kasi li pona tawa mi."
+  - l1: "Dałem ptakowi gąsienicę."
+    l2: "mi pana e pipi tawa waso."
+  - l1: "Ludzie zostają w domu."
+    l2: "jan li awen lon tomo."
+  - l1: "Noah jedzie do Francji."
+    l2: "jan Nowa li tawa ma Kanse."
+  - l1: "Toronto jest w Kanadzie."
+    l2: "ma tomo Towano li lon ma Kanata."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Przyimki
+
+Skoro już znamy kilka krajów, porozmawiajmy o podróżach! Ale jak powiedzieć "iść do" i "pochodzić z"? Do tego będziemy potrzebować kilku czasowników i przyimków:
+
+<List>
+  <Word sl="weka" m="usuwać, wychodzić; nieobecny, daleki" />
+  <Word sl="pana" m="dawać, umieszczać" />
+  <Word sl="kama" m="przychodzić, przyjeżdżać" />
+  <Word sl="awen" m="zostać, chronić" />
+  <Word sl="tawa" m="do, w stronę" />
+  <Word sl="lon" m="przy, na, w" />
+  <Word sl="tan" m="z, z powodu" />
+</List>
+
+_Przyimek_ jest słowem, które występuje przed innym wyrazem. Wskazuje jego relację do zdania. Przyimek i dołączane słowo stają się _wyrażeniem przyimkowym_:
+
+<List>
+  <Word sl="tawa soweli" m="do zwierzęcia" />
+  <Word sl="lon ma" m="na lądzie, w kraju" />
+  <Word sl="tan tomo" m="z domu" />
+</List>
+
+W toki ponie wyrażeń przyimkowych można używać na dwa sposoby. Po pierwsze możemy je dołączyć do końca zdania. Tego można użyć, aby wskazać na lokalizację i kierunek czynności:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="Umieszczam ptaka na drzewo." />
+  <Sentence sl="waso li awen lon kasi." m="Ptak zostaje na drzewie." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="Zabierasz ptaka z drzewa."
+  />
+</List>
+
+Po drugie, co jeżeli chcemy mówić o lokalizacji lub kierunku...podczas gdy nic innego się nie dzieje? Na szczęście tak też można zrobić. Wyrażenia przyimkowe mogą występować tuż po **󱤧 li** i same się zachowywać jak czasownik. Gdy przyimki się zachowują jak czasowniki, one znaczą: **󱥩 tawa** 'iść do', **󱤬 lon** 'być na', **󱥧 tan** 'pochodzić z':
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma leci do Japonii." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Nina jest w Rosji." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Millie jest z Francji." />
+</List>
+
+Poćwiczmy na tych zdaniach:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="Idę do porośniętego miejsca.<br />(Może las, trawiaste pole, bujne miejsce.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="Wiedza wyszła ze mnie.<br />(Zapomniałem.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="Urocze zwierzęta są dla mnie dobre.<br />(Lubię urocze zwierzęta.)"
+  />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah mówi do Emmy." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="Ludzie mówią po niemiecku w Niemczech."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Zobacz też
+* [P: czy muszę zapamiętywać nazwy języków i krajów?](pl/languages-countries)
+* [P: czyżby 'jan li toki Inli' nie było dziwne?](pl/named-verbs)

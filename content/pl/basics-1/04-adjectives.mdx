@@ -1,0 +1,73 @@
+---
+slug: "pl/04"
+title: "lekcja 4: przymiotniki"
+description: "Naucz się słów: suli, lili, pona, ike, wawa, suwi!"
+practice:
+  - l1: "urocze zwierzę"
+    l2: "soweli suwi"
+  - l1: "zły owad"
+    l2: "pipi ike"
+  - l1: "mocny ptak"
+    l2: "waso wawa"
+  - l1: "Ptak zna mocne zwierzę."
+    l2: "waso li sona e soweli wawa."
+  - l1: "Mały owad patrzy na duże zwierzę."
+    l2: "pipi lili li lukin e soweli suli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Opisuj!
+
+Już znasz kilka rzeczowników (rzeczy) i czasowników (czynności). Czas dodać do tego przymiotniki (opisy)!  
+Zapamiętajmy kilka z nich:
+
+<List>
+  <Word sl="suli" m="duży, ważny" />
+  <Word sl="lili" m="mały, młody" />
+  <Word sl="pona" m="dobry, przyjemny" />
+  <Word sl="ike" m="zły, nieprzyjemny" />
+  <Word sl="wawa" m="mocny, wspaniały" />
+  <Word sl="sona" m="obeznany, mądry" />
+  <Word sl="suwi" m="uroczy, słodki" />
+</List>
+
+W języku polskim przymiotniki zwykle znajdują się przed rzeczownikiem, ale w toki ponie zawsze się znajdują po rzeczowniku:
+
+<List>
+  <Word sl="soweli suli" m="duże zwierzę" />
+  <Word sl="pipi lili" m="mały owad" />
+  <Word sl="waso suwi" m="uroczy ptak" />
+</List>
+
+Użytkownicy języka polskigo często kojarzą umieszczanie przymiotnika po rzeczowniku z zestawieniami takimi jak *woda sodowa* czy *panna młoda*. W językach takich jak francuski, irlandzki, arabski, czy malajski rzeczownik zawsze jest na początku. Pomyśl o tym w ten sposób: pierwsze słowo zawsze jest najważniejsze!
+
+Stwórzmy kilka zdań z opisami:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="Ptak widzi urocze zwierzę."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="Potężne zwierzę je duże rośliny."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Wredne owady trochę gryzą zwierzę."
+  />
+  <Sentence
+    sl="waso sona li sona pona e pipi."
+    m="Mądry ptak dobrze zna owady."
+  />
+</List>
+
+Jeśli czujesz, że te zdania cię męczą, nie przejmuj się! Wkrótce spojrzymy na kilka krótszych zdań. Zapamiętaj: struktura zdania jest tak naprawdę dość prosta! Zawsze możesz rozróżnić podmiot, czasownik i dopełnienie, patrząc na **󱤧 li** i **󱤉 e**.
+
+A tu taka ciekawostka: w języku polskim przymiotniki mogą być stosowane tylko przy rzeczownikach. Jednak w toki ponie mogą być też stosowane przy czasownikach: _trochę gryźć_ ~ _moku lili_, _dobrze znać_ ~ _sona pona_. W toki ponie nie ma różnicy między przymiotnikami a przysłówkami.
+
+<Practice exercises={frontmatter.practice} client:load />
