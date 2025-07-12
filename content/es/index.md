@@ -66,7 +66,7 @@ Algunos detalles más concretos que no hace falta saber, ¡pero que tal vez te i
 * [Q: En sitelen pona, los nombres me parecen largos. ¿Cómo los puedo abreviar?](es/simpler-cartouches)
 * [Q: ¿Me tengo que memorizar los nombres de idiomas y países?](es/languages-countries)
 * [Q: ¿'jan li toki Inli' no es un poco raro?](es/named-verbs)
-* [Q: ¿Existen más preverbos?](es/more-preverbs)
+* [Q: ¿Existe algún preverbo más?](es/more-preverbs)
 * [Q: ¿Cómo se dice 'hacer'?](es/doing)
 * [Q: ¿Cómo hablo de números grandes?](es/large-numbers)
 * [Q: ¿Qué anda haciendo jan Sonja hoy en día?](es/jan-sonja)
