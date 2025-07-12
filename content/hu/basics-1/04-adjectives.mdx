@@ -1,0 +1,74 @@
+---
+slug: "hu/04"
+title: "4. lecke: melléknevek"
+description: "Tanuld meg a következő szavakat: suli, lili, pona, ike, wawa, suwi!"
+practice:
+  - l1: "egy cuki állat"
+    l2: "soweli suwi"
+  - l1: "egy rossz bogár"
+    l2: "pipi ike"
+  - l1: "egy erős madár"
+    l2: "waso wawa"
+  - l1: "A madár ismer egy erős állatot."
+    l2: "waso li sona e soweli wawa."
+  - l1: "Egy kicsi bogár ránéz egy nagy állatra."
+    l2: "pipi lili li lukin e soweli suli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Írd körül!
+
+Most hogy tudsz főneveket (dolgokat) és igéket (tevékenységeket), itt az ideje, hogy megtanuljuk a mellékneveket (tulajdonságokat)!  
+Memorizáljunk néhányat:
+
+<List>
+  <Word sl="suli" m="nagy, fontos" />
+  <Word sl="lili" m="kicsi, fiatal" />
+  <Word sl="pona" m="jó, kellemes" />
+  <Word sl="ike" m="rossz, kellemetlen" />
+  <Word sl="wawa" m="erős, elképesztő" />
+  <Word sl="sona" m="bölcs" />
+  <Word sl="suwi" m="cuki, édes" />
+</List>
+
+Magyarban a melléknevek a főnevek előtt álnak. Viszont toki ponában a főnevek után:
+
+<List>
+  <Word sl="soweli suli" m="egy nagy állat" />
+  <Word sl="pipi lili" m="egy kicsi bogár" />
+  <Word sl="waso suwi" m="egy aranyos madár" />
+</List>
+
+Míg ez a magyaroknak nehézséget okozhat, addig ez természetes a franciáknak, íreknek, araboknak, malájoknak, és másoknak, akiknek a nyelve szintén a főnév után helyezi a melléknevet. Gondolj rá így: a legelső szó a legfontosabb!
+
+Alkossunk pár mondatot melléknevekkel:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="A madár lát egy cuki állatot."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="Az erős állat nagy növényeket eszik."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="A gonosz bogarak megharapják az állatokat."
+  />
+  <Sentence
+    sl="waso sona li sona pona e pipi."
+    m="A bölcs madár jól ismeri a bogarakat."
+  />
+</List>
+
+Ha ezek a mondatok hosszúnak és fárasztónak tűnnek, ne aggódj! Hamarosan néhány rövidebb mondatot fogunk megnézni. Ne felejtsd: a mondat felépítése egész egyszerű. Mindig meg tudod állapítani, hogy melyik az alany, ige, és tárgy azáltal, hogy megnézed a **󱤧 li** és **󱤉 e** szavakat.
+
+Egy kis érdekesség: a toki ponában nincs különbség melléknév és határozószó között.
+
+<Practice exercises={frontmatter.practice} client:load />
+
