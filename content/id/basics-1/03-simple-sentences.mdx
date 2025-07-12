@@ -1,0 +1,54 @@
+---
+slug: "id/03"
+title: "pelajaran 3: kalimat sederhana"
+description: "Pelajari li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
+practice:
+  - l1: "Hewan mengetahui serangganya."
+    l2: "soweli li sona e pipi."
+  - l1: "Serangga memakan tanamannya."
+    l2: "pipi li moku e kasi."
+  - l1: "Burung melihat tanamannya."
+    l2: "waso li lukin e kasi."
+  - l1: "Burung mengenal hewannya."
+    l2: "waso li sona e soweli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Kalimat sederhana
+
+Karena kamu telah mengetahui caranya untuk membaca Toki Pona, Waktunya untuk mempelajari kata-kata dan kalimatnya!  
+Inilah beberapa kata-kata untuk benda dan tindakan:
+
+<List>
+  <Word sl="soweli" m="hewan darat, seperti kucing, anjing, sapi, tikus, dan gajah" />
+  <Word sl="waso" m="burung, seperti merpati, angsa, burung hantu" />
+  <Word sl="pipi" m="serangga, seperti kumbang, semut, kupu-kupu, laba-laba" />
+  <Word sl="kasi" m="tanaman, seperti pohon, kaktus, lumut" />
+  <Word sl="moku" m="mengonsumsi, layaknya makan atau minum" />
+  <Word sl="lukin" m="melihat" />
+  <Word sl="sona" m="mengetahui, layaknya paham atau kenal" />
+</List>
+
+Susunan kalimat yang paling umum ialah kalimat "subjek-predikat-objek". Artinya, satu benda (subjek) melakukan sesuatu kepada benda lainnya (the object). Ayo kita buat beberapa kalimat:
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="Hewan memakan tanamannya." />
+  <Sentence sl="waso li moku e pipi." m="Burungnya memakan seekor serangga." />
+  <Sentence sl="pipi li lukin e soweli." m="Serangga melihat hewan." />
+  <Sentence sl="waso li sona e kasi." m="Burung mengenal pohonnya." />
+</List>
+
+Hal yang bisa kita pelajari:
+
+- Susunan kalimat pada Toki Pona sama seperti Bahasa Indonesia, yaitu: subjek-predikat-objek.
+- **󱤧 li** adalah Partikel yang menunjukkan predikat atau aksi yang dilakukan terhadap objek.
+- **󱤉 e** adalah Partikel yang menunjukkan objek sebagai penerima terhadap predikat.
+- Ketika menerjemahkan kalimat-kalimat di atas, memang terlihat ada kata seperti "nya" atau "seekor". Namun, sebenarnya Toki Pona tidak memiliki kata-kata tersebut. Semuanya akan terlihat jelas ketika kamu mempunyai percakapan yang lebih panjang. 
+
+(**󱤧 li** dan **󱤉 e** awalnya mungkin tampak tidak penting. Kedepannya, Kita akan mempelajari mengapa kita masih membutuhkannya, untuk itu, kita perlu mempelajari bagian-bagian penting lainnya dari Toki Pona terlebih dahulu!)
+
+<Practice exercises={frontmatter.practice} client:load />
