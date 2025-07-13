@@ -1,0 +1,102 @@
+---
+slug: "hu/05"
+title: "5. lecke: szófajok"
+description: "Tanulj a főnevekről, igékről, és melléknevekről!"
+practice:
+  - l1: "egy erős bogár"
+    l2: "pipi wawa"
+  - l1: "a bogár ereje"
+    l2: "wawa pipi"
+  - l1: "egy nagy szem"
+    l2: "lukin suli"
+  - l1: "jó étel"
+    l2: "moku pona"
+  - l1: "elképesztően jó"
+    l2: "pona wawa"
+  - l1: "Az étel jobbá teszi a szemet."
+    l2: "moku li pona e lukin."
+  - l1: "Az állatok ismerik a madarak cukiságát."
+    l2: "soweli li sona e suwi waso."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Szófajok
+
+Észrevehetted, hogy a **󱥡 sona** szó két jelentéssel fordult elő: először igeként "ismerni", másodszor melléknévként "bölcs". Most akkor melyik? És hogyan tudod eldönteni?
+
+A valóságban bármelyik lehet. Ha főnév után jön, akkor az egy melléknév. Ha **󱤧 li** után áll, akkor az egy ige. Minden a szavak sorrendjén alapul.
+
+Ugyanez igaz az _összes_ szóra: bármely szó lehet főnév, ige, vagy melléknév. Nézzünk néhány példát a már tanult szavaknál:
+
+<List>
+  <Word sl="lukin" m="fn: szem; i: látni" />
+  <Word sl="moku" m="fn: étel, táplálék; i: enni" />
+  <Word sl="sona" m="fn: tudás, bölcsesség; i: tudni, ismerni; mn: bölcs" />
+  <Word sl="suli" m="fn: méret; i: nagyobbítani, hangsúlyozni; mn: nagy, fontos" />
+  <Word sl="pona" m="fn: jóság; i: jobbá tenni, javítani; mn: jó, kellemes" />
+  <Word sl="waso" m="fn: madár; i: madárrá tenni; mn: madaras, madárféle, a madárnak a valamije" />
+</List>
+
+Csak _néhány_ szót soroltam fel, ami éppen elég, hogy felfedezzünk mintákat bennük:
+* Amikor **igéből lesz főnév**, általában ez maga a tevékenység (*tudni, ismerni*), vagy valamilyen elengedhetetlen része a tevékenységnek (*étel, szem*).
+* Amikor **igéből lesz melléknév**, általában azokat jelenti, akik azt csinálják (*bölcs emberek ~ emberek, akik tudnak*).
+* Amikor **főnévből lesz ige**, általában azzá válni vagy olyanná tenni (*madárrá válni, madárrá tenni*).
+* Amikor **főnévből lesz melléknév**, általában birtokviszonyt vagy hasonlóságot fejez ki (*madárnak a valamije; madárféle, madaras*).
+* Amikor **melléknévből lesz főnév**, általában a tulajdonságról van szó (*jóság, méret*).
+* Amikor **melléknévból lesz ige**, általában olyanná tenni (*jobbá tesz, javít; nagyobbá tesz, nagyobbít*).
+
+De beszéd során a toki pona beszélőknek bele se kell gondolniuk ezekbe a mintákba! Elkezdenek egybefolyni, elhomályosodni. Egy idő után nem is gondolsz már bele, hogy valami eredetileg főnév, ige, vagy melléknév volt. A toki ponában nincs megszabva, hogy milyen szófajúak a szavak; bármely szó lehet bármilyen szófaj attól függően, hogy hova helyezed a mondatban.
+
+Gyakoroljuk a főnevek, igék, és melléknevek használatát:
+
+<List>
+  <Sentence sl="lukin li pona e sona." m="A szemek javítanak a tudásban." />
+  <Sentence sl="moku li suli e pipi." m="Az étel nagyobbá teszi a bogarakat." />
+  <Sentence
+    sl="moku li wawa e soweli lili."
+    m="Az étel erősíti a kis állatot."
+  />
+</List>
+
+## Szórend számít!
+
+Mivel bármely főnév lehet melléknév, és bármely melléknév lehet főnév, ezért a szórend nagyon fontos! Figyeld meg, hogy ez a két kifejezés mennyire különböző dolgokat jelentenek:
+
+<List>
+  <Word sl="soweli suli" m="nagy állat" />
+  <Word sl="suli soweli" m="egy állat mérete" />
+  <Sentence
+    sl="soweli suli li sona e suli soweli."
+    m="A nagy állat ismeri egy állat méretét."
+  />
+</List>
+
+## li és e is fontos!
+
+Emlékszel arra, hogy a "li" és "e" egy kicsit feleslegesnek tűntek? Most hogy már tudjuk, hogy a jelentéssel bíró szavakat használhatjuk főnévként, igeként, vagy melléknévként, most már láthatjuk, hogy mennyire fontos ez a két szó. Nekik köszönhetően el tudjuk különíteni ezt a három nagyon különböző mondatot:
+
+<List>
+  <Word sl="soweli sona" m="bölcs állat" />
+  <Word sl="sona pona" m="jó tudás; jól tudni" />
+  <Word sl="pona waso" m="a madárnak a jósága" />
+  <Sentence
+    sl="soweli sona li pona e waso."
+    m="A bölcs állat segít a madárnak."
+  />
+  <Sentence
+    sl="soweli li sona pona e waso."
+    m="Az állat jól ismeri a madarat."
+  />
+  <Sentence
+    sl="soweli li sona e pona waso."
+    m="Az állat tudja a madár jóságát."
+  />
+</List>
+Ha bármikor belezavarodsz abba, hogy hogyan kell egy mondatot értelmezni vagy írni, kérdezd meg magadtól: "Hol az alany? Hol az ige? Hol a tárgy?", és minden kisebb kifejezésekké darabolódik.
+
+<Practice exercises={frontmatter.practice} client:load />
+
