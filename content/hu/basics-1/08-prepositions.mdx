@@ -1,0 +1,97 @@
+---
+slug: "hu/08"
+title: "8. lecke: elöljárószók"
+description: "Tanuld meg a következő szavakat: weka, pana, kama, awen, tawa, lon, tan!"
+practice:
+  - l1: "Angliában"
+    l2: "lon ma Inli"
+  - l1: "Alinak"
+    l2: "tawa jan Ali"
+  - l1: "Eltávolítod a bogarat a házból."
+    l2: "sina weka e pipi tan tomo."
+  - l1: "Szeretem a növényeket. (A növények jók nekem.)"
+    l2: "kasi li pona tawa mi."
+  - l1: "Adtam a madárnak egy hernyót."
+    l2: "mi pana e pipi tawa waso."
+  - l1: "Az emberek a házban maradnak."
+    l2: "jan li awen lon tomo."
+  - l1: "Noah Franciaországba megy."
+    l2: "jan Nowa li tawa ma Kanse."
+  - l1: "Toronto Kanadában van."
+    l2: "ma tomo Towano li lon ma Kanata."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Elöljárószók
+
+Most hogy már ismerünk pár országot, beszéljünk utazásról! De hogyan kell azt mondani, hogy "menni valahová" vagy "jönni valahonnan"? Ezekhez szükségünk lesz néhány igére és elöljárószókra (prepozíciókra):
+
+<List>
+  <Word sl="weka" m="eltávolítani, elmenni; nincs jelen, távol" />
+  <Word sl="pana" m="adni, helyezni" />
+  <Word sl="kama" m="jönni, megérkezni" />
+  <Word sl="awen" m="maradni, várni, megvédeni" />
+  <Word sl="tawa" m="valami felé" />
+  <Word sl="lon" m="valaminél, valamin, valamiben" />
+  <Word sl="tan" m="valamiből, valami miatt" />
+</List>
+
+Egy _elöljárószó_ egy olyan szó, amely egy másik szó előtt áll. Megmutatja, hogy az a szó hogyan viszonyul a mondathoz. Egy elöljárószó + egy másik szó hasonló a magyar _határozóhoz_.
+
+<List>
+  <Word sl="tawa soweli" m="az állat felé" />
+  <Word sl="lon ma" m="földön, országban" />
+  <Word sl="tan tomo" m="házból, ház felől" />
+</List>
+
+A toki ponában kétféleképp használhatjuk a határozókat. Először odatehetjük a mondat végére. Ilyenkor megemlítjük a cselekvés helyszínét vagy irányát:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="Ráraktam egy madarat a fára." />
+  <Sentence sl="waso li awen lon kasi." m="A madár marad a fán." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="Eltávolítod a madarat a fáról."
+  />
+</List>
+
+Másodszor mi van akkor, hogy ha egy helyszínről vagy irányról szeretnénk beszélni... bármi más nélkül? Szerencsére ezt is meg tudjuk tenni. A határozó egyból a **󱤧 li** után jön, és úgy cselekszik, mint egy ige. Amikor az elöljárószavak igeként vannak jelen, akkor azt jelentik: **󱥩 tawa** "menni valahova", **󱤬 lon** "lenni valahol", **󱥧 tan** "jönni valahonnan":
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma Japánba megy." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Nina Oroszországban van." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Millie Franciaországból jött." />
+</List>
+
+Gyakoroljunk ezekkel a mondatokkal:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="Megyek a növényföldre.<br />(Lehet erdő, mező, valami füves.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="A tudás elment előlem.<br />(Elfelejtettem.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="Cuki állatok jók nekem.<br />(Szeretem a cuki állatokat.)"
+  />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah Emmához beszél." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="Emberek Németországban németül beszélnek."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Lásd még
+* [Memorizálnom kell az összes nyelv- és országnevet?](hu/languages-countries)
+* [A "jan li toki Inli" nem furcsa egy kicsit?](hu/named-verbs)
+
