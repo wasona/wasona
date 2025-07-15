@@ -1,0 +1,99 @@
+---
+slug: "hu/09"
+title: "9. lecke: tevékenységek"
+description: "Tanuld meg a következő szavakat: utala, lape, musi, nasa, kalama, wile, ken, alasa!"
+practice:
+  - l1: "Egy cuki madár alszik."
+    l2: "waso suwi li lape."
+  - l1: "A neve hosszú."
+    l2: "nimi ona li suli."
+  - l1: "szórakozni akarni"
+    l2: "wile musi"
+  - l1: "énekelni próbálni"
+    l2: "alasa kalama"
+  - l1: "Elkezdem rajzolni a növényt."
+    l2: "mi kama sitelen e kasi."
+  - l1: "A medvebocs játszhat szórakozva."
+    l2: "soweli lili li ken utala musi."
+  - l1: "Próbálok elmenni Kínába."
+    l2: "mi alasa tawa ma Sonko."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Tevékenységek
+
+Tanuljunk még több szót tevékenységekre!
+
+<List>
+  <Word sl="utala" m="harcolni, támadni" />
+  <Word sl="lape" m="aludni, pihenni" />
+  <Word sl="kalama" m="hangot kiadni; hang" />
+  <Word sl="musi" m="szórakozni; vicces, szórakoztató, érdekes" />
+  <Word sl="nasa" m="fura, szokatlan, részeg" />
+  {/*<Word sl="lipu" m="papír, kártya, könyv, weboldal; egy lapos dolog 󱥡 információval" />*/}
+</List>
+
+Ezek a szavak elég egyszerűek. Használjuk őket mondatokban:
+
+<List>
+  <Sentence sl="soweli li utala e jan." m="Az állat megtámadt valakit." />
+  <Sentence sl="sina lape lon tomo." m="Te otthon aludsz." />
+  <Sentence sl="nimi ona li nasa tawa mi." m="Az ő neve furcsa számomra." />
+  <Sentence
+    sl="jan lili li musi tan kalama."
+    m="A gyerek szórakozik a hangok miatt."
+  />
+</List>
+
+## Preverbek
+
+Néha nem csak a tevékenységről szeretnénk beszélni, hanem a viszonyunkról is hozzá. Talán valamit meg _szeretnénk_ csinálni. Talán meg _tudjuk_ csinálni. Talán _elkezdjük_ vagy _folytatjuk_.
+
+A toki ponában ezt _preverbeknek_ nevezzük. Egy preverb egy ige, ami a főige elé kerül. Már tudsz is néhányat! Tanuljuk meg, hogy mit jelentenek, amikor preverbek:
+
+<List>
+  <Word sl="kama" m="kezd valamit, elkezd valamit, valamivé válik" />
+  <Word sl="awen" m="folytatni valamit, még mindig csinálni valamit" />
+  {/* <Word sl="sona" m="tudni valamit csinálni" /> */}
+</List>
+
+Csak néhány ige lehet preverb. Tanuljuk meg a többit:
+
+<List>
+  <Word sl="wile" m="akarni valamit csinálni" />
+  <Word sl="ken" m="tud valamit csinálni, képes valamit csinálni" />
+  <Word sl="alasa" m="próbál valamit csinálni" />
+</List>
+
+A preverbek nagyon sokoldalúak. Nézzünk néhány kifejezést preverbekkel:
+
+<List>
+  <Word sl="wile lape" m="aludni akarni" />
+  <Word sl="awen pona" m="jónak maradni" />
+  <Word sl="kama sona" m="bölccsé válni, tanulni" />
+  {/* <Word sl="sona sitelen" m="rajzolni tudni" /> */}
+  <Word sl="alasa kama wawa" m="megpróbálni erőssé válni" />
+</List>
+
+Használjunk preverbeket mondatokban:
+
+<List>
+  <Sentence sl="waso lili li wile lape." m="A kicsi madár aludni akar." />
+  {/* <Sentence sl="jan li sona moku e kasi." m="Az emberek tudják, hogyan kell növényt enni." /> */}
+  <Sentence sl="mi kama sona e toki pona." m="Tanulom a toki ponát." />
+  <Sentence sl="sina alasa tawa ma Tosi." m="Te Németországba próbálsz menni." />
+  <Sentence
+    sl="toki ona li awen nasa tawa mi."
+    m="Az ő beszéde kicsit furcsa számomra."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [Van több preverb?](hu/more-preverbs/)
+
