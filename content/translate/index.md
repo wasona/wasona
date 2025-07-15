@@ -14,8 +14,9 @@ description: "Help us by translating the course to your language!"
 * [Polish](https://github.com/wasona/wasona/pull/10) by jan Esuwa
 * [Korean](https://github.com/wasona/wasona/pull/11) by jyh
 * [Indonesian](https://github.com/wasona/wasona/pull/12) by jan Asipa
-* [Spanish](https://github.com/wasona/wasona/pull/15) by jan Kalo Metesin
+* [Spanish](https://github.com/wasona/wasona/pull/18) by jan Kalo Metesin
 * [Hebrew](https://github.com/wasona/wasona/pull/19) by jan Opela
+* [Hungarian](https://github.com/wasona/wasona/pull/20) by jan Salan
 
 **Some notes for translators:**
 
