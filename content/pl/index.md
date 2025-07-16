@@ -1,7 +1,7 @@
 ---
 slug: "pl"
 title: "Wasona: kurs błyskawiczny toki pony"
-description: "Czytaj, baw się  i naucz się nowego języka!"
+description: "Czytaj, baw się i naucz się nowego języka!"
 ---
 ## Część 1: pierwsze kroki!
 
