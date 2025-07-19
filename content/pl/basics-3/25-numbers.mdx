@@ -1,0 +1,81 @@
+---
+slug: "pl/25"
+title: "lekcja 25: numbers"
+description: "Learn nanpa, wan, tu, ale, kipisi!"
+practice:
+  - l1: "eight"
+    l2: "luka tu wan"
+  - l1: "You slice the bread."
+    l2: "sina kipisi e pan."
+  - l1: "The two of us join together."
+    l2: "mi tu li kama wan."
+  - l1: "I can speak three languages."
+    l2: "mi sona e toki tu wan."
+  - l1: "5 Euro"
+    l2: "mani luka pi ma Elopa"
+  - l1: "April begins."
+    l2: "tenpo mun nanpa tu tu li open."
+    alsoAccept:
+      - "mun nanpa tu tu li open."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Cardinal numbers
+
+Let's talk numbers!
+
+<List>
+  <Word sl="wan" m="one; united" />
+  <Word sl="tu" m="two; divided" />
+  <Word sl="luka" m="five, hand" />
+  <Word sl="mute" m="many" />
+  <Word sl="ale" m="all, every" />
+  <Word sl="kipisi" m="piece, part; to split" />
+</List>
+
+Toki Pona has words for 1, 2, 5, but not 3 or 4! But this is not so strange. You can imagine **󱥳 wan**, **󱥮 tu**, **󱤭 luka** like coins worth 1, 2, and 5. Let's try counting from 1 to 10:
+
+<List>
+    <Word sl="wan" m="one" />
+    <Word sl="tu" m="two" />
+    <Word sl="tu wan" m="three" />
+    <Word sl="tu tu" m="four" />
+    <Word sl="luka" m="five" />
+    <Word sl="luka wan" m="six" />
+    <Word sl="luka tu" m="seven" />
+    <Word sl="luka tu wan" m="eight" />
+    <Word sl="luka tu tu" m="nine" />
+    <Word sl="luka luka" m="ten" />
+</List>
+
+In many situations, just knowing small numbers will be enough. But if you want to talk about purchases or the Gregorian calendar, there's an extra page about large numbers below.
+
+## Ordinal numbers
+
+Usually, numbers are just adjectives:
+
+<List>
+    <Word sl="kala wan" m="one fish" />
+    <Word sl="soko tu tu" m="four mushrooms" />
+    <Word sl="mun luka" m="five months" />
+</List>
+
+But these are *cardinal* numbers: numbers that talk about quantity. There are also *ordinal* numbers: those that talk about order. To make ordinal numbers, just use **󱤽 nanpa** + a number:
+
+<List>
+    <Word sl="nanpa" m="number; the ...-th" />
+    <Word sl="kala nanpa wan" m="the first fish" />
+    <Word sl="soko nanpa tu tu" m="the fourth mushroom" />
+    <Word sl="mun nanpa luka" m="the fifth month" />
+</List>
+
+(By the way, **󱤽 nanpa** is special! It doesn't need **󱥍 pi**.)
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [Q: how do I talk about large numbers?](en/large-numbers/)

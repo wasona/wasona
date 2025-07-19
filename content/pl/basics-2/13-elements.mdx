@@ -1,0 +1,67 @@
+---
+slug: "pl/13"
+title: "lekcja 13: żywioły"
+description: "Naucz się słów: kon, telo, ko, kiwen, seli, lete, sewi!"
+practice:
+  - l1: "w niebie"
+    l2: "lon sewi"
+  - l1: "zimne pole"
+    l2: "ma lete"
+  - l1: "geologia"
+    l2: "sona kiwen"
+  - l1: "Niebo wydaje zimną wodę."
+    l2: "sewi li pana e telo lete."
+  - l1: "Ona lubi słodką wodę."
+    l2: "telo suwi li pona tawa ona."
+  - l1: "Glina może stwardnieć."
+    l2: "ko li ken kama kiwen."
+  - l1: "Umyj swoje ubrania!"
+    l2: "o telo e len sina!"
+  - l1: "Naucz się znaczenia słowa!"
+    l2: "o kama sona e kon nimi!"
+  - l1: "Milana studiuje świętą księgę."
+    l2: "jan Milana li kama sona e lipu sewi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+OK, na tę lekcję zróbmy sobie przerwę od gramatyki i zajmijmy się trochę filozofią!
+
+Od czasów starożytnych ludzie próbowali znaleźć prostsze materiały, z których składają się wszystkie rzeczy złożone lub na które można je pogrupować. Chińczycy pomyśleli o drewnie, ogniu, ziemi, metalu i wodzie. Grecy -- o ogniu, ziemi, powietrzu i wodzie. Inne systemy także zawierały niebo. Nawet teraz, gdy nauka odpowiedziała na wiele pytań o świecie, większość rzeczy należy do jednego z czterech 'stanów skupienia': gazy, ciecze, ciała stałe i plazma.
+
+I oczywiście te żywioły, materiały, stany skupienia nie wyjaśniają całości naszego złożonego świata, ale pomagają nam go zrozumieć. Więc nauczmy się trochę słów w toki ponie, które się przydają do ich opisywania:
+
+<List>
+  <Word sl="kon" m="powietrze, dusza, esencja, znaczenie" />
+  <Word sl="telo" m="woda, rzadki płyn" />
+  <Word sl="ko" m="miękkie ciało stałe lub gęsty płyn, np. piasek, glina, ciasto, klej" />
+  <Word sl="kiwen" m="twarde ciało stałe, np. kamień, drewno, metal" />
+  <Word sl="seli" m="ogień, gorący, płonąć" />
+  <Word sl="lete" m="chłód, zimny" />
+  <Word sl="sewi" m="niebo; wysoki; boski" />
+</List>
+
+Tak jak klasyczne żywioły, słowa w toki ponie często wydają się szerokie, obejmujące wiele idei.  
+* **󱥚 sewi** to nie tylko 'powyżej', ale też cześć czemuś, co jest zawsze ponad nami i zawsze poza naszym zasięgiem.  
+* **󱤝 kon** to nie tylko 'gaz', on wlicza ideę znaczącej duszy jako coś, czego nie możesz zobaczyć, np. coś związanego z oddechem.  
+* **󱤛 kiwen**, **󱤜 ko** i **󱥪 telo** nie mówią ci, skąd pochodzi materiał, ale opisują, jaki jest dla dotyku.
+
+Ten kurs pokazuje Ci podstawy toki pony, więc każde słowo jest zaopatrzone w krótkie tłumaczenie. Jednak tłumaczenie jest tylko wskazówką do przybliżonego zarysu *przestrzeni semantycznej* słowa -- całego zakresu sytuacji, w których słowo miałoby sens. Badanie tej przestrzeni semantycznej będzie oznaczało badanie sytuacji! A to przychodzi z czasem i ćwiczeniami.
+
+Nauczmy się używać tych słów w wyrażeniach i zdaniach:
+
+<List>
+  <Word sl="kiwen kasi" m="twardy materiał rośliny, drewno" />
+  <Word sl="ko lete" m="biały puszek, śnieg" />
+  <Word sl="kon sewi" m="boska dusza" />
+  <Word sl="telo nasa" m="napój powodujący pijaństwo, alkohol" />
+  <Sentence sl="lete li awen e moku." m="Zimno konserwuje jedzenie." />
+  <Sentence sl="seli li moku e kiwen kasi." m="Ogień pochłonął drewno." />
+  <Sentence sl="telo li kama tan sewi." m="Woda spada z nieba.<br />(Pada deszcz.)" />
+  <Sentence sl="o kama sona e kon toki!" m="Naucz się znaczenia mowy!" />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

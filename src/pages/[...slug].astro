@@ -16,9 +16,10 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"blog">;
 const post = Astro.props;
 const { Content } = await render(post);
+const language = getLang(post);
 const prevnext = post.filePath!.includes("index.md")
   ? undefined
-  : prevnexts[getLang(post)][post.id];
+  : prevnexts[language][post.id];
 ---
 
 <html lang="en">
@@ -31,11 +32,11 @@ const prevnext = post.filePath!.includes("index.md")
     <main>
       <article>
         <h1>{post.data.title}</h1>
-        <PrevNext prevnext={prevnext} current={post.id} />
+        <PrevNext prevnext={prevnext} current={post.id} language={language} />
         <section>
           <Content />
         </section>
-        <PrevNext prevnext={prevnext} current={post.id} />
+        <PrevNext prevnext={prevnext} current={post.id} language={language} />
       </article>
     </main>
     <Footer />

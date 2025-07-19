@@ -1,0 +1,48 @@
+---
+slug: "pl/large-numbers"
+title: "Q: how do I talk about large numbers?"
+description: ""
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+The funny thing about large numbers is you need them less often than you think. 
+
+There's a large, meaningful difference between *'A tiger is about to jump us!'* and *'Two tigers are about to jump us!'*. Maybe you can fight off one tiger, but it's hopeless with two.
+
+But compare *'77 tigers are about to jump us!'* and *'78 tigers are about to jump us!'* -- does it matter? Your decisions and your fate will be much the same. So most of the time, we only really need three number words: **󱥳 wan**, **󱥮 tu**, **󱤼 mute**.
+
+When dealing with small sums of money, more precision might actually make a difference. Maybe you can afford something that costs $77, but if it costs $78 you're one dollar short. For numbers below or around a hundred, we use words **󱥳 wan**, **󱥮 tu**, **󱤭 luka**, **󱤼 mute**, **󱤄 ale**, as if they were coins worth 1, 2, 5, 20, and 100:
+
+<List>
+    <Sentence sl="mute mute mute luka luka luka tu wan" m="78 (= 20 + 20 + 20 + 5 + 5 + 5 + 2 + 1)" />
+</List>
+
+But above 100, this system quickly becomes annoying:
+
+<List>
+    <Sentence sl="ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale" m="1500 (= 100 + 100 + 100 + ...)" />
+</List>
+
+In 2021, jan Kapilu and jan Tepo came up with an [expanded and backward-compatible system](https://sona.pona.la/wiki/nasin_nanpa_pona) to talk about large numbers: instead of adding 100, **󱤄 ale** multiplies the previous number by 100.
+
+<List>
+    <Sentence sl="luka luka luka ale" m="1500 (= (5 + 5 + 5) * 100)" />
+</List>
+
+This is useful for years in the Gregorian calendar, and especially convenient for the current millenium:
+
+<List>
+    <Sentence sl="mute ale mute luka" m="2025 (= 20 * 100 + 20 + 5)" />
+</List>
+
+Protip: you can imagine splitting numbers into two digit pairs: 2025 -> 20,25, 123456789 -> 1,23,45,67,89, translating each number like 23 and 67, and joining them using **󱤄 ale**. "Multiplying by 100" is just the same thing, but explained slightly differently!
+
+When writing in Latin characters, you can also abbreviate large numbers as W, T, L, M, A:
+
+<List>
+    <Sentence sp="󱥫󱥜󱤽󱤭󱤭󱤭󱥮󱥮󱤄󱤼󱤭󱤭󱤭󱥮󱥮󱤡<br />󱥫󱤺󱤽󱤭󱥮󱥮󱤡<br />󱥫󱥤󱤽󱥳󱤡<br />󱤰󱦐󱥨󱥇󱥣󱤍󱦑<br />󱤧󱤖󱥱󱤉󱤰󱦐󱥎󱥄󱥖󱥱󱤟󱤈󱦑<br />" sl="tenpo sike #LLLTTAMLLLTT la, tenpo mun #LTT la, tenpo suno #W la, ma Tosi li kama utala e ma Posuka." m="On September 1st, 1939, Germany invaded Poland." />
+</List>

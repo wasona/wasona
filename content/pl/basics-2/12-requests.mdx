@@ -1,0 +1,56 @@
+---
+slug: "pl/12"
+title: "lekcja 12: prośby"
+description: "Naucz się słowa o!"
+practice:
+  - l1: "Emma, spróbuj zasnąć!"
+    l2: "jan Ema o alasa lape!"
+  - l1: "Hej, ptaku, zaśpiewaj do mnie!"
+    l2: "waso o kalama tawa mi!"
+  - l1: "Hej, Kenta!"
+    l2: "jan Kenta o!"
+  - l1: "Pogadaj z Niną!"
+    l2: "o toki tawa jan Nina!"
+  - l1: "Narysuj coś dziwnego!"
+    l2: "o sitelen e ijo nasa!"
+  - l1: "Maju, podaj mi łyżkę!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Prośby
+
+W toki ponie zdanie z **󱤧 li** jest stwierdzeniem faktu. Czasami jednak chcemy o coś poprosić zamiast stwierdzać fakty. Za pomocą próśb mówi się innym, co chcemy, żeby się stało. W prośbach zamiast **󱤧 li** używamy **󱥄 o**:
+
+<List>
+  <Word sl="o" m="zaczyna prośbę, polecenie, instrukcję, życzenie" />
+  <Sentence sl="ilo li sitelen e pipi." m="Telefon pokazuje robaka." />
+  <Sentence sl="ilo o sitelen e waso!" m="O telefonie, pokaż ptaka!" />
+</List>
+
+Zobaczmy na więcej poleceń:
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="Ludzie, przeczytajcie dobrą gazetę!" />
+  <Sentence sl="soweli mi o moku pona!" m="Kocie mój, jedz dobrze!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="Niech Twoje dziecko stanie się mocne!" />
+  <Sentence sl="pona o tawa sina!" m="Niech dobro będzie z Tobą! (Życzę Ci dobrze!)" />
+</List>
+
+Możesz zauważyć, że te zdania się dość ładnie dzielą na dwie części:
+* Zwrócenie czyjejś uwagi (przed **󱥄 o**)
+* Sama prośba (po **󱥄 o**)
+
+Możemy ich używać osobno:
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Emma, zamknij drzwi!" />
+  <Sentence sl="jan Ema o!" m="Hej, Emma!" />
+  <Sentence sl="o pini e lupa tomo!" m="Zamknij drzwi!" />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

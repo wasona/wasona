@@ -1,0 +1,97 @@
+---
+slug: "pl/18"
+title: "lekcja 18: uczucia"
+description: "Naucz się słów: pilin, jaki, monsuta, pakala, a!"
+practice:
+  - l1: "Czuje się źle przez pracę."
+    l2: "mi pilin ike tan pali."
+  - l1: "Proszę usunąć brud!"
+    l2: "o weka e jaki!"
+  - l1: "Witamy! To jest grupa językowa."
+    l2: "kama pona! ni li kulupu toki."
+  - l1: "Widzę. Powinnam śpiewać jak ty."
+    l2: "sona. mi o kalama sama sina."
+  - l1: "Cześć! Jesteś Emma, nie?"
+    l2: "toki! sina jan Ema anu seme?"
+  - l1: "To zwierzę czuje lęk od oceanu."
+    l2: "soweli ni li pilin monsuta tan telo suli."
+  - l1: "Czy duże zwierzę zniszczyło dom?"
+    l2: "soweli suli li pakala ala pakala e tomo?"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Nauczmy się, jak być bardziej ekspresyjnym w toki ponie!
+
+<List>
+  <Word sl="pilin" m="czuć, doświadczyć; serce" />
+  <Word sl="jaki" m="brudny, obrzydliwy, zgniły" />
+  <Word sl="monsuta" m="coś strasznego, lęk" />
+  <Word sl="pakala" m="niszczyć, ranić" />
+  {/* <Word sl="taso" m="ale, tylko" />*/}
+</List>
+
+## 󱥎 pilin
+
+Żeby mówić o tym, co czują, ludzie często używaja czaoswnika **󱥎 pilin** z przymiotnikiem:
+
+<List>
+  <Word sl="pilin pona" m="czuć się dobrze" />
+  <Word sl="pilin wawa" m="czuć się silny" />
+  <Sentence sl="mi pilin nasa." m="Czuję się dziwnie." />
+  <Sentence sl="sina pilin seme?" m="Jak się czujesz?" />
+  <Sentence sl="mi pilin monsuta tan soweli." m="Mam lęk przed zwierzętami." />
+</List>
+
+Można też mówić o czymś wpływającym na **󱥎 pilin sina**, *twoje odczucia*:
+
+<List>
+  <Sentence sl="sina pona e pilin mi." m="Polepszasz mi nastrój." />
+  <Sentence sl="kon li jaki tawa pilin." m="Czuję, że powietrze cuchnie." />
+</List>
+
+## Wykrzykniki
+
+*Wykrzykniki* to krótkie wyrażenia, które mogą występować samodzielnie, bez całego zdania. Mogą pełnić funkcję powitania, wyrażania emocji lub odpowiedzi w rozmowie.
+
+Spójrzmy na kilka częstych wykrzykników w toki ponie:
+
+<List>
+  <Word sl="toki!" m="Cześć! Pogadajmy!" />
+  <Word sl="pona!" m="Dobrze." />
+  <Word sl="sona." m="Widzę. Rozumiem. Zrozumiano." />
+  <Word sl="wawa!" m="Niesamowite! Świetnie!" />
+  <Word sl="lon." m="To prawda." />
+  <Word sl="kama pona!" m="Witamy!" />
+</List>
+
+Ta lista nie jest kompletna! W prawidłowym kontekście prawie wszystko może być wykrzyknikiem:
+
+<List>
+  <Word sl="pipi!" m="(A!) Robak!" />
+</List>
+
+Istnieje też specjalny wykrzyknik **󱤀 a**:
+
+<List>
+  <Word sl="a" m="ach, ech, och" />
+</List>
+
+To nie aż tak bardzo słowo jak zamiennik różnych rodzajów dźwięków ekscytacji, wahania, radości, które możemy wydawać. Często idzie w parze z innymi wykrzyknikami, lub w całych zdaniach:
+
+<List>
+    <Word sl="suwi a!" m="Jak słodkie!" />
+    <Word sl="a, ken." m="A, może." />
+    <Word sp="󱤀&zwnj;󱤀&zwnj;󱤀" sl="a a a!" m="hahaha!" />
+</List>
+
+Jeżeli jest używany w pełnych zdaniach, podkreśla to, co stoi przed nim:
+
+<List>
+    <Sentence sl="mi sona ala a e ni!" m="<strong>Nie</strong> wiedziałem tego!" />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

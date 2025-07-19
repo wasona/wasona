@@ -1,0 +1,103 @@
+---
+slug: "pl/17"
+title: "lekcja 17: pytania"
+description: "Naucz się słów: anu, seme!"
+practice:
+  - l1: "Czy tytoń sprawia, że powietrze cuchnie?"
+    l2: "kasi nasa li ike ala ike e kon?"
+  - l1: "Czy to jest cegła?"
+    l2: "ni li leko ala leko?"
+  - l1: "Czy umiesz śpiewać jak ptak?"
+    l2: "sina ken ala ken kalama sama waso?"
+  - l1: "Czy używasz Google'a?"
+    l2: "sina kepeken ala kepeken ilo Kuko?"
+  - l1: "Czy jestem we Włoszech?"
+    l2: "mi lon ala lon ma Italija?"
+  - l1: "To wymaga pieniędzy, czyż nie?"
+    l2: "ni li wile e mani anu seme?"
+  - l1: "Mówisz po niemiecku, nie?"
+    l2: "sina toki Tosi anu seme?"
+  - l1: "Gdzie jest Japonia?"
+    l2: "ma Nijon li lon seme?"
+  - l1: "Kto jest z Indii?"
+    l2: "jan seme li tan ma Palata?"
+  - l1: "Co chcesz jeść?"
+    l2: "sina wile moku e seme?"
+    alsoAccept:
+      - "sina wile e moku seme?"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Pytania
+
+Zwykle są dwa rodzaje pytań:
+
+* *pytania tak / nie*. Na te pytania można odpowiedzieć 'tak' lub 'nie', twierdząco lub przecząco.
+* *pytania otwarte*. To jest jak wypełnianie luk: kto to zrobił? zrobił co? komu? gdzie? dlaczego?
+
+## Pytania tak / nie
+
+### Pytanie
+
+Czy pamiętasz z poprzedniej lekcji, że nauczyliśmy się zaprzeczać zdanie, znajdując pierwszy czasownik w zdaniu? Tutaj robimy coś podobnego, aby zadać pytanie tak / nie. *Podwajamy* pierwsze słowo czasownika i dodajemy w środku **󱤂 ala**:
+
+<List>
+  <Word sl="moku ala moku" m="czy ... je?" />
+  <Sentence sl="pipi li moku ala moku e len?" m="Czy ćma je tkaninę?" />
+  <Word sl="pona ala pona" m="czy ... jest dobry?" />
+  <Sentence sl="kalama musi li pona ala pona tawa sina?" m="Czy muzyka jest dla ciebie dobra? (Czy lubisz muzykę?)" />
+  <Word sl="wile ala wile" m="czy ... chce ...?" />
+  <Sentence sl="sina wile ala wile lape lon supa?" m="Czy chcesz spać na łóżku?" />
+  <Word sl="lon ala lon" m="czy ... jest w ...?" />
+  <Sentence sl="ona li lon ala lon ma Mewika?" m="Czy oni są w USA?" />
+</List>
+
+To jest trochę dziwne dla kogoś, kto mówi po polsku! Ale można zobaczyć coś podobnego w [języku mandaryńskim](https://en.wikipedia.org/wiki/A-not-A_question#A-not-AB_form_4).
+
+### Odpowiedź
+
+W języku polskim istnieje specjalne słowo 'tak'. Zamiast tego toki pona robi to samo, co języki takie jak fiński, mandaryński, łacina, i wiele innych: odpowiadasz czasownikiem jako 'tak' i czasownikiem + **󱤂 ala** jako 'nie'.
+
+<List>
+  <Sentence sl="sitelen li musi ala musi?" m="Czy filmik jest śmieszny?" />
+  <Word sl="musi." m="śmieszny. (= Tak, jest.)" />
+  <Word sl="musi ala." m="nieśmieszny. (= Nie, nie jest.)" />
+</List>
+
+Wzorzec **C ala C** występuje bardzo często! Ale też jest inny:
+
+<List>
+  <Word sl="seme" m="co? jaki?" />
+  <Word sl="anu" m="lub" />
+  <Word sl="anu seme" m="... nieprawdaż? nie? albo co?" />
+</List>
+
+Możesz dodać **󱤇󱥙 anu seme** na końcu stwiedzenia, aby stworzyć pytanie:
+
+<List>
+  <Sentence sl="sitelen li musi anu seme?" m="Filmik jest śmieszny, nie?" />
+</List>
+
+Możesz odpowiedzieć **󱤻 musi** lub **󱤻󱤂 musi ala**, tak jak zwykłe pytanie tak / nie! Ale wrażenie jest trochę inne. Jeżeli używasz **󱤇󱥙 anu seme**, jest bardziej prawdopodobne, że oczekujesz, że druga osoba się z tobą zgodzi.
+
+## Pytania otwarte
+
+Już się nauczyliśmy, że **󱥙 seme** znaczy 'co?', a to najważniejsza część *pytań otwartych*! **󱥙 seme** jest jak luka w zdaniu, którą chcesz, żeby druga osoba ją wypełniła swoimi informacjami:
+
+<List>
+  <Sentence sl="waso li lon seme?" m="Gdzie jest ptak? (dosł. 'Ptak jest przy czym?')" />
+  <Sentence sl="waso li lon tomo." m="Ptak jest w domu." />
+  <Sentence sl="soweli li utala e jan seme?" m="Kogo zaatakowało zwierzę? (dosł. 'Zwierzę zaatakowało którą osobę?')" />
+  <Sentence sl="soweli li utala e jan Ema." m="Zwierzę zaatakowało Emmę." />
+</List>
+
+Zauważ, że tylko **󱥙 seme** jest zamienione na odpowiedź -- cała reszta zdania zostaje w tym samym szyku! W języku polskim zdania pytające często umieszczają zaimek pytający w innym miejscu niż w odpowiedzi, ale w toki ponie to się nie dzieje.
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [P: jak powiedzieć 'robić'?](en/doing/)

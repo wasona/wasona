@@ -1,0 +1,104 @@
+---
+slug: "pl/05"
+title: "lekcja 5: części mowy"
+description: "Naucz się o rzeczownikach, czasownikach i przymiotnikach!"
+practice:
+  - l1: "mocny owad"
+    l2: "pipi wawa"
+  - l1: "moc owada"
+    l2: "wawa pipi"
+  - l1: "duże oko"
+    l2: "lukin suli"
+  - l1: "dobre jedzenie"
+    l2: "moku pona"
+  - l1: "wspaniale dobry"
+    l2: "pona wawa"
+  - l1: "Jedzenie jest dobre dla oka."
+    l2: "moku li pona e lukin."
+  - l1: "Zwierzęta znają urok ptaków."
+    l2: "soweli li sona e suwi waso."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Części mowy
+
+Niektórzy z Was mogli zauważyć, że wprowadziłem słowo **󱥡 sona** dwa razy, najpierw jako czasownik 'wiedzieć', potem jako przymiotnik 'mądry'. Więc czym jest i jak o tym wiesz?
+
+Tak naprawdę może być jednym z dwóch! Jeżeli **󱤧 li** wprowadza je jako czasownik, wtedy jest czasownikiem. Wszystko zależy od szyku wyrazów w zdaniu!
+
+Jest to prawda dla _wszystkich_ słów: jeśli coś jest rzeczownikiem, czasownikiem, lub przymiotnikiem, może stać się _którymś z tych trzech_! Spośród słów, których się już nauczyliśmy, popatrzmy na kilka przykładów:
+
+<List>
+  <Word sl="lukin" m="rzecz.: oko; czas.: patrzeć" />
+  <Word sl="moku" m="rzecz.: jedzenie; czas.: spożywać, jeść" />
+  <Word sl="sona" m="rzecz.: wiedza, mądrość; czas.: wiedzieć; przym.: obeznany, mądry" />
+  <Word sl="suli" m="rzecz.: rozmiar; czas.: zwiększyć, podkreślić; przym.: duży, ważny" />
+  <Word sl="pona" m="rzecz.: dobro; czas.: ulepszyć; przym.: dobry, przyjemny" />
+  <Word sl="waso" m="rzecz.: ptak; czas.: zamienić w ptaka; przym.: należący do ptaka, ptasi" />
+</List>
+
+Tu podałem tylko *kilka* słów, których się dotąd nauczyliśmy -- wystarczająco tyle, żeby zauważyć wzorce:
+* Gdy **czasowniki stają się rzeczownikami**, najczęściej oznaczają czynność (*wiedza*) lub kluczową jej część (*jedzenie, oko*).
+* Gdy **czasowniki stają się przymiotnikami**, oznaczają to, co robi coś (*mądrzy ludzie ~ ludzie, którzy wiedzą*).
+* Gdy **rzeczowniki stają się czasownikami**, najczęściej oznaczają 'zamienić w coś' lub 'zastosować coś do czegoś' (*zamienić w ptaka*).
+* Gdy **rzeczowniki stają się przymiotnikami**, oznaczają posiadanie lub podobieństwo (*należący do ptaka, ptasi*).
+* Gdy **przymiotniki stają się rzeczownikami**, oznaczają jakość (*dobro, rozmiar*).
+* Gdy **przymiotniki stają się czasownikami**, dodają jakości (*ulepszyć, zwiększyć*).
+
+Jednak podczas rozmowy my - użytkownicy toki pony - przez większość czasu nie musimy myśleć o tych wzorcach! Zaczynają się ze sobą zlewać. W pewnym momencie już nie myślisz o tym, czy coś było rzeczownikiem, czasownikiem, czy przymiotnik. To tworzy spójną całość!
+
+Poćwiczmy używanie tych słów jako rzeczowniki, czasowniki i przymiotniki:
+
+<List>
+  <Sentence sl="lukin li pona e sona." m="Oczy ulepszają wiedzę." />
+  <Sentence sl="moku li suli e pipi." m="Jedzenie sprawia, że owady rosną." />
+  <Sentence
+    sl="moku li wawa e soweli lili."
+    m="Jedzenie daje siłę małemu zwierzęciu."
+  />
+</List>
+
+## Szyk wyrazów ma znaczenie!
+
+Ponieważ każdy rzeczownik może być przymiotnikiem i odwrotnie, kolejność wyrazów naprawdę ma znaczenie! Zauważ, że te dwa wyrażenia znaczą co innego:
+
+<List>
+  <Word sl="soweli suli" m="duże zwierzę" />
+  <Word sl="suli soweli" m="rozmiar zwierzęcia" />
+  <Sentence
+    sl="soweli suli li sona e suli soweli."
+    m="Duże zwierzę zna rozmiar zwierzęcia."
+  />
+</List>
+
+## li i e też mają znaczenie!
+
+Czy pamiętasz, że li i e wydawały się trochę niepotrzebne? Teraz wiemy, że każde znaczące słowo może być użyte gdziekolwiek jako rzeczownik, czasownik albo przymiotnik, w końcu można zobaczyć jak ważne one są. Dzięki nim można rozróżnić te trzy bardzo różne zdania:
+
+<List>
+  <Word sl="soweli sona" m="mądre zwierzę wise animal" />
+  <Word sl="sona pona" m="dobra wiedza; dobrze wiedzieć" />
+  <Word sl="pona waso" m="dobro ptaka" />
+  <Sentence
+    sl="soweli sona li pona e waso."
+    m="Mądre zwierzę pomaga ptakowi."
+  />
+  <Sentence
+    sl="soweli li sona pona e waso."
+    m="Zwierzę dobrze zna ptaka."
+  />
+  <Sentence
+    sl="soweli li sona e pona waso."
+    m="Zwierzę wie, jak dobry jest ptak."
+  />
+</List>
+
+Jeśli kiedykolwiek nie wiesz, jak przeczytać lub napisać zdanie, zacznij od pytania:
+"Gdzie jest podmiot? Gdzie jest czasownik? Gdzie jest dopełnienie?", a wszystko ładnie
+się dzieli na małe wyrażenia!
+
+<Practice exercises={frontmatter.practice} client:load />

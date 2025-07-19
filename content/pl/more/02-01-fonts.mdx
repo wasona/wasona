@@ -1,0 +1,37 @@
+---
+slug: "pl/fonts"
+title: "Q: how can I type sitelen pona?"
+description: "Learn about fonts!"
+---
+
+*sitelen pona* is really cool! But it is not yet in Unicode. Most fonts only care about characters that Unicode defines. This means that fonts on your device probably don't know anything about sitelen pona.
+
+To fix that, you can install a sitelen pona font! There is more than a [hundred](https://linku.la/fonts/) to choose from, so let me highlight a few:
+
+* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) by jan Itan is the font we're using on this website. It has quite a rigid, geometric design.<br /><img src="./example-nasin-nanpa.webp" />
+* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) by jan Lepeka is a more playful, handwritten design.<br /><img src="./example-sitelen-seli-kiwen.webp" />
+* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) is another handwritten design. It uses jan Sonja's handwriting from her 2014 book, plus some newer characters drawn by jan Pensa.<br /><img src="./example-pu-mono.webp" />
+
+You should also know a font of great historic significance:
+
+* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) by jan Same. It was made in 2016–2021, and it was the first popular sitelen pona font. It has a slightly non-standard design that looks much wider and more square than most fonts today. While linja pona was popular, *sitelen pona* gained several new glyphs, like **󱦀 kijetesantakalu** and **󱥽 monsuta**.<br /><img src="./example-linja-pona.webp" />
+
+**On Discord**, we have a bot, ilo Linku, that can draw text in any sitelen pona font onto an image! This way you can chat in sitelen pona without installing anything.  
+**On desktop**, you can download one of the fonts above, and click on it. Then your system will try to install it.  
+**On mobile**, installing fonts is quite difficult. You might want to talk to someone with technical knowledge.
+
+## Technical details: ascii vs ucsur fonts
+
+There are two main approaches to making a sitelen pona font, which we call **ascii fonts** and **ucsur fonts**.
+
+In **ascii fonts**, you type Latin characters, and they get scooped up by the font, and automatically converted to sitelen pona characters while being drawn.
+
+* 🎉 very intuitive to use!
+* 🙁 a lot of work to make.
+* 🙁 this is not how other writing systems work on computers.
+
+In **ucsur fonts**, instead of typing Latin characters, you type characters from *a different part of Unicode*. Unicode intentionally left this part blank, so that other people can use it for [their own private purposes](https://en.wikipedia.org/wiki/Private_Use_Areas). So a different organisation, [UCSUR](https://www.kreativekorp.com/ucsur/), decided this part now holds sitelen pona.
+
+* 🎉 this is how other writing systems work!
+* 🎉 less work to make!
+* 🙁 harder to use: you need to install an input method similar to the ones that exist for Hanzi, or make a keyboard layout.

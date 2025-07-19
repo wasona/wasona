@@ -6,9 +6,10 @@ interface Props {
     next?: CollectionEntry<"blog">;
   };
   current: string;
+  language: string;
 }
 import { langNames, langs } from "@/utils/content";
-const { prevnext, current } = Astro.props;
+const { prevnext, current, language } = Astro.props;
 ---
 
 <style>
@@ -39,7 +40,7 @@ const { prevnext, current } = Astro.props;
           )}
         </span>
         <span>
-          <a href={"./"}>Index</a>
+          <a href={"./" + (language !== "en" ? language : "")}>Index</a>
         </span>
         <span style="text-align: right">
           {prevnext.next ? (

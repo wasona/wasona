@@ -1,0 +1,98 @@
+---
+slug: "pl/09"
+title: "lekcja 9: czynności"
+description: "Naucz się słów: utala, lape, musi, nasa, kalama, wile, ken, alasa!"
+practice:
+  - l1: "Uroczy ptak śpi."
+    l2: "waso suwi li lape."
+  - l1: "Jego imię jest długie."
+    l2: "nimi ona li suli."
+  - l1: "chcieć się bawić"
+    l2: "wile musi"
+  - l1: "próbować śpiewać"
+    l2: "alasa kalama"
+  - l1: "Zaczynam rysować roślinę."
+    l2: "mi kama sitelen e kasi."
+  - l1: "Młode zwierzę może figlarnie walczyć."
+    l2: "soweli lili li ken utala musi."
+  - l1: "Próbuję polecieć do Chin."
+    l2: "mi alasa tawa ma Sonko."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Czynności
+
+Nauczmy się kilku słów oznaczających czynności!
+
+<List>
+  <Word sl="utala" m="walczyć, atakować" />
+  <Word sl="lape" m="spać, odpoczywać" />
+  <Word sl="kalama" m="wydawać dźwięk; dźwięk" />
+  <Word sl="musi" m="bawić się; śmieszny, zabawny, interesujący" />
+  <Word sl="nasa" m="dziwny, nietypowy, głupi, pijany" />
+  {/*<Word sl="lipu" m="papier, karta, książka, strona internetowa; coś płaskiego z 󱥡 informacjami" />*/}
+</List>
+
+Te słowa są dość proste! Skorzystajmy z nich w zdaniach:
+
+<List>
+  <Sentence sl="soweli li utala e jan." m="Zwierzę zaatakowało kogoś." />
+  <Sentence sl="sina lape lon tomo." m="Śpisz w domu." />
+  <Sentence sl="nimi ona li nasa tawa mi." m="Jej imię jest dla mnie nietypowe." />
+  <Sentence
+    sl="jan lili li musi tan kalama."
+    m="Dziecko się bawi przez odgłosy."
+  />
+</List>
+
+## Czasowniki posiłkowe
+
+Czasami chcemy mówić nie tylko o czynności, ale też o naszym stosunku do niej. Może _chcemy_ coś zrobić. Może _możemy_ coś zrobić. Może chcemy _zacząć_ lub _kontynuować_ coś robić.
+
+W języku polskim do tego służą *czasowniki modalne*. W toki ponie istnieje podobny system, nazywamy go systemem _czasowników posiłkowych_! Czasownik posiłkowy to czasownik dodany przed czasownikiem głównym. Już znasz kilka z nich! Nauczmy się tego, co znaczą, gdy zachowują się jak czasowniki posiłkowe:
+
+<List>
+  <Word sl="kama" m="zacząć ..., stać się ..." />
+  <Word sl="awen" m="kontynuować ..., nadal ..." />
+  {/* <Word sl="sona" m="wiedzieć jak ..., znać się na ..." /> */}
+</List>
+
+Tylko kilka czasowników w toki ponie może być posiłkowe. Nauczmy się pozostałych:
+
+<List>
+  <Word sl="wile" m="chcieć ..." />
+  <Word sl="ken" m="móc ..." />
+  <Word sl="alasa" m="próbować ..." />
+</List>
+
+Czasowniki posiłkowe są bardzo wszechstronne! Spójrzmy na kilka wyrażeń z takimi czasownikami:
+
+<List>
+  <Word sl="wile lape" m="chcieć spać" />
+  <Word sl="awen pona" m="nadal być dobry" />
+  <Word sl="kama sona" m="stać się obeznany, uczyć się" />
+  {/* <Word sl="sona sitelen" m="wiedzieć jak rysować" /> */}
+  <Word sl="alasa kama wawa" m="próbować się wzmocnić (dosł. stać się mocny)g" />
+</List>
+
+Spróbujmy użyć czasowników posiłkowych w zdaniach:
+
+<List>
+  <Sentence sl="waso lili li wile lape." m="Mały ptak chce spać." />
+  {/* <Sentence sl="jan li sona moku e kasi." m="Ludzie wiedzą, jak jeść rośliny." /> */}
+  <Sentence sl="mi kama sona e toki pona." m="Uczę się toki pony." />
+  <Sentence sl="sina alasa tawa ma Tosi." m="Próbujesz pojechać do Niemiec." />
+  <Sentence
+    sl="toki ona li awen nasa tawa mi."
+    m="Jego mowa nadal jest dla mnie dziwna."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Zobacz też
+* [P: czy jest więcej czasowników posiłkowych?](en/more-preverbs/)
