@@ -1,19 +1,19 @@
 ---
 slug: "pl/25"
-title: "lekcja 25: numbers"
-description: "Learn nanpa, wan, tu, ale, kipisi!"
+title: "lekcja 25: liczby"
+description: "Naucz się słów: nanpa, wan, tu, ale, kipisi!"
 practice:
-  - l1: "eight"
+  - l1: "osiem"
     l2: "luka tu wan"
-  - l1: "You slice the bread."
+  - l1: "Kroisz chleb."
     l2: "sina kipisi e pan."
-  - l1: "The two of us join together."
+  - l1: "My dwoje się łączymy."
     l2: "mi tu li kama wan."
-  - l1: "I can speak three languages."
+  - l1: "Znam trzy języki."
     l2: "mi sona e toki tu wan."
-  - l1: "5 Euro"
+  - l1: "5 euro"
     l2: "mani luka pi ma Elopa"
-  - l1: "April begins."
+  - l1: "Zaczyna się kwiecień."
     l2: "tenpo mun nanpa tu tu li open."
     alsoAccept:
       - "mun nanpa tu tu li open."
@@ -24,58 +24,58 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
 
-## Cardinal numbers
+## Liczby główne
 
-Let's talk numbers!
-
-<List>
-  <Word sl="wan" m="one; united" />
-  <Word sl="tu" m="two; divided" />
-  <Word sl="luka" m="five, hand" />
-  <Word sl="mute" m="many" />
-  <Word sl="ale" m="all, every" />
-  <Word sl="kipisi" m="piece, part; to split" />
-</List>
-
-Toki Pona has words for 1, 2, 5, but not 3 or 4! But this is not so strange. You can imagine **󱥳 wan**, **󱥮 tu**, **󱤭 luka** like coins worth 1, 2, and 5. Let's try counting from 1 to 10:
+Porozmawiajmy o liczbach!
 
 <List>
-    <Word sl="wan" m="one" />
-    <Word sl="tu" m="two" />
-    <Word sl="tu wan" m="three" />
-    <Word sl="tu tu" m="four" />
-    <Word sl="luka" m="five" />
-    <Word sl="luka wan" m="six" />
-    <Word sl="luka tu" m="seven" />
-    <Word sl="luka tu wan" m="eight" />
-    <Word sl="luka tu tu" m="nine" />
-    <Word sl="luka luka" m="ten" />
+  <Word sl="wan" m="jeden; połączony" />
+  <Word sl="tu" m="dwa; podzielony" />
+  <Word sl="luka" m="pięć, ręka" />
+  <Word sl="mute" m="wiele" />
+  <Word sl="ale" m="wszystko, każdy" />
+  <Word sl="kipisi" m="kawałek, część; dzielić" />
 </List>
 
-In many situations, just knowing small numbers will be enough. But if you want to talk about purchases or the Gregorian calendar, there's an extra page about large numbers below.
-
-## Ordinal numbers
-
-Usually, numbers are just adjectives:
+Toki pona ma słowa dla liczb 1, 2 i 5, ale nie 3 ani 4! Jednak to nie jest takie dziwne. Możesz wyobrazić sobie **󱥳 wan**, **󱥮 tu**, **󱤭 luka** jako monety o nominałach 1, 2 i 5. Spróbujmy policzyć od 1 do 10:
 
 <List>
-    <Word sl="kala wan" m="one fish" />
-    <Word sl="soko tu tu" m="four mushrooms" />
-    <Word sl="mun luka" m="five months" />
+    <Word sl="wan" m="raz" />
+    <Word sl="tu" m="dwa" />
+    <Word sl="tu wan" m="trzy" />
+    <Word sl="tu tu" m="cztery" />
+    <Word sl="luka" m="pięć" />
+    <Word sl="luka wan" m="sześć" />
+    <Word sl="luka tu" m="siedem" />
+    <Word sl="luka tu wan" m="osiem" />
+    <Word sl="luka tu tu" m="dziewięć" />
+    <Word sl="luka luka" m="dziesięć" />
 </List>
 
-But these are *cardinal* numbers: numbers that talk about quantity. There are also *ordinal* numbers: those that talk about order. To make ordinal numbers, just use **󱤽 nanpa** + a number:
+W wielu sytuacjach wystarczy znać małe liczby. Jednak jeśli chcesz mówić o zakupach lub o kalendarzu gregoriańskim, na dole jest dodatkowa strona o dużych liczbach.
+
+## Liczby porządkowe
+
+Najczęściej liczby to po prostu przymiotniki:
 
 <List>
-    <Word sl="nanpa" m="number; the ...-th" />
-    <Word sl="kala nanpa wan" m="the first fish" />
-    <Word sl="soko nanpa tu tu" m="the fourth mushroom" />
-    <Word sl="mun nanpa luka" m="the fifth month" />
+    <Word sl="kala wan" m="jedna ryba" />
+    <Word sl="soko tu tu" m="cztery grzyby" />
+    <Word sl="mun luka" m="pięć miesięcy" />
 </List>
 
-(By the way, **󱤽 nanpa** is special! It doesn't need **󱥍 pi**.)
+Ale to są liczby *główne*, które mówią o ilości. Są też liczby *porządkowe*, które mówią o kolejności. Aby stworzyć liczbę porządkową, użyj **󱤽 nanpa** + liczby:
+
+<List>
+    <Word sl="nanpa" m="liczba; ...-ty" />
+    <Word sl="kala nanpa wan" m="pierwsza ryba" />
+    <Word sl="soko nanpa tu tu" m="czwarty grzyb" />
+    <Word sl="mun nanpa luka" m="piąty miesiąc" />
+</List>
+
+(Nawiasem mówiąc, **󱤽 nanpa** jest specjalne! Nie potrzebuje **󱥍 pi**.)
 
 <Practice exercises={frontmatter.practice} client:load />
 
 ## See also
-* [Q: how do I talk about large numbers?](en/large-numbers/)
+* [P: jak komunikować duże liczby?](en/large-numbers/)
