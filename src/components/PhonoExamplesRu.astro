@@ -1,0 +1,66 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Слово</th>
+      <th>Звучит</th>
+      <th>Означает</th>
+      <th>Примечания</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="len" />
+      <td>лен</td>
+      <td>'покров'</td>
+      <td>Звук <b>л</b> не сильно твёрдый и не сильно мягкий!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="jan" />
+      <td>ян</td>
+      <td>'человек'</td>
+      <td>Запомните произношение буквы <b>j</b>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="waso" />
+      <td>уа́со</td>
+      <td>'птица'</td>
+      <td>Запомните произношение буквы <b>w</b>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kute" />
+      <td>ку́тэ</td>
+      <td>'ухо'</td>
+      <td>Буква <b>e</b> всегда произносится!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>на́мпа</td>
+      <td>'число'</td>
+      <td>Кстати, мы пишем <b>np</b>, но обычно произносим <b>мп</b>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>ка́лама</td>
+      <td>'звук'</td>
+      <td>Проверьте, что правильно ставите ударение!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="namako" />
+      <td>на́мако</td>
+      <td>'изюминка'</td>
+      <td>Безударные гласные различаются!</td>
+    </tr>
+  </tbody>
+</table>

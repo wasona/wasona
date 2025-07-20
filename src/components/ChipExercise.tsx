@@ -1,15 +1,15 @@
+import { KALAMA } from "@/consts";
+import { tokeniseSentence, type Exercise } from "@/utils/exercise";
 import React, { useEffect, useState } from "react";
 
-interface ChipBuilderProps {
-  availableWords: string[];
-  assembledSentence: string[];
-  onAssembledSentenceChange: (words: string[]) => void;
-  locked: boolean;
-}
-
 // Helper to shuffle words
-const shuffleArray = (array: any[]) => {
-  return [...array].sort(() => Math.random() - 0.5);
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
 };
 
 function appended(array: number[], element: number): number[] {
@@ -34,25 +34,24 @@ function play(word: string) {
 function audioLink(word: string) {
   word = word.replaceAll(/[\.\,\?\!\:]/g, "");
   const dir = word === word.toLowerCase() ? "words" : "names";
-  return `https://raw.githubusercontent.com/wasona/kalama/main/jan-lakuse/${dir}/${word}.mp3`;
+  return `${KALAMA}/jan-lakuse/${dir}/${word}.mp3`;
 }
 
-const ChipExercise: React.FC<ChipBuilderProps> = ({
-  availableWords,
-  assembledSentence,
-  onAssembledSentenceChange,
-  locked,
-}) => {
+const ChipExercise: React.FC<{
+  exercise: Exercise;
+  onAssembledSentenceChange: (words: string[]) => void;
+  locked: boolean;
+}> = ({ exercise, onAssembledSentenceChange, locked }) => {
   const [words, setWords] = useState<string[]>([]);
   const [assembled, setAssembled] = useState<number[]>([]);
 
   const unused = words.map((_, i) => i).filter((i) => !assembled.includes(i));
 
-  // Initialise unused and assembled when receiving a new sentence
+  // Initialise unused and assembled when receiving a new exercise
   useEffect(() => {
-    setWords(shuffleArray(availableWords));
+    setWords(shuffleArray(tokeniseSentence(exercise.l2)));
     setAssembled([]);
-  }, [JSON.stringify(availableWords)]);
+  }, [JSON.stringify(exercise)]);
 
   // Output current assembled sentence when it updates
   useEffect(() => {

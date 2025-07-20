@@ -1,55 +1,72 @@
 ---
+import { type CollectionEntry } from "astro:content";
 interface Props {
-  prev: string;
-  next: string;
+  prevnext?: {
+    prev?: CollectionEntry<"blog">;
+    next?: CollectionEntry<"blog">;
+  };
+  current: string;
 }
-
-const { prev, next } = Astro.props;
+import { langNames, langs } from "@/utils/content";
+const { prevnext, current } = Astro.props;
 ---
 
 <style>
   nav {
     width: 100%;
-    padding: 10px 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0px;
+    display: flex;
     text-align: center;
+    border-top: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
   }
-  span:first-child {
-    text-align: left;
-  }
-  span:last-child {
-    text-align: right;
-  }
-  hr {
-    color: var(--accent);
+  span {
+    flex: 1 1 0px;
   }
 </style>
 
-<hr />
 <nav>
-  <span
-    >{
-      prev ? (
-        <a href={"./" + prev}>
-          <span aria-hidden="true">«</span> Previous
-        </a>
-      ) : (
-        ""
-      )
-    }</span
-  >
-  <span><a href={"./"}>Index</a></span>
-  <span
-    >{
-      next ? (
-        <a href={"./" + next}>
-          Next <span aria-hidden="true">»</span>
-        </a>
-      ) : (
-        ""
-      )
-    }
-  </span>
+  {
+    prevnext ? (
+      <>
+        <span style="text-align: left">
+          {prevnext.prev ? (
+            <a href={"./" + prevnext.prev.id}>
+              <span aria-hidden="true">«</span> Previous
+            </a>
+          ) : (
+            ""
+          )}
+        </span>
+        <span>
+          <a href={"./"}>Index</a>
+        </span>
+        <span style="text-align: right">
+          {prevnext.next ? (
+            <a href={"./" + prevnext.next.id}>
+              Next <span aria-hidden="true">»</span>
+            </a>
+          ) : (
+            ""
+          )}
+        </span>
+      </>
+    ) : (
+      <span>
+        {langs
+          .map((lang) =>
+            current === lang || (current === "/" && lang === "en") ? (
+              <strong>{langNames[lang]}</strong>
+            ) : (
+              <a href={lang == "en" ? "/" : `/${lang}`}>{langNames[lang]}</a>
+            ),
+          )
+          .reduce((prev, curr, i) => (
+            <>
+              {prev} <b>{" · "}</b> {curr}
+            </>
+          ))}
+      </span>
+    )
+  }
 </nav>
-<hr />

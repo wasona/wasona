@@ -1,0 +1,77 @@
+---
+slug: "ru/21"
+title: "занятие 21: природа"
+description: "Выучим akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+  - l1: "Грибы поедают погибшие растения."
+    l2: "soko li moku e kasi moli."
+  - l1: "Испеки тесто."
+    l2: "o seli e ko pan."
+  - l1: "Я выкопала картошку."
+    l2: "mi weka e kili tan ma."
+  # - l1: "I am scared of snakes."  # 21_4
+    # l2: "mi pilin monsuta tan akesi linja."
+  - l1: "Растениям требуется вода, свет и земля."
+    l2: "kasi li wile e telo, e suno, e ma."
+  - l1: "Люди разговаривают, веселятся, поют и спят."
+    l2: "jan li toki, li musi, li kalama, li lape."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Мы уже знаем большинство слов, связанных с животными и растениями -- давайте же выучим оставшиеся!
+
+<List>
+  <Word sl="akesi" m="пресмыкающееся или земноводное, напр. лягушка, ящерица, змея" />
+  <Word
+    sl="kala"
+    m="рыба или морское существо, напр. лосось, кит, акула, осьминог"
+  />
+  <Word sl="pan" m="крахмалистая пища, напр. пшеница, рис, хлеб, макароны" />
+  <Word sl="kili" m="овощ, фрукт" />
+  <Word sl="soko" m="гриб" />
+  <Word sl="misikeke" m="лекарство" />
+  <Word sl="namako" m="специя, приправа, украшение, изюминка" />
+  <Sentence sl="soko li kili nasa." m="Грибы — это странные плоды." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="Крупная рыба охотится на рыб поменьше."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Мне требуется часто принимать лекарство."
+  />
+</List>
+
+## Ингредиенты
+
+В хлебобулочные изделия часто можно положить несколько разных ингредиентов:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="Шаурма содержит мясо." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="Шаурма содержит овощи." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="Шаурма содержит приправы." />
+</List>
+
+А как объединить их в одно предложение? Каждая из этих фраз является *дополнением* в предложении. Предложение может содержать *несколько дополнений*, то есть несколько фраз с частицей **󱤉 e**, идущих одна за другой:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="Шаурма содержит мясо, овощи, приправы."
+  />
+</List>
+
+Это не ограничивается только частицей **󱤉 e**! Несколько связанных идей в одном предложении можно объединять и с помощью частиц **󱤧 li**, **󱤡 la**, и предлогов. Пока что давайте посмотрим только на **󱤧 li**:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="Человек охотится на рыбу. (= человек рыбачит)." />
+  <Sentence sl="jan li seli e ona." m="Человек готовит её." />
+  <Sentence sl="jan li moku e ona." m="Человек ест её." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Человек охотится на рыбу, готовит её, ест её." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

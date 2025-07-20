@@ -1,0 +1,81 @@
+---
+slug: "de/25"
+title: "Lektion 25: Zahlen"
+description: "Lerne nanpa, wan, tu, ale, kipisi!"
+practice:
+  - l1: "acht"
+    l2: "luka tu wan"
+  - l1: "Du schneidest das Brot."
+    l2: "sina kipisi e pan."
+  - l1: "Zwei von uns verbünden sich."
+    l2: "mi tu li kama wan."
+  - l1: "Ich kann drei Sprachen sprechen."
+    l2: "mi sona e toki tu wan."
+  - l1: "5 Euro"
+    l2: "mani luka pi ma Elopa"
+  - l1: "April fängt an."
+    l2: "tenpo mun nanpa tu tu li open."
+    alsoAccept:
+      - "mun nanpa tu tu li open."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Kardinalzahlen
+
+Reden wir über Zahlen!
+
+<List>
+  <Word sl="wan" m="eins, vereint" />
+  <Word sl="tu" m="zwei, getrennt" />
+  <Word sl="luka" m="fünf, Hand" />
+  <Word sl="mute" m="viel" />
+  <Word sl="ale" m="alles, jedes" />
+  <Word sl="kipisi" m="Stück, Teil, teilen" />
+</List>
+
+Toki Pona hat Wörter für 1, 2, 5, aber nicht 3 oder 4. Das ist aber nicht allzu seltsam. Du kannst dir **󱥳 wan**, **󱥮 tu**, **󱤭 luka** als Münzen, die 1, 2, und 5 wert sind vorstellen. Zählen wir von 1 bis 10:
+
+<List>
+    <Word sl="wan" m="eins" />
+    <Word sl="tu" m="zwei" />
+    <Word sl="tu wan" m="drei" />
+    <Word sl="tu tu" m="vier" />
+    <Word sl="luka" m="fünf" />
+    <Word sl="luka wan" m="sechs" />
+    <Word sl="luka tu" m="sieben" />
+    <Word sl="luka tu wan" m="acht" />
+    <Word sl="luka tu tu" m="neun" />
+    <Word sl="luka luka" m="zehn" />
+</List>
+
+In vielen Situationen reichen kleine Zahlen aus. Wenn du aber über Einkäufe oder den gregorianischen Kalender reden möchtest, gibt es unten eine Extraseite über große Zahlen.
+
+## Ordinalzahlen
+
+Normalerweise sind Zahlen einfach Adjektive:
+
+<List>
+    <Word sl="kala wan" m="ein Fisch" />
+    <Word sl="soko tu tu" m="vier Pilze" />
+    <Word sl="mun luka" m="fünf Monate" />
+</List>
+
+Das sind aber *Kardinalzahlen*: Zahlen, die über eine Anzahl reden. Es gibt auch *Ordinalzahlen*: die, die über Reihenfolge reden. Um Ordinalzahlen zu bilden, benutze einfach **󱤽 nanpa** + die Zahl:
+
+<List>
+    <Word sl="nanpa" m="Zahl, der ...-te" />
+    <Word sl="kala nanpa wan" m="der erste Fisch" />
+    <Word sl="soko nanpa tu tu" m="der vierte Pilz" />
+    <Word sl="mun nanpa luka" m="der fünfte Monat" />
+</List>
+
+(Übrigens ist **󱤽 nanpa** besonders! Hier brauchst du kein **󱥍 pi**.)
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Siehe auch
+* [F: Wie redet man über große Zahlen?](de/large-numbers/)

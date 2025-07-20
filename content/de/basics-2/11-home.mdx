@@ -1,0 +1,69 @@
+---
+slug: "de/11"
+title: "Lektion 11: Zuhause"
+description: "Lerne ilo, lipu, poki, supa, lupa, len, open, pini, jo, ijo!"
+practice:
+  - l1: "Du schließt die Tür."
+    l2: "sina pini e lupa."
+  - l1: "Es ist eine Katze in meinem Haus."
+    l2: "soweli li lon tomo mi."
+  - l1: "Mein Haus hat eine Katze."
+    l2: "tomo mi li jo e soweli."
+  - l1: "Dein Vogel braucht Essen."
+    l2: "waso sina li wile e moku."
+  - l1: "Sunita kann gut singen."
+    l2: "jan Sunita li ken kalama pona."
+  - l1: "Ich will über eine Nähmaschine sprechen."
+    l2: "mi wile toki e ilo len."
+  - l1: "Jemand hat das Buch über Käfer auf den Tisch getan."
+    l2: "jan li pana e lipu pipi tawa supa."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Zuhause
+
+Wir haben viele Dinge zuhause:
+
+<List>
+  <Word sl="ilo" m="Werkzeug, wie ein Hammer, eine Gabel, ein Handy, eine App" />
+  <Word sl="lipu" m="flaches Ding für 󱥡 sona, wie Papier, eine Karte, ein Buch, eine Website" />
+  <Word sl="poki" m="Behälter, wie eine Box, eine Schublade, eine Flasche" />
+  <Word sl="supa" m="horizontale Fläche, wie ein Regal, ein Tisch, ein Sofa" />
+  <Word sl="lupa" m="eine Öffnung, wie eine Tür, ein Fenster, ein Loch" />
+  <Word sl="len" m="eine Bedeckung, wie Kleidung, ein Schuh, eine Decke" />
+</List>
+
+Und das können wir mit ihnen machen:
+
+<List>
+  <Word sl="open" m="anfangen, öffnen, anschalten" />
+  <Word sl="pini" m="beenden, schließen, ausschalten" />
+  <Word sl="jo" m="halten, enthalten, beinhalten" />
+</List>
+
+Üben wir!
+
+<List>
+  <Sentence sl="mi open e lupa." m="Ich öffne die Tür." />
+  <Sentence sl="jan li pini e poki moku." m="Die Person schließt den Kühlschrank." />
+  <Sentence sl="lipu li lon supa lape." m="Das Buch ist auf dem Bett." />
+  <Sentence sl="poki mi li ken jo e len." m="Meine Schublade könnte Kleidung enthalten." />
+  <Sentence sl="ilo mi li wile e wawa." m="Mein Handy braucht Elektrizität." />
+</List>
+
+## Etwas
+
+In einer Box finden wir Klamotten, Papier, Werkzeuge, Fotos... lauter Dinge! Wie können wir das alles allgemein beschreiben?
+
+<List>
+  <Word sl="ijo" m="etwas, Ding, Zeug" />
+  <Sentence sl="poki li jo e ijo." m="Die Box hat Zeug." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="Jemand zeichnet etwas Süßes." />
+  <Sentence sl="mi wile toki e ijo kasi." m="Ich würde gerne über etwas, was mit Pflanzen zu tun hat, reden." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

@@ -1,30 +1,44 @@
 ---
-import BlogPost from "@/layouts/BlogPost.astro";
-import { type CollectionEntry, getCollection, render } from "astro:content";
+import BaseHead from "@/components/BaseHead.astro";
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import PrevNext from "@/components/PrevNext.astro";
+import { getLang, posts, prevnexts } from "@/utils/content";
+import { type CollectionEntry, render } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = (await getCollection("blog")).sort((a, b) =>
-    a.data.order > b.data.order ? -1 : b.data.order > a.data.order ? 1 : 0,
-  );
   const paths = posts.map((post, i) => ({
     params: { slug: post.id },
-    props: {
-      ...post,
-      prevnext: {
-        prev: i + 1 === posts.length ? "" : posts[i + 1].id,
-        next: i === 0 ? "" : posts[i - 1].id,
-      },
-    },
+    props: { ...post },
   }));
   return paths;
 }
 type Props = CollectionEntry<"blog">;
-
 const post = Astro.props;
 console.log(post);
 const { Content } = await render(post);
+const prevnext = post.filePath!.includes("index.md")
+  ? undefined
+  : prevnexts[getLang(post)][post.id];
 ---
 
-<BlogPost {...{ ...post.data, ...post.prevnext }}>
-  <Content />
-</BlogPost>
+<html lang="en">
+  <head>
+    <BaseHead title={post.data.title} description={post.data.description} />
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <article>
+        <h1>{post.data.title}</h1>
+        <PrevNext prevnext={prevnext} current={post.id} />
+        <section>
+          <Content />
+        </section>
+        <PrevNext prevnext={prevnext} current={post.id} />
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>

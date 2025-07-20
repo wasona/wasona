@@ -1,0 +1,60 @@
+---
+slug: "ru/23"
+title: "занятие 23: места"
+description: "Learn pi, selo, insa, monsi, sinpin, anpa!"
+practice:
+  - l1: "Кора дерева защищает внутренности дерева."
+    l2: "selo kasi li awen e insa kasi."
+  - l1: "Стены дома повреждены."
+    l2: "sinpin tomo li pakala."
+  - l1: "Стене этого дома нужны кирпичи."
+    l2: "sinpin pi tomo ni li wile e leko."
+  - l1: "Птичка Суниты милая."
+    l2: "waso pi jan Sunita li suwi."
+  - l1: "Бельгия находится рядом с Францией."
+    l2: "ma Pesije li lon poka pi ma Kanse."
+  - l1: "Твоя лягушка находится позади моей."
+    l2: "akesi sina li lon monsi pi akesi mi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+В прошлом занятии мы рассматривали частицу **󱥍 pi**. Как вы видели, многие фразы могут быть осмысленными в обоих вариантах -- есть **󱥍 pi** или нет. Но также существует множество фраз, которые *практически бессмысленны*, если частица **󱥍 pi** отсутствует! Часто такое встречается с именами:
+
+<List>
+    {/*<Word sl="pi" m="" />*/}
+    <Sentence sl="soweli pi jan Ema" m="Собака Эммы" />
+    <Sentence sl="soweli jan Ema" m="Человеко-собака по имени Эмма (???)" />
+    <Sentence sl="toki pi jan Mili" m="Речь Милли" />
+    <Sentence sl="toki jan Mili" m="Человеческая речь по имени Милли (???)" />
+</List>
+
+Если не использовать частицу **󱥍 pi**, то имя будет относиться к *первому* слову! И тогда может получиться нелепо. Поэтому вы нередко встретите частицу **󱥍 pi** рядом с именами!
+
+Вы также часто увидите частицу после слов, обозначающих местоположения. К примеру, вот таких новых слов:
+
+<List>
+    <Word sl="selo" m="кожа, кожура, оболочка, кора" />
+    <Word sl="insa" m="нутро, центр, середина" />
+    <Word sl="monsi" m="спина, задняя часть" />
+    <Word sl="sinpin" m="лицо, передняя часть, фасад, стена" />
+    <Word sl="anpa" m="низ; унизить, побороть" />
+</List>
+
+Давайте используем их в предложениях:
+
+<List>
+    <Sentence sl="selo kasi li kiwen." m="Кора дерева твёрдая." />
+    <Sentence sl="selo pi kasi ni li pakala." m="Кора этого дерева повреждена." />
+    <Sentence sl="soweli li lon insa tomo." m="Кошка находится внутри дома." />
+    <Sentence sl="o tawa insa pi tomo mi!" m="Иди внутрь моего дома!" />
+    <Sentence sl="sinpin pi jan Ali li pona." m="Лицо Али приятное." />
+    <Sentence sl="mani li lon anpa pi telo suli." m="Сокровище находится на дне океана." />
+</List>
+
+Совет: так как частица **󱥍 pi** нужна только для перегруппировки, она никогда не используется перед только одним словом! После неё всегда идут два или более слов.
+
+<Practice exercises={frontmatter.practice} client:load />

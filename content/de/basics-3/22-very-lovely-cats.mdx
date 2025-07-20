@@ -1,0 +1,105 @@
+---
+slug: "de/22"
+title: "Lektion 12: sehr süße Katzen"
+description: "Lerne pi!"
+practice:
+  - l1: "viel Schnee"
+    l2: "ko lete mute"
+    alsoAccept:
+      - "ko mute lete"
+  - l1: "sehr kalter Schnee"
+    l2: "ko pi lete mute"
+  - l1: "meine vielen Fehler"
+    l2: "pakala mi mute"
+    alsoAccept:
+      - "pakala mute mi"
+  - l1: "unser Fehler"
+    l2: "pakala pi mi mute"
+  - l1: "das andere Sprachbuch"
+    l2: "lipu toki ante"
+    alsoAccept:
+      - "lipu ante toki"
+  - l1: "ein Buch in einer anderen Sprache"
+    l2: "lipu pi toki ante"
+  - l1: "der kleine Raum von jemandem"
+    l2: "tomo jan lili"
+    alsoAccept:
+      - "tomo lili jan"
+  - l1: "der Raum für jemanden kleinen"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Wir haben letztens **󱤼 mute** gelernt, ein sehr nützliches Wort!
+
+Denken wir ein bisschen darüber nach. Wir wissen schon, wie wir folgende Phrasen bilden:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="soweli suwi" m="eine süße Katze" />
+  <Word sl="soweli mute" m="viele Katzen" />
+  <Word sl="suwi mute" m="sehr süß" />
+</List>
+
+Aber was passiert, wenn wir sie alle zusammen tun? Bekommen wir *viele süße Katzen* oder *eine sehr süße Katze* raus?
+
+<List>
+  <Word sl="soweli suwi mute" m="viele süße Katzen" />
+</List>
+
+Diese Phrase bedeutet *viele süße Katzen*, weil **󱥦 suwi** **󱥢 soweli** beschreibt, und **󱤼 mute** auch **󱥢 soweli** beschreibt.  
+Aber ich denke, dass *meine* Katze sehr süß ist! Wie rede ich darüber? Was ist, wenn ich will, dass **󱤼 mute** **󱥦 suwi** beschreibt, statt **󱥢 soweli**?  
+Hier hilft uns ein neues Partikel:
+
+<List>
+  <Word sl="pi" m="ein Partikel, das Adjektive gruppiert" />
+  <Word sl="soweli pi suwi mute" m="eine sehr süße Katze" />
+</List>
+
+Hurra! Jetzt können wir über eine **󱥢 soweli** reden, die **󱥦󱤼 suwi mute** ist!  
+Wenn du Mathe magst, kannst du es dir so vorstellen, dass eine Klammer geöffnet wird: 'Katze süß viel' vs 'Katze (süß viel)'.
+
+Schauen wir uns noch ein Beispiel an:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="sitelen tomo" m="ein Foto von einem Haus" />
+  <Word sl="sitelen mute" m="Fotos" />
+  <Word sl="tomo mute" m="Häuser" />
+  <Word sl="sitelen tomo mute" m="Fotos von einem Haus" />
+  <Word sl="sitelen pi tomo mute" m="ein Foto von Häusern" />
+</List>
+
+Du kannst es dir wieder als '*Foto Haus viel*' vs '*Foto (Haus viel)*' vorstellen.  
+Natürlich ist **󱤼 mute** nicht das einzige Wort, mit dem **󱥍 pi** hilft! Schauen wir uns ein paar andere Wörter an:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="jan pona" m="eine nette Person" />
+  <Word sl="jan lili" m="eine kleine Person" />
+  <Word sl="pona lili" m="einigermaßen nett" />
+  <Word sl="jan pona lili" m="eine kleine nette Person" />
+  <Word sl="jan pi pona lili" m="eine einigermaßen nette Person" />
+</List>
+
+*'Person nett klein'* vs *'Person (nett klein)'*.
+
+<List>
+  <Word sl="sona utala" m="Kriegswissen" />
+  <Word sl="sona sin" m="neues Wissen" />
+  <Word sl="utala sin" m="neuer Krieg" />
+  <Word sl="sona utala sin" m="neues Kriegswissen. Das Wissen ist neu." />
+  <Word sl="sona pi utala sin" m="Wissen über den neuen Krieg. Der Krieg ist neu." />
+</List>
+
+*'Wissen Krieg neu'* vs *'Wissen (Krieg neu)'*
+
+*Warum sind die ganzen Übersetzungen auf deutsch so anders?!*, könntest du dich jetzt fragen! Auf Deutsch sind es meist die Wortarten, die klarstellen, welches Wort zu welchem gehört. *Viel* ist ein Adjektiv, aber *sehr* ist ein Adverb. Wenn die Wortarten alle gleich sind, verschmelzen die Wörter.
+
+Aber auf Toki Pona können Nomen, Verben und Adjektive sich ineinander verwandeln. Sie alleine können also nicht helfen! Stattdessen nutzt Toki Pona nur ein Partikel dafür.
+
+<Practice exercises={frontmatter.practice} client:load />

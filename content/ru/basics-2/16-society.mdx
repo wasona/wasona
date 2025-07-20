@@ -1,0 +1,71 @@
+---
+slug: "ru/16"
+title: "занятие 16: общество"
+description: "Выучим kulupu, nasin, esun, mani, moli, mute!"
+practice:
+  - l1: "Мой цветок увял из-за тли."
+    l2: "kasi mi li moli tan pipi."
+  - l1: "Стая птиц полетела высоко в небо."
+    l2: "kulupu waso li tawa sewi."
+  - l1: "Ребёнок хочет посмотреть на картинки."
+    l2: "jan lili li wile lukin e sitelen mute."
+  - l1: "Многие развлекаются вместе."
+    l2: "jan mute li musi lon kulupu."
+  - l1: "Многие дороги ведут в Рим."
+    l2: "nasin mute li tawa ma tomo Loma."
+  - l1: "Этот телефон стоит много денег."
+    l2: "ilo ni li wile e mani mute."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Мы живём в обществе! Давайте выучим слова, которые пригодятся при взаимодействии с обществом:
+
+<List>
+  <Word sl="kulupu" m="сообщество, команда, набор" />
+  <Word sl="nasin" m="путь, способ, обычай, дорога" />
+  <Word sl="esun" m="обменивать, вести торговлю; рынок, магазин" />
+  <Word sl="mani" m="деньги, ценная вещь" />
+  <Word sl="moli" m="мёртвый; убивать" />
+  <Word sl="mute" m="много, очень" />
+</List>
+
+Попробуем использовть новые слова в предложениях:
+
+<List>
+  <Sentence sl="nasin mute li lon." m="Существует многообразие традиций." />
+  <Sentence sl="jan li pali lon kulupu." m="Люди работают в командах." />
+  <Sentence sl="len pona li wile e mani mute." m="Хорошая одежда требует много денег." />
+  <Sentence sl="jan mute li moli tan utala suli." m="Много людей погибло из-за войны."/>
+  <Sentence sl="mi wile esun e soweli mi." m="Я хочу продать свою корову." />
+  <Sentence sl="mi wile ala esun e soweli sina." m="Я не хочу покупать твою корову." />
+</List>
+
+Вот что интересно: **󱤋 esun** вообще значит «обменивать», но в контексте предложений становится понятно, что в одном случае речь о продаже, а в другом — о покупке!
+
+## больше о mute
+
+**󱤼 mute** -- очень полезное слово. Прилагательные редко присоединяются к местоимениям **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, но слово **󱤼 mute** столь незаменимо, что с местоимениями его можно встретить довольно часто:
+
+<List>
+  <Word sl="mi mute" m="мы, многие из нас" />
+  <Sentence sl="kulupu pali li jo e mi mute." m="Многие из нас входят в профсоюз." />
+  <Word sl="sina mute" m="вы, многие из вас" />
+  <Sentence sl="ona li ken sitelen e sina mute." m="Они могут вас сфотографировать." />
+</List>
+
+Помните особое правило: «если **󱤴 mi** или **󱥞 sina** — подлежащее, то **󱤧 li** опускается»? Это правило сформулировано довольно узко! Взгляните на следующие предложения:
+
+<List>
+  <Sentence sl="mi mute li kalama musi." m="Мы исполняем музыку." />
+  <Sentence sl="sina mute li sona e ni." m="Многие из вас знают это." />
+</List>
+
+Как вы видите, частица **󱤧 li** здесь не опускается! Это потому что подлежащее на самом деле не **󱤴 mi** или **󱥞 sina**, а **󱤴󱤼 mi mute** и **󱥞󱤼 sina mute**.
+
+Такая особенность может показаться причудливой, но не забывайте: главная цель частицы **󱤧 li** — показать, где начинается сказуемое! Если бы мы её убрали, получилось бы, что **󱤼 mute** выступает в роли глагола.
+
+<Practice exercises={frontmatter.practice} client:load />

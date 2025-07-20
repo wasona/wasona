@@ -1,10 +1,7 @@
 import ChipExercise from "@/components/ChipExercise.tsx";
+import { KALAMA } from "@/consts";
+import { verifyChips, type Exercise } from "@/utils/exercise";
 import React, { useState } from "react";
-
-interface Exercise {
-  l1: string;
-  l2: string;
-}
 
 const Practice: React.FC<{
   exercises: Exercise[];
@@ -18,28 +15,25 @@ const Practice: React.FC<{
   const [allDone, setAllDone] = useState(false);
 
   const currentExercise = exerciseQueue[currentIndex];
-  const l2Words = currentExercise.l2.split(" ").map((w) => w.trim());
-  // console.log(l2Words);
 
-  const sfx_yes = new Audio(
-    "https://raw.githubusercontent.com/wasona/wasona/main/public/audio/yes.mp3",
+  // Audio doesn't exist server-side, this is a wrapper to avoid that
+  const [sfx_yes] = useState(
+    typeof Audio !== "undefined" && new Audio(`${KALAMA}/sfx/yes.mp3`),
   );
-  const sfx_no = new Audio(
-    "https://raw.githubusercontent.com/wasona/wasona/main/public/audio/no.mp3",
+  const [sfx_no] = useState(
+    typeof Audio !== "undefined" && new Audio(`${KALAMA}/sfx/no.mp3`),
   );
-  const sfx_done = new Audio(
-    "https://raw.githubusercontent.com/wasona/wasona/main/public/audio/done.mp3",
+  const [sfx_done] = useState(
+    typeof Audio !== "undefined" && new Audio(`${KALAMA}/sfx/done.mp3`),
   );
 
   const handleCheck = () => {
-    const userAnswer = assembledSentence.join(" ").trim();
-    const correctAnswer = currentExercise.l2.trim();
     setCompleted(completed + 1);
-    if (userAnswer === correctAnswer) {
+    if (verifyChips(currentExercise, assembledSentence)) {
       setStatusMessage("✅ Correct! Well done!");
       sfx_yes.play();
     } else {
-      setStatusMessage(`❌ Not quite. Correct answer: "${correctAnswer}"`);
+      setStatusMessage(`❌ Not quite. Correct answer: "${currentExercise.l2}"`);
       setExerciseQueue((prev) => [...prev, prev[currentIndex]]);
       sfx_no.play();
     }
@@ -73,8 +67,7 @@ const Practice: React.FC<{
           <h2>Translate the sentence</h2>
           <h3>{currentExercise.l1}</h3>
           <ChipExercise
-            availableWords={l2Words}
-            assembledSentence={assembledSentence}
+            exercise={currentExercise}
             onAssembledSentenceChange={setAssembledSentence}
             locked={checked}
           />

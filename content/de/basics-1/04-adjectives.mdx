@@ -1,0 +1,73 @@
+---
+slug: "de/04"
+title: "Lektion 4: Adjektive"
+description: "Lerne suli, lili, pona, ike, wawa, suwi!"
+practice:
+  - l1: "ein süßes Tier"
+    l2: "soweli suwi"
+  - l1: "ein schlechtes Insekt"
+    l2: "pipi ike"
+  - l1: "ein starker Vogel"
+    l2: "waso wawa"
+  - l1: "Der Vogel kennt ein starkes Tier."
+    l2: "waso li sona e soweli wawa."
+  - l1: "Ein kleines Insekt schaut ein großes Tier an."
+    l2: "pipi lili li lukin e soweli suli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Beschreiben!
+
+Jetzt kennst du ein paar Nomen (Dinge) und Verben (Aktionen). Fügen wir noch Adjektive (Beschreibungen) hinzu!  
+Merke dir ein paar Adjektive:
+
+<List>
+  <Word sl="suli" m="groß, wichtig" />
+  <Word sl="lili" m="klein, jung" />
+  <Word sl="pona" m="gut, gemütlich" />
+  <Word sl="ike" m="schlecht, ungemütlich" />
+  <Word sl="wawa" m="stark, toll" />
+  <Word sl="sona" m="schlau, weise" />
+  <Word sl="suwi" m="süß" />
+</List>
+
+Auf Deutsch kommen Adjektive vor Nomen. Auf Toki Pona kommen sie danach:
+
+<List>
+  <Word sl="soweli suli" m="ein großes Tier" />
+  <Word sl="pipi lili" m="ein winziger Käfer" />
+  <Word sl="waso suwi" m="ein süßer Vogel" />
+</List>
+
+Menschen, die Deutsch sprechen, finden das manchmal verwirrend, aber so funktioniert es auf Französisch, Irisch, Arabisch, Malaiisch und vielen anderen Sprachen. Denke es dir so: Das erste Wort ist immer das wichtigste!
+
+Bilden wir ein paar Sätze mit Beschreibungen:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="Der Vogel sieht ein süßes Tier."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="Das starke Tier isst große Pflanzen."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Gemeine Käfer beißen das Tier leicht."
+  />
+  <Sentence
+    sl="waso sona li sona pona e pipi."
+    m="Der weise Vogel kennt Käfer gut."
+  />
+</List>
+
+Wenn diese Sätze sich langwierig anfühlen, keine Sorge! Wir schauen uns gleich kürzere Sätze an. Denke daran: Die Satzstruktur ist eigentlich ganz einfach! Du kannst immer sehen, welcher Teil das Subjekt, das Prädikat und das Objekt ist, indem du nach **󱤧 li** und **󱤉 e** suchst.
+
+Hier ist etwas Interessantes: Auf deutsch können Adjektive nur an Nomen angehängt werden. Auf Toki Pona können sie aber auch an Verben sein: *leicht beißen ~ moku lili*, *gut kennen ~ sona pona*. Es gibt keinen Unterschied zwischen Adjektiven und Adverbien auf Toki Pona.
+
+<Practice exercises={frontmatter.practice} client:load />

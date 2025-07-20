@@ -1,5 +1,6 @@
 ---
 import { ipaRecordings } from "@/utils/audio";
+import { KALAMA } from "@/consts";
 
 interface Props {
   td?: boolean;
@@ -13,8 +14,8 @@ const link =
   from == "ipa"
     ? ipaRecordings[file]
     : from == "wasona/ipa"
-      ? `https://raw.githubusercontent.com/wasona/wasona/main/public/audio/ipa/${file}.mp3`
-      : `https://raw.githubusercontent.com/lipu-linku/ijo/main/kalama/kalaasi2023/${file}.mp3`;
+      ? `${KALAMA}/kala-asi/ipa/${file}.mp3`
+      : `${KALAMA}/kala-asi/words/${file}.mp3`;
 
 const action = `new Audio('${link}').play().catch((e) => {})`;
 ---

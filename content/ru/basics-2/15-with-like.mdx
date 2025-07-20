@@ -1,0 +1,115 @@
+---
+slug: "ru/15"
+title: "занятие 15: чем да как"
+description: "Learn sama, kepeken, leko, ante, pali!"
+practice:
+  - l1: "Я перевожу."
+    l2: "mi ante e toki."
+  - l1: "Ты всё ещё пишешь роман."
+    l2: "sina awen pali e lipu suli."
+  - l1: "Он развлекается картинками."
+    l2: "ona li musi kepeken sitelen."
+  - l1: "Али починил стол клеем."
+    l2: "jan Ali li pona e supa kepeken ko."
+  - l1: "Я пою как Ной."
+    l2: "mi kalama sama jan Nowa."
+  - l1: "Я использую Википедию."
+    l2: "mi kepeken lipu Wikipesija."
+  - l1: "Этот булыжник напоминает кота."
+    l2: "kiwen ni li sama soweli."
+  - l1: "Я не хочу двигаться."
+    l2: "mi wile ala tawa."
+  - l1: "Крупная птица передвигается подобно зверю."
+    l2: "waso suli li tawa sama soweli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Чем да как
+
+На занятии 8 мы выучили три предлога: **󱥩 tawa**, **󱤬 lon**, **󱥧 tan**, которые связаны с местоположением и направлением. Но в токи поне есть ещё два предлога:
+
+<List>
+  <Word sl="kepeken" m="с помощью" />
+  <Word sl="sama" m="подобно, как" />
+</List>
+
+Давайте также выучим несколько слов, которые хорошо сочетаются с этими предлогами:
+
+<List>
+  <Word sl="ante" m="менять; другой, отличающийся" />
+  <Word sl="pali" m="трудиться, строить" />
+  <Word sl="leko" m="кирпич, блок" />
+</List>
+
+Как вы помните, предлоги вводят предложные группы:
+
+<List>
+  <Word sl="sama sina" m="подобно тебе" />
+  <Word sl="kepeken toki" m="с помощью языка" />
+  <Word sl="kepeken ilo ante" m="другим инструментом" />
+</List>
+
+Эти группы могут стоять в конце предложения:
+
+<List>
+  <Sentence sl="mi toki sama sina." m="Я говорю как ты." />
+  <Sentence sl="mi pali e leko kepeken ilo." m="Я произвожу кирпичи с помощью инструмента." />
+</List>
+
+Или стоять на месте сказуемого:
+
+<List>
+  <Sentence sl="ona li sama sina." m="Они подобны тебе." />
+  <Sentence sl="ona li kepeken ilo." m="Они используют инструмент." />
+</List>
+
+## Двигать дом
+
+Теперь, раз вы знаете все пять предлогов: **󱥩 tawa**, **󱤬 lon**, **󱥧 tan**, **󱤙 kepeken**, и **󱥖 sama** -- вот кое-что новое о них: все они могут быть обычными существительными, глаголами или прилагательными!
+
+<List>
+  <Word sl="tawa" m="двигаться; движение" />
+  <Word sl="lon" m="настоящий, правдивый, существующий" />
+  <Word sl="tan" m="причина, источник" />
+  <Word sl="kepeken" m="использование" />
+  <Word sl="sama" m="похожий, одинаковый" />
+</List>
+
+Некоторые из них, например **󱥩 tawa** и **󱤬 lon**, в таких ролях используются довольно часто. Другие, такие как **󱥧 tan** и **󱤙 kepeken**, гораздо реже. Вот несколько примеров:
+
+<List>
+  <Sentence sl="sona mi li sama." m="Мои знания такие же." />
+  <Sentence
+    sl="toki sina li lon."
+    m="Твоя речь правдива.<br />(То, что ты говоришь — правда.)"
+  />
+  <Sentence
+    sl="mi wile lukin e sitelen tawa."
+    m="Я хочу смотреть движущуюся картинку. (видео, фильм)"
+  />
+  <Sentence sl="mi sona ala e tan." m="Я не знаю причину." />
+</List>
+
+Мы часто стараемся строить подобные предложения таким образом, чтобы было невозможно спутать эти слова с предлогами. Обрати внимание, что после них нет никакого существительного!
+
+Иногда можно построить очень похожие предложения, в одном из которых слово вроде **󱥩 tawa** или **󱤬 lon** -- это глагол, а в другом -- предлог.  
+Важно не путать такие пары:
+
+<List>
+  <Sentence
+    sl="jan li tawa tomo."
+    m="Кто-то идёт домой. (предлог)"
+  />
+  <Sentence sl="jan li tawa e tomo." m="Кто-то передвигает дом. (глагол)" />
+  <Sentence sl="mi lon ma." m="Я на суше. (предлог)" />
+  <Sentence
+    sl="mi lon e ma."
+    m="Я создаю землю.<br />Я основываю область. (глагол)"
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

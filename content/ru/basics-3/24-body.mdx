@@ -1,0 +1,53 @@
+---
+slug: "ru/24"
+title: "занятие 24: тело"
+description: "Learn sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
+practice:
+  - l1: "У меня болит голова."
+    l2: "lawa mi li pakala."
+  - l1: "Я услышала тихий звук."
+    l2: "mi kute e kalama lili."
+  - l1: "Ты повинуешься. Я управляю."
+    l2: "sina kute. mi lawa."
+  - l1: "Пряность ощущается жгучей для моего рта."
+    l2: "namako li seli tawa uta mi."
+  - l1: "Погладь милую собачку, пожалуйста!"
+    l2: "o luka e soweli suwi!"
+  - l1: "Лекарство лечит её тело."
+    l2: "misikeke li pona e sijelo ona."
+  - l1: "Её волосы приятны на ощупь."
+    l2: "linja lawa ona li pona tawa luka."
+  - l1: "Гора похожа на нос на моём лице."
+    l2: "nena kiwen li sama nena pi sinpin mi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Мы уже знаем слова для *глаз*, *сердца*, *лица* и *спины*, так что давайте изучим оставшиеся части тела!
+
+<List>
+    <Word sl="lawa" m="голова; возглавлять, управлять" />
+    <Word sl="kute" m="ухо; слышать" />
+    <Word sl="nena" m="выпуклость, напр.нос, холм, грудь" />
+    <Word sl="uta" m="рот, губы; целовать, кусать" />
+    <Word sl="sijelo" m="тело" />
+    <Word sl="luka" m="рука, кисть руки; касаться" />
+    <Word sl="noka" m="нога, стопа" />
+    <Word sl="palisa" m="длинный твёрдый предмет, напр. палка, палица, стержень" />
+    <Word sl="linja" m="длинный гибкий предмет, напр. верёвка, нить" />
+</List>
+
+Интересный факт: у многих частей тела есть связанное с ними действие! Голова управляет, глаза видят, уши слышат, рот целует, сердце чувствует, руки касаются.
+
+<List>
+    <Sentence sl="mi wile suli e linja lawa mi." m="Я хочу отрастить мои волосы." />
+    <Sentence sl="jan lawa mi li kute e toki ike mi." m="Мой начальник услышал мою ругань." />
+    <Sentence sl="ilo lukin li pana e sitelen ante." m="Зеркало даёт перевёрнутое изображение." />
+    <Sentence sl="sijelo mi li wile e lape." m="Моему телу нужен отдых." />
+    <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Мои пальцы на руках рук длиннее моих пальцев на ногах." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
