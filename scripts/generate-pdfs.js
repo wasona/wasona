@@ -1,5 +1,5 @@
 // @ts-check
-import { exec } from "child_process";
+import { spawn } from "child_process";
 import path from "path";
 
 import fs from "fs/promises";
@@ -16,11 +16,22 @@ async function generatePDFs() {
     ],
   });
 
+  /** @type {import("child_process").ChildProcessWithoutNullStreams} */
+  let server;
+  /** @type {number | undefined} */
+  let serverPid;
+
   try {
     const outputDir = "dist/pdfs";
     await fs.mkdir(outputDir, { recursive: true });
 
-    const server = exec("npx serve dist -p 3000");
+    server = spawn("npx", ["serve", "dist", "-p", "3000"], {
+      stdio: ["pipe", "pipe", "pipe"],
+    });
+
+    serverPid = server.pid;
+    console.log(`Started server with PID: ${serverPid}`);
+
     await new Promise((resolve, reject) => {
       let serverReady = false;
 
@@ -36,7 +47,7 @@ async function generatePDFs() {
         if (output.includes("Local:") || output.includes("localhost:3000")) {
           serverReady = true;
           clearTimeout(timeout);
-          console.log("✅ Server is ready!");
+          console.log("Server is ready!");
           resolve(undefined);
         }
       });
@@ -86,7 +97,6 @@ async function generatePDFs() {
         },
         displayHeaderFooter: false,
         preferCSSPageSize: true,
-
         path: path.join(outputDir, variant.filename),
       });
 
@@ -100,7 +110,11 @@ async function generatePDFs() {
     console.error("Error generating PDFs:", error);
     process.exit(1);
   } finally {
+    if (serverPid) {
+      process.kill(serverPid, "SIGTERM");
+    }
     await browser.close();
+    console.log("Cleanup complete!");
   }
 }
 
