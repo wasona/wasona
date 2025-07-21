@@ -7,34 +7,36 @@
 }
 
 :root {
-    --bg: #ffffff;
-    --bg-1: #f7f7f7;
-    --bg-2: #eeeeee;
+    --bg: #fff;
+    --bg-1: #f3f3f3;
+    --bg-2: #eee;
     --bg-3: #ccc;
-    --txt: #080808;
-    --grey: #333;
-    --grey-1: #999;
+    --txt: #111;
+    --grey: #666;
+    --grey-1: #bbb;
     --accent: #de6500;
-    --accent-1: #f4cbaa;
+    --accent-1: #7d3900;
+    --accent-bg: #f4cbaa;
     --button-in: #e3e3e3;
     --button-out: #979797;
 }
 .dark {
-    --bg: #0f0f0f;
+    --bg: #111;
     --bg-1: #1b1b1b;
-    --bg-2: #2f2f2f;
+    --bg-2: #333;
     --bg-3: #4c4c4c;
     --txt: #dbdbdb;
-    --grey: #a9a9a9;
-    --grey-1: #999;
+    --grey: #999;
+    --grey-1: #666;
     --accent: #e78533;
-    --accent-1: #3c200a;
+    --accent-1: #f3b682;
+    --accent-bg: #3c200a;
     --button-in: #616161;
     --button-out: #202020;
 }
 
 body {
-    margin: 0px;
+    margin: 1rem;
     font-family: "nasin-nanpa", "Nunito", sans-serif;
     color: var(--txt);
     line-height: 1.7em;
@@ -57,13 +59,15 @@ body {
 
 img {
     max-width: 100%;
+    max-height: 400px;
+    margin: auto;
+    display: block;
 }
 
 main {
-    max-width: 700px;
+    max-width: 750px;
     margin: auto;
     margin-bottom: 35px;
-    padding: 0px 10px;
     text-align: justify;
 }
 a {
@@ -75,6 +79,10 @@ a {
 
 a:visited {
     color: var(--accent);
+}
+a:active,
+a:hover {
+    color: var(--accent-1) !important;
 }
 
 button {

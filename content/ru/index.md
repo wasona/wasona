@@ -4,28 +4,6 @@ title: "Wasona: курс токи поны для чайников"
 description: "Играй, читай, и освой новый язык!"
 ---
 
-<div style="
-    margin: 10px 0;
-    padding: 2px 15px;
-    background: #ffff0022;
-    border-left-width: 10px;
-    border-left-style: solid;
-    border-image: repeating-linear-gradient(
-        45deg,
-        black,
-        black              5px,
-        gold 5px,
-        gold 10px
-    ) 10;
-">
-
-## Перевод не окончен!
-
-Пока что переведены 22 занятия. Я вернусь к переводу, когда будет свободное время!  
---kala Asi
-
-</div>
-
 ## Часть 1: первые шаги!
 
 Поговорим о животных, людях, местах и занятиях.  
@@ -79,6 +57,28 @@ description: "Играй, читай, и освой новый язык!"
 ## Вопросы и ответы!
 
 Некоторые тонкости, которые знать необязательно, но может быть интересно!
+
+<div style="
+    margin: 10px 0;
+    padding: 2px 15px;
+    background: #ffff0022;
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-image: repeating-linear-gradient(
+        45deg,
+        black,
+        black              5px,
+        gold 5px,
+        gold 10px
+    ) 10;
+">
+
+## Перевод вопросов и ответов не окончен!
+
+Пока что переведена только основная часть курса. Я вернусь к переводу, когда будет свободное время!  
+--kala Asi
+
+</div>
 
 * [Q: какие ещё есть курсы токи поны?](ru/other-courses)
 * [Q: различается ли произношение токи поны у разных токипонистов?](ru/sound-variation)

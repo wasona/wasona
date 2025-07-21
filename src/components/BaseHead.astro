@@ -2,7 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "@/styles/global.css";
-import { SITE_URL } from "@consts";
+import { GOATCOUNTER_URL, SITE_URL } from "@consts";
 
 interface Props {
   title: string;
@@ -10,17 +10,17 @@ interface Props {
   image?: string;
 }
 const siteUrl = new URL(import.meta.env.BASE_URL, Astro.site);
-const socialImageURL = new URL("./logo.png", siteUrl);
+const socialImageURL = new URL("/logo.png", siteUrl);
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "./logo.png" } = Astro.props;
+const { title, description, image = "/logo.png" } = Astro.props;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="./favicon.png" />
-<link rel="sitemap" href="./sitemap-index.xml" />
+<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+<link rel="sitemap" href="/sitemap-index.xml" />
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
@@ -34,7 +34,7 @@ const { title, description, image = "./logo.png" } = Astro.props;
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
-<base href={import.meta.env.BASE_URL} />
+<!-- <base href={import.meta.env.BASE_URL} /> -->
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
@@ -56,4 +56,9 @@ const { title, description, image = "./logo.png" } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={socialImageURL} />
 
-<script is:inline src="./light-mode.js"></script>
+<script is:inline src="/light-mode.js"></script>
+<!-- Analytics -->
+<script
+  data-goatcounter={`https://${GOATCOUNTER_URL}/count`}
+  async
+  src="//gc.zgo.at/count.js"></script>

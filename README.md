@@ -1,6 +1,6 @@
 # Wasona
 
-A crash course to Toki Pona.
+A crash course in Toki Pona.
 
 ## Local development
 

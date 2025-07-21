@@ -20,8 +20,19 @@ export const langs = (() => {
 })();
 export const langNames: Record<string, string> = {
   en: "English",
+  de: "Deutsch",
   ru: "русский",
+  translate: "add language",
 };
+
+export const langPosts = Object.fromEntries(
+  langs.map((lang) => {
+    const langPosts = posts
+      .filter((post) => getLang(post) === lang)
+      .sort(by((post) => post.filePath));
+    return [lang, langPosts];
+  })
+);
 
 export const prevnexts = Object.fromEntries(
   langs.map((lang) => {
@@ -34,8 +45,8 @@ export const prevnexts = Object.fromEntries(
         langPosts.map((post, i) => [
           post.id,
           { prev: langPosts[i - 1], next: langPosts[i + 1] },
-        ]),
+        ])
       ),
     ];
-  }),
+  })
 );

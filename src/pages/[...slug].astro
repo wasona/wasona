@@ -15,13 +15,15 @@ export async function getStaticPaths() {
 }
 type Props = CollectionEntry<"blog">;
 const post = Astro.props;
+console.log(post);
 const { Content } = await render(post);
+const lang = getLang(post);
 const prevnext = post.filePath!.includes("index.md")
   ? undefined
-  : prevnexts[getLang(post)][post.id];
+  : prevnexts[lang][post.id];
 ---
 
-<html lang="en">
+<html lang={lang}>
   <head>
     <BaseHead title={post.data.title} description={post.data.description} />
   </head>

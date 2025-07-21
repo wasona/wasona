@@ -1,0 +1,98 @@
+---
+slug: "de/09"
+title: "Lektion 9: Aktivitäten"
+description: "Lerne utala, lape, musi, nasa, kalama, wile, ken, alasa!"
+practice:
+  - l1: "Ein süßer Vogel schläft."
+    l2: "waso suwi li lape."
+  - l1: "Sein Name ist lang."
+    l2: "nimi ona li suli."
+  - l1: "Spaß haben wollen"
+    l2: "wile musi"
+  - l1: "versuchen, zu singen"
+    l2: "alasa kalama"
+  - l1: "Ich fange an, die Pflanze zu malen."
+    l2: "mi kama sitelen e kasi."
+  - l1: "Der Welpe kann verspielt kämpfen."
+    l2: "soweli lili li ken utala musi."
+  - l1: "Ich versuche, nach China zu gehen."
+    l2: "mi alasa tawa ma Sonko."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Aktivitäten
+
+Lernen wir ein paar mehr Wörter, für Dinge, die man tun kann!
+
+<List>
+  <Word sl="utala" m="kämpfen, angreifen" />
+  <Word sl="lape" m="schlafen, sich ausruhen" />
+  <Word sl="kalama" m="einen Klang produzieren; Ton" />
+  <Word sl="musi" m="Spaß haben; lustig, amüsant, interessant" />
+  <Word sl="nasa" m="seltsam, ungewöhnlich, albern, betrunken" />
+  {/*<Word sl="lipu" m="paper, card, book, website; a flat thing with 󱥡 info" />*/}
+</List>
+
+Diese Wörter sind ziemlich einfach! Nutzen wir sie in Sätzen:
+
+<List>
+  <Sentence sl="soweli li utala e jan." m="Das Tier hat jemanden angegriffen." />
+  <Sentence sl="sina lape lon tomo." m="Du schläfst zuhause." />
+  <Sentence sl="nimi ona li nasa tawa mi." m="Ihr Name ist für mich seltsam." />
+  <Sentence
+    sl="jan lili li musi tan kalama."
+    m="Das Kind hat wegen dem Lärm Spaß."
+  />
+</List>
+
+## Präverben
+
+Manchmal wollen wir nicht nur über die Aktivität an sich reden, sondern auch, wie wir im Zusammenhang mit ihr stehen. Vielleicht _wollen_ wir etwas tun. Vielleicht _können_ wir etwas tun. Vielleicht _fangen_ wir _an_ oder _machen_ etwas _weiter_.
+
+Auf Deutsch kennen wir das als *Hilfsverben* oder *Modalverben*. Toki Pona hat ein ähnliches System, wir nennen es gerne *Präverben*! Ein Präverb ist ein hinzugefügtes Verb, das vor das Hauptverb kommt. Du kennst ein paar von ihnen schon! Lernen wir, was sie als Präverben bedeuten:
+
+<List>
+  <Word sl="kama" m="anfangen, etwas zu tun; etwas werden" />
+  <Word sl="awen" m="etwas weiterhin tun" />
+  {/* <Word sl="sona" m="to know how to ..." /> */}
+</List>
+
+Nur ein paar Verben können auf Toki Pona Präverben sein. Lernen wir also auch die restlichen:
+
+<List>
+  <Word sl="wile" m="etwas tun wollen" />
+  <Word sl="ken" m="etwas können" />
+  <Word sl="alasa" m="etwas versuchen" />
+</List>
+
+Präverben sind sehr nützlich! Schauen wir uns ein paar Phrasen mit Präverben an:
+
+<List>
+  <Word sl="wile lape" m="schlafen wollen" />
+  <Word sl="awen pona" m="weiterhin gut sein" />
+  <Word sl="kama sona" m="schlau werden, lernen" />
+  {/* <Word sl="sona sitelen" m="to know how to draw" /> */}
+  <Word sl="alasa kama wawa" m="versuchen, stark zu werden" />
+</List>
+
+Versuchen wir, diese Präverben in Sätzen zu nutzen.
+
+<List>
+  <Sentence sl="waso lili li wile lape." m="Der kleine Vogel will schlafen." />
+  {/* <Sentence sl="jan li sona moku e kasi." m="People know how to eat plants." /> */}
+  <Sentence sl="mi kama sona e toki pona." m="Ich lerne Toki Pona." />
+  <Sentence sl="sina alasa tawa ma Tosi." m="Du versuchst, nach Deutschland zu gehen." />
+  <Sentence
+    sl="toki ona li awen nasa tawa mi."
+    m="Seine Sprache ist immer noch seltsam für mich."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Siehe auch
+* [F: Gibt es noch mehr Präverben?](de/more-preverbs/)

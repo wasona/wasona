@@ -1,6 +1,6 @@
 ---
 slug: "/"
-title: "Wasona: a crash course into Toki Pona"
+title: "Wasona: a crash course in Toki Pona"
 description: "Read, play, and learn a new language!"
 ---
 ## Part 1: first steps!

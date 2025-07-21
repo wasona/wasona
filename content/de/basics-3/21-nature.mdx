@@ -1,0 +1,77 @@
+---
+slug: "de/21"
+title: "Lektion 21: Natur"
+description: "Lerne akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+  - l1: "Pilze konsumieren tote Pflanzen."
+    l2: "soko li moku e kasi moli."
+  - l1: "Backe den Teig."
+    l2: "o seli e ko pan."
+  - l1: "Ich habe die Kartoffel ausgegraben."
+    l2: "mi weka e kili tan ma."
+  # - l1: "I am scared of snakes."  # 21_4
+    # l2: "mi pilin monsuta tan akesi linja."
+  - l1: "Pflanzen brauchen Wasser, Sonnenlicht und Land."
+    l2: "kasi li wile e telo, e suno, e ma."
+  - l1: "Menschen reden, haben Spaß, singen, und schlafen."
+    l2: "jan li toki, li musi, li kalama, li lape."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Wir kennen schon die meisten tierischen und pflanzlichen Wörter — lernen wir noch die restlichen!
+
+<List>
+  <Word sl="akesi" m="Reptil oder Amphibie, wie ein Frosch, eine Eidechse, eine Schlange" />
+  <Word
+    sl="kala"
+    m="Fisch oder Seekreatur, wie ein Lachs, ein Wal, ein Hai, ein Oktopus"
+  />
+  <Word sl="pan" m="stärkehaltiges Essen, wie Weizen, Reis, Brot, Pasta" />
+  <Word sl="kili" m="Obst, Gemüse" />
+  <Word sl="soko" m="Pilz" />
+  <Word sl="misikeke" m="Medizin" />
+  <Word sl="namako" m="Gewürz, Verzierung" />
+  <Sentence sl="soko li kili nasa." m="Pilze sind seltsame Früchte." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="Ein großer Fisch jagt kleinere Fische."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Ich muss oft Medizin nehmen."
+  />
+</List>
+
+## Zutaten
+
+Brotprodukte werden oft genutzt, um mehrere verschiedene Zutaten zusammenzuhalten:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="Die Pizza enthält Fleisch." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="Die Pizza enthält Gemüse." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="Die Pizza enthält Gewürze." />
+</List>
+
+Aber wie tun wir das alles in einen Satz? Jede Zutat ist das *Objekt* von einem Satz. Ein Satz kann *mehrere* Objekte haben: mehrere **󱤉 e**-Phrasen, die einfach eine nach der anderen kommen:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="Die Pizza enthält Fleisch, Gemüse, (und) Gewürze."
+  />
+</List>
+
+Das ist nicht nur für **󱤉 e** möglich! Du kannst mehrere zusammenhängende Ideen in einen Satz mit **󱤧 li**, **󱤡 la**, und auch Präpositionen tun. Schauen wir uns erstmal nur **󱤧 li** an:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="Die Person jagt Fische. (=Die Person angelt.)" />
+  <Sentence sl="jan li seli e ona." m="Die Person kocht sie." />
+  <Sentence sl="jan li moku e ona." m="Die Person isst sie." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Die Person jagt Fische, kocht sie und isst sie." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

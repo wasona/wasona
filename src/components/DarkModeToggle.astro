@@ -1,5 +1,10 @@
 <button id="themeToggle">
-  <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <svg
+    width="30px"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    aria-label="dark/light mode switch"
+  >
     <path
       class="sun"
       fill-rule="evenodd"
@@ -25,6 +30,11 @@
   .sun {
     fill: var(--grey);
   }
+
+  #themeToggle:hover .sun {
+    fill: var(--accent);
+  }
+
   .moon {
     fill: transparent;
   }
@@ -32,8 +42,17 @@
   :global(.dark) .sun {
     fill: transparent;
   }
+
+  :global(.dark) #themeToggle:hover .sun {
+    fill: transparent;
+  }
+
   :global(.dark) .moon {
     fill: var(--grey);
+  }
+
+  :global(.dark) #themeToggle:hover .moon {
+    fill: var(--accent);
   }
 </style>
 <script>
