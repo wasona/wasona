@@ -31,7 +31,7 @@ const { prevnext, current } = Astro.props;
       <>
         <span style="text-align: left">
           {prevnext.prev ? (
-            <a href={"./" + prevnext.prev.id}>
+            <a href={"/" + prevnext.prev.id}>
               <span aria-hidden="true">«</span> Previous
             </a>
           ) : (
@@ -39,11 +39,11 @@ const { prevnext, current } = Astro.props;
           )}
         </span>
         <span>
-          <a href={"./"}>Index</a>
+          <a href={"/"}>Index</a>
         </span>
         <span style="text-align: right">
           {prevnext.next ? (
-            <a href={"./" + prevnext.next.id}>
+            <a href={"/" + prevnext.next.id}>
               Next <span aria-hidden="true">»</span>
             </a>
           ) : (

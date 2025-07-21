@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate-pdfs": "node scripts/generate-pdfs.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.2.3",
@@ -18,5 +19,8 @@
     "astro": "^5.6.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.14.0"
   }
 }
