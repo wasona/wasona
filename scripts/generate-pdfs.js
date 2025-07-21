@@ -1,3 +1,4 @@
+// @ts-check
 import { exec } from "child_process";
 import path from "path";
 
@@ -20,22 +21,46 @@ async function generatePDFs() {
     await fs.mkdir(outputDir, { recursive: true });
 
     const server = exec("npx serve dist -p 3000");
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    await new Promise((resolve, reject) => {
+      let serverReady = false;
+
+      const timeout = setTimeout(() => {
+        if (!serverReady) {
+          reject(new Error("Server failed to start within 30 seconds"));
+        }
+      }, 30000);
+
+      server.stdout?.on("data", (data) => {
+        const output = data.toString();
+        console.log("Server output:", output);
+        if (output.includes("Local:") || output.includes("localhost:3000")) {
+          serverReady = true;
+          clearTimeout(timeout);
+          console.log("✅ Server is ready!");
+          resolve(undefined);
+        }
+      });
+
+      server.stderr?.on("data", (data) => {
+        console.error("Server error:", data.toString());
+      });
+
+      server.on("error", (error) => {
+        clearTimeout(timeout);
+        reject(new Error(`Failed to start server: ${error.message}`));
+      });
+
+      server.on("exit", (code) => {
+        if (!serverReady) {
+          clearTimeout(timeout);
+          reject(
+            new Error(`Server exited with code ${code} before being ready`)
+          );
+        }
+      });
+    });
 
     const page = await browser.newPage();
-
-    const pdfOptions = {
-      format: "A4",
-      printBackground: true,
-      margin: {
-        top: "20mm",
-        right: "15mm",
-        bottom: "20mm",
-        left: "15mm",
-      },
-      displayHeaderFooter: false,
-      preferCSSPageSize: true,
-    };
 
     const variants = [
       { route: "/en/pdf", filename: "Wasona-EN.pdf" },
@@ -50,10 +75,18 @@ async function generatePDFs() {
         timeout: 30000,
       });
 
-      await page.waitForTimeout(2000);
-
       await page.pdf({
-        ...pdfOptions,
+        format: "A4",
+        printBackground: true,
+        margin: {
+          top: "20mm",
+          right: "15mm",
+          bottom: "20mm",
+          left: "15mm",
+        },
+        displayHeaderFooter: false,
+        preferCSSPageSize: true,
+
         path: path.join(outputDir, variant.filename),
       });
 
