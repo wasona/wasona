@@ -31,11 +31,9 @@ jobs:
 
       - name: Install Puppeteer
         run: npm install puppeteer
-      
       - name: Generate PDFs with Puppeteer
         run: node scripts/generate-pdfs.js
-      
-      - name: Upload complete site with PDFs
+      - name: Reupload with PDFs
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
