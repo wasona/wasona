@@ -6,7 +6,7 @@ import Message from "@/components/Message.astro";
 import Sentence from "@/components/Sentence.astro";
 import Embed from "@/components/Embed.astro";
 import { SITE_TITLE } from "@consts";
-import { type CollectionEntry, getCollection, render } from "astro:content";
+import { render } from "astro:content";
 import List from "@/components/List.astro";
 import PhonoExamples from "@/components/PhonoExamples.astro";
 import PhonoTable from "@/components/PhonoTable.astro";
@@ -14,13 +14,18 @@ import Row from "@/components/Row.astro";
 import Tabbed from "@/components/Tabbed.astro";
 import Word from "@/components/Word.astro";
 import Audio from "@/components/Audio.astro";
+import { langPosts, langs } from "@/utils/content";
 
-const posts = (await getCollection("blog")).sort((a, b) =>
-  a.data.order > b.data.order ? -1 : b.data.order > a.data.order ? 1 : 0,
-);
+export function getStaticPaths() {
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+
+const posts = langPosts[lang];
 ---
 
-<html lang="en">
+<html lang={lang}>
   <head>
     <BaseHead
       title={SITE_TITLE}
@@ -41,11 +46,11 @@ const posts = (await getCollection("blog")).sort((a, b) =>
         <h1>Contents</h1>
         <ul>
           {
-            posts.reverse().map(async (post, i) => (
+            posts.map(async (post, i) => (
               <li>
                 <a href={`#article-${i}`}>{post.data.title}</a>
                 <br />
-                {post.data.richDescription || post.data.description}
+                {post.data.description}
               </li>
             ))
           }
