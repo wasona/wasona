@@ -50,7 +50,7 @@ Zakończ naukę, znając 131 słów!
 * [lekcja 25: liczby](pl/25)
 * [lekcja 26: miłość i tożsamość](pl/26)
 * [lekcja 27: kolory](pl/27)
-* [lekcja 28: mu!](pl/28)
+* [lekcja 28: muu!](pl/28)
 * [lekcja 29: przerwa 3](pl/29)
 
 ## Pytania i odpowiedzi!
