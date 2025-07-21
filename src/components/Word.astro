@@ -22,6 +22,8 @@ const sp_ = sp || encode(sl);
     grid-template-columns: min-content 1fr;
     grid-gap: 15px;
     align-items: center;
+    border-left: 2px dotted var(--grey);
+    page-break-inside: avoid;
   }
   .word:nth-child(odd) {
     background-color: var(--bg-1);
