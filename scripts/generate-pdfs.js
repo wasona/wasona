@@ -82,7 +82,7 @@ async function generatePDFs() {
     for (const variant of variants) {
       console.log(`Generating PDF from ${variant.route}...`);
       await page.goto(`http://localhost:3000${variant.route}`, {
-        waitUntil: "networkidle2",
+        waitUntil: "networkidle0",
         timeout: 30000,
       });
 
