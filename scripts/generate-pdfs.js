@@ -115,6 +115,7 @@ async function generatePDFs() {
     }
     await browser.close();
     console.log("Cleanup complete!");
+    process.exit(0);
   }
 }
 
