@@ -1,13 +1,13 @@
 ---
 slug: he/08
-title: "lesson 8: prepositions"
-description: Learn weka, pana, kama, awen, tawa, lon, tan!
+title: "שיעור 8: מילות יחס"
+description: בשיעור זה נכיר את המילים weka, pana, kama, awen, tawa, lon, tan!
 practice:
   - l1: באנגליה.
     l2: lon ma Inli
   - l1: לאלי.
     l2: tawa jan Ali
-  - l1: אתה אוצרת את החרק מהבית.
+  - l1: אתה הוצאת את החרק מהבית.
     l2: sina weka e pipi tan tomo.
   - l1: אני אוהב צמחים (צמחים טובים בשבילי).
     l2: kasi li pona tawa mi.
@@ -26,71 +26,85 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
 
-## Prepositions
+<div dir="rtl">
 
-Now that we know some countries, let's talk about travel! But how do you say "go to" and "come from"? For that, we will need some verbs and prepositions:
+## מילות יחס
+
+אחרי שהכרנו שמות של מדינות, הגיע הזמן לטייל. אבל איך אומרים "לנסוע" ואיך אומרים "ל..." או "מ..."?  לשם כך נצטרך ללמוד כמה פעלים חדשים ומילות יחס.
 
 <List>
-  <Word sl="weka" m="to remove, to go away; absent, away" />
-  <Word sl="pana" m="to give, to put" />
-  <Word sl="kama" m="to come, to arrive" />
-  <Word sl="awen" m="to stay, to remain, to protect" />
-  <Word sl="tawa" m="to, towards" />
-  <Word sl="lon" m="at, on, in" />
-  <Word sl="tan" m="from, because of" />
+  <Word sl="weka" m="להסיר, להתרחק" />
+  <Word sl="pana" m="לתת, לשים, להניח" />
+  <Word sl="kama" m="להגיע, לבוא" />
+  <Word sl="awen" m="להשאר, לשמור (על משהו)" />
+  <Word sl="tawa" m="ל..., לכיוון, לקראת" />
+  <Word sl="lon" m="ב...,על" />
+  <Word sl="tan" m="מ..., בגלל" />
 </List>
 
-A _preposition_ is a word that goes before another word. It tells you how it relates to the sentence. A preposition + the word it attaches is called a _prepositional phrase_:
-
+ _מילת יחס_ תופיע לפני מילה אחרת במשפט, ותאפיין את הקשר של המילה הזו למשפט. הצירוף של מילת יחס + שם עצם (או מילה אחרת) נקרא _ביטוי יחס_.
+ 
 <List>
-  <Word sl="tawa soweli" m="towards the animal" />
-  <Word sl="lon ma" m="on land, in the country" />
-  <Word sl="tan tomo" m="from the house" />
+  <Word sl="tawa soweli" m="לכיוון החיה" />
+  <Word sl="lon ma" m="בארץ, על הקרקע" />
+  <Word sl="tan tomo" m="מהבית" />
 </List>
 
-In Toki Pona, prepositional phrases can be used one of two ways. Firstly we can attach them at the end of a sentence. We can use this to mention location and direction of an action:
+ב-Toki Pona, יש שתי צורות של ביטויי יחס. 
+
+בצורה הראשונה, ביטוי היחס יופיע בסיום המשפט, ויתפקד כ_מושא עקיף_. במשפטים אלה _הפועל_ מתאר את הפעולה, ו_ביטוי היחס_ מתאר את הזמן, המקום או הכיוון שבו (או לכיוונו) הפעולה מתבצעת. 
+
+לדוגמא:
 
 <List>
-  <Sentence sl="mi pana e waso tawa kasi." m="I put a bird onto a tree." />
-  <Sentence sl="waso li awen lon kasi." m="The bird remains on a tree." />
+  <Sentence sl="mi pana e waso tawa kasi." m="אני מזיז את הציפור לכיוון העץ." />
+  <Sentence sl="waso li awen lon kasi." m="הציפור נשארת על העץ." />
   <Sentence
     sl="sina weka e waso tan kasi."
-    m="You remove the bird from the tree."
+    m="אתה מרחיק את הציפור מהעץ."
   />
 </List>
 
-Secondly, what if we want to talk about location or direction... without anything else happening? Fortunately, we can do that too. Prepositional phrases can come directly after **󱤧 li**, and act as the verb all by themselves. When prepositions act as verbs, they mean: **󱥩 tawa** 'to go to', **󱤬 lon** 'to be at', **󱥧 tan** 'to come from':
+בצורה השניה ביטוי היחס מחליף את הפועל, ומתאר גם את הפעולה וגם את המקום או הכיוון שבו (או לכיוונו) היא מתבצעת. במקרים כאלה מילת היחס תופיע מיד אחרי המילית **󱤧 li**.  
 
+כך למשל, בצורה זו:
+- המשמעות של **󱥩 tawa** היא לנוע (הפעולה) למקום כלשהו (הכיוון). 
+- המשמעות של **󱤬 lon** היא להימצא (הפעולה) במקום כלשהו (המקום).
+- המשמעות של **󱥧 tan** היא להגיע (הפעולה) ממקום כלשהו (הכיוון)
+
+הנה כמה דוגמאות לצורה הזו:
 <List>
-  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma goes to Japan." />
-  <Sentence sl="jan Nina li lon ma Lusi." m="Nina is in Russia." />
-  <Sentence sl="jan Mili li tan ma Kanse." m="Millie is from France." />
+  <Sentence sl="jan Ema li tawa ma Nijon." m="אמה נוסעת ליפן." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="נינה נמצאת ברוסיי." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="מילי היא מצרפת." />
 </List>
 
-Let's practice with these sentences:
+משפטים לתירגול:
 
 <List>
   <Sentence
     sl="mi tawa ma kasi."
-    m="I go to the plant land.<br />(Could be a forest, a grassy field, somewhere lush.)"
+    m="אני הולך למקום של צמחים.<br />(כמו יער או שדה)"
   />
   <Sentence
     sl="sona li weka tan mi."
-    m="Knowledge went away from me.<br />(I forgot.)"
+    m="הידע התרחק ממני.<br />(או במילה אחת: שכחתי.)"
   />
   <Sentence
     sl="soweli suwi li pona tawa mi."
-    m="Cute animals are good to me.<br />(I like cute animals.)"
+    m="חיות חמודות טובות בשבילי.<br />(או במילים אחרות: אני אוהב חיות  חמודות)"
   />
-  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah speaks to Emma." />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="נח מדבר לאמה." />
   <Sentence
     sl="jan li toki Tosi lon ma Tosi."
-    m="People speak German in Germany."
+    m="בגרמניה אנשים דוברים גרמנית."
   />
 </List>
 
 <Practice exercises={frontmatter.practice} client:load />
 
-## See also
-* [Q: do I have to memorise language and country names?](en/languages-countries)
-* [Q: isn't 'jan li toki Inli' a bit strange?](en/named-verbs)
+## לקריאה נוספת
+* [שאלה: האם צריך לשנן את שמות המדינות והערים?](he/languages-countries)
+* [שאלה: במשפט 'jan li toki Inli', האם toki הוא הפועל? השם של השפה? גם וגם?](he/named-verbs)
+
+</div>
