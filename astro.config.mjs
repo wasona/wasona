@@ -9,7 +9,7 @@ const deploy = import.meta.env.PROD
   ? { site: "https://wasona.com/", base: "./" }
   : { site: "http://localhost/", base: "./" };
 
-const redirects: Record<string, RedirectConfig> = {
+const redirects = {
   "/en/": {
     status: 301,
     destination: "/",
