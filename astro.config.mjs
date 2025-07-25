@@ -9,8 +9,11 @@ const deploy = import.meta.env.PROD
   ? { site: "https://wasona.com/", base: "./" }
   : { site: "http://localhost/", base: "./" };
 
-const redirects = {
-  "/en/": "/"
+const redirects: Record<string, RedirectConfig> = {
+  "/en/": {
+    status: 301,
+    destination: "/",
+  }
 }
 
 // https://astro.build/config
