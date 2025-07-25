@@ -9,8 +9,13 @@ const deploy = import.meta.env.PROD
   ? { site: "https://wasona.com/", base: "./" }
   : { site: "http://localhost/", base: "./" };
 
+const redirects = {
+  "/en/": "/"
+}
+
 // https://astro.build/config
 export default defineConfig({
   ...deploy,
   integrations: [mdx(), sitemap(), react()],
+  redirects
 });
