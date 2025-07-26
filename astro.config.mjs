@@ -20,5 +20,5 @@ const redirects = {
 export default defineConfig({
   ...deploy,
   integrations: [mdx(), sitemap(), react()],
-  redirects
+  redirects,
 });
