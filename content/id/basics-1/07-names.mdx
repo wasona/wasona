@@ -1,0 +1,90 @@
+---
+slug: "id/07"
+title: "pelajaran 7: nama"
+description: "Pelajari nimi, jan, sitelen, toki, ma, tomo!"
+practice:
+  - l1: "Aku menggambar daratannya."
+    l2: "mi sitelen e ma."
+  - l1: "Gambarmu besar."
+    l2: "sitelen sina li suli."
+  - l1: "Orang-orang membicarakan rumahnya."
+    l2: "jan li toki e tomo."
+  - l1: "Namamu Maya."
+    l2: "nimi sina li jan Maja."
+  - l1: "Iman berbicara bahasa Arab."
+    l2: "jan Iman li toki Alapi."
+  - l1: "kota Toronto itu luas."
+    l2: "ma tomo Towano li suli."
+  - l1: "Aku melihat tulisan Sirilik."
+    l2: "mi lukin e sitelen Kililisa."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Nama
+
+Menunjuk-nunjuk pada benda memanglah seru, tapi terkadang kita perlu lebih spesifik. Perkenalkan: nama! Penemuan Spektakuler yang mengizinkanmu untuk membicarakan seseorang atau sesuatu secara rinci.
+
+Mari kita pelajari kata-kata untuk benda yang biasanya mempunyai nama:
+
+<List>
+  <Word sl="nimi" m="nama, kata" />
+  <Word sl="jan" m="orang" />
+  <Word sl="sitelen" m="gambar, tulisan; menggambar, menulis" />
+  <Word sl="toki" m="percakapan, bahasa; berbicara" />
+  <Word sl="ma" m="daratan, negara" />
+  <Word sl="tomo" m="bangunan, ruang, rumah" />
+</List>
+
+Kamu telah mengetahui satu nama, yaitu: _sitelen Lasina_! Mari kita lihat beberapa nama orang:
+
+<List>
+  <Sentence sl="jan Nowa" m="orang bernama Noah (dari bahasa Inggris 'Noah')" />
+  <Sentence sl="jan Ema" m="orang bernama Emma (dari bahasa Inggris 'Emma')" />
+</List>
+
+Dari nama-nama diatas, kita bisa melihat:
+
+1. Nama termasuk kata sifat: Nama-nama selalu diletakkan di depan kata benda.
+2. Semua Nama di Toki Pona berawalan huruf besar. Kalau kamu melihat huruf besar di Toki Pona, ketahuilah bahwa itu sudah pasti sebuah nama!
+3. Pada _sitelen pona_, kita menulis nama didalam sebuah **󱥂 nimi** yang besar. Kita memanggilnya _cartouche_. Setiap bunyi di dalam sebuah nama, kita harus memilih kata yang berawalan dengan bunyi itu. Contohnya, 'Ema' bisa dieja dengan 󱤉 **e**, 󱤶 **m**oku, 󱤂 **a**la. 
+
+Tak terbatas pada nama orang saja! Mari kita lihat nama pada bahasa, negara, dan kota::
+
+<List>
+  <Sentence
+    sl="toki Kanse"
+    m="Bahasa dengan nama Prancis (dari Bahasa Prancis 'français')"
+  />
+  <Sentence sl="ma Tosi" m="Negara dengan nama Jerman (dari Bahasa Jerman 'Deutsch')" />
+  <Sentence
+    sl="ma tomo Loma"
+    m="Tempat dengan bangunan dengan nama Roma (dari Bahasa Latin 'Rōma')"
+  />
+</List>
+
+Nama-nama ini mengajari kita bagaimana nama-nama pada Toki Pona dibuat:
+
+4. Ketika sebuah nama masuk ke Toki Pona, nama itu _berubah_ menjadi bunyi-bunyi pada Toki Pona. Contoh, tidak ada bunyi **d** pada Toki Pona, jadi kata Deutsch dimulai dengan bunyi **t**. Beberapa perubahan ada yang kecil, seperti _Noah_ → _Nowa_, dan ada juga yang besar, seperti _français_ → _Kanse_.
+5. Nama-nama seringkali bukan dari Bahasa Inggris. Kita menggunakan _endonim_: nama asli untuk menyebut nama seperti negara, bahasa, seseorang, dan seterusnya. Nama untuk Prancis berasal dari Bahasa Prancis!
+
+Mari kita berlatih menggunakan kata-kata baru dan nama-nama pada kalimat-kalimat:
+
+<List>
+  <Sentence sl="waso li lukin e ma." m="Burung melihat daratannya." />
+  <Sentence sl="jan li toki e tomo." m="Orang-orang membicarakan rumahnya." />
+  <Sentence sl="jan pona li toki pona." m="Orang ramah berbicara dengan ramah." />
+  <Sentence sl="nimi ona li jan Kenta." m="Namanya ialah Kenta." />
+  <Sentence sl="jan Sunita li sitelen e pipi." m="Sunita menggambar sebuah serangga." />
+  <Sentence sl="jan Nina li toki Kanse." m="Nina berbicara menggunakan Bahasa Prancis." />
+  <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma mengenal Jerman dengan baik." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Lihat juga
+* [Q: Seperti apa namaku di Toki Pona?](id/make-a-name)
+* [Q: Pada Sitelen Pona, nama-nama terlihat panjang. Bagaimana cara untuk membuatnya lebih pendek?](id/simpler-cartouches)

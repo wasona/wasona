@@ -1,0 +1,96 @@
+---
+slug: "id/08"
+title: "pelajaran 8: kata depan"
+description: "Pelajari weka, pana, kama, awen, tawa, lon, tan!"
+practice:
+  - l1: "di Inggris"
+    l2: "lon ma Inli"
+  - l1: "ke Ali"
+    l2: "tawa jan Ali"
+  - l1: "Kamu menyingkirkan para serangga dari rumahnya."
+    l2: "sina weka e pipi tan tomo."
+  - l1: "Aku suka tanaman. (Tanamannya bagus untukku.)"
+    l2: "kasi li pona tawa mi."
+  - l1: "Aku memberi burungnya sebuah serangga (Aku memberi sebuah serangga ke burungnya)."
+    l2: "mi pana e pipi tawa waso."
+  - l1: "Seseorang tinggal di rumah."
+    l2: "jan li awen lon tomo."
+  - l1: "Noah pergi ke Prancis."
+    l2: "jan Nowa li tawa ma Kanse."
+  - l1: "Kota Toronto berada di Kanada."
+    l2: "ma tomo Towano li lon ma Kanata."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Kata depan
+
+Karena kamu telah mengetahui beberapa nama-nama dari negara di dunia, mari kita membicarakan tentang perjalanan! Tetapi, bagaimana caranya mengatakan "pergi ke" dan "datang dari"? Untuk itu, kita perlu beberapa kata kerja dan kata depan:
+
+<List>
+  <Word sl="weka" m="menghapus, menghilangkan, mengeluarkan; tidak hadir, jauh" />
+  <Word sl="pana" m="memberi, menaruh" />
+  <Word sl="kama" m="datang, tiba" />
+  <Word sl="awen" m="tinggal, menetap, melindungi" />
+  <Word sl="tawa" m="ke, terhadap, menuju" />
+  <Word sl="lon" m="di, pada" />
+  <Word sl="tan" m="dari, disebabkan oleh" />
+</List>
+
+Sebuah _kata depan_ merupakan kata yang diletakkan sebelum kata yang lain. Kata depan menunjukkanmu seberapa terhubungnya sebuah kata dengan kalimat utamanya. Sebuah kata depan + kata yang telah diletakkan di depannya merupakan sebuah _kalimat preposisi_:
+
+<List>
+  <Word sl="tawa soweli" m="menuju ke hewannya" />
+  <Word sl="lon ma" m="di sebuah daratan, berada di negara" />
+  <Word sl="tan tomo" m="dari rumahnya" />
+</List>
+
+Pada Toki Pona, kalimat preposisi bisa digunakan dalam satu dari dua buah cara. Yang pertama, kita dapat menaruhnya pada akhir dari sebuah kalimat. Kita bisa menggunkannya untuk menyebut lokasi beserta arah dari suatu aksi:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="Aku menaruh burung ke pohonnya." />
+  <Sentence sl="waso li awen lon kasi." m="Burungnya menetap di pohonnya." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="Kamu mengeluarkan burung dari pohonnya."
+  />
+</List>
+
+Yang kedua, bagaimana jika kita ingin membicarakan lokasi maupun arah... tanpa ada hal yang terjadi? Untungnya, kita bisa melakukan itu juga. Kalimat preposisi juga bisa diletakkan tepat setelah **󱤧 li**, dan bertindak semacam kata kerja dengan sendirinya. Ketika kata depan bertindak seperti kata kerja, beberapa kata kerja berarti: **󱥩 tawa** 'pergi ke', **󱤬 lon** 'berada di', **󱥧 tan** 'datang dari':
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma pergi ke Jepang." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Nina berada di Rusia." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Millie berasal dari Prancis." />
+</List>
+
+Mari kita berlatih menggunakan kalimat-kalimat dibawah ini:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="Aku pergi ke daratan yang ada tumbuhan.<br />(Bisa jadi hutan, ladang rumput, intinya sesuatu yang rimbun.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="Pengetahuan hilang dari ku.<br />(Aku lupa.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="Hewan yang lucu bagus untukku.<br />(Aku suka hewan lucu.)"
+  />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah berbicara terhadap Emma." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="Orang-orang berbicara Bahasa Jerman di Jerman."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Lihat juga
+* [Q: Apakah aku harus menghafalkan nama-nama bahasa dan negara?](id/languages-countries)
+* [Q: Bukankah 'jan li toki Inli' agak aneh?](id/named-verbs)
