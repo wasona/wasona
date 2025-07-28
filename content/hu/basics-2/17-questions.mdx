@@ -1,0 +1,104 @@
+---
+slug: "hu/17"
+title: "17. lecke: kérdések"
+description: "Tanuld meg a következő szavakat: anu, seme!"
+practice:
+  - l1: "A dohány rontja a levegőt?"
+    l2: "kasi nasa li ike ala ike e kon?"
+  - l1: "Ez egy tégla?"
+    l2: "ni li leko ala leko?"
+  - l1: "Tudsz úgy énekelni, mint egy madár?"
+    l2: "sina ken ala ken kalama sama waso?"
+  - l1: "Használod a Google-t?"
+    l2: "sina kepeken ala kepeken ilo Kuko?"
+  - l1: "Olaszországban vagyok?"
+    l2: "mi lon ala lon ma Italija?"
+  - l1: "Ez pénzt akar, ugye?"
+    l2: "ni li wile e mani anu seme?"
+  - l1: "Beszélsz németül, ugye?"
+    l2: "sina toki Tosi anu seme?"
+  - l1: "Hol van Japán?"
+    l2: "ma Nijon li lon seme?"
+  - l1: "Ki van Indiából?"
+    l2: "jan seme li tan ma Palata?"
+  - l1: "Mit akarsz enni?"
+    l2: "sina wile moku e seme?"
+    alsoAccept:
+      - "sina wile e moku seme?"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Kérdések
+
+Kérdésekből általában kétféle van:
+
+* *igen/nem kérdések* (eldöntendő kérdések). Ezekre a kérdésekre válaszolhatunk igennel vagy nemmel, pozitívan vagy negatívan.
+* *kiegészítendő kérdés*. Ezeknél ki kell tölteni az ürest: Ki csinálta? Mit csinált? Kinek? Hol? Miért?
+
+## Igen/nem kérdések
+
+### Kérdés
+
+Az előző leckében megtanultuk, hogy úgy tagadunk egy mondatot, hogy megtaláljuk az első szót az igében. Valami hasonlót csinálunk az igen/nem kérdéseknél: *megduplázzuk* az ige első szavát, és közéjük tesszük az **󱤂 ala** szót:
+
+<List>
+  <Word sl="moku ala moku" m="... eszik?" />
+  <Sentence sl="pipi li moku ala moku e len?" m="A moly megeszi a ruhát?" />
+  <Word sl="pona ala pona" m="... jó?" />
+  <Sentence sl="kalama musi li pona ala pona tawa sina?" m="A zene jó neked? (Tetszik neked ez a zene?)" />
+  <Word sl="wile ala wile" m="... akar valamit?" />
+  <Sentence sl="sina wile ala wile lape lon supa?" m="Akarsz aludni az ágyon?" />
+  <Word sl="lon ala lon" m="... valahol van?" />
+  <Sentence sl="ona li lon ala lon ma Mewika?" m="Ő az USA-ban van?" />
+</List>
+
+Ez egy kicsit furcsa a magyaroknak, de valami hasonló van a [mandarinban](https://en.wikipedia.org/wiki/A-not-A_question#A-not-AB_form_4).
+
+### Válasz
+
+A magyarban van egy külön szó arra, hogy "igen". Viszont a toki pona úgy csinálja, mint a finn, mandarin, latin, és sok más nyelv: igenhez válaszolsz az igével, nemhez válaszolsz az igével + **󱤂 ala**-val.
+
+<List>
+  <Sentence sl="sitelen li musi ala musi?" m="Szórakoztató a videó?" />
+  <Word sl="musi." m="szórakoztató. (= Igen.)" />
+  <Word sl="musi ala." m="nem szórakoztató. (= Nem.)" />
+</List>
+
+Az **ige ala ige** minta nagyon gyakori, de van egy másik is:
+
+<List>
+  <Word sl="seme" m="Mi? Melyik?" />
+  <Word sl="anu" m="vagy" />
+  <Word sl="anu seme" m="'... ugye?' 'nemde?' 'vagy mi?'" />
+</List>
+
+A mondat végére teheted, hogy **󱤇󱥙 anu seme**, ezáltal egy kérdéssé teszed:
+
+<List>
+  <Sentence sl="sitelen li musi anu seme?" m="A videó szórakoztató, ugye?" />
+</List>
+
+Válaszolhatsz azzal, hogy **󱤻 musi** vagy **󱤻󱤂 musi ala**, pont úgy, mint egy sima igen/nem kérdésnél. De ezt egy kicsit máskor használjuk: ha **󱤇󱥙 anu seme**-t használsz, akkor inkább elvárod a másik embertől, hogy értsen egyet veled.
+
+## Kiegészítendő kérdések
+
+Megtanultuk, hogy a **󱥙 seme** azt jelenti, hogy "mi?", és ez a legfontosabb része a *kiegészítendő kérdéseknek*. A **󱥙 seme** olyan, mint egy lyuk a mondatban, amit szeretnéd, hogy a másik ember töltsön ki az ő tudásával:
+
+<List>
+  <Sentence sl="waso li lon seme?" m="A madár hol van?" />
+  <Sentence sl="waso li lon tomo." m="A madár otthon van." />
+  <Sentence sl="soweli li utala e jan seme?" m="Az állat kit támadott meg?" />
+  <Sentence sl="soweli li utala e jan Ema." m="Az állat Emmát támadta meg." />
+</List>
+
+Csak a **󱥙 seme** cserélődik ki a válaszra, minden más marad ugyanabban a sorrendben.
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [Hogy mondod azt, hogy "csinálni"?](hu/doing/)
+
