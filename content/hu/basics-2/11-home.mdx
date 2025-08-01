@@ -1,0 +1,70 @@
+---
+slug: "hu/11"
+title: "11. lecke: otthon"
+description: "Tanuld meg a következő szavakat: ilo, lipu, poki, supa, lupa, len, open, pini, jo, ijo!"
+practice:
+  - l1: "Becsukod az ajtót."
+    l2: "sina pini e lupa."
+  - l1: "Van egy macska a házamban."
+    l2: "soweli li lon tomo mi."
+  - l1: "A házam birtokol egy macskát."
+    l2: "tomo mi li jo e soweli."
+  - l1: "A madarad akar ételt."
+    l2: "waso sina li wile e moku."
+  - l1: "Sunita tud jól énekelni."
+    l2: "jan Sunita li ken kalama pona."
+  - l1: "Akarok beszélni egy varrógépről."
+    l2: "mi wile toki e ilo len."
+  - l1: "Valaki lerakta a bogarakról szóló könyvet az asztalra."
+    l2: "jan li pana e lipu pipi tawa supa."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Otthon
+
+Sok dolog van az otthonainkban:
+
+<List>
+  <Word sl="ilo" m="eszköz, pl. kalapács, villa, telefon, app" />
+  <Word sl="lipu" m="lapos dolog 󱥡 sona-val, pl. papír, kártya, könyv, weboldal" />
+  <Word sl="poki" m="tároló, pl. doboz, fiók, üveg" />
+  <Word sl="supa" m="vízszintes felület, pl. polc, asztal, kanapé" />
+  <Word sl="lupa" m="egy nyílás, pl. ajtó, ablak, lyuk" />
+  <Word sl="len" m="valami, ami elfed/elrejt, pl. ruha, cipő, takaró" />
+</List>
+
+És amit csinálunk velük:
+
+<List>
+  <Word sl="open" m="elkezdeni, kinyitni, bekapcsolni" />
+  <Word sl="pini" m="befejezni, bezárni, kikapcsolni" />
+  <Word sl="jo" m="fogni, tartalmazni, magában foglal, birtokol" />
+</List>
+
+Gyakoroljunk!
+
+<List>
+  <Sentence sl="mi open e lupa." m="Kinyitom az ajtót." />
+  <Sentence sl="jan li pini e poki moku." m="Az ember becsukja a hűtőt." />
+  <Sentence sl="lipu li lon supa lape." m="A könyv az ágyon van." />
+  <Sentence sl="poki mi li ken jo e len." m="A fiókomban lehet ruha." />
+  <Sentence sl="ilo mi li wile e wawa." m="A telefonom akar elektromosságot." />
+</List>
+
+## Valami
+
+Egy dobozban találhatunk ruhákat, papírokat, eszközöket, fotókat... sok dolgot. Hogyan tudunk róluk általánosságban beszélni?
+
+<List>
+  <Word sl="ijo" m="valami, dolog, cucc" />
+  <Sentence sl="poki li jo e ijo." m="A dobozban vannak dolgok." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="Valaki rajzol valami cukit." />
+  <Sentence sl="mi wile toki e ijo kasi." m="Szeretnék valami növényekhez kapcsolódó dologról beszélni." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+

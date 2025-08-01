@@ -1,0 +1,57 @@
+---
+slug: "hu/12"
+title: "12. lecke: kérések"
+description: "Tanuld meg azt, hogy o!"
+practice:
+  - l1: "Emma, próbálj meg aludni!"
+    l2: "jan Ema o alasa lape!"
+  - l1: "Madár, énekelj nekem!"
+    l2: "waso o kalama tawa mi!"
+  - l1: "Hé, Kenta!"
+    l2: "jan Kenta o!"
+  - l1: "Beszélj Ninához!"
+    l2: "o toki tawa jan Nina!"
+  - l1: "Rajzolj valami furcsát!"
+    l2: "o sitelen e ijo nasa!"
+  - l1: "Maya, add nekem a kanalat!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Kérések
+
+A toki ponában a **󱤧 li**vel kezdődő mondatok kijelentések. De néha meg szeretnénk valakit kérni valamire. Kérésekkel közöljük másokkal, hogy mit szeretnénk, hogy történjen. Kérésekben **󱤧 li** helyett **󱥄 o**-t használunk:
+
+<List>
+  <Word sl="o" m="egy kérés, parancs, instrukció, vagy vágy elejét jelzi" />
+  <Sentence sl="ilo li sitelen e pipi." m="A telefon egy bogarat mutat." />
+  <Sentence sl="ilo o sitelen e waso!" m="Ó telefon, mutass egy madarat!" />
+</List>
+
+Nézzünk néhány parancsot:
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="Emberek, olvassátok el a jó papírt!" />
+  <Sentence sl="soweli mi o moku pona!" m="Macskám, egyél jól!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="Hadd erősödjön meg a gyereked!" />
+  <Sentence sl="pona o tawa sina!" m="A jó menjen feléd! (Áldás legyen veletek!)" />
+</List>
+
+Észrevehetted, hogy a mondatok közül néhány két részre osztható:
+* Valakinek a figyelmének a felhívása (az **󱥄 o** előtt)
+* Maga a kérés (az **󱥄 o** után)
+
+Külön is használhatjuk ezeket:
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Emma, csukd be az ajtót!" />
+  <Sentence sl="jan Ema o!" m="Hé, Emma!" />
+  <Sentence sl="o pini e lupa tomo!" m="Csukd be az ajtót!" />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
