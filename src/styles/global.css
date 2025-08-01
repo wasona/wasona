@@ -1,6 +1,6 @@
 @font-face {
     font-family: "nasin-nanpa";
-    src: url("nasin-nanpa.otf") format("opentype");
+    src: url("/nasin-nanpa.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
     unicode-range: U+F1900-F19FF;
