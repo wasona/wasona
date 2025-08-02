@@ -1,0 +1,72 @@
+---
+slug: "pl/20"
+title: "lekcja 20: czas"
+description: "Naucz się słów: la, tenpo, sike, mun, suno, sin, poka!"
+practice:
+  - l1: "Rośliny wykorzystują fotosyntezę."
+    l2: "kasi li moku e suno."
+  - l1: "Księżyc się porusza po elipsie."
+    l2: "mun li tawa lon sike."
+  - l1: "Oni są po twojej stronie."
+    l2: "ona li lon poka sina."
+  - l1: "Kiedyś byłem dzieckiem."
+    l2: "tenpo pini la mi lili."
+  - l1: "Zabawnie mówiąc, ptak mówi jak człowiek."
+    l2: "musi la waso li toki sama jan."
+  - l1: "Gdy jest zimno, owady znikają."
+    l2: "kon li lete la, pipi li weka."
+  - l1: "Możesz jeśli chcesz."
+    l2: "sina wile la, sina ken."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Porozmawiajmy o czasie! Mogłeś zauważyć, że tłumaczę zdania niespójnie: czasami są w czasie teraźniejszym, czasami mówią o przeszłości, a innym razem o przyszłości. To dlatego, że w toki ponie zdanie domyślnie nie zawiera informacji o czasie, więc może mówić o dowolnym czasie! Oczywiście możemy mówić bardziej szczegółowo, używając słów związanych z czasem.
+
+Nauczmy się kilku z nich:
+
+<List>
+  <Word sl="tenpo" m="czas, moment, sytuacja" />
+  <Word sl="sike" m="okrągły, powtarzający, coroczny; koło, piłka" />
+  <Word sl="mun" m="księżyc, ciało niebieskie" />
+  <Word sl="suno" m="słońce, światło dzienne; jasny" />
+  <Word sl="sin" m="nowy, świeży; jeszcze raz" />
+  <Word sl="poka" m="bok, sąsiedztwo; blisko" />
+</List>
+
+Już wiesz, jak mówić o miejscu w *przestrzeni*. Miejsce w *czasie* jest bardzo podobne:
+
+<List>
+  <Word sl="lon tenpo kama" m="w nadchodzącym czasie, w przyszłości" />
+  <Word sl="lon tenpo pini" m="w zakończonym czasie, w przeszłości" />
+  <Word sl="lon tenpo ni" m="w tym czasie" />
+  <Sentence sl="soweli lili mi o kama suli lon tenpo kama!" m="Niech mój mały kotek urośnie w przyszłości!" />
+  <Sentence sl="ma Loma li ma suli lon tenpo weka." m="Rzym był wielkim imperium dawno temu." />
+</List>
+
+Czas jest często "sceną" lub "kontekstem" dla reszty wypowiedzi. Często lubimy umieszczać ten kontekst na początku zdania, tak jak w tym zdaniu! Toki pona zawiera słowo, które w tym pomaga:
+
+<List>
+  <Word sl="la" m="co do ..., mówiąc o ..., gdy ..., jeżeli ..." />
+  <Word sl="ken la" m="może ..." />
+  <Word sl="open la" m="na początek ..." />
+  <Word sl="lipu la" m="co do książki ..." />
+  <Word sl="tenpo la" m="czasami ..." />
+  <Word sl="tenpo pini la" m="w przeszłości ..." />
+  <Word sl="tenpo suno kama la" m="następnego dnia, ...; jutro ..." />
+  <Sentence sl="sin la mi wile toki e ni:" m="Jeszcze raz chcę powiedzieć, że..." />
+  <Sentence sl="mi pali e ni lon tenpo kama poka." m="Popracuję nad tym wkrótce." />
+</List>
+
+**󱤡 la** może być też użyte między dwoma zdaniami, co łączy je w jedno. Pierwsze zdanie staje się warunkiem *'jeżeli lub gdy ...'*, a drugie jest wynikiem: *'wtedy ...'*.
+
+<List>
+  <Word sl="suno li pini." m="Słońce zachodzi." />
+  <Word sl="mi lape." m="Śpię." />
+  <Sentence sl="suno li pini la, mi lape." m="Gdy słońce zachodzi, wtedy śpię." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

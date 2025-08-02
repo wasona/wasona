@@ -1,0 +1,55 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Słowo</th>
+      <th>Znaczenie</th>
+      <th>Pomocne wskazówki</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="wan" />
+      <td>jeden</td>
+      <td>Zwróć uwagę na wymowę <b>w</b>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="sina" />
+      <td>ty</td>
+      <td><b>i</b> nie zmienia <b>si</b> na <b>śi</b>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="wile" />
+      <td>chcieć</td>
+      <td><b>i</b> nie zmienia <b>wi</b> (<i>łi</i>) na <b>li</b>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>liczba</td>
+      <td
+        >Przy okazji, piszemy <b>np</b>, ale zwykle wymawiamy <b>mp</b>!
+      </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>dźwięk</td>
+      <td>Przetestuj swoją umiejętność akcentowania pierwszej sylaby!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>jaszczurka</td>
+      <td>Słowa mogą się zaczynać od samogłoski!</td>
+    </tr>
+  </tbody>
+</table>
