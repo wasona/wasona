@@ -37,7 +37,7 @@ Am Ende von diesem Teil wirst du einen Dialog lesen.
 * [Lektion 18: Gefühle](/de/18)
 * [Lektion 19: Pause 2](/de/19)
 
-## Part 3: Fast fertig!
+## Teil 3: Fast fertig!
 
 Rede über Zeit, Raum, Zahlen, Farben und mehr!
 Lerne alle 131 Wörter zuende!
@@ -54,29 +54,6 @@ Lerne alle 131 Wörter zuende!
 * [Lektion 29: Pause 3](/de/29)
 
 ## Fragen und Antworten!
-
-
-<div style="
-    margin: 10px 0;
-    padding: 2px 15px;
-    background: #ffff0022;
-    border-left-width: 10px;
-    border-left-style: solid;
-    border-image: repeating-linear-gradient(
-        45deg,
-        black,
-        black              5px,
-        gold 5px,
-        gold 10px
-    ) 10;
-">
-
-## Die Fragen und Antworten sind noch nicht übersetzt!
-
-Bis jetzt ist nur der Hauptkurs übersetzt. Ich werde den Rest übersetzen, sobald ich kann!  
--- jan Muntoso
-
-</div>
 
 Manche Details musst du nicht unbedingt wissen, aber interessieren dich vielleicht!
 
