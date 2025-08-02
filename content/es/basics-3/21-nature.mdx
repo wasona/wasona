@@ -1,0 +1,77 @@
+---
+slug: "es/21"
+title: "Lección 21: La naturaleza"
+description: "¡Aprende akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+  - l1: "Los hongos consumen plantas muertas."
+    l2: "soko li moku e kasi moli."
+  - l1: "Cocina la masa."
+    l2: "o seli e ko pan."
+  - l1: "Desentierro la patata."
+    l2: "mi weka e kili tan ma."
+  # - l1: "I am scared of snakes."  # 21_4
+    # l2: "mi pilin monsuta tan akesi linja."
+  - l1: "Las plantas necesitan agua, sol y tierra."
+    l2: "kasi li wile e telo, e suno, e ma."
+  - l1: "Las personas hablan, se divierten, cantan y duermen."
+    l2: "jan li toki, li musi, li kalama, li lape."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Ya sabemos la mayoría de palabras para animales y plantas -- ¡aprendamos las que quedan!
+
+<List>
+  <Word sl="akesi" m="reptil o anfibio, como una rana, lagarto, serpiente" />
+  <Word
+    sl="kala"
+    m="pez o criatura marina, como un salmón, ballena, tiburón, pulpo"
+  />
+  <Word sl="pan" m="comida con almidón, como trigo, arroz, pan, pasta" />
+  <Word sl="kili" m="fruta, vegetal" />
+  <Word sl="soko" m="seta, hongo" />
+  <Word sl="misikeke" m="medicina" />
+  <Word sl="namako" m="especia, guarnición, adorno" />
+  <Sentence sl="soko li kili nasa." m="Las setas son frutas extrañas." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="Un pez grande caza peces más pequeños."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Tengo que tomar medicación frecuentemente."
+  />
+</List>
+
+## Ingredientes
+
+Los productos de panadería suelen juntar varios ingredientes:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="La pizza contiene carne." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="La pizza contiene vegetales." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="La pizza contiene condimentos." />
+</List>
+
+Pero, ¿cómo los juntamos todos en una sola frase? Bueno, cada uno de ellos es el *objeto* de una oración. Una oración puede tener *varios objetos*: varias expresiones con **󱤉 e**, que sencillamente van una detrás de otra:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="The pizza contains meat, vegetables, (and) condiments."
+  />
+</List>
+
+¡Esto no es exclusivo de **󱤉 e**! Puedes combinar varias ideas relacionadas con **󱤧 li**, **󱤡 la**, y preposiciones de la misma forma. Por ahora veamos **󱤧 li**:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="La persona caza peces. (= la persona caza)." />
+  <Sentence sl="jan li seli e ona." m="La persona los cocina." />
+  <Sentence sl="jan li moku e ona." m="La persona los come." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="La persona caza peces, los cocina, los come." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

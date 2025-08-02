@@ -1,0 +1,90 @@
+---
+slug: "es/07"
+title: "Lección 7: Nombres"
+description: "¡Aprende nimi, jan, sitelen, toki, ma, tomo!"
+practice:
+  - l1: "Dibujo el territorio."
+    l2: "mi sitelen e ma."
+  - l1: "Tu dibujo es grande."
+    l2: "sitelen sina li suli."
+  - l1: "la gente habla sobre edificios."
+    l2: "jan li toki e tomo."
+  - l1: "Tu nombre es Maya."
+    l2: "nimi sina li jan Maja."
+  - l1: "Iman habla árabe."
+    l2: "jan Iman li toki Alapi."
+  - l1: "La ciudad de Toronto es grande."
+    l2: "ma tomo Towano li suli."
+  - l1: "Miramos escritura cirílica."
+    l2: "mi lukin e sitelen Kililisa."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Nombres
+
+Señalar cosas está bien, pero a veces conviene especificar más. Presentando: ¡los nombres! Una tecnología revolucionaria que te permite hablar sobre alguien o algo en particular.
+
+Aprendamos las palabras para cosas que suelen tener nombres:
+
+<List>
+  <Word sl="nimi" m="nombre, palabra" />
+  <Word sl="jan" m="persona" />
+  <Word sl="sitelen" m="imagen, escritura; dibujar, escribir" />
+  <Word sl="toki" m="habla, idioma; hablar" />
+  <Word sl="ma" m="tierra, lugar, país" />
+  <Word sl="tomo" m="edificio, habitación, casa" />
+</List>
+
+Ya conoces un nombre: ¡_sitelen Lasina_! Veamos algunos nombres de personas:
+
+<List>
+  <Sentence sl="jan Nowa" m="persona llamada Noa (del español 'Noa')" />
+  <Sentence sl="jan Ema" m="persona llamada Emma (del español 'Emma')" />
+</List>
+
+De estos nombres puedes observar que:
+
+1. Los nombres son adjetivos: van después de otra palabra.
+2. Los nombres empiezan por mayúscula. ¡Si ves una palabra que empiece por mayúscula en toki pona, sabes inmediatamente que es un nombre!
+3. En _sitelen pona_, escribimos los nombres dentro de un gran **󱥂 nimi**. A este bloque nominal lo llamamos un _cartucho_, como los que se usaban en jeroglíficos egipcios. Por cada sonido del nombre, escogemos una palabra que empieza por ese sonido. Por ejemplo, 'Ema' se puede deletrear como 󱤉 **e**, 󱤶 **m**oku, 󱤂 **a**la. 
+
+¡No solo la gente tiene nombres! Veamos un idioma, un país y una ciudad:
+
+<List>
+  <Sentence
+    sl="toki Kanse"
+    m="idioma llamado francés (del francés 'français')"
+  />
+  <Sentence sl="ma Tosi" m="tierra llamada Alemania (del alemán 'Deutsch')" />
+  <Sentence
+    sl="ma tomo Wasawa"
+    m="tierra de edificios llamada Varsovia (del polaco 'Warszawa')"
+  />
+</List>
+
+Estos nombres nos enseñan más sobre cómo se hace un nombre en toki pona:
+
+4. Cuando los nombres entran al toki pona, _cambian_ al sistema de sonidos de toki pona. No hay **d** en toki pona, así que la palabra Deutsch empieza con una **t**. Algunos cambios son sutiles, como _Noa_ → _Nowa_, otros son contundentes, como _français_ → _Kanse_.
+5. Los nombres a menudo no son del español. Nos gusta usar _endónimos_: nombres propios de países, lenguas, personas, etc. ¡El nombre para el francés proviene del francés!
+
+Practiquemos el uso de las nuevas palabras y de nombres en frases:
+
+<List>
+  <Sentence sl="waso li lukin e ma." m="El pájaro mira la tierra." />
+  <Sentence sl="jan li toki e tomo." m="La gente habla sobre una casa." />
+  <Sentence sl="jan pona li toki pona." m="Las personas simpáticas hablan bien." />
+  <Sentence sl="nimi ona li jan Kenta." m="Su nombre es Kenta." />
+  <Sentence sl="jan Sunita li sitelen e pipi." m="Sunita dibuja un insecto." />
+  <Sentence sl="jan Nina li toki Kanse." m="Nina habla francés." />
+  <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma conoce bien Alemania." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [Q: ¿Cuál es mi nombre en toki pona?](es/make-a-name)
+* [Q: En sitelen pona, los nombres me parecen largos. ¿Cómo los puedo abreviar?](es/simpler-cartouches)

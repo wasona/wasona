@@ -1,0 +1,56 @@
+---
+slug: "es/12"
+title: "Lección 12: Solicitudes"
+description: "¡Aprende o!"
+practice:
+  - l1: "¡Emma, intenta dormir!"
+    l2: "jan Ema o alasa lape!"
+  - l1: "Oye pájaro, ¡canta para mi!"
+    l2: "waso o kalama tawa mi!"
+  - l1: "¡Ey, Kenta!"
+    l2: "jan Kenta o!"
+  - l1: "¡Habla a Nina!"
+    l2: "o toki tawa jan Nina!"
+  - l1: "¡Dibuja algo extraño!"
+    l2: "o sitelen e ijo nasa!"
+  - l1: "¡Maya, dame la cuchara!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Solicitudes
+
+En Toki Pona, una frase con **󱤧 li** es una explicación de un hecho. Pero a veces, en vez de explicar hechos, queremos hacer solicitudes. Las solicitudes son cómo decimos a otras personas lo que queremos que ocurra. En una solicitud, en vez de **󱤧 li**, usamos **󱥄 o**:
+
+<List>
+  <Word sl="o" m="inicia una solicitud, orden, instrucción, deseo" />
+  <Sentence sl="ilo li sitelen e pipi." m="El móvil muestra un bicho." />
+  <Sentence sl="ilo o sitelen e waso!" m="¡Móvil, por favor muestra un bicho!" />
+</List>
+
+Veamos algunas órdenes más:
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="¡Gente, por favor leed el buen papel!" />
+  <Sentence sl="soweli mi o moku pona!" m="¡Gato mío, por favor come bien!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="¡Espero que tu hijo se vuelva fuerte!" />
+  <Sentence sl="pona o tawa sina!" m="¡Que la bondad vaya hacia ti! (¡Que la fortuna esté de tu lado!, ¡Te deseo lo mejor!)" />
+</List>
+
+Puede que te hayas dado cuenta de que algunas de estas frases se pueden separar en dos partes:
+* La llamada a la atención de alguien (antes de **󱥄 o**)
+* La solicitud en sí (después de **󱥄 o**)
+
+Podemos usarlas por sí solas:
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="¡Emma, por favor cierra la puerta!" />
+  <Sentence sl="jan Ema o!" m="¡Ey, Emma!" />
+  <Sentence sl="o pini e lupa tomo!" m="¡Por favor cierra la puerta!" />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

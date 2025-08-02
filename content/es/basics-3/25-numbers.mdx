@@ -1,0 +1,81 @@
+---
+slug: "es/25"
+title: "Lección 25: Números"
+description: "¡Aprende nanpa, wan, tu, ale, kipisi!"
+practice:
+  - l1: "Ocho."
+    l2: "luka tu wan"
+  - l1: "Cortas el pan."
+    l2: "sina kipisi e pan."
+  - l1: "Los dos nos unimos."
+    l2: "mi tu li kama wan."
+  - l1: "Puedo hablar tres idiomas."
+    l2: "mi sona e toki tu wan."
+  - l1: "5 euros."
+    l2: "mani luka pi ma Elopa"
+  - l1: "Abril empieza."
+    l2: "tenpo mun nanpa tu tu li open."
+    alsoAccept:
+      - "mun nanpa tu tu li open."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Números cardinales
+
+¡Hablemos de números!
+
+<List>
+  <Word sl="wan" m="uno; unido" />
+  <Word sl="tu" m="dos; dividido" />
+  <Word sl="luka" m="cinco, mano" />
+  <Word sl="mute" m="mucho" />
+  <Word sl="ale" m="todo, cada" />
+  <Word sl="kipisi" m="pieza, partd; cortar" />
+</List>
+
+El Toki Pona tiene palabras para el 1, 2 y 5, ¡pero no 3 y 4! Pero esto no es tan extraño. Puedes imaginar **󱥳 wan**, **󱥮 tu** y **󱤭 luka** como monedas de 1, 2 y 5. Intentemos contar del 1 al 10:
+
+<List>
+    <Word sl="wan" m="uno" />
+    <Word sl="tu" m="dos" />
+    <Word sl="tu wan" m="tres" />
+    <Word sl="tu tu" m="cuatro" />
+    <Word sl="luka" m="cinco" />
+    <Word sl="luka wan" m="seis" />
+    <Word sl="luka tu" m="siete" />
+    <Word sl="luka tu wan" m="ocho" />
+    <Word sl="luka tu tu" m="nueve" />
+    <Word sl="luka luka" m="diez" />
+</List>
+
+En muchas situaciones, con conocer solamente números pequeños es suficiente. Pero si quieres hablar de compras o el calendario gregoriano, hay una página adicional sobre números más grandes debajo.
+
+## Números ordinales
+
+Usualmente, los números son simplemente adjetivos:
+
+<List>
+    <Word sl="kala wan" m="un pez" />
+    <Word sl="soko tu tu" m="cuatro setas" />
+    <Word sl="mun luka" m="cinco meses" />
+</List>
+
+Pero estos son números *cardinales*: números que hablan sobre cantidad. También hay números *ordinales*: aquellos que hablan sobre el orden. Para hacer números ordinales, usa **󱤽 nanpa** + un número:
+
+<List>
+    <Word sl="nanpa" m="número; n. ..." />
+    <Word sl="kala nanpa wan" m="el primer pez" />
+    <Word sl="soko nanpa tu tu" m="la cuarta seta" />
+    <Word sl="mun nanpa luka" m="el quinto mes" />
+</List>
+
+(Por cierto, ¡**󱤽 nanpa** es especila! No necesita **󱥍 pi**.)
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [Q: how do I talk about large numbers?](es/large-numbers/)
