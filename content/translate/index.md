@@ -4,7 +4,7 @@ title: "Translate Wasona!"
 description: "Help us by translating the course to your language!"
 ---
 
-**Wasona needs translators!** Wasona is currently available in [English](/), [German](de) and [Russian](ru). If you want to add a new translation, tell me on Discord (@kala_asi) or via email (kala.asi.la@gmail.com). I'll help out in any way I can!
+**Wasona needs translators!** Wasona is currently available in [English](/), [German](/de) and [Russian](/ru). If you want to add a new translation, tell me on Discord (@kala_asi) or via email (kala.asi.la@gmail.com). I'll help out in any way I can!
 
 **Some notable languages without good Toki Pona courses**: Hindi, Swahili, Thai, Vietnamese, Turkish. If you speak any of them, we would love your help!
 
