@@ -83,7 +83,7 @@ Drobniejsze szczegóły, których nie musisz znać, ale mogą Cię zainteresowa�
 * [P: jakie są inne kursy toki pony?](/pl/other-courses) ❌
 * [P: czy wymowa toki pony się różni wśród różnych użytkowników języka?](/pl/sound-variation)
 * [P: jak mogę pisać sitelen ponę na klawiaturze?](/pl/fonts) ❌
-* [P: który system pisma toki pony jest trzeci co do popularności?](/pl/sitelen-sitelen) ❌
+* [P: który system pisma toki pony jest trzeci co do popularności?](/pl/sitelen-sitelen)
 * [P: czy 'li' znaczy 'jest'?](/pl/li-and-is) ❌
 * [P: jak mam na imię w toki ponie?](/pl/make-a-name) ❌
 * [P: w sitelen ponie imiona wyglądają na długie. Jak mogę je skrócić?](/pl/simpler-cartouches) ❌
