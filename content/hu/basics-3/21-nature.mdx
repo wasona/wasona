@@ -1,0 +1,77 @@
+---
+slug: "hu/21"
+title: "21. lecke: természet"
+description: "Tanuld meg a következő szavakat: akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+  - l1: "A gombák elhalt növényeket esznek."
+    l2: "soko li moku e kasi moli."
+  - l1: "Süsd meg a tésztát!"
+    l2: "o seli e ko pan."
+  - l1: "Kiástam a krumplit."
+    l2: "mi weka e kili tan ma."
+  # - l1: "Félek a kígyóktól."  # 21_4
+    # l2: "mi pilin monsuta tan akesi linja."
+  - l1: "A növények vizet, napfényt, földet akarnak."
+    l2: "kasi li wile e telo, e suno, e ma."
+  - l1: "Az emberek beszélnek, szórakoznak, énekelnek, aludnak."
+    l2: "jan li toki, li musi, li kalama, li lape."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Már tudunk sok állatokhoz és növényekhez kapcsolódó szót. Tanuljuk meg a többit!
+
+<List>
+  <Word sl="akesi" m="hüllő vagy kétéltű, pl. béka, gyík, kígyó" />
+  <Word
+    sl="kala"
+    m="hal vagy vízi állat, pl. lazac, bálna, cápa, polip"
+  />
+  <Word sl="pan" m="keményítőtartalmú/lisztes ételek, pl. búza, rizs, kenyér, tészta" />
+  <Word sl="kili" m="gyümölcs, zöldség" />
+  <Word sl="soko" m="gomba" />
+  <Word sl="misikeke" m="gyógyszer" />
+  <Word sl="namako" m="fűszer, köret, dekoráció" />
+  <Sentence sl="soko li kili nasa." m="A gombák furcsa gyümölcsök." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="Egy nagy hal vadássza a kisebb halakat."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Gyakran kell gyógyszert bevennem."
+  />
+</List>
+
+## Összetevők
+
+A pizzán sok különböző dolgok vannak:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="A pizzán van hús." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="A pizzán vannak zöldségek." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="A pizzán vannak fűszerek." />
+</List>
+
+De hogyan rakhatjuk ezeket egy mondatba? Ezek az összetevők a mondatok *tárgyai* voltak. Egy mondatban lehet *több tárgy* is: több **󱤉 e** kifejezéssel, amelyek egyszerűen egymás után mennek:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="A pizzán van hús, zöldségek, fűszerek."
+  />
+</List>
+
+Ez nem csak az **󱤉 e**-re igaz. Ez igaz a **󱤧 li**-re, a **󱤡 la**-ra, és az elöljárószavakra is. Nézzük meg a **󱤧 li**-t:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="Az ember vadássza a halakat. (= az ember halászik)." />
+  <Sentence sl="jan li seli e ona." m="Az ember megfőzi őket." />
+  <Sentence sl="jan li moku e ona." m="Az ember megeszi őket." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Az ember vadássza a halakat, megfőzi őket, megeszi őket." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
