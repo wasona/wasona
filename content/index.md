@@ -44,7 +44,7 @@ Befejezed a 131 szó megtanulását!
 
 * [20. lecke: idő](hu/20)
 * [21. lecke: természet](hu/21)
-* [22. lecke: cuki cicák](hu/22)
+* [22. lecke: nagyon cuki cicák](hu/22)
 * [23. lecke: helyek](hu/23)
 * [24. lecke: test](hu/24)
 * [25. lecke: számok](hu/25)
