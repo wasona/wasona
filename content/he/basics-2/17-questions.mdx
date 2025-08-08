@@ -1,27 +1,27 @@
 ---
 slug: "he/17"
-title: "lesson 17: questions"
-description: "Learn anu, seme!"
+title: "שיעור 17: משפטי שאלה"
+description: "בשיעור זה נכיר את המילים anu, seme!"
 practice:
-  - l1: "Does tobacco make the air foul?"
+  - l1: "האם טבק מזהם את האויר?"
     l2: "kasi nasa li ike ala ike e kon?"
-  - l1: "Is this a brick?"
+  - l1: "האם זה גשר?"
     l2: "ni li leko ala leko?"
-  - l1: "Can you sing like a bird?"
+  - l1: "האם אתה יכול לשיר כמו ציפור?"
     l2: "sina ken ala ken kalama sama waso?"
-  - l1: "Do you use Google?"
+  - l1: "האם אתה משתמש בגוגל?"
     l2: "sina kepeken ala kepeken ilo Kuko?"
-  - l1: "Am I in Italy?"
+  - l1: "האם אני באיטליה?"
     l2: "mi lon ala lon ma Italija?"
-  - l1: "This requires money, right?"
+  - l1: "האם זה עולה כסף?"
     l2: "ni li wile e mani anu seme?"
-  - l1: "You speak German, right?"
+  - l1: "האם אתה מדבר גרמנית?"
     l2: "sina toki Tosi anu seme?"
-  - l1: "Where is Japan?"
+  - l1: "איפה נמצאת יפן?"
     l2: "ma Nijon li lon seme?"
-  - l1: "Who is from India?"
+  - l1: "מי הגיע מהודו?"
     l2: "jan seme li tan ma Palata?"
-  - l1: "What do you want to eat?"
+  - l1: "מה תרצו לאכול?"
     l2: "sina wile moku e seme?"
     alsoAccept:
       - "sina wile e moku seme?"
@@ -32,73 +32,80 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
 
-## Questions
+<div dir="rtl">
 
-Questions usually come in two flavours:
+## משפטי שאלה
 
-* *yes / no questions*. These are questions that can be answered with yes or no, positively or negatively.
+יש שתי צורות של משפטי שאלה:
 
-* *open-ended questions*. These are like filling the blanks: who did it? did what? to whom? where? why?
+* *שאלות סגורות*: שאלות שהתשובה עליהן היא כן או לא, או בחירה מתוך רשימה קצרה של אפשרויות.
 
-## Yes / no questions
+* *שאלות פתוחות*: שאלות שנועדו להשלים "חורים" במשפט, כמו למשל: מי עשה את הפעולה? למי? איפה? למה? איך? וכו'.
 
-### Question
+## שאלות סגורות
 
-Remember how in the previous lesson, we've learned to negate a sentence by finding the first word in the verb? We do something similar to make yes / no questions. We *double* the first word in the verb, and put an **󱤂 ala** in between:
+### ניסוח משפט השאלה
 
-<List>
-  <Word sl="moku ala moku" m="does ... eat?" />
-  <Sentence sl="pipi li moku ala moku e len?" m="Does the moth eat the cloth?" />
-  <Word sl="pona ala pona" m="is ... good?" />
-  <Sentence sl="kalama musi li pona ala pona tawa sina?" m="Is the music good to you? (Do you like the music?)" />
-  <Word sl="wile ala wile" m="does ... want to ...?" />
-  <Sentence sl="sina wile ala wile lape lon supa?" m="Do you want to sleep in the bed?" />
-  <Word sl="lon ala lon" m="is ... at ...?" />
-  <Sentence sl="ona li lon ala lon ma Mewika?" m="Are they in the US?" />
-</List>
-
-It's a little unusual to an English speaker! But you can see something similar in [Mandarin](https://en.wikipedia.org/wiki/A-not-A_question#A-not-AB_form_4).
-
-### Answer
-
-English has a special word for 'yes'. Toki Pona instead does what Finnish, Mandarin, Latin, and many other languages do: you reply with the verb for 'yes', and a verb + **󱤂 ala** for 'no'.
+בשיעור 14 למדנו איך להפוך את המשמעות של המשפט על ידי הוספת המילה **󱤂 ala** למילה הראשונה שמרכיבה את הפועל. כשמנסחים שאלה סגורה, עושים משהו דומה מאד: מכפילים את המילה הראשונה שמרכיבה את הפועל של המשפט, ומוסיפים בין צמד המילים הכפולות את המילה **󱤂 ala**:
 
 <List>
-  <Sentence sl="sitelen li musi ala musi?" m="Is the video fun?" />
-  <Word sl="musi." m="fun. (= It is.)" />
-  <Word sl="musi ala." m="not fun. (= It's not.)" />
+  <Word sl="moku ala moku" m="האם ... אוכל?" />
+  <Sentence sl="pipi li moku ala moku e len?" m="האם עש אוכל בגדים?" />
+  <Word sl="pona ala pona" m="האם ... הוא טוב?" />
+  <Sentence sl="kalama musi li pona ala pona tawa sina?" m="האם המוזיקה טובה בעיניך (האם אתה אוהב את המוזיקה?)" />
+  <Word sl="wile ala wile" m="האם ... רוצה?" />
+  <Sentence sl="sina wile ala wile lape lon supa?" m="האם אתה רוצה לישון במיטה?" />
+  <Word sl="lon ala lon" m="האם ... נמצא" />
+  <Sentence sl="ona li lon ala lon ma Mewika?" m="האם אתה נמצא בארצות הברית?" />
 </List>
 
-The **V ala V** pattern is very common! But there's another one:
+לדוברי אנגלית ושפות אירופאיות, הצורה הזאת נשמעת מאד מוזרה, אבל היא מזכירה צורה שמקובלת גם בעברית (למשל: "תרצה **או לא** תרצה לבוא איתנו?"). צורת ניסוח דומה קיימת גם בשפת [מנדרין]
+[Mandarin](https://en.wikipedia.org/wiki/A-not-A_question#A-not-AB_form_4).
+
+### ניסוח התשובה
+
+בעברית נוהגים להשיב לשאלות סגורות במילים 'כן' או 'לא'. ב-Toki Pona מנסחים את התשובה באופן דומה לשפות כמו פינית, מנדרין, לאטינית ועוד: כדי לענות בחיוב חוזרים על הפועל של המשפט, וכדי לענות בשלילה - משתמשים במילה **󱤂 ala**.
 
 <List>
-  <Word sl="seme" m="what? which?" />
-  <Word sl="anu" m="or" />
-  <Word sl="anu seme" m="... right? isn't it? or what?" />
+  <Sentence sl="sitelen li musi ala musi?" m="הסרט נחמד?" />
+  <Word sl="musi." m="כן" />
+  <Word sl="musi ala." m="לא" />
 </List>
 
-You can add **󱤇󱥙 anu seme** at the end of any statement to make it a question:
+בנוסף לצורה של פועל-ala-פועל, קיימת גם צורה נוספת, שעושה שימוש במילים  **󱤇 anu** ו **󱥙seme**:
 
 <List>
-  <Sentence sl="sitelen li musi anu seme?" m="The video is fun, right?" />
+  <Word sl="seme" m="מה?" />
+  <Word sl="anu" m="או" />
+  <Word sl="anu seme" m="..., נכון?" />
 </List>
 
-You can answer it with **󱤻 musi** or **󱤻󱤂 musi ala**, just like a normal yes / no question! But the vibe is slightly different. If you use **󱤇󱥙 anu seme**, it's more likely that you expect the other person to agree with you.
-
-## Open-ended questions
-
-So we just learned that **󱥙 seme** means 'what?', and it's the most important part of *open-ended questions*! **󱥙 seme** is like a blank space in the sentence that you want the other person to fill in with their information:
+אפשר להוסיף את צמד המילים **󱤇󱥙 anu seme** בסיום של כל משפט, כדי להפוך אותו למשפט שאלה. הצורה הזו מזכירה צורה שנהוגה בסלנג עברי: "אתה מגיע, או מה?". 
 
 <List>
-  <Sentence sl="waso li lon seme?" m="Where is the bird? (lit. 'The bird is at what?')" />
-  <Sentence sl="waso li lon tomo." m="The bird is at home." />
-  <Sentence sl="soweli li utala e jan seme?" m="Who did the animal attack? (lit. 'The animal attacked which person?')" />
-  <Sentence sl="soweli li utala e jan Ema." m="The animal attacked Emma." />
+  <Sentence sl="sitelen li musi anu seme?" m="הוידאו נחמד, נכון?" />
 </List>
 
-Notice how only **󱥙 seme** gets swapped out for the answer -- everything else in the sentence stays in the same order! This is unlike English, where questions reorder the sentence, to put the wh-word first, but Toki Pona doesn't do that.
+ניסוח התשובה נותר ללא שינוי:  **󱤻 musi** או **󱤻󱤂 musi ala**.
+
+הבחירה בין שתי צורות הניסוח היא בעיקר עניין של טעם אישי, אבל יש בכל זאת הבדל ניואנס קטן בין שתי הצורות. בצורה הראשונה משתמשים יותר כאשר התשובה לא ידועה מראש, ולכן השאלה מנוסחת כשתי אפשרויות: "אתה מגיע **או לא** מגיע". בצורה השניה נהוג יותר להשתמש כשמצפים לקבל תשובה חיובית, יותר מאשר תשובה שלילית.
+
+## שאלות פתוחות
+
+עד עכשיו השתמשנו במילה **󱥙 seme** במשמעות של "מה" ("אתה מגיע או מה?"). בשאלות פתוחות משתמשים בה בכל מקרה שחסר מידע כלשהו במשפט, ואתם מעוניינים ממי שעונה על השאלה להשלים אותו. המילה **󱥙 seme** מתפקדת, בשאלות פתוחות, כמו "קו שחור" שמציירים על טופס, כשרוצים שמי שממלא את הטופס יבין שהוא צריך להשלים את החסר. המשמעות שלה בשאלות פתוחות היא "איזה": באיזה זמן (מתי), באיזה מקום (איפה), מאיזו סיבה (למה), וכן הלאה.
+
+<List>
+  <Sentence sl="waso li lon seme?" m="איפה הציפור? (באיזה מקום נמצאת הציפור?)" />
+  <Sentence sl="waso li lon tomo." m="הציפור נמצאת בקן." />
+  <Sentence sl="soweli li utala e jan seme?" m="את מי תקפה החיה? (איזה איש תקפה החיה?)" />
+  <Sentence sl="soweli li utala e jan Ema." m="החיה תקפה את אמה." />
+</List>
+
+שימו לב שמשפט התשובה זהה לחלוטין למשפט השאלה, למעט המילה **󱥙 seme** שמוחלפת על ידי המידע שהיה חסר.
 
 <Practice exercises={frontmatter.practice} client:load />
 
-## See also
-* [Q: how do you say 'to do'?](en/doing/)
+## לקריאה נוספת
+* [שאלה: איך אומרים 'לעשות?'](he/doing/)
+
+</div>

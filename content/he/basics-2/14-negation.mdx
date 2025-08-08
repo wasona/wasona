@@ -1,21 +1,21 @@
 ---
 slug: "he/14"
-title: "lesson 14: negation"
-description: "Learn ala!"
+title: "שיעור 14: שלילה"
+description: "אל תלמד!"
 practice:
-  - l1: "You do not eat bugs."
+  - l1: "אתה לא אוכל חרקים."
     l2: "sina moku ala e pipi."
-  - l1: "People do not know me."
+  - l1: "אנשים לא מכירים אותי."
     l2: "jan li sona ala e mi."
-  - l1: "No one knows me."
+  - l1: "אף אחד לא מכיר אותי."
     l2: "jan ala li sona e mi."
-  - l1: "Millie does not want the book."
+  - l1: "מילי לא רוצה את הספר."
     l2: "jan Mili li wile ala e lipu."
-  - l1: "Birds cannot draw houses."
+  - l1: "ציפורים לא יכולות לצייר בתים."
     l2: "waso li ken ala sitelen e tomo."
-  - l1: "Anna does not go to Germany."
+  - l1: "אנה לא נוסעת לגרמניה."
     l2: "jan Ana li tawa ala ma Tosi."
-  - l1: "Iman is not in the US."
+  - l1: "עימאן לא נמצא בארצות הברית."
     l2: "jan Iman li lon ala ma Mewika."
 ---
 
@@ -24,39 +24,42 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
 
-## Negation
+<div dir="rtl">
+## שלילה
 
-We've just learned how to ask someone to do something. But how do we ask someone *not* to do something? It's time to learn about negation, using **󱤂 ala**:
-
-<List>
-  <Word sl="ala" m="not" />
-</List>
-
-In English, it's kind of a special word. But in Toki Pona, its a pretty normal adjective! And like any other adjective, it goes after the word. You will often find it on nouns, adjectives, and verbs alike:
+למדנו איך לבקש ממישהו לעשות משהו, אבל איך מבקשים ממישהו *לא* לעשות משהו? בשיעור הזה נכיר את מילת השלילה **󱤂 ala**:
 
 <List>
-  <Word sl="jan ala" m="no person, not a person" />
-  <Sentence sl="jan ala li wile utala." m="No person wants to fight." />
-  <Word sl="suli ala" m="not big, not important" />
-  <Sentence sl="ni li suli ala tawa mi." m="This is not important to me." />
-  <Word sl="moku ala" m="not to eat" />
-  <Sentence sl="pipi li moku ala e soweli." m="Bugs do not eat animals." />
+  <Word sl="ala" m="לא, אל" />
 </List>
 
-But interestingly, **󱤂 ala** also goes on prepositions and preverbs:
+באנגלית ועברית המילה "לא" היא מילה מסוג מיוחד, שמשתמשים בה כאלמנט דיקדוקי. לעומת זאת, ב-Toki Pona היא מילה לכל דבר, שמשתמשים בה כמו בכל שם תואר רגיל: מוסיפים אותו לאחר המילה או הביטוי אותם רוצים לשלול. היא משמשת לא פעם גם כנושא המשפט ואפילו כנשוא:
 
 <List>
-  <Word sl="wile ala" m="to not want to ..." />
-  <Sentence sl="sina wile ala moku e suwi." m="You do not want to eat sweets." />
-  <Word sl="tawa ala" m="to not go to ..., not towards ..." />
-  <Sentence sl="pipi li tawa ala kasi." m="The bug does not go to the plant." />
+  <Word sl="jan ala" m="אף אחד, משהו לא אנושי" />
+  <Sentence sl="jan ala li wile utala." m="אף אחד לא רוצה להלחם." />
+  <Word sl="suli ala" m="לא חשוב, לא גדול" />
+  <Sentence sl="ni li suli ala tawa mi." m="לא משנה לי." />
+  <Word sl="moku ala" m="לא אוכל, לא למאכל" />
+  <Sentence sl="pipi li moku ala e soweli." m="חרקים לא אוכלים בעלי חיים." />
 </List>
 
-You may notice something interesting. Although **󱤂 ala** can go anywhere that an adjective can, it likes to attach to the first word in the verb:
-* **󱤧󱤶󱤂 li moku ala ...**
-* **󱤧󱥷󱤂 li wile ala ...**
-* **󱤧󱥩󱤂 li tawa ala ...**
+במשפטים האלה המילה **󱤂 ala** משמשת כתואר. שימוש מעניין נוסף במילה **󱤂 ala** הוא כחלק ממילת יחס או מ-Preverb:
 
-This actually makes a lot of sense -- negating the first word in the verb also negates the whole sentence, which we often want!
+<List>
+  <Word sl="wile ala" m="לא רוצה ל..." />
+  <Sentence sl="sina wile ala moku e suwi." m="לא כדאי לך לאכול ממתקים." />
+  <Word sl="tawa ala" m="לא הולך ל..., לא זז לכיוון של..." />
+  <Sentence sl="pipi li tawa ala kasi." m="החרק לא מתקרב לכיוון הצמח." />
+</List>
+
+יש לשים לב שלמרות שהמילה **󱤂 ala** יכולה להופיע בכל מקום שבו שם תואר יכול להופיע, כמשודבר בפועל, נוהגים להוסיף אותה מיד לאחר המילה הראשונה שמרכיבה את הפועל: 
+* **󱤧󱤶󱤂 לא אוכל...**
+* **󱤧󱥷󱤂 לא רוצה...**
+* **󱤧󱥩󱤂 לא הולך ל...**
+
+ההגיון בכך הוא שהמילה הראשונה שמרכיבה את הפועל היא זו שנותנת למשפט את המשמעות העיקרית שלו, והוספת המילה **󱤂 ala** בצמוד למילה הראשונה שוללת למעשה את המשמעות המלאה של המשפט.  
 
 <Practice exercises={frontmatter.practice} client:load />
+
+</div>
