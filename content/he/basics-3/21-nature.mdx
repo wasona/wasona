@@ -1,19 +1,19 @@
 ---
-slug: "en/21"
-title: "lesson 21: nature"
-description: "Learn akesi, kala, pan, kili, soko, misikeke, namako!"
+slug: "he/21"
+title: "שיעור 21: טבע"
+description: "בשיעור זה נכיר את המילים akesi, kala, pan, kili, soko, misikeke, namako!"
 practice:
-  - l1: "Fungi consume diseased plants."
+  - l1: "פטריות אוכלות צמחים רקובים."
     l2: "soko li moku e kasi moli."
-  - l1: "Bake the dough."
+  - l1: "יש לאפות את הבצק!"
     l2: "o seli e ko pan."
-  - l1: "I dug up the potato."
+  - l1: "עקרתי את התפוח מהאדמה."
     l2: "mi weka e kili tan ma."
-  # - l1: "I am scared of snakes."  # 21_4
+  # - l1: "אני חושש מנחשים."  # 21_4
     # l2: "mi pilin monsuta tan akesi linja."
-  - l1: "Plants need water, sunlight, and land."
+  - l1: "צמחים זקוקים למים, אור ואדמה."
     l2: "kasi li wile e telo, e suno, e ma."
-  - l1: "People talk, have fun, sing, and sleep."
+  - l1: "אנשים מדברים, משחקים, שרים וישנים."
     l2: "jan li toki, li musi, li kalama, li lape."
 ---
 
@@ -22,56 +22,61 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
 
-We already know most of the words for animal and plant stuff -- let's learn the remaining ones!
+<div dir="rtl">
+
+למדנו כבר את רוב המילים שקשורות בבעלי חיים. בשיעור זה נוסיף לרשימה את המילים החסרות:
 
 <List>
-  <Word sl="akesi" m="reptile or amphibian, like a frog, lizard, snake" />
+  <Word sl="akesi" m="לטאה או זחל כמו נחש או צפרדע" />
   <Word
     sl="kala"
-    m="fish or sea creature, like a salmon, whale, shark, octopus"
+    m="דג או יצור ימי כמו סלמון, לוויתן, כריש או תמנן"
   />
-  <Word sl="pan" m="starchy food, like wheat, rice, bread, pasta" />
-  <Word sl="kili" m="fruit, vegetable" />
-  <Word sl="soko" m="mushroom" />
-  <Word sl="misikeke" m="medicine" />
-  <Word sl="namako" m="spice, garnish, adornment" />
-  <Sentence sl="soko li kili nasa." m="Mushrooms are strange fruit." />
+  <Word sl="pan" m="מזון עמילני כמו חיטה, תפוח אדמה, לחם, או פסטה" />
+  <Word sl="kili" m="פרי או ירק" />
+  <Word sl="soko" m="פטריה" />
+  <Word sl="misikeke" m="תרופה" />
+  <Word sl="namako" m="תבלין, קישוט, דבר מה שמוסיפים למשהו קיים" />
+  <Sentence sl="soko li kili nasa." m="פטריות הן צמחים מוזרים." />
   <Sentence
     sl="kala suli li alasa e kala lili."
-    m="A large fish hunts smaller fish."
+    m="דג גדול מנסה לצוד דג קטן."
   />
   <Sentence
     sl="mi o moku e misikeke lon tenpo mute."
-    m="I have to frequently take medication."
+    m="אני צריך לקחת תרופות בקביעות."
   />
 </List>
 
-## Ingredients
+## רכיבים
 
-Bread products are often used to hold together several different ingredients:
+מזונות שמבוססים על בצק מכילים, בדרך כלל, כמה מרכיבים:
 
 <List>
-  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="The pizza contains meat." />
-  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="The pizza contains vegetables." />
-  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="The pizza contains condiments." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="הפיצה מכילה בשר." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="הפיצה מכילה ירקות." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="הפיצה מכילה תבלינים." />
 </List>
 
-But how do we put them together into a single sentence? Well, each of them is the *object* of a sentence. A sentence can have *several objects*: several **󱤉 e**-phrases, which simply go one after the other:
+איך אפשר לחבר את כל המרכיבים למשפט אחד? התשובה היא שאפשר להוסיף למשפט כמה ביטויים של מושא ישיר, כאשר לפני כל אחד מהם חוזרים על המילית  **󱤉 e**:
 
 <List>
   <Sentence
     sl="pan li jo e soweli e kili e namako."
-    m="The pizza contains meat, vegetables, (and) condiments."
+    m="הפיצה מכילה בשר, ירקות ותבלינים"
   />
 </List>
 
-This is not special to just **󱤉 e**! You can combine several related ideas into one sentence with **󱤧 li**, **󱤡 la**, and prepositions too. For now let's just look at **󱤧 li**:
+גם על המילית **󱤧 li** ו **󱤡 la** ניתן לחזור כמה פעמים במשפט אחד, ולמעשה ניתן גם להוסיף כמה מילות יחס כדי להרחיב את המשפט עם ביטויי יחס שונים (זמן, מקום, סיבה וכו'). בשיעור הזה נביא דוגמא של משפט שיש בו חזרה על המילית **󱤧 li**: 
 
 <List>
-  <Sentence sl="jan li alasa e kala." m="The person hunts fish. (= the person fishes)." />
-  <Sentence sl="jan li seli e ona." m="The person cooks them." />
-  <Sentence sl="jan li moku e ona." m="The person eats them." />
-  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="The person hunts fish, cooks them, eats them." />
+  <Sentence sl="jan li alasa e kala." m="האיש דג דגים." />
+  <Sentence sl="jan li seli e ona." m="האיש מבשל אותם." />
+  <Sentence sl="jan li moku e ona." m="האיש אוכל אותם." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." 
+		m="האיש דג דגים, מבשל אותם, ואוכל אותם." />
 </List>
 
 <Practice exercises={frontmatter.practice} client:load />
+
+</div>
