@@ -1,0 +1,54 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Palabra</th>
+      <th>Significado</th>
+      <th>Consejos útiles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="jan" />
+      <td>persona</td>
+      <td>¡Recuerda cómo se pronuncia la letra <b>j</b>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="wan" />
+      <td>uno</td>
+      <td>¡Recuerda cómo se pronuncia la letra <b>w</b>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="linja" />
+      <td>línea</td>
+      <td>Se pronuncia parecido al español, ¡pero se escribe diferente!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>número</td>
+      <td>Por cierto, escribimos <b>np</b>, ¡pero solemos pronunciarlo como <b>mp</b>!
+      </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>sonido</td>
+      <td>¡Recuerda que la sílaba tónica es la primera! Aunque pueda parecer llana o grave, ¡es esdrújula!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>lagarto</td>
+      <td>¡Las palabras pueden comenzar por vocal!</td>
+    </tr>
+  </tbody>
+</table>

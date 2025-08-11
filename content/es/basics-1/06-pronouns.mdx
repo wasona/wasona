@@ -1,0 +1,79 @@
+---
+slug: "es/06"
+title: "Lección 6: Pronombres"
+description: "¡Aprende ni, mi, sina, ona!"
+practice:
+  - l1: "Esta es una planta entrañable."
+    l2: "ni li kasi suwi."
+  - l1: "Esos son unos ojos grandes."
+    l2: "ni li lukin suli."
+  - l1: "Tus ojos son grandes."
+    l2: "lukin sina li suli."
+  - l1: "Este pájaro es diminuto."
+    l2: "waso ni li lili."
+  - l1: "Unos bichos molestos se comieron mi planta."
+    l2: "pipi ike li moku e kasi mi."
+  - l1: "Eres adorable."
+    l2: "sina suwi."
+  - l1: "La veo."
+    l2: "mi lukin e ona."
+  - l1: "Elle come bien."
+    l2: "ona li moku pona."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Pronombres
+
+Probablemente te hayas cansado de frases largas y de jugar con las clases de palabras. Bajemos un poco el ritmo y señalemos cosas:
+
+<List>
+  <Word sl="ni" m="esto/esta/este, eso/esa/ese, aquello/aquella/aquel" />
+  <Sentence sl="ni li soweli." m="Esto es un animal." />
+  <Sentence sl="ni li kasi." m="Esto es una planta." />
+  <Sentence sl="ni li moku suwi." m="Esto es comida dulce." />
+  <Sentence sl="ni li suli." m="Esto es importante." />
+  <Sentence sl="ni li pona wawa." m="Esto es increíblemente bueno." />
+</List>
+
+Estas son nuestras primeras _frases sin un objeto_, ¡y por eso no hay ningún **󱤉 e** a la vista!
+
+A lo mejor te estás preguntando: **󱤧 li** inicia el verbo, ¿pero dónde está el verbo? En español, el verbo es 'ser'. En toki pona, no hay un verbo 'ser'. En su lugar, al tomar el rol de verbo en una frase, las palabras automáticamente incluyen 'ser' en su significado: **󱥢 soweli** 'ser un animal', **󱥣 suli** 'ser importante'.
+
+Ya hemos visto un pronombre, así que veamos algunos más:
+
+<List>
+  <Word sl="mi" m="yo, nosotr(os/as/es); mi, nuestr(o/a/e)" />
+  <Word sl="sina" m="tú, usted, vosotr(os/as/es), ustedes; tu, vuestr(o/a/e), su" />
+  <Word sl="ona" m="ella, él, elle, ell(os/as/es); su" />
+</List>
+
+Practiquemos el uso de **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, y **󱥁 ni** en frases:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Esta planta es grande." />
+  <Sentence sl="sona sina li wawa." m="Tu conocimiento es impresionante." />
+  <Sentence sl="pipi ni li pipi mi." m="Este bicho es mi bicho." />
+  <Sentence sl="waso sina li lukin e mi." m="Tu pájaro me ve." />
+  <Sentence sl="waso li moku e pipi ni." m="El pájaro come estos insectos." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Mi animal come su planta." />
+</List>
+
+¡Apuesto a que ya te has acostumbrado a frases como estas! En la mayoría de posiciones de la frase, los pronombres se comportan como sustantivos y adjetivos normales. Pero algo extraño sucede cuando **󱤴 mi** o **󱥞 sina** son el sujeto de la frase:
+
+<List>
+  <Sentence sl="mi wawa." m="Soy fuerte." />
+  <Sentence sl="sina lukin e moku." m="Ves comida." />
+  <Sentence sl="mi sona e kasi suli." m="Conozco la planta grande." />
+  <Sentence sl="sina sona e suli kasi." m="Sabes el tamaño de la planta." />
+</List>
+
+El toki pona tiene una regla especial: cuando **󱤴 mi** o **󱥞 sina** es el sujeto de la frase, quitamos el **󱤧 li** que normalmente seguiría al sujeto. ¡Esto se debe a que las frases que comienzan con **󱤴 mi** o **󱥞 sina** son extremadamente comunes!
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Véase también
+* [Q: ¿Acaso 'li' significa 'es'?](es/li-and-is)

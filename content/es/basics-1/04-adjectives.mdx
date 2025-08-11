@@ -1,0 +1,71 @@
+---
+slug: "es/04"
+title: "Lección 4: Adjetivos"
+description: "¡Aprende suli, lili, pona, ike, wawa, suwi!"
+practice:
+  - l1: "un animal tierno"
+    l2: "soweli suwi"
+  - l1: "un insecto malo"
+    l2: "pipi ike"
+  - l1: "un pájaro fuerte"
+    l2: "waso wawa"
+  - l1: "El pájaro conoce un animal fuerte."
+    l2: "waso li sona e soweli wawa."
+  - l1: "Un insecto pequeño mira a un animal grande."
+    l2: "pipi lili li lukin e soweli suli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## ¡Describe!
+
+Después de sustantivos (cosas) y verbos (acciones), ¡lo siguiente son los adjetivos (descripciones)!
+Memoricemos unos cuantos:
+
+<List>
+  <Word sl="suli" m="grande, importante" />
+  <Word sl="lili" m="pequeño, joven" />
+  <Word sl="pona" m="bueno, agradable" />
+  <Word sl="ike" m="malo, desagradable" />
+  <Word sl="wawa" m="potente, asombroso" />
+  <Word sl="sona" m="conocedor, sabio" />
+  <Word sl="suwi" m="tierno, dulce" />
+</List>
+
+Al igual que en español, los adjetivos en toki pona van después de los sustantivos:
+
+<List>
+  <Word sl="soweli suli" m="un animal grande" />
+  <Word sl="pipi lili" m="un bicho pequeño" />
+  <Word sl="waso suwi" m="un pájaro adorable" />
+</List>
+
+Hagamos algunas frases con descripciones:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="El pájaro ve un animal tierno."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="El animal fuerte come plantas grandes."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Los bichos molestos muerden un poco al animal."
+  />
+  <Sentence
+    sl="waso sona li sona pona e pipi."
+    m="El ave sabia conoce bien a los bichos."
+  />
+</List>
+
+Si estas frases se sienten largas y tediosas, ¡no te preocupes! Pronto veremos algunas más cortas. Recuerda: ¡la estructura de la frase en realidad es bastante simple! Siempre puedes identificar cuál es el sujeto, el verbo y el objeto, fijándote en **󱤧 li** y **󱤉 e**.
+
+Ojo al dato: en español, los adjetivos solo complementan sustantivos. Pero en toki pona, también pueden ir junto a verbos: _morder un poco_ ~ _moku lili_, _conocer bien_ ~ _sona pona_. No se distingue entre adjetivos y adverbios en toki pona. 
+
+<Practice exercises={frontmatter.practice} client:load />
