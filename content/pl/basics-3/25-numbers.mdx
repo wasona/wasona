@@ -1,0 +1,81 @@
+---
+slug: "pl/25"
+title: "lekcja 25: liczby"
+description: "Naucz się słów: nanpa, wan, tu, ale, kipisi!"
+practice:
+  - l1: "osiem"
+    l2: "luka tu wan"
+  - l1: "Kroisz chleb."
+    l2: "sina kipisi e pan."
+  - l1: "My dwoje się łączymy."
+    l2: "mi tu li kama wan."
+  - l1: "Znam trzy języki."
+    l2: "mi sona e toki tu wan."
+  - l1: "5 euro"
+    l2: "mani luka pi ma Elopa"
+  - l1: "Zaczyna się kwiecień."
+    l2: "tenpo mun nanpa tu tu li open."
+    alsoAccept:
+      - "mun nanpa tu tu li open."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Liczby główne
+
+Porozmawiajmy o liczbach!
+
+<List>
+  <Word sl="wan" m="jeden; połączony" />
+  <Word sl="tu" m="dwa; podzielony" />
+  <Word sl="luka" m="pięć, ręka" />
+  <Word sl="mute" m="wiele" />
+  <Word sl="ale" m="wszystko, każdy" />
+  <Word sl="kipisi" m="kawałek, część; dzielić" />
+</List>
+
+Toki pona ma słowa dla liczb 1, 2 i 5, ale nie 3 ani 4! Jednak to nie jest takie dziwne. Możesz wyobrazić sobie **󱥳 wan**, **󱥮 tu**, **󱤭 luka** jako monety o nominałach 1, 2 i 5. Spróbujmy policzyć od 1 do 10:
+
+<List>
+    <Word sl="wan" m="raz" />
+    <Word sl="tu" m="dwa" />
+    <Word sl="tu wan" m="trzy" />
+    <Word sl="tu tu" m="cztery" />
+    <Word sl="luka" m="pięć" />
+    <Word sl="luka wan" m="sześć" />
+    <Word sl="luka tu" m="siedem" />
+    <Word sl="luka tu wan" m="osiem" />
+    <Word sl="luka tu tu" m="dziewięć" />
+    <Word sl="luka luka" m="dziesięć" />
+</List>
+
+W wielu sytuacjach wystarczy znać małe liczby. Jednak jeśli chcesz mówić o zakupach lub o kalendarzu gregoriańskim, na dole jest dodatkowa strona o dużych liczbach.
+
+## Liczby porządkowe
+
+Najczęściej liczby to po prostu przymiotniki:
+
+<List>
+    <Word sl="kala wan" m="jedna ryba" />
+    <Word sl="soko tu tu" m="cztery grzyby" />
+    <Word sl="mun luka" m="pięć miesięcy" />
+</List>
+
+Ale to są liczby *główne*, które mówią o ilości. Są też liczby *porządkowe*, które mówią o kolejności. Aby stworzyć liczbę porządkową, użyj **󱤽 nanpa** + liczby:
+
+<List>
+    <Word sl="nanpa" m="liczba; ...-ty" />
+    <Word sl="kala nanpa wan" m="pierwsza ryba" />
+    <Word sl="soko nanpa tu tu" m="czwarty grzyb" />
+    <Word sl="mun nanpa luka" m="piąty miesiąc" />
+</List>
+
+(Nawiasem mówiąc, **󱤽 nanpa** jest specjalne! Nie potrzebuje **󱥍 pi**.)
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [P: jak komunikować duże liczby?](/pl/large-numbers)
