@@ -1,0 +1,63 @@
+---
+slug: "hu/26"
+title: "26. lecke: szeretet és identitás"
+description: "Tanuld meg a következő szavakat: olin, unpa, mama, mije, meli, tonsi, en!"
+practice:
+  - l1: "Az apukám szereti az anyukámat."
+    l2: "mama mije mi li olin e mama meli mi."
+    alsoAccept:
+      - "mama mi mije li olin e mama mi meli."
+      - "mama mi li olin e mama mi." # lol
+  - l1: "A barátnőm cuki."
+    l2: "meli mi li suwi."
+  - l1: "Tetszennek nekem a nők, a férfiak, és a nembináris emberek."
+    l2: "meli en mije en tonsi li pona tawa mi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Már láttad, hogy a **󱤧󱥔󱥩󱤴 ... li pona tawa mi** egy gyakori fordítása annak, hogy "*... tetszik nekem*". És természetesen mondhatjuk azt, hogy **󱥔󱤼 pona mute**, ha valaki *nagyon tetszik*. De ez nem ugyanaz, mint *szeretni* valakit. Nézzük meg a szeretet szavait, és hogyan hívd a szeretteidet:
+
+<List>
+  <Word sl="olin" m="szeretni" />
+  <Word sl="unpa" m="szexelni" />
+  <Word sl="mama" m="szülő" />
+  <Word sl="mije" m="férfi, "férfias"/maszkulin ember, férj; hím" />
+  <Word sl="meli" m="nő, "nőies"/feminin ember, feleség; nőstény" />
+  <Word sl="tonsi" m="nembináris; transz" />
+</List>
+
+Sok nyelvi kurzus a "férfi, nő, lány, fiú, anya, apa" szavakkal kezdődik. A toki ponában a nem nem fontos. Nem fogod látni minden mondatban azt, hogy **󱤵 mije**, **󱤳 meli**, vagy **󱥾 tonsi**.
+
+<List>
+    <Sentence sl="mi olin e mije mi." m="Szeretem a férjemet."/>
+    <Sentence sl="mama o!" m="Anya! (vagy) Apa!"/>
+    <Sentence sl="mi olin e meli." m="Szeretem a lányokat."/>
+</List>
+
+Pár példa, ahol releváns lehet a nemekről beszélni:
+
+<List>
+  <Sentence sl="len mi li mije." m="Az öltözködésem maszkulin." />
+  <Sentence sl="jan olin mi li tonsi." m="A párom nembináris." />
+  <Sentence sl="mi meli e sijelo mi kepeken misikeke." m="Nőiesebbé teszem a testemet gyógyszerrel." />
+</List>
+
+## Több alany
+
+Már láttuk, hogy az *"e ... e ..."* segítségével több tárgy lehet a mondatban, és a *"li ... li ..."* segítségével pedig több ige. De nem rakhatunk két alanyt egymás mellé, mert akkor nem tudjuk, hogy hol végződik az első és hol kezdődik a következő. Erre a problémára ezt a szócskát használjuk:
+
+<List>
+  <Word sl="en" m="összecsatolja az alanyokat" />
+  <Sentence sl="mi en ona li toki." m="Én és ő beszélgetünk." />
+  <Sentence sl="soweli en waso li utala." m="Az állat és a madár harcol." />
+  <Sentence sl="meli en mije li unpa." m="A nő és a férfi szexelnek." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Lásd még
+* [A deeper discussion on gender and Toki Pona, by wan Tansin](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/)

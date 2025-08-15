@@ -1,0 +1,53 @@
+---
+slug: "hu/24"
+title: "24. lecke: test"
+description: "Tanuld meg a következő szavakat: sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
+practice:
+  - l1: "Fáj a fejem."
+    l2: "lawa mi li pakala."
+  - l1: "Hallottam egy halk hangot."
+    l2: "mi kute e kalama lili."
+  - l1: "Te engedelmeskedsz. Én parancsolok."
+    l2: "sina kute. mi lawa."
+  - l1: "A fűszer forró a számnak."
+    l2: "namako li seli tawa uta mi."
+  - l1: "Simogasd meg a cuki kutyát!"
+    l2: "o luka e soweli suwi!"
+  - l1: "A gyógyszer javítja az ő testét."
+    l2: "misikeke li pona e sijelo ona."
+  - l1: "Az ő haja jó az érintésnek."
+    l2: "linja lawa ona li pona tawa luka."
+  - l1: "A hegy hasonló az arcomon lévő orrhoz."
+    l2: "nena kiwen li sama nena pi sinpin mi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Már tudjuk a szavakat a *szemre*, *szívre*, *arcra*, és *hátra*, szóval tanuljuk meg a többi testrészt:
+
+<List>
+  <Word sl="lawa" m="fej; irányítani" />
+  <Word sl="kute" m="fül; hallani, engedelmeskedni" />
+  <Word sl="nena" m="dudor, pl. orr, domb, mell" />
+  <Word sl="uta" m="száj, ajkak; csókolni, harapni" />
+  <Word sl="sijelo" m="test" />
+  <Word sl="luka" m="kéz, kar; érinteni, simogatni" />
+  <Word sl="noka" m="láb, talp" />
+  <Word sl="palisa" m="hosszú kemény dolog, pl. faág, pálca, rúd" />
+  <Word sl="linja" m="hosszú hajlékony dolog, pl. madzag, kötél, haj" />
+</List>
+
+Sok testrészhez asszociálunk valamilyen tevékenységet: a fej irányít, a szemek látnak, a fülek hallanak, a száj csókol, a szív érez, a kezek érintenek.
+
+<List>
+  <Sentence sl="mi wile suli e linja lawa mi." m="Meg akarom növeszteni a hajamat." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="A főnököm hallotta, hogy csúnyán beszélek." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="A tükör egy fordított képet ad." />
+  <Sentence sl="sijelo mi li wile e lape." m="A testem pihenni akar." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Az ujjaim nagyobbak, mint a lábujjaim." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

@@ -1,0 +1,80 @@
+---
+slug: "hu/06"
+title: "6. lecke: névmások"
+description: "Tanuld meg a következő szavakat: ni, mi, sina, ona!"
+practice:
+  - l1: "Ez egy cuki növény."
+    l2: "ni li kasi suwi."
+  - l1: "Ezek nagy szemek."
+    l2: "ni li lukin suli."
+  - l1: "A te szemeid nagyok."
+    l2: "lukin sina li suli."
+  - l1: "Ez a madár kicsi."
+    l2: "waso ni li lili."
+  - l1: "A gonosz bogár megette a növényeimet."
+    l2: "pipi ike li moku e kasi mi."
+  - l1: "Te cuki vagy."
+    l2: "sina suwi."
+  - l1: "Én látom őket."
+    l2: "mi lukin e ona."
+  - l1: "Ők jól esznek."
+    l2: "ona li moku pona."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Névmások
+
+Már biztos fáradt vagy a hosszú mondatok és a szófajszabályok után. Nézzünk valami egyszerűbbet: mutassunk dolgokra:
+
+<List>
+  <Word sl="ni" m="ez, az" />
+  <Sentence sl="ni li soweli." m="Ez egy állat." />
+  <Sentence sl="ni li kasi." m="Eg egy növény." />
+  <Sentence sl="ni li moku suwi." m="Ez egy édes étel." />
+  <Sentence sl="ni li suli." m="Ez fontos." />
+  <Sentence sl="ni li pona wawa." m="Ez elképesztően jó." />
+</List>
+
+Ezek az első mondataink _tárgy nélkül_, tehát nincs **󱤉 e** a mondatokban!
+
+Lehet hogy azon gondolkozol, hogy a **󱤧 li** az ige előtt áll. De mi az ige? Magyarban az egyszerűbb mondatokban nincs is ige (létige): *A tudás jó. Ő magas. Az az állat cuki.* Viszont másokban van (a "van" létige különböző alakjai): *Az állat kicsi **volt**. Te magas **vagy**. Az étel finom **lenne**.* Viszont a toki ponában nincs létige, nincs "van". Ilyenkor az egyszerűbb magyar mondatokhoz hasonlóan nincs ige: **ni li soweli** "Ez egy állat." **ni li suli.** "Ez fontos."
+
+Most nézzünk még több névmást:
+
+<List>
+  <Word sl="mi" m="én, mi; enyém, miénk" />
+  <Word sl="sina" m="te; tiéd" />
+  <Word sl="ona" m="ő, az, ők; övé, övék" />
+</List>
+
+Gyakoroljuk a **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, és **󱥁 ni** használatát mondatokban:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Ez a növény nagy." />
+  <Sentence sl="sona sina li wawa." m="A te tudásod elképesztő." />
+  <Sentence sl="pipi ni li pipi mi." m="Ez az én bogaram." />
+  <Sentence sl="waso sina li lukin e mi." m="A te madarad lát engem." />
+  <Sentence sl="waso li moku e pipi ni." m="A madár megeszi ezt a bogarat." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Az állatom megeszi az növényét." />
+</List>
+
+Ezeknek a mondatoknak már ismerősnek kell lenniük. A névmások ugyanúgy működnek, mint a sima főnevek és melléknevek. De valami furcsa történik, ha **󱤴 mi** vagy **󱥞 sina** az alany:
+
+<List>
+  <Sentence sl="mi wawa." m="Én erős vagyok." />
+  <Sentence sl="sina lukin e moku." m="Te látsz ételt." />
+  <Sentence sl="mi sona e kasi suli." m="Én ismerem a nagy növényt." />
+  <Sentence sl="sina sona e suli kasi." m="Te ismered a növény méretét." />
+</List>
+
+A toki ponában van egy szabály: ha az alany pontosan **󱤴 mi** vagy **󱥞 sina**, akkor nincsen **󱤧 li** a mondatban. Ez azért van, mert nagyon gyakoriak a **󱤴 mi** vagy **󱥞 sina** szavakkal kezdődő mondatok.
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [A "li" azt jelenti, hogy "van"?](hu/li-and-is)
+

@@ -1,0 +1,91 @@
+---
+slug: "hu/07"
+title: "7. lecke: nevek"
+description: "Tanuld meg a következő szavakat: nimi, jan, sitelen, toki, ma, tomo!"
+practice:
+  - l1: "A földet rajzolom."
+    l2: "mi sitelen e ma."
+  - l1: "Nagy a te képed."
+    l2: "sitelen sina li suli."
+  - l1: "Az emberek épületekről beszélnek."
+    l2: "jan li toki e tomo."
+  - l1: "A neved Maya."
+    l2: "nimi sina li jan Maja."
+  - l1: "Iman arabul beszél."
+    l2: "jan Iman li toki Alapi."
+  - l1: "Toronto város nagy."
+    l2: "ma tomo Towano li suli."
+  - l1: "Cirill írást látok."
+    l2: "mi lukin e sitelen Kililisa."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Nevek
+
+Jó dolgokra mutogatni, de néha pontosabbnak kell lennünk. Nevek segítségével pontosan tudsz beszélni valamiről vagy valakiről.
+
+Tanuljunk pár dolgot, aminek neve szokott lenni:
+
+<List>
+  <Word sl="nimi" m="név, szó" />
+  <Word sl="jan" m="ember" />
+  <Word sl="sitelen" m="kép, írás; rajzolni, írni" />
+  <Word sl="toki" m="beszéd, nyelv; beszélni, mondani" />
+  <Word sl="ma" m="föld, ország" />
+  <Word sl="tomo" m="épület, szoba, otthon" />
+</List>
+
+Már tudsz egy nevet: _sitelen Lasina_! Nézzünk pár személynevet:
+
+<List>
+  <Sentence sl="jan Nowa" m="Noah nevű ember (a 'Noah' szóból)" />
+  <Sentence sl="jan Ema" m="Emma nevű ember (az 'Emma' szóból)" />
+</List>
+
+Ezekből a nevekből láthatod:
+
+1. A nevek melléknevek: a szó után állnak.
+2. A nevek nagybetűvel kezdődnek. Ha látsz egy nagybetűs toki pona szót, akkor egyből tudod, hogy az egy név.
+3. A _sitelen ponában_ a neveket egy nagy **󱥂 nimi**be írjuk. Ezt a névblokkot nevezzük _kartusnak_ pont úgy, mint az egyiptomi hieroglifákban. A szó minden hangjánál kiválasztunk egy olyan szót, amely azzal a hanggal kezdődik. Például az "Ema" leírható úgy, hogy 󱤉 **e**, 󱤶 **m**oku, 󱤂 **a**la.
+
+Nem csak embereknek van nevük. Nézzünk pár nyelvet, országot, várost:
+
+<List>
+  <Sentence
+    sl="toki Kanse"
+    m="a francia nevű nyelv (a francia 'français' szóból)"
+  />
+  <Sentence sl="ma Tosi" m="a Németország nevű ország (a német 'Deutsch' szóból)" />
+  <Sentence
+    sl="ma tomo Loma"
+    m="Róma nevű épülethely (a latin 'Rōma' szóból)"
+  />
+</List>
+
+Ezek a nevek megmutatják, hogyan készül egy toki pona név:
+
+4. Először megváltozik a név a toki pona hangrendszere szerint. Nincs **d** a toki ponában, ezért a Deutsch szónak **t**-vel kell kezdődnie. Van kisebb változás, például _Noah_ → _Nowa_, de van nagyobb, például _français_ → _Kanse_.
+5. A nevek nem angolból vagy egy fix nyelvből származnak, hanem _endonimákat_ használunk: ahogyan a saját magukat, országukat, nyelvüket hívják. A szó a franciákra, Franciaországra, és a francia nyelvre a franciából származik.
+
+Tanuljuk meg az új szavak használatát mondatokban:
+
+<List>
+  <Sentence sl="waso li lukin e ma." m="A madár a földet nézi." />
+  <Sentence sl="jan li toki e tomo." m="Az emberek egy házról beszélnek." />
+  <Sentence sl="jan pona li toki pona." m="Kedves emberek jól beszélnek." />
+  <Sentence sl="nimi ona li jan Kenta." m="A neve Kenta." />
+  <Sentence sl="jan Sunita li sitelen e pipi." m="Sunita rajzol egy bogarat." />
+  <Sentence sl="jan Nina li toki Kanse." m="Nina franciául beszél." />
+  <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma jól tud németül." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## See also
+* [Mi a nevem toki ponául?](hu/make-a-name)
+* [Sitelen ponául túl hosszúak a nevek. Hogyan lehet lerövidíteni őket?](hu/simpler-cartouches)
+

@@ -1,0 +1,55 @@
+---
+slug: "hu/03"
+title: "3. lecke: egyszerű mondatok"
+description: "Tanuld meg a következő szavakat: li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
+practice:
+  - l1: "Az állat ismeri a bogarat."
+    l2: "soweli li sona e pipi."
+  - l1: "A bogár növényt eszik."
+    l2: "pipi li moku e kasi."
+  - l1: "A madár növényt lát."
+    l2: "waso li lukin e kasi."
+  - l1: "A madár ismeri az állatot."
+    l2: "waso li sona e soweli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Egyszerű mondatok
+
+Most hogy már tudsz toki ponául olvasni, itt az ideje, hogy megtanulj pár szót és az egyszerű mondatok alkotását.
+Itt van pár szó dolgokra és tevékenységekre:
+
+<List>
+  <Word sl="soweli" m="szárazföldi állat, pl. macska, kutya, tehén, egér, elefánt" />
+  <Word sl="waso" m="madár, pl. galamb, liba, bagoly" />
+  <Word sl="pipi" m="rovar, pl. hangya, pillangó, pók" />
+  <Word sl="kasi" m="növény, pl. lóhere, nyírfa, kaktusz, moha" />
+  <Word sl="moku" m="enni" />
+  <Word sl="lukin" m="látni" />
+  <Word sl="sona" m="tudni, ismerni" />
+</List>
+
+Nagyon gyakori az "alany-ige-tárgy" mondat. Ez azt jelenti, hogy egy dolog (alany) csinál valamit (ige) egy másik dolognak (tárgy). Nézzünk pár példát:
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="Az állat növényt eszik." />
+  <Sentence sl="waso li moku e pipi." m="A madár bogarakat eszik." />
+  <Sentence sl="pipi li lukin e soweli." m="A bogár lát egy állatot." />
+  <Sentence sl="waso li sona e kasi." m="A madár ismeri a fát." />
+</List>
+
+Amit tanultunk:
+
+- A mondatrészek sorrendje: alany, ige, tárgy.
+- **󱤧 li** az ige elé kerül.
+- **󱤉 e** a tárgy elé kerül.
+- A magyar fordítás tartalmaz olyan szavakat vagy toldalékokat mint "az", "egy", "-k", de ez csak találgatás! A toki pona mondat nem részletezi, hogy "_egy_ madár" vagy "_a_ madár". Hosszabb párbeszédekben ez egyértelműbbé válik.
+
+(**󱤧 li** és **󱤉 e** lehet, hogy feleslegesnek tűnnek. Meg fogjuk tanulni, hogy miért szükségesek, de ahhoz először többet kell tanulnunk a szófajokról.)
+
+<Practice exercises={frontmatter.practice} client:load />
+
