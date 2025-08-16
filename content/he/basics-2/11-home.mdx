@@ -1,0 +1,73 @@
+---
+slug: "he/11"
+title: "שיעור 11: בבית"
+description: "בשיעור זה נכיר את המילים  ilo, lipu, poki, supa, lupa, len, open, pini, jo, ijo!"
+practice:
+  - l1: "את/ה סוגר/ת את הדלת."
+    l2: "sina pini e lupa."
+  - l1: "חתול נמצא בבית שלי."
+    l2: "soweli li lon tomo mi."
+  - l1: "בבית שלי יש חתול."
+    l2: "tomo mi li jo e soweli."
+  - l1: "הציפור שלך זקוקה לאוכל."
+    l2: "waso sina li wile e moku."
+  - l1: "סוניטה יכולה לשיר יפה."
+    l2: "jan Sunita li ken kalama pona."
+  - l1: "אני רוצה לדבר על מכונת תפירה."
+    l2: "mi wile toki e ilo len."
+  - l1: "מישהו הניח על השולחן ספר על חרקים."
+    l2: "jan li pana e lipu pipi tawa supa."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+<div dir="rtl">
+
+## בבית
+
+הנה כמה דוגמאות למילים שקשורות לחפצים שנמצאים בבית:
+
+<List>
+  <Word sl="ilo" m="כלי או מכשיר כמו פטיש, מזלג, טלפון או אפליקציה" />
+  <Word sl="lipu" m="חפץ שטוח כמו נייר, כרטיס, ספר או דף באתר אינטרנט" />
+  <Word sl="poki" m="כלי קיבול כמו מיכל, קופסה, מגירה או בקבוק" />
+  <Word sl="supa" m="משטח אופקי כמו מדף, שולחן או ספה" />
+  <Word sl="lupa" m="פתח כלשהו כמו דלת, חלון או בור" />
+  <Word sl="len" m="כיסוי כלשהו כמו בגד, נעל או שמיכה" />
+</List>
+
+בנוסף, כמה פעלים שיאפשרו לנו לעשות פעולות עם החפצים שהכרנו:
+
+<List>
+  <Word sl="open" m="להתחיל, לפתוח, להפעיל" />
+  <Word sl="pini" m="לסיים, לסגור, לכבות" />
+  <Word sl="jo" m="להכיל, לכלול, להחזיק במשהו" />
+</List>
+
+עכשיו אנחנו יכולים להרכיב מהמילים האלו משפטים:
+
+<List>
+  <Sentence sl="mi open e lupa." m="אני פותח את הדלת." />
+  <Sentence sl="jan li pini e poki moku." m="האיש סוגר את המקרר." />
+  <Sentence sl="lipu li lon supa lape." m="הספר על המיטה." />
+  <Sentence sl="poki mi li ken jo e len." m="המגירה שלי מכילה בגדים (יש בגדים במגירה שלי)." />
+  <Sentence sl="ilo mi li wile e wawa." m="הטלפון שלי זקוק לחשמל." />
+</List>
+
+## משהו
+
+בתוך קופסה אפשר למצוא בגדים, ניירות, כלים, תמונות... כל מיני דברים! כדי להתייחס למכלול של הדברים באופן כללי, משתמשים במילה ijo:
+
+<List>
+  <Word sl="ijo" m="משהו, דבר כלשהו" />
+  <Sentence sl="poki li jo e ijo." m="יש משהו בקופסה." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="מישהו/י מצייר/ת משהו חמוד." />
+  <Sentence sl="mi wile toki e ijo kasi." m="אני רוצה לדבר על משהו שקשור בפרחים." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+</div>

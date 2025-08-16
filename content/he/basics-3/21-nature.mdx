@@ -1,0 +1,82 @@
+---
+slug: "he/21"
+title: "שיעור 21: טבע"
+description: "בשיעור זה נכיר את המילים akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+  - l1: "פטריות אוכלות צמחים רקובים."
+    l2: "soko li moku e kasi moli."
+  - l1: "תאפה/י את הבצק!"
+    l2: "o seli e ko pan."
+  - l1: "עקרתי את התפוח מהאדמה."
+    l2: "mi weka e kili tan ma."
+  # - l1: "אני חושש/ת מנחשים."  # 21_4
+    # l2: "mi pilin monsuta tan akesi linja."
+  - l1: "צמחים זקוקים למים, אור ואדמה."
+    l2: "kasi li wile e telo, e suno, e ma."
+  - l1: "אנשים מדברים, משחקים, שרים וישנים."
+    l2: "jan li toki, li musi, li kalama, li lape."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+<div dir="rtl">
+
+למדנו כבר את רוב המילים שקשורות בבעלי חיים. בשיעור זה נוסיף לרשימה את המילים החסרות:
+
+<List>
+  <Word sl="akesi" m="לטאה או זחל כמו נחש או צפרדע" />
+  <Word
+    sl="kala"
+    m="דג או יצור ימי כמו סלמון, לוויתן, כריש או תמנן"
+  />
+  <Word sl="pan" m="מזון עמילני כמו חיטה, תפוח אדמה, לחם, או פסטה" />
+  <Word sl="kili" m="פרי או ירק" />
+  <Word sl="soko" m="פטריה" />
+  <Word sl="misikeke" m="תרופה" />
+  <Word sl="namako" m="תבלין, קישוט, דבר מה שמוסיפים למשהו קיים" />
+  <Sentence sl="soko li kili nasa." m="פטריות הן צמחים מוזרים." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="דג גדול מנסה לצוד דג קטן."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="אני צריך/ה לקחת תרופות בקביעות."
+  />
+</List>
+
+## רכיבים
+
+מזונות שמבוססים על בצק מכילים, בדרך כלל, כמה מרכיבים:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="הפיצה מכילה בשר." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="הפיצה מכילה ירקות." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="הפיצה מכילה תבלינים." />
+</List>
+
+איך אפשר לחבר את כל המרכיבים למשפט אחד? התשובה היא שאפשר להוסיף למשפט כמה ביטויים של מושא ישיר, כאשר לפני כל אחד מהם חוזרים על המילית  **󱤉 e**:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="הפיצה מכילה בשר, ירקות ותבלינים"
+  />
+</List>
+
+גם על המילית **󱤧 li** ו **󱤡 la** ניתן לחזור כמה פעמים במשפט אחד, ולמעשה ניתן גם להוסיף כמה מילות יחס כדי להרחיב את המשפט עם ביטויי יחס שונים (זמן, מקום, סיבה וכו'). בשיעור הזה נביא דוגמא של משפט שיש בו חזרה על המילית **󱤧 li**: 
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="האיש/ה דג/ה דגים." />
+  <Sentence sl="jan li seli e ona." m="האיש/ה מבשל/ת אותם." />
+  <Sentence sl="jan li moku e ona." m="האיש/ה אוכל/ת אותם." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." 
+		m="האיש/ה דג/ה דגים, מבשל/ת אותם, ואוכל/ת אותם." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+</div>

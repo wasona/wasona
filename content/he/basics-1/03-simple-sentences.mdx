@@ -1,0 +1,57 @@
+---
+slug: he/03
+title: "שיעור 3: משפטים פשוטים"
+description: "בשיעור זה נכיר את המילים: li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
+practice:
+  - l1: החיה מכירה את החרק.
+    l2: soweli li sona e pipi.
+  - l1: החרק אוכל צמחים.
+    l2: pipi li moku e kasi.
+  - l1: הציפור רואה צמחים.
+    l2: waso li lukin e kasi.
+  - l1: הציפור מכירה את החיה.
+    l2: waso li sona e soweli.
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+<div dir="rtl">
+
+## משפטים פשוטים
+
+אחרי שלמדנו איך לקרוא ולכתוב Toki Pona, הגיע הזמן ללמוד מילים וליצור מהם משפטים. המילים שנשתמש בהן: 
+
+<List>
+  <Word sl="soweli" m="בעל חיים יבשתי. למשל: חתול, כלב, פרה, עכבר או פיל" />
+  <Word sl="waso" m="ציפור או עוף. למשל: יונה, אווז או ינשוף" />
+  <Word sl="pipi" m="חרק. למשל: חיפושית, נמלה, פרפר או עכביש" />
+  <Word sl="kasi" m="צמח. למשל: פרח, עץ, קקטוס או טחב" />
+  <Word sl="moku" m="לצרוך, על כל המשמעויות של המילה" />
+  <Word sl="lukin" m="לראות" />
+  <Word sl="sona" m="לדעת, להבין" />
+</List>
+
+הצורה הבסיסית ביותר של משפטים בשפות רבות היא: נושא-נשוא-מושא. במשפטים אלה הנושא עושה פעולה כלשהי על המושא. הנה כמה דוגמאות:
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="החיה אוכלת צמח." />
+  <Sentence sl="waso li moku e pipi." m="הציפור אוכלת חרקים." />
+  <Sentence sl="pipi li lukin e soweli." m="החרק רואה את החיה." />
+  <Sentence sl="waso li sona e kasi." m="הציפור מכירה את העץ." />
+</List>
+
+כמה נקודות שכדאי לשים לב אליהן: 
+
+- סדר המילים במשפטים אלה קבוע: קודם הנושא, אחר כך הנשוא ולבסוף המושא.
+- המילית **󱤧 li** תופיע לפני הנשוא. 
+- המילית **󱤉 e** תופיע לפני המושא.
+- בשפת Toki Pona אין הבדל בין שם עצם מיודע (הציפור) לבין שם עצם לא-מיודע (ציפור). כשמתרגמים משפט בודד - הדרך היחידה היא לנחש, או לתרגם על פי מה שנשמע הכי הגיוני או מתאים למשפט אותו מתרגמים. כאשר מתרגמים כמה משפטים שיוצרים סיפור או שיחה, הצורה שיש לבחור ברורה יותר.
+
+במבט ראשוני, במיוחד כשמדובר על משפטים פשוטים, עושה רושם כאילו המילים **󱤧 li** ו **󱤉 e** מיותרות. בהמשך, כשנפגוש משפטים מורכבים יותר, תוכלו להבין מדוע, בכל זאת, יש בהן צורך. 
+
+<Practice exercises={frontmatter.practice} client:load />
+
+</div>
