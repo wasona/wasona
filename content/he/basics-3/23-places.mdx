@@ -1,0 +1,66 @@
+---
+slug: "he/23"
+title: "שיעור 23: מקומות"
+description: "בשיעור הזה נכיר את המילים selo, insa, monsi, sinpin, anpa!"
+practice:
+  - l1: "קליפת העץ מגינה על פנים הצמח."
+    l2: "selo kasi li awen e insa kasi."
+  - l1: "קירות הבית ניזוקו."
+    l2: "sinpin tomo li pakala."
+  - l1: "הקירות של הבית הזה זקוקים לבלוקים (לבנים)."
+    l2: "sinpin pi tomo ni li wile e leko."
+  - l1: "הציפור של סוניטה חמודה."
+    l2: "waso pi jan Sunita li suwi."
+  - l1: "בלגיה נמצאת ליד צרפת."
+    l2: "ma Pesije li lon poka pi ma Kanse."
+  - l1: "הצפרדע שלך נמצאת מאחרי הצפרדע שלי."
+    l2: "akesi sina li lon monsi pi akesi mi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+<div dir="rtl">
+
+בשיעור הקודם הכרנו את המילה **󱥍 pi**. למדנו שלצירוף של מילים יכולות להיות שתי משמעויות שונות כשמוסיפים לו את המילה **󱥍 pi** לעומת המשמעות של אותו רצף מילים ללא המילה **󱥍 pi**. 
+
+יש גם מקרים שצירוף של מילים הוא חסר משמעות ללא המילה **󱥍 pi**, במיוחד ביטויים של שמות. הנה שתי דוגמאות: 
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Sentence sl="soweli pi jan Ema" m="הכלב של אמה" />
+  <Sentence sl="soweli jan Ema" m="כלב אנושי בשם אמה (???)" />
+  <Sentence sl="toki pi jan Mili" m="הנאום של מילי" />
+  <Sentence sl="toki jan Mili" m="שפה אנושית בשם מילי (???)" />
+</List>
+
+כפי שלמדנו, אם לא שותלים בצירוף של המילים את המילית **󱥍 pi**, השם (שהוא המילה האחרונה ברצף) מרחיב את הביטוי שמורכב מכלל המילים שלפניו. הביטוי הכולל שנוצר הוא, בדרך כלל, חסר משמעות. מסיבה זו, ברוב הביטויים שכוללים שם, בין אם זה שם של מקום או של בנאדם, תופיע המילה **󱥍 pi**.
+
+ מילים חדשות:
+ 
+<List>
+  <Word sl="selo" m="מעטפת, קליפה, קרום, עור" />
+  <Word sl="insa" m="החלק הפנימי, מרכב, אמצע" />
+  <Word sl="monsi" m="גב, אחורה" />
+  <Word sl="sinpin" m="פָּנִים, חזית, קיר" />
+  <Word sl="anpa" m="למטה, להפסיד (בתחרות או בקרב)" />
+</List>
+
+דוגמאות למשפטים:
+
+<List>
+  <Sentence sl="selo kasi li kiwen." m="הקליפה של העץ קשה." />
+  <Sentence sl="selo pi kasi ni li pakala." m="הקליפה של העץ הזה ניזוקה." />
+  <Sentence sl="soweli li lon insa tomo." m="החתול נמצא בתוך הבית." />
+  <Sentence sl="o tawa insa pi tomo mi!" m="תיכנס/י לבית שלי!" />
+  <Sentence sl="sinpin pi jan Ali li pona." m="הפָּנִים של אליס טובים." />
+  <Sentence sl="mani li lon anpa pi telo suli." m="האוצר נמצא בתחתית האוקינוס." />
+</List>
+
+טיפ חשוב! כיוון שהמילה **󱥍 pi** מוסיפה "סוגריים" **לרצף** של מילים במטרה לשנות את סדר ההוספה שלהן לביטוי הכולל, היא לעולם לא תופיע לפני מילה בודדת. אחרי המילה **󱥍 pi** תמיד יופיעו שתי מילים לפחות.
+
+<Practice exercises={frontmatter.practice} client:load />
+
+</div>
