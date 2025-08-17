@@ -1,73 +1,72 @@
 ---
-slug: "he"
-title: "Wasona: a crash course in Toki Pona"
-description: "Read, play, and learn a new language!"
+slug: he
+title: "Wasona: קורס מזורז לשפת Toki Pona"
+description: בקורס זה נלמד את השפה המתוכננת Toki Pona!
 ---
-## Part 1: first steps!
+<div dir="rtl">
 
-Talk about animals, people, places, and activities.  
-Learn your first 40 words!  
-At the end of this part, you will read a short story.
+## חלק 1: צעדים ראשונים
 
-* [introduction](/he/00)
-* [lesson 1: pronunciation](/he/01)
-* [lesson 2: two writing systems](/he/02)
-* [lesson 3: simple sentences](/he/03)
-* [lesson 4: adjectives](/he/04)
-* [lesson 5: parts of speech](/he/05)
-* [lesson 6: pronouns](/he/06)
-* [lesson 7: names](/he/07)
-* [lesson 8: prepositions](/he/08)
-* [lesson 9: activities](/he/09)
-* [lesson 10: intermission 1](/he/10)
+בחלק זה נלמד על חיות, אנשים, מקומות ופעילויות שונות. כל זאת באמצעות 40 מילים! בסיום החלק הזה תכול לקרוא סיפור קצר בשפת Toki Pona. 
 
-## Part 2: keep going!
+* [הקדמה](/he/00)
+* [שיעור 1: הגייה](/he/01)
+* [שיעור 2: כתיבה](/he/02)
+* [שיעור 3: משפטים פשוטים](/he/03)
+* [שיעור 4: שמות תואר](/he/04)
+* [שיעור 5: חלקי הדיבור](/he/05)
+* [שיעור 6: כינויי גוף](/he/06)
+* [שיעור 7: שמות עצם פרטיים](/he/07)
+* [שיעור 8: מילות יחס](/he/08)
+* [שיעור 9: פעילויות](/he/09)
+* [שיעור 10: סיפור 1](/he/10)
 
-Talk about home, materials, society, and be expressive.  
-Learn your next 39 words!  
-At the end of this part, you will read a dialogue.
+## חלק 2: ממשיכים הלאה!
 
-* [lesson 11: home](/he/11)
-* [lesson 12: requests](/he/12)
-* [lesson 13: elements](/he/13)
-* [lesson 14: negation](/he/14)
-* [lesson 15: with and like](/he/15)
-* [lesson 16: society](/he/16)
-* [lesson 17: questions](/he/17)
-* [lesson 18: feelings](/he/18)
-* [lesson 19: intermission 2](/he/19)
+בחלק זה נלמד משגים שקשורים בבית, חומרים שונים והעבת רגשות, כל זאת ב-39 מילים חדשות!
 
-## Part 3: wrapping up!
+* [שיעור 11: בבית](/he/11)
+* [שיעור 12: ציווי](/he/12)
+* [שיעור 13: יסודות](/he/13)
+* [שיעור 14: שלילה](/he/14)
+* [שיעור 15: באמצעות, כמו](/he/15)
+* [שיעור 16: חברה](/he/16)
+* [שיעור 17: משפטי שאלה](/he/17)
+* [שיעור 18: רגשות](/he/18)
+* [שיעור 19: סיפור 2](/he/19)
 
-Talk about time, space, numbers, colours, and more!  
-Finish learning your 131 words!
+## שיעור 3: מסיימים!
 
-* [lesson 20: time](/he/20)
-* [lesson 21: nature](/he/21)
-* [lesson 22: very lovely cats](/he/22)
-* [lesson 23: places](/he/23)
-* [lesson 24: body](/he/24)
-* [lesson 25: numbers](/he/25)
-* [lesson 26: love and identity](/he/26)
-* [lesson 27: colours](/he/27)
-* [lesson 28: moo!](/he/28)
-* [lesson 29: intermission 3](/he/29)
+בחלק זה נדבר על זמן, מקומות, מספרים ועוד! בסיומו תכיר בסך הכל 131 מילים בשפה!
 
-## Q&A!
+* [שיעור 20: זמן](/he/20)
+* [שיעור 21: בטבע](/he/21)
+* [שיעור 22: חתולים חמודים](/he/22)
+* [שיעור 23: מקומות](/he/23)
+* [ה 24: גוף](/he/24)
+* [שיעור 25: מספרים](/he/25)
+* [שיעור 26: אהבה ומגדר](/he/26)
+* [שיעור 27: צבעים](/he/27)
+* [שיעור 28: מו!](/he/28)
+* [שיעור 29: שיר](/he/29)
 
-Some finer details that aren't necessary to know, but you might be interested in!
+## נספחים
 
-* [Q: what other Toki Pona courses are there?](/he/other-courses)
-* [Q: does Toki Pona pronunciation vary among different speakers?](/he/sound-variation)
-* [Q: how can I type sitelen pona?](/he/fonts)
-* [Q: what's the third most popular writing system for Toki Pona?](/he/sitelen-sitelen)
-* [Q: does 'li' mean 'is'?](/he/li-and-is)
-* [Q: what's my name in Toki Pona?](/he/make-a-name)
-* [Q: in sitelen pona, names look long. How can I make them shorter?](/he/simpler-cartouches)
-* [Q: do I have to memorise language and country names?](/he/languages-countries)
-* [Q: isn't 'jan li toki Inli' a bit strange?](/he/named-verbs)
-* [Q: are there any more preverbs?](/he/more-preverbs)
-* [Q: how do you say 'to do'?](/he/doing)
-* [Q: how do I talk about large numbers?](/he/large-numbers)
-* [Q: what is jan Sonja up to these days?](/he/jan-sonja)
-* [Q: what other, uncommon words might I encounter?](/he/uncommon-words)
+בחלק זה נביא תשובות לשאלות נפוצות שאולי לא הכרחי לדעת אבל מעניין לשמוע!
+
+* [שאלה: האם יש קורסים נוספים שבהם אפשר ללמוד את השפה?](/he/other-courses)
+* [שאלה: האם יש הבדלי הגייה בין הדוברים של השפה?](/he/sound-variation)
+* [שאלה: איך ניתן להקליד את הסמלים של sitelen pona?](/he/fonts)
+* [שאלה: מהי צורת הכתב הפופולרית ביותר אחרי שתי הצורות הנפוצות שהכרנו?](/he/sitelen-sitelen)
+* [שאלה: האם 'li' מתפקד כמו המילה האנגלית 'is'?](/he/li-and-is)
+* [שאלה: איך אני בוחר לעצמי שם תקני בשפה?](/he/make-a-name)
+* [שאלה: איך אפשר לקצר את השמות הארוכים של sitelen pona?](/he/simpler-cartouches)
+* [שאלה: האם צריך לשנן את השמות של המדינות והשפות?](/he/languages-countries)
+* [שאלה: המשפט 'jan li toki Inli' לא מרגיש קצת מוזר?](/he/named-verbs)
+* [שאלה: האם יש מילים נוספות שמתפקדות בתור preverb?](/he/more-preverbs)
+* [שאלה: איך אומרים 'to do'?](/he/doing)
+* [שאלה: איך אפשר להגיד שמות של מספרים גדולים?](/he/large-numbers)
+* [שאלה: מה סוניה לאנג עושה בימים אלו?](/he/jan-sonja)
+* [שאלה: באיזה עוד מילים לא נפוצות אני עלול להתקל?](/he/uncommon-words)
+
+</div>
