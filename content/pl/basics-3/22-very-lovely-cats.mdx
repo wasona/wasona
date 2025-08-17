@@ -1,0 +1,105 @@
+---
+slug: "pl/22"
+title: "lekcja 22: bardzo urocze koty"
+description: "Naucz się słowa pi!"
+practice:
+  - l1: "dużo śniegu"
+    l2: "ko lete mute"
+    alsoAccept:
+      - "ko mute lete"
+  - l1: "bardzo zimny śnieg"
+    l2: "ko pi lete mute"
+  - l1: "dużo moich błędów"
+    l2: "pakala mi mute"
+    alsoAccept:
+      - "pakala mute mi"
+  - l1: "nasz błąd"
+    l2: "pakala pi mi mute"
+  - l1: "inna książka o języku"
+    l2: "lipu toki ante"
+    alsoAccept:
+      - "lipu ante toki"
+  - l1: "książka w innym języku"
+    l2: "lipu pi toki ante"
+  - l1: "czyjś mały pokój"
+    l2: "tomo jan lili"
+    alsoAccept:
+      - "tomo lili jan"
+  - l1: "pokój dla kogoś małego"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Niedawno nauczyliśmy się słowa **󱤼 mute**, które jest bardzo użyteczne!
+
+Pomyślmy o nim trochę bardziej. Już wiemy, jak stworzyć te wyrażenia:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="soweli suwi" m="uroczy kot" />
+  <Word sl="soweli mute" m="wiele kotów" />
+  <Word sl="suwi mute" m="bardzo uroczy" />
+</List>
+
+Ale co się stanie, gdy je połączymy? Czy otrzymamy *wiele uroczych kotów*, czy *bardzo uroczego kota*?
+
+<List>
+  <Word sl="soweli suwi mute" m="wiele uroczych kotów" />
+</List>
+
+Wyrażenie znaczy *wiele uroczych kotów*, bo **󱥦 suwi** opisuje **󱥢 soweli**, a **󱤼 mute** też opisuje **󱥢 soweli**.  
+Ale sądzę, że *mój* kot jest bardzo uroczy! Jak o tym mogę powiedzieć? Co jeśli chcę, żeby **󱤼 mute** opisywało **󱥦 suwi** zamiast **󱥢 soweli**?  
+Tu w tym pomaga nowa partykuła:
+
+<List>
+  <Word sl="pi" m="partukuła grupująca przymiotniki" />
+  <Word sl="soweli pi suwi mute" m="bardzo uroczy kot" />
+</List>
+
+Hurra! Teraz możemy mówić o **󱥢 soweli**, które jest **󱥦󱤼 suwi mute**!  
+Jeśli lubisz matematykę, możesz to porównać do otwierania nawiasu i zmieniania kolejności działań: *'kot uroczy dużo'* kontra *'kot (uroczy dużo)'*.
+
+Spójrzmy na inny przykład:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="sitelen tomo" m="zdjęcie domu" />
+  <Word sl="sitelen mute" m="zdjęcia" />
+  <Word sl="tomo mute" m="domy" />
+  <Word sl="sitelen tomo mute" m="zdjęcia domu" />
+  <Word sl="sitelen pi tomo mute" m="zdjęcie domów" />
+</List>
+
+Jeszcze raz możesz na to spojrzeć jako *'zdjęcie dom wiele'* kontra *'zdjęcie (dom wiele)'*.  
+Oczywiście, **󱤼 mute** nie jest jedynym słowem, w którym pomaga **󱥍 pi**! Spójrzmy na kilka innych słów:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="jan pona" m="przyjazna osoba" />
+  <Word sl="jan lili" m="mała osoba" />
+  <Word sl="pona lili" m="trochę miły" />
+  <Word sl="jan pona lili" m="mała, przyjazna osoba" />
+  <Word sl="jan pi pona lili" m="trochę przyjazna osoba" />
+</List>
+
+*'osoba przyjazny mały'* kontra *'osoba (przyjazny mały)'*.
+
+<List>
+  <Word sl="sona utala" m="wiedza o wojnie" />
+  <Word sl="sona sin" m="nowa wiedza" />
+  <Word sl="utala sin" m="nowa wojna" />
+  <Word sl="sona utala sin" m="nowa wiedza o wojnie. wiedza jest nowa." />
+  <Word sl="sona pi utala sin" m="wiedza o nowej wojnie. wojna jest nowa." />
+</List>
+
+*'wiedza wojna nowy'* vs *'wiedza (wojna nowy)'*.
+
+*Dlaczego wszystkie tłumaczenia na język polski tak się różnią?!* -- możesz sobie zadać takie pytanie! W języku polskim używamy *części mowy*, aby wskazać, które słowo należy do innego. *Wiele* to przymiotnik, ale *bardzo* to przysłówek. Gdy części mowy są takie same, w grę wchodzi odmiana słów i szyk wyrazów.
+
+Jednak w toki ponie rzeczowniki, czasowniki i przymiotniki mogą stać się inną częścią mowy. Więc odmiana i szyk wyrazów nie pomagają! Zamiast tego toki pona używa partykuły do zmiany sposobu analizy wyrażenia.
+
+<Practice exercises={frontmatter.practice} client:load />

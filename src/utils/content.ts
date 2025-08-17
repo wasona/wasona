@@ -21,6 +21,7 @@ export const langs = (() => {
 export const langNames: Record<string, string> = {
   en: "English",
   de: "Deutsch",
+  pl: "polski",
   ru: "русский",
   translate: "add language",
 };

@@ -1,0 +1,77 @@
+---
+slug: "pl/21"
+title: "lekcja 21: przyroda"
+description: "Naucz się słów: akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+  - l1: "Grzyby spożywają chore rośliny."
+    l2: "soko li moku e kasi moli."
+  - l1: "Upiecz ciasto."
+    l2: "o seli e ko pan."
+  - l1: "Wykopałem ziemniaka."
+    l2: "mi weka e kili tan ma."
+  # - l1: "Boję się węży."  # 21_4
+    # l2: "mi pilin monsuta tan akesi linja."
+  - l1: "Rośliny potrzebują wody, światła i ziemi."
+    l2: "kasi li wile e telo, e suno, e ma."
+  - l1: "Ludzie rozmawiają, bawią się, śpiewają i śpią."
+    l2: "jan li toki, li musi, li kalama, li lape."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Już znamy większość słów o zwierzętach i roślinach -- nauczmy się reszty!
+
+<List>
+  <Word sl="akesi" m="gad lub płaz, np. żaba, jaszczurka, wąż" />
+  <Word
+    sl="kala"
+    m="ryba lub stworzenie morskie, np. łosoś, wieloryb, rekin, ośmiornica"
+  />
+  <Word sl="pan" m="pokarmy skrobiowe, np. pszenica, ryż, chleb, makaron" />
+  <Word sl="kili" m="owoc, warzywo" />
+  <Word sl="soko" m="grzyb" />
+  <Word sl="misikeke" m="lekarstwo" />
+  <Word sl="namako" m="przyprawa, dekoracja, ozdoba" />
+  <Sentence sl="soko li kili nasa." m="Grzyby to dziwne owoce." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="Duża ryba poluje na mniejsze ryby."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Muszę często zażywać leki."
+  />
+</List>
+
+## Składniki
+
+Pieczywo często zawiera kilka różnych składników:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="Pizza zawiera mięso." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="Pizza zawiera warzywa." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="Pizza zawiera przyprawy." />
+</List>
+
+Ale jak możemy je złożyć w jedno zdanie? Każdy z nich jest *dopełnieniem* zdania. Zdanie może mieć *kilka dopełnień*: kilka wyrażeń z **󱤉 e**, które po prostu występują jedno po drugim:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="Pizza zawiera mięso, warzywa i przyprawy."
+  />
+</List>
+
+Ta właściwość nie jest wyłączna dla **󱤉 e**! Możesz połączyć kilka powiązanych idei w jedno zdanie za pomocą **󱤧 li**, **󱤡 la** lub przyimków. Ale teraz zobaczmy tylko na **󱤧 li**:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="Osoba poluje na ryby. (= łowi ryby)." />
+  <Sentence sl="jan li seli e ona." m="Osoba je gotuje." />
+  <Sentence sl="jan li moku e ona." m="Osoba je zjada." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Osoba poluje na ryby, je gotuje i je zjada." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

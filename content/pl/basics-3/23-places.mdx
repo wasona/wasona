@@ -1,0 +1,60 @@
+---
+slug: "pl/23"
+title: "lekcja 23: miejsca"
+description: "Naucz się słów: pi, selo, insa, monsi, sinpin, anpa!"
+practice:
+  - l1: "Pień drzewa chroni wnętrze rośliny."
+    l2: "selo kasi li awen e insa kasi."
+  - l1: "Ściany domu są uszkodzone."
+    l2: "sinpin tomo li pakala."
+  - l1: "Ściana tego domu potrzebuje cegieł."
+    l2: "sinpin pi tomo ni li wile e leko."
+  - l1: "Ptak Sunity jest uroczy."
+    l2: "waso pi jan Sunita li suwi."
+  - l1: "Belgia jest obok Francji."
+    l2: "ma Pesije li lon poka pi ma Kanse."
+  - l1: "Twoja żaba jest za moją żabą."
+    l2: "akesi sina li lon monsi pi akesi mi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Na poprzedniej lekcji spojrzeliśmy na **󱥍 pi**. Jak mogłeś zauważyć, jest dużo wyrażeń z dwoma sensownymi znaczeniami, zależnie od tego czy występuje w nich **󱥍 pi** lub nie. Jest także wiele wyrażeń, które *mają mało sensu*, gdy nie ma w nich **󱥍 pi**! Zobaczysz to często przy imionach:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Sentence sl="soweli pi jan Ema" m="pies Emmy" />
+  <Sentence sl="soweli jan Ema" m="człowieczy pies Emma (???)" />
+  <Sentence sl="toki pi jan Mili" m="wypowiedź Millie" />
+  <Sentence sl="toki jan Mili" m="ludzki język nazwany Millie (???)" />
+</List>
+
+Jeżeli nie użyjesz **󱥍 pi**, imię będzie odnosić się do *pierwszego* słowa, a nie drugiego! To może się okazać głupie. Z tego powodu często znajdziesz **󱥍 pi** przy imionach!
+
+Często to znajdziesz po słowach oznaczających lokalizacje, takimi jak te nowe:
+
+<List>
+  <Word sl="selo" m="skóra, łupina, skorupa, kora" />
+  <Word sl="insa" m="część wewnętrzna, centrum, środek" />
+  <Word sl="monsi" m="plecy, tył" />
+  <Word sl="sinpin" m="twarz, przód, ściana" />
+  <Word sl="anpa" m="dół; pokonać" />
+</List>
+
+Użyjmy ich w zdaniach:
+
+<List>
+  <Sentence sl="selo kasi li kiwen." m="Kora drzewa jest twarda i drewniana." />
+  <Sentence sl="selo pi kasi ni li pakala." m="Kora tego drzewa jest uszkodzona." />
+  <Sentence sl="soweli li lon insa tomo." m="Kot jest wewnątrz domu." />
+  <Sentence sl="o tawa insa pi tomo mi!" m="Wejdź do środka mojego domu!" />
+  <Sentence sl="sinpin pi jan Ali li pona." m="Twarz Alego jest ładna." />
+  <Sentence sl="mani li lon anpa pi telo suli." m="Skarb jest na dnie oceanu." />
+</List>
+
+Wskazówka: ponieważ **󱥍 pi** istnieje tylko do narzucenia sposobu analizy wyrażenia, nigdy nie będzie występował przed pojedynczym słowem! Zawsze po nim występują co najmniej dwa słowa.
+
+<Practice exercises={frontmatter.practice} client:load />

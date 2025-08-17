@@ -4,14 +4,13 @@ title: "Translate Wasona!"
 description: "Help us by translating the course to your language!"
 ---
 
-**Wasona needs translators!** Wasona is currently available in [English](/), [German](/de) and [Russian](/ru). If you want to add a new translation, tell me on Discord (@kala_asi) or via email (kala.asi.la@gmail.com). I'll help out in any way I can!
+**Wasona needs translators!** Wasona is currently available in [English](/), [German](/de), [Russian](/ru), and [Polish](/pl). If you want to add a new translation, tell me on Discord (@kala_asi) or via email (kala.asi.la@gmail.com). I'll help out in any way I can!
 
 **Some notable languages without good Toki Pona courses**: Hindi, Swahili, Thai, Vietnamese, Turkish. If you speak any of them, we would love your help!
 
 **Ongoing translation projects:**
 
 * [Tagalog](https://github.com/wasona/wasona/pull/8) by jan juna Jona
-* [Polish](https://github.com/wasona/wasona/pull/10) by jan Esuwa
 * [Korean](https://github.com/wasona/wasona/pull/11) by jyh
 * [Indonesian](https://github.com/wasona/wasona/pull/12) by jan Asipa
 * [Spanish](https://github.com/wasona/wasona/pull/18) by jan Kalo Metesin and soko Sijeni

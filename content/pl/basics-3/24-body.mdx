@@ -1,0 +1,53 @@
+---
+slug: "pl/24"
+title: "lekcja 24: ciało"
+description: "Naucz się słów: sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
+practice:
+  - l1: "Boli mnie głowa."
+    l2: "lawa mi li pakala."
+  - l1: "Usłyszałem słaby dźwięk."
+    l2: "mi kute e kalama lili."
+  - l1: "Ty słuchasz. Ja kontroluję."
+    l2: "sina kute. mi lawa."
+  - l1: "Czuję, że przyprawa piecze moje usta."
+    l2: "namako li seli tawa uta mi."
+  - l1: "Proszę, pogłaskaj uroczego psa!"
+    l2: "o luka e soweli suwi!"
+  - l1: "Lekarstwo leczy jej ciało."
+    l2: "misikeke li pona e sijelo ona."
+  - l1: "Jej włosy są przyjemne w dotyku."
+    l2: "linja lawa ona li pona tawa luka."
+  - l1: "Góra jest podobna do nosa na mojej twarzy."
+    l2: "nena kiwen li sama nena pi sinpin mi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Już znamy słowa znaczące *oko*, *serce*, *twarz* i *plecy*, więc nauczmy się pozostałych części ciała!
+
+<List>
+  <Word sl="lawa" m="głowa; prowadzić" />
+  <Word sl="kute" m="ucho; słyszeć" />
+  <Word sl="nena" m="wybrzuszenie, np. nos, wzgórze, pierś" />
+  <Word sl="uta" m="usta, wargi; całować, gryźć" />
+  <Word sl="sijelo" m="ciało" />
+  <Word sl="luka" m="ręka, ramię; dotykać" />
+  <Word sl="noka" m="stopa, noga" />
+  <Word sl="palisa" m="coś długiego i twardego, np. gałąź, pręt, laska" />
+  <Word sl="linja" m="coś długiego i giętkiego, np. sznur, lina" />
+</List>
+
+Coś ciekawego, co możesz zauważyć, to powiązanie wielu części ciała z czynnościami! Głowa dowodzi, oczy widzą, uszy słyszą, usta całują, serce czuje, a ręce dotykają.
+
+<List>
+    <Sentence sl="mi wile suli e linja lawa mi." m="Chcę zapuścić włosy." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="Mój szef usłyszał, że gadam za dużo." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="Lustro pokazuje odwrócony obraz." />
+  <Sentence sl="sijelo mi li wile e lape." m="Moje ciało potrzebuje odpoczynku." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Moje palce u rąk są większe niż palce u stóp." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
