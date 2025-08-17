@@ -23,6 +23,7 @@ export const langNames: Record<string, string> = {
   de: "Deutsch",
   pl: "polski",
   ru: "русский",
+  he: "עברית",
   translate: "add language",
 };
 
