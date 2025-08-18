@@ -80,17 +80,17 @@ Jeżeli widzisz krzyżyk (❌) przy linku do strony, to znaczy, że jeszcze się
 
 Drobniejsze szczegóły, których nie musisz znać, ale mogą Cię zainteresować!
 
-* [P: jakie są inne kursy toki pony?](/pl/other-courses) ❌
-* [P: czy wymowa toki pony się różni wśród różnych użytkowników języka?](/pl/sound-variation)
-* [P: jak mogę pisać sitelen ponę na klawiaturze?](/pl/fonts) ❌
-* [P: który system pisma toki pony jest trzeci co do popularności?](/pl/sitelen-sitelen)
-* [P: czy 'li' znaczy 'jest'?](/pl/li-and-is) ❌
-* [P: jak mam na imię w toki ponie?](/pl/make-a-name) ❌
-* [P: w sitelen ponie imiona wyglądają na długie. Jak mogę je skrócić?](/pl/simpler-cartouches) ❌
-* [P: czy muszę zapamiętywać nazwy języków i krajów?](/pl/languages-countries) ❌
-* [P: czyżby 'jan li toki Inli' nie było dziwne?](/pl/named-verbs) ❌
-* [P: czy jest więcej czasowników posiłkowych?](/pl/more-preverbs) ❌
-* [P: jak powiedzieć 'robić'?](/pl/doing) ❌
-* [P: jak komunikować duże liczby?](/pl/large-numbers) ❌
-* [P: czym się obecnie zajmuje jan Sonja?](/pl/jan-sonja) ❌
-* [P: jakie są inne niezbyt częste słowa, które mogę napotkać?](/pl/uncommon-words) ❌
+* [P: jakie są inne kursy toki pony?](/pl/other-courses/) ❌
+* [P: czy wymowa toki pony się różni wśród różnych użytkowników języka?](/pl/sound-variation/)
+* [P: jak mogę pisać sitelen ponę na klawiaturze?](/pl/fonts/) ❌
+* [P: który system pisma toki pony jest trzeci co do popularności?](/pl/sitelen-sitelen/)
+* [P: czy 'li' znaczy 'jest'?](/pl/li-and-is/) ❌
+* [P: jak mam na imię w toki ponie?](/pl/make-a-name/) ❌
+* [P: w sitelen ponie imiona wyglądają na długie. Jak mogę je skrócić?](/pl/simpler-cartouches/) ❌
+* [P: czy muszę zapamiętywać nazwy języków i krajów?](/pl/languages-countries/) ❌
+* [P: czyżby 'jan li toki Inli' nie było dziwne?](/pl/named-verbs/) ❌
+* [P: czy jest więcej czasowników posiłkowych?](/pl/more-preverbs/) ❌
+* [P: jak powiedzieć 'robić'?](/pl/doing/) ❌
+* [P: jak komunikować duże liczby?](/pl/large-numbers/) ❌
+* [P: czym się obecnie zajmuje jan Sonja?](/pl/jan-sonja/) ❌
+* [P: jakie są inne niezbyt częste słowa, które mogę napotkać?](/pl/uncommon-words/) ❌
