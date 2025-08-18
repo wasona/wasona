@@ -1,6 +1,6 @@
 ---
 slug: "de/large-numbers"
-title: "Q: how do I talk about large numbers?"
+title: "F: Wie redet man über große Zahlen?"
 description: ""
 ---
 
@@ -9,40 +9,40 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
 
-The funny thing about large numbers is you need them less often than you think. 
+Das lustige an großen Zahlen ist, dass du sie weniger oft brauchst, als du denkst.
 
-There's a large, meaningful difference between *'A tiger is about to jump us!'* and *'Two tigers are about to jump us!'*. Maybe you can fight off one tiger, but it's hopeless with two.
+Es gibt einen großen und bedeutungsvollen Unterschied zwischen '*Ein Tiger wird uns jetzt angreifen!*' und '*Zwei Tiger werden uns jetzt angreifen!*'. Vielleicht könnt ihr noch einen Tiger bekämpfen, aber mit zwei wird das hoffnungslos.
 
-But compare *'77 tigers are about to jump us!'* and *'78 tigers are about to jump us!'* -- does it matter? Your decisions and your fate will be much the same. So most of the time, we only really need three number words: **󱥳 wan**, **󱥮 tu**, **󱤼 mute**.
+Wenn du aber *'77 Tiger werden uns jetzt angreifen!'* und *'78 Tiger werden uns jetzt angreifen'* miteinander vergleichst — macht es wirklich einen Unterschied? Eure Entscheidungen und euer Schicksal werden ziemlich gleich bleiben. Wir brauchen also die meiste Zeit nur drei Zahlenwörter: **󱥳 wan**, **󱥮 tu**, **󱤼 mute**.
 
-When dealing with small sums of money, more precision might actually make a difference. Maybe you can afford something that costs $77, but if it costs $78 you're one dollar short. For numbers below or around a hundred, we use words **󱥳 wan**, **󱥮 tu**, **󱤭 luka**, **󱤼 mute**, **󱤄 ale**, as if they were coins worth 1, 2, 5, 20, and 100:
+Wenn es um kleine Summen Geld geht, könnte mehr Genauigkeit tatsächlich einen Unterschied machen. Vielleicht kannst du dir etwas, was 77€ kostet, leisten, aber wenn es 78€ kostet, nicht. Für Zahlen unter und um einhundert herum, können wir die Wörter **󱥳 wan**, **󱥮 tu**, **󱤭 luka**, **󱤼 mute** und **󱤄 ale** nutzen, als wären sie Münzen, die 1, 2, 5, 20, und 100 wert sind:
 
 <List>
     <Sentence sl="mute mute mute luka luka luka tu wan" m="78 (= 20 + 20 + 20 + 5 + 5 + 5 + 2 + 1)" />
 </List>
 
-But above 100, this system quickly becomes annoying:
+Über 100 wird dieses System aber schnell nervig:
 
 <List>
     <Sentence sl="ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale" m="1500 (= 100 + 100 + 100 + ...)" />
 </List>
 
-In 2021, jan Kapilu and jan Tepo came up with an [expanded and backward-compatible system](https://sona.pona.la/wiki/nasin_nanpa_pona) to talk about large numbers: instead of adding 100, **󱤄 ale** multiplies the previous number by 100.
+2021 sind jan Kapilu und jan Tepo auf ein [erweitertes und kompatibles Zahlensystem](https://sona.pona.la/wiki/nasin_nanpa_pona) gekommen, das mit großen Zahlen klarkommt: Anstatt dass es 100 hinzufügt, multipliziert **󱤄 ale** die vorherige Zahl mit 100:
 
 <List>
     <Sentence sl="luka luka luka ale" m="1500 (= (5 + 5 + 5) * 100)" />
 </List>
 
-This is useful for years in the Gregorian calendar, and especially convenient for the current millenium:
+Das ist nützlich für Jahre im gregorianischen Kalender, und besonders passend für unser momentanes Jahrtausend:
 
 <List>
     <Sentence sl="mute ale mute luka" m="2025 (= 20 * 100 + 20 + 5)" />
 </List>
 
-Protip: you can imagine splitting numbers into two digit pairs: 2025 -> 20,25, 123456789 -> 1,23,45,67,89, translating each number like 23 and 67, and joining them using **󱤄 ale**. "Multiplying by 100" is just the same thing, but explained slightly differently!
+Tipp: Du kannst es dir so vorstellen, als würdest du Zahlen in Paare von zwei Ziffern trennen: 2025 → 20;25, 123456789 → 1,23,45,67,89, alle Zahlen wie 23 und 67 übersetzen, und sie mit **󱤄 ale** verbinden. "Mit 100 zu multiplizieren" ist dasselbe, nur anders erklärt!
 
-When writing in Latin characters, you can also abbreviate large numbers as W, T, L, M, A:
+Wenn man mit lateinischen Buchstaben schreibt, kann man große Zahlen auch mit W, T, L, M, A abkürzen:
 
 <List>
-    <Sentence sp="󱥫󱥜󱤽󱤭󱤭󱤭󱥮󱥮󱤄󱤼󱤭󱤭󱤭󱥮󱥮󱤡<br />󱥫󱤺󱤽󱤭󱥮󱥮󱤡<br />󱥫󱥤󱤽󱥳󱤡<br />󱤰󱦐󱥨󱥇󱥣󱤍󱦑<br />󱤧󱤖󱥱󱤉󱤰󱦐󱥎󱥄󱥖󱥱󱤟󱤈󱦑<br />" sl="tenpo sike #LLLTTAMLLLTT la, tenpo mun #LTT la, tenpo suno #W la, ma Tosi li kama utala e ma Posuka." m="On September 1st, 1939, Germany invaded Poland." />
+    <Sentence sp="󱥫󱥜󱤽󱤭󱤭󱤭󱥮󱥮󱤄󱤼󱤭󱤭󱤭󱥮󱥮󱤡<br />󱥫󱤺󱤽󱤭󱥮󱥮󱤡<br />󱥫󱥤󱤽󱥳󱤡<br />󱤰󱦐󱥨󱥇󱥣󱤍󱦑<br />󱤧󱤖󱥱󱤉󱤰󱦐󱥎󱥄󱥖󱥱󱤟󱤈󱦑<br />" sl="tenpo sike #LLLTTAMLLLTT la, tenpo mun #LTT la, tenpo suno #W la, ma Tosi li kama utala e ma Posuka." m="Am 1. September 1939 hat Deutschland Polen angegriffen." />
 </List>

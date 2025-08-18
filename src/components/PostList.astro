@@ -10,7 +10,7 @@ const { posts } = Astro.props;
   {
     posts.reverse().map((post) => (
       <li class="post">
-        <a href={`./${post.id}/`}>{post.data.title}</a>
+        <a href={`/${post.id}/`}>{post.data.title}</a>
       </li>
     ))
   }

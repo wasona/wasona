@@ -1,0 +1,62 @@
+---
+slug: "pl/27"
+title: "lekcja 27: kolory"
+description: "Naucz się słów: kule, walo, pimeja, laso, loje, jelo, kin!"
+practice:
+  - l1: "W nocy imprezuję."
+    l2: "tenpo pimeja la mi musi."
+  - l1: "Na pszczole jest żółty pyłek."
+    l2: "ko jelo li lon pipi."
+  - l1: "Ja też się bawię kolorowymi klockami."
+    l2: "mi kin li musi kepeken leko kule."
+  - l1: "Cały ten śnieg mnie oślepia."
+    l2: "mi ken ala lukin tan ko walo."
+  - l1: "Błękit, biel i czerwień są na fladze."
+    l2: "laso en walo en loje li lon lipu."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Porozmawiajmy o kolorach!
+
+<List>
+  <Word sl="kule" m="kolor, rodzaj; kolorowy" />
+  <Word sl="walo" m="biały, blady" />
+  <Word sl="pimeja" m="czarny, ciemny" />
+  <Word sl="loje" m="czerwony, magenta" />
+  <Word sl="jelo" m="żółty" />
+  <Word sl="laso" m="zielony, turkusowy, niebieski" />
+</List>
+
+W *sitelen ponie* wiele słów oznaczających kolory wyglądają na to, jakby były *złożone*: składają się z trójkąta z **󱤞 kule** połączonego z innym słowem, np. **󱤂 ala**, **󱥰 uta**, **󱥤 suno**, **󱤗 kasi**. Jest też kilka innych połączonych znaków w *sitelen ponie*: **󱤶 moku**, **󱥉 pali**, **󱤙 kepeken** mają znak **󱤭 luka**, a **󱤕 kalama**, **󱥌 pana**, **󱥡 sona**, **󱥬 toki** używają trzech kresek, które nazwaliśmy *'promieniami'*. Jeśli zauważyłeś te wzorce wcześniej, gratulacje!
+
+Słowa oznaczające kolory oznaczają cały *zakres* kolorów, nie tylko te podane tutaj. **󱤣 laso** jest szczególnie ciekawe: w toki ponie błękit i zieleń to tylko odcienie jednego koloru tak jak w wielu językach, np. japońskim, wietnamskim, zuluskim. Te dwa zdania razem mają sens w toki ponie, ale nie po polsku:
+
+<List>
+  <Word sl="kin" m="także, również" />
+  <Sentence sl="sewi li laso." m="Niebo jest niebieskie." />
+  <Sentence sl="kasi kin li laso." m="Trawa też jest zielona." />
+</List>
+
+## Czy potrzebujesz kolorów?
+
+Tak jak w przypadku płci, kolory są używane w toki ponie rzadziej, niż byś oczekiwał. W naturalnych językach kolory są często skrótami, żeby przekazać coś bardziej specyficznego: *biały kruk*, *czarny rynek*, *zielona szkoła*. Toki pona nie używa takiego typu skrótów, które nie mówią do rzeczy:
+
+<List>
+  <Sentence sl="waso walo" m="biały ptak, np. <a target='_blank' href='https://en.wikipedia.org/wiki/Anchorage_White_Raven'>kruk o białym upierzeniu z Anchorage</a>" />
+  <Sentence sl="jan nasa" m="biały kruk (człowiek o cechach nietypowych)" />
+</List>
+
+Jest duża różnica między dosłownym białym domem a budynkiem, który się nazywa Biały Dom:
+
+<List>
+  <Sentence sl="tomo walo" m="biały dom (dom dosłownie biały)" />
+  <Sentence sl="tomo ni la jan li lawa e ma Mewika." m="Biały Dom (siedziba amerykańskiego rządu)" />
+</List>
+
+Dopiero teraz to przywołuję, bo kolory to najbardziej oczywisty przykład, ale to samo dotyczy każdego wyrażenia! Zanim użyjesz przymiotników, często warto się zastanowić, czy mówią o tym, co faktycznie najważniejsze, czy są skrótem czegoś innego?
+
+<Practice exercises={frontmatter.practice} client:load />

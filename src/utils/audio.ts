@@ -1,7 +1,4 @@
 export const ipaRecordings: Record<string, string> = {
-  b: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Voiced_bilabial_plosive.ogg",
-  p: "https://upload.wikimedia.org/wikipedia/commons/5/51/Voiceless_bilabial_plosive.ogg",
-
   m: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Bilabial_nasal.ogg",
   ɱ: "https://upload.wikimedia.org/wikipedia/commons/1/18/Labiodental_nasal.ogg",
   n: "https://upload.wikimedia.org/wikipedia/commons/2/29/Alveolar_nasal.ogg",
@@ -38,7 +35,7 @@ export const ipaRecordings: Record<string, string> = {
   tɕ: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Voiceless_alveolo-palatal_affricate.ogg",
   dʑ: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Voiced_alveolo-palatal_affricate.ogg",
   // :  "https://upload.wikimedia.org/wikipedia/commons/4/4a/Voiceless_bilabial_affricate.ogg",
-  // :  "https://upload.wikimedia.org/wikipedia/commons/8/83/Voiceless_labiodental_affricate.ogg",
+  pf: "https://upload.wikimedia.org/wikipedia/commons/8/83/Voiceless_labiodental_affricate.ogg",
   // :  "https://upload.wikimedia.org/wikipedia/commons/3/33/Voiced_labiodental_affricate.ogg",
   // :  "https://upload.wikimedia.org/wikipedia/commons/2/27/Voiced_dental_non-sibilant_affricate.oga",
   // :  "https://upload.wikimedia.org/wikipedia/commons/2/27/Voiced_dental_non-sibilant_affricate.oga",
