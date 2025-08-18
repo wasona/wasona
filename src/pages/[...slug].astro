@@ -25,7 +25,11 @@ const prevnext = post.filePath!.includes("index.md")
   : prevnexts[lang][post.id];
 ---
 
-<html lang={lang}>
+{
+  // we can't set lang="he" because that
+  // breaks sitelen pona cartouches! yes, really.
+}
+<html lang="en">
   <head>
     <BaseHead title={post.data.title} description={post.data.description} />
   </head>
