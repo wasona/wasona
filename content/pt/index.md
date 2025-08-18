@@ -64,7 +64,7 @@ Alguns detalhes mais específicos, mas que você pode estar interessado!
 * [P: 'li' é 'ser/estar'?](/pt/li-and-is/)
 * [P: qual é o meu nome em Toki Pona?](/pt/make-a-name/)
 * [P: em sitelen pona, os nomes são longos. Como posso deixá-los mais curtos?](/pt/simpler-cartouches/)
-* [P: tenho de memorizar nomes de idiomas e países?](/pt/languages-countries/)
+* [P: eu tenho de memorizar nomes de idiomas e países?](/pt/languages-countries/)
 * [P: 'jan li toki Inli' não é um pouco estranho?](/pt/named-verbs/)
 * [P: existem mais pré-verbos?](/pt/more-preverbs/)
 * [P: como se diz “fazer”?](/pt/doing/)
