@@ -23,7 +23,8 @@ export const prevnexts = Object.fromEntries(
   langs.map((lang) => {
     const langPosts = posts
       .filter((post) => getLang(post) === lang)
-      .sort(by((post) => post.filePath));
+      .sort(by((post) => post.filePath))
+      .filter((post) => post.id.split("/").length > 1); // filter away landing pages
     return [
       lang,
       Object.fromEntries(
