@@ -1,4 +1,5 @@
 ---
+import { langNames, langs } from "@/utils/content";
 import { type CollectionEntry } from "astro:content";
 interface Props {
   prevnext?: {
@@ -7,7 +8,6 @@ interface Props {
   };
   current: string;
 }
-import { langNames, langs } from "@/utils/content";
 const { prevnext, current } = Astro.props;
 ---
 
@@ -31,7 +31,7 @@ const { prevnext, current } = Astro.props;
       <>
         <span style="text-align: left">
           {prevnext.prev ? (
-            <a href={"/" + prevnext.prev.id}>
+            <a href={"/" + prevnext.prev.id + "/"}>
               <span aria-hidden="true">«</span> Previous
             </a>
           ) : (
@@ -43,7 +43,7 @@ const { prevnext, current } = Astro.props;
         </span>
         <span style="text-align: right">
           {prevnext.next ? (
-            <a href={"/" + prevnext.next.id}>
+            <a href={"/" + prevnext.next.id + "/"}>
               Next <span aria-hidden="true">»</span>
             </a>
           ) : (
