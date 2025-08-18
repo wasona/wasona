@@ -3,7 +3,6 @@ slug: he
 title: "Wasona: קורס מזורז לשפת Toki Pona"
 description: בקורס זה נלמד את השפה המתוכננת Toki Pona!
 ---
-<div dir="rtl">
 
 ## חלק 1: צעדים ראשונים
 
@@ -69,4 +68,3 @@ description: בקורס זה נלמד את השפה המתוכננת Toki Pona!
 * [שאלה: מה סוניה לאנג עושה בימים אלו?](/he/jan-sonja/)
 * [שאלה: באיזה עוד מילים לא נפוצות אני עלול להתקל?](/he/uncommon-words/)
 
-</div>
