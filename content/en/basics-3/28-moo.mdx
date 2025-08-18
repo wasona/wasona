@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Just one more important word to learn, before we get to the silly part!
 
@@ -84,7 +84,7 @@ If you join a Toki Pona community, you will almost certainly see more words. Whe
 
 You might not know the word **󱦅 lanpan**, but you can see the translation, and you know enough by now to think of a suitable replacement in common words (**󱤖󱤓 kama jo**)! It's much the same for other words you might see in the wild.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
 * [Q: what is jan Sonja up to these days?](/en/jan-sonja/)

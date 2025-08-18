@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 בשיעור הזה נכיר מילים שיאפשרו לנו להביע רגשות!
@@ -94,5 +94,5 @@ import Practice from "@/components/Practice.tsx";
     <Sentence sl="mi sona ala a e ni!" m="אני ממש <strong>לא</strong> ידעתי את זה!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

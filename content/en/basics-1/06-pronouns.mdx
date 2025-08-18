@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Pronouns
 
@@ -73,7 +73,7 @@ You should already be familiar with sentences like these! In most positions in t
 
 Toki Pona has a special rule: when **󱤴 mi** or **󱥞 sina** is the subject of the sentence, we remove the **󱤧 li** that would normally follow the subject. This is because sentences starting with **󱤴 mi** or **󱥞 sina** are extremely common!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
 * [Q: does 'li' mean 'is'?](/en/li-and-is/)

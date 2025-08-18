@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Beschreiben!
 
@@ -70,4 +70,4 @@ Wenn diese Sätze sich langwierig anfühlen, keine Sorge! Wir schauen uns gleich
 
 Hier ist etwas Interessantes: Auf deutsch können Adjektive nur an Nomen angehängt werden. Auf Toki Pona können sie aber auch an Verben sein: *leicht beißen ~ moku lili*, *gut kennen ~ sona pona*. Es gibt keinen Unterschied zwischen Adjektiven und Adverbien auf Toki Pona.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

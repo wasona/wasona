@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Wortarten
 
@@ -100,4 +100,4 @@ Falls du je verwirrt bist, weil du nicht weißt, wie du einen Satz lesen oder sc
 "Wo ist das Subjekt? Wo ist das Prädikat? Wo ist das Objekt?",
 und das meiste kann schön in kleine Teile getrennt werden!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

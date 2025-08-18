@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 אנחנו חיים ופועלים כחברה. בשיעור זה נכיר מילים שקשורות בהתנהלות בחברה או בקבוצה:
 
@@ -68,5 +68,5 @@ import Practice from "@/components/Practice.tsx";
 
 אם זה נראה לכם מוזר, זיכרו שהתפקיד של המילית **󱤧 li** הוא לזהות את הפועל במשפט. אם היינו מסירים אותה גם במשפטים האלה, התוצאה היתה שהמילה **󱤼 mute** היתה הופכת להיות הפועל של המשפט.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

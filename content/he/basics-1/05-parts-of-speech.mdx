@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 ## חלקי הדיבור
@@ -102,5 +102,5 @@ import Practice from "@/components/Practice.tsx";
 
 כשאתם מסתכלים על משפט ולא בטוחים איך להבין אותו, נסו להתחיל בלהפריד את החלקים השונים: "הנושא, הנשוא והמושא", ולאחר מכן נסו לתרגם כל חלק בנפרר, על פי סדר המילים שמרכיבות אותו. המילה הראשונה היא תמיד זו שקובעת את המשמעות העיקרית של הביטוי, והתארים שמופיעים אחריה - עוזרים 'לחדד' את המשמעות שלה.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 ## בבית
@@ -67,5 +67,5 @@ import Practice from "@/components/Practice.tsx";
   <Sentence sl="mi wile toki e ijo kasi." m="אני רוצה לדבר על משהו שקשור בפרחים." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

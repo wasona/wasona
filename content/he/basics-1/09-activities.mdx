@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 ## פעילויות
@@ -93,7 +93,7 @@ import Practice from "@/components/Practice.tsx";
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## לקריאה נוספת
 * [שאלה: האם יש פעלי עזר נוספים על אלה שהכרנו?](/he/more-preverbs)

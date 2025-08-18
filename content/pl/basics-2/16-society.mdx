@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Żyjemy w społeczeństwie! Nauczmy się kilku słów, które się przydają w obchodzeniu się ze społeczeństwem:
 
@@ -68,4 +68,4 @@ Zobacz, że **󱤧 li** nie jest usunięte! To dlatego, że podmiotem nie jest a
 
 To może się wydawać dziwne, ale pamiętaj -- celem **󱤧 li** jest pokazanie, gdzie zaczyna się orzeczenie! Gdyby zostało tutaj usunięte, moglibyśmy wtedy uważać, że czasownikiem jest **󱤼 mute**.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Przeczenia
 
@@ -59,4 +59,4 @@ Możesz zauważyć coś interesującego. Chociaż **󱤂 ala** może być wszęd
 
 To ma dużo sensu -- zaprzeczanie pierwszego słowa w orzeczeniu zaprzecza całe zdanie, czego często chcemy!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

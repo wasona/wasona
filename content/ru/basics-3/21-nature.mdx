@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Мы уже знаем большинство слов, связанных с животными и растениями -- давайте же выучим оставшиеся!
 
@@ -74,4 +74,4 @@ import Practice from "@/components/Practice.tsx";
   <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Человек охотится на рыбу, готовит её, ест её." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

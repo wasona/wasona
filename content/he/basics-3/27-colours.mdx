@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 בשיעור זה נכיר את המילים הקשורות בצבעים!
@@ -63,5 +63,5 @@ import Practice from "@/components/Practice.tsx";
 
 הגישה הזו של טוקי פונה, לתאר את הדברים בצורה הטבעית שלהם ולא על ידי שימוש בדימויים, מקובלת לא רק בצבעים אלא בכל ביטוי שמורכב מצירוף של כמה מילים. כשבוחרים את התארים שמוסיפים למילה כלשהי כדי "לדייק" אותה, יש לבחור את אותם תארים שמתארים בצורה הכי פשוטה וברורה את המושג שרוצים לאפיין. 
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

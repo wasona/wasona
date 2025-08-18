@@ -16,7 +16,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Einfache Sätze
 
@@ -51,4 +51,4 @@ Das können wir lernen:
 
 (**󱤧 li** und **󱤉 e** könnten zuerst unnötig aussehen. Wir werden lernen, warum sie notwendig sind, aber um das zu tun, müssen wir mehr über Wortarten lernen!)
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

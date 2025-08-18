@@ -1,0 +1,14 @@
+---
+import PracticeReact from "@/components/Practice";
+import { type Exercise } from "@/utils/exercise";
+import { locales } from "@/utils/i18n";
+interface Props {
+  exercises: Exercise[];
+}
+const { exercises } = Astro.props;
+const lang = Astro.url.pathname.split("/")[1] ?? "en";
+console.log("current locale:", lang);
+const locale = locales[lang];
+---
+
+<PracticeReact exercises={exercises} locale={locale} client:load />

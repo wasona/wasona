@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Cardinal numbers
 
@@ -75,7 +75,7 @@ But these are *cardinal* numbers: numbers that talk about quantity. There are al
 
 (By the way, **󱤽 nanpa** is special! It doesn't need **󱥍 pi**.)
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
 * [Q: how do I talk about large numbers?](/en/large-numbers/)

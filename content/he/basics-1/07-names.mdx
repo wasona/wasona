@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 ## שם עצם פרטי
@@ -84,7 +84,7 @@ import Practice from "@/components/Practice.tsx";
   <Sentence sl="jan Ema li sona pona e ma Tosi." m="אמה יודעת היטב גרמנית." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## לקריאה נוספת
 

@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 ## שם תואר
@@ -70,5 +70,5 @@ import Practice from "@/components/Practice.tsx";
 
 עוד נקודה שיש לשים לב אליה: בעברית תואר השם ותואר הפועל נכתבים בצורה שונה. כך למשל, "חבר טוב" (תואר השם) נכתב בצורה שונה מ"רצתי היטב" (תואר הפועל). בטוקי פונה שניהם נכתבים באותה צורה. אין הבדל בין תואר השם _jan pona_ (איש _טוב_, או חבר) לבין תואר הפועל _sona pona_ (לדעת _היטב_). בשני המקרים התואר נכתב באותה צורה: _pona_. 
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

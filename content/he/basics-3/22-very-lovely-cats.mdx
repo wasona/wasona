@@ -32,7 +32,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 בשיעורים הקודמים הכרנו את המילה השימושית **󱤼 mute**, ולמדנו ליצור בעזרתה את הביטויים הבאים:
@@ -101,5 +101,5 @@ import Practice from "@/components/Practice.tsx";
 
 לדוברי עברית ושמות אחרות דרוש תירגול מסויים כדי להתרגל לשימוש במילה **󱥍 pi**. הסיבה היא שבעברית, מילה כמו **󱤼 mute** מתורגמת באופנים שונים בכל אחד מהמקרים: במקרה אחד היא מתורגמת ל"הרבה" (תואר השם) ובמקרה אחר ל"מאד" (תואר הפועל). בטוקי פונה מדובר על אותה מילה, שיכולה לשמש גם כתואר השם וגם כתואר הפועל, ולכן יש צורך להשתמש במילה **󱥍 pi**, כדי שהקורא יידע באיזה סדר לאגד את המילים כשהוא מתרגם את המשפט.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

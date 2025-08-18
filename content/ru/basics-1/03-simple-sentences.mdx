@@ -16,7 +16,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Простые предложения
 
@@ -51,4 +51,4 @@ import Practice from "@/components/Practice.tsx";
 
 (**󱤧 li** и **󱤉 e** могут поначалу казаться ненужными. Мы узнаем, зачем они требуются, но для этого сначала нужно лучше разобраться в частях речи!)
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

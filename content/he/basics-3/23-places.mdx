@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 בשיעור הקודם הכרנו את המילה **󱥍 pi**. למדנו שלצירוף של מילים יכולות להיות שתי משמעויות שונות כשמוסיפים לו את המילה **󱥍 pi** לעומת המשמעות של אותו רצף מילים ללא המילה **󱥍 pi**. 
@@ -60,5 +60,5 @@ import Practice from "@/components/Practice.tsx";
 
 טיפ חשוב! כיוון שהמילה **󱥍 pi** מוסיפה "סוגריים" **לרצף** של מילים במטרה לשנות את סדר ההוספה שלהן לביטוי הכולל, היא לעולם לא תופיע לפני מילה בודדת. אחרי המילה **󱥍 pi** תמיד יופיעו שתי מילים לפחות.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

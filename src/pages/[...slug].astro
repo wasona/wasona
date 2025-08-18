@@ -25,7 +25,7 @@ const prevnext = post.filePath!.includes("index.md")
   : prevnexts[lang][post.id];
 ---
 
-<html lang="en">
+<html lang={lang}>
   <head>
     <BaseHead title={post.data.title} description={post.data.description} />
   </head>

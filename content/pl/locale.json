@@ -1,23 +1,23 @@
 {
-  "Index": "Index",
-  "Next": "Next",
-  "Previous": "Previous",
-  "Translation": "Translation",
+  "Index": "Indeks",
+  "Next": "Następna",
+  "Previous": "Poprzednia",
+  "Translation": "Tłumaczenie",
 
-  "Consonants": "Consonants",
-  "Labial": "Labial",
-  "Coronal": "Coronal",
-  "Dorsal": "Dorsal",
+  "Consonants": "Spółgłoski",
+  "Labial": "Wargowe",
+  "Coronal": "Przedniojęz.",
+  "Dorsal": "Tylnojęz.",
 
-  "Vowels": "Vowels",
-  "Front": "Front",
-  "Central": "Central",
-  "Back": "Back",
+  "Vowels": "Samogłoski",
+  "Front": "Przednie",
+  "Central": "Środkowe",
+  "Back": "Tylne",
 
-  "translate": "Translate the sentence",
-  "check": "check",
-  "continue": "continue",
-  "incorrect": "❌ Not quite. Correct anser: ",
-  "correct": "✅ Correct! Well done!",
-  "done": "🎉 All exercises completed!"
+  "translate": "Przetłumacz zdanie",
+  "check": "Sprawdź",
+  "continue": "Kontynuuj",
+  "incorrect": "❌ Nie do końca. Poprawna odpowiedź: ",
+  "correct": "✅ Poprawnie! Dobra robota!",
+  "done": "🎉 Wszystkie ćwiczenia wykonane!"
 }

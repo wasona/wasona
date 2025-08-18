@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 במהלך הקורס הכרנו את המילים עבור *עינים*, *לב*, *פָּנִים* ו*גב*. בשיעור הזה נכיר את יתר המילים שקשורות לאברי גוף. 
@@ -51,5 +51,5 @@ import Practice from "@/components/Practice.tsx";
   <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="אצבעות הידיים שלי גדולות. אצבעות הרגליים שלי קטנות." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

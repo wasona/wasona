@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Kardinalzahlen
 
@@ -75,7 +75,7 @@ Das sind aber *Kardinalzahlen*: Zahlen, die über eine Anzahl reden. Es gibt auc
 
 (Übrigens ist **󱤽 nanpa** besonders! Hier brauchst du kein **󱥍 pi**.)
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Siehe auch
 * [F: Wie redet man über große Zahlen?](/de/large-numbers/)

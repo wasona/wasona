@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 למדנו כבר את רוב המילים שקשורות בבעלי חיים. בשיעור זה נוסיף לרשימה את המילים החסרות:
@@ -76,5 +76,5 @@ import Practice from "@/components/Practice.tsx";
 		m="האיש/ה דג/ה דגים, מבשל/ת אותם, ואוכל/ת אותם." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

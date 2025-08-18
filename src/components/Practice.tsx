@@ -5,7 +5,9 @@ import React, { useState } from "react";
 
 const Practice: React.FC<{
   exercises: Exercise[];
-}> = ({ exercises }) => {
+  locale: Record<string, string>;
+}> = ({ exercises, locale }) => {
+  const _ = (text: string) => locale[text];
   const [exerciseQueue, setExerciseQueue] = useState<Exercise[]>(exercises);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [completed, setCompleted] = useState(0);
@@ -30,10 +32,10 @@ const Practice: React.FC<{
   const handleCheck = () => {
     setCompleted(completed + 1);
     if (verifyChips(currentExercise, assembledSentence)) {
-      setStatusMessage("✅ Correct! Well done!");
+      setStatusMessage(_("correct"));
       sfx_yes.play();
     } else {
-      setStatusMessage(`❌ Not quite. Correct answer: "${currentExercise.l2}"`);
+      setStatusMessage(`${_("incorrect")} "${currentExercise.l2}"`);
       setExerciseQueue((prev) => [...prev, prev[currentIndex]]);
       sfx_no.play();
     }
@@ -61,10 +63,10 @@ const Practice: React.FC<{
         ></div>
       </div>
       {allDone ? (
-        <h2>🎉 All exercises completed!</h2>
+        <h2>{_("done")}</h2>
       ) : (
         <>
-          <h2>Translate the sentence</h2>
+          <h2>{_("translate")}</h2>
           <h3>{currentExercise.l1}</h3>
           <ChipExercise
             exercise={currentExercise}
@@ -76,7 +78,7 @@ const Practice: React.FC<{
               onClick={checked ? handleContinue : handleCheck}
               className="exercise-button chip"
             >
-              {checked ? "continue" : "check"}
+              {checked ? _("continue") : _("check")}
             </button>
             {statusMessage && <p>{statusMessage}</p>}
           </div>

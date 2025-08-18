@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Отрицание
 
@@ -59,4 +59,4 @@ import Practice from "@/components/Practice.tsx";
 
 Вообще это логично -- если мы отрицаем первое слово в сказуемом, то отрицается всё предложение целиком, чего мы обычно и хотим добиться!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

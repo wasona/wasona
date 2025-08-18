@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Już znamy słowa znaczące *oko*, *serce*, *twarz* i *plecy*, więc nauczmy się pozostałych części ciała!
 
@@ -50,4 +50,4 @@ Coś ciekawego, co możesz zauważyć, to powiązanie wielu części ciała z cz
   <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Moje palce u rąk są większe niż palce u stóp." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

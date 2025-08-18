@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Names
 
@@ -83,7 +83,7 @@ Let's practice using the new words and names in sentences:
   <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma knows Germany well." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
 * [Q: what's my name in Toki Pona?](/en/make-a-name/)

@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Части речи
 
@@ -99,4 +99,4 @@ import Practice from "@/components/Practice.tsx";
 
 Если когда-либо вы не уверены, как прочитать или построить предложение, спросите себя: «Где в предложении подлежащее? Где глагол? Где дополнение?» — и всё легко разобьётся на маленькие понятные фразы!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Поговорим о времени! Возможно, вы заметили, что предложения переводятся по-разному: иногда речь идёт о в настоящем времени, иногда о прошлом, иногда о будущем. Это потому, что по умолчанию в предложении на токи поне нет указания на время -- оно может быть любым! Но, конечно, мы можем его уточнить, используя слова, связанные со временем.
 
@@ -69,4 +69,4 @@ import Practice from "@/components/Practice.tsx";
   <Sentence sl="suno li pini la, mi lape." m="Когда солнце садится, я сплю." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

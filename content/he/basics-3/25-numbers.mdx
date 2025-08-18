@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 ## הספרות מ-1 עד 10
@@ -75,7 +75,7 @@ import Practice from "@/components/Practice.tsx";
 
 שימו לב שלמרות שמספר מתפקד כתואר, לא מוסיפים לפני רצף מילים שמתאר מספר את המילה **󱥍 pi**. 
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## לקריאה נוספת
 * [שאלה: איך אומרים מספרים שגדולים מעשר?](/he/large-numbers/)

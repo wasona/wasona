@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 ## כינויי גוף
@@ -72,7 +72,7 @@ import Practice from "@/components/Practice.tsx";
 
 הכלל הוא שכאשר כינויי הגוף **󱤴 mi** או **󱥞 sina** הם הנושא של המשפט, אין צורך להוסיף אחריהם את המילית **󱤧 li**, זו שאמורה להפריד בין הנושא לנשוא. הסיבה לכך היא שמשפטים שמתחילים ב **󱤴 mi**  או **󱥞 sina** הם מאד נפוצים!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## לקריאה נוספת
 * [האם המילית 'li' מתפקדת כמו פועל העזר 'is' של השפה האנגלית?](/he/li-and-is)

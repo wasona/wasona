@@ -16,7 +16,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 ## משפטים פשוטים
@@ -52,5 +52,5 @@ import Practice from "@/components/Practice.tsx";
 
 במבט ראשוני, במיוחד כשמדובר על משפטים פשוטים, עושה רושם כאילו המילים **󱤧 li** ו **󱤉 e** מיותרות. בהמשך, כשנפגוש משפטים מורכבים יותר, תוכלו להבין מדוע, בכל זאת, יש בהן צורך. 
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

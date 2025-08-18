@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 מילה חשובה אחת שכדאי להכיר לפני שנתחיל עם השטויות: 
@@ -85,7 +85,7 @@ import Practice from "@/components/Practice.tsx";
 
 אם ניקח את המילה הלא רשמית **󱦅 lanpan** כדוגמא, ונסתכל על התרגום שלה, אפשר למצוא תחליף לא רע למילה הזאת תוך שימוש במילים רשמית של השפה: הביטוי **󱤖󱤓 kama jo** אומר בעצם אותו דבר.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## לקריאה נוספת
 * [שאלה: מה סוניה לאנג עושה בימים אלה?](/he/jan-sonja/)

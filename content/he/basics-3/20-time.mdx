@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 בשיעור הזה נדבר על זמנים. אולי שמתם לב שהתרגום של המשפטים לאורך הקורס לא היה קונסיסטנטי מבחינת הזמנים: חלק מהמשפטים תרגמנו להווה, חלק לעבר ולפעמים גם לעתיד. הסיבה היא שאם זה לא נאמר במפורש, למשפטים בטוקי פונה אין זמן מוגדר. אם רוצים לייחס למשפט זמן מוגדר, צריך להוסיף לו ביטויי זמן, שיגדירו במפורש אם הדברים מיוחסים לזמן עבר, הווה או עתיד. 
@@ -70,5 +70,5 @@ import Practice from "@/components/Practice.tsx";
   <Sentence sl="suno li pini la, mi lape." m="כשהשמש שוקעת, אני ישן/ה." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Let's talk colours!
 
@@ -59,4 +59,4 @@ There's a big difference between a white house and the White House:
 
 I only bring it up now, because colours are the most obvious example, but the same actually applies to any phrase! Before using adjectives, it's often useful to stop and think: are these adjectives getting the important part you wanted to talk about, or are they just shorthand for something else?
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

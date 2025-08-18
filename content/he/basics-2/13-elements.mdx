@@ -26,7 +26,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 
 בשיעור הזה נשאיר בצד את הדיקדוק ונדבר קצת פילוסופיה.
@@ -66,5 +66,5 @@ import Practice from "@/components/Practice.tsx";
   <Sentence sl="o kama sona e kon toki!" m="יש ללמוד את המשמעות של הדברים!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Na poprzedniej lekcji spojrzeliśmy na **󱥍 pi**. Jak mogłeś zauważyć, jest dużo wyrażeń z dwoma sensownymi znaczeniami, zależnie od tego czy występuje w nich **󱥍 pi** lub nie. Jest także wiele wyrażeń, które *mają mało sensu*, gdy nie ma w nich **󱥍 pi**! Zobaczysz to często przy imionach:
 
@@ -57,4 +57,4 @@ Użyjmy ich w zdaniach:
 
 Wskazówka: ponieważ **󱥍 pi** istnieje tylko do narzucenia sposobu analizy wyrażenia, nigdy nie będzie występował przed pojedynczym słowem! Zawsze po nim występują co najmniej dwa słowa.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

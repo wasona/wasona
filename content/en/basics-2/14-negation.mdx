@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Negation
 
@@ -59,4 +59,4 @@ You may notice something interesting. Although **󱤂 ala** can go anywhere that
 
 This actually makes a lot of sense -- negating the first word in the verb also negates the whole sentence, which we often want!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
