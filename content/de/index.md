@@ -9,17 +9,17 @@ Rede über Tiere, Menschen, Orte und Aktivitäten.
 Lerne deine ersten 40 Wörter!  
 Am Ende von diesem Teil wirst du eine kurze Geschichte lesen.
 
-* [Einführung](/de/00)
-* [Lektion 1: Aussprache](/de/01)
-* [Lektion 2: Zwei Schriftsysteme](/de/02)
-* [Lektion 3: Einfache Sätze](/de/03)
-* [Lektion 4: Adjektive](/de/04)
-* [Lektion 5: Wortarten](/de/05)
-* [Lektion 6: Pronomen](/de/06)
-* [Lektion 7: Namen](/de/07)
-* [Lektion 8: Präpositionen](/de/08)
-* [Lektion 9: Aktivitäten](/de/09)
-* [Lektion 10: Pause 1](/de/10)
+* [Einführung](/de/00/)
+* [Lektion 1: Aussprache](/de/01/)
+* [Lektion 2: Zwei Schriftsysteme](/de/02/)
+* [Lektion 3: Einfache Sätze](/de/03/)
+* [Lektion 4: Adjektive](/de/04/)
+* [Lektion 5: Wortarten](/de/05/)
+* [Lektion 6: Pronomen](/de/06/)
+* [Lektion 7: Namen](/de/07/)
+* [Lektion 8: Präpositionen](/de/08/)
+* [Lektion 9: Aktivitäten](/de/09/)
+* [Lektion 10: Pause 1](/de/10/)
 
 ## Teil 2: Mach weiter!
 
@@ -27,31 +27,31 @@ Rede über dein Zuhause, Stoffe, die Gesellschaft, und drücke dich gut aus.
 Lerne deine nächsten 39 Wörter!  
 Am Ende von diesem Teil wirst du einen Dialog lesen.
 
-* [Lektion 11: Zuhause](/de/11)
-* [Lektion 12: Bitten](/de/12)
-* [Lektion 13: Elemente](/de/13)
-* [Lektion 14: Verneinung](/de/14)
-* [Lektion 15: Mit und Wie](/de/15)
-* [Lektion 16: Gesellschaft](/de/16)
-* [Lektion 17: Fragen](/de/17)
-* [Lektion 18: Gefühle](/de/18)
-* [Lektion 19: Pause 2](/de/19)
+* [Lektion 11: Zuhause](/de/11/)
+* [Lektion 12: Bitten](/de/12/)
+* [Lektion 13: Elemente](/de/13/)
+* [Lektion 14: Verneinung](/de/14/)
+* [Lektion 15: Mit und Wie](/de/15/)
+* [Lektion 16: Gesellschaft](/de/16/)
+* [Lektion 17: Fragen](/de/17/)
+* [Lektion 18: Gefühle](/de/18/)
+* [Lektion 19: Pause 2](/de/19/)
 
 ## Teil 3: Fast fertig!
 
 Rede über Zeit, Raum, Zahlen, Farben und mehr!
 Lerne alle 131 Wörter zuende!
 
-* [Lektion 20: Zeit](/de/20)
-* [Lektion 21: Natur](/de/21)
-* [Lektion 22: Sehr süße Katzen](/de/22)
-* [Lektion 23: Orte](/de/23)
-* [Lektion 24: Körper](/de/24)
-* [Lektion 25: Zahlen](/de/25)
-* [Lektion 26: Liebe und Identität](/de/26)
-* [Lektion 27: Farben](/de/27)
-* [Lektion 28: Muh!](/de/28)
-* [Lektion 29: Pause 3](/de/29)
+* [Lektion 20: Zeit](/de/20/)
+* [Lektion 21: Natur](/de/21/)
+* [Lektion 22: Sehr süße Katzen](/de/22/)
+* [Lektion 23: Orte](/de/23/)
+* [Lektion 24: Körper](/de/24/)
+* [Lektion 25: Zahlen](/de/25/)
+* [Lektion 26: Liebe und Identität](/de/26/)
+* [Lektion 27: Farben](/de/27/)
+* [Lektion 28: Muh!](/de/28/)
+* [Lektion 29: Pause 3](/de/29/)
 
 ## Fragen und Antworten!
 
