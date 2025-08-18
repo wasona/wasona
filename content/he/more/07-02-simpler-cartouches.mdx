@@ -1,7 +1,7 @@
 ---
 slug: "he/simpler-cartouches"
 title: "שאלה: איך אפשר לקצר את השמות הארוכים של sitelen pona?"
-description: "Learn about dots, tacks, and abbreviations!"
+description: "איך מגייסים לעזרה נקודות וסימנים אחרים כדי לקצר את הכרטוש"
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -11,26 +11,26 @@ import Practice from "@/components/Practice.tsx";
 
 <div dir="rtl">
 
-_sitelen pona_ names can be quite long:
+שמות שנכתבים באמצעות _sitelen pona_ יכולים להיות ארוכים:
 
 <List>
-  <Sentence sl="lipu Wikipesija" m="Wikipedia" />
-  <Sentence sl="ma Antasika" m="Antarctica" />
-  <Sentence sl="ma Kolonpija" m="Colombia" />
+  <Sentence sl="lipu Wikipesija" m="ויקיפדיה" />
+  <Sentence sl="ma Antasika" m="אנטרקטיקה" />
+  <Sentence sl="ma Kolonpija" m="קולומביה" />
 </List>
 
-People have come up with three notable systems to make names easier to read and write.
+יש שלוש שיטות מקובלות, שמאפשרות לקצר את השם. 
 
-## 1. dot system: 󱤿󱥠󱤕
+## 1. שיטת הנקודות: 󱤿󱥠󱤕
 
-The dot system, or _nasin sitelen kalama_, was created by jan Pumiko in 2022. 40–60% of Toki Pona speakers say they use it, or use it in some situations. In _nasin sitelen kalama_, you split up a word into _morae_: chunks that are like a syllable, but smaller. One mora is either consonant+vowel, or the -n after a vowel:
+שיטות הנקודות,  _nasin sitelen kalama_, נוצרה  על ידי jan Pumiko בשנת 2022. על פי סקר שנערך בקרב דוברי השפה 40-60% ענו שהם משתמשים בה במידה כלשהי. בשיטה הזו מחלקים את המילה ליחידות שנקראות _מוֹרָה_. בכל יחידה כזאת יש או עיצור+תנועה או האות n שאחרי התנועה:
 
 - to-ki
 - ja-n
 - a-n-pa
 - si-n-pi-n
 
-By adding middle-dots after a character, you increase how many morae should be pronounced in the name:
+בשיטה הזו, במקום להשתמש במילה חדשה עבור כל אות, משתמשים באותה מילה עבור כמה אותיות, והנקודות שמוסיפים אחרי הסמל של המילה קובעות כמה יחידות של _מוֹרָה_ לקחת מתוך כל מילה:
 
 <List>
   <Word sp="󱦐󱤅󱦑" sl="A" />
@@ -43,16 +43,15 @@ By adding middle-dots after a character, you increase how many morae should be p
   <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
 </List>
 
-(You might notice a funny quirk of this system: **󱦐󱤅󱦑** makes up a full mora, so adding a dot adds the next mora, which is **-n**. But **󱦐󱥟󱦑** is not a full mora, so adding a dot only completes the first mora, which is **si**.)
+(מוזרות מסויימת שקיימת בשיטה: הנקודה הראושנה שמופיעה אחרי הסמל של המילה היא לא **מוֹרָה** שלמה, אלא "משלימה" את האות הראשונה של אותה מילה ל**מוֹרָה** שלמה. לדוגמא: הנקודה שאחרי **󱦐󱥟󱦑** היא לא **מוֹרָה** שלמה, אלא משלימה אותה ל**si**). 
 
-You can also use a colon to mean the entire word should be pronounced:
-
+כדי לכלול את כל המילה בשם, משתמשים בנקודתיים:
 <List>
   <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
   <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
 </List>
 
-Put several characters together in a cartouche, and you can write a name:
+שילוב של מילים ונקודות בכרטוש מאפשר ליצור שם שלם: 
 
 <List>
   <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
@@ -60,12 +59,12 @@ Put several characters together in a cartouche, and you can write a name:
   <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
 </List>
 
-* 🎉 you use fewer word characters to write one name!
-* 🙁 the cartouche is still quite long.
+* 🎉 השיטה מאפשרת להקטין את האורך של הכרטוש!
+* 🙁 הכרטוש המקוצר עדין די ארוך.
 
-## 2. tally system: 󱤿󱥠󱤕󱥍󱤩󱤨
+## 2. שיטת הניקוד: 󱤿󱥠󱤕󱥍󱤩󱤨
 
-The tally system was created by jan Sonja in 2024 for use in official letters and books, where narrow pages require shorter names. In it, every character in the cartouche gets a tally mark below. You use one tally mark for every sound or letter you want to pronounce:
+השיטה פותחה על ידי סוניה לאנג ב-2024, עבור מכתבים רשמיים וספרים שכתובים על דפים צרים יחסית. בשיטה הזו, מוסיפים נקודות קטנות מתחת לכל מילה, שקובעות כמה אותיות לקחת.
 
 {/* Note: this section uses non-standard codepoints F19FC-F19FF, which I modded into nasin nanpa. If you ever update nasin nanpa, this section will break. Ideally, nskpll gets standardised later. */}
 
@@ -75,15 +74,15 @@ The tally system was created by jan Sonja in 2024 for use in official letters an
   <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
 </List>
 
-## 3. initial system
+## 3. שיטת הקיצורים
 
-This method was first shown by DavidAR in 2019, and was tried by jan Sonja in *lipu su*: "The Wonderful Wizard of Oz (Toki Pona edition)". At first, you introduce a person, language, or place with its full name:
+השיטה הזו נוצרה על ידי DavidAR ב-2019, וסוניה לאנג השתמשה בה בספר "הקוסם מארץ עוץ", הספר הראשון בסידרה *su*. השיטה הזו עובדת בצורה הבאה: בפעם הראשונה שהשם מוזכר, כותבים את הכרטוש שלו בצורה המלאה:
 
 <List>
   <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorothy" />
 </List>
 
-But in following sentences, you abbreviate the name to just the first character:
+במשפטים הבאים שהוא מופיע באותו פרק, משתמשים בכרטוש מקוצר, שמכיל רק את הסמל הראשון: 
 
 <List>
   <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorothy" />
