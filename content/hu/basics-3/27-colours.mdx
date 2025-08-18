@@ -1,0 +1,62 @@
+---
+slug: "hu/27"
+title: "27. lecke: színek"
+description: "Tanuld meg a következő szavakat: kule, walo, pimeja, laso, loje, jelo, kin!"
+practice:
+  - l1: "Este partizok."
+    l2: "tenpo pimeja la mi musi."
+  - l1: "Sárga por van a méhen."
+    l2: "ko jelo li lon pipi."
+  - l1: "Én is játszok színes kockákkal."
+    l2: "mi kin li musi kepeken leko kule."
+  - l1: "Nem tudok látni a hó miatt."
+    l2: "mi ken ala lukin tan ko walo."
+  - l1: "Kék, fehér, és piros van a zászlón."
+    l2: "laso en walo en loje li lon lipu."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Beszéljünk a színekről!
+
+<List>
+  <Word sl="kule" m="szín, fajta; színes" />
+  <Word sl="walo" m="fehér, világos" />
+  <Word sl="pimeja" m="fekete, sötét" />
+  <Word sl="loje" m="piros, magenta" />
+  <Word sl="jelo" m="sárga" />
+  <Word sl="laso" m="zöld, kék" />
+</List>
+
+A *sitelen ponában* sok szín úgy néz ki, mintha összetett szimbólum lenne: a **󱤞 kule** háromszöge plusz egy másik szó például **󱤂 ala**, **󱥰 uta**, **󱥤 suno**, **󱤗 kasi**. Sok más összetett szimbólum van a *sitelen ponában* például **󱤭 luka**: **󱤶 moku**, **󱥉 pali**, **󱤙 kepeken**; ún. *"emitters"* (*"kibocsátók"*): **󱤕 kalama**, **󱥌 pana**, **󱥡 sona**, **󱥬 toki**. Kapsz egy mezei pirospontot, ha ezeket már ezelőtt is észrevetted!
+
+Természetesen ezek a szavak nem csak *pontosan* egy színre vonatkoznak, hanem hasonló színekre is. A **󱤣 laso** különleges: a toki ponában a zöld és a kék ugyanazon szín árnyalatai pont úgy, mint japánul, vietnámul, vagy a zulu nyelvben. Itt van két mondat, ami értelmes toki ponául, de magyarul nem:
+
+<List>
+  <Word sl="kin" m="is, szintén" />
+  <Sentence sl="sewi li laso." m="Az ég kék." />
+  <Sentence sl="kasi kin li laso." m="A fű szintén zöld." />
+</List>
+
+## Szükségünk van színekre?
+
+A toki ponában nem használjuk annyira gyakran a színeket. A természetes nyelvekben használunk színeket átvitt értelemben (pl. feketepiac, zöldfülű), de a toki ponában ilyen nincs:
+
+<List>
+  <Sentence sl="jan pi kute laso" m="zöld fülű ember" />
+  <Sentence sl="jan sin" m="zöldfülű" />
+</List>
+
+Nagy különbség van egy fehér ház és a Fehér Ház között:
+
+<List>
+  <Sentence sl="tomo walo" m="egy fehér ház" />
+  <Sentence sl="tomo ni la jan li lawa e ma Mewika." m="a Fehér Ház" />
+</List>
+
+Ez a színeknél a legfeltűnőbb, de ez minden kifejezésre vonatkozik! Mielőtt mellékneveket használsz, gondolkodj el, hogy ez ténylegesen leírja azt, amire gondolsz, vagy csak leegyszerűsítik a fordítást.
+
+<Practice exercises={frontmatter.practice} client:load />

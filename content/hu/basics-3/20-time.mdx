@@ -1,0 +1,72 @@
+---
+slug: "hu/20"
+title: "20. lecke: idő"
+description: "Tanuld meg a következő szavakat: la, tenpo, sike, mun, suno, sin, poka!"
+practice:
+  - l1: "A növények fotoszintetizálnak."
+    l2: "kasi li moku e suno."
+  - l1: "A Hold egy ellipszis alakú pályán mozog."
+    l2: "mun li tawa lon sike."
+  - l1: "Ők melletted vannak."
+    l2: "ona li lon poka sina."
+  - l1: "Régen kicsi voltam."
+    l2: "tenpo pini la mi lili."
+  - l1: "Vicces, a madár úgy beszél, mint egy ember."
+    l2: "musi la waso li toki sama jan."
+  - l1: "Amikor a levegő hideg, a bogarak eltűnnek."
+    l2: "kon li lete la, pipi li weka."
+  - l1: "Ha akarod, akkor megteheted."
+    l2: "sina wile la, sina ken."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Beszéljünk az időről! Észrevehetted, hogy a mondatokat nem egységesen fordítottam le: néha a jelenről, néha a múltról, és néha a jövőről beszélnek. Ez azért van, mert alapból a toki pona mondatok nem határozzák meg az időt, tehát bármikor lehet. De természetesen lehetünk pontosabbak az idővel kapcsolatos szavak használatával.
+
+Tanuljunk meg néhányat:
+
+<List>
+  <Word sl="tenpo" m="idő, pillanat, szituáció" />
+  <Word sl="sike" m="kerek, ismétlődő, évente; kör, golyó, labda" />
+  <Word sl="mun" m="hold, égitest" />
+  <Word sl="suno" m="napfény, Nap; fényes, világos" />
+  <Word sl="sin" m="új, friss; újra, megint" />
+  <Word sl="poka" m="közelség, valaminek az oldala; közeli" />
+</List>
+
+Már tudsz beszélni a *térbeli* elhelyezkedésről. Az *időbeli* elhelyezkedés nagyon hasonló:
+
+<List>
+  <Word sl="lon tenpo kama" m="a jövő időben, a jövőben" />
+  <Word sl="lon tenpo pini" m="a befejezett/elmúlt időben, a múltban" />
+  <Word sl="lon tenpo ni" m="ebben az időben" />
+  <Sentence sl="soweli lili mi o kama suli lon tenpo kama!" m="Hadd nőjön nagyra az én kicsi macskám a jövőben!" />
+  <Sentence sl="ma Loma li ma suli lon tenpo weka." m="Róma egy nagy birodalom volt régen." />
+</List>
+
+Az idő általában egy "jelenet", egy "kontextus" a beszéd többi részéhez. Általában ezt a kontextus a mondat elejére szeretjük tenni. A toki ponában is van erre lehetőség:
+
+<List>
+  <Word sl="la" m="valaminek, valakinek, apropó ..., amikor ..., ha ... " />
+  <Word sl="ken la" m="lehet ..., talán ..." />
+  <Word sl="open la" m="kezdésként ..." />
+  <Word sl="lipu la" m="a könyvnek ..." />
+  <Word sl="tenpo la" m="néha ..." />
+  <Word sl="tenpo pini la" m="a múltban ..." />
+  <Word sl="tenpo suno kama la" m="holnap ..." />
+  <Sentence sl="sin la mi wile toki e ni:" m="Mégegyszer el akarom mondani ..." />
+  <Sentence sl="mi pali e ni lon tenpo kama poka." m="Dolgozni fogok ezen mindjárt." />
+</List>
+
+A **󱤡 la** két mondat között is használható, összekötve őket. Ez általában azt jelenti, hogy az első mondat elé kerül *"ha vagy amikor ..."*, és a második mondat elé kerül *"akkor ..."*.
+
+<List>
+  <Word sl="suno li pini." m="Lemegy a nap." />
+  <Word sl="mi lape." m="Alszok." />
+  <Sentence sl="suno li pini la, mi lape." m="Amikor lemegy a nap, akkor alszok." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

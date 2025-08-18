@@ -1,0 +1,103 @@
+---
+slug: "hu/22"
+title: "22. lecke: nagyon cuki cicák"
+description: "Tanuld meg a pi-t!"
+practice:
+  - l1: "sok hó"
+    l2: "ko lete mute"
+    alsoAccept:
+      - "ko mute lete"
+  - l1: "nagyon hideg hó"
+    l2: "ko pi lete mute"
+  - l1: "a sok hibáim"
+    l2: "pakala mi mute"
+    alsoAccept:
+      - "pakala mute mi"
+  - l1: "a mi hibánk"
+    l2: "pakala pi mi mute"
+  - l1: "a másik nyelvkönyv"
+    l2: "lipu toki ante"
+    alsoAccept:
+      - "lipu ante toki"
+  - l1: "egy másik nyelvű könyv"
+    l2: "lipu pi toki ante"
+  - l1: "valakinek a kicsi szobája"
+    l2: "tomo jan lili"
+    alsoAccept:
+      - "tomo lili jan"
+  - l1: "egy szoba kicsi embereknek"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Nemrég tanultuk a **󱤼 mute** szót, ami nagyon hasznos tud lenni.
+
+Gondolkodjunk! Már meg tudjuk fogalmazni ezeket a kifejezéseket:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="soweli suwi" m="cuki cica" />
+  <Word sl="soweli mute" m="sok cica" />
+  <Word sl="suwi mute" m="nagyon cuki" />
+</List>
+
+De mi van akkor, ha ezeket egybe rakjuk? Azt fogja jelenteni, hogy *sok cuki cica* vagy *nagyon cuki cica*?
+
+<List>
+  <Word sl="soweli suwi mute" m="sok cuki cica" />
+</List>
+
+Ez a kifejezés azt jelenti, hogy *sok cuki cica*, mert a **󱥦 suwi** a **󱥢 soweli**-nek a jelzője, a **󱤼 mute** így pedig a **󱥢󱥦 soweli suwi**-nak a jelzője.
+De én azt gondolom, hogy az *én* macskám nagyon cuki! Ezt hogyan mondhatom? Hogy tehetem meg azt, hogy a **󱤼 mute** a **󱥦 suwi**-nak a jelzője legyen, ne a **󱥢 soweli**-nek?
+Erre ezt a szócskát használjuk:
+
+<List>
+  <Word sl="pi" m="melléknevek csoportosítására használjuk" />
+  <Word sl="soweli pi suwi mute" m="nagyon cuki cica" />
+</List>
+
+Hurrá! Most már beszélhetünk egy **󱥢 soweli**-ről, ami **󱥦󱤼 suwi mute**.
+Ha szereted a matekot, akkor gondolhatsz erre úgy, mintha egy zárójelet nyitnál azért, hogy megváltoztasd a műveleti sorrendet: **󱥍 pi** nélkül: *"cica cuki sok"* (tehát *"(cica cuki) sok"*) vagy **󱥍 pi**-vel: *"cica (cuki sok)"*.
+
+Nézzünk egy másik példát:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="sitelen tomo" m="egy fotó egy házról" />
+  <Word sl="sitelen mute" m="fotók" />
+  <Word sl="tomo mute" m="házak" />
+  <Word sl="sitelen tomo mute" m="fotók egy házról" />
+  <Word sl="sitelen pi tomo mute" m="egy fotó házakról" />
+</List>
+
+Itt is gondolhatsz arra, hogy *"fotó ház sok"* (tehát *"(fotó ház) sok"*) vagy *"fotó (ház sok)"*.
+Természetesen nem csak a **󱤼 mute** használható a **󱥍 pi**-vel. Nézzünk néhány más szót is:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="jan pona" m="kedves ember" />
+  <Word sl="jan lili" m="kicsi ember" />
+  <Word sl="pona lili" m="kicsit kedves" />
+  <Word sl="jan pona lili" m="egy kicsi kedves ember" />
+  <Word sl="jan pi pona lili" m="egy kicsit kedves ember" />
+</List>
+
+*"ember kedves kicsi"* (tehát *"(ember kedves) kicsi"*) vagy *"ember (kedves kicsi)"*.
+
+<List>
+  <Word sl="sona utala" m="háborúismeret" />
+  <Word sl="sona sin" m="új ismeret" />
+  <Word sl="utala sin" m="új háboró" />
+  <Word sl="sona utala sin" m="új háborúismeret. az ismeret új." />
+  <Word sl="sona pi utala sin" m="újháború-ismeret. a háború új." />
+</List>
+
+*"ismeret háború új"* (tehát *"(ismeret háború) új"*) vagy *"ismeret (háború új)"*.
+
+Tehát a toki ponában a **󱥍 pi** segítségével tudjuk módosítani, hogy hogyan kell értelmezni a mellékneveket.
+
+<Practice exercises={frontmatter.practice} client:load />

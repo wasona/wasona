@@ -1,0 +1,68 @@
+---
+slug: "hu/13"
+title: "13. lecke: anyagok"
+description: "Tanuld meg a következő szavakat: kon, telo, ko, kiwen, seli, lete, sewi!"
+practice:
+  - l1: "az égen"
+    l2: "lon sewi"
+  - l1: "egy hideg föld"
+    l2: "ma lete"
+  - l1: "földtan"
+    l2: "sona kiwen"
+  - l1: "Az ég ad hideg vizet."
+    l2: "sewi li pana e telo lete."
+  - l1: "Szereti az édesvizet."
+    l2: "telo suwi li pona tawa ona."
+  - l1: "Az agyag megkeményedhet."
+    l2: "ko li ken kama kiwen."
+  - l1: "Mosd meg a ruháidat!"
+    l2: "o telo e len sina!"
+  - l1: "Tanuld meg a szó jelentését!"
+    l2: "o kama sona e kon nimi!"
+  - l1: "Milana tanulja a szent könyvet."
+    l2: "jan Milana li kama sona e lipu sewi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Oké, ebben a leckében a nyelvtan helyett egy kicsit filozofáljunk!
+
+Az emberek mindigis próbáltak egyszerű dolgokat találni, amikból áll minden más, vagy amikbe lehet csoportosítani minden mást. A kínaiaknál: fa, tűz, föld, fém, és víz. A görögöknél: tűz, föld, levegő, és víz. Más rendszerek akár a mennyországot is magában foglalják. Még ma is, amikor a tudomány a világ kérdéseit válaszolja meg, a legtöbb dolog négy halmazállapotba esik: szilárd, folyékony, gáz, vagy plazma.
+
+Természetesen azok az anyagok vagy halmazállapotok nem tartalmaznak mindent a mi komplex világunkban. De segítenek nekünk megérteni azokat. Tanuljunk meg néhány toki pona szót, amelyek hasznosak lesznek a körbeírásukra:
+
+<List>
+  <Word sl="kon" m="levegő, lélek, lényeg, jelentés" />
+  <Word sl="telo" m="víz, egy híg folyadék" />
+  <Word sl="ko" m="egy puha szilárd dolog vagy kemény folyadék, pl. homok, agyag, (konyhai) tészta, ragasztó" />
+  <Word sl="kiwen" m="egy kemény szilárd dolog, pl. kő, fa, fém" />
+  <Word sl="seli" m="tűz, forró, égni" />
+  <Word sl="lete" m="hideg" />
+  <Word sl="sewi" m="ég; magas, szent, isteni" />
+</List>
+
+Pont úgy, mint a klasszikus anyagok, a toki pona szavak néha nagyon tágnak érződhetnek:
+* **󱥚 sewi** nem csak "fent", hanem a tisztelet afelé, ami mindig felettünk van, elérhetetlen.
+* **󱤝 kon** nem csak "gáz", hanem magában foglalja a lelket is, valami, amit nem látsz, valami, aminek köze van a lélegzéshez.
+* **󱤛 kiwen**, **󱤜 ko**, és **󱥪 telo** nem mondja meg, hogy honnan jött az anyag, de elmagyarázzák, hogy milyen a tapintata.
+
+Ez a kurzus csak a toki pona alapjait tanítja meg, ezért minden szó mellett egy rövid fordítást találsz. De a fordítás csak nagyvonalúan próbálja elmagyarázni a szó *szemantikai terét*: az összes szituációt, ahol a szó értelmes lenne. A szemantikai tér felfedezése a szituációk felfedezésével jár. És ezt idővel és gyakorlással lehet elsajátítani.
+
+Tanuljuk meg a szavak használatát kifejezésekben és mondatokban:
+
+<List>
+  <Word sl="kiwen kasi" m="a növények kemény része, fa" />
+  <Word sl="ko lete" m="hideg szösz, hó" />
+  <Word sl="kon sewi" m="szent lélek" />
+  <Word sl="telo nasa" m="furcsaságot okozó folyadék, alkohol" />
+  <Sentence sl="lete li awen e moku." m="A hideg megőrzi az ételeket." />
+  <Sentence sl="seli li moku e kiwen kasi." m="A tűz elfogyasztotta a fát." />
+  <Sentence sl="telo li kama tan sewi." m="Víz esik az égből.<br />(Esik az eső.)" />
+  <Sentence sl="o kama sona e kon toki!" m="Tanuld meg a beszéd jelentését/mondanivalóját!" />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
