@@ -1,5 +1,5 @@
 ---
-import { langNames, langs } from "@/utils/content";
+import { locales } from "@/utils/i18n";
 import { type CollectionEntry } from "astro:content";
 interface Props {
   prevnext: {
@@ -8,6 +8,8 @@ interface Props {
   };
 }
 const { prevnext } = Astro.props;
+
+const _ = (text: string) => locales[Astro.url.pathname.split("/")[1]][text];
 ---
 
 <style>
@@ -37,7 +39,7 @@ const { prevnext } = Astro.props;
     {
       prevnext.prev ? (
         <a href={"/" + prevnext.prev.id + "/"}>
-          <span aria-hidden="true">«</span> Previous
+          <span aria-hidden="true">«</span> {_("Previous")}
         </a>
       ) : (
         ""
@@ -45,13 +47,13 @@ const { prevnext } = Astro.props;
     }
   </span>
   <span>
-    <a href={".."}>Index</a>
+    <a href={".."}>{_("Index")}</a>
   </span>
   <span>
     {
       prevnext.next ? (
         <a href={"/" + prevnext.next.id + "/"}>
-          Next <span aria-hidden="true">»</span>
+          {_("Next")} <span aria-hidden="true">»</span>
         </a>
       ) : (
         ""

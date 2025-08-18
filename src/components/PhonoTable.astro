@@ -1,5 +1,8 @@
 ---
 import Audio from "@/components/Audio.astro";
+import { locales } from "@/utils/i18n";
+
+const _ = (text: string) => locales[Astro.url.pathname.split("/")[1]][text];
 ---
 
 <style is:global>
@@ -29,37 +32,37 @@ import Audio from "@/components/Audio.astro";
 
 <div id="phono">
   <div id="consonants">
-    <h3>Consonants</h3>
+    <h3>{_("Consonants")}</h3>
     <table>
       <thead>
         <tr>
-          <th></th>
-          <th>Labial</th>
-          <th>Coronal</th>
-          <th>Dorsal</th>
+          <!-- <th></th> -->
+          <th>{_("Labial")}</th>
+          <th>{_("Coronal")}</th>
+          <th>{_("Dorsal")}</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Nasal</td>
+          <!-- <td>{_("Nasal")}</td> -->
           <Audio td from="ipa" file="m" />
           <Audio td from="ipa" file="n" />
           <td></td>
         </tr>
         <tr>
-          <td>Stop</td>
+          <!-- <td>{_("Stop")}</td> -->
           <Audio td from="ipa" file="p" />
           <Audio td from="ipa" file="t" />
           <Audio td from="ipa" file="k" />
         </tr>
         <tr>
-          <td>Fric.</td>
+          <!-- <td>{_("Fricative")}</td> -->
           <td></td>
           <Audio td from="ipa" file="s" />
           <td></td>
         </tr>
         <tr>
-          <td>Appr.</td>
+          <!-- <td>{_("Approximant")}</td> -->
           <Audio td from="ipa" file="w" />
           <Audio td from="ipa" file="l" />
           <Audio td from="ipa" file="j" />
@@ -68,31 +71,31 @@ import Audio from "@/components/Audio.astro";
     </table>
   </div>
   <div id="vowels">
-    <h3>Vowels</h3>
+    <h3>{_("Vowels")}</h3>
     <table>
       <thead>
         <tr>
-          <th></th>
-          <th>Front</th>
-          <th>Central</th>
-          <th>Back</th>
+          <!-- <th></th> -->
+          <th set:html={_("Front")} />
+          <th set:html={_("Central")} />
+          <th set:html={_("Back")} />
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>High</td>
+          <!-- <td>{_("High")}</td> -->
           <Audio td from="wasona/ipa" file="i" />
           <td></td>
           <Audio td from="wasona/ipa" file="u" />
         </tr>
         <tr>
-          <td>Mid</td>
+          <!-- <td>{_("Mid")}</td> -->
           <Audio td from="wasona/ipa" file="e" />
           <td></td>
           <Audio td from="wasona/ipa" file="o" />
         </tr>
         <tr>
-          <td>Low</td>
+          <!-- <td>{_("Low")}</td> -->
           <td></td>
           <Audio td from="wasona/ipa" file="a" />
           <td></td>

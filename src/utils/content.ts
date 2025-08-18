@@ -1,5 +1,5 @@
+import { langs } from "@/utils/i18n";
 import { type CollectionEntry, getCollection } from "astro:content";
-
 // utilities
 
 export const by =
@@ -13,19 +13,11 @@ export const getLang = (post: CollectionEntry<"blog">) =>
   post.filePath!.replace(POSTS, "").split("/")[0];
 
 export const posts = await getCollection("blog");
-export const langs = (() => {
-  const rawLangs = new Set(posts.map(getLang));
-  rawLangs.delete("index.md");
-  return [...rawLangs].sort();
-})();
-export const langNames: Record<string, string> = {
-  en: "English",
-  de: "Deutsch",
-  pl: "polski",
-  ru: "русский",
-  he: "עברית",
-  translate: "add language",
-};
+// export const langs = (() => {
+//   const rawLangs = new Set(posts.map(getLang));
+//   rawLangs.delete("index.md");
+//   return [...rawLangs].sort();
+// })();
 
 export const prevnexts = Object.fromEntries(
   langs.map((lang) => {
