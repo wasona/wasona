@@ -2,13 +2,12 @@
 import { langNames, langs } from "@/utils/content";
 import { type CollectionEntry } from "astro:content";
 interface Props {
-  prevnext?: {
+  prevnext: {
     prev?: CollectionEntry<"blog">;
     next?: CollectionEntry<"blog">;
   };
-  current: string;
 }
-const { prevnext, current } = Astro.props;
+const { prevnext } = Astro.props;
 ---
 
 <style>
@@ -23,50 +22,40 @@ const { prevnext, current } = Astro.props;
   span {
     flex: 1 1 0px;
   }
+  span:first-child:dir(ltr),
+  span:last-child:dir(rtl) {
+    text-align: left;
+  }
+  span:first-child:dir(rtl),
+  span:last-child:dir(ltr) {
+    text-align: right;
+  }
 </style>
 
 <nav>
-  {
-    prevnext ? (
-      <>
-        <span style="text-align: left">
-          {prevnext.prev ? (
-            <a href={"/" + prevnext.prev.id + "/"}>
-              <span aria-hidden="true">«</span> Previous
-            </a>
-          ) : (
-            ""
-          )}
-        </span>
-        <span>
-          <a href={".."}>Index</a>
-        </span>
-        <span style="text-align: right">
-          {prevnext.next ? (
-            <a href={"/" + prevnext.next.id + "/"}>
-              Next <span aria-hidden="true">»</span>
-            </a>
-          ) : (
-            ""
-          )}
-        </span>
-      </>
-    ) : (
-      <span>
-        {langs
-          .map((lang) =>
-            current === lang || (current === "/" && lang === "en") ? (
-              <strong>{langNames[lang]}</strong>
-            ) : (
-              <a href={lang == "en" ? "/" : `/${lang}/`}>{langNames[lang]}</a>
-            ),
-          )
-          .reduce((prev, curr, i) => (
-            <>
-              {prev} <b>{" · "}</b> {curr}
-            </>
-          ))}
-      </span>
-    )
-  }
+  <span>
+    {
+      prevnext.prev ? (
+        <a href={"/" + prevnext.prev.id + "/"}>
+          <span aria-hidden="true">«</span> Previous
+        </a>
+      ) : (
+        ""
+      )
+    }
+  </span>
+  <span>
+    <a href={".."}>Index</a>
+  </span>
+  <span>
+    {
+      prevnext.next ? (
+        <a href={"/" + prevnext.next.id + "/"}>
+          Next <span aria-hidden="true">»</span>
+        </a>
+      ) : (
+        ""
+      )
+    }
+  </span>
 </nav>
