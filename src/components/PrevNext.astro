@@ -58,7 +58,7 @@ const { prevnext, current } = Astro.props;
             current === lang || (current === "/" && lang === "en") ? (
               <strong>{langNames[lang]}</strong>
             ) : (
-              <a href={lang == "en" ? "/" : `/${lang}`}>{langNames[lang]}</a>
+              <a href={lang == "en" ? "/" : `/${lang}/`}>{langNames[lang]}</a>
             ),
           )
           .reduce((prev, curr, i) => (
