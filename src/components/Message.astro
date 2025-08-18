@@ -29,14 +29,16 @@ const sp_ = sp || encode(sl);
     text-align: initial;
     display: none;
   }
-  .left span {
+  .left:dir(ltr) span,
+  .right:dir(rtl) span {
     border-bottom-left-radius: 0;
+  }
+  .right:dir(ltr) span,
+  .left:dir(rtl) span {
+    border-bottom-right-radius: 0;
   }
   .right {
     flex-direction: row-reverse;
-  }
-  .right span {
-    border-bottom-right-radius: 0;
   }
 </style>
 
@@ -52,5 +54,7 @@ const sp_ = sp || encode(sl);
   }
 </style>
 <p class={right ? "right" : "left"}>
-  <span class="sp" set:html={sp_} /><span set:html={sl} /><span set:html={m} />
+  <span dir="ltr" class="sp" set:html={sp_} />
+  <span dir="ltr" set:html={sl} />
+  <span set:html={m} />
 </p>
