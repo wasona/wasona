@@ -1,10 +1,14 @@
 ---
+import { locales } from "@/utils/i18n";
+
 interface Props {
   id: string;
 }
 const { id } = Astro.props;
 const onclick = (option: string) =>
   `document.getElementById("tabbed-${id}").className = "tabbed-${option}";`;
+
+const _ = (text: string) => locales[Astro.url.pathname.split("/")[1]][text];
 ---
 
 <style>
@@ -56,7 +60,7 @@ const onclick = (option: string) =>
   <div class="tabbed-selector">
     <button class="button-sp" onclick={onclick("sp")}>sitelen pona</button>
     <button class="button-sl" onclick={onclick("sl")}>sitelen Lasina</button>
-    <button class="button-m" onclick={onclick("m")}>Translation</button>
+    <button class="button-m" onclick={onclick("m")}>{_("Translation")}</button>
   </div>
   <div class="tabbed-box">
     <slot />

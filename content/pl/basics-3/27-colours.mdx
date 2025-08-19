@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Porozmawiajmy o kolorach!
 
@@ -59,4 +59,4 @@ Jest duża różnica między dosłownym białym domem a budynkiem, który się n
 
 Dopiero teraz to przywołuję, bo kolory to najbardziej oczywisty przykład, ale to samo dotyczy każdego wyrażenia! Zanim użyjesz przymiotników, często warto się zastanowić, czy mówią o tym, co faktycznie najważniejsze, czy są skrótem czegoś innego?
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

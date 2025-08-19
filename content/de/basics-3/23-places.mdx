@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 In der folgenden Lektion haben wir uns **󱥍 pi** angesehen. Es gab viele Sätze mit zwei ganz verschiedenen Bedeutungen, bei denen es also darauf ankommt, ob sie **󱥍 pi** haben oder nicht. Es gibt aber auch einige Phrasen, die sehr *wenig* Sinn machen, wenn **󱥍 pi** fehlt! Das sieht man oft mit Namen.
 
@@ -57,4 +57,4 @@ Benutzen wir sie in Sätzen:
 
 Tipp: Weil **󱥍 pi** nur zum Veränderung der Reihenfolge existiert, wird es nie vor nur einem Wort sein! Es gibt immer zwei oder mehr Wörter danach.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

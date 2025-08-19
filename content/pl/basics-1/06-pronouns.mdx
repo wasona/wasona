@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Zaimki
 
@@ -73,7 +73,7 @@ Już powinieneś znać takiego typu zdania! W większości pozycji w zdaniu zaim
 
 Toki pona ma specjalną zasadę: gdy **󱤴 mi** lub **󱥞 sina** jest podmiotem zdania, usuwamy **󱤧 li**, które zwykle następowałoby po podmiocie. To dlatego, że zdania z **󱤴 mi** lub **󱥞 sina** występują powszechnie! Można to porównać do tego, że zwykle pomijamy w języku polskim zaimki osobowe, gdy czasownik jest w pierwszej lub drugiej osobie.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Zobacz też
 * [P: czy 'li' znaczy 'jest'?](/pl/li-and-is/)

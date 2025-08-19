@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Осталось выучить всего лишь ещё одно важное слово, прежде чем мы перейдём к забавному!
 
@@ -83,7 +83,7 @@ import Practice from "@/components/Practice.tsx";
 
 Хоть вы и не знаете слово **󱦅 lanpan**, но перевод перед вами. Вы уже знаете достаточно, чтобы придумать подходящее выражение из общих, неспецифических слов (**󱤖󱤓 kama jo**)! То же самое и с другими редкими словами, которые вам могут встретиться в сообществе.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## См. также
 * [В: чем сейчас занимается jan Sonja?](/ru/jan-sonja/)

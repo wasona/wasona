@@ -1,0 +1,89 @@
+---
+slug: "he/simpler-cartouches"
+title: "שאלה: איך אפשר לקצר את השמות הארוכים של sitelen pona?"
+description: "איך מגייסים לעזרה נקודות וסימנים אחרים כדי לקצר את הכרטוש"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+
+שמות שנכתבים בשיטת _sitelen pona_ יכולים להיות ארוכים:
+
+<List>
+  <Sentence sl="lipu Wikipesija" m="ויקיפדיה" />
+  <Sentence sl="ma Antasika" m="אנטרקטיקה" />
+  <Sentence sl="ma Kolonpija" m="קולומביה" />
+</List>
+
+יש שלוש שיטות מקובלות, שמאפשרות לקצר את השם. 
+
+## 1. שיטת הנקודות: 󱤿󱥠󱤕
+
+שיטות הנקודות,  _nasin sitelen kalama_, נוצרה  על ידי jan Pumiko ב־2022. על פי סקר שנערך בקרב דוברי השפה, 40-60% ענו שהם משתמשים בה במידה כלשהי. בשיטה הזו מחלקים את המילה ליחידות שנקראות _מוֹרָה_. בכל יחידה כזאת יש או עיצור+תנועה או האות n שאחרי התנועה:
+
+- to-ki
+- ja-n
+- a-n-pa
+- si-n-pi-n
+
+בשיטה הזו, במקום להשתמש במילה חדשה עבור כל אות, משתמשים באותה מילה עבור כמה אותיות, והנקודות שמוסיפים אחרי הסמל של המילה קובעות כמה יחידות של _מוֹרָה_ לקחת מתוך כל מילה:
+
+<List>
+  <Word sp="󱦐󱤅󱦑" sl="A" />
+  <Word sp="󱦐󱤅󱦜󱦑" sl="An" />
+  <Word sp="󱦐󱤅󱦜󱦜󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦑" sl="S" />
+  <Word sp="󱦐󱥟󱦜󱦑" sl="Si" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦑" sl="Sin" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦑" sl="Sinpi" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
+</List>
+
+(מוזרות מסויימת שקיימת בשיטה: הנקודה הראושנה שמופיעה אחרי הסמל של המילה היא לא **מוֹרָה** שלמה, אלא "משלימה" את האות הראשונה של אותה מילה ל**מוֹרָה** שלמה. לדוגמא: הנקודה שאחרי **󱦐󱥟󱦑** היא לא **מוֹרָה** שלמה, אלא משלימה אותה ל**si**). 
+
+כדי לכלול את כל המילה בשם, משתמשים בנקודתיים:
+<List>
+  <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
+</List>
+
+שילוב של מילים ונקודות בכרטוש מאפשר ליצור שם שלם: 
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅󱦜󱥩󱦜󱥜󱦜󱤔󱦜󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
+</List>
+
+* 🎉 השיטה מאפשרת להקטין את האורך של הכרטוש!
+* 🙁 הכרטוש המקוצר עדין די ארוך.
+
+## 2. שיטת הניקוד: 󱤿󱥠󱤕󱥍󱤩󱤨
+
+השיטה פותחה על ידי סוניה לאנג ב־2024, עבור מכתבים רשמיים וספרים שכתובים על דפים צרים יחסית. בשיטה הזו, מוסיפים נקודות קטנות מתחת לכל מילה, שקובעות כמה אותיות לקחת.
+
+{/* Note: this section uses non-standard codepoints F19FC-F19FF, which I modded into nasin nanpa. If you ever update nasin nanpa, this section will break. Ideally, nskpll gets standardised later. */}
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡&#xF19FE;󱤜&#xF19FD;󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅&#xF19FD;󱥩&#xF19FD;󱥜&#xF19FD;󱤔&#xF19FD;󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
+</List>
+
+## 3. שיטת הקיצורים
+
+השיטה הזו נוצרה על ידי DavidAR ב־2019, וסוניה לאנג השתמשה בה בספר "הקוסם מארץ עוץ", הספר הראשון בסידרה *su*. השיטה הזו עובדת בצורה הבאה: בפעם הראשונה שהשם מוזכר, כותבים את הכרטוש שלו בצורה המלאה:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorothy" />
+</List>
+
+במשפטים הבאים שהוא מופיע באותו פרק, משתמשים בכרטוש מקוצר, שמכיל רק את הסמל הראשון: 
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorothy" />
+</List>
+

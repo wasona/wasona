@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Мы уже знаем слова для *глаз*, *сердца*, *лица* и *спины*, так что давайте изучим оставшиеся части тела!
 
@@ -50,4 +50,4 @@ import Practice from "@/components/Practice.tsx";
     <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Мои пальцы на руках рук длиннее моих пальцев на ногах." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

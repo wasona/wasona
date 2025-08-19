@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Pronomen
 
@@ -73,7 +73,7 @@ Du solltest mit dieser Art Satz schon vertraut sein! In den meisten Positionen i
 
 Toki Pona hat eine besondere Regel: Wenn **󱤴 mi** oder **󱥞 sina** das Subjekt des Satzes ist, entfernen wir das **󱤧 li**, das normalerweise dem Subjekt folgen würde. Das passiert, weil Sätze, die mit **󱤴 mi** oder **󱥞 sina** beginnen, extrem häufig sind!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Siehe auch
 * [F: Bedeutet 'li' 'ist'?](/de/li-and-is/)

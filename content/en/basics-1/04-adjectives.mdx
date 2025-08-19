@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Describe!
 
@@ -70,4 +70,4 @@ If these sentences feel long and tiresome, don't worry! We will look at some sho
 
 Here's something interesting: in English, adjectives only go on nouns. But in Toki Pona, they can go on verbs too: _to bite a little_ ~ _moku lili_, _to know well_ ~ _sona pona_. There is no difference between adjectives and adverbs in Toki Pona.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

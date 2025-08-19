@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 В прошлом занятии мы рассматривали частицу **󱥍 pi**. Как вы видели, многие фразы могут быть осмысленными в обоих вариантах -- есть **󱥍 pi** или нет. Но также существует множество фраз, которые *практически бессмысленны*, если частица **󱥍 pi** отсутствует! Часто такое встречается с именами:
 
@@ -57,4 +57,4 @@ import Practice from "@/components/Practice.tsx";
 
 Совет: так как частица **󱥍 pi** нужна только для перегруппировки, она никогда не используется перед только одним словом! После неё всегда идут два или более слов.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Już znamy większość słów o zwierzętach i roślinach -- nauczmy się reszty!
 
@@ -74,4 +74,4 @@ Ta właściwość nie jest wyłączna dla **󱤉 e**! Możesz połączyć kilka 
   <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Osoba poluje na ryby, je gotuje i je zjada." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

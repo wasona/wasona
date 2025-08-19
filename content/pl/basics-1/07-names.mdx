@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Imiona i nazwy
 
@@ -83,7 +83,7 @@ Poćwiczmy używanie nowych słów i imion w zdaniach:
   <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma dobrze zna Niemcy." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
 * [P: jak mam na imię w toki ponie?](/pl/make-a-name/)

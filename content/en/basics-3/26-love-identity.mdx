@@ -17,7 +17,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 You've already seen that **󱤧󱥔󱥩󱤴 ... li pona tawa mi** is a common way to say '*i like ...*'. And, of course, we can say **󱥔󱤼 pona mute** to talk about *really liking* someone. But that's not the same as *loving* someone! So let's look at words for love, and what to call people you love:
 
@@ -59,7 +59,7 @@ We've already seen how *'e ... e ...'* can be used to introduce several objects 
   <Sentence sl="meli en mije li unpa." m="The woman and the man have sex." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
 * [A deeper discussion on gender and Toki Pona, by wan Tansin](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/)

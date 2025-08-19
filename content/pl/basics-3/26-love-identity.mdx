@@ -17,7 +17,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Już zauważyłeś, że **󱤧󱥔󱥩󱤴 ... li pona tawa mi** jest częstym sposobem na mówienie '*lubię ...*'. A oczywiście możemy powiedzieć **󱥔󱤼 pona mute**, żeby przekazać, że *bardzo lubimy* kogoś. Ale to nie to samo, co *kochać* kogoś! Więc spójrzmy na słowa oznaczające miłość i jak nazywać ludzi, których kochasz:
 
@@ -59,7 +59,7 @@ Już widzieliśmy, że *'e ... e ...'* może być użyte do wprowadzenia wielu d
   <Sentence sl="meli en mije li unpa." m="Kobieta i mężczyzna uprawiają seks." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Zobacz też
 * [Głębsza dyskusja na temat płci i toki pony, napisana przez wan Tansin](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/)

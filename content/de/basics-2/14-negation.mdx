@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Verneinung
 
@@ -59,4 +59,4 @@ Vielleicht hast du etwas Interessantes bemerkt. Obwohl **󱤂 ala** überall sei
 
 Tatsächlich macht das Sinn — das erste Wort in einem Verb zu verneinen, verneint auch den ganzen Satz, was oft ist, was wir wollen!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

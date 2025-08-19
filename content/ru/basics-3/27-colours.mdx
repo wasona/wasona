@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Поговорим о цветах!
 
@@ -59,4 +59,4 @@ import Practice from "@/components/Practice.tsx";
 
 Я только теперь это упоминаю, поскольку цвета -- самый очевидный пример, где следует "добраться до сути". Тем не менее, то же самое касается вообще любой фразы на токи поне! Прежде чем использовать прилагательное, стоит подумать: важно ли это прилагательные для сути того, о чём вы хотите рассказать, или же они просто косвенно намекают на что-то другое, более существенное?
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

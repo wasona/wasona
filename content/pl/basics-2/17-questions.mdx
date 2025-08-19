@@ -30,7 +30,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Pytania
 
@@ -97,7 +97,7 @@ Już się nauczyliśmy, że **󱥙 seme** znaczy 'co?', a to najważniejsza czę
 
 Zauważ, że tylko **󱥙 seme** jest zamienione na odpowiedź -- cała reszta zdania zostaje w tym samym szyku! W języku polskim zdania pytające często umieszczają zaimek pytający w innym miejscu niż w odpowiedzi, ale w toki ponie to się nie dzieje.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
 * [P: jak powiedzieć 'robić'?](/pl/doing/)

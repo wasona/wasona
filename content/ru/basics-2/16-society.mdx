@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Мы живём в обществе! Давайте выучим слова, которые пригодятся при взаимодействии с обществом:
 
@@ -68,4 +68,4 @@ import Practice from "@/components/Practice.tsx";
 
 Такая особенность может показаться причудливой, но не забывайте: главная цель частицы **󱤧 li** — показать, где начинается сказуемое! Если бы мы её убрали, получилось бы, что **󱤼 mute** выступает в роли глагола.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

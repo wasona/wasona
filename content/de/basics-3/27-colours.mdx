@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Reden wir über Farben!
 
@@ -59,4 +59,4 @@ Es gibt einen großen Unterschied zwischen einem weißen Haus und dem Weißen Ha
 
 Ich erwähne das nur jetzt, weil Farben das offensichtlichste Beispiel sind, aber das gleiche gilt überall! Bevor du Adjektive nutzt, ist es oft hilfreich, anzuhalten und darüber nachzudenken: Beschreiben diese Adjektive das wichtige, worüber du reden willst, oder sind sie nur eine Abkürzung für irgendwas Anderes?
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

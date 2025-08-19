@@ -30,7 +30,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Fragen
 
@@ -97,7 +97,7 @@ Wir haben gerade gelernt, dass **󱥙 seme** 'was?' bedeutet, und es ist der wic
 
 Wie du siehst, wird nur **󱥙 seme** in der Antwort ausgetauscht — alles andere im Satz bleibt gleich! Das ist anders als auf Deutsch, wo Fragen die Reihenfolge der Wörter im Satz verändern.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Siehe auch
 * [F: Wie sagt man "machen"?](/de/doing/)

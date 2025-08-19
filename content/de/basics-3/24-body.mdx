@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Wir kennen schon die Wörter für *Auge*, *Herz*, *Gesicht* und *Rücken*, lernen wir also die restlichen Körperteile:
 
@@ -50,4 +50,4 @@ Etwas Lustiges ist, dass viele Körperteile eine Aktion haben, die mit ihnen ass
   <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Meine Finger sind größer als meine Zehen." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

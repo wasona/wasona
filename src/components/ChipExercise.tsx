@@ -10,7 +10,7 @@ function shuffleArray<T>(array: T[]): T[] {
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
   return shuffled;
-};
+}
 
 function appended(array: number[], element: number): number[] {
   return [...array, element];
@@ -113,7 +113,7 @@ const ChipExercise: React.FC<{
   };
 
   return (
-    <div>
+    <div dir="ltr">
       <div style={{ display: "none" }}>
         {words
           .filter(

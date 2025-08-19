@@ -32,7 +32,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Недавно мы выучили слово **󱤼 mute**, и оно много где пригодится!
 
@@ -102,4 +102,4 @@ import Practice from "@/components/Practice.tsx";
 
 Но в токи поне существительные, глаголы и прилагательные могут обращаться друг в друга, поэтому противопоставление частей речи не помогает! И порядок слов был бы одинаковый. Вместо этих разнообразных подходов токи пона решает одну и ту же задачу одинаково во всех случаях -- с помощью **󱥍 pi**.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
