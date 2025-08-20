@@ -22,11 +22,18 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Names
 
 Pointing at things is nice, but sometimes it's nice to be more specific. Introducing: names! A revolutionary technology that allows you to talk about someone or something in particular.
+
+{/* A note for translators */}
+{/*
+  When I say "revolutionary technology", I am humorously pretending
+  to be a TV presenter trying to sell you something. Feel free
+  to adapt the joke or drop it, at your discretion.
+*/}
 
 Let's learn the words for things that often have names:
 
@@ -45,6 +52,12 @@ You already know one name: _sitelen Lasina_! Let's look at some names of people:
   <Sentence sl="jan Nowa" m="person named Noah (from English 'Noah')" />
   <Sentence sl="jan Ema" m="person named Emma (from English 'Emma')" />
 </List>
+
+{/* A note for translators */}
+{/*
+  Please keep the names Nowa and Ema. Your language may also have those names,
+  in which case replace "English" with your language.
+*/}
 
 From these names you can see:
 
@@ -83,7 +96,7 @@ Let's practice using the new words and names in sentences:
   <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma knows Germany well." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
 * [Q: what's my name in Toki Pona?](/en/make-a-name/)

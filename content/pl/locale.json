@@ -1,0 +1,23 @@
+{
+  "Index": "Indeks",
+  "Next": "Następna",
+  "Previous": "Poprzednia",
+  "Translation": "Tłumaczenie",
+
+  "Consonants": "Spółgłoski",
+  "Labial": "Wargowe",
+  "Coronal": "Przedniojęz.",
+  "Dorsal": "Tylnojęz.",
+
+  "Vowels": "Samogłoski",
+  "Front": "Przednie",
+  "Central": "Środkowe",
+  "Back": "Tylne",
+
+  "translate": "Przetłumacz zdanie",
+  "check": "Sprawdź",
+  "continue": "Kontynuuj",
+  "incorrect": "❌ Nie do końca. Poprawna odpowiedź: ",
+  "correct": "✅ Poprawnie! Dobra robota!",
+  "done": "🎉 Wszystkie ćwiczenia wykonane!"
+}

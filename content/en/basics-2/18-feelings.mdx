@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Let's learn how to be more expressive in Toki Pona!
 
@@ -50,7 +50,7 @@ You can also talk about something affecting **󱥎 pilin sina**, *your sensation
 
 <List>
   <Sentence sl="sina pona e pilin mi." m="You make me feel better." />
-  <Sentence sl="kon li jaki tawa pilin." m="The air feels foul to me." />
+  <Sentence sl="kon li jaki tawa pilin mi." m="The air feels foul to my senses." />
 </List>
 
 ## Interjections
@@ -94,4 +94,4 @@ When used in full sentences, it emphasises whatever it comes after:
     <Sentence sl="mi sona ala a e ni!" m="I do <strong>not</strong> know that!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

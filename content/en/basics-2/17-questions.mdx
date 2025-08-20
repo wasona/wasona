@@ -30,7 +30,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Questions
 
@@ -97,7 +97,10 @@ So we just learned that **󱥙 seme** means 'what?', and it's the most important
 
 Notice how only **󱥙 seme** gets swapped out for the answer -- everything else in the sentence stays in the same order! This is unlike English, where questions reorder the sentence, to put the wh-word first, but Toki Pona doesn't do that.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
 * [Q: how do you say 'to do'?](/en/doing/)
+
+{/* A note for translators */}
+{/* By "to do", I mean a generic activity. See above. */}

@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Lernen wir, wie wir uns auf Toki Pona besser ausdrücken können!
 
@@ -94,4 +94,4 @@ In vollen Sätzen betont es, was davor kommt:
     <Sentence sl="mi sona ala a e ni!" m="Ich weiß das <strong>nicht</strong>!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

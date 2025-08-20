@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Prepositions
 
@@ -39,6 +39,14 @@ Now that we know some countries, let's talk about travel! But how do you say "go
   <Word sl="lon" m="at, on, in" />
   <Word sl="tan" m="from, because of" />
 </List>
+
+{/* A note for translators */}
+{/*
+  If your language has noun case, please think about
+  how "tawa, lon, tan" compare to your noun cases.
+  The terms "dative case" and "locative case" are
+  especially important to check.
+*/}
 
 A _preposition_ is a word that goes before another word. It tells you how it relates to the sentence. A preposition + the word it attaches is called a _prepositional phrase_:
 
@@ -82,6 +90,15 @@ Let's practice with these sentences:
     sl="soweli suwi li pona tawa mi."
     m="Cute animals are good to me.<br />(I like cute animals.)"
   />
+
+{/* A note for translators */}
+{/*
+  Some languages have a verb "I like ...",
+  other languages have a verb more like "to me it is nice ...".
+  If your language is more like the second group,
+  you might not need the text in brackets.
+*/}
+
   <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah speaks to Emma." />
   <Sentence
     sl="jan li toki Tosi lon ma Tosi."
@@ -89,7 +106,7 @@ Let's practice with these sentences:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
 * [Q: do I have to memorise language and country names?](/en/languages-countries/)

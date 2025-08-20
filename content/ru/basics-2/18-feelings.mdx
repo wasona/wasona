@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Попробуем выражать эмоции на токи поне!
 
@@ -93,4 +93,4 @@ import Practice from "@/components/Practice.tsx";
     <Sentence sl="mi sona ala a e ni!" m="Я этого <strong>не знаю</strong>!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

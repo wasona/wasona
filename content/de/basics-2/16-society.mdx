@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Wir leben in einer Gesellschaft! Lernen wir ein paar Wörter, die nützlich dafür sind, eine Gesellschaft zu durchqueren:
 
@@ -68,4 +68,4 @@ Wie du siehst, wird das **󱤧 li** beibehalten! Das passiert, weil das Subjekt 
 
 Vielleicht kommt dir das etwas seltsam vor, aber denke daran — **󱤧 li** ist da, um zu zeigen, wo das Prädikat anfängt! Wenn es hier nicht da wäre, würden wir stattdessen annehmen, dass **󱤼 mute** das Prädikat ist.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

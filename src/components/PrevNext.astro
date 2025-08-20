@@ -1,72 +1,57 @@
 ---
+import { locales } from "@/utils/i18n";
 import { type CollectionEntry } from "astro:content";
 interface Props {
-  prevnext?: {
+  prevnext: {
     prev?: CollectionEntry<"blog">;
     next?: CollectionEntry<"blog">;
   };
-  current: string;
 }
-import { langNames, langs } from "@/utils/content";
-const { prevnext, current } = Astro.props;
+const { prevnext } = Astro.props;
+
+const _ = (text: string) => locales[Astro.url.pathname.split("/")[1]][text];
 ---
 
 <style>
   nav {
     width: 100%;
-    padding: 20px 0px;
     display: flex;
     text-align: center;
     border-top: 2px solid var(--accent);
     border-bottom: 2px solid var(--accent);
   }
-  span {
+  a {
     flex: 1 1 0px;
+    padding: 20px 0px;
+  }
+  a:first-child:dir(ltr),
+  a:last-child:dir(rtl) {
+    text-align: left;
+  }
+  a:first-child:dir(rtl),
+  a:last-child:dir(ltr) {
+    text-align: right;
   }
 </style>
 
 <nav>
   {
-    prevnext ? (
-      <>
-        <span style="text-align: left">
-          {prevnext.prev ? (
-            <a href={"/" + prevnext.prev.id}>
-              <span aria-hidden="true">«</span> Previous
-            </a>
-          ) : (
-            ""
-          )}
-        </span>
-        <span>
-          <a href={".."}>Index</a>
-        </span>
-        <span style="text-align: right">
-          {prevnext.next ? (
-            <a href={"/" + prevnext.next.id}>
-              Next <span aria-hidden="true">»</span>
-            </a>
-          ) : (
-            ""
-          )}
-        </span>
-      </>
+    prevnext.prev ? (
+      <a href={"/" + prevnext.prev.id + "/"}>
+        <span aria-hidden="true">«</span> {_("Previous")}
+      </a>
     ) : (
-      <span>
-        {langs
-          .map((lang) =>
-            current === lang || (current === "/" && lang === "en") ? (
-              <strong>{langNames[lang]}</strong>
-            ) : (
-              <a href={lang == "en" ? "/" : `/${lang}`}>{langNames[lang]}</a>
-            ),
-          )
-          .reduce((prev, curr, i) => (
-            <>
-              {prev} <b>{" · "}</b> {curr}
-            </>
-          ))}
-      </span>
+      <a />
+    )
+  }
+  <a href={".."}>{_("Index")}</a>
+  {
+    prevnext.next ? (
+      <a href={"/" + prevnext.next.id + "/"}>
+        {_("Next")} <span aria-hidden="true">»</span>
+      </a>
+    ) : (
+      <a />
     )
   }
 </nav>

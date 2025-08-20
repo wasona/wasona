@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Wir kennen schon die meisten tierischen und pflanzlichen Wörter — lernen wir noch die restlichen!
 
@@ -74,4 +74,4 @@ Das ist nicht nur für **󱤉 e** möglich! Du kannst mehrere zusammenhängende 
   <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Die Person jagt Fische, kocht sie und isst sie." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

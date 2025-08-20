@@ -26,7 +26,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## With and like
 
@@ -37,6 +37,14 @@ In lesson 8, we learned three prepositions: **󱥩 tawa**, **󱤬 lon**, **󱥧 
   <Word sl="sama" m="similar to, same as" />
 </List>
 
+{/* A note for translators */}
+{/*
+  If your language has instrumental case, you can compare
+  kepeken to instrumental case. But be careful: kepeken is
+  *not* used when you are doing something alongside someone,
+  e.g.: "I am walking with Emma."
+*/}
+
 Let's learn a few more words that go well with these prepositions:
 
 <List>
@@ -44,6 +52,14 @@ Let's learn a few more words that go well with these prepositions:
   <Word sl="pali" m="to work, to build" />
   <Word sl="leko" m="brick, block" />
 </List>
+
+{/* A note for translators */}
+{/*
+  Your language may have a word for "any activity". e.g.:
+  "what are you *doing*? - I'm working. I'm sleeping. I'm eating."
+  Please avoid translating "pali" with that word.
+  "pali" is specifically "working", putting in effort.
+*/}
 
 Remember, prepositions start prepositional phrases:
 
@@ -112,4 +128,4 @@ Make sure not to confuse these pairs:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

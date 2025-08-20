@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Nauczmy się, jak być bardziej ekspresyjnym w toki ponie!
 
@@ -94,4 +94,4 @@ Jeżeli jest używany w pełnych zdaniach, podkreśla to, co stoi przed nim:
     <Sentence sl="mi sona ala a e ni!" m="<strong>Nie</strong> wiedziałem tego!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

@@ -32,7 +32,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Wir haben letztens **󱤼 mute** gelernt, ein sehr nützliches Wort!
 
@@ -102,4 +102,4 @@ Natürlich ist **󱤼 mute** nicht das einzige Wort, mit dem **󱥍 pi** hilft! 
 
 Aber auf Toki Pona können Nomen, Verben und Adjektive sich ineinander verwandeln. Sie alleine können also nicht helfen! Stattdessen nutzt Toki Pona nur ein Partikel dafür.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Opisuj!
 
@@ -70,4 +70,4 @@ Jeśli czujesz, że te zdania Cię męczą, nie przejmuj się! Wkrótce spojrzym
 
 A tu taka ciekawostka: w języku polskim przymiotniki mogą być stosowane tylko przy rzeczownikach. Jednak w toki ponie mogą być też stosowane przy czasownikach: _trochę gryźć_ ~ _moku lili_, _dobrze znać_ ~ _sona pona_. W toki ponie nie ma różnicy między przymiotnikami a przysłówkami.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

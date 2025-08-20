@@ -17,7 +17,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Вы уже видели, что **󱤧󱥔󱥩󱤴 ... li pona tawa mi** — это распространённый способ сказать "*мне нравится ...*". И, конечно, можно сказать **󱥔󱤼 pona mute** -- *очень нравиться*. Но это означает удовольствие, а не влечение: это не то же самое, что *любить*! Поэтому давайте взглянем на слова, связанные с любовью, и с тем, как называть любимых людей:
 
@@ -59,7 +59,7 @@ import Practice from "@/components/Practice.tsx";
   <Sentence sl="meli en mije li unpa." m="Женщина и мужчина занимаются сексом." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## См. также
 * [Более глубокое обсуждение гендера и токи поны от wan Tansin](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/)

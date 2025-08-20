@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Przyimki
 
@@ -89,7 +89,7 @@ Poćwiczmy na tych zdaniach:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Zobacz też
 * [P: czy muszę zapamiętywać nazwy języków i krajów?](/pl/languages-countries/)

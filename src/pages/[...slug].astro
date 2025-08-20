@@ -2,6 +2,7 @@
 import BaseHead from "@/components/BaseHead.astro";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
+import LangSelect from "@/components/LangSelect.astro";
 import PrevNext from "@/components/PrevNext.astro";
 import { getLang, posts, prevnexts } from "@/utils/content";
 import { type CollectionEntry, render } from "astro:content";
@@ -13,14 +14,21 @@ export async function getStaticPaths() {
   }));
   return paths;
 }
+const rtl = ["he", "ar"];
+
 type Props = CollectionEntry<"blog">;
 const post = Astro.props;
 const { Content } = await render(post);
+const lang = getLang(post);
 const prevnext = post.filePath!.includes("index.md")
   ? undefined
-  : prevnexts[getLang(post)][post.id];
+  : prevnexts[lang][post.id];
 ---
 
+{
+  // we can't set lang="he" because that
+  // breaks sitelen pona cartouches! yes, really.
+}
 <html lang="en">
   <head>
     <BaseHead title={post.data.title} description={post.data.description} />
@@ -28,14 +36,26 @@ const prevnext = post.filePath!.includes("index.md")
 
   <body>
     <Header />
-    <main>
+    <main dir={rtl.includes(lang) ? "rtl" : "ltr"}>
       <article>
         <h1>{post.data.title}</h1>
-        <PrevNext prevnext={prevnext} current={post.id} />
+        {
+          prevnext ? (
+            <PrevNext prevnext={prevnext} />
+          ) : (
+            <LangSelect current={post.id} />
+          )
+        }
         <section>
           <Content />
         </section>
-        <PrevNext prevnext={prevnext} current={post.id} />
+        {
+          prevnext ? (
+            <PrevNext prevnext={prevnext} />
+          ) : (
+            <LangSelect current={post.id} />
+          )
+        }
       </article>
     </main>
     <Footer />

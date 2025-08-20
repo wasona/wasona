@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Nur noch ein wichtiges Wort, bevor wir zum lustigen Teil kommen!
 
@@ -83,7 +83,7 @@ Wenn du einer Toki-Pona-Gemeinschaft beitrittst, wirst du ziemlich sicher noch m
 
 Du kennst vielleicht das Wort **󱦅 lanpan** nicht, aber du kannst die Übersetzung sehen, und du weißt bis jetzt genug, um eine Ersetzung dafür mit häufigen Wörtern zu finden (**󱤖󱤓 kama jo**)! Es ist sehr ähnlich für andere Wörter, die du vielleicht auffinden wirst.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Siehe auch
 * [F: Was macht jan Sonja heutzutage?](/de/jan-sonja/)

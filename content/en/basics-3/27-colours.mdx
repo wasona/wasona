@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Let's talk colours!
 
@@ -45,6 +45,12 @@ The colour words, of course, mean a whole *range* of colours, not just the ones 
 
 Like genders, Toki Pona colours are used less frequently than you might expect. In natural languages, colours often serve as easy shortcuts to mean something much more specific: *a white lie*, *the black market*, *a greenhouse*. Toki Pona doesn't like shortcuts that don't get to the point:
 
+{/* A note for translators */}
+{/*
+  "white lie, black market, greenhouse" may not make sense in your language.
+  You may replace them with similar colour-noun pairs that are more suitable.
+*/}
+
 <List>
   <Sentence sl="tomo laso" m="a green house" />
   <Sentence sl="tomo kasi" m="a greenhouse" />
@@ -59,4 +65,4 @@ There's a big difference between a white house and the White House:
 
 I only bring it up now, because colours are the most obvious example, but the same actually applies to any phrase! Before using adjectives, it's often useful to stop and think: are these adjectives getting the important part you wanted to talk about, or are they just shorthand for something else?
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

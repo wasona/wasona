@@ -16,7 +16,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Simple sentences
 
@@ -33,7 +33,19 @@ Here are some words for things and actions:
   <Word sl="sona" m="to know" />
 </List>
 
+{/* A note for translators */}
+{/*
+  When translating word definitions, such as "land animal", "insect", "plant",
+  it's better to use everyday words rather than scientific ones.
+*/}
+
 A very common kind of sentence is called a "subject-verb-object" sentence. This means that one thing (the subject) does something to another thing (the object). Let's make a few sentences:
+
+{/* A note for translators */}
+{/*
+  Your language may instead be SOV or VSO. If it is, please draw attention
+  to this difference between your language and Toki Pona.
+*/}
 
 <List>
   <Sentence sl="soweli li moku e kasi." m="The animal eats plants." />
@@ -49,6 +61,12 @@ Here's what we can learn:
 - **󱤉 e** is a particle that starts the object.
 - The English translation includes words and word-pieces like "the", "an", "-s", but those are guesses! The Toki Pona sentence doesn't specify if we're talking about "_a_ bird" or "_the_ bird". In longer conversations, it becomes pretty clear!
 
+{/* A note for translators */}
+{/*
+  Your language may not have articles. Your language may have gender markers.
+  You can adjust the bullet point above to better suit your language.
+*/}
+
 (**󱤧 li** and **󱤉 e** may seem unnecessary at first. We will learn about why they are required, but to do that, we first need to learn more about parts of speech!)
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

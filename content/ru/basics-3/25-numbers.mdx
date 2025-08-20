@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Количественные числительные
 
@@ -75,7 +75,7 @@ import Practice from "@/components/Practice.tsx";
 
 (Кстати, частица **󱤽 nanpa** -- особенная! Как вы видите, ей не нужна частица **󱥍 pi**.)
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## См. также
 * [В: как говорить о больших числах?](/ru/large-numbers/)

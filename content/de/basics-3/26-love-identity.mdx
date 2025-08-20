@@ -17,7 +17,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Du hast schon gesehen, dass **󱤧󱥔󱥩󱤴 ... li pona tawa mi** eine verbreitete Art ist, *ich mag ...* zu sagen. Und natürlich kann man auch **󱥔󱤼 pona mute** sagen, um darüber zu reden, dass man jemanden *wirklich* mag. Aber das ist nicht dasselbe, wie jemanden zu lieben! Schauen wir uns also die Wörter für Liebe an, und wie du Leute nennen kannst, die du liebst:
 
@@ -59,7 +59,7 @@ Wir haben schon gesehen, dass '*e* ... *e* ...' genutzt werden kann, um verschie
   <Sentence sl="meli en mije li unpa." m="Die Frau und der Mann haben Sex." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Siehe auch
 * [Eine tiefere Diskussion über Geschlecht und Toki Pona, von wan Tansin (auf englisch)](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/)

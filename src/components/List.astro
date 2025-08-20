@@ -1,7 +1,11 @@
 <style>
   .sentences {
-    border-left: 2px dotted var(--grey);
     text-align: initial;
+    border-left: 2px dotted var(--grey);
+  }
+  .sentences:dir(rtl) {
+    border-left: initial;
+    border-right: 2px dotted var(--grey);
   }
 </style>
 <div class="sentences">

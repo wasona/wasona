@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 We already know the words for *eyes*, *heart*, *face*, and *back*, so let's learn the remaining parts of the body!
 
@@ -40,6 +40,13 @@ We already know the words for *eyes*, *heart*, *face*, and *back*, so let's lear
   <Word sl="linja" m="long flexible thing, like a string, rope" />
 </List>
 
+{/* A note for translators */}
+{/*
+  Your language may have just one word for "hand, arm".
+  If that's the case, great, simply list the one word.
+  Same applies to "foot, leg".
+*/}
+
 Something fun to notice is how many parts of the body have an associated action! The head leads, the eyes see, the ears hear, the mouth kisses, the heart feels, the hands touch.
 
 <List>
@@ -50,4 +57,4 @@ Something fun to notice is how many parts of the body have an associated action!
   <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="My fingers are larger than my toes." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

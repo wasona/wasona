@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Описываем!
 
@@ -70,4 +70,4 @@ import Practice from "@/components/Practice.tsx";
 
 Вот что интересно: в русском прилагательные используются только с существительными. Но в токи пона они могут относиться и к глаголам: _немного кусать_ — _moku lili_, _хорошо знать_ — _sona pona_. В токи поне нет различия между прилагательными и наречиями.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

@@ -32,7 +32,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Niedawno nauczyliśmy się słowa **󱤼 mute**, które jest bardzo użyteczne!
 
@@ -102,4 +102,4 @@ Oczywiście, **󱤼 mute** nie jest jedynym słowem, w którym pomaga **󱥍 pi*
 
 Jednak w toki ponie rzeczowniki, czasowniki i przymiotniki mogą stać się inną częścią mowy. Więc odmiana i szyk wyrazów nie pomagają! Zamiast tego toki pona używa partykuły do zmiany sposobu analizy wyrażenia.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

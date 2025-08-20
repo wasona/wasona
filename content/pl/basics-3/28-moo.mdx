@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Zostało nam jeszcze jedno ważne słowo, zanim przejdziemy do śmiesznej części!
 
@@ -84,7 +84,7 @@ Gdy dołączysz do społeczności toki pony, na pewno zobaczysz więcej słów. 
 
 Być może nie znasz słowa **󱦅 lanpan**, ale widzisz tłumaczenie i teraz wiesz tyle, żebyś pomyślał o sensownym zamienniku, w którym są jedynie często spotykane wyrazy (**󱤖󱤓 kama jo**)! To samo dotyczy innych słów, które możesz zobaczyć na wolności.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Zobacz też
 * [P: czym się obecnie zajmuje jan Sonja?](/pl/jan-sonja/)
