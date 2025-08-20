@@ -1,0 +1,23 @@
+{
+  "Index": "Vissza",
+  "Next": "Következő",
+  "Previous": "Előző",
+  "Translation": "Fordítás",
+
+  "Consonants": "Mássalhangzók",
+  "Labial": "Labiális",
+  "Coronal": "Koronális",
+  "Dorsal": "Dorzális",
+
+  "Vowels": "Magánhangzók",
+  "Front": "Elöl képzett",
+  "Central": "Középen képzett",
+  "Back": "Hátul képzett",
+
+  "translate": "Fordítsd le a mondatot",
+  "check": "ellenőrzés",
+  "continue": "folytatás",
+  "incorrect": "❌ Nem igazán. Helyes megoldás: ",
+  "correct": "✅ Helyes! Ügyes vagy!",
+  "done": "🎉 Minden feladat kész!"
+}
