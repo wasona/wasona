@@ -17,6 +17,7 @@ description: "Help us by translating the course to your language!"
 * [Hungarian](https://github.com/wasona/wasona/pull/20) by jan Salan
 * [Arabic](https://github.com/wasona/wasona/pull/22) by jan linluwi Mota
 * [Portuguese](https://github.com/wasona/wasona/pull/29) by jan Suniu
+* [French](https://github.com/wasona/wasona/pull/32) by jan Lisente, jan Kakili
 
 **Some notes for translators:**
 
