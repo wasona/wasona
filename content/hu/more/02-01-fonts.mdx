@@ -1,0 +1,37 @@
+---
+slug: "hu/fonts"
+title: "Hogyan írhatok sitelen ponául?"
+description: "Tanulj a betűtípusokról!"
+---
+
+A *sitelen pona* nagyon menő, de még nincs benne a Unicode-ban. A legtöbb betűtípust csak a Unicode-ban definiált karakterek érdeklik. Ez azt jelenti, hogy a te készülékeden lévő betűtípusok valószínűleg semmit sem tudnak a sitelen ponáról.
+
+Ahhoz, hogy ezt megoldd, telepítened kell egy sitelen pona betűtípust. Több mint [száz](https://linku.la/fonts/) közül választhatsz; hadd emeljek ki egy párat:
+
+* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) jan Itan-tól az a betűtípus, amit ezen a weboldalon használunk. Meglehetősen merev, geometrikus kialakítású.<br /><img src="/example-nasin-nanpa.webp" />
+* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) jan Lepeka-tól egy játékosabb, kézzel írt dizájn.<br /><img src="/example-sitelen-seli-kiwen.webp" />
+* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) egy másik kézzel írt dizájn. Jan Sonja kézírását használja a 2014-es könyvéből, illetve pár újabb karaktert jan Pensa rajzai alapján.<br /><img src="/example-pu-mono.webp" />
+
+Ismerned kell egy betűtípust, amelynek jelentős történelmi szereppel rendelkezik:
+
+* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) jan Same-től. 2016–2021-ben készült, és ez volt az első elterjedt sitelen pona betűtípus. Kissé nem szabványos kialakítású, amely sokkal szélesebbnek és négyzetesebbnek tűnik, mint a mai betűtípusok többsége. Bár a linja pona népszerű volt, a *sitelen pona* sok új szimbólummal gyarapodott: például **󱦀 kijetesantakalu** és **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
+
+**Discordon** van egy botunk, ilo Linku, ami bármely sitelen pona betűtípussal tud írni, így tudsz csevegni sitelen ponául anélkül, hogy bármit le kéne töltened.
+**Asztali gépen** letöltheted a fenti betűtípusok egyikét, majd kattints rá, és a rendszer megpróbálja telepíteni.
+**Mobilon** betűtípusok telepítése nehézkes. Beszélj valakivel, aki rendelkezik az ehhez szükséges technikai ismeretekkel.
+
+## Technikai részletek: ASCII- vs UCSUR-betűtípusok
+
+Két fő fajtája van a sitelen pona betűtípusoknak: **ASCII-** és **UCSUR-betűtípusok**.
+
+Az **ASCII-betűtípusoknál** latin betűket írsz, amelyeket elnyeli a betűtípus, és automatikusan konvertálja őket sitelen pona karakterekké.
+
+* 🎉 nagyon könnyen használható!
+* 🙁 sok munkát igényel az elkészítése.
+* 🙁 nem így működik a többi írásrendszer.
+
+Az **UCSUR-betűtípusoknál** nem latin betűket írsz, hanem a Unicode egy másik területén lévő karaktereket. A Unicode szándékosan üresen hagyta ezt a területet azért, hogy mások használhassák ezeket [a saját céljaikra](https://en.wikipedia.org/wiki/Private_Use_Areas). Ezért egy másik szervezet, az [UCSUR](https://www.kreativekorp.com/ucsur/), úgy döntött, hogy ez a terület a sitelen ponáé.
+
+* 🎉 így működik a többi írásrendszer!
+* 🎉 kevesebb munkát igényel az elkészítése!
+* 🙁 nehezebb használni: telepítened kell egy olyan beviteli módszert, amely hasonló a Hanzi-hoz, vagy be kell állítanod a billentyűzet elrendezését.
