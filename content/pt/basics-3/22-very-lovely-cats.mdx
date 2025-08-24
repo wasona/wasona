@@ -1,0 +1,102 @@
+---
+slug: "pt/22"
+title: "lição 22: gatos muito adoráveis"
+description: "Aprenda pi!"
+practice:
+  - l1: "muita neve"
+    l2: "ko lete mute"
+    alsoAccept:
+      - "ko mute lete"
+  - l1: "neve muito fria"
+    l2: "ko pi lete mute"
+  - l1: "meus muitos erros"
+    l2: "pakala mi mute"
+    alsoAccept:
+      - "pakala mute mi"
+  - l1: "nosso erro"
+    l2: "pakala pi mi mute"
+  - l1: "o outro livro de idiomas"
+    l2: "lipu toki ante"
+    alsoAccept:
+      - "lipu ante toki"
+  - l1: "um livro em outro idioma"
+    l2: "lipu pi toki ante"
+  - l1: "quarto pequeno de alguém"
+    l2: "tomo jan lili"
+    alsoAccept:
+      - "tomo lili jan"
+  - l1: "Um quarto para alguém pequeno"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Nós aprendemos **󱤼 mute** recentemente, que é uma palavra muito útil!
+
+Vamos pensar um pouco mais sobre isso. Já sabemos como formar essas frases:
+
+<List>
+  <Word sl="soweli suwi" m="um gato adorável" />
+  <Word sl="soweli mute" m="muitos gatos" />
+  <Word sl="suwi mute" m="muito adorável" />
+</List>
+
+Mas e se juntarmos todos eles? Teremos *muitos gatos adoráveis* ou *um gato muito adorável*?
+
+<List>
+  <Word sl="soweli suwi mute" m="Muitos gatos adoráveis" />
+</List>
+
+Esta frase significa *muitos gatos adoráveis*, porque **󱥦 suwi** descreve **󱥢 soweli**, e **󱤼 mute** também descreve **󱥢 soweli**.  
+Mas eu acho que o *meu* gato é muito adorável! Como posso falar sobre isso? E se eu quiser que **󱤼 mute** descreva **󱥦 suwi**, ao invés de descrever **󱥢 soweli**?  
+É aqui que uma nova partícula nos ajuda:
+
+<List>
+  <Word sl="pi" m="uma partícula que agrupa adjetivos" />
+  <Word sl="soweli pi suwi mute" m="Um gato muito adorável" />
+</List>
+
+Viva! Agora podemos falar sobre um **󱥢 soweli** que é **󱥦󱤼 suwi mute**!  
+Se você gosta de matemática, pode pensar nisso como abrir um parêntese e alterar a ordem das operações: *“gato adorável muitos”* vs *“gato (adorável muitos)”*.
+
+Vamos ver outro exemplo:
+
+<List>
+  <Word sl="sitelen tomo" m="uma foto de uma casa" />
+  <Word sl="sitelen mute" m="fotos" />
+  <Word sl="tomo mute" m="casas" />
+  <Word sl="sitelen tomo mute" m="fotos de uma casa" />
+  <Word sl="sitelen pi tomo mute" m="uma foto de casas" />
+</List>
+
+Mais uma vez, você pode pensar nisso como *“foto casa muitos”* vs *“foto (casa muitos)”*.  
+Claro que não é só **󱤼 mute** que **󱥍 pi** ajuda! Vamos ver algumas outras palavras:
+
+<List>
+  <Word sl="jan pona" m="uma pessoa legal" />
+  <Word sl="jan lili" m="uma pessoa pequena" />
+  <Word sl="pona lili" m="pouco agradável" />
+  <Word sl="jan pona lili" m="uma pessoa pequena e simpática" />
+  <Word sl="jan pi pona lili" m="uma pessoa pouco simpática" />
+</List>
+
+*'pessoa simpática pequena'* vs *'pessoa (simpática pequena)'*.
+
+<List>
+  <Word sl="sona utala" m="conhecimento sobre guerras" />
+  <Word sl="sona sin" m="novo conhecimento" />
+  <Word sl="utala sin" m="nova guerra" />
+  <Word sl="sona utala sin" m="Novo conhecimento sobre guerras. (O conhecimento é recente.)" />
+  <Word sl="sona pi utala sin" m="Conhecimento sobre novas guerras. (A guerra é recente.)" />
+</List>
+
+*'conhecimento guerra novo'* vs *'conhecimento (guerra nova)'*.
+
+Você pode se questionar: "Por que as traduções para o português são tão diferentes?". No português, usamos principalmente as terminações e flexões das palavras para mostrar a que outras palavras elas se ligam. Muitos é um adjetivo, mas também pode ser um advérbio. Quando as palavras podem ser confundidas, usamos a ordem das palavras ou o contexto para entender melhor.
+
+Mas em Toki Pona, substantivos, verbos e adjetivos podem se transformar uns nos outros. Portanto, eles não podem ajudar! Em vez disso, Toki Pona usa apenas uma partícula para reestruturar.
+
+<Practice exercises={frontmatter.practice} client:load />

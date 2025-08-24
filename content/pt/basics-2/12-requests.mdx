@@ -1,0 +1,56 @@
+---
+slug: "pt/12"
+title: "lição 12: pedidos"
+description: "Aprenda o!"
+practice:
+  - l1: "Emma, tente dormir!"
+    l2: "jan Ema o alasa lape!"
+  - l1: "Eí pássaro, cante para mim!"
+    l2: "waso o kalama tawa mi!"
+  - l1: "Oi, Kenta!"
+    l2: "jan Kenta o!"
+  - l1: "Fale com Nina!"
+    l2: "o toki tawa jan Nina!"
+  - l1: "Desenhe algo estranho!"
+    l2: "o sitelen e ijo nasa!"
+  - l1: "Maya, me dê a colher!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Pedidos
+
+Em Toki Pona, uma frase com **󱤧 li** é uma afirmação. Mas, às vezes, em vez de fazer afirmações, queremos fazer pedidos. Pedidos são como falamos as pessoas como queremos que as coisas aconteçam. Em um pedido, ao invés de **󱤧 li**, usamos **󱥄 o**:
+
+<List>
+  <Word sl="o" m="inicia um pedido, comando, instrução ou desejo" />
+  <Sentence sl="ilo li sitelen e pipi." m="O telefone está mostrando um inseto." />
+  <Sentence sl="ilo o sitelen e waso!" m="Ah telefone, por favor mostre um pássaro!" />
+</List>
+
+Vamos ver mais alguns comandos:
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="Gente, por favor leiam o papel bom!" />
+  <Sentence sl="soweli mi o moku pona!" m="Meu gato, por favor coma bem!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="Que seu filho se torne forte!" />
+  <Sentence sl="pona o tawa sina!" m="Que a bondade esteja com você! (Deus te abençoe!)" />
+</List>
+
+Você pode notar que algumas dessas frases acabam se separando bem em duas partes:
+* O vocativo (antes de **󱥄 o**)
+* O pedido em si (depois de **󱥄 o**)
+
+Podemos usar eles separadamente:
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Emma, por favor feche a porta!" />
+  <Sentence sl="jan Ema o!" m="Ei, Emma!" />
+  <Sentence sl="o pini e lupa tomo!" m="Por favor feche a porta!" />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

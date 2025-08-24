@@ -1,0 +1,88 @@
+---
+slug: "pt/simpler-cartouches"
+title: "P: Em sitelen pona, os nomes são longos. Como posso encurtá-los?"
+description: "Aprenda sobre pontos, marcas de contagem e abreviações!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Nomes em _sitelen pona_ podem ser bastante longos:
+
+<List>
+  <Sentence sl="lipu Wikipesija" m="Wikipédia" />
+  <Sentence sl="ma Antasika" m="Antártida" />
+  <Sentence sl="ma Kolonpija" m="Colômbia" />
+</List>
+
+Pessoas criaram três sistemas notáveis para tornar os nomes mais fáceis de ler e escrever.
+
+## 1. Sistema de pontos 󱤿󱥠󱤕
+
+O sistema de pontos, ou _nasin sitelen kalama_, foi criado por jan Pumiko em 2022. Entre 40% e 60% dos falantes de Toki Pona afirmam utilizá-lo ou utilizá-lo em algumas situações. Em _nasin sitelen kalama_, divide-se uma palavra em _moras_: pedaços que são como uma sílaba, mas menores. Uma mora é uma consoante + vogal ou o -n após uma vogal:
+
+- to-ki
+- ja-n
+- a-n-pa
+- si-n-pi-n
+
+Ao adicionar pontos médios após um caractere, você aumenta o número de moras que devem ser pronunciadas no nome:
+
+<List>
+  <Word sp="󱦐󱤅󱦑" sl="A" />
+  <Word sp="󱦐󱤅󱦜󱦑" sl="An" />
+  <Word sp="󱦐󱤅󱦜󱦜󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦑" sl="S" />
+  <Word sp="󱦐󱥟󱦜󱦑" sl="Si" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦑" sl="Sin" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦑" sl="Sinpi" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
+</List>
+
+(Você pode perceber uma peculiaridade engraçada desse sistema: **󱦐󱤅󱦑** faz uma mora completa, então adicionar um ponto adiciona a próxima mora, que é **-n**. Mas **󱦐󱥟󱦑** não é uma mora completa, então adicionar um ponto apenas completa a primeira mora, que é **si**.)
+
+Você também pode usar dois pontos para indicar que a palavra inteira deve ser pronunciada:
+
+<List>
+  <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
+</List>
+
+Junte vários caracteres em um cartucho e você poderá escrever um nome:
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅󱦜󱥩󱦜󱥜󱦜󱤔󱦜󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
+</List>
+
+* 🎉 você usa menos caracteres para escrever um nome!
+* 🙁 o cartucho ainda é bastante longo.
+
+## 2. Sistema de contagem: 󱤿󱥠󱤕󱥍󱤩󱤨
+
+O sistema de contagem foi criado por Jan Sonja em 2024 para uso em cartas oficiais e livros, onde páginas estreitas exigem nomes mais curtos. Nele, cada caractere no cartucho recebe uma marca de contagem abaixo. Você usa uma marca de contagem para cada som ou letra que deseja pronunciar:
+
+{/* Note: this section uses non-standard codepoints F19FC-F19FF, which I modded into nasin nanpa. If you ever update nasin nanpa, this section will break. Ideally, nskpll gets standardised later. */}
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡&#xF19FE;󱤜&#xF19FD;󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅&#xF19FD;󱥩&#xF19FD;󱥜&#xF19FD;󱤔&#xF19FD;󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
+</List>
+
+## 3. Sistema de iniciais
+
+Este método foi apresentado pela primeira vez por DavidAR em 2019 e foi experimentado por jan Sonja em *lipu su*: “O Maravilhoso Mágico de Oz (edição Toki Pona)”. Primeiro, você apresenta uma pessoa, idioma ou lugar com seu nome completo:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorothy" />
+</List>
+
+Mas nas frases seguintes, você abrevia o nome para apenas o primeiro caractere:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorothy" />
+</List>

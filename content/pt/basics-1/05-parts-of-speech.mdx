@@ -1,0 +1,103 @@
+---
+slug: "pt/05"
+title: "lição 5: classes gramaticais"
+description: "Aprenda sobre substantivos, verbos, e adjetivos!"
+practice:
+  - l1: "Um pássaro forte"
+    l2: "pipi wawa"
+  - l1: "Aforça do pássaro"
+    l2: "wawa pipi"
+  - l1: "Um olho grande"
+    l2: "lukin suli"
+  - l1: "Comida boa"
+    l2: "moku pona"
+  - l1: "Incrivelmente bom"
+    l2: "pona wawa"
+  - l1: "Comida melhora os olhos."
+    l2: "moku li pona e lukin."
+  - l1: "Animais sabem a fofura dos pássaros."
+    l2: "soweli li sona e suwi waso."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Classes gramaticais
+
+Alguns de vocês devem ter notado que eu introduzi a palavra **󱥡 sona** duas vezes, na primeira como um verbo 'saber', e na segunda como o adjetivo 'sábio'. Então qual das duas? E como você sabe?
+
+Na verdade, pode ser qualquer um dos dois! Se ela acompanha um substantivo, é um adjetivo. Se **󱤧 li** introduz ele, então é um verbo. É tudo sobre a ordem das palavras na frase!
+
+Inclusive, isso serve para _todas_ as palavras: se alguma coisa é um substantivo, verbo, ou adjetivo, ela pode virar _qualquer um dos três_! Entre as palavras que já aprendemos, vamos ver alguns exemplos:
+
+<List>
+  <Word sl="lukin" m="S: olho; V: ver" />
+  <Word sl="moku" m="S: comida; V: consumir, comer" />
+  <Word sl="sona" m="S: conhecimento, sabedoria; V: saber; Adj: conhecedor, sábio" />
+  <Word sl="suli" m="S: tamanho; V: aumentar, enfatizar; Adj: grande, importante" />
+  <Word sl="pona" m="S: bondade; V: melhorar; Adj: bom, agradável" />
+  <Word sl="waso" m="S: pássaro; V: transformar em um pássaro; Adj: de um pássaro, parecido com um pássaro" />
+</List>
+
+Eu listei apenas *algumas* palavras que aprendemos até agora -- apenas o suficiente para ver os padrões:
+* Quando **verbos viram substantivos**, eles normalmente significam o ato de fazer algo (*conhecimento*), ou algo que é uma parte crucial do ato (*comida, olho*).
+* Quando **verbos viram adjetivos**, eles significam aqueles que fazem algo (*pessoas sábias ~ pessoas que sabem*).
+* Quando **substantivos viram verbos**, eles normal mente significam transformar ou aplicar algo a algo (*transformar em um pássaro*).
+* Quando **substantivos viram adjetivos**, eles significam possessão ou similaridade (*de um pássaro, parecido com um pássaro*)
+* Quando **adjetivos viram substantivos**, eles significam uma qualidade (*bondade, tamanho*).
+* Quando **adjetivos viram verbos**, eles transmitem uma qualidade (*melhorar, aumentar*).
+
+Mas quando falamos, nós falantes de toki pona nem precisamos pensar nesses padrões na maior parte do tempo! Eles começam a se misturar uns nos outros. Chega a um ponto em que você para de pensar se algo originalmente era um substantivo, um verbo ou um adjetivo. Isso vira um todo coerente! 
+
+Vamos praticar usando palavras como substantivos, verbos, e adjetivos:
+
+<List>
+  <Sentence sl="lukin li pona e sona." m="Olhos melhoram o conhecimento." />
+  <Sentence sl="moku li suli e pipi." m="Comida faz os insetos crescerem." />
+  <Sentence
+    sl="moku li wawa e soweli lili."
+    m="Comida fortalece o animal pequeno."
+  />
+</List>
+
+## A ordem das palavras importa!
+
+Já que qualquer substantivo pode ser um adjetivo, e qualquer adjetivo pode ser um substantivo, a ordem das palavras realmente importa! Observe como essas duas frases têm significados diferentes:
+
+<List>
+  <Word sl="soweli suli" m="Animal grande" />
+  <Word sl="suli soweli" m="O tamanho de um animal" />
+  <Sentence
+    sl="soweli suli li sona e suli soweli."
+    m="O animal grande conhece o tamanho de um animal."
+  />
+</List>
+
+## li e e importam também!
+
+Se lembra que li e e eram um pouco desnecessários? Agora que você sabe que qualquer palavra com significado pode ser usada em qualquer lugar, como um substantivo, verbo ou adjetivo, podemos finalmente. Graças a eles, podemos diferenciar essas duas frases muito diferentes:
+
+<List>
+  <Word sl="soweli sona" m="Animal sábio" />
+  <Word sl="sona pona" m="Conhecimento bom; saber bem" />
+  <Word sl="pona waso" m="bondade do pássaro" />
+  <Sentence
+    sl="soweli sona li pona e waso."
+    m="O animal sábio ajuda o pássaro."
+  />
+  <Sentence
+    sl="soweli li sona pona e waso."
+    m="O animal conhece bem o pássaro."
+  />
+  <Sentence
+    sl="soweli li sona e pona waso."
+    m="O animal sabe quão bom o pássaro é."
+  />
+</List>
+Se você estiver confuso sobre como ler e escrever uma frase, comece perguntando:
+"Onde está o sujeito? Onde está o verbo? Onde está o objeto?", e tudo se separa
+em frases menores!
+
+<Practice exercises={frontmatter.practice} client:load />

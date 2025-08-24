@@ -1,0 +1,75 @@
+---
+slug: "pt/21"
+title: "lição 21: naturesa"
+description: "Aprenda akesi, kala, pan, kili, soko, misikeke e namako!"
+practice:
+  - l1: "Fungos consomem plantas mortas."
+    l2: "soko li moku e kasi moli."
+  - l1: "Asse a massa."
+    l2: "o seli e ko pan."
+  - l1: "Eu cavei a batata."
+    l2: "mi weka e kili tan ma."
+  - l1: "Plantas precisam de água, luz solar e terra."
+    l2: "kasi li wile e telo, e suno, e ma."
+  - l1: "Pessoas conversam, se divertem, cantam e dormem."
+    l2: "jan li toki, li musi, li kalama, li lape."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Já sabemos a maioria das palavras relacionadas a animais e plantas — vamos aprender as que faltam!
+
+<List>
+  <Word sl="akesi" m="réptil ou anfíbio, como um sapo, lagarto ou cobra" />
+  <Word
+    sl="kala"
+    m="peixe ou criatura marinha, como salmão, baleia, tubarão ou polvo"
+  />
+  <Word sl="pan" m="alimentos ricos em amido, como trigo, arroz, pão ou massas" />
+  <Word sl="kili" m="fruta, vegetal" />
+  <Word sl="soko" m="cogumelo" />
+  <Word sl="misikeke" m="medicina" />
+  <Word sl="namako" m="tempero, guarnição, adorno" />
+  <Sentence sl="soko li kili nasa." m="Os cogumelos são frutos estranhos." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="Um peixe grande caça peixes menores."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Tenho que tomar medicamentos com frequência."
+  />
+</List>
+
+## Ingredientes
+
+Os produtos de panificação são muito usados para juntar diferentes ingredientes:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="A pizza contém carne." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="A pizza contém vegetais." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="A pizza contém condimentos." />
+</List>
+
+Mas como podemos juntá-los em uma única frase? Cada um deles é o *objeto* de uma frase. Em uma frase, podemos ter *vários objetos*: várias frases **󱤉 e**. Esses objetos são como frases que se seguem umas às outras.
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="A pizza contém carne, vegetais (e) condimentos."
+  />
+</List>
+
+Isso não é exclusivo apenas do **󱤉 e**! Você pode combinar várias ideias relacionadas em uma única frase com **󱤧 li**, **󱤡 la**, e preposições também. Por enquanto, vamos ver só o  **󱤧 li**:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="A pessoa caça peixes. (= a pessoa pesca)." />
+  <Sentence sl="jan li seli e ona." m="A pessoa cozinha eles." />
+  <Sentence sl="jan li moku e ona." m="A pessoa come eles." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="A pessoa pesca peixes, cozinha e come eles." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

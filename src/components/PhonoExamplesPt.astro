@@ -1,0 +1,60 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Palavra</th>
+      <th>Significado</th>
+      <th>Dicas úteis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="mi" />
+      <td>eu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="ken" />
+      <td>can</td>
+      <td></td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="jan" />
+      <td>person</td>
+      <td>Lembre-se de como se pronuncia a letra <b>j</b>! </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kute" />
+      <td>hear</td>
+      <td>Lembre-se de que o t não é falado como "tch" </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>number</td>
+      <td
+        >Inclusive, nós escrevemos <b>np</b>, mas geralmente pronunciamos <b>mp</b>.!
+      </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>sound</td>
+      <td>Teste suas habilidades de destacar a primeira sílaba!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>lizard</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

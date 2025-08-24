@@ -1,0 +1,54 @@
+---
+slug: "pt/03"
+title: "lição 3: frases simples"
+description: "Aprenda li, e, soweli, waso, pipi, kasi, moku, lukin e sona!"
+practice:
+  - l1: "O animal conhece o inseto."
+    l2: "soweli li sona e pipi."
+  - l1: "O inseto come plantas."
+    l2: "pipi li moku e kasi."
+  - l1: "O pássaro vê plantas."
+    l2: "waso li lukin e kasi."
+  - l1: "O pássaro conhece o animal."
+    l2: "waso li sona e soweli."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Frases
+
+Agora que você sabe como ler em toki pona, é hora de aprender palavras e frases!  
+Aqui estão algumas palavras sobre coisas e ações:
+
+<List>
+  <Word sl="soweli" m="animal terrestre, como um gato, cachorro, vaca, rato e elefante" />
+  <Word sl="waso" m="pássaro, como um pombo, ganso e coruja" />
+  <Word sl="pipi" m="inseto, como um besouro, formiga, borboleta e aranha" />
+  <Word sl="kasi" m="planta, como um trevo, uma bétula, um cacto e um musgo" />
+  <Word sl="moku" m="consumir" />
+  <Word sl="lukin" m="ver" />
+  <Word sl="sona" m="saber" />
+</List>
+
+Um tipo de frase muito comum é a chamada frase "sujeito-verbo-objeto". Isso é uma frase em que uma coisa (sujeito) faz algo (verbo) com outra coisa (objeto): 
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="O animal come plantas." />
+  <Sentence sl="waso li moku e pipi." m="O pássaro come insetos." />
+  <Sentence sl="pipi li lukin e soweli." m="O inseto vê um animal." />
+  <Sentence sl="waso li sona e kasi." m="O pássaro conhece a árvore." />
+</List>
+
+Aqui está o que podemos aprender:
+
+- A ordem das palavras é a mesma do português: sujeito, verbo, objeto.
+- **󱤧 li** é uma particula que inicia o verbo.
+- **󱤉 e** é uma partícula que começa o objeto.
+- A tradução para português inclui palavras e afixos como "o", "um", "-s", mas isso são palpites! A frase em toki pona não expecifica se estamos falando de "_um_ pássaro" or "_o_ pássaro". Em conversas longas isso fica mais claro!
+
+(**󱤧 li** e **󱤉 e** podem parecer desnecessários no começo. Nós vamos aprender o porque eles são necessários, mas para isso, precisamos aprender primeiro sobre classes gramaticais!)
+
+<Practice exercises={frontmatter.practice} client:load />

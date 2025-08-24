@@ -1,0 +1,53 @@
+---
+slug: "pt/24"
+title: "lição 24: corpo"
+description: "Aprenda sijelo, luka, noka, lawa, kute, uta, nena, palisa e linja!"
+practice:
+  - l1: "Estou com dor de cabeça."
+    l2: "lawa mi li pakala."
+  - l1: "Ouvi um som fraco."
+    l2: "mi kute e kalama lili."
+  - l1: "Você obedece. Eu ordeno."
+    l2: "sina kute. mi lawa."
+  - l1: "O tempero é picante na minha boca."
+    l2: "namako li seli tawa uta mi."
+  - l1: "Por favor, faça carinho no cachorro adorável!"
+    l2: "o luka e soweli suwi!"
+  - l1: "A medicina cura o corpo dela."
+    l2: "misikeke li pona e sijelo ona."
+  - l1: "O cabelo dela é bom ao toque."
+    l2: "linja lawa ona li pona tawa luka."
+  - l1: "A montanha é parecida com o nariz no meu rosto."
+    l2: "nena kiwen li sama nena pi sinpin mi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Já sabemos as palavras para *olhos*, *coração*, *rosto* e *costas*, então vamos aprender as partes restantes do corpo!
+
+<List>
+  <Word sl="lawa" m="cabeça; liderar" />
+  <Word sl="kute" m="ouvido; ouvir" />
+  <Word sl="nena" m="saliência, como um nariz, colina ou seio" />
+  <Word sl="uta" m="boca, lábios; beijar, morder" />
+  <Word sl="sijelo" m="corpo" />
+  <Word sl="luka" m="mão, braço; tocar" />
+  <Word sl="noka" m="pé, perna" />
+  <Word sl="palisa" m="objeto longo e duro, como um galho, vara ou bastão" />
+  <Word sl="linja" m="coisa longa e flexível, como um fio ou corda" />
+</List>
+
+É interessante notar quantas partes do corpo têm uma ação associada! A cabeça lidera, os olhos veem, os ouvidos ouvem, a boca beija, o coração sente, as mãos tocam.
+
+<List>
+    <Sentence sl="mi wile suli e linja lawa mi." m="Quero deixar meu cabelo crescer. (crescer meu cabelo)" />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="Meu chefe me ouviu falando demais." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="O espelho reflete uma imagem invertida." />
+  <Sentence sl="sijelo mi li wile e lape." m="Meu corpo precisa descansar." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Meus dedos das mãos são maiores do que os dos pés." />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />

@@ -1,0 +1,73 @@
+---
+slug: "/"
+title: "Wasona: um intensivão em Toki Pona"
+description: "Leia, jogue e aprenda uma língua nova!"
+---
+## Parte 1: primeiros passos!
+
+Fale sobre animais, pessoas, lugares, e atividades.  
+Aprenda suas primeiras 40 palavras!  
+No fim dessa parte, você vai ler uma história curta.
+
+* [introdução](/pt/00/)
+* [lição 1: pronúncia](/pt/01/)
+* [lição 2: dois sistemas de escrita](/pt/02/)
+* [lição 3: frases simples](/pt/03/)
+* [lição 4: adjetivos](/pt/04/)
+* [lição 5: classes gramaticais](/pt/05/)
+* [lição 6: pronomes](/pt/06/)
+* [lição 7: substantivos e nomes](/pt/07/)
+* [lição 8: preposições](/pt/08/)
+* [lição 9: atividades](/pt/09/)
+* [lição 10: transição 1](/pt/10/)
+
+## Parte 2: continue!
+
+Fale sobre lar, materiais, sociedade e seja expressivo.  
+Aprenda suas próximas 39 palavras!  
+No fim dessa parte, você vai ler um dialogo.
+
+* [lição 11: lar](/pt/11/)
+* [lição 12: pedidos](/pt/12/)
+* [lição 13: elementos](/pt/13/)
+* [lição 14: negação](/pt/14/)
+* [lição 15: com e como](/pt/15/)
+* [lição 16: sociedade](/pt/16/)
+* [lição 17: perguntas](/pt/17/)
+* [lição 18: sentimentos](/pt/18/)
+* [lição 19: transição 2](/pt/19/)
+
+## Parte 3: encerramento!
+
+Fale sobre tempo, espaço, números, cores, e mais!  
+Termine de aprender suas 131 palavras!
+
+* [lição 20: tempo](/pt/20/)
+* [lição 21: natureza](/pt/21/)
+* [lição 22: gatos muito amáveis](/pt/22/)
+* [lição 23: lugares](/pt/23/)
+* [lição 24: corpo](/pt/24/)
+* [lição 25: números](/pt/25/)
+* [lição 26: amor e identidade](/pt/26/)
+* [lição 27: cores](/pt/27/)
+* [lição 28: mu!](/pt/28/)
+* [lição 29: transição 3](/pt/29/)
+
+## Perguntas e respostas!
+
+Alguns detalhes mais específicos, mas que você pode estar interessado!
+
+* [P: que outros cursos de Toki Pona existem??](/pt/other-courses/)
+* [P: a pronúncia de Toki Pona varia entre diferentes falantes?](/pt/sound-variation/)
+* [P: como posso digitar em sitelen pona?](/pt/fonts/)
+* [P: qual é o terceiro sistema de escrita mais popular para Toki Pona?](/pt/sitelen-sitelen/)
+* [P: 'li' é 'ser/estar'?](/pt/li-and-is/)
+* [P: qual é o meu nome em Toki Pona?](/pt/make-a-name/)
+* [P: em sitelen pona, os nomes são longos. Como posso deixá-los mais curtos?](/pt/simpler-cartouches/)
+* [P: eu tenho de memorizar nomes de idiomas e países?](/pt/languages-countries/)
+* [P: 'jan li toki Inli' não é um pouco estranho?](/pt/named-verbs/)
+* [P: existem mais pré-verbos?](/pt/more-preverbs/)
+* [P: como se diz “fazer”?](/pt/doing/)
+* [P: como posso falar sobre números grandes?](/pt/large-numbers/)
+* [P: o que jan Sonja anda fazendo atualmente?](/pt/jan-sonja/)
+* [P: que outras palavras incomuns eu posso encontrar?](/pt/uncommon-words/)
