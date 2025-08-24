@@ -16,7 +16,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Frases sencillas
 
@@ -51,4 +51,4 @@ Aquí está lo que podemos aprender:
 
 (**󱤧 li** y **󱤉 e** pueden parecer innecesarios al principio. Más tarde aprenderemos por qué son importantes, pero para eso, ¡primero tenemos que aprender más sobre las partes de las oraciones!)
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

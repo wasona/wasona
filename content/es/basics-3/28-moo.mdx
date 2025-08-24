@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ¡Solo una palabra importante más a aprender, antes de ir a la parte chistosa!
 
@@ -84,9 +84,9 @@ Si te unes a una comunidad de toki pona, verás casi con certeza más palabras. 
 
 No conocerás la palabra **󱦅 lanpan**, pero puedes ver la traducción, ¡y ya sabes lo suficiente como para pensar en un replazo adecuado usando las palabras comunes (**󱤖󱤓 kama jo**)! Es prácticamente lo mismo para otras palabras que veas allá fuera.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: what is jan Sonja up to these days?](es/jan-sonja/)
-* [Q: what other, uncommon words might I encounter?](es/uncommon-words/)
+* [Q: what is jan Sonja up to these days?](/es/jan-sonja//)
+* [Q: what other, uncommon words might I encounter?](/es/uncommon-words//)
 * [funny video: animal sounds are all **󱤹 mu**](https://www.youtube.com/watch?v=zh-kLJI43xw)

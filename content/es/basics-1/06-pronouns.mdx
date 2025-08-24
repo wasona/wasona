@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Pronombres
 
@@ -73,7 +73,7 @@ Practiquemos el uso de **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, y **󱥁 ni** e
 
 El toki pona tiene una regla especial: cuando **󱤴 mi** o **󱥞 sina** es el sujeto de la frase, quitamos el **󱤧 li** que normalmente seguiría al sujeto. ¡Esto se debe a que las frases que comienzan con **󱤴 mi** o **󱥞 sina** son extremadamente comunes!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Véase también
-* [Q: ¿Acaso 'li' significa 'es'?](es/li-and-is)
+* [Q: ¿Acaso 'li' significa 'es'?](/es/li-and-is/)

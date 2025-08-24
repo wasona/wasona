@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Ya conocemos las palabras para los *ojos*, el *corazón*, la *cara* y la *espalda*, ¡así que aprendamos las partes del cuerpo restantes!
 
@@ -50,4 +50,4 @@ Ya conocemos las palabras para los *ojos*, el *corazón*, la *cara* y la *espald
   <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Mis dedos de las manos son más largos que mis dedos de los pies." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

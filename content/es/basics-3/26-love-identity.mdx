@@ -17,7 +17,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Ya has visto que **󱤧󱥔󱥩󱤴 ... li pona tawa mi** es la manera común de decir '*me gusta ...*'. Y, por supuesto, podemos decir **󱥔󱤼 pona mute** para decir que nos *gusta mucho* alguien. ¡Pero eso no es lo mismo que *amar* a alguien! Veamos palabras para el amor, y lo que llamamos a aquellos que amamos:
 
@@ -50,7 +50,7 @@ Más ejemplos de situaciones en las que el género pueda ser relevante:
 
 ## Varios sujetos
 
-Ya hemos visto cómo*'e ... e ...'* puede usarse para introducir varios objetos a la frase, y cómo*'li ... li ...'* puede introducir varios verbos. Pero no podemos poner dos sujetos uno al lado del otro, porque no sabrías dónde acaba un sujeto y dónde empieza el siguiente. Para solucionar este problema, usamos una nueva partícula entremedio:
+Ya hemos visto cómo *'e ... e ...'* puede usarse para introducir varios objetos a la frase, y cómo *'li ... li ...'* puede introducir varios verbos. Pero no podemos poner dos sujetos uno al lado del otro, porque no sabrías dónde acaba un sujeto y dónde empieza el siguiente. Para solucionar este problema, usamos una nueva partícula entremedio:
 
 <List>
   <Word sl="en" m="une sujetos" />
@@ -59,7 +59,7 @@ Ya hemos visto cómo*'e ... e ...'* puede usarse para introducir varios objetos 
   <Sentence sl="meli en mije li unpa." m="La mujer y el hombre tienen sexo." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
 * [A deeper discussion on gender and Toki Pona, by wan Tansin](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/)

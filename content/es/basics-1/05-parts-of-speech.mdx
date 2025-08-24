@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Categorías gramaticales
 
@@ -100,4 +100,4 @@ Como cualquier sustantivo puede ser un adjetivo, y cualquier adjetivo puede ser 
 Si en algún momento te confundes sobre cómo leer o escribir una frase, empieza preguntando:
 "¿Dónde está el sujeto? ¿Dónde está el verbo? ¿Dónde está el objeto?", ¡y todo se separará en trozos más fáciles!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

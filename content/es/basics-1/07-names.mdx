@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Nombres
 
@@ -83,8 +83,8 @@ Practiquemos el uso de las nuevas palabras y de nombres en frases:
   <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma conoce bien Alemania." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: ¿Cuál es mi nombre en toki pona?](es/make-a-name)
-* [Q: En sitelen pona, los nombres me parecen largos. ¿Cómo los puedo abreviar?](es/simpler-cartouches)
+* [Q: ¿Cuál es mi nombre en toki pona?](/es/make-a-name/)
+* [Q: En sitelen pona, los nombres me parecen largos. ¿Cómo los puedo abreviar?](/es/simpler-cartouches/)

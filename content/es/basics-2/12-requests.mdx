@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Solicitudes
 
@@ -53,4 +53,4 @@ Podemos usarlas por sí solas:
   <Sentence sl="o pini e lupa tomo!" m="¡Por favor cierra la puerta!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

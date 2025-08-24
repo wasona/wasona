@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Ya sabemos la mayoría de palabras para animales y plantas -- ¡aprendamos las que quedan!
 
@@ -74,4 +74,4 @@ Pero, ¿cómo los juntamos todos en una sola frase? Bueno, cada uno de ellos es 
   <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="La persona caza peces, los cocina, los come." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

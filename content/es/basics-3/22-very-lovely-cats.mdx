@@ -32,7 +32,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Recientemente, hemos aprendido **󱤼 mute**, ¡una palabra muy útil!
 
@@ -102,4 +102,4 @@ De nuevo, puedes pensar en ello como *'foto casa mucho'* vs *'foto (casa mucho)'
 
 Pero en toki pona, los sustantivos, verbos y adjetivos pueden convertirse en cualquier otra categoría, ¡así que no nos sirven! En su lugar, el toki pona utiliza una sola partícula para reordenar.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

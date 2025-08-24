@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ¡Hablemos de colores!
 
@@ -52,4 +52,4 @@ Como con los géneros, los colores en toki pona se usan con menos frecuencia de 
 
 Lo explico ahora, porque los colores son el ejemplo más obvio, ¡pero lo mismo se aplica a cualquier frase! Antes de usar adjetivos, es útil pararse y pensar: ¿estos adjetivos explican directamente lo importante de lo que quiero hablar, o simplemente son atajos para otra cosa?
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

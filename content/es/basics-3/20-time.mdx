@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ¡Hablemos sobre el tiempo! Habrás notado que he estado traduciendo las frases inconsistentemente: a veces hablan sobre el presente, a veces el pasado y a veces el futuro. Se debe a que, por defecto, una frase en Toki Pona no contienen información sobre el tiempo, ¡así que podría ser cualquier opción! Pero, por supuesto, podemos decidir ser más específicos usando palabras relacionadas con el tiempo.
 
@@ -69,4 +69,4 @@ El tiempo suele servir como "escenario", un "contexto" para el resto de la oraci
   <Sentence sl="suno li pini la, mi lape." m="Cuando el sol se pone, yo duermo." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

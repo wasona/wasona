@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ¡Vivimos en una sociedad! Aprendamos palabras útiles para movernos por la sociedad:
 
@@ -68,4 +68,4 @@ Aquí hay algo curioso en lo que te habrás fijado: **󱤋 esun** generalmente s
 
 Puede parecer algo extraño, pero recuerda: ¡el propósito de **󱤧 li** es mostrar dónde empieza el verbo! Si aquí se eliminase, entonces asumiríamos que **󱤼 mute** es el verbo.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

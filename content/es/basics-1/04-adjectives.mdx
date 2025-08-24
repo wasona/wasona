@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## ¡Describe!
 
@@ -68,4 +68,4 @@ Si estas frases se sienten largas y tediosas, ¡no te preocupes! Pronto veremos 
 
 Ojo al dato: en español, los adjetivos solo complementan sustantivos. Pero en toki pona, también pueden ir junto a verbos: _morder un poco_ ~ _moku lili_, _conocer bien_ ~ _sona pona_. No se distingue entre adjetivos y adverbios en toki pona. 
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

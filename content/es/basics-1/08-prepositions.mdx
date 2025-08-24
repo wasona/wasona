@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Preposiciones
 
@@ -89,8 +89,8 @@ Practiquemos con estas frases:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Véase también
-* [Q: ¿Me tengo que memorizar los nombres de idiomas y países?](es/languages-countries)
-* [Q: ¿'jan li toki Inli' no es un poco raro?](es/named-verbs)
+* [Q: ¿Me tengo que memorizar los nombres de idiomas y países?](/es/languages-countries/)
+* [Q: ¿'jan li toki Inli' no es un poco raro?](/es/named-verbs/)

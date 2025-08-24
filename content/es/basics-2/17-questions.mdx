@@ -30,7 +30,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Preguntas
 
@@ -98,7 +98,7 @@ Acabamos de aprender que **󱥙 seme** significa '¿qué?', ¡y esta es la parte
 
 Fíjate en que solo **󱥙 seme** se cambia en la respuesta: ¡el resto de palabras mantienen el mismo lugar! Esto difiere del español, donde las preguntas normalmente cambian el orden de los elementos para poner la pregunta interrogativa primero; pero el toki pona no hace eso.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: how do you say 'to do'?](es/doing/)
+* [Q: how do you say 'to do'?](/es/doing//)

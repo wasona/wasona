@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ¡Aprendamos a ser más expresivos en toki pona!
 
@@ -94,4 +94,4 @@ Cuando se usa en frases completas, enfatiza lo que viene después:
     <Sentence sl="mi sona ala a e ni!" m="¡<strong>No</strong> se nada de esto!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

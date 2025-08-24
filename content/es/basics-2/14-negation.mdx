@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Negación
 
@@ -60,4 +60,4 @@ Tal vez hayas notado algo interesante. A pesar de que **󱤂 ala** puede ir en c
 
 Esto tiene mucho sentido: negar la primera palabra del verbo también niega toda la frase, ¡lo que muchas veces queremos!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

@@ -26,7 +26,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Para esta lección, ¡dejemos de lado un rato la gramática y pongámonos filosóficos!
 
@@ -64,4 +64,4 @@ Aprendamos a usar estas palabras en frases:
   <Sentence sl="o kama sona e kon toki!" m="¡Aprende el significado del discurso!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
