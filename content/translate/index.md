@@ -8,16 +8,21 @@ description: "Help us by translating the course to your language!"
 
 **Some notable languages without good Toki Pona courses**: Hindi, Swahili, Thai, Vietnamese, Turkish. If you speak any of them, we would love your help!
 
+**Translation projects in need of proofreading, will soon be added to the site:**
+
+* [Spanish](https://github.com/wasona/wasona/pull/38) by jan Kalo Metesin and soko Sijeni
+* [Portuguese](https://github.com/wasona/wasona/pull/37) by jan Suniu
+* [Hungarian](https://github.com/wasona/wasona/pull/20) by jan Salan
+
 **Ongoing translation projects:**
 
 * [Tagalog](https://github.com/wasona/wasona/pull/8) by jan juna Jona
 * [Korean](https://github.com/wasona/wasona/pull/11) by jyh
 * [Indonesian](https://github.com/wasona/wasona/pull/12) by jan Asipa
-* [Spanish](https://github.com/wasona/wasona/pull/18) by jan Kalo Metesin and soko Sijeni
-* [Hungarian](https://github.com/wasona/wasona/pull/20) by jan Salan
 * [Arabic](https://github.com/wasona/wasona/pull/22) by jan linluwi Mota
-* [Portuguese](https://github.com/wasona/wasona/pull/29) by jan Suniu
 * [French](https://github.com/wasona/wasona/pull/32) by jan Lisente, jan Kakili
+* [Persian](https://github.com/wasona/wasona/pull/36) by jan Ali
+* Czech (no PR yet)
 
 **Some notes for translators:**
 
