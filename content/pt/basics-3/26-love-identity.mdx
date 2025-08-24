@@ -17,7 +17,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Você já viu que **󱤧󱥔󱥩󱤴 ... li pona tawa mi** é uma forma comum de dizer '*eu gosto de ...*'. E, claro, podemos dizer **󱥔󱤼 pona mute** para falar sobre *gostar muito* de alguém. Mas isso não é o mesmo que *amar* alguém! Então, vamos ver as palavras para amor e como chamar as pessoas que você ama:
 
@@ -59,7 +59,7 @@ Já vimos como *'e ... e ...'* pode ser usado para introduzir vários objetos na
   <Sentence sl="meli en mije li unpa." m="A mulher e o homem fazem sexo." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Veja também
 * [Uma discussão mais aprofundada sobre gênero e Toki Pona, por wan Tansin](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/)

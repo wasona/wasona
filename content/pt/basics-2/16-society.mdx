@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Vivemos em uma sociedade! Vamos aprender algumas palavras úteis para nos orientarmos nela:
 
@@ -69,4 +69,4 @@ Observe como o **󱤧 li** não é omitido! Isso ocorre porque o sujeito não é
 
 Pode parecer uma peculiaridade estranha, mas lembre-se -- o proposito do **󱤧 li** é mostrar onde o verbo começa! Se fosse omitido aqui, assumiríamos que **󱤼 mute** é o verbo.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Já sabemos a maioria das palavras relacionadas a animais e plantas — vamos aprender as que faltam!
 
@@ -72,4 +72,4 @@ Isso não é exclusivo apenas do **󱤉 e**! Você pode combinar várias ideias 
   <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="A pessoa pesca peixes, cozinha e come eles." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

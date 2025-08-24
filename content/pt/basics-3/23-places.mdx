@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Na lição anterior, vimos **󱥍 pi**. Como você viu, há muitas frases com dois significados muito razoáveis, dependendo se elas têm **󱥍 pi** ou não. Mas também há muitas frases que fazem *muito pouco sentido* se **󱥍 pi** está faltando! Você verá isso com frequência em nomes:
 
@@ -56,4 +56,4 @@ Vamos usar eles em algumas frases:
 
 Dica: como **󱥍 pi** só existe para rebraquetagem, nunca ocorrerá antes de apenas uma palavra! Há sempre duas ou mais palavras depois dele.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

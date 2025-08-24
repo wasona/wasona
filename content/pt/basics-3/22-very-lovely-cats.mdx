@@ -32,7 +32,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Nós aprendemos **󱤼 mute** recentemente, que é uma palavra muito útil!
 
@@ -99,4 +99,4 @@ Você pode se questionar: "Por que as traduções para o português são tão di
 
 Mas em Toki Pona, substantivos, verbos e adjetivos podem se transformar uns nos outros. Portanto, eles não podem ajudar! Em vez disso, Toki Pona usa apenas uma partícula para reestruturar.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

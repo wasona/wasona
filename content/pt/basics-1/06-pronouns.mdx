@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Pronomes
 
@@ -73,7 +73,7 @@ Você já deve estar acostumado com frases que nem essas! Na maioria das posiç�
 
 Toki Pona tem uma regra especial: quando **󱤴 mi** ou **󱥞 sina** é o sujeito da frase, nós removemos **󱤧 li** que normalmente seguiria o sujeito. Isso é porque frases que começam com **󱤴 mi** ou **󱥞 sina** são muito comuns!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: does 'li' mean 'is'?](en/li-and-is)
+* [P: 'li' significa 'ser/estar'?](en/li-and-is)

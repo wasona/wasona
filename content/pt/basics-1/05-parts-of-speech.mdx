@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Classes gramaticais
 
@@ -100,4 +100,4 @@ Se você estiver confuso sobre como ler e escrever uma frase, comece perguntando
 "Onde está o sujeito? Onde está o verbo? Onde está o objeto?", e tudo se separa
 em frases menores!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

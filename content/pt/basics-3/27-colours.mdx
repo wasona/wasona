@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Vamos falar sobre cores!
 
@@ -59,4 +59,4 @@ Existe uma grande diferença entre uma casa branca e a Casa Branca:
 
 Só estou mencionando isso agora porque as cores são o exemplo mais óbvio, mas o mesmo se aplica a qualquer frase! Antes de usar adjetivos, muitas vezes é útil parar e pensar: esses adjetivos estão transmitindo a parte importante que você queria falar ou são apenas uma abreviação de outra coisa?
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

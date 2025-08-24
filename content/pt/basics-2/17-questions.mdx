@@ -30,14 +30,13 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Perguntas
 
 As perguntas costumam ser de dois tipos:
 
 * *perguntas de sim ou não*: São perguntas que podem ser respondidas com sim ou não, de forma positiva ou negativa.
-
 * *perguntas abertas*: São como preencher os espaços em branco: quem fez isso? O que fez? Para quem? Onde? Por quê?
 
 ## Perguntas de sim ou não
@@ -90,15 +89,15 @@ Você pode responder com **󱤻 musi** ou **󱤻󱤂 musi ala**, assim como uma 
 Acabamos de aprender que **󱥙 seme** significa 'o que?', e é a parte mais importante das *perguntas abertas*! **󱥙 seme** é como um espaço em branco na frase que você quer que a outra pessoa preencha com informações:
 
 <List>
-  <Sentence sl="waso li lon seme?" m="Onde está o pássaro? (lit. "O pássaro está em quê?")" />
+  <Sentence sl="waso li lon seme?" m="Onde está o pássaro? (lit. 'O pássaro está em quê?')" />
   <Sentence sl="waso li lon tomo." m="O pássaro está em casa." />
-  <Sentence sl="soweli li utala e jan seme?" m="Quem o animal atacou? (lit. "O animal atacou qual pessoa?")" />
+  <Sentence sl="soweli li utala e jan seme?" m="Quem o animal atacou? (lit. 'O animal atacou qual pessoa?')" />
   <Sentence sl="soweli li utala e jan Ema." m="O animal atacou Emma." />
 </List>
 
 Observe como apenas **󱥙 seme** é substituído pela resposta — todo o resto da frase permanece na mesma ordem! Isso é diferente do português, onde as perguntas reorganizam a frase, colocando a palavra interrogativa em primeiro lugar, mas Toki Pona não faz isso.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: how do you say 'to do'?](en/doing/)
+* [P: como se diz 'fazer'?](en/doing/)

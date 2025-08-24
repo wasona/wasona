@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Casa
 
@@ -66,4 +66,4 @@ Dentro de uma caixa, podemos encontrar roupas, papéis, ferramentas, fotos... To
   <Sentence sl="mi wile toki e ijo kasi." m="Gostaria de falar sobre algo relacionado a plantas." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
