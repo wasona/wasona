@@ -1,0 +1,69 @@
+---
+slug: "ar/11"
+title: "lesson 11: home"
+description: "تعلّم ilo، lipu، poki، supa، lupa، len، open، pini، jo، ijo!"
+practice:
+  - l1: "أنت تغلق الباب."
+    l2: "sina pini e lupa."
+  - l1: "هناك قطّة في بيتي."
+    l2: "soweli li lon tomo mi."
+  - l1: "لدى بيتي قطّة."
+    l2: "tomo mi li jo e soweli."
+  - l1: "يحتاج طائرك إلى الطعام."
+    l2: "waso sina li wile e moku."
+  - l1: "يمكن لسونيتا أن تغنّي جيّدًا."
+    l2: "jan Sunita li ken kalama pona."
+  - l1: "أريد أن أتحدّث عن آلة الخياطة."
+    l2: "mi wile toki e ilo len."
+  - l1: "وضع شخص كتاب الحشرات على المكتب."
+    l2: "jan li pana e lipu pipi tawa supa."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## البيت
+
+هناك الكثير من الأشياء في بيوتنا:
+
+<List>
+  <Word sl="ilo" m="آلة، مثل مطرقة، شوكة، هاتف، تطبيق" />
+  <Word sl="lipu" m="شيء مسطّح للـ 󱥡 sona، مثل ورق، بطاقة، كتاب، موقع" />
+  <Word sl="poki" m="هاوية، مثل صندوق، دُرج، زجاجة" />
+  <Word sl="supa" m="سطح أفقي، مثل رف، مكتب، أريكة، سرير" />
+  <Word sl="lupa" m="فتحة، مثل باب، نافذة، حفرة" />
+  <Word sl="len" m="غطاء، مثل ثياب، أحذية، بطانية" />
+</List>
+
+وإليك ما نفعل بهم:
+
+<List>
+  <Word sl="open" m="البدء، الفتح، الإشعال" />
+  <Word sl="pini" m="الإنهاء، الإغلاق، الإطفاء" />
+  <Word sl="jo" m="الإمساك، الاحتواء، الشمول" />
+</List>
+
+لنتدرّب!
+
+<List>
+  <Sentence sl="mi open e lupa." m="أَفتَح الباب." />
+  <Sentence sl="jan li pini e poki moku." m="يغلق الشخص الثلّاجة." />
+  <Sentence sl="lipu li lon supa lape." m="الكتاب على السرير." />
+  <Sentence sl="poki mi li ken jo e len." m="يمكن أن يحتوي دُرجي على ثياب." />
+  <Sentence sl="ilo mi li wile e wawa." m="يحتاج هاتفي إلى الكهرباء." />
+</List>
+
+## شيء ما
+
+داخل صندوق، يمكننا وجود الثياب، الأوراق، الأدوات، الصور... كل أنواع الأشياء! كيف يمكننا التحدّث عن كل ذلك بشكل عام؟
+
+<List>
+  <Word sl="ijo" m="شيء، أشياء، أغراض" />
+  <Sentence sl="poki li jo e ijo." m="لدى الصندوق أغراض." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="يرسم الشخص شيء لطيف." />
+  <Sentence sl="mi wile toki e ijo kasi." m="أريد أن أتحدّث عن شيء متعلّق بالنباتات." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
