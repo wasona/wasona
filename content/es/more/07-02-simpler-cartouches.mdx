@@ -9,26 +9,26 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-_sitelen pona_ names can be quite long:
+Los nombres en _sitelen pona_ pueden volverse bastante largos:
 
 <List>
   <Sentence sl="lipu Wikipesija" m="Wikipedia" />
-  <Sentence sl="ma Antasika" m="Antarctica" />
+  <Sentence sl="ma Antasika" m="Antártida" />
   <Sentence sl="ma Kolonpija" m="Colombia" />
 </List>
 
-People have come up with three notable systems to make names easier to read and write.
+Se han inventado tres sistemas notables para facilitar su escritura y lectura:
 
-## 1. dot system: 󱤿󱥠󱤕
+## 1. sistema de puntos: 󱤿󱥠󱤕
 
-The dot system, or _nasin sitelen kalama_, was created by jan Pumiko in 2022. 40–60% of Toki Pona speakers say they use it, or use it in some situations. In _nasin sitelen kalama_, you split up a word into _morae_: chunks that are like a syllable, but smaller. One mora is either consonant+vowel, or the -n after a vowel:
+El sistema de puntos, o _nasin sitelen kalama_, fue creado por jan Pumiko en 2020. Entre el 40-60% de los hablantes de toki pona dicen usarlo, o lo usan en algunas situaciones. En _nasin sitelen kalama_, divides las palabras en _moras_: trozos que son similares a las sílabas, pero más pequeños. Una mora es o bien una consonante+vocal o la -n después de la vocal.
 
 - to-ki
 - ja-n
 - a-n-pa
 - si-n-pi-n
 
-By adding middle-dots after a character, you increase how many morae should be pronounced in the name:
+Añadiendo puntos después de un carácter, incrementas la cantidad de moras que deben ser pronunciadas en el nombre:
 
 <List>
   <Word sp="󱦐󱤅󱦑" sl="A" />
@@ -41,16 +41,16 @@ By adding middle-dots after a character, you increase how many morae should be p
   <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
 </List>
 
-(You might notice a funny quirk of this system: **󱦐󱤅󱦑** makes up a full mora, so adding a dot adds the next mora, which is **-n**. But **󱦐󱥟󱦑** is not a full mora, so adding a dot only completes the first mora, which is **si**.)
+(Puede que notes una pequeña curiosidad de este sistema: **󱦐󱤅󱦑** hace una mora completa, así que añadir un punto añade la siguiente mora, que es **-n**. Pero **󱦐󱥟󱦑** no es una mora completa, así que añadir un punto solamente completa la primera mora, que es **si**.)
 
-You can also use a colon to mean the entire word should be pronounced:
+También puedes usar dos puntos para señalar que la palabra completa ha de pronunciarse:
 
 <List>
   <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
   <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
 </List>
 
-Put several characters together in a cartouche, and you can write a name:
+Pon varios carácteres juntos en un cartucho, y puedes escribir un nombre:
 
 <List>
   <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
@@ -58,12 +58,12 @@ Put several characters together in a cartouche, and you can write a name:
   <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
 </List>
 
-* 🎉 you use fewer word characters to write one name!
-* 🙁 the cartouche is still quite long.
+* 🎉 ¡usas menos carácteres para escribir un solo nombre!
+* 🙁 el cartucho sigue siendo bastante largo.
 
-## 2. tally system: 󱤿󱥠󱤕󱥍󱤩󱤨
+## 2. sistema de rayas: 󱤿󱥠󱤕󱥍󱤩󱤨
 
-The tally system was created by jan Sonja in 2024 for use in official letters and books, where narrow pages require shorter names. In it, every character in the cartouche gets a tally mark below. You use one tally mark for every sound or letter you want to pronounce:
+El sistema de rayas fue creado por jan Sonja en 2024 para usarse en cartas y libros oficiales, donde la falta de espacio exige nombres más cortos. En este, cada carácter del cartucho tiene una raya debajo. Colocas una raya por cada sonido o letra que quieres que se pronuncie:
 
 {/* Note: this section uses non-standard codepoints F19FC-F19FF, which I modded into nasin nanpa. If you ever update nasin nanpa, this section will break. Ideally, nskpll gets standardised later. */}
 
@@ -73,15 +73,15 @@ The tally system was created by jan Sonja in 2024 for use in official letters an
   <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
 </List>
 
-## 3. initial system
+## 3. sistema inicial
 
-This method was first shown by DavidAR in 2019, and was tried by jan Sonja in *lipu su*: "The Wonderful Wizard of Oz (Toki Pona edition)". At first, you introduce a person, language, or place with its full name:
+Este método fue usado por primera vez por DavidAR en 2019, y probado por jan Sonja en *lipu su*: "El Asombroso Mago de Oz (edición toki pona)". Al principio, introduces a una persona, un idioma o un lugar con su nombre completo:
 
 <List>
   <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorothy" />
 </List>
 
-But in following sentences, you abbreviate the name to just the first character:
+Pero, en las siguientes ocurrencias, abrevias el nombre a solo el primer carácter:
 
 <List>
   <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorothy" />
