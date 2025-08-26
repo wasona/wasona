@@ -66,7 +66,7 @@ Pár apróbb részlet, amiket nem kell tudni, de lehet, hogy érdekelnek!
 * [Sitelen ponául túl hosszúak a nevek. Hogyan lehet lerövidíteni őket?](hu/simpler-cartouches)
 * [Memorizálnom kell az összes nyelv- és országnevet?](hu/languages-countries)
 * [A "jan li toki Inli" nem furcsa egy kicsit?](hu/named-verbs)
-* [Van több preverb?](hu/more-preverbs)
+* [Van több előige?](hu/more-preverbs)
 * [Hogy mondod azt, hogy "csinálni"?](hu/doing)
 * [Hogy beszélek nagy számokról?](hu/large-numbers)
 * [Mit csinál jan Sonja manapság?](hu/jan-sonja)
