@@ -20,6 +20,7 @@ description: "Help us by translating the course to your language!"
 * [Arabic](https://github.com/wasona/wasona/pull/22) by jan linluwi Mota
 * [French](https://github.com/wasona/wasona/pull/32) by jan Lisente, jan Kakili
 * [Persian](https://github.com/wasona/wasona/pull/36) by jan Ali
+* [Catalan](https://github.com/wasona/wasona/pull/43) by jan Suwapeto
 * Czech (no PR yet)
 
 **Some notes for translators:**
