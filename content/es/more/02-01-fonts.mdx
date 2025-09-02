@@ -1,0 +1,37 @@
+---
+slug: "es/fonts"
+title: "Q: ¿Cómo puedo escribir en sitelen pona digitalmente?"
+description: "¡Aprende sobre fuentes!"
+---
+
+¡El *sitelen pona* es genial! Pero aún no está en Unicode. A la mayoría de fuentes de texto solo les importan los caracteres que se definen en Unicode. Eso significa que las fuentes de tu dispositivo no saben nada sobre el sitelen pona.
+
+Para arreglar esto, ¡puedes instalar una fuente con sitelen pona! Hay más de [cien](https://linku.la/fonts/) para elegir, así que déjame destacar algunas:
+
+* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf), por jan Itan, es la fuente que usamos en esta página. Tiene un diseño rígido y geométrico.<br /><img src="/example-nasin-nanpa.webp" />
+* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf), por jan Lepeka, tiene un diseño más juguetón que parece dibujado a mano.<br /><img src="/example-sitelen-seli-kiwen.webp" />
+* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) también parece dibujado a mano. Utiliza la escritura de jan Sonja en su libro de 2014, más algunos caracteres nuevos dibujados por jan Pensa.<br /><img src="/example-pu-mono.webp" />
+
+También deberías saber una fuente de gran importancia histórica:
+
+* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf), por jan Same. Se hizo entre 2016 y 2021, y fue la primera fuente de sitelen pona en hacerse popular. Tiene un diseño ligeramente poco convencional, más ancho y cuadrado que el resto de fuentes actuales. Mientras linja pona era popular, el sitelen pona obtuvo varios glifos nuevos, como **󱦀 kijetesantakalu** y **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
+
+**En Discord**, ¡tenemos un bot, ilo Linku, que puede dibujar texto en cualquier fuente de sitelen pona a una imagen! De este modo puedes conversar en sitelen pona sin instalar nada.  
+**En ordenadores de sobremesa**, puedes descargar alguna de las fuentes de arriba y clicar en el archivo. Entonces, tu sistema la instalará.  
+**En móviles**, instalar fuentes es bastante difícil. Tendrás que hablar con alguien con conocimientos técnicos.  
+
+## Detalles técnicos: ASCII vs fuentes UCSUR
+
+Hay dos formas de crear una fuente para el sitelen pona, que llamamos **fuentes ASCII** y **fuentes UCSUR**.
+
+En las **fuentes ASCII**, escribes en caracteres latinos, que son procesados por la fuente, y se convierten automáticamente en caracteres en sitelen pona mientras se escribe.
+
+* 🎉 ¡muy intuitivo de usar!
+* 🙁 necesita mucho trabajo para crearse.
+* 🙁 así no es como funcionan otros sistemas de escritura en ordenadores.
+
+En las **fuentes UCSUR**, en lugar de escribir caracteres latinos, escribes caracteres de *una parte diferente de Unicode*. Unicode ha dejado esta parte en blanco intencionadamente, para que otras personas las puedan usar para [sus propios usos privados](https://en.wikipedia.org/wiki/Private_Use_Areas). Así pues, una organización diferente, [UCSUR](https://www.kreativekorp.com/ucsur/), decidió que esta parte ahora contiene el sitelen pona.
+
+* 🎉 ¡así es como funcionan otros sistemas de escritura!
+* 🎉 ¡necesita menos trabajo para crearse!
+* 🙁 más difícil de usar: necesitas instalar un método de entrada similar a aquellos que existen para la escritura china, o hacer una distribución de teclado.

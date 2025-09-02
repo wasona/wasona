@@ -1,0 +1,23 @@
+{
+  "Index": "Índice",
+  "Next": "Siguiente",
+  "Previous": "Anterior",
+  "Translation": "Traducción",
+
+  "Consonants": "Consonantes",
+  "Labial": "Labiales",
+  "Coronal": "Coronales",
+  "Dorsal": "Dorsales",
+
+  "Vowels": "Vocales",
+  "Front": "Posteriores",
+  "Central": "Centrales",
+  "Back": "Anteriores",
+
+  "translate": "Traduce esta oración",
+  "check": "comprobar",
+  "continue": "continuar",
+  "incorrect": "❌ Incorrecto. Respuesta correcta: ",
+  "correct": "✅ ¡Correcto! ¡Bien hecho!",
+  "done": "🎉 ¡Todos los ejercicios completados!"
+}

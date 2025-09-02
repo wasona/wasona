@@ -1,0 +1,105 @@
+---
+slug: "es/22"
+title: "Lección 22: Gatos muy adorables"
+description: "¡Aprende pi!"
+practice:
+  - l1: "mucha nieve"
+    l2: "ko lete mute"
+    alsoAccept:
+      - "ko mute lete"
+  - l1: "nieve muy fría"
+    l2: "ko pi lete mute"
+  - l1: "mis muchos errores"
+    l2: "pakala mi mute"
+    alsoAccept:
+      - "pakala mute mi"
+  - l1: "nuestros errores"
+    l2: "pakala pi mi mute"
+  - l1: "el otro libro de lengua"
+    l2: "lipu toki ante"
+    alsoAccept:
+      - "lipu ante toki"
+  - l1: "un libro en otro idioma"
+    l2: "lipu pi toki ante"
+  - l1: "la habitación pequeña de alguien"
+    l2: "tomo jan lili"
+    alsoAccept:
+      - "tomo lili jan"
+  - l1: "una habitación para alguien pequeño"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Recientemente, hemos aprendido **󱤼 mute**, ¡una palabra muy útil!
+
+Veámosla con más detenimiento. Ya sabes cómo formar estas expresiones:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="soweli suwi" m="un gato adorable" />
+  <Word sl="soweli mute" m="muchos gatos" />
+  <Word sl="suwi mute" m="muy adorables" />
+</List>
+
+Pero, ¿y si las ponemos todas juntas? ¿Tendremos *muchos gatos adorables* o *un gato muy adorable*?
+
+<List>
+  <Word sl="soweli suwi mute" m="muchos gatos adorables" />
+</List>
+
+Esta expresión significa *muchos gatos adorables*, porque **󱥦 suwi** describe a **󱥢 soweli**, y **󱤼 mute** también describe a **󱥢 soweli**.  
+¡Pero creo que *mi* gato es muy adorable! ¿Cómo lo digo? ¿Y si quiero que **󱤼 mute** describa a **󱥦 suwi**, en vez de describir a **󱥢 soweli**?  
+Aquí es donde una nueva partícula nos ayuda:
+
+<List>
+  <Word sl="pi" m="partícula que agrupa adjetivos" />
+  <Word sl="soweli pi suwi mute" m="un gato muy adorable" />
+</List>
+
+¡Hurra! ¡Ahora podemos hablar de un **󱥢 soweli** que es **󱥦󱤼 suwi mute**!  
+Si te gustan las matemáticas, puedes visualizar esto como abrir un paréntesis que cambia el orden de la operación: *'gato adorable mucho*' vs *'gato (adorable mucho)*'.
+
+Veamos otro ejemplo:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="sitelen tomo" m="una foto de una casa" />
+  <Word sl="sitelen mute" m="fotos" />
+  <Word sl="tomo mute" m="casas" />
+  <Word sl="sitelen tomo mute" m="fotos de una casa" />
+  <Word sl="sitelen pi tomo mute" m="una foto de casas" />
+</List>
+
+De nuevo, puedes pensar en ello como *'foto casa mucho'* vs *'foto (casa mucho)'*.  
+¡Por supuesto, **󱤼 mute** no es la única palabra con la que **󱥍 pi** nos ayuda! Veamos otras palabras:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Word sl="jan pona" m="una buena persona" />
+  <Word sl="jan lili" m="una persona pequeña" />
+  <Word sl="pona lili" m="ligeramente bueno" />
+  <Word sl="jan pona lili" m="una pequeña buena persona" />
+  <Word sl="jan pi pona lili" m="una persona ligeramente buena" />
+</List>
+
+*'persona buena pequeño'* vs *'persona (buena pequeño)'*.
+
+<List>
+  <Word sl="sona utala" m="conocimiento de guerra" />
+  <Word sl="sona sin" m="conocimiento nuevo" />
+  <Word sl="utala sin" m="guerra nueva" />
+  <Word sl="sona utala sin" m="nuevo conocimiento de guerra. el conocimiento es reciente." />
+  <Word sl="sona pi utala sin" m="conocimiento de una guerra nueva. la guerra es reciente." />
+</List>
+
+*'conocimiento guerra nuevo'* vs *'conocimiento (guerra nuevo)'*.
+
+*¿¡Por qué todas las traducciones al español son tan diferentes!?*, te preguntarás. El español usa muchas *categorías gramaticales* para decir cuál palabra pertenece a cuál otra palabra. *Mucho* es un adjetivo, y *muy* es un adverbio.
+
+Pero en toki pona, los sustantivos, verbos y adjetivos pueden convertirse en cualquier otra categoría, ¡así que no nos sirven! En su lugar, el toki pona utiliza una sola partícula para reordenar.
+
+<Practice exercises={frontmatter.practice} />

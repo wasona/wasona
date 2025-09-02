@@ -1,0 +1,88 @@
+---
+slug: "es/simpler-cartouches"
+title: "Q: En sitelen pona, los nombres me parecen largos. ¿Cómo los puedo abreviar?"
+description: "¡Aprende sobre puntos, rayitas y abreviaturas!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Los nombres en _sitelen pona_ pueden volverse bastante largos:
+
+<List>
+  <Sentence sl="lipu Wikipesija" m="Wikipedia" />
+  <Sentence sl="ma Antasika" m="Antártida" />
+  <Sentence sl="ma Kolonpija" m="Colombia" />
+</List>
+
+Se han inventado tres sistemas notables para facilitar su escritura y lectura:
+
+## 1. sistema de puntos: 󱤿󱥠󱤕
+
+El sistema de puntos, o _nasin sitelen kalama_, fue creado por jan Pumiko en 2020. Entre el 40-60% de los hablantes de toki pona dicen usarlo, o lo usan en algunas situaciones. En _nasin sitelen kalama_, divides las palabras en _moras_: trozos que son similares a las sílabas, pero más pequeños. Una mora es o bien una consonante+vocal o la -n después de la vocal.
+
+- to-ki
+- ja-n
+- a-n-pa
+- si-n-pi-n
+
+Añadiendo puntos después de un carácter, incrementas la cantidad de moras que deben ser pronunciadas en el nombre:
+
+<List>
+  <Word sp="󱦐󱤅󱦑" sl="A" />
+  <Word sp="󱦐󱤅󱦜󱦑" sl="An" />
+  <Word sp="󱦐󱤅󱦜󱦜󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦑" sl="S" />
+  <Word sp="󱦐󱥟󱦜󱦑" sl="Si" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦑" sl="Sin" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦑" sl="Sinpi" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
+</List>
+
+(Puede que notes una pequeña curiosidad de este sistema: **󱦐󱤅󱦑** hace una mora completa, así que añadir un punto añade la siguiente mora, que es **-n**. Pero **󱦐󱥟󱦑** no es una mora completa, así que añadir un punto solamente completa la primera mora, que es **si**.)
+
+También puedes usar dos puntos para señalar que la palabra completa ha de pronunciarse:
+
+<List>
+  <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
+</List>
+
+Pon varios carácteres juntos en un cartucho, y puedes escribir un nombre:
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅󱦜󱥩󱦜󱥜󱦜󱤔󱦜󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
+</List>
+
+* 🎉 ¡usas menos carácteres para escribir un solo nombre!
+* 🙁 el cartucho sigue siendo bastante largo.
+
+## 2. sistema de rayas: 󱤿󱥠󱤕󱥍󱤩󱤨
+
+El sistema de rayas fue creado por jan Sonja en 2024 para usarse en cartas y libros oficiales, donde la falta de espacio exige nombres más cortos. En este, cada carácter del cartucho tiene una raya debajo. Colocas una raya por cada sonido o letra que quieres que se pronuncie:
+
+{/* Note: this section uses non-standard codepoints F19FC-F19FF, which I modded into nasin nanpa. If you ever update nasin nanpa, this section will break. Ideally, nskpll gets standardised later. */}
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡&#xF19FE;󱤜&#xF19FD;󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅&#xF19FD;󱥩&#xF19FD;󱥜&#xF19FD;󱤔&#xF19FD;󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
+</List>
+
+## 3. sistema inicial
+
+Este método fue usado por primera vez por DavidAR en 2019, y probado por jan Sonja en *lipu su*: "El Asombroso Mago de Oz (edición toki pona)". Al principio, introduces a una persona, un idioma o un lugar con su nombre completo:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorothy" />
+</List>
+
+Pero, en las siguientes ocurrencias, abrevias el nombre a solo el primer carácter:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorothy" />
+</List>

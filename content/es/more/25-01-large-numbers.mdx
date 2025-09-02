@@ -1,0 +1,48 @@
+---
+slug: "es/large-numbers"
+title: "Q: ¿Cómo hablo de números grandes?"
+description: ""
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Lo curioso de los números es que los necesitas menos de lo que creerías.
+
+Hay una diferencia significativa entre *'¡un tigre nos va a atacar!'* y *'¡dos tigres nos van a atacar!'*. Tal vez puedas defenderte contra un tigre, pero no contra dos.
+
+Pero compara *'¡77 tigres nos van a atacar!'* y *'¡78 tigres nos van a atacar!'*: ¿realmente importa la diferencia? Tu resolución será la misma. La mayoría de veces, solo necesitamos tres palabras para cantidades: **󱥳 wan**, **󱥮 tu** y **󱤼 mute**.
+
+Cuando se trata de pequeñas cantidades de dinero, más precisión puede ser importante. Tal vez puedes permitirte algo que cuesta $77, pero no si cuesta $78. Para números menores y cercanos a cien, usamos las palabras **󱥳 wan**, **󱥮 tu**, **󱤭 luka**, **󱤼 mute** y **󱤄 ale**, como si fueran monedas de 1, 2, 5, 20 y 100.
+
+<List>
+    <Sentence sl="mute mute mute luka luka luka tu wan" m="78 (= 20 + 20 + 20 + 5 + 5 + 5 + 2 + 1)" />
+</List>
+
+Pero, por encima de 100, este sistema se hace más pesado:
+
+<List>
+    <Sentence sl="ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale" m="1500 (= 100 + 100 + 100 + ...)" />
+</List>
+
+En 2021, jan Kapilu y jan Tepo inventaron un [sistema expandido y retrocompatible](https://sona.pona.la/wiki/nasin_nanpa_pona) para poder hablar de números más grandes: en vez de añadir 100, **󱤄 ale** multiplica el número anterior por 100.
+
+<List>
+    <Sentence sl="luka luka luka ale" m="1500 (= (5 + 5 + 5) * 100)" />
+</List>
+
+Es útil para los años del calendario gregoriano, y especialmente conveniente en el actual milenio:
+
+<List>
+    <Sentence sl="mute ale mute luka" m="2025 (= 20 * 100 + 20 + 5)" />
+</List>
+
+Consejo: imagina que divides los números en parejas de dos dígitos: 2025 -> 20,25, 123456789 -> 1,23,45,67,89, transcribiendo cada número como 23 y 67, y uniéndolos usando **󱤄 ale**. ¡"Multiplicar por 100" es lo mismo, pero explicado de modo diferente!
+
+Cuando se escribe con caracteres latinos, puedes abreviar los números como W, T, L, M y A:
+
+<List>
+    <Sentence sp="󱥫󱥜󱤽󱤭󱤭󱤭󱥮󱥮󱤄󱤼󱤭󱤭󱤭󱥮󱥮󱤡<br />󱥫󱤺󱤽󱤭󱥮󱥮󱤡<br />󱥫󱥤󱤽󱥳󱤡<br />󱤰󱦐󱥨󱥇󱥣󱤍󱦑<br />󱤧󱤖󱥱󱤉󱤰󱦐󱥎󱥄󱥖󱥱󱤟󱤈󱦑<br />" sl="tenpo sike #LLLTTAMLLLTT la, tenpo mun #LTT la, tenpo suno #W la, ma Tosi li kama utala e ma Posuka." m="El 1 de septiembre de 1939, Alemania invadió Polonia." />
+</List>
