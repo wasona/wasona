@@ -1,21 +1,21 @@
 ---
 slug: "ar/20"
-title: "lesson 20: time"
-description: "Learn la, tenpo, sike, mun, suno, sin, poka!"
+title: "الدرس العشرون: الوقت"
+description: "تعلّم la، tenpo، sike، mun، suno، sin، poka!"
 practice:
-  - l1: "Plants photosynthesise."
+  - l1: "تقوم النباتات بالتركيب الضوئي. (تأكل النباتات من الشمس.)"
     l2: "kasi li moku e suno."
-  - l1: "The Moon moves along an ellipse."
+  - l1: "يتحرّك القمر بشكل إهليلجي."
     l2: "mun li tawa lon sike."
-  - l1: "They are by your side."
+  - l1: "إنّهم بجانبك."
     l2: "ona li lon poka sina."
-  - l1: "I used to be a child."
+  - l1: "كنتُ طفلًا.."
     l2: "tenpo pini la mi lili."
-  - l1: "Funnily enough, the bird speaks like a person."
+  - l1: "من الطريف أن يتحدّث الطائر مثل شخص."
     l2: "musi la waso li toki sama jan."
-  - l1: "When it is cold, bugs disappear."
+  - l1: "عندما يكون الجو باردًا، تختفي الحشرات."
     l2: "kon li lete la, pipi li weka."
-  - l1: "You may if you want."
+  - l1: "يمكنك إذا أردت."
     l2: "sina wile la, sina ken."
 ---
 
@@ -24,49 +24,49 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-Let's talk about time! You may have noticed I translate the sentences inconsistently: sometimes they talk about the present, sometimes the past, sometimes the future. This is because by default, a Toki Pona sentence carries no time information, so it could be anything! But of course, we can choose to be more specific, by using words related to time.
+لنتحدّث عن الوقت. ربّما قد لاحظت أنني أترجم الجُمل بشكل غير منتظم: أحيانًا تتكلّم عن المضارع، أحيانًا عن الماضي، وأحيانًا عن المستقبل. هذا لأن جمل التوكي بونا عادةً ما ليس لديها دليل عن الوقت، فيمكنه أن يكون أي شيء! لكن يمكننا طبعًا التوضيح باستعمال الكلمات المتعلّقة بالوقت.
 
-Let's learn some of them:
+لنتعلّم بعضهم:
 
 <List>
-  <Word sl="tenpo" m="time, moment, situation" />
-  <Word sl="sike" m="round, repeating, yearly; circle, ball" />
-  <Word sl="mun" m="moon, celestial body" />
-  <Word sl="suno" m="sun, daylight; bright" />
-  <Word sl="sin" m="new, fresh; again" />
-  <Word sl="poka" m="side, vicinity; nearby" />
+  <Word sl="tenpo" m="وقت، لحظة، حالة" />
+  <Word sl="sike" m="دائري، متكرر، سَنَوي؛ دائرة، كرة" />
+  <Word sl="mun" m="قمر، كوكب، جسم سماوي" />
+  <Word sl="suno" m="شمس، ضوء؛ ساطع" />
+  <Word sl="sin" m="جديد، طازج؛ مرّة أخرى" />
+  <Word sl="poka" m="جانب، جهة؛ قريب" />
 </List>
 
-You already know how to talk about location in *space*. Location in *time* is very similar:
+إنّك تعلم كيفية التحدّث عن الموقع في المكان. الموقع في الزمان مشابه جدًّا لذلك:
 
 <List>
-  <Word sl="lon tenpo kama" m="in the coming time, in the future" />
-  <Word sl="lon tenpo pini" m="in the finished time, in the past" />
-  <Word sl="lon tenpo ni" m="during this time" />
-  <Sentence sl="soweli lili mi o kama suli lon tenpo kama!" m="May my little cat grow big in the future!" />
-  <Sentence sl="ma Loma li ma suli lon tenpo weka." m="Rome was a large empire long ago." />
+  <Word sl="lon tenpo kama" m="في الوقت القادم، في المستقبل" />
+  <Word sl="lon tenpo pini" m="في الوقت السابق، في الماضي" />
+  <Word sl="lon tenpo ni" m="في هذا الوقت، الآن" />
+  <Sentence sl="soweli lili mi o kama suli lon tenpo kama!" m="أتمنّى أن تكبر قطّتي الصغيرة في المستقبل!" />
+  <Sentence sl="ma Loma li ma suli lon tenpo weka." m="كانت روما إمبراطوريّة كبيرة في الزمن القديم." />
 </List>
 
-Time often serves as a sort of "scene", a "context" for the rest of the speech. Often, we like to put such context at the beginning of the sentence, like I just did in this one! Toki Pona has a word that helps with that:
+يعمل الوقت كـ"سياق" لباقي الكلام. غالبًا ما، نضع هذا السياق في بداية الجُملة، كما فعلتُ في هذه الجُملة! لدى التوكي بونا كلمة الّتي تساعد بذلك:
 
 <List>
-  <Word sl="la" m="as for ..., speaking of ..., when ..., if ... " />
-  <Word sl="ken la" m="perhaps, ..." />
-  <Word sl="open la" m="to begin with, ..." />
-  <Word sl="lipu la" m="as for the book, ..." />
-  <Word sl="tenpo la" m="sometimes, ..." />
-  <Word sl="tenpo pini la" m="in the past, ..." />
-  <Word sl="tenpo suno kama la" m="the next day, ...; tomorrow, ..." />
-  <Sentence sl="sin la mi wile toki e ni:" m="Once again, I just want to say that..." />
-  <Sentence sl="mi pali e ni lon tenpo kama poka." m="I will work on this soon." />
+  <Word sl="la" m="بالنسبة لـ...، متعلّق بـ...، عندما ...، إذا ... " />
+  <Word sl="ken la" m="ربّما ..." />
+  <Word sl="open la" m="في البداية، ..." />
+  <Word sl="lipu la" m="بالنسبة إلى الكتاب، ..." />
+  <Word sl="tenpo la" m="في بعض الأحيان...، أحيانًا..." />
+  <Word sl="tenpo pini la" m="في الماضي، ..." />
+  <Word sl="tenpo suno kama la" m="في اليوم القادم، ...؛ غدًا، ..." />
+  <Sentence sl="sin la mi wile toki e ni:" m="مرّة أخرى، أريد أن أقول أنّ ..." />
+  <Sentence sl="mi pali e ni lon tenpo kama poka." m="سأعمل على هذا قريبًا." />
 </List>
 
-**󱤡 la** can also be used between two sentences, connecting them into one. The first sentence then becomes a condition *'if or when ...'*, and the second is the result: *'then ...'*.
+يمكن أن تُستعمل كلمة "**󱤡 la**" بين جملتان، هذا يصلهم إلى جملة واحدة. عند استعمالها كذلك، تصبح الجُملة الأولى ظرف *"إذا أو عندما ..."*، وتصبح الجملة الثانية النتيجة: *"فَـ..."*.
 
 <List>
-  <Word sl="suno li pini." m="The sun sets." />
-  <Word sl="mi lape." m="I sleep." />
-  <Sentence sl="suno li pini la, mi lape." m="When the sun sets, I sleep." />
+  <Word sl="suno li pini." m="تغرب الشمس." />
+  <Word sl="mi lape." m="أنام." />
+  <Sentence sl="suno li pini la, mi lape." m="عندما تغرب الشمس، سأنام." />
 </List>
 
 <Practice exercises={frontmatter.practice} />
