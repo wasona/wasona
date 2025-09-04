@@ -37,7 +37,9 @@
 
 body {
     margin: 1rem;
-    font-family: "nasin-nanpa", "Nunito", "Noto Sans Hebrew", sans-serif;
+    font-family:
+        "nasin-nanpa", "Nunito", "Noto Sans Hebrew", "Noto Sans Arabic",
+        sans-serif;
     color: var(--txt);
     line-height: 1.7em;
     font-size: 18px;
