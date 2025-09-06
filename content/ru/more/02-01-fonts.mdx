@@ -4,34 +4,34 @@ title: "Q: чем мне печатать sitelen pona?"
 description: "Learn about fonts!"
 ---
 
-*sitelen pona* is really cool! But it is not yet in Unicode. Most fonts only care about characters that Unicode defines. This means that fonts on your device probably don't know anything about sitelen pona.
+Письменность *sitelen pona* -- это здорово! Но она ещё не внесена в Юникод. Большинство шрифтов поддерживают только те символы, которым дано определение в Юникоде. Следовательно, шрифты на вашем устройстве, скорее всего, ничего не знают о sitelen pona.
 
-To fix that, you can install a sitelen pona font! There is more than a [hundred](https://linku.la/fonts/) to choose from, so let me highlight a few:
+Чтобы решить эту проблему, вы можете установить шрифт sitelen pona! Их существует более [сотни](https://linku.la/fonts/) на выбор, но давайте рассмотрим всего несколько из них:
 
-* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) by jan Itan is the font we're using on this website. It has quite a rigid, geometric design.<br /><img src="/example-nasin-nanpa.webp" />
-* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) by jan Lepeka is a more playful, handwritten design.<br /><img src="/example-sitelen-seli-kiwen.webp" />
-* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) is another handwritten design. It uses jan Sonja's handwriting from her 2014 book, plus some newer characters drawn by jan Pensa.<br /><img src="/example-pu-mono.webp" />
+* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) от jan Itan — это шрифт, используемый на этом сайте. У него довольно строгий, геометрический дизайн.<br /><img src="/example-nasin-nanpa.webp" />
+* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) от jan Lepeka -- более забавный, рукописный дизайн.<br /><img src="/example-sitelen-seli-kiwen.webp" />
+* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) -- ещё один рукописный дизайн. В нём используется почерк jan Sonja, взятый из её книги 2014 года выпуска, а так же некоторые новые символы, нарисованные jan Pensa.<br /><img src="/example-pu-mono.webp" />
 
-You should also know a font of great historic significance:
+Также стоит знать о шрифте большого исторического значения:
 
-* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) by jan Same. It was made in 2016–2021, and it was the first popular sitelen pona font. It has a slightly non-standard design that looks much wider and more square than most fonts today. While linja pona was popular, *sitelen pona* gained several new glyphs, like **󱦀 kijetesantakalu** and **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
+* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) от jan Same. Он был создан в 2016–2021 годах и стал первым популярным шрифтом sitelen pona. У него немного нестандартный дизайн: символы в нём выглядыт более широкими и квадратными, чем в большинстве современных шрифтов. На пике своей популярности шрифт внёс в *sitelen pona* несколько новых символов, например **󱦀 kijetesantakalu** и **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
 
-**On Discord**, we have a bot, ilo Linku, that can draw text in any sitelen pona font onto an image! This way you can chat in sitelen pona without installing anything.  
-**On desktop**, you can download one of the fonts above, and click on it. Then your system will try to install it.  
-**On mobile**, installing fonts is quite difficult. You might want to talk to someone with technical knowledge.
+**В Дискороде** у нас есть бот ilo Linku, который может рисовать на изображение текст любым шрифтом sitelen pona! С его помощью можно общаться на sitelen pona, ничего не устанавливая.  
+**На компьютере** можно скачать один из шрифтов, перечисленных выше, и просто кликнуть на него. Тогда система попытается его установить.  
+**На мобильных устройствах** установка шрифтов довольно сложна. Здесь лучше пообщаться с кем-нибудь с техническими экспертами.
 
-## Technical details: ascii vs ucsur fonts
+## Технические подробности: ascii и ucsur-шрифты
 
-There are two main approaches to making a sitelen pona font, which we call **ascii fonts** and **ucsur fonts**.
+Есть два основных подхода к созданию шрифтов sitelen pona: **ascii-шрифты** и **ucsur-шрифты**.
 
-In **ascii fonts**, you type Latin characters, and they get scooped up by the font, and automatically converted to sitelen pona characters while being drawn.
+В **ascii-шрифтах** вы набираете латинские буквы, шрифт смотрит на их и автоматически заменяет на символы sitelen pona при отображении.
 
-* 🎉 very intuitive to use!
-* 🙁 a lot of work to make.
-* 🙁 this is not how other writing systems work on computers.
+* 🎉 очень интуитивно использовать!
+* 🙁 такой шрифт тяжело создать.
+* 🙁 остальные письменности на компьютерах работают не так.
 
-In **ucsur fonts**, instead of typing Latin characters, you type characters from *a different part of Unicode*. Unicode intentionally left this part blank, so that other people can use it for [their own private purposes](https://en.wikipedia.org/wiki/Private_Use_Areas). So a different organisation, [UCSUR](https://www.kreativekorp.com/ucsur/), decided this part now holds sitelen pona.
+В **ucsur-шрифтах** вместо латинских букв вы набираете символы из *другой части Юникода*. Этот участок Юникода специалисты специально оставили пустым, чтобы всякие люди могли использовать его для [собственных целей](https://en.wikipedia.org/wiki/Private_Use_Areas). Иная организация, [UCSUR](https://www.kreativekorp.com/ucsur/), решила разместить в этой части письменность sitelen pona.
 
-* 🎉 this is how other writing systems work!
-* 🎉 less work to make!
-* 🙁 harder to use: you need to install an input method similar to the ones that exist for Hanzi, or make a keyboard layout.
+* 🎉 это работает по сути так же, как другие письменности!
+* 🎉 такой шрифт создать проще!
+* 🙁 сложнее использовать: нужно установить метод ввода, наподобие тех, что существуют для японского/китайского, или создать собственную раскладку клавиатуры.
