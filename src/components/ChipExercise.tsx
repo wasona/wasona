@@ -49,7 +49,9 @@ const ChipExercise: React.FC<{
 
   // Initialise unused and assembled when receiving a new exercise
   useEffect(() => {
-    setWords(shuffleArray(tokeniseSentence(exercise.l2)));
+    let tokens = tokeniseSentence(exercise.l2);
+    if (exercise.junkChips) tokens = [...tokens, ...exercise.junkChips];
+    setWords(shuffleArray(tokens));
     setAssembled([]);
   }, [JSON.stringify(exercise)]);
 
