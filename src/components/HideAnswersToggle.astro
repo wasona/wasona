@@ -1,0 +1,62 @@
+<button id="hideAnswersToggle" title="Hide/Show Answers">
+  <svg
+    width="30px"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    aria-label="hide/show answers switch"
+  >
+    <path
+      class="hide"
+      fill-rule="evenodd"
+      d="M12 1.818a.8.8 0 0 0-.8.801v2.5a.8.8 0 0 0 1.6 0v-2.5a.8.8 0 0 0-.8-.8zM6.668 2.836a.8.8 0 0 0-.3.082.8.8 0 0 0-.36 1.072l1.117 2.24a.8.8 0 0 0 1.432-.715L7.44 3.277a.8.8 0 0 0-.773-.441zm10.65 0a.8.8 0 0 0-.668.441l-1.115 2.237a.8.8 0 0 0 1.432.715l1.115-2.239a.8.8 0 0 0-.36-1.072.8.8 0 0 0-.404-.082zM2.752 5.716a.8.8 0 0 0-.566.235.8.8 0 0 0 0 1.131L3.953 8.85a.8.8 0 0 0 1.131-1.131L3.316 5.95a.8.8 0 0 0-.564-.234zm18.588 0a.8.8 0 0 0-.567.235L19.006 7.72a.8.8 0 0 0 1.133 1.13l1.767-1.767a.8.8 0 0 0 0-1.13.8.8 0 0 0-.566-.235zM12 7.3c-4.351 0-7.553 4.267-7.553 4.267a.704.704 0 0 0 0 .87S7.65 16.703 12 16.703s7.553-4.267 7.553-4.267a.704.704 0 0 0 0-.87S16.35 7.3 12 7.3zm0 1.408c2.986 0 5.392 2.615 5.99 3.293-.597.677-3.003 3.295-5.99 3.295S6.607 12.677 6.01 12c.598-.678 3.004-3.293 5.99-3.293z"
+    ></path>
+    <path
+      class="show"
+      fill-rule="evenodd"
+      d="M4.994 11.297a.704.704 0 0 0-.428.15.704.704 0 0 0-.119.989S7.65 16.703 12 16.703s7.553-4.267 7.553-4.267a.704.704 0 0 0-.12-.989.704.704 0 0 0-.519-.144.704.704 0 0 0-.469.263S15.38 15.295 12 15.295c-3.38 0-6.445-3.729-6.445-3.729a.704.704 0 0 0-.56-.27zm-.447 3.623a.8.8 0 0 0-.594.232l-1.767 1.77a.8.8 0 0 0 0 1.13.8.8 0 0 0 1.13 0l1.768-1.767a.8.8 0 0 0-.537-1.365zm14.998 0a.8.8 0 0 0-.54 1.365l1.768 1.768a.8.8 0 0 0 1.133 0 .8.8 0 0 0 0-1.131l-1.767-1.77a.8.8 0 0 0-.594-.232zM7.828 17.332a.8.8 0 0 0-.703.443l-1.117 2.237a.8.8 0 0 0 .36 1.072.8.8 0 0 0 1.073-.357l1.116-2.239a.8.8 0 0 0-.729-1.156zm8.436 0a.8.8 0 0 0-.729 1.156l1.115 2.239a.8.8 0 0 0 1.073.357.8.8 0 0 0 .359-1.072l-1.115-2.237a.8.8 0 0 0-.703-.443zm-4.319.754a.8.8 0 0 0-.746.799v2.5a.8.8 0 0 0 .801.799.8.8 0 0 0 .8-.8v-2.5a.8.8 0 0 0-.855-.798z"
+    ></path>
+  </svg>
+</button>
+
+<style>
+  #hideAnswersToggle {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .hide {
+    fill: var(--grey);
+  }
+
+  #hideAnswersToggle:hover .hide {
+    fill: var(--accent);
+  }
+
+  .show {
+    fill: transparent;
+  }
+
+  :global(.hide-answers) .hide {
+    fill: transparent;
+  }
+
+  :global(.hide-answers) #hideAnswersToggle:hover .hide {
+    fill: transparent;
+  }
+
+  :global(.hide-answers) .show {
+    fill: var(--grey);
+  }
+
+  :global(.hide-answers) #hideAnswersToggle:hover .show {
+    fill: var(--accent);
+  }
+</style>
+<script>
+  document
+    .getElementById("hideAnswersToggle")
+    ?.addEventListener("click", handleHideAnswersToggleClick);
+</script>

@@ -1,4 +1,5 @@
 ---
+import { locales } from "@/utils/i18n";
 import { encode } from "@/utils/ucsur";
 interface Props {
   // sitelen pona
@@ -7,12 +8,11 @@ interface Props {
   sl: string;
   // translation
   m: string;
-  // spoiler shield for practice
-  hide?: "sp" | "sl" | "m";
 }
-const onclick = "this.classList.toggle('revealed')";
-const { sp, sl, m, hide } = Astro.props;
+const { sp, sl, m } = Astro.props;
 const sp_ = sp || encode(sl);
+const lang = Astro.url.pathname.split("/")[1] ?? "en";
+const locale = locales[lang];
 ---
 
 <style>
@@ -28,5 +28,5 @@ const sp_ = sp || encode(sl);
   <br />
   <span dir="ltr" class="sl" set:html={sl} />
   <br />
-  <span set:html={m} />
+  <span class="maybe-hide" onclick="this.classList.toggle('maybe-hide')" data-tooltip={locale["reveal"]} set:html={m} />
 </div>

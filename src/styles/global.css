@@ -125,6 +125,21 @@ hr {
 .sl {
     font-style: italic;
 }
+
+.hide-answers .maybe-hide::before {
+    content: attr(data-tooltip);
+    color: var(--txt);
+    position: absolute;
+}
+
+.hide-answers .maybe-hide {
+    cursor: pointer;
+    color: var(--bg-3);
+    background-color: var(--bg-3);
+    margin-left: -3px;
+    padding-left: 3px;
+}
+
 /*
 Section dedicated to the React widget;
 I don't like React's native CSS handling
