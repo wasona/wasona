@@ -19,5 +19,7 @@
   "continue": "continue",
   "incorrect": "❌ Not quite. Correct answer: ",
   "correct": "✅ Correct! Well done!",
-  "done": "🎉 All exercises completed!"
+  "done": "🎉 All exercises completed!",
+
+  "reveal": "Click to Reveal"
 }

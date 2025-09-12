@@ -1,4 +1,4 @@
-<button id="themeToggle">
+<button id="themeToggle" title="Toggle Dark Mode">
   <svg
     width="30px"
     xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@
     cursor: pointer;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 40px;
   }
   .sun {
     fill: var(--grey);
@@ -58,5 +58,5 @@
 <script>
   document
     .getElementById("themeToggle")
-    ?.addEventListener("click", handleToggleClick);
+    ?.addEventListener("click", handleThemeToggleClick);
 </script>
