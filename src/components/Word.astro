@@ -1,5 +1,6 @@
 ---
 import { encode } from "@/utils/ucsur";
+import { wordTeachingOrder } from "@/utils/wordTeachingOrder";
 interface Props {
   // sitelen pona
   sp?: string;
@@ -10,13 +11,18 @@ interface Props {
   // spoiler shield for practice
   hide?: "sp" | "sl" | "m";
 }
+
 const onclick = "this.classList.toggle('revealed')";
 const { sp, sl, m, hide } = Astro.props;
 const sp_ = sp || encode(sl);
+const id = wordTeachingOrder.includes(sl)
+  ? wordTeachingOrder.indexOf(sl) + 1
+  : undefined;
 ---
 
 <style>
   .word {
+    position: relative;
     padding: 5px 15px;
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -30,8 +36,16 @@ const sp_ = sp || encode(sl);
     font-size: 200%;
     white-space: nowrap;
   }
+  .word-index {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 80%;
+    color: var(--grey);
+  }
 </style>
 <div class="word">
+  {id && <div class="word-index">{id}</div>}
   <div>
     <span class="sp" set:html={sp_} />
   </div>
