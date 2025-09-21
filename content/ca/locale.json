@@ -1,23 +1,24 @@
 {
-  "Index": "Index",
-  "Next": "Next",
-  "Previous": "Previous",
-  "Translation": "Translation",
+  "Index": "Índex",
+  "Next": "Següent",
+  "Previous": "Anterior",
+  "Translation": "Traducció",
 
   "Consonants": "Consonants",
-  "Labial": "Labial",
-  "Coronal": "Coronal",
-  "Dorsal": "Dorsal",
+  "Labial": "Labials",
+  "Coronal": "Coronals",
+  "Dorsal": "Dorsals",
 
-  "Vowels": "Vowels",
-  "Front": "Front",
+  "Vowels": "Vocals",
+  "Front": "Posterior",
   "Central": "Central",
-  "Back": "Back",
+  "Back": "Anterior",
 
-  "translate": "Translate the sentence",
-  "check": "check",
-  "continue": "continue",
-  "incorrect": "❌ Not quite. Correct answer: ",
-  "correct": "✅ Correct! Well done!",
-  "done": "🎉 All exercises completed!"
+  "translate": "Tradueix aquesta oració",
+  "check": "comprovar",
+  "continue": "continuar",
+  "incorrect": "❌ No és així. Resposta correcta: ",
+  "correct": "✅ Correcte! Bona feina!",
+ 
+  "done": "🎉 Tots els exercicis completats!"
 }
