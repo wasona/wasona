@@ -1,0 +1,89 @@
+---
+slug: "hu/simpler-cartouches"
+title: "Sitelen ponául túl hosszúak a nevek. Hogyan lehet lerövidíteni őket?"
+description: "Tanulj pontokról, jelölésekről, és kezdőbetűkről!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+A _sitelen pona_ nevek eléggé hosszúak lehetnek:
+
+<List>
+  <Sentence sl="lipu Wikipesija" m="Wikipédia" />
+  <Sentence sl="ma Antasika" m="Antarktika" />
+  <Sentence sl="ma Kolonpija" m="Kolumbia" />
+</List>
+
+Három főbb rendszer van a nevek lerövidítésére.
+
+## 1. pontok: 󱤿󱥠󱤕
+
+A _nasin sitelen kalama_-t 2022-ben készítette jan Pumiko. A toki pona beszélők 40–60%-a használja. Ebben a rendszerben a szavakat felosztjuk _morákra_: olyanok, mint a szótagok, csak rövidebbek. Egy mora vagy mássalhangzó+magánhangzó, vagy a magánhangzó után álló -n:
+
+- to-ki
+- ja-n
+- a-n-pa
+- si-n-pi-n
+
+A középső pontokkal jelzed, hogy mennyi mora legyen kiejtve:
+
+<List>
+  <Word sp="󱦐󱤅󱦑" sl="A" />
+  <Word sp="󱦐󱤅󱦜󱦑" sl="An" />
+  <Word sp="󱦐󱤅󱦜󱦜󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦑" sl="S" />
+  <Word sp="󱦐󱥟󱦜󱦑" sl="Si" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦑" sl="Sin" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦑" sl="Sinpi" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
+</List>
+
+(Észrevehettél egy érdekességet: az **󱦐󱤅󱦑** ("A") önmagában egy teljes mora, ezért a pont a következő morát adja hozzá ("n"). De a **󱦐󱥟󱦑** ("S") önmagában nem egy teljes mora, ezért az első ponttal kiegészíted a morát a hiányzó hanggal ("Si").)
+
+Egy kettősponttal jelölöd azt, hogy az egész szót ki kell ejteni:
+
+<List>
+  <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
+</List>
+
+Rakj több karaktert egy kartusba, és kaptál egy nevet:
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅󱦜󱥩󱦜󱥜󱦜󱤔󱦜󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
+</List>
+
+* 🎉 kevesebb szószimbólumot használtál!
+* 🙁 a kartus még mindig eléggé hosszú
+
+## 2. jelölések: 󱤿󱥠󱤕󱥍󱤩󱤨
+
+Ezt a rendszert jan Sonja készítette 2024-ben hivatalos leveleknek és könyveknek, ahol a hely szűke miatt van szükség rövidebb nevekre. Minden karakter alá kerül egy jelölés. Minden jelölés egy kiejtett hangot jelez:
+
+{/* Note: this section uses non-standard codepoints F19FC-F19FF, which I modded into nasin nanpa. If you ever update nasin nanpa, this section will break. Ideally, nskpll gets standardised later. */}
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡&#xF19FE;󱤜&#xF19FD;󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅&#xF19FD;󱥩&#xF19FD;󱥜&#xF19FD;󱤔&#xF19FD;󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
+</List>
+
+## 3. kezdőbetűk
+
+Ezt először DavidAR mutatta be 2019-ben, és jan Sonja kipróbálta a *lipu su*: "The Wonderful Wizard of Oz (Toki Pona edition)" könyvében. Első alkalommal bemutatod az embert, nyelvet, helyet, stb., a teljes nevével:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorothy" />
+</List>
+
+Ezután pedig csak a kezdőbetűjét használod:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorothy" />
+</List>
+

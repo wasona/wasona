@@ -1,0 +1,60 @@
+---
+slug: "hu/23"
+title: "23. lecke: helyek"
+description: "Tanuld meg a következő szavakat: pi, selo, insa, monsi, sinpin, anpa!"
+practice:
+  - l1: "A fakéreg megvédi a növény belsejét."
+    l2: "selo kasi li awen e insa kasi."
+  - l1: "A ház falai megsérültek."
+    l2: "sinpin tomo li pakala."
+  - l1: "Ennek a háznak a falaihoz téglák kellenek."
+    l2: "sinpin pi tomo ni li wile e leko."
+  - l1: "Sunita madara cuki."
+    l2: "waso pi jan Sunita li suwi."
+  - l1: "Belgium Franciaország mellett van."
+    l2: "ma Pesije li lon poka pi ma Kanse."
+  - l1: "A te békád az én békám mögött van."
+    l2: "akesi sina li lon monsi pi akesi mi."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Az előző leckében megnéztük a **󱥍 pi**-t. Ahogy láthattad, sok kifejezés van, amely két különböző, de értelmes jelentéssel is bírhat az alapján, hogy van-e **󱥍 pi**. De van sok kifejezés, aminek *nincs sok értelme* **󱥍 pi** nélkül. Ezt sokszor neveknél fogod látni:
+
+<List>
+  {/*<Word sl="pi" m="" />*/}
+  <Sentence sl="soweli pi jan Ema" m="Emma kutyája" />
+  <Sentence sl="soweli jan Ema" m="Egy emberkutya, aminek a neve Emma (???)" />
+  <Sentence sl="toki pi jan Mili" m="Millie beszéde" />
+  <Sentence sl="toki jan Mili" m="Egy emberi nyelv, aminek a neve Millie (???)" />
+</List>
+
+Ha nem használod a **󱥍 pi**-t, akkor a név az *egész* eddigi kifejezésre fog vonatkozni. És ez furcsa lehet. Ezért gyakran találsz **󱥍 pi**-t nevek közelében.
+
+Sokszor fogod még találni helyszínt jelölő szavak környékén, például ezeknél:
+
+<List>
+  <Word sl="selo" m="bőr, héj, váz, fakéreg" />
+  <Word sl="insa" m="a belső része valaminek, középen, közepe, centrum" />
+  <Word sl="monsi" m="hátul, hátsó" />
+  <Word sl="sinpin" m="arc, elöl, elülső, fal" />
+  <Word sl="anpa" m="alul, alja; legyőzni" />
+</List>
+
+Használjuk ezeket mondatokban:
+
+<List>
+  <Sentence sl="selo kasi li kiwen." m="A fa kérge kemény." />
+  <Sentence sl="selo pi kasi ni li pakala." m="Ennek a fának a kérge megsérült." />
+  <Sentence sl="soweli li lon insa tomo." m="A macska a házon belül van." />
+  <Sentence sl="o tawa insa pi tomo mi!" m="Menj a házam belsejébe!" />
+  <Sentence sl="sinpin pi jan Ali li pona." m="Ali arca jó." />
+  <Sentence sl="mani li lon anpa pi telo suli." m="A kincs az óceán alján van." />
+</List>
+
+Tipp: mivel a **󱥍 pi**-t csak "átzárójelezésre" használjuk, ezért sose fog csak egy szó előtt állni. Mindig kettő vagy több szó fog utána állni.
+
+<Practice exercises={frontmatter.practice} client:load />

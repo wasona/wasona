@@ -1,0 +1,58 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Szó</th>
+      <th>Jelentése</th>
+      <th>Hasznos tippek</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="mi" />
+      <td>én</td>
+      <td>Hasonló a magyarhoz.</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="ken" />
+      <td>képes valamire</td>
+      <td>Hasonló a magyarhoz.</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="jan" />
+      <td>ember</td>
+      <td>Az "a" olyan, mint a magyar "á".</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kute" />
+      <td>hallani</td>
+      <td>Az "e" betűt a végén is kiejtjük.</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>szám</td>
+      <td>"np"-t írunk, de általában "mp"-nek ejtjük.</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>hang</td>
+      <td>A hangsúly a szó elejére kerül (úgy, mint magyarul).</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>gyík</td>
+      <td>Magánhagzóval is kezdődhetnek szavak! Az "s" a magyar "sz"-nek felel meg!</td>
+    </tr>
+  </tbody>
+</table>
