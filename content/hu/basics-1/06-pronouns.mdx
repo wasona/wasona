@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Névmások
 
@@ -73,8 +73,8 @@ Ezeknek a mondatoknak már ismerősnek kell lenniük. A névmások ugyanúgy mű
 
 A toki ponában van egy szabály: ha az alany pontosan **󱤴 mi** vagy **󱥞 sina**, akkor nincsen **󱤧 li** a mondatban. Ez azért van, mert nagyon gyakoriak a **󱤴 mi** vagy **󱥞 sina** szavakkal kezdődő mondatok.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
-* [A "li" azt jelenti, hogy "van"?](hu/li-and-is)
+* [A "li" azt jelenti, hogy "van"?](/hu/li-and-is/)
 

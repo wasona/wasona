@@ -32,7 +32,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Nemrég tanultuk a **󱤼 mute** szót, ami nagyon hasznos tud lenni.
 
@@ -100,4 +100,4 @@ Természetesen nem csak a **󱤼 mute** használható a **󱥍 pi**-vel. Nézzü
 
 Összefoglalva, a toki ponában a **󱥍 pi** segítségével tudjuk módosítani, hogy hogyan kell értelmezni a mellékneveket.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Még egy fontos szó, mielőtt elkezdjük a bolondos részt!
 
@@ -84,7 +84,7 @@ Ha csatlakozol egy toki pona közösséghez, akkor biztos, hogy ennél mégtöbb
 
 Lehet, hogy nem ismered a **󱦅 lanpan** szót, de láthatod a fordítást, és rá tudsz jönni egy másik megfogalmazásra (pl. **󱤖󱤓 kama jo**). Ez hasonló más szavaknál, amikkel találkozhatsz a vadonban.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Lásd még
 * [Mit csinál jan Sonja manapság?](/hu/jan-sonja)

@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Beszéljünk az időről! Észrevehetted, hogy a mondatokat nem egységesen fordítottam le: néha a jelenről, néha a múltról, és néha a jövőről beszélnek. Ez azért van, mert alapból a toki pona mondatok nem határozzák meg az időt, tehát bármikor lehet. De természetesen lehetünk pontosabbak az idővel kapcsolatos szavak használatával.
 
@@ -69,4 +69,4 @@ A **󱤡 la** két mondat között is használható, összekötve őket. Ez ált
   <Sentence sl="suno li pini la, mi lape." m="Amikor lemegy a nap, akkor alszok." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

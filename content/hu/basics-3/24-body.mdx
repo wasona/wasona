@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Már tudjuk a szavakat a *szemre*, *szívre*, *arcra*, és *hátra*, szóval tanuljuk meg a többi testrészt:
 
@@ -50,4 +50,4 @@ Sok testrészhez asszociálunk valamilyen tevékenységet: a fej irányít, a sz
   <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Az ujjaim nagyobbak, mint a lábujjaim." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

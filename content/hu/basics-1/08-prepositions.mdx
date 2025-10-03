@@ -24,7 +24,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Elöljárószók
 
@@ -89,9 +89,9 @@ Gyakoroljunk ezekkel a mondatokkal:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Lásd még
-* [Memorizálnom kell az összes nyelv- és országnevet?](hu/languages-countries)
-* [A "jan li toki Inli" nem furcsa egy kicsit?](hu/named-verbs)
+* [Memorizálnom kell az összes nyelv- és országnevet?](/hu/languages-countries/)
+* [A "jan li toki Inli" nem furcsa egy kicsit?](/hu/named-verbs/)
 

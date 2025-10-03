@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Az előző leckében megnéztük a **󱥍 pi**-t. Ahogy láthattad, sok kifejezés van, amely két különböző, de értelmes jelentéssel is bírhat az alapján, hogy van-e **󱥍 pi**. De van sok kifejezés, aminek *nincs sok értelme* **󱥍 pi** nélkül. Ezt sokszor neveknél fogod látni:
 
@@ -57,4 +57,4 @@ Használjuk ezeket mondatokban:
 
 Tipp: mivel a **󱥍 pi**-t csak "átzárójelezésre" használjuk, ezért sose fog csak egy szó előtt állni. Mindig kettő vagy több szó fog utána állni.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

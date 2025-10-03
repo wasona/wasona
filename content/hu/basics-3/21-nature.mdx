@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Már tudunk sok állatokhoz és növényekhez kapcsolódó szót. Tanuljuk meg a többit!
 
@@ -74,4 +74,4 @@ Ez nem csak az **󱤉 e**-re igaz. Ez igaz a **󱤧 li**-re, a **󱤡 la**-ra, �
   <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Az ember vadássza a halakat, megfőzi őket, megeszi őket." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

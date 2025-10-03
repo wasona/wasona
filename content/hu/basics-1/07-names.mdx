@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Nevek
 
@@ -83,9 +83,9 @@ Tanuljuk meg az új szavak használatát mondatokban:
   <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma jól tud németül." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Mi a nevem toki ponául?](hu/make-a-name)
-* [Sitelen ponával túl hosszúak a nevek. Hogyan lehet lerövidíteni őket?](hu/simpler-cartouches)
+* [Mi a nevem toki ponául?](/hu/make-a-name/)
+* [Sitelen ponával túl hosszúak a nevek. Hogyan lehet lerövidíteni őket?](/hu/simpler-cartouches/)
 

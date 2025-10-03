@@ -17,7 +17,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Már láttad, hogy a **󱤧󱥔󱥩󱤴 ... li pona tawa mi** egy gyakori fordítása annak, hogy "*... tetszik nekem*". És természetesen mondhatjuk azt, hogy **󱥔󱤼 pona mute**, ha valaki *nagyon tetszik*. De ez nem ugyanaz, mint *szeretni* valakit. Nézzük meg a szeretet szavait, és hogyan hívd a szeretteidet:
 
@@ -57,7 +57,7 @@ Már láttuk, hogy az *"e ... e ..."* segítségével több tárgy lehet a monda
   <Sentence sl="meli en mije li unpa." m="A nő és a férfi szexelnek." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Lásd még
 * [A deeper discussion on gender and Toki Pona, by wan Tansin](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/)

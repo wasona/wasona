@@ -18,7 +18,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Írd körül!
 
@@ -70,5 +70,5 @@ Ha ezek a mondatok hosszúnak és fárasztónak tűnnek, ne aggódj! Hamarosan n
 
 Egy kis érdekesség: a toki ponában nincs különbség melléknév és határozószó között.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

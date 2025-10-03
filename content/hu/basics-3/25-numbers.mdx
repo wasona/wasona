@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Kardinális számok
 
@@ -75,7 +75,7 @@ De ezek a számok *mennyiséget* jeleznek. De vannak *sorszámok* is. Ezek elé 
 
 (Amúgy a **󱤽 nanpa** speciális! Nem kell elé **󱥍 pi**.)
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Lásd még
 * [Hogy beszélek nagy számokról?](/hu/large-numbers)
