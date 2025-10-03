@@ -1,0 +1,81 @@
+---
+slug: "hu/25"
+title: "25. lecke: számok"
+description: "Tanuld meg a következő szavakat: nanpa, wan, tu, ale, kipisi!"
+practice:
+  - l1: "nyolc"
+    l2: "luka tu wan"
+  - l1: "Szeleteled a kenyeret."
+    l2: "sina kipisi e pan."
+  - l1: "Mi ketten eggyé válunk."
+    l2: "mi tu li kama wan."
+  - l1: "Tudok három nyelvet."
+    l2: "mi sona e toki tu wan."
+  - l1: "5 euró"
+    l2: "mani luka pi ma Elopa"
+  - l1: "Április elkezdődik."
+    l2: "tenpo mun nanpa tu tu li open."
+    alsoAccept:
+      - "mun nanpa tu tu li open."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+## Kardinális számok
+
+Beszéljünk a számokról!
+
+<List>
+  <Word sl="wan" m="egy; egyesül, eggyé vál" />
+  <Word sl="tu" m="kettő; osztott, feloszt" />
+  <Word sl="luka" m="öt, kéz" />
+  <Word sl="mute" m="sok" />
+  <Word sl="ale" m="összes, mindegyik" />
+  <Word sl="kipisi" m="darab, rész; feloszt, vág" />
+</List>
+
+Van toki pona szó az 1-re, 2-re, 5-re, de nincs a 3-ra és a 4-re. De ez nem furcsa. Képzeld el a **󱥳 wan**-t, a **󱥮 tu**-t, és a **󱤭 luka**-t úgy, mintha 1-es, 2-es, és 5-ös érmék lennének. Számoljunk 1-től 10-ig:
+
+<List>
+    <Word sl="wan" m="egy" />
+    <Word sl="tu" m="kettő" />
+    <Word sl="tu wan" m="három" />
+    <Word sl="tu tu" m="négy" />
+    <Word sl="luka" m="öt" />
+    <Word sl="luka wan" m="hat" />
+    <Word sl="luka tu" m="hét" />
+    <Word sl="luka tu wan" m="nyolc" />
+    <Word sl="luka tu tu" m="kilenc" />
+    <Word sl="luka luka" m="tíz" />
+</List>
+
+A legtöbb szituációban a kis számok is megfelelnek. De ha vásárlásokról vagy a Gergely-naptárról szeretnél beszélni, akkor erről egy külön oldal szól lejjebb.
+
+## Sorszámok
+
+Általában a számok egyszerűen melléknevek:
+
+<List>
+    <Word sl="kala wan" m="egy hal" />
+    <Word sl="soko tu tu" m="négy gomba" />
+    <Word sl="mun luka" m="öt hónap" />
+</List>
+
+De ezek a számok *mennyiséget* jeleznek. De vannak *sorszámok* is. Ezek elé rakjuk a **󱤽 nanpa** szót:
+
+<List>
+    <Word sl="nanpa" m="szám; a valahanyadik" />
+    <Word sl="kala nanpa wan" m="az első hal" />
+    <Word sl="soko nanpa tu tu" m="a negyedik gomba" />
+    <Word sl="mun nanpa luka" m="az ötödik hónap" />
+</List>
+
+(Amúgy a **󱤽 nanpa** speciális! Nem kell elé **󱥍 pi**.)
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Lásd még
+* [Hogy beszélek nagy számokról?](/hu/large-numbers)
