@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Szófajok
 
@@ -98,5 +98,5 @@ Emlékszel arra, hogy a "li" és "e" egy kicsit feleslegesnek tűntek? Most hogy
 </List>
 Ha bármikor belezavarodsz abba, hogy hogyan kell egy mondatot értelmezni vagy írni, kérdezd meg magadtól: "Hol az alany? Hol az ige? Hol a tárgy?", és minden kisebb kifejezésekké darabolódik.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

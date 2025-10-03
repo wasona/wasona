@@ -16,7 +16,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Egyszerű mondatok
 
@@ -51,5 +51,4 @@ Amit tanultunk:
 
 (**󱤧 li** és **󱤉 e** lehet, hogy feleslegesnek tűnnek. Meg fogjuk tanulni, hogy miért szükségesek, de ahhoz először többet kell tanulnunk a szófajokról.)
 
-<Practice exercises={frontmatter.practice} client:load />
-
+<Practice exercises={frontmatter.practice} />

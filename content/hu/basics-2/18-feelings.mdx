@@ -22,7 +22,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Tanuljuk meg, hogyan lehetünk kifejezőbbek a toki ponában!
 
@@ -94,5 +94,5 @@ Amikor mondatban használjuk, akkor hangsúlyozza azt, ami előtte áll:
     <Sentence sl="mi sona ala a e ni!" m="Én <strong>nem</strong> tudom ezt!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 

@@ -20,7 +20,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Egy társadalomban élünk. Tanuljunk meg néhány szót, amik hasznosak egy társadalomban:
 
@@ -68,4 +68,4 @@ Ahogy láthatod, *van* **󱤧 li**! Ez azért van, mert az alany nem pontosan **
 
 Ez lehet érdekesnek tűnik, de ne felejtsd: a **󱤧 li** lényege, hogy mutassa, hol kezdődik az ige. Ha itt nem lenne, akkor azt hinnénk, hogy a **󱤼 mute** az ige.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
