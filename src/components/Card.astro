@@ -15,7 +15,7 @@ const { url } = Astro.props;
 //   ? sites[url]
 //   : { img: "", title: "", desc: "" };
 
-let img = `icons/${url.split("/")[1]}.png`;
+let img = `/icons/${url.split("/")[1]}.png`;
 let post = posts.find((post) => post.id == url)!;
 let title = post.data.title;
 let desc = post.data.description;
@@ -25,7 +25,7 @@ let desc = post.data.description;
   .card {
     padding: 5px 15px;
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 55px 1fr;
     /*grid-template-columns: 1fr;*/
     grid-gap: 15px;
     align-items: center;
@@ -36,8 +36,12 @@ let desc = post.data.description;
   /*.card:hover {
     background-color: var(--bg-1);
   }*/
+  .card:hover img {
+    transform: scale(1.1);
+  }
   .title {
     font-weight: bold;
+    font-size: 120%;
     color: var(--accent);
   }
   a:hover .title {
@@ -50,6 +54,8 @@ let desc = post.data.description;
   img {
     width: 100%;
     border-radius: 15px;
+    transition: all 0.1s ease;
+    opacity: 0.9;
   }
   a {
     font-weight: inherit;
@@ -58,7 +64,7 @@ let desc = post.data.description;
   }
 </style>
 
-<a class="card" href={`${url}`}>
+<a class="card" href={`/${url}`}>
   <div class="sp">
     {img && <img src={img} />}
   </div>
