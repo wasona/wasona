@@ -17,8 +17,9 @@ description: "Help us by translating the course to your language!"
 * [French](https://github.com/wasona/wasona/pull/32) by jan Lisente, jan Kakili
 * [Persian](https://github.com/wasona/wasona/pull/36) by jan Ali
 * [Catalan](https://github.com/wasona/wasona/pull/43) by jan Suwapeto
+* [Chinese](https://github.com/wasona/wasona/pull/51) by jan Nanpa
 
-**Czech, Mandarin, Romanian, Esperanto** -- a volunteer has reached out to me earlier, but have yet to send any translations. If you start a translation into one of these languages, let me know! I'll notify the earlier volunteers, to avoid duplicate work being done.
+**Czech, Romanian, Esperanto** -- a volunteer has reached out to me earlier, but have yet to send any translations. If you start a translation into one of these languages, let me know! I'll notify the earlier volunteers, to avoid duplicate work being done.
 
 **Some notes for translators:**
 
