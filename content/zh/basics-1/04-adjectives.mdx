@@ -1,18 +1,18 @@
 ---
 slug: "en/04"
-title: "lesson 4: adjectives"
-description: "Learn suli, lili, pona, ike, wawa, suwi!"
+title: "第四课：简单的句子"
+description: "学习这些单词：suli、lili、pona、ike、wawa、和 suwi。"
 practice:
-  - l1: "a sweet animal"
+  - l1: "可爱的动物"
     l2: "soweli suwi"
-  - l1: "a bad insect"
+  - l1: "不好的昆虫"
     l2: "pipi ike"
-  - l1: "a powerful bird"
+  - l1: "强大的鸟"
     l2: "waso wawa"
-  - l1: "The bird knows a strong animal."
+  - l1: "那只鸟知道一个强大的动物。"
     l2: "waso li sona e soweli wawa."
     junkChips: ["lili"]
-  - l1: "A tiny insect looks at a big animal."
+  - l1: "一只小昆虫朝一只大绵羊看去。"
     l2: "pipi lili li lukin e soweli suli."
     junkChips: ["wawa"]
 ---
@@ -22,60 +22,61 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Describe!
+## 描述！
 
-Now you know some nouns (things) and verbs (actions). Time to add adjectives (descriptions)!  
-Let's memorise a few of them:
-
-<List>
-  <Word sl="suli" m="large, important" />
-  <Word sl="lili" m="small, young" />
-  <Word sl="pona" m="good, pleasant" />
-  <Word sl="ike" m="bad, unpleasant" />
-  <Word sl="wawa" m="powerful, amazing" />
-  <Word sl="sona" m="knowledgeable, wise" />
-  <Word sl="suwi" m="cute, sweet" />
-</List>
-
-In English, adjectives go before the noun. But in Toki Pona, they always go after:
+我们现在已经看到了一些名词和动词。接下来，让我们看看形容词！
+记住以下词汇：
 
 <List>
-  <Word sl="soweli suli" m="a large animal" />
-  <Word sl="pipi lili" m="a small bug" />
-  <Word sl="waso suwi" m="an adorable bird" />
+  <Word sl="suli" m="大的，重要的" />
+  <Word sl="lili" m="小的，年轻的" />
+  <Word sl="pona" m="好的，悦人的" />
+  <Word sl="ike" m="坏的，令人不快的" />
+  <Word sl="wawa" m="强大的，令人惊奇的" />
+  <Word sl="sona" m="聪明的，博学的" />
+  <Word sl="suwi" m="甜的，可爱的" />
 </List>
 
-English speakers sometimes find this order confusing, but this is how it works in French, Irish, Arabic, Malay, and many other languages. Think of it this way: the first word is always the most important!
+在中文中，形容词一般放置在名词前面。但在道本语中，形容词全部都跟在名词后面：
+
+<List>
+  <Word sl="soweli suli" m="一只大的动物" />
+  <Word sl="pipi lili" m="一只小虫子" />
+  <Word sl="waso suwi" m="一只可爱的小鸟" />
+</List>
+
+你可能会觉得这个顺序很奇怪，但是法语、爱尔兰语、阿拉伯语、马来语和许多其他语言的语序都是这样的。总是最重要的词放在第一个！
 
 {/* A note for translators */}
 {/*
   If your language puts adjectives after nouns, just like Toki Pona,
   please highlight this as a nice similarity between the two languages.
+  im envious...
 */}
 
-Let's make some sentences with descriptions:
+让我们用形容词来早一些句子：
 
 <List>
   <Sentence
     sl="waso li lukin e soweli suwi."
-    m="The bird sees a cute animal."
+    m="那只鸟看到了一只可爱的动物。"
   />
   <Sentence
     sl="soweli wawa li moku e kasi suli."
-    m="The strong animal eats large plants."
+    m="那只强壮的动物在啃食大的植物。"
   />
   <Sentence
     sl="pipi ike li moku lili e soweli."
-    m="Mean bugs bite the animal a little."
+    m="那只凶恶的虫子浅浅地咬了一下那只动物。"
   />
   <Sentence
     sl="waso sona li sona pona e pipi."
-    m="The wise bird knows bugs well."
+    m="那只聪慧的小鸟对虫子熟悉。"
   />
 </List>
 
-If these sentences feel long and tiresome, don't worry! We will look at some shorter sentences soon. Remember: the sentence structure is actually quite simple! You can always tell which part is the subject, the verb, and the object, by looking at **󱤧 li** and **󱤉 e**.
+如果这些句子让你感到很长而令人厌倦，不要担心！我们马上就会看一些更短的句子。记住：道本语的句式其实是很简单的！你可以仅凭句子中的 **󱤧 *li*** 和 **󱤉 *e*** 判断出来哪一部分是主语，哪一部分是谓语，哪一部分是宾语。
 
-Here's something interesting: in English, adjectives only go on nouns. But in Toki Pona, they can go on verbs too: _to bite a little_ ~ _moku lili_, _to know well_ ~ _sona pona_. There is no difference between adjectives and adverbs in Toki Pona.
+在道本语中，能描述名词的形容词也能描述动词！例如，*moku lili* 可以翻译为「浅浅地咬」；*sona pona* 可以翻译为「好地知道」「熟悉」。
 
 <Practice exercises={frontmatter.practice} />
