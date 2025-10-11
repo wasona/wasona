@@ -1,0 +1,43 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Word</th>
+      <th>Meaning</th>
+      <th>Helpful tips</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="kon" />
+      <td>空气</td>
+      <td>发音其实是相似的，但是拼写有区别。</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="jo" />
+      <td>有</td>
+      <td>发音其实是相似的，但是拼写截然不同！</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>sound</td>
+      <td>尝试把重音读出来。</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>lizard</td>
+      <td>词可以以元音开始。</td>
+    </tr>
+  </tbody>
+</table>
