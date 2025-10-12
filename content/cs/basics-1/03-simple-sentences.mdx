@@ -1,0 +1,58 @@
+---
+slug: "cs/03"
+title: "lekce 3: jednoduché věty"
+description: "Naučte se li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
+practice:
+  - l1: "Zvíře zná hmyz."
+    l2: "soweli li sona e pipi."
+    junkChips: ["waso"]
+  - l1: "Hmyz jí rostlinu."
+    l2: "pipi li moku e kasi."
+    junkChips: ["soweli"]
+  - l1: "Pták vidí rostlinu."
+    l2: "waso li lukin e kasi."
+    junkChips: ["moku"]
+  - l1: "Pták zná zvíře."
+    l2: "waso li sona e soweli."
+    junkChips: ["pipi"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Jednoduché věty
+
+Když už víte, jak toki ponu číst, je čas učit se slova a věty!
+Tady je pár slov pro věci a děje: 
+
+<List>
+  <Word sl="soweli" m="savec, jako kočka, pes, kráva, myš, slon" />
+  <Word sl="waso" m="pták, jako holub, husa, sova" />
+  <Word sl="pipi" m="hmyz, jako brouk, mravenec, motýl, pavouk" />
+  <Word sl="kasi" m="rostlina, jako jetel, bříza, kaktus, mech" />
+  <Word sl="moku" m="konzumovat" />
+  <Word sl="lukin" m="vidět" />
+  <Word sl="sona" m="vědět" />
+</List>
+
+Velmi častý typ věty je "podmět-přísudek-předmět". To znamená, že něco (podmět) něco dělá něčemu jinému (předmětu). Poskládejme si pár vět:
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="Zvíře jí rostliny." />
+  <Sentence sl="waso li moku e pipi." m="Pták jí hmyz." />
+  <Sentence sl="pipi li lukin e soweli." m="Hmyz vidí zvíře." />
+  <Sentence sl="waso li sona e kasi." m="Pták zná strom." />
+</List>
+
+Co se můžeme načit:
+
+- Pořadí slov je jako v češtině: podmět, přísudek, předmět.
+- **󱤧 li** je částice, která značí začátek přísudku.
+- **󱤉 e** je částice, která značí začátek předmětu.
+- Některá slova jsou do češtiny přeložena v jednotném a některá v množném čísle, ale to jsou jen odhady. Toki pona u slov nerozlišuje číslo, rod ani čas. V delších konverzacích to pochopíte podle kontextu!
+
+(**󱤧 li** a **󱤉 e** zatím zní zbytečně. Proč jsou nezbytné, zjistíte, až se naučíme o slovních druzích!)
+
+<Practice exercises={frontmatter.practice} />

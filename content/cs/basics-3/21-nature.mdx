@@ -1,0 +1,80 @@
+---
+slug: "cs/21"
+title: "lekce 21: příroda"
+description: "Naučte se akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+  - l1: "Houby konzumují odumřelé rostliny."
+    l2: "soko li moku e kasi moli."
+    junkChips: ["mani"]
+  - l1: "Peč těsto."
+    l2: "o seli e ko pan."
+    junkChips: ["sewi"]
+  - l1: "Vykopal jsem brambory."
+    l2: "mi weka e kili tan ma."
+    junkChips: ["o"]
+  - l1: "Rostliny potřebují vodu, sluneční svit a půdu."
+    l2: "kasi li wile e telo, e suno, e ma."
+    junkChips: ["soko"]
+  - l1: "Lidé mluví, baví se, zpívají a spí."
+    l2: "jan li toki, li musi, li kalama, li lape."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Už známe většinu slov pro zvířata a rostliny -- naučme se zbytek!
+
+<List>
+  <Word sl="akesi" m="plaz nebo obojživelník, jako žába, ještěrka, had" />
+  <Word
+    sl="kala"
+    m="ryba nebo mořský tvor, jako losos, velryba, žralok, chobotnice"
+  />
+  <Word sl="pan" m="škrobnaté jídlo, jako pšenice, rýže, chléb, těstoviny" />
+  <Word sl="kili" m="ovoce, zelenina" />
+  <Word sl="soko" m="houba" />
+  <Word sl="misikeke" m="lék" />
+  <Word sl="namako" m="koření, ozdoba" />
+  <Sentence sl="soko li kili nasa." m="Houby jsou zvláštní ovoce." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="Větší ryby loví menší ryby."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Musím často brát léky."
+  />
+</List>
+
+## Ingredience
+
+Produkty s chlebem často drží pohromadě několik různých ingrediencí:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="Chlebíček obsahuje šunku." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="Chlebíček obsahuje zeleninu." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="Chlebíček obsahuje koření." />
+</List>
+
+Ale jak to dát všechno do jedné věty? No, všechny jsou *předmět* věty. Věta může mít *několik předmětů*: několik frází s **󱤉 e**, které jdou jedna po druhé:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="Chlebíček obsahuje šunku, zeleninu, (a) koření."
+  />
+</List>
+
+Tohle není jen výjimečné pro **󱤉 e**! Můžete zkombinovat několik souvisejících myšlenek do jedné věty s **󱤧 li**, **󱤡 la** i předložkami. Podívejme se pro teď jen na **󱤧 li**:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="Člověk loví ryby. (= člověk rybaří)." />
+  <Sentence sl="jan li seli e ona." m="Člověk je uvaří." />
+  <Sentence sl="jan li moku e ona." m="Člověk je sní." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Člověk loví ryby, uvaří je, sní je." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

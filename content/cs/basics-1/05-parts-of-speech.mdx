@@ -1,0 +1,106 @@
+---
+slug: "cs/05"
+title: "lekce 5: slovní druhy"
+description: "Naučte se o podstatných a přídavných jménech a slovesech!"
+practice:
+  - l1: "silný hmyz"
+    l2: "pipi wawa"
+  - l1: "hmyzí síla"
+    l2: "wawa pipi"
+  - l1: "velké oko"
+    l2: "lukin suli"
+  - l1: "dobré jídlo"
+    l2: "moku pona"
+  - l1: "úžasně dobré"
+    l2: "pona wawa"
+  - l1: "Jídlo zlepšuje zrak."
+    l2: "moku li pona e lukin."
+    junkChips: ["waso"]
+  - l1: "Zvířata znají roztomilost ptáků."
+    l2: "soweli li sona e suwi waso."
+    junkChips: ["suli"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Slovní druhy
+
+Někteří z vás si povšimnuli, že jsem představil  slovo **󱥡 sona** dvakrát, poprvé jako sloveso 'vědět', a poté jako přídavné jméno 'chytrý'. Takže jak to je? A jak to vědět?
+
+Ve skutečnosti to může být oboje. Pokud je po podstatném jménu, je to přídavné jméno. Pokud ho **󱤧 li** představí jako sloveso, tak to je sloveso. Je to celé o pořadí slov ve větě!
+
+To dokonce platí pro _všechna_ slova: pokud je něco podstatné či přídavné jméno, nebo sloveso, může být _jakékoliv z těchto tří_! Podívejme se na nějaké příklady ze slov, které jsme se už naučili:
+
+
+<List>
+  <Word sl="lukin" m="Pod.: oko; Sl.: vidět" />
+  <Word sl="moku" m="Pod.: jídlo; Sl.: konzumovat, jíst" />
+  <Word sl="sona" m="Pod.: vědomost, moudrost; Sl.: vědět; Pří.: chytré, znalé" />
+  <Word sl="suli" m="Pod.: velikost; Sl.: zvětšit, zdůraznit; Pří.: velké, důležité" />
+  <Word sl="pona" m="Pod.: dobrota; Sl.: zlepšit; Pří.: dobré, příjemné" />
+  <Word sl="waso" m="Pod.: pták; Sl.: proměnit v ptáka; Pří.: patřící ptákovi, ptačí" />
+</List>
+
+Vypsal jsem pouze *některá* slova, která jsme se zatím naučili -- jen dostatek na to, abychom si všimnuli opakujících znaků:
+* Když se ze **sloves stanou podstatná jména**, obvykle označují předmět té činnosti (*znalost*), nebo něco tvořící nezbytnou část té činnosti (*jídlo, oko*).
+* Když se ze **sloves stanou přídavná jména**, označují ty co něco dělají (*chytří lidé ~ lidé, kteří vědí*).
+* Když se z **podstatných jmen stanou slovesa**, obvykle znamenají stát se něčím nebo použít něco na něco (*stát se ptákem*).
+* Když se z **podstatných jmen stanou přídavná jména**, označují vlastnictví nebo podobnost (*patřící ptákovi, ptačí*).
+* Když se z **přídavných jmen stanou podstatná jména**, znamenají tu vlastnost (*dobrota, velikost*).
+* Když se z **přídavných jmen stanou slovesa**, znamenají předat vlastnost (*zlepšit, zvětšit*).
+
+Ale když my plynulí mluvčí mluvíme, tak o tomhle vůbec nemusíme přemýšlet! Začnou se do sebe slévat. V daném bodě už i přestanete přemýšlet o tom, jaký slovní druh nějaké slovo původně je. Začnete to vnímat jako jeden celek!
+
+Procvičme si používání těchto slov jako podstatná a přídavná jména a slovesa:
+
+<List>
+  <Sentence sl="lukin li pona e sona." m="Oči zlepšují znalosti." />
+  <Sentence sl="moku li suli e pipi." m="Jídlo zvětšuje hmyz." />
+  <Sentence
+    sl="moku li wawa e soweli lili."
+    m="Jídlo posiluje malá zvířata."
+  />
+</List>
+
+## Na pořadí slov záleží!
+
+Jelikož každé podstatné jméno může být přídavné jméno a každé přídavné jméno může být podstatné jméno, na pořadí slov opravdu záleží! Povšimněte si, jak tyto dvě fráze znamenají jiné věci:
+
+<List>
+  <Word sl="soweli suli" m="velké zvíře" />
+  <Word sl="suli soweli" m="velikost zvířete" />
+  <Sentence
+    sl="soweli suli li sona e suli soweli."
+    m="Velké zvíře zná velikost zvířete."
+  />
+</List>
+
+## na 'li' a 'e' také záleží!
+
+Pamatujete si jak 'li' a 'e' vypadali trochu zbytečně? Teď, když víme, že každé významové slovo může být kdekoliv jako podstatné či přídavné jméno nebo sloveso, už vidíme, jak jsou důležitá. Díky nim můžeme rozlišit tyhle tři velice rozdílné věty:
+
+
+<List>
+  <Word sl="soweli sona" m="moudré zvíře" />
+  <Word sl="sona pona" m="dobrá znalost; dobře znát" />
+  <Word sl="pona waso" m="dobrota ptáka" />
+  <Sentence
+    sl="soweli sona li pona e waso."
+    m="Moudré zvíře zlepšuje ptáka."
+  />
+  <Sentence
+    sl="soweli li sona pona e waso."
+    m="Zvíře dobře zná ptáka."
+  />
+  <Sentence
+    sl="soweli li sona e pona waso."
+    m="Zvíře zná dobrotu ptáka."
+  />
+</List>
+
+Jestli budete někdy zmatení, jak přečíst nebo napsat větu, zeptejte se: "Kde je podmět? Kde je přísudek? Kde je předmět?" a všechno se úhledně uspořádá do malých frází!
+
+<Practice exercises={frontmatter.practice} />

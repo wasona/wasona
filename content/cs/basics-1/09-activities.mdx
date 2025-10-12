@@ -1,0 +1,100 @@
+---
+slug: "cs/09"
+title: "lekce 9: činnosti"
+description: "Naučte se utala, lape, musi, nasa, kalama, wile, ken, alasa!"
+practice:
+  - l1: "Roztomilý pták spí."
+    l2: "waso suwi li lape."
+    junkChips: ["e"]
+  - l1: "Jeho jméno je dlouhé."
+    l2: "nimi ona li suli."
+    junkChips: ["e"]
+  - l1: "chtít se bavit"
+    l2: "wile musi"
+  - l1: "snažit se zpívat"
+    l2: "alasa kalama"
+  - l1: "Začínám kreslit rostlinu."
+    l2: "mi kama sitelen e kasi."
+    junkChips: ["li"]
+  - l1: "Mládě se dokáže hravě rvát."
+    l2: "soweli lili li ken utala musi."
+    junkChips: ["e"]
+  - l1: "Snažím se letět do Číny."
+    l2: "mi alasa tawa ma Sonko."
+    junkChips: ["li"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Činnosti
+
+Naučme se nějaká další slova pro činnosti!
+
+<List>
+  <Word sl="utala" m="bojovat, útočit" />
+  <Word sl="lape" m="spát, odpočívat" />
+  <Word sl="kalama" m="vydávat zvuk; zvuk" />
+  <Word sl="musi" m="bavit se; vtipný, zábavný, zajímavý" />
+  <Word sl="nasa" m="zvláštní, neobvyklý, nerozumný, opilý" />
+</List>
+
+Tato slova jsou celkem jednoduchá! Použijme je ve větách:
+
+<List>
+  <Sentence sl="soweli li utala e jan." m="Zvíře napadlo člověka." />
+  <Sentence sl="sina lape lon tomo." m="Spíš doma." />
+  <Sentence sl="nimi ona li nasa tawa mi." m="Její jméno je podle mě zvláštní." />
+  <Sentence
+    sl="jan lili li musi tan kalama."
+    m="Dítě se baví ze zvuků."
+  />
+</List>
+
+## Předslovesa
+
+Občas chceme mluvit nejen o samotné činnosti, ale i o tom, jak k nám souvisí. Možná něco _chceme_ udělat. Možná něco _můžeme_ udělat. Možná něco _začneme_ dělat nebo _stále_ děláme.
+
+V češtině jim říkáme *pomocné a modální slovesa*. Toki pona má podobný systém, kterému říkáme _předslovesa_! Předsloveso je přídavné sloveso, které je před hlavním slovesem. Některá z nich už znáte! Naučme se, co znamenají, když se chovají jako předslovesa:
+
+<List>
+  <Word sl="kama" m="začít ..., stát se ..." />
+  <Word sl="awen" m="pokračovat ..., stále ..." />
+  {/* <Word sl="sona" m="umět ..." /> */}
+</List>
+
+Jen některá slova v toki poně můžou být předslovesa, tak se naučme ten zbytek:
+
+<List>
+  <Word sl="wile" m="chtít ..." />
+  <Word sl="ken" m="moct ..." />
+  <Word sl="alasa" m="snažit se ..." />
+</List>
+
+Předslovesa jsou velmi všestranná! Podívejme se na nějaké fráze s předslovesy:
+
+<List>
+  <Word sl="wile lape" m="chtít spát" />
+  <Word sl="awen pona" m="stále být dobré" />
+  <Word sl="kama sona" m="stát se znalým, učit se" />
+  <Word sl="alasa kama wawa" m="snažit se stát se silným" />
+</List>
+
+Zkusme použít předslovesa ve větách:
+
+<List>
+  <Sentence sl="waso lili li wile lape." m="Malý pták chce spát." />
+  <Sentence sl="mi kama sona e toki pona." m="Učím se toki ponu." />
+  <Sentence sl="sina alasa tawa ma Tosi." m="Snažíš se jet do Německa." />
+  <Sentence
+    sl="toki ona li awen nasa tawa mi."
+    m="Jeho mluva je mi stále zvláštní."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## Viz také
+* [O: jsou ještě nějaká předslovesa? [eng]](/en/more-preverbs/)

@@ -1,0 +1,23 @@
+{
+    "Index": "Obsah",
+    "Next": "Další",
+    "Previous": "Předchozí",
+    "Translation": "Překlad",
+  
+    "Consonants": "Souhlásky",
+    "Labial": "Labiální",
+    "Coronal": "Koronální",
+    "Dorsal": "Dorzální",
+  
+    "Vowels": "Samohlásky",
+    "Front": "Přední",
+    "Central": "Střední",
+    "Back": "Zadní",
+  
+    "translate": "Přeložte větu",
+    "check": "zkontrolovat",
+    "continue": "pokračovat",
+    "incorrect": "❌ Ne tak úplně. Správná odpověď: ",
+    "correct": "✅ Správně! Dobrá práce!",
+    "done": "🎉 Všechna cvičení hotová!"
+  }

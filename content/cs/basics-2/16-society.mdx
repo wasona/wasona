@@ -1,0 +1,78 @@
+---
+slug: "cs/16"
+title: "cs 16: společnost"
+description: "Naučte se kulupu, nasin, esun, mani, moli, mute!"
+practice:
+  - l1: "Moje rostlina zemřela kvůli broukům."
+    l2: "kasi mi li moli tan pipi."
+    junkChips: ["e"]
+  - l1: "Hejno ptáků odletělo do nebe."
+    l2: "kulupu waso li tawa sewi."
+    junkChips: ["e"]
+  - l1: "Dítě chce vidět hodně obrázků."
+    l2: "jan lili li wile lukin e sitelen mute."
+    junkChips: ["tan"]
+  - l1: "Hodně lidí se baví spolu."
+    l2: "jan mute li musi lon kulupu."
+    junkChips: ["sitelen"]
+  - l1: "Mnoho cest vede do Říma."
+    l2: "nasin mute li tawa ma tomo Loma."
+    junkChips: ["e"]
+    alsoAccept: ["nasin mute li tawa ma Loma."]
+  - l1: "Tenhle telefon stojí hodně peněz."
+    l2: "ilo ni li wile e mani mute."
+    junkChips: ["mi"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Žijeme ve společnosti! Naučme se tedy nějaká užitečná slova pro orientaci ve společnosti:
+
+<List>
+  <Word sl="kulupu" m="komunita, tým, skupina" />
+  <Word sl="nasin" m="cesta, způsob, tradice, pěšina" />
+  <Word sl="esun" m="prohodit, obchodovat; obchod" />
+  <Word sl="mani" m="peníze, cenná věc" />
+  <Word sl="moli" m="mrtvé; zabít" />
+  <Word sl="mute" m="mnoho, velmi" />
+</List>
+
+Použijme tato nová slova ve větách:
+
+<List>
+  <Sentence sl="nasin mute li lon." m="Je mnoho tradicí." />
+  <Sentence sl="jan li pali lon kulupu." m="Lidé pracují v týmech." />
+  <Sentence sl="len pona li wile e mani mute." m="Dobré oblečení vyžaduje hodně peněz.<br />Dobré oblečení je drahé." />
+  <Sentence sl="jan mute li moli tan utala suli." m="Mnoho lidí zemřelo kvůli válce."/>
+  <Sentence sl="mi wile esun e soweli mi." m="Chtěla bych prodat svou krávu." />
+  <Sentence sl="mi wile ala esun e soweli sina." m="Nechci si koupit tvou krávu." />
+</List>
+
+Je tu něco zábavného na povšimnutí: **󱤋 esun** obecně znamená 'prohodit', ale v těchto větách je dostatek kontextu, abychom pochopili, že v jedné větě to specificky znamená 'prodat' a ve druhé 'koupit'!
+
+## více o mute
+
+**󱤼 mute** je velmi užitečné slovo. Přídavná jména se na zájmena **󱤴 mi**, **󱥞 sina**, **󱥆 ona** nevážou tak často, ale **󱤼 mute** je tak užitečné, že to dělá běžně:
+
+<List>
+  <Word sl="mi mute" m="my, mnoho z nás" />
+  <Sentence sl="kulupu pali li jo e mi mute." m="Pracovní spolek zahrnuje mnoho z nás." />
+  <Word sl="sina mute" m="vy, mnoho z vás" />
+  <Sentence sl="ona li ken sitelen e sina mute." m="Mohou si vás vyfotit." />
+</List>
+
+Pamatujete si na to speciální pravidlo, že když **󱤴 mi** nebo **󱥞 sina** je podmětem věty, vynecháme **󱤧 li**? To pravidlo je hodně specifické! Podívejte se na tyhle věty:
+
+<List>
+  <Sentence sl="mi mute li kalama musi." m="My hrajeme hudbu." />
+  <Sentence sl="sina mute li sona e ni." m="Mnoho z vás tohle ví." />
+</List>
+
+Všimněte si, že **󱤧 li** nebylo vynecháno! To je proto, že podmět tady není ani **󱤴 mi** ani **󱥞 sina**, ale **󱤴󱤼 mi mute** a **󱥞󱤼 sina mute**.
+
+Sice to zní jako zvláštnost, ale pamatujte -- účel **󱤧 li** je ukazovat, kde začíná sloveso! Kdyby bylo vynecháno, tak bychom si mysleli, že tady je **󱤼 mute** to sloveso.
+
+<Practice exercises={frontmatter.practice} />

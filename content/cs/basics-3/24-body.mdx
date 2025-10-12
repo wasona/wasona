@@ -1,0 +1,63 @@
+---
+slug: "cs/24"
+title: "lekce 24: tělo"
+description: "Naučte se sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
+practice:
+  - l1: "Bolí mě hlava."
+    l2: "lawa mi li pakala."
+    junkChips: ["kala"]
+    alsoAccept: ["mi pakala lawa."]
+  - l1: "Slyšel jsem tichý zvuk."
+    l2: "mi kute e kalama lili."
+    junkChips: ["li"]
+  - l1: "Ty posloucháš. Já rozkazuji."
+    l2: "sina kute. mi lawa."
+    junkChips: ["luka"]
+  - l1: "Koření je horké pro mé ústa."
+    l2: "namako li seli tawa uta mi."
+    junkChips: ["e"]
+  - l1: "Prosím pohlaď si roztomilého psa!"
+    l2: "o luka e soweli suwi!"
+    junkChips: ["sewi"]
+  - l1: "Léky uzdravují její tělo."
+    l2: "misikeke li pona e sijelo ona."
+    junkChips: ["pi"]
+  - l1: "Její vlasy jsou příjemné na dotyk."
+    l2: "linja lawa ona li pona tawa luka."
+    junkChips: ["e"]
+    alsoAccept: ["linja ona li pona tawa luka."]
+  - l1: "Ta hora je podobná nosu na mém obličeji."
+    l2: "nena kiwen li sama nena pi sinpin mi."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Už známe slova pro *oči*, *srdce*, *obličej* a *záda*, tak se naučme zbytek částí těla!
+
+<List>
+  <Word sl="lawa" m="hlava; vést" />
+  <Word sl="kute" m="ucho; slyšet" />
+  <Word sl="nena" m="hrbol, boule, jako nos, kopec, prso" />
+  <Word sl="uta" m="ústa, rty; líbat, kousat" />
+  <Word sl="sijelo" m="tělo" />
+  <Word sl="luka" m="ruka; dotknout se" />
+  <Word sl="noka" m="noha" />
+  <Word sl="palisa" m="dlouhá tvrdá věc, jako větev, tyč, hůl" />
+  <Word sl="linja" m="dlouhá pružná věc, jako nit, lano" />
+</List>
+
+Všimněte si, jak hodně částí těla znamená i jejich příslušnou činost! Hlava vede, oči vidí, uši slyší, ústa líbají, srdce cítí, ruce se dotýkají.
+
+<List>
+    <Sentence sl="mi wile suli e linja lawa mi." m="Chci se nechat vyrůst vlasy." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="Můj šéf mě slyšel pomlouvat." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="Zrcadlo dává převrácený obraz." />
+  <Sentence sl="sijelo mi li wile e lape." m="Mé tělo potřebuje odpočinek." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Mé prsty na rukou jsou větší než mé prsty na nohou." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
