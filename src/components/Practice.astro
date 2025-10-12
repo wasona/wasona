@@ -1,5 +1,6 @@
 ---
 import PracticeReact from "@/components/Practice";
+import UnitNav from "@/components/UnitNav.astro";
 import { type Exercise } from "@/lib/exercise";
 import { locales } from "@/lib/i18n";
 interface Props {
@@ -11,4 +12,5 @@ console.log("current locale:", lang);
 const locale = locales[lang];
 ---
 
+<UnitNav />
 <PracticeReact exercises={exercises} locale={locale} client:load />
