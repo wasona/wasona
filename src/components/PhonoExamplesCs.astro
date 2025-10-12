@@ -1,0 +1,60 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Slovo</th>
+      <th>Význam</th>
+      <th>Užitečné tipy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="noka" />
+      <td>noha</td>
+      <td>Něco povědomého!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="ni" />
+      <td>tohle</td>
+      <td>Procvič si výslovnost - není tam <b>ň</b>! </td>
+    </tr>
+    <tr>
+        <Audio td from="linku/asi" file="pini" />
+        <td>konec</td>
+        <td>Výslovnost <b>i</b> je někde mezi krátkým a dlouhým <b>i</b>! </td>
+      </tr>
+    <tr>
+      <Audio td from="linku/asi" file="wawa" />
+      <td>síla</td>
+      <td>Procvič si výslovnost hlásky <b>w</b>! </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="tenpo" />
+      <td>čas</td>
+      <td
+        >Mimochodem, píšeme <b>np</b>, ale většinou vyslovujeme <b>mp</b>!
+      </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>zvuk</td>
+      <td>Procvič si přízvuk na první slabice!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>ještěr</td>
+      <td>Slova mohou začínat i samohláskou!</td>
+    </tr>
+  </tbody>
+</table>

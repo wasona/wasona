@@ -1,0 +1,102 @@
+---
+slug: "cs/22"
+title: "lekce 22: velmi roztomilé kočky"
+description: "Naučte se pi!"
+practice:
+  - l1: "mnoho sněhu"
+    l2: "ko lete mute"
+    junkChips: ["pi"]
+    alsoAccept: ["ko mute lete"]
+  - l1: "velmi studený sníh"
+    l2: "ko pi lete mute"
+  - l1: "mnoho mých chyb"
+    l2: "pakala mi mute"
+    junkChips: ["pi"]
+    alsoAccept: ["pakala mute mi"]
+  - l1: "naše chyba"
+    l2: "pakala pi mi mute"
+  - l1: "jiná jazyková kniha"
+    l2: "lipu toki ante"
+    junkChips: ["pi"]
+    alsoAccept: ["lipu ante toki"]
+  - l1: "kniha v jiném jazyce"
+    l2: "lipu pi toki ante"
+  - l1: "něčí malá místnost"
+    l2: "tomo jan lili"
+    junkChips: ["pi"]
+    alsoAccept: ["tomo lili jan"]
+  - l1: "místnost malých lidí"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nedávno jsme se naučili **󱤼 mute**, což je velmi užitečné slovo!
+
+Popřemýšlejme o tom trochu víc. Už umíme vytvořit tyhle fráze:
+
+<List>
+  <Word sl="soweli suwi" m="roztomilá kočka" />
+  <Word sl="soweli mute" m="mnoho koček" />
+  <Word sl="suwi mute" m="velmi roztomilý" />
+</List>
+
+Ale co, když je dáme dohromady? Dostaneme *mnoho roztomilých koček* nebo *velmi roztimilá kočka*?
+
+<List>
+  <Word sl="soweli suwi mute" m="mnoho roztomilých koček" />
+</List>
+
+Tahle fráze znamená *mnoho roztomilých koček*, protože **󱥦 suwi** popisuje **󱥢 soweli** a **󱤼 mute** také popisuje **󱥢 soweli**.
+Ale podle mě je *moje* kočka velmi roztomilá! Jak o tom můžu mluvit? Co když chci, aby **󱤼 mute** popisovalo **󱥦 suwi** místo **󱥢 soweli**?
+Tady nám pomůže nová částice:
+
+<List>
+  <Word sl="pi" m="částice, která seskupuje přídavná jména" />
+  <Word sl="soweli pi suwi mute" m="velmi roztomilá kočka" />
+</List>
+
+Hurá! Teď můžeme mluvit o **󱥢 soweli**, které je **󱥦󱤼 suwi mute**!
+Jestli máte rádi matematiku, můžete si to představit jako začátek závorky, který mění pořadí operací: *'kočka roztomilý mnoho'* vs *'kočka (roztomilý mnoho)'*.
+
+Podívejme se na další příklad:
+
+<List>
+  <Word sl="sitelen tomo" m="fotka domu" />
+  <Word sl="sitelen mute" m="fotky" />
+  <Word sl="tomo mute" m="domy" />
+  <Word sl="sitelen tomo mute" m="fotky domu" />
+  <Word sl="sitelen pi tomo mute" m="fotka domů" />
+</List>
+
+Znovu si to můžete představit jako *'fotka dům mnoho'* vs *'fotka (dům mnoho)'*.
+Samozřejmě **󱤼 mute** není jediné slovo, kterému pomáhá **󱥍 pi**! Podívejme se na pár dalších slov:
+
+<List>
+  <Word sl="jan pona" m="hodný člověk" />
+  <Word sl="jan lili" m="malý člověk" />
+  <Word sl="pona lili" m="trochu hodný" />
+  <Word sl="jan pona lili" m="malý hodný člověk" />
+  <Word sl="jan pi pona lili" m="trochu hodný člověk" />
+</List>
+
+*'člověk hodný malý'* vs *'člověk (hodný malý)'*.
+
+<List>
+  <Word sl="sona utala" m="válečné znalosti" />
+  <Word sl="sona sin" m="nové znalosti" />
+  <Word sl="utala sin" m="nová válka" />
+  <Word sl="sona utala sin" m="nové válečné znalosti. znalost je nová." />
+  <Word sl="sona pi utala sin" m="znalosti nové války. válka je nová." />
+</List>
+
+*'znalost válka nový'* vs *'znalost (válka nový)'*.
+
+*Proč jsou české překlady tak rozdílné?!*, možná se ptáte! Čeština hlavně rozeznává, které slovo patří ke kterému druhému slovu, *slovními druhy*. *Mnoho* je přídavné jméno, ale *velmi* je příslovce. Když jsou slovní druhy stejné, pomůže nám 2. pád.
+
+Ale v toki poně se můžou slova stát podstatnými i přídavnými jmény i slovesy. Takže nám nepomůžou! Místo toho má toki pona jen jednu částici pro přezávorkování.
+
+<Practice exercises={frontmatter.practice} />

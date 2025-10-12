@@ -1,0 +1,97 @@
+---
+slug: "cs/08"
+title: "lekce 8: předložky"
+description: "Naučte se weka, pana, kama, awen, tawa, lon, tan!"
+practice:
+  - l1: "v Anglii"
+    l2: "lon ma Inli"
+  - l1: "k Alimu"
+    l2: "tawa jan Ali"
+  - l1: "Odstraňíš hmyz z domu."
+    l2: "sina weka e pipi tan tomo."
+  - l1: "Rostliny se mi líbí."
+    l2: "kasi li pona tawa mi."
+  - l1: "Dal jsem ti housenku."
+    l2: "mi pana e pipi tawa waso."
+  - l1: "Lidé zůstávají doma."
+    l2: "jan li awen lon tomo."
+  - l1: "Noah jede do Francie."
+    l2: "jan Nowa li tawa ma Kanse."
+  - l1: "Toronto je v Kanadě."
+    l2: "ma tomo Towano li lon ma Kanata."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Předložky
+
+Teď když známe pár zemí, naučme se mluvit o cestování! Ale jak říct "jet do" a "pocházet z"? Na to budeme potřebovat pár sloves a předložek:
+
+<List>
+  <Word sl="weka" m="odstranit, odejít; nepřítomný, daleko" />
+  <Word sl="pana" m="dát, položit" />
+  <Word sl="kama" m="přijít, stát se" />
+  <Word sl="awen" m="zůstat, chránit" />
+  <Word sl="tawa" m="k, do (3. pád - ke komu, k čemu?)" />
+  <Word sl="lon" m="na, v (6. pád - kom, čem?)" />
+  <Word sl="tan" m="z, kvůli" />
+</List>
+
+_Předložka_ je slovo, které je před jiným slovem. Říká, jak to slovo souvisí s danou větou. Předložce + slovu, které připojuje, se říká _předložková fráze_:
+
+<List>
+  <Word sl="tawa soweli" m="ke zvířeti" />
+  <Word sl="lon ma" m="na zemi, ve státě" />
+  <Word sl="tan tomo" m="z domova" />
+</List>
+
+V toki poně se předložkové fráze používají na dvě věci. Zaprvé je můžeme přidat na konec věty. Takhle můžeme zmínit místo a směr dané činnosti:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="Dám ptáka na strom." />
+  <Sentence sl="waso li awen lon kasi." m="Pták zůstal na stromě." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="Sebereš ptáka ze stromu."
+  />
+</List>
+
+Zadruhé, co když chceme mluvit o místě nebo směru...bez ničeho jiného? To naštěstí také můžeme. Předložkové fráze můžou být hned za **󱤧 li** a chovat se jako sloveso samy o sobě. Když se předložky chovají jako slovesa, znamenají: **󱥩 tawa** 'jít do', **󱤬 lon** 'být v', **󱥧 tan** 'pocházet z':
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Ema letí do Japonska." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Nina je v Rusku." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Millie pochází z Francie." />
+</List>
+
+Procvičme si to s těmito větami:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="Jdu do rostlinného místa.<br />(To může být les, travnatá louka - někde, kde je zeleň.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="Znalosti ze mě odešly.<br />(Zapomněl jsem.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="Roztomilá zvířata se mi líbí."
+  />
+
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah mluví na Emu." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="Lidé mluví německy v Německu."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## Viz také
+* [O: musím si zapamatovat názvy jazyků a zemí?](/cs/languages-countries/)
+* [O: není 'jan li toki Seki' trochu zvláštní?](/cs/named-verbs/)

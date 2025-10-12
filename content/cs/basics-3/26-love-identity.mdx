@@ -1,0 +1,67 @@
+---
+slug: "cs/26"
+title: "lekce 26: láska a identita"
+description: "Naučte se olin, unpa, mama, mije, meli, tonsi, en!"
+practice:
+  - l1: "Můj táta miluje mojí mámu."
+    l2: "mama mije mi li olin e mama meli mi."
+    junkChips: ["pona"]
+    alsoAccept:
+      - "mama mi mije li olin e mama mi meli."
+      - "mama mi li olin e mama mi." # lol
+  - l1: "Moje přítelkyně je roztomilá."
+    l2: "meli mi li suwi."
+    junkChips: ["pi"]
+  - l1: "Mám rád ženy, muže, i nebinární lidi."
+    l2: "meli en mije en tonsi li pona tawa mi."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Už jste viděl\*a, že **󱤧󱥔󱥩󱤴 ... li pona tawa mi** je častý způsob, jak říct '*mám rád ...*'. A samozřejmě můžeme říct **󱥔󱤼 pona mute**, když chceme říct, že někoho máme *hodně rádi*. To ale není stejné jako někoho *milovat*! Tak se podívejme na slova pro lásku a jak říkat lidem, které milujete:
+
+<List>
+  <Word sl="olin" m="milovat" />
+  <Word sl="unpa" m="mít sex" />
+  <Word sl="mama" m="rodič" />
+  <Word sl="mije" m="muž, maskulinní osoba, manžel; samec" />
+  <Word sl="meli" m="žena, femininní osoba, manželka; samice" />
+  <Word sl="tonsi" m="nebinární, genderově nekonformní; trans" />
+</List>
+
+Mnoho jazykových kurzů začíná se slovy pro "muž, žena, dívka, chlapec, matka, otec" atd.. V toki poně není pohlaví tak důležité. Neuvidíte **󱤵 mije**, **󱤳 meli**, **󱥾 tonsi** v každé větě. Většinou se objevují jen při mluvení o společenských normách o pohlaví a obzvlášť o vztazích. 
+
+<List>
+  <Sentence sl="Miluji svého přítele." m="I love my boyfriend."/>
+  <Sentence sl="mama o!" m="Mami! (nebo) Tati!"/>
+  <Sentence sl="mi olin e meli." m="Jsem na holky."/>
+</List>
+
+Slovo 'nebinární' pochází z nedávné západní kultury, ale identita, která se liší od mužů a žen, existuje v mnoho dalších kulturách z různých období, jako skytské [enarei](https://en.wikipedia.org/wiki/Enaree), samojské [fa'afafine](https://en.wikipedia.org/wiki/Fa%CA%BBafafine), thajské [kathoey](https://en.wikipedia.org/wiki/Kathoey), atd.. **󱥾 tonsi** je slovo, které popisuje jakoukoliv z nich, neimplikuje žádnou specifickou kulturu.
+
+Pár dalších příkladů situací, kde by pohlaví mohlo být relevantní:
+
+<List>
+  <Sentence sl="len mi li mije." m="Oblékám se maskulinně." />
+  <Sentence sl="jan olin mi li tonsi." m="Můj partner je nebinární." />
+  <Sentence sl="mi meli e sijelo mi kepeken misikeke." m="Dělám svoje tělo femininnějším pomocí léků." />
+</List>
+
+## mnoho podmětů
+Už jsme viděli, jak můžeme použít *'e ... e ...'*, když máme více předmětů ve větě a jak můžeme použít *'li ... li ...'*, když máme více sloves. Ale nemůžeme jen tak dát několik podmětů vedle sebe, protože bychom nevěděli kde jeden podmět začíná a druhý končí. Tenhle problém vyřešíme tak, že mezi ně dáme novou částici:
+
+<List>
+  <Word sl="en" m="spojuje podměty" />
+  <Sentence sl="mi en ona li toki." m="Já a ona si píšeme." />
+  <Sentence sl="soweli en waso li utala." m="Zvíře a pták bojují." />
+  <Sentence sl="meli en mije li unpa." m="Muž a žena mají sex." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## Viz také
+* [Hlubší diskuze o pohlaví v toki poně, od wan Tasin](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/)

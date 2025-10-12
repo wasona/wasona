@@ -1,0 +1,65 @@
+---
+slug: "cs/23"
+title: "lekce 23: místa"
+description: "Naučte se pi, selo, insa, monsi, sinpin, anpa!"
+practice:
+  - l1: "Stromová kůra chrání vnitřek stromu."
+    l2: "selo kasi li awen e insa kasi."
+    junkChips: ["pi"]
+  - l1: "Zdi domu jsou poškozené."
+    l2: "sinpin tomo li pakala."
+    junkChips: ["pi"]
+  - l1: "Zdi tohoto domu potřebují cihly."
+    l2: "sinpin pi tomo ni li wile e leko."
+    junkChips: ["telo"]
+  - l1: "Sunitin pták je rostomilý."
+    l2: "waso pi jan Sunita li suwi."
+    junkChips: ["e"]
+  - l1: "Belgie je vedle Francie."
+    l2: "ma Pesije li lon poka pi ma Kanse."
+    junkChips: ["e"]
+  - l1: "Tvá žába je za mnou."
+    l2: "akesi sina li lon monsi pi akesi mi."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+V minulé lekci jsme se podívali na **󱥍 pi**. Jak jste viděl\*a, existuje mnoho frází s dvěma rozumnými významy podle toho, jestli mají nebo nemají **󱥍 pi**. Existuje ale i mnoho frází, které *nedávají moc smysl* když v nich **󱥍 pi** chybí! Často to uvidíte u jmen:
+
+<List>
+  <Sentence sl="soweli pi jan Ema" m="Emin pes" />
+  <Sentence sl="soweli jan Ema" m="lidský pes jménem Ema (???)" />
+  <Sentence sl="toki pi jan Mili" m="Millieina řeč" />
+  <Sentence sl="toki jan Mili" m="lidký jazyk jménem Millie (???)" />
+</List>
+
+Když nepoužijete **󱥍 pi**, tak se jméno váže na to *první* slovo, což může dopadnout podivně! Z tohoto důvodu často narazíte na **󱥍 pi** kolem jmen!
+
+Často ho také najdete za slovy označující místa, jako například tato nová slova: 
+
+<List>
+  <Word sl="selo" m="kůže, slupka, skořápka, kůra" />
+  <Word sl="insa" m="vnitřní část, střed, prostředek" />
+  <Word sl="monsi" m="záda, zadní" />
+  <Word sl="sinpin" m="obličej, předek, zeď" />
+  <Word sl="anpa" m="spodek; porazit" />
+</List>
+
+Použijme je ve větách:
+
+<List>
+  <Sentence sl="selo kasi li kiwen." m="Stromová kůra je tvrdá a dřevěná." />
+  <Sentence sl="selo pi kasi ni li pakala." m="Kůra tohoto stromu je poškozená." />
+  <Sentence sl="soweli li lon insa tomo." m="Kočka je uvnitř domu." />
+  <Sentence sl="o tawa insa pi tomo mi!" m="Jdi dovnitř mého domu!" />
+  <Sentence sl="sinpin pi jan Ali li pona." m="Aliho obličej je pohledný." />
+  <Sentence sl="mani li lon anpa pi telo suli." m="Poklad je na dně oceánu." />
+</List>
+
+Tip: jelikož **󱥍 pi** existuje pouze pro přezávorkování, nikdy nebude před jen jedním slovem! Vždy po něm následují dvě nebo více slov.
+
+<Practice exercises={frontmatter.practice} />

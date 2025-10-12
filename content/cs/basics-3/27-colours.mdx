@@ -1,0 +1,68 @@
+---
+slug: "cs/27"
+title: "lekce 27: barvy"
+description: "Naučte se kule, walo, pimeja, laso, loje, jelo, kin!"
+practice:
+  - l1: "V noci se bavím."
+    l2: "tenpo pimeja la mi musi."
+    alsoAccept: ["pimeja la mi musi."]
+    junkChips: ["jelo"]
+  - l1: "Žlutý prášek je na včele."
+    l2: "ko jelo li lon pipi."
+    junkChips: ["loje"]
+  - l1: "Já si taky hraju s barevnými kostkami."
+    l2: "mi kin li musi kepeken leko kule."
+    junkChips: ["e"]
+  - l1: "Sníh mě zaslepuje."
+    l2: "mi ken ala lukin tan ko walo."
+    junkChips: ["seli"]
+  - l1: "Modrá, bílá a červená je na vlajce."
+    l2: "laso en walo en loje li lon lipu."
+    junkChips: ["jelo"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Promluvme si o barvách!
+
+<List>
+  <Word sl="kule" m="barva, druh; barevný" />
+  <Word sl="walo" m="bílá, bledý" />
+  <Word sl="pimeja" m="černá, tmavý" />
+  <Word sl="loje" m="červená, purpurová" />
+  <Word sl="jelo" m="žlutá" />
+  <Word sl="laso" m="zelená, tyrkysová, modrá" />
+</List>
+
+V *sitelen poně* vypadá mnoho slov pro barvy jako *složeniny*: skládají se z trojúhelníku z **󱤞 kule** a dalšího slova, jako **󱤂 ala**, **󱥰 uta**, **󱥤 suno**, **󱤗 kasi**. V sitelen poně je také mnoho dalších složenin: **󱤶 moku**, **󱥉 pali**, **󱤙 kepeken** mají **󱤭 luka** a **󱤕 kalama**, **󱥌 pana**, **󱥡 sona**, **󱥬 toki** používají tři čárky, kterým říkáme *'emitory'* čili *'vyzařovače'*. Klobouk dolů, jestli jste si toho už předtím všiml\*a!
+
+Slova pro barvy samozřejmě označují celé *škály* barev, nejen ty, které tu byly zmíněny. **󱤣 laso** je obzvlášť zajímavé: v toki poně jsou zelená a modrá jen odstíny stejné barvy, jako v japonštině, vietnamštině, zulu a mnoho dalších jazycích. Tyhle dvě věty spolu dávají smysl v toki poně, ale ne v češtině:
+
+<List>
+  <Word sl="kin" m="také" />
+  <Sentence sl="sewi li laso." m="Obloha je modrá." />
+  <Sentence sl="kasi kin li laso." m="Tráva je taky zelená." />
+</List>
+
+## Jsou barvy potřeba?
+
+Stejně jako pohlaví, v toki poně jsou barvy používany méně běžně než byste čekal\*a. V přirozených jazycích slouží barvy často jako jednoduché zkratky pro něco mnohem specifičtějšího: *bílá lež*, *černý trh*, *růžová budoucnost*. Toki pona nemá ráda zkratky, které nejdou hned k pointě:
+
+<List>
+  <Sentence sl="tenpo kama loje" m="(doslova) růžová budoucnost (???)" />
+  <Sentence sl="tenpo kama pona" m="dobrá budoucnost" />
+</List>
+
+Je velký rozdíl mezi bílým domem a Bílým domem:
+
+<List>
+  <Sentence sl="tomo walo" m="bílý dům" />
+  <Sentence sl="tomo ni la jan li lawa e ma Mewika." m="Bílý dům" />
+</List>
+
+Zminuji to až teď, protože barvy jsou nejzřemější příklad, ale vlastně to platí pro jakoukoliv frázi! Než použijete přídavné jméno, je často užitečné se pozastavit a promyslet si: přidávají tahle přídavná jména tu důležitou částo toho, o čem chcete mluvit, nebo jsou to jen zkratky pro něco jiného?
+
+<Practice exercises={frontmatter.practice} />

@@ -1,0 +1,89 @@
+---
+slug: "cs/07"
+title: "lekce 7: jména"
+description: "Naučte se nimi, jan, sitelen, toki, ma, tomo!"
+practice:
+  - l1: "Kreslím zemi."
+    l2: "mi sitelen e ma."
+  - l1: "Tvůj obraz je veliký."
+    l2: "sitelen sina li suli."
+  - l1: "Lidé mluví o domech."
+    l2: "jan li toki e tomo."
+  - l1: "Tvé jméno je Mája."
+    l2: "nimi sina li jan Maja."
+  - l1: "Iman mluví arabsky."
+    l2: "jan Iman li toki Alapi."
+  - l1: "Město Toronto je velké."
+    l2: "ma tomo Towano li suli."
+  - l1: "Vidím cyrilické písmo."
+    l2: "mi lukin e sitelen Kililisa."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Jména
+
+Ukazovat na věci je pěkné, ale občas je lepší být trochu specifičtější. Představuji: jména! Revoluční technologie, která vám umožňuje mluvit o někom nebo nečem specifickým.
+
+Naučme se slova pro věci, které často mají jména:
+
+<List>
+  <Word sl="nimi" m="jméno, slovo" />
+  <Word sl="jan" m="člověk" />
+  <Word sl="sitelen" m="obraz, písmo; kreslit, psát" />
+  <Word sl="toki" m="mluva, jazyk; mluvit" />
+  <Word sl="ma" m="místo, země" />
+  <Word sl="tomo" m="stavení, místnost, domov" />
+</List>
+
+Jedno jméno už znáte: _sitelen Lasina_! Podívejme se na nějaká jména lidí:
+
+<List>
+  <Sentence sl="jan Nowa" m="člověk jmenovaný Noah (z anglického 'Noah')" />
+  <Sentence sl="jan Ema" m="člověk jmenovaný Ema (z českého 'Ema')" />
+</List>
+
+Z těchto jmen můžete vidět:
+1. Jména jsou přídavná jména: následují další slovo.
+2. Jména začínají velkým písmenem. Když v toki poně vidíte slovo s velkým písmenem, hned víte, že to je jméno!
+3. V _sitelen poně_ píšeme jména ve velkém **󱥂 nimi**. Tomuto rámečku na jména říkáme _kartuše_ jako těm v egyptských hieroglyfech. Pro každou hlásku daného jména vybereme jedno slovo, které na ni začíná. Například 'Ema' může být napsána 󱤉 **e**, 󱤶 **m**oku, 󱤂 **a**la. 
+
+Lidé ale nejsou jediní, kteří mají jména! Podívejme se na jazyk, zemi a město:
+
+<List>
+  <Sentence
+    sl="toki Kanse"
+    m="jazyk jménem francouzština (z francouzského 'français')"
+  />
+  <Sentence sl="ma Tosi" m="země jménem Německo (z německého 'Deutsch')" />
+  <Sentence
+    sl="ma tomo Loma"
+    m="místo budov jménem Řím (z latinského 'Rōma')"
+  />
+</List>
+
+Tato jména nám říkají více o tom, jak se jméno v toki poně vytváří:
+
+4. Jména použity v toki poně se _změní_ na zvukový systém toki pony. V toki poně není **d**, takže slovo Deutsch začíná na **t**. Některé změny jsou malé, například _Noah_ → _Nowa_, některé jsou velké, například _français_ → _Kanse_.
+5. Jména často nejsou z češtiny ani angličtiny. Rádi používáme _endonyma_: jména, která země, jazyky, lidé, atd. používají pro sebe. Jméno pro francouzštinu pochází z francouzštiny!
+
+Procvičme si pouižívání nových slov a jmen ve větách:
+
+<List>
+  <Sentence sl="waso li lukin e ma." m="Pták se dívá na zem." />
+  <Sentence sl="jan li toki e tomo." m="Lidé mluví o budově." />
+  <Sentence sl="jan pona li toki pona." m="Příjemní lidé mluví dobře." />
+  <Sentence sl="nimi ona li jan Kenta." m="Jeho jméno je Kenta." />
+  <Sentence sl="jan Sunita li sitelen e pipi." m="Sunita kreslí brouka." />
+  <Sentence sl="jan Nina li toki Kanse." m="Nina mluví francouzsky." />
+  <Sentence sl="jan Ema li sona pona e ma Tosi." m="Ema dobře zná Německo." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## Viz také
+* [O: jak se řekne moje jméno v toki poně?](/cs/make-a-name/)
+* [O: v sitelen poně jsou jména dlouhá. Jak je můžu zkrátit?](/cs/simpler-cartouches/)

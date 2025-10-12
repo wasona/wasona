@@ -1,0 +1,98 @@
+---
+slug: "cs/17"
+title: "lekce 17: otázky"
+description: "Naučte se anu, seme!"
+practice:
+  - l1: "Zhoršuje tabák ovzduší?"
+    l2: "kasi nasa li ike ala ike e kon?"
+  - l1: "Je tohle cihla?"
+    l2: "ni li leko ala leko?"
+  - l1: "Dokážeš zpívat jako pták?"
+    l2: "sina ken ala ken kalama sama waso?"
+  - l1: "Používáte Google?"
+    l2: "sina kepeken ala kepeken ilo Kuko?"
+  - l1: "Jsem v Itálii?"
+    l2: "mi lon ala lon ma Italija?"
+  - l1: "Tohle stojí peníze, že?"
+    l2: "ni li wile e mani anu seme?"
+  - l1: "Ty umíš Německy, že?"
+    l2: "sina toki Tosi anu seme?"
+  - l1: "Kde je Japonsko?"
+    l2: "ma Nijon li lon seme?"
+  - l1: "Kdo je z Indie?"
+    l2: "jan seme li tan ma Palata?"
+  - l1: "Co chcete jíst?"
+    l2: "sina wile moku e seme?"
+    alsoAccept:
+      - "sina wile e moku seme?"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Otázky
+
+Otázky se obvykle dělí na dva typy:
+* *ano / ne otázky*. To jsou otázky, na které se dá odpovědět ano nebo ne, kladně nebo záporně.
+* *otevřené otázky*. Ty jsou pro doplňování informací: kdo to udělal? co udělal? komu? kde? proč?
+
+## Ano / ne otázky
+
+### Otázka
+Pamatujete si, jak jsme se v předchozí lekci naučili, že můžeme vytvořit zápor věty tím, že najdeme první slovo slovesa? Pro ano / ne otázky děláme něco podobného. *Zdvojnásobíme* první slovo slovesa a dáme mezi ně **󱤂 ala**: 
+
+<List>
+  <Word sl="moku ala moku" m="jí ... ?" />
+  <Sentence sl="pipi li moku ala moku e len?" m="Jí můra látku?" />
+  <Word sl="pona ala pona" m="je ... dobré?" />
+  <Sentence sl="kalama musi li pona ala pona tawa sina?" m="Je hudba dobrá pro tebe? (Máš rád hudbu?)" />
+  <Word sl="wile ala wile" m="chce ... ...?" />
+  <Sentence sl="sina wile ala wile lape lon supa?" m="Chceš spát v posteli?" />
+  <Word sl="lon ala lon" m="je ... v ...?" />
+  <Sentence sl="ona li lon ala lon ma Mewika?" m="Je ve Spojených státech?" />
+</List>
+Pro čecha to zní trochu podivně! Ale něco podobného používá [mandarínština](https://en.wikipedia.org/wiki/A-not-A_question#A-not-AB_form_4).
+
+### Odpověď
+Čeština má samostatné slovo pro 'ano'. Toki pona místo toho dělá to, co dělá finština, mandarínština, latina a mnoho dalších jazyků: pro 'ano' odpovíte slovesem a pro 'ne' odpovíte slovesem + **󱤂 ala**.
+
+<List>
+  <Sentence sl="sitelen li musi ala musi?" m="Je video zábavné?" />
+  <Word sl="musi." m="zábavné. (= Ano, je.)" />
+  <Word sl="musi ala." m="nezábavné. (= Ne, není.)" />
+</List>
+Vzor **S ala S** je velmi běžný! Ale ještě je tu jeden:
+
+<List>
+  <Word sl="seme" m="co? který?" />
+  <Word sl="anu" m="nebo" />
+  <Word sl="anu seme" m="... že? že ano? nebo co?" />
+</List>
+
+Přidáním **󱤇󱥙 anu seme** na konec jakékoliv oznamovací věty z ní vytvoříte otázku:
+
+<List>
+  <Sentence sl="sitelen li musi anu seme?" m="Video je zábavné, že?" />
+</List>
+
+Můžete odpovědět buď **󱤻 musi**, nebo **󱤻󱤂 musi ala**, stejně jako na normální ano / ne otázku! Ale má to trochu jiný tón. Když použijete **󱤇󱥙 anu seme**, tak spíše očekáváte, že ten druhý s vámi bude souhlasit.
+
+## Otevřené otázky
+
+Zrovna jsme se naučili, že **󱥙 seme** znamená 'co?', což je to nejdůležitější část *otevřených otázek*! **󱥙 seme** je jako prázdné místo ve větě, kam chcete, aby ten druhý doplnil jejich informace:
+
+<List>
+  <Sentence sl="waso li lon seme?" m="Kde je pták? (dosl. 'Pták je v čem?')" />
+  <Sentence sl="waso li lon tomo." m="Pták je doma." />
+  <Sentence sl="soweli li utala e jan seme?" m="Koho napadlo zvíře? (dosl. 'Zvíře napadlo jakého člověka?')" />
+  <Sentence sl="soweli li utala e jan Ema." m="Zvíře napadlo Emu." />
+</List>
+
+Všimněte si, že v odpovědi se jenom **󱥙 seme** vymění za odpověď -- všechno ostatní ve větě zůstává ve stejném pořadí! Tohle se nepodobá češtině, kde otázky prohazují pořadí slov, aby tázací slovo bylo první, ale toki pona to tak nedělá.
+
+<Practice exercises={frontmatter.practice} />
+
+## Viz také
+* [O: jak se řekne 'dělat'?](/en/doing/)

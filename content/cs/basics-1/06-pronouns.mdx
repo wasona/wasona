@@ -1,0 +1,79 @@
+---
+slug: "cs/06"
+title: "lekce 6: zájmena"
+description: "Naučte se ni, mi, sina, ona!"
+practice:
+  - l1: "Tohle je sladká rostlina."
+    l2: "ni li kasi suwi."
+  - l1: "Tohle jsou velké oči."
+    l2: "ni li lukin suli."
+  - l1: "Tvé oči jsou velké."
+    l2: "lukin sina li suli."
+  - l1: "Tenhle pták je malinký."
+    l2: "waso ni li lili."
+  - l1: "Zlí brouci snědli moje rostliny."
+    l2: "pipi ike li moku e kasi mi."
+  - l1: "Jsi roztomilý/á."
+    l2: "sina suwi."
+  - l1: "I see them."
+    l2: "Vidím je."
+  - l1: "Jí dobře."
+    l2: "ona li moku pona."
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Zájmena
+
+Už máte pravděpodobně dost dlouhých vět a šaškáren se slovnímy druhy. Zpomalme trochu a podívejme se na ukazování:
+
+<List>
+  <Word sl="ni" m="tohle, tamto" />
+  <Sentence sl="ni li soweli." m="Tohle je zvíře." />
+  <Sentence sl="ni li kasi." m="Tohle je rostlina." />
+  <Sentence sl="ni li moku suwi." m="Tohle je sladké jídlo." />
+  <Sentence sl="ni li suli." m="Tohle je důležité." />
+  <Sentence sl="ni li pona wawa." m="Tohle je úžasně dobré." />
+</List>
+
+Tohle jsou naše první _věty bez předmětu_, takže v nich není žádné **󱤉 e**!
+
+Možná se ptáte: **󱤧 li** sice značí sloveso, ale kde je to sloveso? V češtině je tím slovesem 'být'. V toki poně ale žádné sloveso 'být' není. Místo toho slova, která plní roli slovesa, automaticky zahrnují 'být' v jejich významu: **󱥢 soweli** 'být zvíře', **󱥣 suli** 'být důležitý'.
+
+Když už známe jedno zájmeno, podívejme se na nějaká další:
+
+<List>
+  <Word sl="mi" m="já, my; můj, náš" />
+  <Word sl="sina" m="ty, vy; tvůj, váš" />
+  <Word sl="ona" m="on, ona, ono, oni, ony, ona; jeho, její, jejich" />
+</List>
+
+Procvičme si používání **󱤴 mi**, **󱥞 sina**, **󱥆 ona** a **󱥁 ni** ve větách:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Tahle rostlina je velká." />
+  <Sentence sl="sona sina li wawa." m="Tvé znalosti jsou úžasné." />
+  <Sentence sl="pipi ni li pipi mi." m="Tento hmyz je můj hmyz." />
+  <Sentence sl="waso sina li lukin e mi." m="Tvůj pták mě vidí." />
+  <Sentence sl="waso li moku e pipi ni." m="Pták jí tohoto brouka." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Moje zvíře jí svojí rostlinu." />
+</List>
+
+Věty tohoto typu by vám měly být povědomé! Ve většině pozicí se zájmena chovají stejně jako normální podstatná a přídavná jména. Jenže když je podmět věy **󱤴 mi** nebo **󱥞 sina**, stane se něco zvláštního:
+
+<List>
+  <Sentence sl="mi wawa." m="Jsem silný." />
+  <Sentence sl="sina lukin e moku." m="Vidíš jídlo." />
+  <Sentence sl="mi sona e kasi suli." m="Znám velkou rostlinu." />
+  <Sentence sl="sina sona e suli kasi." m="Znáš velikost rostliny." />
+</List>
+
+Toki pona má speciální pravidlo: když je podmětem věty **󱤴 mi** nebo **󱥞 sina**, vynecháme **󱤧 li**, které by normálně následovalo po podmětu. To proto, že věty začínající slovem **󱤴 mi** nebo **󱥞 sina** jsou extrémně běžné!
+
+<Practice exercises={frontmatter.practice} />
+
+## Viz také
+* [O: znamená 'li' 'je'?](/cs/li-and-is/)

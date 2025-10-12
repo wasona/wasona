@@ -1,0 +1,103 @@
+---
+slug: "cs/18"
+title: "lekce 18: pocity"
+description: "Naučte se pilin, jaki, monsuta, pakala, a!"
+practice:
+  - l1: "Cítím se špatně kvůli práci."
+    l2: "mi pilin ike tan pali."
+    junkChips: ["ala"]
+  - l1: "Odstraň ten hnus prosím!"
+    l2: "o weka e jaki!"
+    junkChips: ["pipi"]
+  - l1: "Vítejte! Tohle je jazyková skupina."
+    l2: "kama pona! ni li kulupu toki."
+    junkChips: ["e"]
+  - l1: "Rozumím. Měl bych zpívat jako ty."
+    l2: "sona. mi o kalama sama sina."
+    junkChips: ["e"]
+  - l1: "Ahoj! Ty jsi Ema, že?"
+    l2: "toki! sina jan Ema anu seme?"
+    junkChips: ["li"]
+  - l1: "Tohle zvíře se cítí vyděšeně kvůli oceánu."
+    l2: "soweli ni li pilin monsuta tan telo suli."
+    junkChips: ["sewi"]
+  - l1: "Poškodilo velké zvíře dům?"
+    l2: "soweli suli li pakala ala pakala e tomo?"
+    junkChips: ["seli"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Naučme se jak být v toki poně expresivnější!
+
+<List>
+  <Word sl="pilin" m="cítit, prožívat; srdce" />
+  <Word sl="jaki" m="špinavé, odporné, shnilé" />
+  <Word sl="monsuta" m="děsivá věc, strach" />
+  <Word sl="pakala" m="zníčit, ublížit" />
+  {/* <Word sl="taso" m="ale, jen" />*/}
+</List>
+
+## 󱥎 pilin
+
+Když lidé chtějí vyjádřit, jak se cítí, často používají sloveso **󱥎 pilin** s přídavným jménem:
+
+<List>
+  <Word sl="pilin pona" m="cítit se dobře" />
+  <Word sl="pilin wawa" m="cítit se silně" />
+  <Sentence sl="mi pilin nasa." m="Cítím se zvláštně." />
+  <Sentence sl="sina pilin seme?" m="Jak se cítíš?" />
+  <Sentence sl="mi pilin monsuta tan soweli." m="Bojím se zvířat." />
+</List>
+
+Můžete také mluvit o tom, že něco ovlivňuje **󱥎 pilin sina**, *vaše pocity*:
+
+<List>
+  <Sentence sl="sina pona e pilin mi." m="Zlepšuješ mi náladu." />
+  <Sentence sl="kon li jaki tawa pilin mi." m="Vzduch je odporný pro moje pocity." />
+</List>
+
+## Citoslovce
+*Citoslovce* jsou krátké fráze, které můžou stát samy bez úplné věty. Můžou sloužit jako pozdravy, vyjádření pocitů nebo jako odpovědi v konverzacích.
+
+Podívejme se na pár častých citoslovců v toki poně:
+
+<List>
+  <Word sl="toki!" m="Ahoj! Mluvme!" />
+  <Word sl="pona!" m="Dobřě!" />
+  <Word sl="sona." m="Chápu. Rozumím." />
+  <Word sl="wawa!" m="Neuvěřitelné! Úžasné!" />
+  <Word sl="lon." m="To je pravda." />
+  <Word sl="kama pona!" m="Vítejte!" />
+</List>
+
+Ale tohle nejsou všechny!  Ve správném kontextu může skoro cokoliv být citoslovce:
+
+<List>
+  <Word sl="pipi!" m="(Ááá!) Pavouk!" />
+</List>
+
+Jedno speciální citoslovce je ale **󱤀 a**:
+
+<List>
+  <Word sl="a" m="á, em, aha" />
+</List>
+
+Není to úplně slovo, spíš takový zástupce za jakýkoliv zvuk nadšení, váhání, štěstí, který bychom mohli udělat. Často se používá s jinými citoslovci nebo i v úplných větách:
+
+<List>
+    <Word sl="suwi a!" m="Jak sladké!" />
+    <Word sl="a, ken." m="Aha, tak to možná." />
+    <Word sp="󱤀&zwnj;󱤀&zwnj;󱤀" sl="a a a!" m="hahaha!" />
+</List>
+
+V úplných větách zdůrazňuje to před ním:
+
+<List>
+    <Sentence sl="mi sona ala a e ni!" m="Já tohle <strong>neznám</strong>!" />
+</List>
+
+<Practice exercises={frontmatter.practice} />

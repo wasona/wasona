@@ -1,0 +1,86 @@
+---
+slug: "cs/25"
+title: "lekce 25: čísla"
+description: "Naučte se nanpa, wan, tu, ale, kipisi!"
+practice:
+  - l1: "osm"
+    l2: "luka tu wan"
+    junkChips: ["tu"]
+  - l1: "Krájíš chléb."
+    l2: "sina kipisi e pan."
+    junkChips: ["li"]
+  - l1: "My dva se sjednotíme."
+    l2: "mi tu li kama wan."
+    junkChips: ["pi"]
+  - l1: "Znám tři jazyky."
+    l2: "mi sona e toki tu wan."
+    junkChips: ["luka"]
+  - l1: "5 korun"
+    l2: "mani luka pi ma Seki"
+    junkChips: ["tu"]
+  - l1: "Duben začal."
+    l2: "tenpo mun nanpa tu tu li open."
+    junkChips: ["suno"]
+    alsoAccept: ["mun nanpa tu tu li open."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Základní číslovky
+
+Promluvme si o číslech:
+
+<List>
+  <Word sl="wan" m="jedna; sjednocený" />
+  <Word sl="tu" m="dva; rozdělený" />
+  <Word sl="luka" m="pět, ruka" />
+  <Word sl="mute" m="mnoho" />
+  <Word sl="ale" m="všechno" />
+  <Word sl="kipisi" m="kus, část; rozdělit" />
+</List>
+
+Toki pona má slova pro 1, 2, 5, ale ne pro 3 nebo 4! To ale není zas tak zvláštní. Představte si **󱥳 wan**, **󱥮 tu**, **󱤭 luka** jako mince s hodnotami 1, 2 a 5. Zkusme napočítat od 1 do 10:
+
+<List>
+    <Word sl="wan" m="jedna" />
+    <Word sl="tu" m="dva" />
+    <Word sl="tu wan" m="tři" />
+    <Word sl="tu tu" m="čtyři" />
+    <Word sl="luka" m="pět" />
+    <Word sl="luka wan" m="šest" />
+    <Word sl="luka tu" m="sedm" />
+    <Word sl="luka tu wan" m="osm" />
+    <Word sl="luka tu tu" m="devět" />
+    <Word sl="luka luka" m="deset" />
+</List>
+
+V mnoho situacích bude stačit znát malé čísla. Ale když chcete mluvit o nákupech nebo o gregoriánském kalendáři, dole najdete dodatečnou stránku o velkých číslech.
+
+## Řádové číslovky
+
+Čísla jsou většinou jen přídavná jména:
+
+<List>
+    <Word sl="kala wan" m="jedna ryba" />
+    <Word sl="soko tu tu" m="čtyři houby" />
+    <Word sl="mun luka" m="pět měsíců" />
+</List>
+
+Ale tohle jsou *základní* číslovky: čísla, která označují množství. Existují také *řádové* číslovky: ty, které mluví o pořadí. řádové číslovky vytvoříme slovem **󱤽 nanpa** + číslo:
+
+<List>
+    <Word sl="nanpa" m="číslo; n-tý" />
+    <Word sl="kala nanpa wan" m="první ryba" />
+    <Word sl="soko nanpa tu tu" m="čtvrtá houba" />
+    <Word sl="mun nanpa luka" m="pátý měsíc" />
+</List>
+
+(Mimochodem **󱤽 nanpa** je speciální! Nepotřebuje **󱥍 pi**.)
+
+<Practice exercises={frontmatter.practice} />
+
+## Viz také
+* [O: jak mluvit o velkých číslech?](/cs/large-numbers/)

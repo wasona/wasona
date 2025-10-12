@@ -1,0 +1,79 @@
+---
+slug: "cs/20"
+title: "lekce 20: čas"
+description: "Naučte se la, tenpo, sike, mun, suno, sin, poka!"
+practice:
+  - l1: "Rostliny fotosyntezují."
+    l2: "kasi li moku e suno."
+    junkChips: ["o"]
+  - l1: "Měsíc se pohybuje po elipse."
+    l2: "mun li tawa lon sike."
+    junkChips: ["suno"]
+    alsoAccept: ["mun li tawa sike."]
+  - l1: "Jsou po tvém boku."
+    l2: "ona li lon poka sina."
+    junkChips: ["e"]
+  - l1: "Býval jsem dítě."
+    l2: "tenpo pini la mi lili."
+    junkChips: ["li"]
+  - l1: "Kupodivu, ten pták mluví jako člověk."
+    l2: "musi la waso li toki sama jan."
+    junkChips: ["e"]
+  - l1: "Když je zima, brouci zmizí."
+    l2: "kon li lete la, pipi li weka."
+    junkChips: ["seme"]
+  - l1: "Můžete, pokud chcete."
+    l2: "sina wile la, sina ken."
+    junkChips: ["kon"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Promluvme si o čase! Možná jste si všiml\*a, že věty překládám nekonzistentně: někdy mluví o přítomnosti, někdy o minulosti, někdy o budoucnosti. To proto, že věty v toki poně samy o sobě nesdělují žádné informace o čase, takže může být jakýkoliv! Ale samozřejmě se můžeme rozhodnout být specifičtější pomocí slov popisující čas.
+
+Naučme se pár z nich:
+
+<List>
+  <Word sl="tenpo" m="čas, okamžik, situace" />
+  <Word sl="sike" m="kulatý, opakující, roční; kruh, koule" />
+  <Word sl="mun" m="měsíc, vesmírné těleso" />
+  <Word sl="suno" m="slunce, světlo; zářivý" />
+  <Word sl="sin" m="nový, čerstvý; znovu" />
+  <Word sl="poka" m="bok, blízkost; poblíž" />
+</List>
+
+Už umíte mluvit o místě v *prostoru*. Místo v *čase* je velmi podobné:
+
+<List>
+  <Word sl="lon tenpo kama" m="v nadcházejícím čase, v budoucnosti" />
+  <Word sl="lon tenpo pini" m="v ukončeném čase, v minulosti" />
+  <Word sl="lon tenpo ni" m="v tento čas" />
+  <Sentence sl="soweli lili mi o kama suli lon tenpo kama!" m="Ať moje kočička v budoucnu vyroste!" />
+  <Sentence sl="ma Loma li ma suli lon tenpo weka." m="Řím byla velká říše v dávném čase." />
+</List>
+
+Čas často slouží něco jako "prostředí" a "kontext" pro zbytek promluvy. Často takový kontext dáváme na začátek věty, jako já zrovna teď! Toki pona má slovo, které s tímto pomáhá:
+
+<List>
+  <Word sl="la" m="co se týče ..., když už jsme u ..., když ..., pokud ... " />
+  <Word sl="ken la" m="možná ..." />
+  <Word sl="open la" m="na začátek, ..." />
+  <Word sl="lipu la" m="co se týče té knihy, ..." />
+  <Word sl="tenpo la" m="někdy, ..." />
+  <Word sl="tenpo pini la" m="v minulosti, ..." />
+  <Word sl="tenpo suno kama la" m="další den, ...; zítra, ..." />
+  <Sentence sl="sin la mi wile toki e ni:" m="Opět chci zdůraznit, že..." />
+  <Sentence sl="mi pali e ni lon tenpo kama poka." m="Budu na tom pracovat už brzy." />
+</List>
+**󱤡 la** může také být mezi dvěma větami a tím je spojovat do jedné. První věta slouží jako podmínka *'když ...'*, a druhá jako výsledek: *'tak ...'*.
+
+<List>
+  <Word sl="suno li pini." m="Slunce zapadá." />
+  <Word sl="mi lape." m="Spím." />
+  <Sentence sl="suno li pini la, mi lape." m="Když zapadá slunce, tak spím." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
