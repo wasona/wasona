@@ -10,8 +10,8 @@ export const langNames: Record<string, string> = {
   pl: "polski",
   pt: "português",
   ru: "русский",
-  he: "עברית",
   ar: "العربية",
+  he: "עברית",
   translate: "add language",
 };
 export const langs = Object.keys(langNames);
