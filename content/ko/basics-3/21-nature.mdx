@@ -1,26 +1,29 @@
 ---
-slug: "en/21"
+slug: "ko/21"
 title: "lesson 21: nature"
 description: "Learn akesi, kala, pan, kili, soko, misikeke, namako!"
 practice:
   - l1: "Fungi consume diseased plants."
     l2: "soko li moku e kasi moli."
+    junkChips: ["mani"]
   - l1: "Bake the dough."
     l2: "o seli e ko pan."
+    junkChips: ["sewi"]
   - l1: "I dug up the potato."
     l2: "mi weka e kili tan ma."
-  # - l1: "I am scared of snakes."  # 21_4
-    # l2: "mi pilin monsuta tan akesi linja."
+    junkChips: ["o"]
   - l1: "Plants need water, sunlight, and land."
     l2: "kasi li wile e telo, e suno, e ma."
+    junkChips: ["soko"]
   - l1: "People talk, have fun, sing, and sleep."
     l2: "jan li toki, li musi, li kalama, li lape."
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 We already know most of the words for animal and plant stuff -- let's learn the remaining ones!
 
@@ -56,6 +59,11 @@ Bread products are often used to hold together several different ingredients:
   <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="The pizza contains condiments." />
 </List>
 
+{/* A note for translators */}
+{/*
+  Your culture may have a different popular food that consists of meat, vegetables, and condiments, put into or onto bread. You are free to replace pizza with that food.
+*/}
+
 But how do we put them together into a single sentence? Well, each of them is the *object* of a sentence. A sentence can have *several objects*: several **󱤉 e**-phrases, which simply go one after the other:
 
 <List>
@@ -74,4 +82,7 @@ This is not special to just **󱤉 e**! You can combine several related ideas in
   <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="The person hunts fish, cooks them, eats them." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+{/* A note for translators */}
+{/* If your language allows it, please list things without an "and" in between. */}
+
+<Practice exercises={frontmatter.practice} />

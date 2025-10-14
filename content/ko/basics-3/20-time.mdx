@@ -1,28 +1,36 @@
 ---
-slug: "en/20"
+slug: "ko/20"
 title: "lesson 20: time"
 description: "Learn la, tenpo, sike, mun, suno, sin, poka!"
 practice:
   - l1: "Plants photosynthesise."
     l2: "kasi li moku e suno."
+    junkChips: ["o"]
   - l1: "The Moon moves along an ellipse."
     l2: "mun li tawa lon sike."
+    junkChips: ["suno"]
+    alsoAccept: ["mun li tawa sike."]
   - l1: "They are by your side."
     l2: "ona li lon poka sina."
+    junkChips: ["e"]
   - l1: "I used to be a child."
     l2: "tenpo pini la mi lili."
+    junkChips: ["li"]
   - l1: "Funnily enough, the bird speaks like a person."
     l2: "musi la waso li toki sama jan."
+    junkChips: ["e"]
   - l1: "When it is cold, bugs disappear."
     l2: "kon li lete la, pipi li weka."
+    junkChips: ["seme"]
   - l1: "You may if you want."
     l2: "sina wile la, sina ken."
+    junkChips: ["kon"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Let's talk about time! You may have noticed I translate the sentences inconsistently: sometimes they talk about the present, sometimes the past, sometimes the future. This is because by default, a Toki Pona sentence carries no time information, so it could be anything! But of course, we can choose to be more specific, by using words related to time.
 
@@ -69,4 +77,4 @@ Time often serves as a sort of "scene", a "context" for the rest of the speech. 
   <Sentence sl="suno li pini la, mi lape." m="When the sun sets, I sleep." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
