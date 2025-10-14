@@ -1,5 +1,5 @@
 ---
-slug: "en/08"
+slug: "ko/08"
 title: "lesson 8: prepositions"
 description: "Learn weka, pana, kama, awen, tawa, lon, tan!"
 practice:
@@ -9,22 +9,29 @@ practice:
     l2: "tawa jan Ali"
   - l1: "You remove the bug from the house."
     l2: "sina weka e pipi tan tomo."
+    junkChips: ["li"]
   - l1: "I like plants. (Plants are good to me.)"
     l2: "kasi li pona tawa mi."
+    junkChips: ["e"]
   - l1: "I gave the bird a caterpillar."
     l2: "mi pana e pipi tawa waso."
+    junkChips: ["li"]
   - l1: "People stay in the house."
     l2: "jan li awen lon tomo."
+    junkChips: ["e"]
   - l1: "Noah goes to France."
     l2: "jan Nowa li tawa ma Kanse."
+    junkChips: ["e"]
   - l1: "Toronto is in Canada."
     l2: "ma tomo Towano li lon ma Kanata."
+    junkChips: ["e"]
+    alsoAccept: ["ma Towano li lon ma Kanata."]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Prepositions
 
@@ -39,6 +46,14 @@ Now that we know some countries, let's talk about travel! But how do you say "go
   <Word sl="lon" m="at, on, in" />
   <Word sl="tan" m="from, because of" />
 </List>
+
+{/* A note for translators */}
+{/*
+  If your language has noun case, please think about
+  how "tawa, lon, tan" compare to your noun cases.
+  The terms "dative case" and "locative case" are
+  especially important to check.
+*/}
 
 A _preposition_ is a word that goes before another word. It tells you how it relates to the sentence. A preposition + the word it attaches is called a _prepositional phrase_:
 
@@ -59,7 +74,7 @@ In Toki Pona, prepositional phrases can be used one of two ways. Firstly we can 
   />
 </List>
 
-Secondly, what if we want to talk about location or direction... without anything else happening? Fortunately, we can do that too. Prepositional phrases can come directly after **󱤧 li**, and act as the verb all by themselves. When prepositions act as verbs, they mean: **󱥩 tawa** 'to go to', **󱤬 lon** 'to be at', **󱥧 tan** 'to come from':
+Secondly, what if we want to talk about location or direction...without anything else happening? Fortunately, we can do that too. Prepositional phrases can come directly after **󱤧 li**, and act as the verb all by themselves. When prepositions act as verbs, they mean: **󱥩 tawa** 'to go to', **󱤬 lon** 'to be at', **󱥧 tan** 'to come from':
 
 <List>
   <Sentence sl="jan Ema li tawa ma Nijon." m="Emma goes to Japan." />
@@ -82,6 +97,15 @@ Let's practice with these sentences:
     sl="soweli suwi li pona tawa mi."
     m="Cute animals are good to me.<br />(I like cute animals.)"
   />
+
+{/* A note for translators */}
+{/*
+  Some languages have a verb "I like ...",
+  other languages have a verb more like "to me it is nice ...".
+  If your language is more like the second group,
+  you might not need the text in brackets.
+*/}
+
   <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah speaks to Emma." />
   <Sentence
     sl="jan li toki Tosi lon ma Tosi."
@@ -89,8 +113,8 @@ Let's practice with these sentences:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: do I have to memorise language and country names?](en/languages-countries)
-* [Q: isn't 'jan li toki Inli' a bit strange?](en/named-verbs)
+* [Q: do I have to memorise language and country names?](/ko/languages-countries/)
+* [Q: isn't 'jan li toki Inli' a bit strange?](/ko/named-verbs/)

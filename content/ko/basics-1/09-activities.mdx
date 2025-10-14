@@ -1,28 +1,33 @@
 ---
-slug: "en/09"
+slug: "ko/09"
 title: "lesson 9: activities"
 description: "Learn utala, lape, musi, nasa, kalama, wile, ken, alasa!"
 practice:
   - l1: "A cute bird sleeps."
     l2: "waso suwi li lape."
+    junkChips: ["e"]
   - l1: "Its name is long."
     l2: "nimi ona li suli."
+    junkChips: ["e"]
   - l1: "to want to have fun"
     l2: "wile musi"
   - l1: "to try to sing"
     l2: "alasa kalama"
   - l1: "I start to draw the plant."
     l2: "mi kama sitelen e kasi."
+    junkChips: ["li"]
   - l1: "The cub can fight playfully."
     l2: "soweli lili li ken utala musi."
+    junkChips: ["e"]
   - l1: "I try to go to China."
     l2: "mi alasa tawa ma Sonko."
+    junkChips: ["li"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Activities
 
@@ -34,8 +39,10 @@ Let's learn some more words for things you can do!
   <Word sl="kalama" m="to produce a sound; sound" />
   <Word sl="musi" m="to have fun; funny, amusing, interesting" />
   <Word sl="nasa" m="strange, unusual, silly, drunken" />
-  {/*<Word sl="lipu" m="paper, card, book, website; a flat thing with 󱥡 info" />*/}
 </List>
+
+{/* A note for translators */}
+{/* When translating "nasa", don't use insults. */}
 
 These words are pretty straightforward! Let's use them in sentences:
 
@@ -50,6 +57,13 @@ These words are pretty straightforward! Let's use them in sentences:
 </List>
 
 ## Preverbs
+
+{/* A note for translators */}
+{/*
+  The word "preverb" likely does not exist in your language.
+  You can either calque it, or use a more popular term
+  for the same thing in your language.
+*/}
 
 Sometimes we want to talk not only about the activity itself, but about how we relate to it. Maybe we _want to_ do something. Maybe we _can_ do something. Maybe we _start_ or _keep on_ doing something.
 
@@ -75,7 +89,6 @@ Preverbs are very versatile! Let's look at some phrases with preverbs:
   <Word sl="wile lape" m="to want to sleep" />
   <Word sl="awen pona" m="to continue to be good" />
   <Word sl="kama sona" m="to become knowledgeable, to learn" />
-  {/* <Word sl="sona sitelen" m="to know how to draw" /> */}
   <Word sl="alasa kama wawa" m="to try to become strong" />
 </List>
 
@@ -83,7 +96,6 @@ Let's try to use preverbs in sentences:
 
 <List>
   <Sentence sl="waso lili li wile lape." m="The small bird wants to sleep." />
-  {/* <Sentence sl="jan li sona moku e kasi." m="People know how to eat plants." /> */}
   <Sentence sl="mi kama sona e toki pona." m="I learn Toki Pona." />
   <Sentence sl="sina alasa tawa ma Tosi." m="You try to go to Germany." />
   <Sentence
@@ -92,7 +104,7 @@ Let's try to use preverbs in sentences:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: are there any more preverbs?](en/more-preverbs/)
+* [Q: are there any more preverbs?](/ko/more-preverbs/)
