@@ -1,32 +1,41 @@
 ---
-slug: "en/15"
+slug: "ko/15"
 title: "lesson 15: with and like"
 description: "Learn sama, kepeken, leko, ante, pali!"
 practice:
   - l1: "I translate."
     l2: "mi ante e toki."
+    junkChips: ["li"]
   - l1: "You are still working on a novel."
     l2: "sina awen pali e lipu suli."
+    junkChips: ["li"]
   - l1: "He has fun using drawings."
     l2: "ona li musi kepeken sitelen."
+    junkChips: ["e"]
   - l1: "Ali fixed the desk with glue."
     l2: "jan Ali li pona e supa kepeken ko."
+    junkChips: ["sona"]
   - l1: "I sing like Noah."
     l2: "mi kalama sama jan Nowa."
+    junkChips: ["e"]
   - l1: "I use Wikipedia."
     l2: "mi kepeken lipu Wikipesija."
+    junkChips: ["li"]
   - l1: "This rock is like a cat."
     l2: "kiwen ni li sama soweli."
+    junkChips: ["e"]
   - l1: "I don't want to move."
     l2: "mi wile ala tawa."
+    junkChips: ["pali"]
   - l1: "The large bird moves like an animal."
     l2: "waso suli li tawa sama soweli."
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## With and like
 
@@ -37,6 +46,14 @@ In lesson 8, we learned three prepositions: **󱥩 tawa**, **󱤬 lon**, **󱥧 
   <Word sl="sama" m="similar to, same as" />
 </List>
 
+{/* A note for translators */}
+{/*
+  If your language has instrumental case, you can compare
+  kepeken to instrumental case. But be careful: kepeken is
+  *not* used when you are doing something alongside someone,
+  e.g.: "I am walking with Emma."
+*/}
+
 Let's learn a few more words that go well with these prepositions:
 
 <List>
@@ -44,6 +61,14 @@ Let's learn a few more words that go well with these prepositions:
   <Word sl="pali" m="to work, to build" />
   <Word sl="leko" m="brick, block" />
 </List>
+
+{/* A note for translators */}
+{/*
+  Your language may have a word for "any activity". e.g.:
+  "what are you *doing*? - I'm working. I'm sleeping. I'm eating."
+  Please avoid translating "pali" with that word.
+  "pali" is specifically "working", putting in effort.
+*/}
 
 Remember, prepositions start prepositional phrases:
 
@@ -94,7 +119,7 @@ Some of them, like **󱥩 tawa**, **󱤬 lon**, are used this way very frequentl
   <Sentence sl="mi sona ala e tan." m="I don't know the reason." />
 </List>
 
-We often like to shape sentences in such a way that it's impossible to misread these as "prepositions" notice how there's no phrase immediately after them!
+We often like to shape sentences in such a way that it's impossible to misread these as "prepositions" -- notice how there's no phrase immediately after them!
 
 Sometimes you can make very similar sentences, except one has a verb like **󱥩 tawa** or **󱤬 lon**, and the other has a preposition **󱥩 tawa** or **󱤬 lon**!
 Make sure not to confuse these pairs:
@@ -112,4 +137,4 @@ Make sure not to confuse these pairs:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

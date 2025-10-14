@@ -1,5 +1,5 @@
 ---
-slug: "en/04"
+slug: "ko/04"
 title: "lesson 4: adjectives"
 description: "Learn suli, lili, pona, ike, wawa, suwi!"
 practice:
@@ -11,14 +11,16 @@ practice:
     l2: "waso wawa"
   - l1: "The bird knows a strong animal."
     l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
   - l1: "A tiny insect looks at a big animal."
     l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Describe!
 
@@ -45,6 +47,12 @@ In English, adjectives go before the noun. But in Toki Pona, they always go afte
 
 English speakers sometimes find this order confusing, but this is how it works in French, Irish, Arabic, Malay, and many other languages. Think of it this way: the first word is always the most important!
 
+{/* A note for translators */}
+{/*
+  If your language puts adjectives after nouns, just like Toki Pona,
+  please highlight this as a nice similarity between the two languages.
+*/}
+
 Let's make some sentences with descriptions:
 
 <List>
@@ -70,4 +78,4 @@ If these sentences feel long and tiresome, don't worry! We will look at some sho
 
 Here's something interesting: in English, adjectives only go on nouns. But in Toki Pona, they can go on verbs too: _to bite a little_ ~ _moku lili_, _to know well_ ~ _sona pona_. There is no difference between adjectives and adverbs in Toki Pona.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

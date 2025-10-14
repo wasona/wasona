@@ -1,28 +1,35 @@
 ---
-slug: "en/18"
+slug: "ko/18"
 title: "lesson 18: feelings"
 description: "Learn pilin, jaki, monsuta, pakala, a!"
 practice:
   - l1: "I feel bad because of work."
     l2: "mi pilin ike tan pali."
+    junkChips: ["ala"]
   - l1: "Please remove the filth!"
     l2: "o weka e jaki!"
+    junkChips: ["pipi"]
   - l1: "Welcome! This is a language group."
     l2: "kama pona! ni li kulupu toki."
+    junkChips: ["e"]
   - l1: "I see. I should sing like you."
     l2: "sona. mi o kalama sama sina."
+    junkChips: ["e"]
   - l1: "Hello! You are Emma, right?"
     l2: "toki! sina jan Ema anu seme?"
+    junkChips: ["li"]
   - l1: "This animal feels scared because of the ocean."
     l2: "soweli ni li pilin monsuta tan telo suli."
+    junkChips: ["sewi"]
   - l1: "Did the large animal damage the house?"
     l2: "soweli suli li pakala ala pakala e tomo?"
+    junkChips: ["seli"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Let's learn how to be more expressive in Toki Pona!
 
@@ -50,7 +57,7 @@ You can also talk about something affecting **󱥎 pilin sina**, *your sensation
 
 <List>
   <Sentence sl="sina pona e pilin mi." m="You make me feel better." />
-  <Sentence sl="kon li jaki tawa pilin." m="The air feels foul to me." />
+  <Sentence sl="kon li jaki tawa pilin mi." m="The air feels foul to my senses." />
 </List>
 
 ## Interjections
@@ -94,4 +101,4 @@ When used in full sentences, it emphasises whatever it comes after:
     <Sentence sl="mi sona ala a e ni!" m="I do <strong>not</strong> know that!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

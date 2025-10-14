@@ -1,5 +1,5 @@
 ---
-slug: "en/05"
+slug: "ko/05"
 title: "lesson 5: parts of speech"
 description: "Learn about nouns, verbs, and adjectives!"
 practice:
@@ -15,14 +15,16 @@ practice:
     l2: "pona wawa"
   - l1: "Food makes eyes better."
     l2: "moku li pona e lukin."
+    junkChips: ["waso"]
   - l1: "Animals know the cuteness of birds."
     l2: "soweli li sona e suwi waso."
+    junkChips: ["suli"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Parts of speech
 
@@ -43,7 +45,7 @@ In fact, the same is true of _all_ words: if something is a noun, verb, or adjec
 
 I've only listed *some* words we've learned so far -- just enough to see the patterns:
 * When **verbs become nouns**, they usually mean an act of doing something (*knowledge*), or something that forms a crucial part of the act (*food, eye*).
-* When **verbs become adjectives**, they mean those which do something: (*wise people ~ people who know*)
+* When **verbs become adjectives**, they mean those which do something (*wise people ~ people who know*).
 * When **nouns become verbs**, they usually mean to turn into or apply something to something (*to turn into a bird*).
 * When **nouns become adjectives**, they mean possession or similarity (*of a bird, bird-like*)
 * When **adjectives become nouns**, they mean a quality (*goodness, size*).
@@ -96,8 +98,9 @@ Remember how li and e seemed a little unnecessary? Now that we know any meaningf
     m="The animal knows how good the bird is."
   />
 </List>
+
 If you are ever confused about how to read or write a sentence, start by asking:
 "Where is the subject? Where is the verb? Where is the object?", and everything
 neatly separates into small phrases!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
