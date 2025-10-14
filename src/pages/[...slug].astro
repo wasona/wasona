@@ -9,17 +9,15 @@ import { getLang, posts, prevnexts } from "@/utils/content";
 import { type CollectionEntry, render } from "astro:content";
 import { BaseHead, Footer, Header } from "selo-components";
 
-export async function getStaticPaths() {
-  const paths = posts.map((post, i) => ({
+export const getStaticPaths = async () =>
+  posts.map((post) => ({
     params: { slug: post.id },
-    props: { ...post },
+    props: post,
   }));
-  return paths;
-}
+
 const rtl = ["he", "ar"];
 
-type Props = CollectionEntry<"blog">;
-const post = Astro.props;
+const post: CollectionEntry<"blog"> = Astro.props;
 const { Content } = await render(post);
 const lang = getLang(post);
 const prevnext = post.filePath!.includes("index.md")
