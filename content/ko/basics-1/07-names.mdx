@@ -1,32 +1,47 @@
 ---
-slug: "en/07"
+slug: "ko/07"
 title: "lesson 7: names"
 description: "Learn nimi, jan, sitelen, toki, ma, tomo!"
 practice:
   - l1: "I draw the land."
     l2: "mi sitelen e ma."
+    junkChips: ["li"]
   - l1: "Your picture is large."
     l2: "sitelen sina li suli."
+    junkChips: ["e"]
   - l1: "People talk about buildings."
     l2: "jan li toki e tomo."
+    junkChips: ["ma"]
   - l1: "Your name is Maya."
     l2: "nimi sina li jan Maja."
+    junkChips: ["e"]
+    alsoAccept: ["sina jan Maja."]
   - l1: "Iman speaks Arabic."
     l2: "jan Iman li toki Alapi."
+    junkChips: ["e"]
   - l1: "The city of Toronto is large."
     l2: "ma tomo Towano li suli."
+    junkChips: ["e"]
   - l1: "I see Cyrillic writing."
     l2: "mi lukin e sitelen Kililisa."
+    junkChips: ["li"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Names
 
 Pointing at things is nice, but sometimes it's nice to be more specific. Introducing: names! A revolutionary technology that allows you to talk about someone or something in particular.
+
+{/* A note for translators */}
+{/*
+  When I say "revolutionary technology", I am humorously pretending
+  to be a TV presenter trying to sell you something. Feel free
+  to adapt the joke or drop it, at your discretion.
+*/}
 
 Let's learn the words for things that often have names:
 
@@ -45,6 +60,12 @@ You already know one name: _sitelen Lasina_! Let's look at some names of people:
   <Sentence sl="jan Nowa" m="person named Noah (from English 'Noah')" />
   <Sentence sl="jan Ema" m="person named Emma (from English 'Emma')" />
 </List>
+
+{/* A note for translators */}
+{/*
+  Please keep the names Nowa and Ema. Your language may also have those names,
+  in which case replace "English" with your language.
+*/}
 
 From these names you can see:
 
@@ -66,7 +87,7 @@ People aren't the only ones to have names! Let's look at a language, a country, 
   />
 </List>
 
-These names tells us more about how a Toki Pona name is made:
+These names tell us more about how a Toki Pona name is made:
 
 4. When names enter Toki Pona, they _change_ to the sound system of Toki Pona. There is no **d** in Toki Pona, so the word Deutsch starts with a **t**. Some changes are small, like _Noah_ → _Nowa_, some are large, like _français_ → _Kanse_.
 5. Names are often not from English. We like to use _endonyms_: self-names of countries, languages, people, and so on. The name for French comes from French!
@@ -83,8 +104,8 @@ Let's practice using the new words and names in sentences:
   <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma knows Germany well." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: what's my name in Toki Pona?](en/make-a-name)
-* [Q: in sitelen pona, names look long. How can I make them shorter?](en/simpler-cartouches)
+* [Q: what's my name in Toki Pona?](/ko/make-a-name/)
+* [Q: in sitelen pona, names look long. How can I make them shorter?](/ko/simpler-cartouches/)

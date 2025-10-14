@@ -1,28 +1,35 @@
 ---
-slug: "en/14"
+slug: "ko/14"
 title: "lesson 14: negation"
 description: "Learn ala!"
 practice:
   - l1: "You do not eat bugs."
     l2: "sina moku ala e pipi."
+    junkChips: ["li"]
   - l1: "People do not know me."
     l2: "jan li sona ala e mi."
+    junkChips: ["o"]
   - l1: "No one knows me."
     l2: "jan ala li sona e mi."
+    junkChips: ["o"]
   - l1: "Millie does not want the book."
     l2: "jan Mili li wile ala e lipu."
+    junkChips: ["tawa"]
   - l1: "Birds cannot draw houses."
     l2: "waso li ken ala sitelen e tomo."
+    junkChips: ["lon"]
   - l1: "Anna does not go to Germany."
     l2: "jan Ana li tawa ala ma Tosi."
+    junkChips: ["e"]
   - l1: "Iman is not in the US."
     l2: "jan Iman li lon ala ma Mewika."
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Negation
 
@@ -32,7 +39,7 @@ We've just learned how to ask someone to do something. But how do we ask someone
   <Word sl="ala" m="not" />
 </List>
 
-In English, it's kind of a special word. But in Toki Pona, its a pretty normal adjective! And like any other adjective, it goes after the word. You will often find it on nouns, adjectives, and verbs alike:
+In English, it's kind of a special word. But in Toki Pona, it's a pretty normal adjective! And like any other adjective, it goes after the word. You will often find it on nouns, adjectives, and verbs alike:
 
 <List>
   <Word sl="jan ala" m="no person, not a person" />
@@ -59,4 +66,4 @@ You may notice something interesting. Although **󱤂 ala** can go anywhere that
 
 This actually makes a lot of sense -- negating the first word in the verb also negates the whole sentence, which we often want!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
