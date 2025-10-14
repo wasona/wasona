@@ -1,11 +1,13 @@
 ---
-import BaseHead from "@/components/BaseHead.astro";
-import Footer from "@/components/Footer.astro";
-import Header from "@/components/Header.astro";
+import "selo-components/common.css"; // has to be above site-specific css
+
+import "@/styles/global.css";
+
 import LangSelect from "@/components/LangSelect.astro";
 import PrevNext from "@/components/PrevNext.astro";
 import { getLang, posts, prevnexts } from "@/utils/content";
 import { type CollectionEntry, render } from "astro:content";
+import { BaseHead, Footer, Header } from "selo-components";
 
 export async function getStaticPaths() {
   const paths = posts.map((post, i) => ({
@@ -31,11 +33,19 @@ const prevnext = post.filePath!.includes("index.md")
 }
 <html lang="en">
   <head>
-    <BaseHead title={post.data.title} description={post.data.description} />
+    <BaseHead
+      title={post.data.title}
+      description={post.data.description}
+      goatcounter="wasona-com.goatcounter.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <Header />
+    <Header useNavbar />
     <main dir={rtl.includes(lang) ? "rtl" : "ltr"}>
       <article>
         <h1>{post.data.title}</h1>
@@ -58,6 +68,6 @@ const prevnext = post.filePath!.includes("index.md")
         }
       </article>
     </main>
-    <Footer />
+    <Footer github="https://github.com/wasona/wasona" />
   </body>
 </html>
