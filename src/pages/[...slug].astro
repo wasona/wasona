@@ -3,11 +3,10 @@ import "selo-components/common.css"; // has to be above site-specific css
 
 import "@/styles/global.css";
 
-import LangSelect from "@/components/LangSelect.astro";
-import PrevNext from "@/components/PrevNext.astro";
+import { Layout } from "selo-components";
+import PageNav from "@/components/PageNav.astro";
 import { getLang, posts, prevnexts } from "@/utils/content";
 import { type CollectionEntry, render } from "astro:content";
-import { BaseHead, Footer, Header } from "selo-components";
 
 export const getStaticPaths = async () =>
   posts.map((post) => ({
@@ -25,47 +24,19 @@ const prevnext = post.filePath!.includes("index.md")
   : prevnexts[lang][post.id];
 ---
 
-{
-  // we can't set lang="he" because that
-  // breaks sitelen pona cartouches! yes, really.
-}
-<html lang="en">
-  <head>
-    <BaseHead
-      title={post.data.title}
-      description={post.data.description}
-      goatcounter="wasona-com.goatcounter.com"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <Header useNavbar />
-    <main dir={rtl.includes(lang) ? "rtl" : "ltr"}>
-      <article>
-        <h1>{post.data.title}</h1>
-        {
-          prevnext ? (
-            <PrevNext prevnext={prevnext} />
-          ) : (
-            <LangSelect current={post.id} />
-          )
-        }
-        <section>
-          <Content />
-        </section>
-        {
-          prevnext ? (
-            <PrevNext prevnext={prevnext} />
-          ) : (
-            <LangSelect current={post.id} />
-          )
-        }
-      </article>
-    </main>
-    <Footer github="https://github.com/wasona/wasona" />
-  </body>
-</html>
+<Layout
+  useNavbar
+  title={post.data.title}
+  description={post.data.description}
+  goatcounter="wasona-com.goatcounter.com"
+  github="https://github.com/wasona/wasona"
+  dir={rtl.includes(lang) ? "rtl" : "ltr"}
+>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap"
+    rel="stylesheet"
+    slot="head"
+  />
+  <PageNav prevnext={prevnext} current={post.id} slot="pagenav" />
+  <Content />
+</Layout>
