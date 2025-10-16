@@ -15,7 +15,7 @@ export const getStaticPaths = async () =>
 
 const rtl = ["he", "ar"];
 
-const post: CollectionEntry<"blog"> = Astro.props;
+const post: CollectionEntry<"content"> = Astro.props;
 const { Content } = await render(post);
 const lang = getLang(post);
 const prevnext = post.filePath!.includes("index.md")

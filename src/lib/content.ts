@@ -9,10 +9,10 @@ export const by =
 
 const POSTS = "content/";
 
-export const getLang = (post: CollectionEntry<"blog">) =>
+export const getLang = (post: CollectionEntry<"content">) =>
   post.filePath!.replace(POSTS, "").split("/")[0];
 
-export const posts = await getCollection("blog");
+export const posts = await getCollection("content");
 // export const langs = (() => {
 //   const rawLangs = new Set(posts.map(getLang));
 //   rawLangs.delete("index.md");

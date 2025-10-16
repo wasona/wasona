@@ -3,8 +3,8 @@ import { locales } from "@/lib/i18n";
 import { type CollectionEntry } from "astro:content";
 interface Props {
   prevnext: {
-    prev?: CollectionEntry<"blog">;
-    next?: CollectionEntry<"blog">;
+    prev?: CollectionEntry<"content">;
+    next?: CollectionEntry<"content">;
   };
 }
 const { prevnext } = Astro.props;
