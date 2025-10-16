@@ -26,10 +26,16 @@ const prevnext = post.filePath!.includes("index.md")
   description={post.data.description}
   dir={["he", "ar"].includes(lang) ? "rtl" : "ltr"}
 >
+  <!-- Noto Sans Hebrew -->
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap"
     rel="stylesheet"
     slot="head"
+  />
+  <!-- Noto Sans Arabic -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap"
+    rel="stylesheet"
   />
   <PageNav prevnext={prevnext} current={post.id} slot="pagenav" />
   <Content />
