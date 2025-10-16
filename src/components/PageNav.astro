@@ -3,7 +3,7 @@ import { type CollectionEntry } from "astro:content";
 import LangSelect from "./LangSelect.astro";
 import PrevNext from "./PrevNext.astro";
 interface Props {
-  prevnext: {
+  prevnext?: {
     prev?: CollectionEntry<"content">;
     next?: CollectionEntry<"content">;
   };
