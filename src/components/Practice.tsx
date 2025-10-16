@@ -1,6 +1,6 @@
 import ChipExercise from "@/components/ChipExercise.tsx";
 import { KALAMA } from "@/consts";
-import { verifyChips, type Exercise } from "@/utils/exercise";
+import { verifyChips, type Exercise } from "@/lib/exercise";
 import React, { useState } from "react";
 
 const Practice: React.FC<{

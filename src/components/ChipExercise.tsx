@@ -1,5 +1,5 @@
 import { KALAMA } from "@/consts";
-import { tokeniseSentence, type Exercise } from "@/utils/exercise";
+import { tokeniseSentence, type Exercise } from "@/lib/exercise";
 import React, { useEffect, useState } from "react";
 
 // Helper to shuffle words

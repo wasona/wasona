@@ -1,4 +1,4 @@
-import { langs } from "@/utils/i18n";
+import { langs } from "@/lib/i18n";
 import { type CollectionEntry, getCollection } from "astro:content";
 // utilities
 

@@ -1,12 +1,11 @@
 ---
 import "selo-components/common.css"; // has to be above site-specific css
 
-import "@/styles/global.css";
-
-import { Layout } from "selo-components";
 import PageNav from "@/components/PageNav.astro";
-import { getLang, posts, prevnexts } from "@/utils/content";
+import "@/global.css";
+import { getLang, posts, prevnexts } from "@/lib/content";
 import { type CollectionEntry, render } from "astro:content";
+import { Layout } from "selo-components";
 
 export const getStaticPaths = async () =>
   posts.map((post) => ({

@@ -1,6 +1,6 @@
 ---
 import Audio from "@/components/Audio.astro";
-import { locales } from "@/utils/i18n";
+import { locales } from "@/lib/i18n";
 
 const _ = (text: string) => locales[Astro.url.pathname.split("/")[1]][text];
 ---
