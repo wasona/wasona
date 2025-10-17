@@ -1,22 +1,22 @@
 ---
 slug: "en/05"
-title: "lesson 5: parts of speech"
-description: "Learn about nouns, verbs, and adjectives!"
+title: "第五课：词性"
+description: "学习名词，动词，和形容词！"
 practice:
-  - l1: "a strong bug"
+  - l1: "一只强壮的虫子"
     l2: "pipi wawa"
-  - l1: "the strength of the bug"
+  - l1: "一只虫子的力量"
     l2: "wawa pipi"
-  - l1: "a big eye"
+  - l1: "一只大眼睛"
     l2: "lukin suli"
-  - l1: "good food"
+  - l1: "美味的食物"
     l2: "moku pona"
-  - l1: "amazingly good"
+  - l1: "令人惊奇地好"
     l2: "pona wawa"
-  - l1: "Food makes eyes better."
+  - l1: "食物能让眼睛变好。"
     l2: "moku li pona e lukin."
     junkChips: ["waso"]
-  - l1: "Animals know the cuteness of birds."
+  - l1: "动物们知道鸟的可爱"
     l2: "soweli li sona e suwi waso."
     junkChips: ["suli"]
 ---
@@ -26,81 +26,83 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Parts of speech
+## 词性
 
-Some of you may have spotted that I introduced the word **󱥡 sona** twice, first as a verb 'to know', then as an adjective 'wise'. So which is it? And how do you know?
+你可能会注意到，**󱥡 *sona*** 这个词我们介绍了两次：第一次是动词「知道」，第二次是形容词「聪明的」。所以 **󱥡 *sona*** 到底是哪个意思？
 
-In reality, it can be either! If it follows a noun, it's an adjective. If **󱤧 li** introduces it as a verb, then it's a verb. It's all about word order in a sentence!
+其实都可以！如果它跟着一个名词，它就是一个形容词。如果它跟着 **󱤧 *li***，它就是一个名词。这些都是语序决定的！
 
-In fact, the same is true of _all_ words: if something is a noun, verb, or adjective, it can become _any of the three_! Among the words we've already learned, let's look at some examples:
+这个原则适用于**所有词汇**：尽管一个词可能被称为是名词，动词，或是形容词，它可以根据语序变换为**任何一种词性**！让我们来看一些我们学过的词汇的例子：
 
 <List>
-  <Word sl="lukin" m="N: eye; V: to see" />
-  <Word sl="moku" m="N: food; V: to consume, to eat" />
-  <Word sl="sona" m="N: knowledge, wisdom; V: to know; Adj: knowledgeable, wise" />
-  <Word sl="suli" m="N: size; V: to make bigger, to emphasize; Adj: big, important" />
-  <Word sl="pona" m="N: goodness; V: to make better, to improve; Adj: good, pleasant" />
-  <Word sl="waso" m="N: bird; V: to make into a bird; Adj: of a bird, bird-like" />
+  <Word sl="lukin" m="名：眼睛；动：看" />
+  <Word sl="moku" m="名：食物；动：食用" />
+  <Word sl="sona" m="名：知识，智慧；动：知道；形：聪明的，博学的" />
+  <Word sl="suli" m="名：大小；动：强调，增大；形：大的，重要的" />
+  <Word sl="pona" m="名：好；动：改善；形：好的，令人愉快的" />
+  <Word sl="waso" m="名：鸟；动：使变成鸟，使能飞；形：鸟的，像鸟的" />
 </List>
 
-I've only listed *some* words we've learned so far -- just enough to see the patterns:
-* When **verbs become nouns**, they usually mean an act of doing something (*knowledge*), or something that forms a crucial part of the act (*food, eye*).
-* When **verbs become adjectives**, they mean those which do something (*wise people ~ people who know*).
-* When **nouns become verbs**, they usually mean to turn into or apply something to something (*to turn into a bird*).
-* When **nouns become adjectives**, they mean possession or similarity (*of a bird, bird-like*)
-* When **adjectives become nouns**, they mean a quality (*goodness, size*).
-* When **adjectives become verbs**, they impart a quality (*to make better, to make bigger*).
+我只列了一部分我们学过的词，但应该足够你发现规律了：
+* 当动词变为名词时，它们经常代表做某件事情的行为（*sona*「知识」），或是对这个行为至关重要的物体（例如，*moku*「食物」）。
+* 当动词变为形容词时，它们表示做这些事情的人或事物（*sona*「聪明的，有知识的」）。
+* 当名词变为动词时，它们一般表示变为或是使用这个物体（*waso*「使变成鸟，使能飞」）。
+* 当名词变为形容词时，它们表示包含关系或是相似关系（*waso*「鸟的，像鸟一样的」）。
+* 当形容词变为名词时，它们表示这样的一种性质（*pona*「好」，*suli*「大小」）。
+* 当形容词变为动词时，它们表示使得物体拥有这样的性质（*pona*「使变好」，*suli*「使变大」）。
 
-But when talking, we Toki Pona speakers don't even have to think about these patterns most of the time! They start to blend into each other. At some point you stop even thinking about whether something was originally a noun or a verb or an adjective. It becomes a coherent whole!
+在沟通的时候，道本语用者基本都不会去仔细思考这些变化规律，也不会考虑它们原先是名词，动词，还是形容词，变成了一个连贯的整体。
 
-Let's practice using these words as nouns, verbs, and adjectives:
+让我们练习一下：
 
 <List>
-  <Sentence sl="lukin li pona e sona." m="Eyes improve knowledge." />
-  <Sentence sl="moku li suli e pipi." m="Food makes the bugs grow bigger." />
+  <Sentence sl="lukin li pona e sona." m="眼睛能完善你的知识。" />
+  <Sentence sl="moku li suli e pipi." m="食物能使虫子长大。" />
   <Sentence
     sl="moku li wawa e soweli lili."
-    m="Food strengthens the small animal."
+    m="食物使得那只小动物拥有力量。"
   />
 </List>
 
-## Word order matters!
+## 语序很重要！
 
-Since any noun can be an adjective, and any adjective can be a noun, word order really matters! Notice how these two phrases mean different things:
+由于任何名词都可以是形容词，而任何形容词都可以是名词，语序是很重要的！让我们看一看语序不同可能导致的含义的区别：
 
 <List>
-  <Word sl="soweli suli" m="big animal" />
-  <Word sl="suli soweli" m="the size of an animal" />
+  <Word sl="soweli suli" m="大动物" />
+  <Word sl="suli soweli" m="动物的大小" />
   <Sentence
     sl="soweli suli li sona e suli soweli."
-    m="The big animal knows the size of an animal."
+    m="那只大动物知道动物的大小。"
   />
 </List>
 
-## li and e matter, too!
+## *li* 和 *e* 也很重要！
 
-Remember how li and e seemed a little unnecessary? Now that we know any meaningful word can be used anywhere, as a noun, verb, or adjective, we can finally see how important they are. Thanks to them, we can distinguish these three very different sentences:
+还记得 *li* 和 *e* 当时显得很多余吗？现在，由于我们知道词性之间可以做转换，我们已经可以看到它们的重要性了。正是它们的存在使得我们可以区分一下三个句子：
 
 <List>
-  <Word sl="soweli sona" m="wise animal" />
-  <Word sl="sona pona" m="good knowledge; to know well" />
-  <Word sl="pona waso" m="goodness of the bird" />
+  <Word sl="soweli sona" m="聪明的动物" />
+  <Word sl="sona pona" m="了解" />
+  <Word sl="pona waso" m="鸟儿的好" />
   <Sentence
     sl="soweli sona li pona e waso."
-    m="The wise animal helps the bird."
+    m="那只聪明的动物知道那只鸟。"
   />
   <Sentence
     sl="soweli li sona pona e waso."
-    m="The animal knows the bird well."
+    m="那只动物了解那只鸟。"
   />
   <Sentence
     sl="soweli li sona e pona waso."
-    m="The animal knows how good the bird is."
+    m="那只动物知道鸟儿的好。"
   />
 </List>
 
-If you are ever confused about how to read or write a sentence, start by asking:
-"Where is the subject? Where is the verb? Where is the object?", and everything
-neatly separates into small phrases!
+如果你在任何时候对如何读写句子感到困惑，那么问自己以下几个问题：
+
+1. 主语在哪里？
+2. 谓语在哪里？
+3. 宾语在哪里？
 
 <Practice exercises={frontmatter.practice} />
