@@ -4,16 +4,14 @@ title: "Translate Wasona!"
 description: "Help us by translating the course to your language!"
 ---
 
-**Wasona needs translators!** Wasona is currently available in [English](/), [German](/de/), [Spanish](/es/), [Hungarian](/hu/), [Polish](/pl/), [Portuguese](/pt/), [Russian](/ru/), and [Hebrew](/he/). If you want to add a new translation, tell me on Discord (@kala_asi) or via email (kala.asi.la@gmail.com). I'll help out in any way I can!
+**Wasona needs translators!** Wasona is currently available in [English](/), [German](/de/), [Spanish](/es/), [Hungarian](/hu/), [Polish](/pl/), [Portuguese](/pt/), [Russian](/ru/), [Arabic](/ar), and [Hebrew](/he/). If you want to add a new translation, tell me on Discord (@kala_asi) or via email (kala.asi.la@gmail.com). I'll help out in any way I can!
 
 **Some notable languages without good Toki Pona courses**: Hindi, Swahili, Thai, Vietnamese, Turkish. If you speak any of them, we would love your help!
 
 **Ongoing translation projects:**
-
 * [Tagalog](https://github.com/wasona/wasona/pull/8) by jan juna Jona
 * [Korean](https://github.com/wasona/wasona/pull/11) by jyh
 * [Indonesian](https://github.com/wasona/wasona/pull/12) by jan Asipa
-* [Arabic](https://github.com/wasona/wasona/pull/22) by jan linluwi Mota
 * [French](https://github.com/wasona/wasona/pull/32) by jan Lisente, jan Kakili
 * [Persian](https://github.com/wasona/wasona/pull/36) by jan Ali
 * [Catalan](https://github.com/wasona/wasona/pull/43) by jan Suwapeto
