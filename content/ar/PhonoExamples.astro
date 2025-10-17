@@ -1,0 +1,50 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>الكلمة</th>
+      <th>المعنى</th>
+      <th>نصائح مفيدة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="jan" />
+      <td>شخص</td>
+      <td>تذكّر كيف يُلفظ حرف "<b>j</b>"!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="pan" />
+      <td>خبز</td>
+      <td>تذكّر كيف يُلفظ حرف "**<b>p</b>**"!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>رقم</td>
+      <td
+        >بالمناسبة، دائمًا نكتبها "<b>np</b>"، لكن في معظم الأحيان نلفظها مثل "<b>mp</b>"!
+      </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>صوت</td>
+      <td>حاول أن تضع النبر على المقطع الأوّل!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>زاحف</td>
+      <td>يمكن أن تبدأ الكلمات بحرف علّة!</td>
+    </tr>
+  </tbody>
+</table>

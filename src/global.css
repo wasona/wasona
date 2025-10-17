@@ -4,6 +4,9 @@
     --accent-bg: #f4cbaa;
     --button-in: #e3e3e3;
     --button-out: #979797;
+    --font:
+        "nasin-nanpa", "Nunito", "Noto Sans Hebrew", "Noto Sans Arabic",
+        sans-serif;
 }
 .dark {
     --accent: #e78533;

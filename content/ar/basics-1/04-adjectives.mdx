@@ -1,0 +1,73 @@
+---
+slug: "ar/04"
+title: "الدرس الرابع: الصفات"
+description: "تعلّم suli، lili، pona، ike، wawa، suwi!"
+practice:
+  - l1: "حيوان لطيف"
+    l2: "soweli suwi"
+  - l1: "حشرة سيئة"
+    l2: "pipi ike"
+  - l1: "طائر قوي"
+    l2: "waso wawa"
+  - l1: "يعرف الطائر حيوان قوي."
+    l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
+  - l1: "ترى حشرة صغيرة حيوان كبير."
+    l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## صِف!
+
+الآن تعلمت بعض الأسماء والأفعال. حان الوقت لإضافة الصفات!
+لنحفظ بعضًا منها:
+
+<List>
+  <Word sl="suli" m="كبير، عظيم، مهم" />
+  <Word sl="lili" m="صغير" />
+  <Word sl="pona" m="جيّد" />
+  <Word sl="ike" m="سيّء" />
+  <Word sl="wawa" m="قوي، رائع" />
+  <Word sl="sona" m="عليم، مثقّف، حكيم" />
+  <Word sl="suwi" m="لطيف" />
+</List>
+
+في التوكي بونا، تلحق الصفات الأسماء، كما في العربية!
+
+<List>
+  <Word sl="soweli suli" m="حيوان كبير" />
+  <Word sl="pipi lili" m="حشرة صغيرة" />
+  <Word sl="waso suwi" m="طائر لطيف" />
+</List>
+
+والآن، لنبني بعض الجُمل مع الصفات:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="يرى الطائر حيوانًا لطيفًا."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="يأكل الحيوان القوي نباتاتٍ كبيرة."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="تعضّ الحشرات اللئيمة الحيوان قليلًا."
+  />
+  <Sentence
+    sl="waso sona li sona pona e pipi."
+    m="يعرف الطائر الحكيم الحشرات جيّدًا."
+  />
+</List>
+
+إذا تبدو هذه الجمل طويلة ومتعِبة، لا تقلق! سننظر إلى بعض الجُمل الأقصر قريبًا. تذكَّر: ترتيب الكلمات بسيط في الحقيقة! يمكنك دائمًا تمييز أي الأجازء هو الفاعل، وأيَّها هو الفعل، وأيَّها هو المفعول به، بمجرّد النظر إلى **󱤧 li** و **󱤉 e**.
+
+إليك شيئًا مثيرًا للاهتمام: في العربية، يمكن للصفات أن تلحق الأسماء فقط. لكن في التوكي بونا، يمكن أن تلحق الأفعال أيضًا: _يعضّ قليلًا_ ~ _moku lili_، _يعرف جيدًا_ ~ _sona pona_. لا يوجد فرق بين الصفات و الظروف في التوكي بونا.
+
+<Practice exercises={frontmatter.practice} />

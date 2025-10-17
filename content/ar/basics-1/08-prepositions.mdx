@@ -1,0 +1,103 @@
+---
+slug: "ar/08"
+title: "الدرس الثامن: حروف الجر"
+description: "تعلّم weka، pana، kama، awen، tawa، lon، tan!"
+practice:
+  - l1: "في إنجلترا"
+    l2: "lon ma Inli"
+  - l1: "إلى علي"
+    l2: "tawa jan Ali"
+  - l1: "تُزيل الحشرة من البيت."
+    l2: "sina weka e pipi tan tomo."
+    junkChips: ["li"]
+  - l1: "أُحب النباتات. (النباتات جيّدة إلي.)"
+    l2: "kasi li pona tawa mi."
+    junkChips: ["e"]
+  - l1: "أعطيت الطائر دودة."
+    l2: "mi pana e pipi tawa waso."
+    junkChips: ["li"]
+  - l1: "يبقى الناس في البيت."
+    l2: "jan li awen lon tomo."
+    junkChips: ["e"]
+  - l1: "يذهب نوح إلى فرنسا."
+    l2: "jan Nowa li tawa ma Kanse."
+    junkChips: ["e"]
+  - l1: "تقع تورونتو في كندا."
+    l2: "ma tomo Towano li lon ma Kanata."
+    junkChips: ["e"]
+    alsoAccept: ["ma Towano li lon ma Kanata."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## حروف الجر
+
+الآن بعدما تعرّفنا على بعض الدول، لنتحدّث عن السَفر! لكن، كيف تقول "ذاهب إلى" و "آتي من"؟ لذلك، سنحتاج إلى بعض الأفعال وحروف الجر:
+
+<List>
+  <Word sl="weka" m="الإزالة، الذهاب، الخروخ؛ غائب" />
+  <Word sl="pana" m="الإعطاء، الوضع" />
+  <Word sl="kama" m="القدوم، المجيء، الوصول" />
+  <Word sl="awen" m="البقاء، الحماية" />
+  <Word sl="tawa" m="إلى، باتّجاه" />
+  <Word sl="lon" m="عند، في، على" />
+  <Word sl="tan" m="من، بِسبب" />
+</List>
+
+_حروف الجر_ هي الكلمات التي تسبق كلماتًا أخرى. تُبيّن لك حروف الجر كيف تُرتبط بالجملة. حرف جر + الكلمة المجرورة يُسمّى _شبه جملة جار ومجرور_:
+
+<List>
+  <Word sl="tawa soweli" m="باتّجاه الحيوان" />
+  <Word sl="lon ma" m="على الأرض، في الدولة" />
+  <Word sl="tan tomo" m="من البيت" />
+</List>
+
+في التوكي بونا، يمكن استخدام شبه الجمل الجارة والمجرورة بإحدى طريقتين. أوّلاً، يمكننا ربطها في آخر الجملة. يمكننا استعمال ذلك لذكر موقع واتّجاه فعل ما:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="أضعُ الطائر على شجرة." />
+  <Sentence sl="waso li awen lon kasi." m="يبقى الطائر على الشجرة." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="تُزيلُ الطائر من الشجرة."
+  />
+</List>
+
+ثانيًا، ماذا لو أردنا التحدّث عن الموقع أو الاتّجاه... بدون أن يَحْدث أي شيء آخَر؟ لحسن الحظ، يمكننا فعل ذلك أيضًا. يمكن أن تأتي شبه الجملة الجارّة والمجرورة مباشَرةً بعد **󱤧 li**، وتعمل كفعل بمفردها. عندما تعمل حروف الجر كأفعال، تعني: **󱥩 tawa** "الذهاب إلى"، **󱤬 lon** "الوجود عند/في"، **󱥧 tan** "القدوم من":
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="تذهب إيما إلى اليابان." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="إنّ نينا في روسيا." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="إنّ ميلي من فرنسا." />
+</List>
+
+لنتدرّب مع هذه الجُّمل:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="أذهب إلى أرض النباتات.<br />(يمكن أن تكون غابة، مرج، أي مكان مليء بالنباتات.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="ذهب العلم منّي.<br />(نسيت.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="الحيوانات اللطيفة جيّدة لي.<br />(أُحب الحيوانات اللطيفة.)"
+  />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="يتحدّث نوح إلى إيما." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="يتحدّث الناس اللغة الألمانية في ألمانيا."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## اقرأ أيضًا
+* [سؤال: هل أحتاج عن حفظ أسماء اللغات والدول؟](/ar/languages-countries/)
+* [سؤال: ليست الجملة "jan li toki Inli." غريبة؟](/ar/named-verbs/)

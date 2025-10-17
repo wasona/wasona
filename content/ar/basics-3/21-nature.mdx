@@ -1,0 +1,89 @@
+---
+slug: "ar/21"
+title: "الدرس الحادي والعشرون: الطبيعة"
+description: "تعلّم akesi، kala، pan، kili، soko، misikeke، namako!"
+practice:
+  - l1: "يأكل الفطر النباتات المريضة."
+    l2: "soko li moku e kasi moli."
+    junkChips: ["mani"]
+  - l1: "أخبز العجين."
+    l2: "o seli e ko pan."
+    junkChips: ["sewi"]
+  - l1: "نبشْتُ البطاطا من الأرض."
+    l2: "mi weka e kili tan ma."
+    junkChips: ["o"]
+  - l1: "تحتاج النباتات إلى الماء والضوء والتراب."
+    l2: "kasi li wile e telo, e suno, e ma."
+    junkChips: ["soko"]
+  - l1: "الناس تتحدّث وتستمتع وتغنّي وتنام."
+    l2: "jan li toki, li musi, li kalama, li lape."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+قد تعلّمنا معظم الكلمات لأشياء الحيوانات والنباتات -- فلنتعلّم الكلمات الباقية!
+
+<List>
+  <Word sl="akesi" m="زاحف أو برمائي، مثل ضفدع أو سلحفاة أو ثعبان" />
+  <Word
+    sl="kala"
+    m="سمك أو حيوان مائي، مثل حوت أو قرش أو أخطبوط"
+  />
+  <Word sl="pan" m="طعام نشاويّ، مثل قمح أو أرز أو خبز" />
+  <Word sl="kili" m="فاكهة، خَضْراء" />
+  <Word sl="soko" m="فِطر" />
+  <Word sl="misikeke" m="دواء" />
+  <Word sl="namako" m="بهارات، شيء مضاف" />
+  <Sentence sl="soko li kili nasa." m="الفطر فاكهة غريبة." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="تصطاد السمكة الكبيرة السمك الصغير."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="أحتاج أن أتناول الدواء في كثير من الأحيان."
+  />
+</List>
+
+## المكوّنات
+
+يُستَخدم الخبز غالبًا لتثبيت الكثير من المكوّنات المختلفة معًا:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="يحتوي البيتزا على اللحم." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="يحتوي البيتزا على الخضروات." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="يحتوي البيتزا على البهار." />
+</List>
+
+{/* A note for translators */}
+{/*
+  Your culture may have a different popular food that consists of meat, vegetables, and condiments, put into or onto bread. You are free to replace pizza with that food.
+*/}
+
+لكن، كيف نضعهم كلهم في جملة واحدة؟
+كلهم *المفعول به* في الجملة، ويمكن أن تحتوي الجملة على *الكثير من المفاعيل* الّتى تلحق كلمة "**󱤉 e**"؛ فهذه المفاعيل تتّصل:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="يحتوي البيتزا على اللحم والخضروات والبهار."
+  />
+</List>
+
+هذا ليس خاصًا بكلمة "**󱤉 e**" فقط! يمكنك أن تضع الكثير من الأفكار في الجُمل مع "**󱤧 li**" و "**󱤡 la**" وحروف الجر أيضًا! حاليًا لننظر إلى "**󱤧 li**" فقط:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="يصطاد الشخص السمك." />
+  <Sentence sl="jan li seli e ona." m="يطبخه الشخص." />
+  <Sentence sl="jan li moku e ona." m="يأكله الشخص." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="الشخص يصطاد السمك ويطبخه ويأكله." />
+</List>
+
+{/* A note for translators */}
+{/* If your language allows it, please list things without an "and" in between. */}
+
+<Practice exercises={frontmatter.practice} />
