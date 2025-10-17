@@ -4,7 +4,7 @@ import "selo-components/common.css"; // has to be above site-specific css
 import PageNav from "@/components/PageNav.astro";
 import "@/global.css";
 import { getLang, posts, prevnexts } from "@/lib/content";
-import { type CollectionEntry, render } from "astro:content";
+import { render } from "astro:content";
 import { Layout } from "selo-components";
 
 export const getStaticPaths = async () =>
@@ -13,10 +13,8 @@ export const getStaticPaths = async () =>
     props: post,
   }));
 
-const rtl = ["he", "ar"];
-
-const post: CollectionEntry<"content"> = Astro.props;
-const { Content } = await render(post);
+const post = Astro.props;
+const { Content } = await render(Astro.props);
 const lang = getLang(post);
 const prevnext = post.filePath!.includes("index.md")
   ? undefined
@@ -24,12 +22,9 @@ const prevnext = post.filePath!.includes("index.md")
 ---
 
 <Layout
-  useNavbar
   title={post.data.title}
   description={post.data.description}
-  goatcounter="wasona-com.goatcounter.com"
-  github="https://github.com/wasona/wasona"
-  dir={rtl.includes(lang) ? "rtl" : "ltr"}
+  dir={["he", "ar"].includes(lang) ? "rtl" : "ltr"}
 >
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap"

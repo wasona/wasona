@@ -1,4 +1,4 @@
-import { KALAMA } from "@/consts";
+import { KALAMA } from "@/lib/audio";
 import { tokeniseSentence, type Exercise } from "@/lib/exercise";
 import React, { useEffect, useState } from "react";
 

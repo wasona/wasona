@@ -1,3 +1,5 @@
+export const KALAMA = "https://raw.githubusercontent.com/wasona/kalama/main";
+
 export const ipaRecordings: Record<string, string> = {
   m: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Bilabial_nasal.ogg",
   ɱ: "https://upload.wikimedia.org/wikipedia/commons/1/18/Labiodental_nasal.ogg",

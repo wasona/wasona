@@ -1,5 +1,5 @@
 import ChipExercise from "@/components/ChipExercise.tsx";
-import { KALAMA } from "@/consts";
+import { KALAMA } from "@/lib/audio";
 import { verifyChips, type Exercise } from "@/lib/exercise";
 import React, { useState } from "react";
 
