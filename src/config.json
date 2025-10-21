@@ -2,7 +2,7 @@
   "hostname": "wasona.com",
   "title": "Wasona",
   "description": "A Toki Pona crash course!",
-  "url_goatcounter": "https://wasona-com.goatcounter.com/",
+  "url_goatcounter": "https://wasona-com.goatcounter.com",
   "url_github": "https://github.com/wasona/wasona/",
 
   "use_navbar": true,
