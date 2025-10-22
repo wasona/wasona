@@ -1,23 +1,23 @@
 {
-  "Index": "Index",
-  "Next": "Next",
-  "Previous": "Previous",
-  "Translation": "Translation",
+  "Index": "Зміст",
+  "Next": "Далі",
+  "Previous": "Назад",
+  "Translation": "Переклад",
 
-  "Consonants": "Consonants",
-  "Labial": "Labial",
-  "Coronal": "Coronal",
-  "Dorsal": "Dorsal",
+  "Consonants": "Приголосні",
+  "Labial": "Губні",
+  "Coronal": "Передньояз.",
+  "Dorsal": "Середньояз.",
 
-  "Vowels": "Vowels",
-  "Front": "Front",
-  "Central": "Central",
-  "Back": "Back",
+  "Vowels": "Голосні",
+  "Front": "Передні",
+  "Central": "Середні",
+  "Back": "Задні",
 
-  "translate": "Translate the sentence",
-  "check": "check",
-  "continue": "continue",
-  "incorrect": "❌ Not quite. Correct answer: ",
-  "correct": "✅ Correct! Well done!",
-  "done": "🎉 All exercises completed!"
+  "translate": "Перекладіть це речення",
+  "check": "перевірити",
+  "continue": "далі",
+  "incorrect": "❌ Не зовсім. Правильно: ",
+  "correct": "✅ Правильно! Так тримати!",
+  "done": "🎉 Всі завдання виконано!"
 }
