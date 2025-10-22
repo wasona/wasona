@@ -1,30 +1,30 @@
 ---
-slug: "en/06"
-title: "lesson 6: pronouns"
-description: "Learn ni, mi, sina, ona!"
+slug: "uk/06"
+title: "урок 6: займенники"
+description: "Вивчимо ni, mi, sina, ona!"
 practice:
-  - l1: "This is a sweet plant."
+  - l1: "Це солодка рослина."
     l2: "ni li kasi suwi."
     junkChips: ["e"]
-  - l1: "These are big eyes."
+  - l1: "Це великі очі."
     l2: "ni li lukin suli."
     junkChips: ["e"]
-  - l1: "Your eyes are big."
+  - l1: "Твої очі великі."
     l2: "lukin sina li suli."
     junkChips: ["e"]
-  - l1: "This bird is tiny."
+  - l1: "Ця пташка маленька."
     l2: "waso ni li lili."
     junkChips: ["e"]
-  - l1: "Mean bugs ate my plant."
+  - l1: "Злі жуки з'їли мою рослинку."
     l2: "pipi ike li moku e kasi mi."
     junkChips: ["ona"]
-  - l1: "You are cute."
+  - l1: "Ти милий."
     l2: "sina suwi."
     junkChips: ["li"]
-  - l1: "I see them."
+  - l1: "Я бачу їх."
     l2: "mi lukin e ona."
     junkChips: ["li"]
-  - l1: "They eat well."
+  - l1: "Вона добре їсть."
     l2: "ona li moku pona."
     junkChips: ["e"]
 ---
@@ -34,75 +34,54 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Pronouns
+## Займенники
 
-You're probably tired of long sentences and parts-of-speech shenanigans. Let's take it down a notch, by pointing at things:
-
-{/* A note for translators */}
-{/*
-  By "pointing at things", I mean standing in a room
-  and pointing a finger at objects in your eyesight. 
-*/}
+Ви мабуть втомилися від довгих речень та хитрощів з частинами мови. Нумо призупинимося і повказуєм на різні предмети:
 
 <List>
-  <Word sl="ni" m="this, that" />
-  <Sentence sl="ni li soweli." m="This is an animal." />
-  <Sentence sl="ni li kasi." m="This is a plant." />
-  <Sentence sl="ni li moku suwi." m="This is sweet food." />
-  <Sentence sl="ni li suli." m="This is important." />
-  <Sentence sl="ni li pona wawa." m="This is amazingly good." />
+  <Word sl="ni" m="цей, той" />
+  <Sentence sl="ni li soweli." m="Це звір." />
+  <Sentence sl="ni li kasi." m="Це рослина." />
+  <Sentence sl="ni li moku suwi." m="Це солодка їжа." />
+  <Sentence sl="ni li suli." m="Це важливо." />
+  <Sentence sl="ni li pona wawa." m="Це вражаюче добре." />
 </List>
 
-These are our first _sentences without an object_, and so there is no **󱤉 e** in these sentences!
+Це наші перші _речення без додатку_, тому в них немає **󱤉 e**!
 
-You might wonder: **󱤧 li** starts the verb. But where is the verb? In English, the verb is 'to be'. In Toki Pona, there is no verb 'to be'. Instead, when filling the role of the verb in the sentence, words automatically include 'to be' in their meaning: **󱥢 soweli** 'to be an animal', **󱥣 suli** 'to be important'.
+В українській мові є поняття "складений іменний присудок", як, наприклад, в реченні "Це важливо". Присудок у цьому реченні - "[є] важливо", але "є" ми зазвичай опускаємо. В токі поні значення "є важливо" чи "бути великим" несе виключно слово **󱥣 suli**, а **󱤧 li** лиш позначає, що далі йде присудок.
 
-{/* A note for translators */}
-{/*
-  Your language may not have a verb that is exactly like 'to be'.
-  If your sentences look more like "I animal", "I important", please consider
-  sentences in the past, or future, or commands, or imaginary situations --
-  it is likely that a 'be'-like verb comes up in those.
-*/}
-
-Now that we've looked at one pronoun, let's get some more:
+Ми дізналися про один займенник, гляньмо на ще кілька:
 
 <List>
-  <Word sl="mi" m="I, we; my, our" />
-  <Word sl="sina" m="you; your" />
-  <Word sl="ona" m="she, he, it, they; her, his, its, their" />
+  <Word sl="mi" m="я, ми; мій, наш" />
+  <Word sl="sina" m="ти, ви; твій, ваш" />
+  <Word sl="ona" m="він, вона, воно, вони; його, її, їх" />
 </List>
 
-{/* A note for translators */}
-{/*
-  List only the pronouns that are commonly used in daily life.
-  It is likely that your language has more translations for "sina"
-  and fewer translations for "ona" than English.
-*/}
-
-Let's practice using **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, and **󱥁 ni** in sentences:
+Потренуємося використовувати **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, та **󱥁 ni** у реченнях:
 
 <List>
-  <Sentence sl="kasi ni li suli." m="This plant is big." />
-  <Sentence sl="sona sina li wawa." m="Your knowledge is amazing." />
-  <Sentence sl="pipi ni li pipi mi." m="This bug is my bug." />
-  <Sentence sl="waso sina li lukin e mi." m="Your bird sees me." />
-  <Sentence sl="waso li moku e pipi ni." m="The bird eats this bug." />
-  <Sentence sl="soweli mi li moku e kasi ona." m="My animal eats its plant." />
+  <Sentence sl="kasi ni li suli." m="Це дерево велике." />
+  <Sentence sl="sona sina li wawa." m="Твої знання вражають." />
+  <Sentence sl="pipi ni li pipi mi." m="Цей жук -- мій жук." />
+  <Sentence sl="waso sina li lukin e mi." m="Твій птах бачить мене." />
+  <Sentence sl="waso li moku e pipi ni." m="Пташка з'їла цього жука." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Моя тваринка їсть свою траву." />
 </List>
 
-You should already be familiar with sentences like these! In most positions in the sentence, pronouns behave just like normal nouns and adjectives. But something strange happens when **󱤴 mi** or **󱥞 sina** is the subject of the sentence:
+Ви вже знайомі з такими реченнями! Зазвичай займенники діють так само, як іменники чи прикметники. Але є одна особливість, коли **󱤴 mi** чи **󱥞 sina** є підметом:
 
 <List>
-  <Sentence sl="mi wawa." m="I am strong." />
-  <Sentence sl="sina lukin e moku." m="You see food." />
-  <Sentence sl="mi sona e kasi suli." m="I know the big plant." />
-  <Sentence sl="sina sona e suli kasi." m="You know the plant's size." />
+  <Sentence sl="mi wawa." m="Я сильний." />
+  <Sentence sl="sina lukin e moku." m="Ти бачиш їжу." />
+  <Sentence sl="mi sona e kasi suli." m="Я знаю великі дерева." />
+  <Sentence sl="sina sona e suli kasi." m="Ти знаєш розмір дерев." />
 </List>
 
-Toki Pona has a special rule: when **󱤴 mi** or **󱥞 sina** is the subject of the sentence, we remove the **󱤧 li** that would normally follow the subject. This is because sentences starting with **󱤴 mi** or **󱥞 sina** are extremely common!
+Токі пона має спеціальне правило: коли **󱤴 mi** чи **󱥞 sina** є підметом, ми прибираємо частку **󱤧 li**, яка зазвичай йшла б після нього. Це тому, що речення, що починаються з **󱤴 mi** чи **󱥞 sina**, дуже поширені.
 
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: does 'li' mean 'is'?](/en/li-and-is/)
+* [Q: чи значить 'li' 'бути'?](/uk/li-and-is/)
