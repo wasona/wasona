@@ -1,28 +1,28 @@
 ---
 slug: "en/08"
-title: "lesson 8: prepositions"
-description: "Learn weka, pana, kama, awen, tawa, lon, tan!"
+title: "lesson 8: прийменники"
+description: "Вчимо weka, pana, kama, awen, tawa, lon, tan!"
 practice:
-  - l1: "in England"
+  - l1: "у Англії"
     l2: "lon ma Inli"
-  - l1: "to Ali"
+  - l1: "до Алі"
     l2: "tawa jan Ali"
-  - l1: "You remove the bug from the house."
+  - l1: "Ти прибрав комах з дому."
     l2: "sina weka e pipi tan tomo."
     junkChips: ["li"]
-  - l1: "I like plants. (Plants are good to me.)"
+  - l1: "Рослини подобаються мені"
     l2: "kasi li pona tawa mi."
     junkChips: ["e"]
-  - l1: "I gave the bird a caterpillar."
+  - l1: "Я дав пташці гусеницю."
     l2: "mi pana e pipi tawa waso."
     junkChips: ["li"]
-  - l1: "People stay in the house."
+  - l1: "Люди залишися вдома."
     l2: "jan li awen lon tomo."
     junkChips: ["e"]
-  - l1: "Noah goes to France."
+  - l1: "Ной відправився до Франції."
     l2: "jan Nowa li tawa ma Kanse."
     junkChips: ["e"]
-  - l1: "Toronto is in Canada."
+  - l1: "Торонто знаходиться в Канаді."
     l2: "ma tomo Towano li lon ma Kanata."
     junkChips: ["e"]
     alsoAccept: ["ma Towano li lon ma Kanata."]
@@ -33,88 +33,71 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Prepositions
+## Прийменники
 
-Now that we know some countries, let's talk about travel! But how do you say "go to" and "come from"? For that, we will need some verbs and prepositions:
+Як ми вже знаємо кілька країн, поговоримо про подорожі! Але як сказати "відправитись до" і "прибути з"? Для цього нам треба кілька дієслів та прийменників:
 
 <List>
-  <Word sl="weka" m="to remove, to go away; absent, away" />
-  <Word sl="pana" m="to give, to put" />
-  <Word sl="kama" m="to come, to arrive" />
-  <Word sl="awen" m="to stay, to remain, to protect" />
-  <Word sl="tawa" m="to, towards" />
-  <Word sl="lon" m="at, on, in" />
-  <Word sl="tan" m="from, because of" />
+  <Word sl="weka" m="прибирати, щезати; відсутній, далекий" />
+  <Word sl="pana" m="давати, класти" />
+  <Word sl="kama" m="приходити, прибувати" />
+  <Word sl="awen" m="залишати, залишатися, захищати" />
+  <Word sl="tawa" m="до, в напрямку (чогось)" />
+  <Word sl="lon" m="при, на, в (чомусь)" />
+  <Word sl="tan" m="з, від (чогось), через (щось)" />
 </List>
 
-{/* A note for translators */}
-{/*
-  If your language has noun case, please think about
-  how "tawa, lon, tan" compare to your noun cases.
-  The terms "dative case" and "locative case" are
-  especially important to check.
-*/}
-
-A _preposition_ is a word that goes before another word. It tells you how it relates to the sentence. A preposition + the word it attaches is called a _prepositional phrase_:
+_Прийменник_ -- це слово, що йде перед іншим словом, й позначає, як воно пов'язано з реченням. Прийменник та слово, приєднане до нього, називаються _прийменниковим виразом_.
 
 <List>
-  <Word sl="tawa soweli" m="towards the animal" />
-  <Word sl="lon ma" m="on land, in the country" />
-  <Word sl="tan tomo" m="from the house" />
+  <Word sl="tawa soweli" m="до звіра" />
+  <Word sl="lon ma" m="на землі, у країні" />
+  <Word sl="tan tomo" m="з дому" />
 </List>
 
-In Toki Pona, prepositional phrases can be used one of two ways. Firstly we can attach them at the end of a sentence. We can use this to mention location and direction of an action:
+У токі поні прийменникові вирази можуть використовуватися двома різними способами. По-перше, ми можемо поставити їх у кінці речення. Так ми можемо показати місце чи напрямок дії. В українській граматиці це зветься обставиною:
 
 <List>
-  <Sentence sl="mi pana e waso tawa kasi." m="I put a bird onto a tree." />
-  <Sentence sl="waso li awen lon kasi." m="The bird remains on a tree." />
+  <Sentence sl="mi pana e waso tawa kasi." m="Я посадив птаха на дерево." />
+  <Sentence sl="waso li awen lon kasi." m="Пташка лишається на дереві." />
   <Sentence
     sl="sina weka e waso tan kasi."
-    m="You remove the bird from the tree."
+    m="Ти прибрала пташок з дерева."
   />
 </List>
 
-Secondly, what if we want to talk about location or direction...without anything else happening? Fortunately, we can do that too. Prepositional phrases can come directly after **󱤧 li**, and act as the verb all by themselves. When prepositions act as verbs, they mean: **󱥩 tawa** 'to go to', **󱤬 lon** 'to be at', **󱥧 tan** 'to come from':
+По-друге, що, якщо ми хочемо сказати _лише_ про напрямок чи місце дії _без_ самої дії? Так теж можна. Прийменникові вирази можуть йти прямо після **󱤧 li**, й виконувати функцію присудка. Коли прийменники діють так, вони означають: **󱥩 tawa** 'прямувати кудись', **󱤬 lon** 'існувати десь', **󱥧 tan** 'походити звідкись':
 
 <List>
-  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma goes to Japan." />
-  <Sentence sl="jan Nina li lon ma Lusi." m="Nina is in Russia." />
-  <Sentence sl="jan Mili li tan ma Kanse." m="Millie is from France." />
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Емма прямує до Японії." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Ніна в Росії." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Міллі з франції." />
 </List>
 
-Let's practice with these sentences:
+Потренуймося:
 
 <List>
   <Sentence
     sl="mi tawa ma kasi."
-    m="I go to the plant land.<br />(Could be a forest, a grassy field, somewhere lush.)"
+    m="Я йду до місця рослин.<br />(Може бути ліс, поле.)"
   />
   <Sentence
     sl="sona li weka tan mi."
-    m="Knowledge went away from me.<br />(I forgot.)"
+    m="Знання покинуло мене.<br />(Я забула.)"
   />
   <Sentence
     sl="soweli suwi li pona tawa mi."
-    m="Cute animals are good to me.<br />(I like cute animals.)"
+    m="Милі звірята хороші для мене.<br />(Милі звірята подобаються мені.)"
   />
-
-{/* A note for translators */}
-{/*
-  Some languages have a verb "I like ...",
-  other languages have a verb more like "to me it is nice ...".
-  If your language is more like the second group,
-  you might not need the text in brackets.
-*/}
-
-  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah speaks to Emma." />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Ной говорить Еммі." />
   <Sentence
     sl="jan li toki Tosi lon ma Tosi."
-    m="People speak German in Germany."
+    m="Люди говорять німецькою в Німеччині."
   />
 </List>
 
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: do I have to memorise language and country names?](/en/languages-countries/)
-* [Q: isn't 'jan li toki Inli' a bit strange?](/en/named-verbs/)
+* [Q: чи треба мені запам'ятовувати назви країни та мов?](/uk/languages-countries/)
+* [Q: чи не є 'jan li toki Inli' трохи дивним?](/uk/named-verbs/)
