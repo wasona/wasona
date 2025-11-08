@@ -1,0 +1,23 @@
+{
+  "Index": "Index",
+  "Next": "Volgende",
+  "Previous": "Vorige",
+  "Translation": "Vertaling",
+
+  "Consonants": "Medeklinkers",
+  "Labial": "Labiaal",
+  "Coronal": "Coronaal",
+  "Dorsal": "Dorsaal",
+
+  "Vowels": "Klinkers",
+  "Front": "Vooraan",
+  "Central": "Midden",
+  "Back": "Achteraan",
+
+  "translate": "Vertaal de zin",
+  "check": "controleren",
+  "continue": "doorgaan",
+  "incorrect": "❌ Niet precies. Juiste antwoord: ",
+  "correct": "✅ Correct! Goed gedaan!",
+  "done": "🎉 Alle oefeningen voltooid!"
+}
