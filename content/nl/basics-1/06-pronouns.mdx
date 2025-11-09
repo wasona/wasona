@@ -1,0 +1,108 @@
+---
+slug: "nl/06"
+title: "les 6: voornaamwoorden"
+description: "Leer ni, mi, sina, ona!"
+practice:
+  - l1: "Dit is een zoete plant."
+    l2: "ni li kasi suwi."
+    junkChips: ["e"]
+  - l1: "Dit zijn grote ogen."
+    l2: "ni li lukin suli."
+    junkChips: ["e"]
+  - l1: "Jouw ogen zijn groot."
+    l2: "lukin sina li suli."
+    junkChips: ["e"]
+  - l1: "Deze vogel is klein."
+    l2: "waso ni li lili."
+    junkChips: ["e"]
+  - l1: "Gemene insecten hebben mijn plant opgegeten."
+    l2: "pipi ike li moku e kasi mi."
+    junkChips: ["ona"]
+  - l1: "Jij bent lief."
+    l2: "sina suwi."
+    junkChips: ["li"]
+  - l1: "Ik zie ze."
+    l2: "mi lukin e ona."
+    junkChips: ["li"]
+  - l1: "Ze eten goed."
+    l2: "ona li moku pona."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Voornaamwoorden
+
+Je bent waarschijnlijk de lange zinnen en het gedoe met woordsoorten wel zat. Tijd voor een stapje terug, door dingen aan te wijzen:
+
+{/* A note for translators */}
+{/*
+  By "pointing at things", I mean standing in a room
+  and pointing a finger at objects in your eyesight.
+*/}
+
+<List>
+  <Word sl="ni" m="this, that" />
+  <Sentence sl="ni li soweli." m="Dit is een dier." />
+  <Sentence sl="ni li kasi." m="Dit is een plant." />
+  <Sentence sl="ni li moku suwi." m="Dit is zoet eten." />
+  <Sentence sl="ni li suli." m="Dit is belangrijk." />
+  <Sentence sl="ni li pona wawa." m="Dit is ongelofelijk goed." />
+</List>
+
+Dit zijn onze eerste _zinnen zonder lijdend voorwerp_, dus er staat geen **󱤉 e** in deze zinnen!
+
+Misschien vraag je je af: **󱤧 li** staat voor het werkwoord. Maar waar is het werkwoord? In het Nederlands is het werkwoord ‘zijn’. In het Toki Pona is er geen werkwoord ‘zijn’. In plaats daarvan bevatten woorden, als ze de rol van het werkwoord vervullen in de zin, automatisch ‘zijn’ in hun betekenis: **󱥢 soweli** 'een dier zijn', **󱥣 suli** 'belangrijk zijn'.
+
+{/* A note for translators */}
+{/*
+  Your language may not have a verb that is exactly like 'to be'.
+  If your sentences look more like "I animal", "I important", please consider
+  sentences in the past, or future, or commands, or imaginary situations --
+  it is likely that a 'be'-like verb comes up in those.
+*/}
+
+Nu we één voornaamwoord gezien hebben, kunnen we er net zo goed meteen een paar meer bekijken:
+
+<List>
+  <Word sl="mi" m="ik, wij; mijn, ons" />
+  <Word sl="sina" m="jij, jullie; jouw, jullie" />
+  <Word sl="ona" m="zij, hij, het; haar, zijn, hun" />
+</List>
+
+{/* A note for translators */}
+{/*
+  List only the pronouns that are commonly used in daily life.
+  It is likely that your language has more translations for "sina"
+  and fewer translations for "ona" than English.
+*/}
+
+Laten we oefenen met het gebruik van **󱤴 mi**, **󱥞 sina**, **󱥆 ona** en **󱥁 ni** in zinnen:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Deze plant is groot." />
+  <Sentence sl="sona sina li wawa." m="Je kennis is geweldig." />
+  <Sentence sl="pipi ni li pipi mi." m="Dit insect is mijn insect." />
+  <Sentence sl="waso sina li lukin e mi." m="Je vogel ziet me." />
+  <Sentence sl="waso li moku e pipi ni." m="De vogel eet dit insect." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Mijn dier eet zijn plant." />
+</List>
+
+Als het goed is, ken je zinnen zoals deze al! Op de meeste plekken in de zin gedragen voornaamwoorden zich namelijk net als gewone zelfstandige of bijvoeglijke naamwoorden. Maar iets eigenaardigs gebeurt als **󱤴 mi** of **󱥞 sina** het onderwerp van de zin is:
+
+<List>
+  <Sentence sl="mi wawa." m="Ik ben sterk." />
+  <Sentence sl="sina lukin e moku." m="Jij ziet eten." />
+  <Sentence sl="mi sona e kasi suli." m="Ik ken de grote plant." />
+  <Sentence sl="sina sona e suli kasi." m="Je kent de grootte van de plant." />
+</List>
+
+Toki Pona heeft een speciale regel: als **󱤴 mi** of **󱥞 sina** het onderwerp van de zin is, dan laten we de **󱤧 li**, die normaal gesproken achter het onderwerp staat, weg. Dat doen we omdat zinnen die beginnen met **󱤴 mi** of **󱥞 sina** heel vaak voorkomen!
+
+<Practice exercises={frontmatter.practice} />
+
+## Zie ook
+* [Q: betekent 'li' hetzelfde als 'is'?](/en/li-and-is/)
