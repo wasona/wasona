@@ -1,0 +1,76 @@
+---
+slug: "nl/03"
+title: "les 3: eenvoudige zinnen"
+description: "Leer li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
+practice:
+  - l1: "Het dier kent het insect."
+    l2: "soweli li sona e pipi."
+    junkChips: ["waso"]
+  - l1: "Het insect eet planten."
+    l2: "pipi li moku e kasi."
+    junkChips: ["soweli"]
+  - l1: "De vogel ziet planten."
+    l2: "waso li lukin e kasi."
+    junkChips: ["moku"]
+  - l1: "De vogel kent het dier."
+    l2: "waso li sona e soweli."
+    junkChips: ["pipi"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Eenvoudige zinnen
+
+Nu je weet hoe je Toki Pona moet lezen, is het tijd om woorden en zinnen te leren!
+Hier zijn een paar woorden voor dingen en handelingen:
+
+<List>
+  <Word sl="soweli" m="landdier, zoals een kat, hond, koe, muis, olifant" />
+  <Word sl="waso" m="vogel, zoals een duif, gans, uil" />
+  <Word sl="pipi" m="insect, zoals een kever, mier, vlinder, spin" />
+  <Word sl="kasi" m="plant, zoals een klavertje, berkenboom, cactus, mos" />
+  <Word sl="moku" m="consumeren" />
+  <Word sl="lukin" m="zien" />
+  <Word sl="sona" m="weten, kennen" />
+</List>
+
+{/* A note for translators */}
+{/*
+  When translating word definitions, such as "land animal", "insect", "plant",
+  it's better to use everyday words rather than scientific ones.
+*/}
+
+Een veelvoorkomend type zin heet een “onderwerp-werkwoord-lijdend voorwerp”-zin. Dat betekent dat een bepaald ding (het onderwerp) iets doet met een ander ding (het lijdend voorwerp). Tijd om een paar zinnen te maken:
+
+{/* A note for translators */}
+{/*
+  Your language may instead be SOV or VSO. If it is, please draw attention
+  to this difference between your language and Toki Pona.
+*/}
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="Het dier eet planten." />
+  <Sentence sl="waso li moku e pipi." m="De vogel eet insecten." />
+  <Sentence sl="pipi li lukin e soweli." m="Het insect ziet een dier." />
+  <Sentence sl="waso li sona e kasi." m="De vogel kent de boom." />
+</List>
+
+Wat kunnen we hiervan leren?
+
+- De woordvolgorde is hetzelfde als in het Nederlands: onderwerp, werkwoord, lijdend voorwerp.
+- **󱤧 li** is een partikel dat voor het werkwoord geplaatst wordt.
+- **󱤉 e** is een partikel dat voor het lijdend voorwerp geplaatst wordt.
+- In de Nederlandse vertaling staan woorden en woord-stukjes zoals “de”, “het”, “een” en “-en”, maar dat zijn eigenlijk gokjes! De Toki-Pona-zinnen vermelden namelijk niet specifiek of we het over “_een_ vogel” of over “_de_ vogel” hebben. In langere gesprekken wordt dit vanzelf duidelijk!
+
+{/* A note for translators */}
+{/*
+  Your language may not have articles. Your language may have gender markers.
+  You can adjust the bullet point above to better suit your language.
+*/}
+
+(**󱤧 li** en **󱤉 e** lijken misschien op het eerste gezicht nutteloos. We zullen later zien waarom ze toch nodig zijn, maar daarvoor moeten we eerst meer over woordsoorten leren!)
+
+<Practice exercises={frontmatter.practice} />
