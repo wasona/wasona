@@ -1,0 +1,76 @@
+---
+slug: "en/03"
+title: "第三课：简单的句子"
+description: "学习这些单词：li、e、soweli、waso、pipi、kasi、moku、lukin、和 sona。"
+practice:
+  - l1: "那只动物了解那只虫子。"
+    l2: "soweli li sona e pipi."
+    junkChips: ["waso"]
+  - l1: "那只虫子在食用树叶。"
+    l2: "pipi li moku e kasi."
+    junkChips: ["soweli"]
+  - l1: "那只鸟看到了那棵树。"
+    l2: "waso li lukin e kasi."
+    junkChips: ["moku"]
+  - l1: "那只鸟认识那只动物。"
+    l2: "waso li sona e soweli."
+    junkChips: ["pipi"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## 简单的句子
+
+你现在已经学会如何读出道本语了。现在，让我们来学习一些词语和句子！
+以下是一些表示物体和动作：
+
+<List>
+  <Word sl="soweli" m="陆地动物，如猫，狗，牛，老鼠，大象等" />
+  <Word sl="waso" m="鸟，如鹅，鸽子，猫头鹰等" />
+  <Word sl="pipi" m="昆虫，如甲虫，蚂蚁，蝴蝶，蜘蛛等" />
+  <Word sl="kasi" m="植物，如三叶草，白桦树，仙人掌，苔藓等" />
+  <Word sl="moku" m="吃或喝" />
+  <Word sl="lukin" m="看" />
+  <Word sl="sona" m="知道" />
+</List>
+
+{/* A note for translators */}
+{/*
+  When translating word definitions, such as "land animal", "insect", "plant",
+  it's better to use everyday words rather than scientific ones.
+*/}
+
+很常见的句式是主谓宾的句式：一个东西（主语）在另一个东西（宾语）上作用一个动作（谓语），例如「我吃水果」。让我们用这个句式来造句：
+
+{/* A note for translators */}
+{/*
+  Your language may instead be SOV or VSO. If it is, please draw attention
+  to this difference between your language and Toki Pona.
+*/}
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="那个动物吃植物。" />
+  <Sentence sl="waso li moku e pipi." m="那只鸟吃虫子。" />
+  <Sentence sl="pipi li lukin e soweli." m="那只虫子看到了一只动物." />
+  <Sentence sl="waso li sona e kasi." m="那只鸟知道那只树。" />
+</List>
+
+我们不难发现：
+
+- 道本语的语序与中文和英文一致：主谓宾。
+- **󱤧 *li*** 这个词表示谓语的开始。
+- **󱤉 *e*** 这个词表示宾语的开始。
+- 中文的翻译有时会添加数量词和代词，但这些都只是猜测。在情景下，这些其实是很清楚的。
+
+{/* A note for translators */}
+{/*
+  Your language may not have articles. Your language may have gender markers.
+  You can adjust the bullet point above to better suit your language.
+*/}
+
+（**󱤧 *li*** 和 **󱤉 *e*** 可能一开始显得多余。我们之后会解释为什么这是必要的，但在解释那个之前，我们要先学习道本语中的词性。）
+
+<Practice exercises={frontmatter.practice} />
