@@ -1,0 +1,55 @@
+---
+slug: "en/01"
+title: '第一课：发音'
+description: "Learn to read Toki Pona in the Latin alphabet!"
+---
+
+import PhonoTable from "@/components/PhonoTable.astro";
+import PhonoExamples from "@/components/PhonoExamples.astro";
+import Audio from "@/components/Audio.astro";
+
+## 发音
+
+道本语只有九个辅音和五个原音，如下：（你可以通过点击听到他们的发音。）
+
+<PhonoTable />
+
+{/* A note for translators */}
+{/*
+  This is the most challenging lesson to translate,
+  because you have to use your own judgement for
+  what's similar between your language and Toki Pona, and what's different.
+  Think about ways in which Toki Pona spelling may mislead your readers.
+*/}
+
+这些和拼音里的很像！但有三个值得注意的不同处：
+
+* 道本语中每个字母的发音都是与前后的语境无关的！
+* 道本语中的 **e** 的发音类似于「椰」中 *e* 的发音。
+* 道本语中的 **j** 的发音是拼音中 *y* 的发音，而不是拼音中 *j* 的发音。很多语言的 **j** 都发这个 *y* 的声音，道本语也是如此。
+
+道本语中，一个音节只有一个元音，前面可能跟着一个辅音，后面可能跟着一个 ***n***。以下都是道本语中的音节：*ken*、*li*、*wan*、*a*。（这些都是单音节词。）
+
+多音节词中，重音在第一个音节上：<u>po</u>na、<u>a</u>la、<u>ka</u>lama、<u>a</u>kesi、甚至是 <u>ki</u>jetesantakalu。
+
+{/* This is a joke from 让我们说中文 (let us speak chinese) which is a meme. */}
+## 让我们说道本：
+
+（你可以通过点击听到他们的发音。）
+
+<PhonoExamples />
+
+{/* A note for translators */}
+{/*
+  Please go to src/components/PhonoExamples.astro,
+  make a copy of that file, and replace the rows with any examples
+  that you think will help your reader.
+  
+  If your language uses a non-Latin script, you can try to add a new column
+  that represents a phonetic respelling of Toki Pona words in your script.
+  See the Russian translation for comparison.
+*/}
+
+## 拓展阅读
+
+* [Q: does Toki Pona pronunciation vary among different speakers?](/en/sound-variation/)
