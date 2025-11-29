@@ -1,24 +1,24 @@
 ---
-slug: "en/12"
-title: "lesson 12: requests"
-description: "Learn o!"
+slug: "uk/12"
+title: "урок 12: прохання"
+description: "Вчимо o!"
 practice:
-  - l1: "Emma, try to sleep!"
+  - l1: "Еммо, спробуй заснути!"
     l2: "jan Ema o alasa lape!"
     junkChips: ["e"]
-  - l1: "Hey bird, sing to me!"
+  - l1: "Пташко, заспівай мені!"
     l2: "waso o kalama tawa mi!"
     junkChips: ["e"]
-  - l1: "Hey, Kenta!"
+  - l1: "Гей, Кенто!"
     l2: "jan Kenta o!"
     junkChips: ["li"]
-  - l1: "Talk to Nina!"
+  - l1: "Поговоріть з Ніною!"
     l2: "o toki tawa jan Nina!"
     junkChips: ["li"]
-  - l1: "Draw something strange!"
+  - l1: "Намалюй щось дивне!"
     l2: "o sitelen e ijo nasa!"
     junkChips: ["li"]
-  - l1: "Maya, give me the spoon!"
+  - l1: "Майє, подай мені ложку!"
     l2: "jan Maja o pana e ilo moku tawa mi!"
     junkChips: ["li"]
     alsoAccept: ["jan Maja o pana e ilo tawa mi!"]
@@ -29,48 +29,34 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Requests
+## Прохання
 
-In Toki Pona, a sentence with **󱤧 li** is a statement of fact. But sometimes instead of making statements of fact, we want to make requests. Requests are how we tell other people what we want to happen. In a request, instead of **󱤧 li**, we use **󱥄 o**:
-
-{/* A note for translators */}
-{/*
-  By "statement of fact" and "request", I am explaining in simple words
-  the categories of "indicative mood" and "imperative mood". Please check
-  if your language has those. Your audience may or may not know what they are.
-*/}
+У токі поні, речення з **󱤧 li** констатують факт. В українській граматиці це дієслова *дійсного способу*. Але іноді ми хочемо попросити чи наказати щось зробити. Для такого в українській мові є умовний (би) та наказовий способи (-и, -й). В токі поні є лише наказовий. Щоб позначити дієслова наказового способу, ми використовуємо **󱥄 o** замість **󱤧 li**.
 
 <List>
-  <Word sl="o" m="starts a request, command, instruction, wish" />
-  <Sentence sl="ilo li sitelen e pipi." m="The phone is showing a bug." />
-  <Sentence sl="ilo o sitelen e waso!" m="Oh phone, please show a bird!" />
+  <Word sl="o" m="починає прохання, команду, наказ, бажання" />
+  <Sentence sl="ilo li sitelen e pipi." m="Телефон показує комаху." />
+  <Sentence sl="ilo o sitelen e waso!" m="Телефоне, покажи пташку!" />
 </List>
 
-Let's look at a few more commands:
-
+Глянемо на ще кілька наказів:
 <List>
-  <Sentence sl="jan o lukin e lipu pona!" m="People, please read the good paper!" />
-  <Sentence sl="soweli mi o moku pona!" m="My cat, please eat well!" />
-  <Sentence sl="jan lili sina o kama wawa!" m="May your child become strong!" />
-  <Sentence sl="pona o tawa sina!" m="May goodness go to you! (Blessings be upon you!)" />
+  <Sentence sl="jan o lukin e lipu pona!" m="Люди, прочитай хорошу книжку!" />
+  <Sentence sl="soweli mi o moku pona!" m="Котику мій, їж добре!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="Хай дитина твоя росте сильною!" />
+  <Sentence sl="pona o tawa sina!" m="Хай тебе настигне щастя!" />
 </List>
 
-You might notice that some of these sentences separate quite nicely in two parts:
-* The call for someone's attention (before **󱥄 o**)
-* The request itself (after **󱥄 o**)
+Можна помітити, що ці речення гарно розділяються на дві частини:
+* Клична частина, звертання (перед **󱥄 o**)
+* Прохання чи наказ (після **󱥄 o**) 
 
-{/* A note for translators */}
-{/*
-  If your language has "vocative case",
-  "The call for someone's attention" is simply vocative case.
-*/}
-
-We can use those separately:
+Ми можемо використовувати їх окремо:
 
 <List>
-  <Sentence sl="jan Ema o pini e lupa tomo!" m="Emma, please close the door!" />
-  <Sentence sl="jan Ema o!" m="Hey, Emma!" />
-  <Sentence sl="o pini e lupa tomo!" m="Please close the door!" />
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Еммо, закрий двері!" />
+  <Sentence sl="jan Ema o!" m="Гей, Еммо!" />
+  <Sentence sl="o pini e lupa tomo!" m="Закрий двері!" />
 </List>
 
 <Practice exercises={frontmatter.practice} />
