@@ -1,0 +1,74 @@
+---
+slug: "fr/04"
+title: "leçon 4 : adjectifs"
+description: "Apprenez suli, lili, pona, ike, wawa, suwi !"
+practice:
+  - l1: "un animal adorable"
+    l2: "soweli suwi"
+  - l1: "un insecte mauvais"
+    l2: "pipi ike"
+  - l1: "un oiseau fort"
+    l2: "waso wawa"
+  - l1: "L'oiseau connaît un animal fort."
+    l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
+  - l1: "Un petit insecte regarde un grand animal."
+    l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Décrire
+
+Maintenant que vous connaissez des noms (entités) et des verbes (actions), voyons des adjectifs (propriétés) : 
+
+<List>
+  <Word sl="suli" m="grand, gros, important" />
+  <Word sl="lili" m="petit, jeune" />
+  <Word sl="pona" m="bien, bon, plaisant" />
+  <Word sl="ike" m="mauvais, déplaisant" />
+  <Word sl="wawa" m="fort, puissant, incroyable" />
+  <Word sl="sona" m="intelligent, sage (qui a de la sagesse)" />
+  <Word sl="suwi" m="sucré, adorable, mignon" />
+</List>
+
+En toki pona, l'adjectif se place toujours après le nom (jamais devant) :
+
+<List>
+  <Word sl="soweli suli" m="un grand animal" />
+  <Word sl="pipi lili" m="un petit insecte" />
+  <Word sl="waso suwi" m="un oiseau adorable" />
+</List>
+
+Notez que, si l'adjectif en français peut se placer avant ou après le nom ("un *petit* insecte", "un oiseau *intelligent*"), l'adjectif en toki pona est toujours après le nom ("pipi *lili*", "waso *sona*").
+
+Faisons maintenant des phrases avec des adjectifs :
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="L'oiseau voit un animal mignon."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="L'animal fort mange des grandes plantes."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Les mauvais insectes mordillent un animal."
+  />
+  <Sentence
+    sl="waso sona li sona pona e pipi."
+    m="L'oiseau intelligent connaît bien les insectes."
+  />
+</List>
+
+Si ces phrases semblent longues, pas de panique ! Souvenez-vous : la structure des phrases est simple. Vous pouvez toujours reconnaître le sujet, le verbe, et l'objet grâce aux particules **󱤧 li** (entre le sujet et le verbe) et **󱤉 e** (entre le verbe et l'objet).
+
+Nous pouvons voir quelque chose d'intéressant en toki pona : les adjectifs peuvent suivre des noms, mais aussi des verbes (à la manière d'adverbes). Par exemple, _moku lili_ (littéralement "manger petit") signifie _mordiller_ ou _grignoter_. De la même manière, _sona pona_ (littéralement "connaître bon") signifie _connaître bien_. Il n'y a pas de différence entre les adjectifs et les adverbes en toki pona.
+
+<Practice exercises={frontmatter.practice} />

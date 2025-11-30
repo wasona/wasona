@@ -1,0 +1,63 @@
+---
+slug: "fr/12"
+title: "leçon 12 : requêtes"
+description: "Apprenez o!"
+practice:
+  - l1: "Emma, essaie de dormir !"
+    l2: "jan Ema o alasa lape!"
+    junkChips: ["e"]
+  - l1: "Hé, oiseau, chante pour moi !"
+    l2: "waso o kalama tawa mi!"
+    junkChips: ["e"]
+  - l1: "Hé, Kenta !"
+    l2: "jan Kenta o!"
+    junkChips: ["li"]
+  - l1: "Parle à Nina !"
+    l2: "o toki tawa jan Nina!"
+    junkChips: ["li"]
+  - l1: "Dessine quelque chose d'étrange !"
+    l2: "o sitelen e ijo nasa!"
+    junkChips: ["li"]
+  - l1: "Maya, donne-moi la cuillère !"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+    junkChips: ["li"]
+    alsoAccept: ["jan Maja o pana e ilo tawa mi!"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Requêtes
+
+En toki pona, une phrase avec **󱤧 li** est une affirmation. Mais parfois, au lieu de dire une affirmation, nous voulons faire des requêtes. Les requêtes sont la façon avec laquelle nous disons aux autres ce que nous voulons qu'il se passe. Dans une requête, au lieu de **󱤧 li**, nous utilisons **󱥄 o**:
+
+<List>
+  <Word sl="o" m="commencer une requête, une commande, une instruction, un souhait" />
+  <Sentence sl="ilo li sitelen e pipi." m="Le téléphone montre un insecte." />
+  <Sentence sl="ilo o sitelen e waso!" m="Ô téléphone, S'il te plaît, montre-moi un oiseau !" />
+</List>
+
+Analysons quelques requêtes supplémentaires :
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="Les gens lisez le bon journal s'il vous plaît !" />
+  <Sentence sl="soweli mi o moku pona!" m="Mon chat, s'il te plaît, mange bien !" />
+  <Sentence sl="jan lili sina o kama wawa!" m="Que votre enfant devienne fort !" />
+  <Sentence sl="pona o tawa sina!" m="Que la chance soit avec vous !" />
+</List>
+
+Vous remarquerez que ces phrases se séparent très bien en deux parties :
+* L'apostrophe (avant **󱥄 o**)
+* La requête en elle-même (après **󱥄 o**)
+
+On peut les utiliser séparément :
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Emma, s'il te plaît, ferme la porte !" />
+  <Sentence sl="jan Ema o!" m="Hé, Emma !" />
+  <Sentence sl="o pini e lupa tomo!" m="Ferme la porte, s'il te plaît !" />
+</List>
+
+<Practice exercises={frontmatter.practice} />

@@ -1,0 +1,78 @@
+---
+slug: "fr/26"
+title: "leçon 26 : amour et identité"
+description: "Apprenez olin, unpa, mama, mije, meli, tonsi, en !"
+practice:
+  - l1: "Mon père aime ma mère."
+    l2: "mama mije mi li olin e mama meli mi."
+    junkChips: ["pona"]
+    alsoAccept:
+      - "mama mi mije li olin e mama mi meli."
+      - "mama mi li olin e mama mi." # lol
+  - l1: "Ma petite amie est adorable."
+    l2: "meli mi li suwi."
+    junkChips: ["pi"]
+  - l1: "J'aime les femmes, les hommes, et les non-binaires."
+    l2: "meli en mije en tonsi li pona tawa mi."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Vous avez déjà vu que "**j'aime ...**" se traduit communément par **󱤧󱥔󱥩󱤴 ... li pona tawa mi**. Bien sûr, vous pouvez utiliser **󱥔󱤼 pona mute** pour dire *aimer beaucoup*. Mais pour parler d'amour ou d'affection envers une personne, un autre verbe est utilisé :
+
+<List>
+  <Word sl="olin" m="aimer" />
+  <Word sl="unpa" m="avoir des rapports sexuels, une relation sexuelle" />
+  <Word sl="mama" m="parent" />
+  <Word sl="mije" m="homme, personne masculine, époux ; masculin" />
+  <Word sl="meli" m="femme, personne féminine, épouse ; féminin" />
+  <Word sl="tonsi" m="personne non-binaire, personne non-conforme au genre ; transsexuel, transgenre" />
+</List>
+
+{/* A note for translators */}
+{/*
+  The definition for "tonsi" can be difficult to translate.
+  Please check the queer communities in your language, see what words they prefer.
+
+  Although I list "trans" for tonsi, this is not super central to the word.
+  Trans women usually call themselves meli, and trans men usually call themselves mije.
+  In the end, everyone chooses the label they like best.
+*/}
+
+Beaucoup de cours de langue commencent avec les mots pour "homme, femme, garçon, fille, ...". En toki pona, le genre n'est pas important et vous ne verrez pas **󱤵 mije**, **󱤳 meli**, **󱥾 tonsi** dans toutes les phrases. Ces mots ne sont utilisés que lorsque préciser le genre est nécessaire, pour parler de situations où le genre et les conventions sociales liées au genre sont pertinents, comme par exemple pour les relations romantiques.
+
+<List>
+  <Sentence sl="mi olin e mije mi." m="J'aime mon petit ami."/>
+  <Sentence sl="mama o!" m="Maman ! (ou bien) Papa !"/>
+  <Sentence sl="mi olin e meli." m="J'aime les filles. (en parlant d'orientation sexuelle)"/>
+</List>
+
+Le mot "non-binaire" est apparu récemment dans la culture occidentale, mais des identités de genre autre que homme ou femme ont existé dans différentes cultures à différentes époques, comme les [enarei](https://en.wikipedia.org/wiki/Enaree) (lien en anglais) chez les Scythes, les [fa'afafine](https://https://fr.wikipedia.org/wiki/Fa%27afafine) chez les Samoans, ou encore les [kathoey](https://fr.wikipedia.org/wiki/Kato%C3%AF) chez les Thaïs. Le mot **󱥾 tonsi** peut décrire l'ensemble de ces concepts, sans référence à une culture ou société en particulier.
+
+Voici d'autres exemples de situations où préciser le genre serait pertinent :
+
+<List>
+  <Sentence sl="len mi li mije." m="Je m'habille de manière masculine." />
+  <Sentence sl="jan olin mi li tonsi." m="Mon partenaire est non-binaire." />
+  <Sentence sl="mi meli e sijelo mi kepeken misikeke." m="Je féminise mon corps avec des médicaments. (= je suis une transition hormonale)." />
+</List>
+
+## Sujets multiples
+
+Nous avons vu comment *'e ... e ...'* et *'li ... li ...'* permettent respectivement d'enchaîner plusieurs objets et plusieurs verbes dans une phrase. Contrairement aux verbes et aux objets, le sujet de la phrase n'a pas de particule qui le précède. Nous ne pouvons donc pas directement enchaîner deux sujets ou plus (comment savoir où un sujet finit et l'autre commence ?). Pour avoir plusieurs sujets dans une même phrase, nous avons donc besoin d'une nouvelle particule :
+
+<List>
+  <Word sl="en" m="joint deux sujets" />
+  <Sentence sl="mi en ona li toki." m="Elle et moi discutons." />
+  <Sentence sl="soweli en waso li utala." m="L'animal et l'oiseau se battent." />
+  <Sentence sl="meli en mije li unpa." m="La femme et l'homme couchent ensemble (ont une relation sexuelle)." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## Voir aussi
+* [Une discussion plus appronfondie sur le genre en toki pona, par wan Tansin](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/) (en anglais)

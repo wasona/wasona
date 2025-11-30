@@ -1,0 +1,70 @@
+---
+slug: "fr/24"
+title: "leçon 24 : corps"
+description: "Apprenez sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja !"
+practice:
+  - l1: "J'ai mal à la tête."
+    l2: "lawa mi li pakala."
+    junkChips: ["kala"]
+    alsoAccept: ["mi pakala lawa."]
+  - l1: "J'ai entendu un léger bruit."
+    l2: "mi kute e kalama lili."
+    junkChips: ["li"]
+  - l1: "Tu obéis. J'ordonne."
+    l2: "sina kute. mi lawa."
+    junkChips: ["luka"]
+  - l1: "Les épices me brûlent la bouche."
+    l2: "namako li seli tawa uta mi."
+    junkChips: ["e"]
+  - l1: "Caresse ce chien adorable !"
+    l2: "o luka e soweli suwi!"
+    junkChips: ["sewi"]
+  - l1: "Les médicaments guérissent son corps."
+    l2: "misikeke li pona e sijelo ona."
+    junkChips: ["pi"]
+  - l1: "Ses cheveux sont agréables au toucher."
+    l2: "linja lawa ona li pona tawa luka."
+    junkChips: ["e"]
+    alsoAccept: ["linja ona li pona tawa luka."]
+  - l1: "La montagne ressemble au nez de mon visage."
+    l2: "nena kiwen li sama nena pi sinpin mi."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Vous connaissez déjà les mots pour *œil*, *cœur*, *visage*, et *dos*. Voici les autres mots pour parler du corps :
+
+<List>
+  <Word sl="lawa" m="tête ; guider, contrôler" />
+  <Word sl="kute" m="oreille ; entendre" />
+  <Word sl="nena" m="bosse, protubérance, comme une montagne, le nez, les seins..." />
+  <Word sl="uta" m="bouche, lèvre ; embrasser, mordre" />
+  <Word sl="sijelo" m="corps" />
+  <Word sl="luka" m="main, bras ; toucher" />
+  <Word sl="noka" m="pied, jambe" />
+  <Word sl="palisa" m="quelque chose de long et solide, comme une branche, une canne, un bâton..." />
+  <Word sl="linja" m="quelque chose de long et flexible, comme un fil, une corde, un cheveu..." />
+</List>
+
+{/* A note for translators */}
+{/*
+  Your language may have just one word for "hand, arm".
+  If that's the case, great, simply list the one word.
+  Same applies to "foot, leg".
+*/}
+
+Vous pouvez noter que beaucoup de parties du corps ont une action qui leur est associée. La tête contrôle, l'œil voit, l'oreille entend, la bouche embrasse, le cœur ressent, et la main touche.
+
+<List>
+  <Sentence sl="mi wile suli e linja lawa mi." m="Je veux me laisser pousser les cheveux." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="Mon patron m'a entendu parler mal." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="Le miroir renvoie une image inversée." />
+  <Sentence sl="sijelo mi li wile e lape." m="Mon corps a besoin de repos." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Mes doigts sont plus gros que mes orteils." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

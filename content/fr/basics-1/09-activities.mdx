@@ -1,0 +1,103 @@
+---
+slug: "fr/09"
+title: "leçon 9 : activités"
+description: "Apprenez utala, lape, musi, nasa, kalama, wile, ken, alasa !"
+practice:
+  - l1: "Un oiseau mignon dort."
+    l2: "waso suwi li lape."
+    junkChips: ["e"]
+  - l1: "Son nom est long."
+    l2: "nimi ona li suli."
+    junkChips: ["e"]
+  - l1: "vouloir s'amuser"
+    l2: "wile musi"
+  - l1: "essayer de chanter"
+    l2: "alasa kalama"
+  - l1: "Je commence à dessiner la plante."
+    l2: "mi kama sitelen e kasi."
+    junkChips: ["li"]
+  - l1: "Le petit animal peut se battre pour jouer."
+    l2: "soweli lili li ken utala musi."
+    junkChips: ["e"]
+  - l1: "J'essaie d'aller en Chine."
+    l2: "mi alasa tawa ma Sonko."
+    junkChips: ["li"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Activités
+
+Apprenons de nouveaux mots pour des choses que l'on peut faire :
+
+<List>
+  <Word sl="utala" m="se battre, attaquer" />
+  <Word sl="lape" m="dormir, se reposer" />
+  <Word sl="kalama" m="produire un son, chanter ; son, bruit" />
+  <Word sl="musi" m="s'amuser; drôle, amusant, intéressant" />
+  <Word sl="nasa" m="étrange, peu commun, ridicule, soûl" />
+  {/*<Word sl="lipu" m="papier, carte, livre, site web" />*/}
+</List>
+
+Utilisons ces mots dans des phrases :
+
+<List>
+  <Sentence sl="soweli li utala e jan." m="L'animal a attaqué quelqu'un." />
+  <Sentence sl="sina lape lon tomo." m="Tu dors à la maison." />
+  <Sentence sl="nimi ona li nasa tawa mi." m="Son nom est étrange selon moi." />
+  <Sentence
+    sl="jan lili li musi tan kalama."
+    m="L'enfant s'amuse grâce aux bruits."
+  />
+</List>
+
+## Préverbes
+
+Des fois, nous ne voulons pas parler des activités en elles-mêmes, mais de la manière dont nous les considérons. Peut-être que nous  _voulons_, _pouvons_, _commençons_, ou _continuons_ de faire quelque chose.
+
+En toki pona, ces informations sont exprimées à l'aide de _préverbes_. Un préverbe est un auxiliaire qui vient avant le verbe de la phrase. Vous connaissez déjà certains préverbes : 
+
+<List>
+  <Word sl="kama" m="commençer à ..., se mettre à ..., devenir ..." />
+  <Word sl="awen" m="continuer de ..." />
+  {/* <Word sl="sona" m="savoir ..." /> */}
+</List>
+
+Seuls quelques verbes peuvent également être préverbes en toki pona. Voici les autres :
+
+<List>
+  <Word sl="wile" m="vouloir ..." />
+  <Word sl="ken" m="pouvoir ..." />
+  <Word sl="alasa" m="essayer de ..." />
+</List>
+
+Les préverbes sont très versatiles. Voici quelques exemples de verbes avec préverbes :
+
+<List>
+  <Word sl="wile lape" m="vouloir dormir" />
+  <Word sl="awen pona" m="continuer à être bon" />
+  <Word sl="kama sona" m="se mettre à savoir, apprendre " />
+  {/* <Word sl="sona sitelen" m="savoir dessiner" /> */}
+  <Word sl="alasa kama wawa" m="essayer de devenir fort" />
+</List>
+
+Et voici quelques exemples dans des phrases complètes :
+
+<List>
+  <Sentence sl="waso lili li wile lape." m="Le petit oiseau veut dormir." />
+  {/* <Sentence sl="jan li sona moku e kasi." m="Les gens savent comment manger des plantes." /> */}
+  <Sentence sl="mi kama sona e toki pona." m="J'apprends le toki pona." />
+  <Sentence sl="sina alasa tawa ma Tosi." m="Tu essaies d'aller en Allemagne." />
+  <Sentence
+    sl="toki ona li awen nasa tawa mi."
+    m="Ses paroles continuent d'être étranges pour moi."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## Voir aussi
+* [FAQ: Existe-il d'autres préverbes ?](/fr/more-preverbs)
