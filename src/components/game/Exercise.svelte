@@ -144,4 +144,8 @@
     min-width: 20%;
     flex-shrink: 0;
   }
+  button:active {
+    box-shadow: 0 0;
+    transform: translate(0, 2px);
+  }
 </style>
