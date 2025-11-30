@@ -2,8 +2,8 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import react from "@astrojs/react";
 import { config } from "selo-components/config";
+import svelte from "@astrojs/svelte";
 
 const deploy = import.meta.env.PROD
   ? { site: `https://${config.hostname}/` }
@@ -12,7 +12,7 @@ const deploy = import.meta.env.PROD
 // https://astro.build/config
 export default defineConfig({
   ...deploy,
-  integrations: [mdx(), sitemap(), react()],
+  integrations: [mdx(), sitemap(), svelte()],
   redirects: {
     "/en/": {
       status: 301,
