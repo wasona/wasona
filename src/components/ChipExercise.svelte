@@ -1,9 +1,9 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { tokeniseSentence, type Exercise } from "@/lib/exercise";
+  import { tokeniseSentence, type Task } from "@/lib/exercise";
   import { KALAMA } from "@/lib/audio";
 
-  export let exercise: Exercise;
+  export let exercise: Task;
   export let locked: boolean;
   export let setAssembledSentence: (words: string[]) => void;
 

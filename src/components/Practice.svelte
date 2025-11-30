@@ -8,14 +8,14 @@
 
   import ChipExercise from "./ChipExercise.svelte";
   import { KALAMA } from "@/lib/audio";
-  import { verifyChips, type Exercise } from "@/lib/exercise";
+  import { verifyChips, type Task } from "@/lib/exercise";
 
-  export let exercises: Exercise[];
+  export let exercises: Task[];
   export let locale: Record<string, string>;
 
   const _ = (text: string) => locale[text];
 
-  let exerciseQueue: Exercise[] = [...exercises];
+  let exerciseQueue: Task[] = [...exercises];
   let currentIndex = 0;
   let completed = 0;
   let assembledSentence: string[] = [];
@@ -27,7 +27,7 @@
   let sfx_no: HTMLAudioElement | null = null;
   let sfx_done: HTMLAudioElement | null = null;
 
-  let currentExercise: Exercise;
+  let currentExercise: Task;
 
   onMount(() => {
     if (typeof Audio !== "undefined") {
