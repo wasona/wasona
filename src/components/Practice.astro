@@ -1,5 +1,5 @@
 ---
-import TabbedPractice from "@/components/TabbedPractice.svelte";
+import Practice from "@/components/game/Practice.svelte";
 import { type Exercise } from "@/lib/exercise";
 import { locales } from "@/lib/i18n";
 interface Props {
@@ -13,7 +13,7 @@ const locale = locales[lang];
 
 <h2>Let's practice!</h2>
 <!-- <UnitNav /> -->
-<TabbedPractice exercises={exercises} locale={locale} client:load />
+<Practice exercises={exercises} locale={locale} client:load />
 <!-- <PracticeSvelte exercises={exercises} locale={locale} client:load /> -->
 <!-- <TabbedPractice>
 

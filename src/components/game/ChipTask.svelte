@@ -3,7 +3,7 @@
   import { tokeniseSentence, type Task } from "@/lib/exercise";
   import { KALAMA } from "@/lib/audio";
 
-  export let exercise: Task;
+  export let task: Task;
   export let locked: boolean;
   export let setAssembledSentence: (words: string[]) => void;
 
@@ -50,8 +50,8 @@
 
   // Initialize on exercise change
   $: (() => {
-    let tokens = tokeniseSentence(exercise.l2);
-    if (exercise.junkChips) tokens = [...tokens, ...exercise.junkChips];
+    let tokens = tokeniseSentence(task.l2);
+    if (task.junkChips) tokens = [...tokens, ...task.junkChips];
     words = shuffleArray(tokens);
     assembled = [];
   })();

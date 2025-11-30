@@ -1,21 +1,16 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  let isMounted = false;
-
-  onMount(() => {
-    isMounted = true;
-  });
-
-  import ChipExercise from "./ChipExercise.svelte";
+  import ChipTask from "@/components/game/ChipTask.svelte";
   import { KALAMA } from "@/lib/audio";
   import { verifyChips, type Task } from "@/lib/exercise";
 
-  export let exercises: Task[];
+  export let tasks: Task[];
   export let locale: Record<string, string>;
 
   const _ = (text: string) => locale[text];
 
-  let exerciseQueue: Task[] = [...exercises];
+  let isMounted = false;
+  let taskQueue: Task[] = [...tasks];
   let currentIndex = 0;
   let completed = 0;
   let assembledSentence: string[] = [];
@@ -27,9 +22,10 @@
   let sfx_no: HTMLAudioElement | null = null;
   let sfx_done: HTMLAudioElement | null = null;
 
-  let currentExercise: Task;
+  let currentTask: Task;
 
   onMount(() => {
+    isMounted = true;
     if (typeof Audio !== "undefined") {
       sfx_yes = new Audio(`${KALAMA}/sfx/yes.mp3`);
       sfx_no = new Audio(`${KALAMA}/sfx/no.mp3`);
@@ -37,17 +33,17 @@
     }
   });
 
-  $: currentExercise = exerciseQueue[currentIndex];
+  $: currentTask = taskQueue[currentIndex];
 
   function handleCheck() {
     completed += 1;
 
-    if (verifyChips(currentExercise, assembledSentence)) {
+    if (verifyChips(currentTask, assembledSentence)) {
       statusMessage = _("correct");
       sfx_yes?.play();
     } else {
-      statusMessage = `${_("incorrect")} "${currentExercise.l2}"`;
-      exerciseQueue = [...exerciseQueue, exerciseQueue[currentIndex]];
+      statusMessage = `${_("incorrect")} "${currentTask.l2}"`;
+      taskQueue = [...taskQueue, taskQueue[currentIndex]];
       sfx_no?.play();
     }
 
@@ -55,7 +51,7 @@
   }
 
   function handleContinue() {
-    if (currentIndex < exerciseQueue.length - 1) {
+    if (currentIndex < taskQueue.length - 1) {
       currentIndex += 1;
       assembledSentence = [];
       statusMessage = null;
@@ -72,7 +68,7 @@
     <div class="progress-container">
       <div
         class="progress"
-        style="width: {(completed / exerciseQueue.length) * 100}%"
+        style="width: {(completed / taskQueue.length) * 100}%"
       ></div>
     </div>
 
@@ -80,10 +76,10 @@
       <h2>{_("done")}</h2>
     {:else}
       <h2>{_("translate")}</h2>
-      <h3>{currentExercise.l1}</h3>
+      <h3>{currentTask.l1}</h3>
 
-      <ChipExercise
-        exercise={currentExercise}
+      <ChipTask
+        task={currentTask}
         setAssembledSentence={(words: string[]) => (assembledSentence = words)}
         locked={checked}
       />

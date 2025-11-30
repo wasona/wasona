@@ -1,6 +1,6 @@
 <script lang="ts">
   import { type Exercise } from "@/lib/exercise";
-  import PracticeSvelte from "@/components/Practice.svelte";
+  import ExerciseWidget from "@/components/game/Exercise.svelte";
 
   export let exercises: Exercise[];
   export let locale: Record<string, string>;
@@ -25,7 +25,7 @@
   <div class="tab-content">
     {#each exercises as exercise, i}
       <div class="tab" class:active={i === activeIndex}>
-        <PracticeSvelte exercises={exercise.tasks} {locale} />
+        <ExerciseWidget tasks={exercise.tasks} {locale} />
       </div>
     {/each}
   </div>
