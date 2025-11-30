@@ -171,7 +171,7 @@
 
   .chip {
     display: inline-block;
-    background-color: var(--bg-2);
+    background-color: var(--bg-1);
     padding: 10px 17px;
     border-radius: 15px;
     border: 1px solid var(--grey-1);

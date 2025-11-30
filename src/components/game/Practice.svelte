@@ -13,13 +13,18 @@
 
 <div class="tabbed-box">
   <!-- Tab buttons -->
-  <div class="tabbed-selector" style={`--cols:${exercises.length}`}>
-    {#each exercises as exercise, i}
-      <button class:active={i === activeIndex} on:click={() => setActiveTab(i)}>
-        {exercise.title}
-      </button>
-    {/each}
-  </div>
+  {#if exercises.length > 1}
+    <div class="tabbed-selector" style={`--cols:${exercises.length}`}>
+      {#each exercises as exercise, i}
+        <button
+          class:active={i === activeIndex}
+          on:click={() => setActiveTab(i)}
+        >
+          {exercise.title}
+        </button>
+      {/each}
+    </div>
+  {/if}
 
   <!-- Tab contents -->
   <div class="tab-content">
@@ -65,8 +70,8 @@
   .tab-content {
     padding: 10px;
     /* background-color: var(--bg-1); */
-    border-left: 2px dotted var(--grey);
-    border-right: 2px dotted var(--grey);
+    /*border-left: 2px dotted var(--grey);*/
+    /*border-right: 2px dotted var(--grey);*/
   }
   .tab {
     display: none;

@@ -105,7 +105,7 @@
 
 <style>
   .exercise {
-    padding: 20px;
+    padding: 20px 10px;
     /* max-width: 600px; */
     margin: auto;
   }
@@ -131,7 +131,7 @@
   }
   .button {
     display: inline-block;
-    background-color: var(--bg-2);
+    background-color: var(--bg-1);
     padding: 10px 17px;
     border-radius: 15px;
     border: 1px solid var(--grey-1);
@@ -139,7 +139,7 @@
     margin: 4px;
     cursor: pointer;
     user-select: none;
-    font-size: 125%;
+    font-size: 120%;
     font-family: inherit;
     min-width: 20%;
     flex-shrink: 0;
