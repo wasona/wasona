@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { KALAMA } from "@/consts";
-  import { tokeniseSentence, type Exercise } from "@/utils/exercise";
+  import { tokeniseSentence, type Exercise } from "@/lib/exercise";
+  import { KALAMA } from "@/lib/audio";
 
   export let exercise: Exercise;
   export let locked: boolean;

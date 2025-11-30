@@ -7,8 +7,8 @@
   });
 
   import ChipExercise from "./ChipExercise.svelte";
-  import { KALAMA } from "@/consts";
-  import { verifyChips, type Exercise } from "@/utils/exercise";
+  import { KALAMA } from "@/lib/audio";
+  import { verifyChips, type Exercise } from "@/lib/exercise";
 
   export let exercises: Exercise[];
   export let locale: Record<string, string>;
