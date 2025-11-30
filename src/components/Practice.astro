@@ -1,5 +1,5 @@
 ---
-import PracticeReact from "@/components/Practice";
+import Practice from "@/components/game/Practice.svelte";
 import { type Exercise } from "@/lib/exercise";
 import { locales } from "@/lib/i18n";
 interface Props {
@@ -11,4 +11,5 @@ console.log("current locale:", lang);
 const locale = locales[lang];
 ---
 
-<PracticeReact exercises={exercises} locale={locale} client:load />
+<!-- <h2>Let's practice!</h2> -->
+<Practice exercises={exercises} locale={locale} client:load />
