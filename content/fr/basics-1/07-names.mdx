@@ -1,0 +1,100 @@
+---
+slug: "fr/07"
+title: "leçon 7 : noms propres"
+description: "Apprenez nimi, jan, sitelen, toki, ma, tomo !"
+practice:
+  - l1: "Je dessine le paysage."
+    l2: "mi sitelen e ma."
+    junkChips: ["li"]
+  - l1: "Ton image est grande."
+    l2: "sitelen sina li suli."
+    junkChips: ["e"]
+  - l1: "Les gens parlent des bâtiments."
+    l2: "jan li toki e tomo."
+    junkChips: ["ma"]
+  - l1: "Ton nom est Maya."
+    l2: "nimi sina li jan Maja."
+    junkChips: ["e"]
+    alsoAccept: ["sina jan Maja."]
+  - l1: "Iman parle arabe."
+    l2: "jan Iman li toki Alapi."
+    junkChips: ["e"]
+  - l1: "La ville de Toronto est grande."
+    l2: "ma tomo Towano li suli."
+    junkChips: ["e"]
+  - l1: "Je vois de l'écriture cyrillique."
+    l2: "mi lukin e sitelen Kililisa."
+    junkChips: ["li"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Noms propres
+
+Pointer les choses, c'est bien, mais des fois il faut aussi être plus spécifique. 
+
+Bientôt chez vous : les noms propres ! Une technologie révolutionnaire qui permet à toute la famille de parler de choses ou de personnes spécifiques !
+
+Voyons les mots pour les entités qui ont des noms propres : 
+
+<List>
+  <Word sl="nimi" m="nom, mot" />
+  <Word sl="jan" m="personne" />
+  <Word sl="sitelen" m="image, écriture ; dessiner, écrire" />
+  <Word sl="toki" m="parole, langue, langage ; parler, dire" />
+  <Word sl="ma" m="terre, zone, pays" />
+  <Word sl="tomo" m="bâtiment, salle, pièce, maison" />
+</List>
+
+Vous connaissez déjà un nom propre en toki pona : _sitelen Lasina_ (écriture latine) ! Voyons quelques noms de personne :
+
+<List>
+  <Sentence sl="jan Nowa" m="personne s'appelant Noah" />
+  <Sentence sl="jan Ema" m="personne s'appelant Emma" />
+</List>
+
+A partir de ces noms propres, on peut voir que : 
+
+1. Les noms propres sont des adjectifs : ils viennent toujours après un autre mot.
+2. Les noms propres commencent par une majuscule en _sitelen Lasina_. Si vous voyez un mot commençant par une majuscule, il s'agit toujours d'un nom propre.
+3. En _sitelen pona_, les noms propres sont écrits à l'intérieur d'un **󱥂 nimi** géant, que l'on appelle *cartouche* (comme dans l'écriture hiéroglyphique égyptienne). Pour chaque son du nom, nous choisissons un mot en toki pona qui commence par ce son. Par exemple, 'Ema' peut s'écrire **e**, 󱤶 **m**oku, 󱤂 **a**la.
+
+Les noms propres ne concernent pas que les gens ! Regardons une langue, un pays, et une ville :
+
+<List>
+  <Sentence
+    sl="toki Kanse"
+    m="langue s'appelant français"
+  />
+  <Sentence sl="ma Tosi" m="pays appelant Allemagne (de l'allemand 'Deutsch')" />
+  <Sentence
+    sl="ma tomo Loma"
+    m="zone de bâtiments s'appelant Rome (du latin 'Rōma')"
+  />
+</List>
+
+Ces noms propres nous en disent plus sur la manière dont un nom propre est construit en toki pona :
+
+4. Quand un nom propre est créé en toki pona, il _change_ selon les régles phonétique du toki pona. Il n'y a pas de son **d** en toki pona, donc le mot 'Deutsch' devient **T**osi. Certains changements sont minimes, comme _Noah_ → _Nowa_, d'autres sont plus importants, comme _français_ → _Kanse_.
+5. Les noms propres ne viennent pas forcément de l'anglais ou du français. Les locuteurs de toki pona préfèrent les _endonymes_ : les noms natifs des pays, des langues, des personnes, *etc*. Ainsi, le nom pour l'Allemagne vient de l'allemand.
+
+Entraînons-nous à utiliser les nouveaux mots :
+
+<List>
+  <Sentence sl="waso li lukin e ma." m="L'oiseau regarde le paysage." />
+  <Sentence sl="jan li toki e tomo." m="Les gens parlent d'une maison." />
+  <Sentence sl="jan pona li toki pona." m="Les gens bien parlent bien." />
+  <Sentence sl="nimi ona li jan Kenta." m="Son nom est Kenta." />
+  <Sentence sl="jan Sunita li sitelen e pipi." m="Sunita dessine un insecte." />
+  <Sentence sl="jan Nina li toki Kanse." m="Nina parle français." />
+  <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma connaît bien l'Allemagne." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## Voir aussi
+* [FAQ: Quel est mon nom en toki pona ?](/fr/make-a-name)
+* [FAQ: En sitelen pona, les noms propres sont très longs. Comment faire pour les raccourcir ?](/fr/simpler-cartouches)

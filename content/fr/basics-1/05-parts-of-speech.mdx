@@ -1,0 +1,104 @@
+---
+slug: "fr/05"
+title: "leçon 5 : parties du discours"
+description: "Apprenez à propos des noms, verbes, et adjectifs !"
+practice:
+  - l1: "un insecte fort"
+    l2: "pipi wawa"
+  - l1: "la force de l'insecte"
+    l2: "wawa pipi"
+  - l1: "un grand œil"
+    l2: "lukin suli"
+  - l1: "de la bonne nourriture"
+    l2: "moku pona"
+  - l1: "incroyablement bon"
+    l2: "pona wawa"
+  - l1: "La nourriture rend les yeux meilleurs."
+    l2: "moku li pona e lukin."
+    junkChips: ["waso"]
+  - l1: "Les animaux connaissent la mignonnerie des oiseaux."
+    l2: "soweli li sona e suwi waso."
+    junkChips: ["suli"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Parties du discours
+
+Peut-être avez-vous remarquez que le mot **󱥡 sona** vous a été présenté deux fois : une première fois comme un verbe signifiant "savoir, connaître", puis comme un adjectif signifiant "intelligent, sage". Alors lequel est-ce ?
+
+En réalité, **󱥡 sona** peut être un verbe ou un adjectif ! S'il suit un nom, c'est un adjectif, et s'il suit **󱤧 li**, c'est un verbe. Tout dépend de l'ordre des mots dans la phrase.
+
+Cela est vrai pour _tous_ les mots. Si un mot est un nom, adjectif, ou verbe, alors il peut devenir _n'importe lequel des trois_ ! Voyons quelques exemples, parmi les mots que vous connaissez déjà : 
+
+<List>
+  <Word sl="lukin" m="N: œil; V: voir" />
+  <Word sl="moku" m="N: nourriture; V: consommer, manger" />
+  <Word sl="sona" m="N: intelligence, connaissance, sagesse; V: savoir, connaître; Adj: intelligent, sage" />
+  <Word sl="suli" m="N: taille; V: aggrandir, mettre l'accent sur; Adj: grand, gros, important" />
+  <Word sl="pona" m="N: bien, bonté; V: rendre mieux, améliorer; Adj: bon, plaisant" />
+  <Word sl="waso" m="N: oiseau; V: transformer en oiseau; Adj: aviaire, qui concerne les oiseaux" />
+</List>
+
+Ce ne sont que *certains* des mots que nous avons vus précédemment -- juste assez pour observer des changements récurrents : 
+* Quand **des verbes deviennent des noms**, ils prennent le sens de "fait de *verbe*" (*connaissance*), ou "objet crucial à l'action de *verbe*" (*nourriture, oeil*).
+* Quand **des verbes deviennent des adjectifs**,  ils prennent le sens de "qualité de ceux qui *verbe*" (*une personne intelligente ~ une personne qui sait*).
+* Quand **des noms deviennent des verbes**, ils prennent le sens de "transformer en *nom*" ou "appliquer *nom* sur *objet*" (*transformer en oiseau*).
+* Quand **des noms deviennent des adjectifs**, ils prennent le sens de "de *nom*" (*de l'oiseau*) ou de "qui concerne *nom*" (*aviaire, qui concerne les oiseaux*)
+* Quand **des adjectifs deviennent des noms**, ils prennent le sens de "fait d'être *adjectif*" (*bonté*).
+* Quand **des adjectifs deviennent des verbes**, ils prennent le sens de "rendre plus *adjectif*" (*améliorer, agrandir*).
+
+Mais lorsqu'ils parlent, les locuteurs de toki pona ne pensent même pas à ces choses. A partir d'un moment vous ne penserez plus si un mot est à l'origine un nom, un verbe, ou un adjectif. Vous aurez acquis les différents sens que peut avoir un mot.
+
+Entraînez-vous à utiliser différents mots comme verbe, nom, ou adjectif :
+
+<List>
+  <Sentence sl="lukin li pona e sona." m="Les yeux améliorent la connaissance." />
+  <Sentence sl="moku li suli e pipi." m="La nourriture rend les insectes plus grands." />
+  <Sentence 
+    sl="moku li wawa e soweli lili."
+    m="La nourriture rend le petit animal plus fort."
+  />
+</List>
+
+## L'ordre des mots a de l'importance !
+
+Parce que chaque nom peut être un adjectif et que chaque adjectif peut être un nom, l'ordre des mots est extrêmement important. Les deux phrases suivantes ne veulent pas dire la même chose :
+
+<List>
+  <Word sl="soweli suli" m="le grand animal" />
+  <Word sl="suli soweli" m="la taille de l'animal" />
+  <Sentence
+    sl="soweli suli li sona e suli soweli."
+    m="Le grand animal connaît la taille d'un animal."
+  />
+</List>
+
+## li et e sont aussi important !
+
+Souvenez-vous de li et de e. Ils vous semblent insignifiants ? Maintenant que nous savons que n'importe quel mot peut être nom, verbe, ou adjectif, nous pouvons voir à quel point li et e sont utiles. Grâce à eux, nous pouvons distinguer les trois phrases suivantes : 
+
+<List>
+  <Word sl="soweli sona" m="un animal intelligent" />
+  <Word sl="sona pona" m="bonne connaissance (d'un sujet) ; connaître bien" />
+  <Word sl="pona waso" m="bonté de l'oiseau" />
+  <Sentence
+    sl="soweli sona li pona e waso."
+    m="L'animal intelligent aide (lit. améliore, rend mieux) l'oiseau."
+  />
+  <Sentence
+    sl="soweli li sona pona e waso."
+    m="L'animal connaît bien l'oiseau."
+  />
+  <Sentence
+    sl="soweli li sona e pona waso."
+    m="L'animal connaît la bonté de l'oiseau (sait à quel point l'oiseau est bon)."
+  />
+</List>
+
+Si vous ne savez pas comment lire ou écrire une phrase, commencez par vous demander quel est le sujet, quel est le verbe, et quel est l'objet. Tout vous sera alors plus clair, si vous découpez la phrase en groupes plus petits.
+
+<Practice exercises={frontmatter.practice} />

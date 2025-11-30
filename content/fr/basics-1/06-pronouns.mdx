@@ -1,0 +1,89 @@
+---
+slug: "fr/06"
+title: "leçon 6 : pronoms"
+description: "Apprenez ni, mi, sina, ona !"
+practice:
+  - l1: "C'est une plante sucrée."
+    l2: "ni li kasi suwi."
+    junkChips: ["e"]
+  - l1: "Ce sont de grands yeux."
+    l2: "ni li lukin suli."
+    junkChips: ["e"]
+  - l1: "Tes yeux sont grands."
+    l2: "lukin sina li suli."
+    junkChips: ["e"]
+  - l1: "Cet oiseau est petit."
+    l2: "waso ni li lili."
+    junkChips: ["e"]
+  - l1: "Les mauvais insectes ont mangé ma plante."
+    l2: "pipi ike li moku e kasi mi."
+    junkChips: ["ona"]
+  - l1: "Tu es adorable."
+    l2: "sina suwi."
+    junkChips: ["li"]
+  - l1: "Je les vois."
+    l2: "mi lukin e ona."
+    junkChips: ["li"]
+  - l1: "Ils mangent bien."
+    l2: "ona li moku pona."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Pronoms
+
+Vous êtes sûrement fatigué des phrases à rallonge. Raccourcissons-les en pointant les choses.
+
+<List>
+  <Word sl="ni" m="ce, ces, ça, cet, cette" />
+  <Sentence sl="ni li soweli." m="C'est un animal." />
+  <Sentence sl="ni li kasi." m="C'est une plante." />
+  <Sentence sl="ni li moku suwi." m="C'est de la nourriture sucrée." />
+  <Sentence sl="ni li suli." m="C'est important." />
+  <Sentence sl="ni li pona wawa." m="C'est incroyablement bon." />
+</List>
+
+Ce sont nos premières _phrases sans objet_. La particule **󱤉 e** n'y apparaît donc pas.
+
+Vous vous demandez sûrement : si **󱤧 li** se place devant le verbe, où est le verbe dans ces phrases ? En français, le verbe est "être". En toki pona, le verbe "être" n'existe tout simplement pas. Quand un mot remplit la fonction de verbe en toki pona, le verbe "être" est automatiquement inclus : **󱥢 soweli** "être un animal", **󱥣 suli** "être important".
+
+Voyons maintenant les autres pronoms : 
+
+<List>
+  <Word sl="mi" m="moi, je, me, mon ; nous, notre" />
+  <Word sl="sina" m="toi, tu, te, ton ; vous, votre" />
+  <Word sl="ona" m="lui, il, le, son ; elle, la ; eux, ils, elles, les, leur" />
+</List>
+
+Entraînons-nous avec **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, et **󱥁 ni** :
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Cette plante est grande." />
+  <Sentence sl="sona sina li wawa." m="Ta connaissance est incroyable." />
+  <Sentence sl="pipi ni li pipi mi." m="Cet insecte est mon insecte." />
+  <Sentence sl="waso sina li lukin e mi." m="Ton oiseau me voit." />
+  <Sentence sl="waso li moku e pipi ni." m="L'oiseau mange cet insecte." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Mon animal mange sa plante." />
+</List>
+
+Vous devriez déjà être accoutumé à ces phrases. Les pronoms peuvent se comporter comme des noms ou des adjectifs. On note que contrairement au français, les pronoms ont la même forme qu'ils soient sujets (**󱤴 mi** *je*), objets (**󱤴 mi** *me*), ou adjectifs (**󱤴 mi** *mon, ma, mes*). On voit également que les pronoms objets suivent le verbe et la particule **e** (contrairement au français, où ils se placent devant le verbe) : "soweli li lukin e **mi**." "L'animal **me** voit."
+
+Lorsque **󱤴 mi** ou **󱥞 sina** sont le sujet de la phrase, on observe quelque chose d'étrange : 
+
+<List>
+  <Sentence sl="mi wawa." m="Je suis fort." />
+  <Sentence sl="sina lukin e moku." m="Tu vois de la nourriture." />
+  <Sentence sl="mi sona e kasi suli." m="Je connais la grande plante." />
+  <Sentence sl="sina sona e suli kasi." m="Tu connais la taille de la plante." />
+</List>
+
+Le toki pona a une règle spéciale : quand **󱤴 mi** et **󱥞 sina** sont les sujets de la phrase, **󱤧 li** est omis. Cela est dû au fait que les phrase commençant par **󱤴 mi** et **󱥞 sina** sont très fréquentes.
+
+<Practice exercises={frontmatter.practice} />
+
+## Voir aussi
+* [FAQ: Est-ce que 'li' signifie 'être'  ?](/fr/li-and-is)

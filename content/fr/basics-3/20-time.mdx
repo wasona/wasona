@@ -1,0 +1,82 @@
+---
+slug: "fr/20"
+title: "leçon 20 : temps"
+description: "Apprenez la, tenpo, sike, mun, suno, sin, poka !"
+practice:
+  - l1: "Les plantes font de la photosynthèse."
+    l2: "kasi li moku e suno."
+    junkChips: ["o"]
+  - l1: "La lune se déplace le long d'une ellipse."
+    l2: "mun li tawa lon sike."
+    junkChips: ["suno"]
+    alsoAccept: ["mun li tawa sike."]
+  - l1: "Ils sont à tes côtés."
+    l2: "ona li lon poka sina."
+    junkChips: ["e"]
+  - l1: "Avant, j'étais un enfant."
+    l2: "tenpo pini la mi lili."
+    junkChips: ["li"]
+  - l1: "C'est drôle, l'oiseau parle comme une personne."
+    l2: "musi la waso li toki sama jan."
+    junkChips: ["e"]
+  - l1: "Quand il fait froid, les insectes disparaissent."
+    l2: "kon li lete la, pipi li weka."
+    junkChips: ["seme"]
+  - l1: "Si tu veux, tu peux."
+    l2: "sina wile la, sina ken."
+    junkChips: ["kon"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Parlons du temps ! Vous avez peut-être remarqué que le temps du verbe dans la traduction des phrases change quelquefois. Des fois, il est au présent, des fois au passé, et des fois au futur. C'est parce qu'une phrase en Toki Pona ne contient aucune information temporelle par défaut, donc elle pourrait donc s'appliquer aussi bien au passé, au présent, ou au futur ! On peut néanmoins choisir d'être plus précis en utilisant des mots liés au temps.
+
+En voici quelques uns :
+
+<List>
+  <Word sl="tenpo" m="temps, moment, situation" />
+  <Word sl="sike" m="rond, répétitif, annuel ; cercle, boule" />
+  <Word sl="mun" m="lune, corps céleste" />
+  <Word sl="suno" m="soleil, journée, jour ; lumineux, clair" />
+  <Word sl="sin" m="nouveau, frais ; encore" />
+  <Word sl="poka" m="coté, alentours ; proche" />
+</List>
+
+Vous savez déjà parler de la localisation *spatiale* en toki pona (où a lieu une action). La localisation *temporelle* (quand a lieu une action) fonctionne de manière similaire : 
+
+<List>
+  <Word sl="lon tenpo kama" m="dans le futur, après, dans les temps à venir" />
+  <Word sl="lon tenpo pini" m="dans le passé, avant" />
+  <Word sl="lon tenpo ni" m="pendant ce temps, en ce moment" />
+  <Sentence sl="soweli lili mi o kama suli lon tenpo kama!" m="Que mon petit chat grandisse dans le futur !" />
+  <Sentence sl="ma Loma li ma suli lon tenpo weka." m="Rome était un grand empire il y a longtemps." />
+</List>
+
+Le temps sert souvent de « scène » ou de « contexte » pour le reste du discours. En toki pona, ce "contexte" se place souvent en début de phrase, à l'aide d'un mot très utile : 
+On aime souvent placer ce contexte au début de la phrase, comme je viens de le faire ici ! Toki Pona a un mot qui aide à cela :
+
+<List>
+  <Word sl="la" m="quant à ..., en parlant de ..., quand ..., si ... " />
+  <Word sl="ken la" m="peut-être, ..." />
+  <Word sl="open la" m="pour commencer, ... ; en premier lieu, ..." />
+  <Word sl="lipu la" m="concernant le livre, ..." />
+  <Word sl="tenpo la" m="des fois, ..." />
+  <Word sl="tenpo pini la" m="avant, ... ; dans le passé, ..." />
+  <Word sl="tenpo suno kama la" m="le jour suivant, ... ; demain, ..." />
+  <Sentence sl="sin la mi wile toki e ni:" m="Encore une fois, j'aimerais dire que : ..." />
+  <Sentence sl="mi pali e ni lon tenpo kama poka." m="Je vais travailler dessus bientôt." />
+</List>
+
+**󱤡 la** peut également être utilisé entre deux phrases, les reliant en une seule. La première phrase devient alors une condition *"si..."* ou *"quand..."*, et la seconde est le résultat "*alors*".
+
+
+<List>
+  <Word sl="suno li pini." m="Le soleil se couche." />
+  <Word sl="mi lape." m="Je dors." />
+  <Sentence sl="suno li pini la, mi lape." m="Quand le soleil se couche, je dors." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

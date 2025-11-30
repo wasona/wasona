@@ -1,0 +1,74 @@
+---
+slug: "fr/27"
+title: "leçon 27 : couleurs"
+description: "Apprenez kule, walo, pimeja, laso, loje, jelo, kin !"
+practice:
+  - l1: "La nuit, je fais la fête."
+    l2: "tenpo pimeja la mi musi."
+    alsoAccept: ["pimeja la mi musi."]
+    junkChips: ["jelo"]
+  - l1: "Il y a de la poussière jaune sur l'abeille."
+    l2: "ko jelo li lon pipi."
+    junkChips: ["loje"]
+  - l1: "Moi aussi, je joue avec des briques colorées."
+    l2: "mi kin li musi kepeken leko kule."
+    junkChips: ["e"]
+  - l1: "Toute cette neige m'aveugle."
+    l2: "mi ken ala lukin tan ko walo."
+    junkChips: ["seli"]
+  - l1: "Il y a du bleu, du blanc, et du rouge sur le drapeau."
+    l2: "laso en walo en loje li lon lipu."
+    junkChips: ["jelo"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Parlons maintenant des couleurs !
+
+<List>
+  <Word sl="kule" m="couleur, type ; coloré" />
+  <Word sl="walo" m="blanc, pâle" />
+  <Word sl="pimeja" m="noir, foncé, sombre" />
+  <Word sl="loje" m="rouge, magenta" />
+  <Word sl="jelo" m="jaune" />
+  <Word sl="laso" m="vert, bleu, turquoise" />
+</List>
+
+En *sitelen pona*, certains mots pour les couleurs sont des caractères *composés* d'un triangle (comme le caractère pour **󱤞 kule**) et d'un autre caractère : **󱤂 ala**, **󱥰 uta**, **󱥤 suno**, **󱤗 kasi**. D'autres caractères *sitelen pona* sont composés : **󱤶 moku**, **󱥉 pali**, **󱤙 kepeken** contiennent **󱤭 luka**, et **󱤕 kalama**, **󱥌 pana**, **󱥡 sona**, **󱥬 toki** ont trois lignes (*'emitters'* en anglais). Bravo à vous si vous l'aviez remarqué avant ! 
+
+Les mots pour les couleurs en toki pona couvrent des *plages* de couleurs, et non seulement celles listées ici. **󱤣 laso** est tout particulièrement intéressant : en toki pona, le vert et le bleu ne sont considérés que comme des nuances d'une seule couleur, comme en japonais, en vietnamien, en zoulou, et dans d'autres langues. Les deux phrases suivantes sont acceptables en toki pona, mais pas en français :
+
+<List>
+  <Word sl="kin" m="aussi, également" />
+  <Sentence sl="sewi li laso." m="Le ciel est bleu." />
+  <Sentence sl="kasi kin li laso." m="L'herbe aussi est verte." />
+</List>
+
+## Avons-nous besoin des couleurs ?
+
+Tout comme les mots désignant le genre, les mots pour les couleurs sont moins fréquents en toki pona que dans les langues naturelles. On notera que les couleurs ne sont jamais utilisées dans des métaphores comme en français : *un mariage blanc*, *le marché noir*, *des idées noires*, *une classe verte*. 
+
+{/* A note for translators */}
+{/*
+  "white lie, black market, greenhouse" may not make sense in your language.
+  You may replace them with similar colour-noun pairs that are more suitable.
+*/}
+
+<List>
+  <Sentence sl="toki pimeja" m="des idées de couleur noire (????)" />
+  <Sentence sl="toki ike" m="des idées noires" />
+</List>
+
+Il y a donc une différence entre une maison blanche et la Maison Blanche :
+
+<List>
+  <Sentence sl="tomo walo" m="une maison blanche" />
+  <Sentence sl="tomo ni la jan li lawa e ma Mewika." m="la Maison Blanche" />
+</List>
+
+D'une manière générale, le toki pona n'utilise pas de métaphores. Celà est très clair pour les couleurs mais c'est aussi vrai pour les autres types de métaphore (*celibataire endurci*, *voir rouge*, ...). Avant de traduire une expression du français, demandez-vous s'il s'agit d'une métaphore ou non.
+
+<Practice exercises={frontmatter.practice} />

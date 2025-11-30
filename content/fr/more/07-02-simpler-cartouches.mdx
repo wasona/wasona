@@ -1,0 +1,88 @@
+---
+slug: "fr/simpler-cartouches"
+title: "FAQ : En sitelen pona, les noms propres sont très longs. Comment faire pour les raccourcir ?"
+description: "Apprenez à raccourcir les noms propres !"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Les noms écris en _sitelen pona_ peuvent être assez long :
+
+<List>
+  <Sentence sl="lipu Wikipesija" m="Wikipédia" />
+  <Sentence sl="ma Antasika" m="Antarctique" />
+  <Sentence sl="ma Kolonpija" m="Colombie" />
+</List>
+
+Pour rendre les noms plus simples à lire et à écrire, les tokiponistes ont inventé trois systèmes de notation des noms propres.
+
+## 1. Le système à points : 󱤿󱥠󱤕
+
+Le système à points, ou _nasin sitelen kalama_, a été créé par jan Pumiko en 2022. Entre 40% et 60% des tokiponistes disent l'utiliser ou l'utilisent dans certaines situations. En _nasin sitelen kalama_, les mots sont divisés en _mores_ : des morceaux similaires aux syllabes, mais plus petits. Une _more_ est constituée d'une consonne suivie d'une voyelle, d'une voyelle en début de mot, ou de la consonne finale -n.
+
+- to-ki
+- ja-n
+- a-n-pa
+- si-n-pi-n
+
+En plaçant des points médians après un caractère, on augmente le nombre de mores qui doivent être prononcées dans le nom :
+
+<List>
+  <Word sp="󱦐󱤅󱦑" sl="A" />
+  <Word sp="󱦐󱤅󱦜󱦑" sl="An" />
+  <Word sp="󱦐󱤅󱦜󱦜󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦑" sl="S" />
+  <Word sp="󱦐󱥟󱦜󱦑" sl="Si" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦑" sl="Sin" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦑" sl="Sinpi" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
+</List>
+
+(Vous pouvez voir une bizarrerie de ce système : **󱦐󱤅󱦑** est une more complète, donc ajouter un point médian ajoute la more suivante (**-n**). Alors que **󱦐󱥟󱦑** n'est pas une more complète, donc ajouter un point médian ne fait que compléter la première more du mot (**si**).)
+
+Vous pouvez remplacer le point médian par un double point pour montrer que la totalité du mot doit être prononcée :
+
+<List>
+  <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
+</List>
+
+Mettez plusieurs caractères dans une cartouche pour écrire un nom propre :
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅󱦜󱥩󱦜󱥜󱦜󱤔󱦜󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
+</List>
+
+* 🎉 Vous utilisez moins de caractères pour écrire un nom propre !
+* 🙁 La cartouche reste assez longue.
+
+## 2. Le système à barres de comptage : 󱤿󱥠󱤕󱥍󱤩󱤨
+
+Le système à barres de comptage a été créé par jan Sonja en 2024 pour être utilisé dans des lettres officielles et des livres, dont les pages plus étroites demandent des noms plus courts. Dans ce système, chaque caractère de la cartouche a une barre de comptage en dessous. Le nombre de barres indique le nombre de sons qui doivent être prononcés :
+
+{/* Note: this section uses non-standard codepoints F19FC-F19FF, which I modded into nasin nanpa. If you ever update nasin nanpa, this section will break. Ideally, nskpll gets standardised later. */}
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡&#xF19FE;󱤜&#xF19FD;󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅&#xF19FD;󱥩&#xF19FD;󱥜&#xF19FD;󱤔&#xF19FD;󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
+</List>
+
+## 3. Le système d'initiales
+
+Le système d'initiales a été utilisé pour la première fois par DavidAR en 2019 et a été repris par jan Sonja dans le *lipu su* : "Le Magicien d'Oz (édition en Toki Pona)". La première référence à une personne, une langue, ou un lieu se fait en utilisant son nom complet : 
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorothy" />
+</List>
+
+Dans le reste du texte, le nom est abrégé et seul le premier caractère est utilisé :
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorothy" />
+</List>

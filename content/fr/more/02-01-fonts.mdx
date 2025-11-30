@@ -1,0 +1,37 @@
+---
+slug: "fr/fonts"
+title: "Comment écrire le sitelen pona à la machine ?"
+description: "En savoir plus sur les polices d'écriture !"
+---
+
+L'écriture *sitelen pona* a beau être géniale, elle n'est pas encore disponible en unicode. La plupart des polices de caractère ne s'appliquent qu'aux caractères définis en unicode, ce qui signifie que la plupart des polices de votre machine ne permettent pas d'écrire en *sitelen pona*. 
+
+Pour remédier à cette situation, vous devez installer une police d'écriture conçue pour le *sitelen pona*. Plus d'une [centaine](https://linku.la/fonts/) existent ! En voici quelques unes :
+
+* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) de jan Itan est la police que nous utilisons sur ce site. Son design est angulaire et géométrique.<br /><img src="/example-nasin-nanpa.webp" />
+* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) de jan Lepeka est une police moins sérieuse et écrite à la main.<br /><img src="/example-sitelen-seli-kiwen.webp" />
+* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) est une autre police écrite à la main. Elle se base sur l'écriture manuscrite de jan Sonja dans son livre de 2014 (*lipu pu*), avec de nouveaux caractères dessinés par jan Pensa.<br /><img src="/example-pu-mono.webp" />
+
+Une autre police d'écriture importante dans l'histoire du toki pona :
+
+* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) de jan Same. Cette police à été conçue en 2016-2021 et a été la première police de *sitelen pona* à être populaire. Son design n'est pas totalement standard, et ses caractères sont plus larges et plus carrés que la plupart des polices d'écriture actuelles. Le *linja pona* a popularisé de nouveaux caractères en *sitelen pona*, comme **󱦀 kijetesantakalu** et **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
+
+**Sur Discord**, nous avons un bot, ilo Linku, qui peut transformer n'importe quel texte de *sitelen pona* en image ! De cette manière, vous pouvez discuter en *sitelen pona* sans rien installer sur votre appareil. 
+**Sur bureau**, vous pouvez télécharger une des polices ci-dessus et cliquer dessus. Votre système d'exploitation essayera alors de l'installer.
+**Sur mobile**, installer des polices de caractères est complexe. Vous pouvez essayer de demander à quelqu'un qui s'y connaît en informatique.
+
+## Détail technique : polices ascii vs polices ucsur
+
+Il y a deux principales manières de concevoir une police de caractère pour le *sitelen pona* : les **polices ascii** et les **polices ucsur**.
+
+Pour les **polices ascii**, les caractères latins que vous entrez seront ramassés par le système et automatiquement convertis en caractères *sitelen pona*.
+
+* 🎉 très intuitives à utiliser !
+* 🙁 beaucoup de travail dans leurs conception.
+* 🙁 les autres systèmes d'écriture de votre ordinateur ne fonctionnent pas comme ça.
+
+Pour les **polices uscur**, plutôt que d'entrer des caractères latins, vous entrez des caractères correspondant à d'autres *jeux de caractères unicode*. Unicode laisse ces jeux de caractères vides, pour que n'importe qui puisse les utiliser de [manière privée](https://fr.wikipedia.org/wiki/Table_des_caract%C3%A8res_Unicode#Plans_compl%C3%A9mentaires_%C3%A0_usage_priv%C3%A9). L'organisation qui gère ces jeux de caractères privés, l'[USCUR](https://www.kreativekorp.com/ucsur/), a reservé un jeu de caractères pour le *sitelen pona*.
+
+* 🎉 les autres systèmes d'écriture fonctionnent ainsi !
+* 🎉 moins de travail dans leur conception !
+* 🙁 plus difficile à utiliser : vous devez installer une méthode d'entrée similaire à celle utilisée pour les idéogrammes chinois, ou créer une nouvelle disposition de clavier.
