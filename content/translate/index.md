@@ -24,7 +24,6 @@ description: "Help us by translating the course to your language!"
 **Some notes for translators:**
 
 * You can find course files in English [on Github](https://github.com/wasona/wasona/tree/main/content/en). They can be opened in any simple text editor. To translate the course, download the files, and change the text in each one.
-* You can't translate UI just yet. This requires some work on my part. We can talk about it later!
 * Your audience is different from the English course audience! From time to time, you will need to change wording to be appropriate for your language and readers.
 * If you can, please find another speaker of your language to proofread your translation! I'll proofread as well through machine translation.
 * If you are not familiar with Github, send your translation to me (@kala_asi). If you are, you can open a pull request.
