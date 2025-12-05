@@ -1,0 +1,112 @@
+---
+slug: "nl/07"
+title: "les 7: namen"
+description: "Leer nimi, jan, sitelen, toki, ma, tomo!"
+practice:
+  - l1: "Ik teken het land."
+    l2: "mi sitelen e ma."
+    junkChips: ["li"]
+  - l1: "Je afbeelding is groot."
+    l2: "sitelen sina li suli."
+    junkChips: ["e"]
+  - l1: "Mensen praten over gebouwen."
+    l2: "jan li toki e tomo."
+    junkChips: ["ma"]
+  - l1: "Je naam is Maya."
+    l2: "nimi sina li jan Maja."
+    junkChips: ["e"]
+    alsoAccept: ["sina jan Maja."]
+  - l1: "Iman spreekt Arabisch."
+    l2: "jan Iman li toki Alapi."
+    junkChips: ["e"]
+  - l1: "De stad Toronto is groot."
+    l2: "ma tomo Towano li suli."
+    junkChips: ["e"]
+  - l1: "Ik zie Cyrillische tekens."
+    l2: "mi lukin e sitelen Kililisa."
+    junkChips: ["li"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Namen
+
+Dingen aanwijzen is goed en wel, maar soms is het fijn om wat specifieker te zijn. Ik presenteer u: namen! Een revolutionaire technologie waarmee je kunt praten over iemand of iets in het bijzonder.
+
+{/* A note for translators */}
+{/*
+  When I say "revolutionary technology", I am humorously pretending
+  to be a TV presenter trying to sell you something. Feel free
+  to adapt the joke or drop it, at your discretion.
+*/}
+
+Laten we wat woorden leren voor dingen die vaak namen dragen:
+
+<List>
+  <Word sl="nimi" m="naam, woord" />
+  <Word sl="jan" m="persoon" />
+  <Word sl="sitelen" m="afbeelding, schrift; schrijven, tekenen" />
+  <Word sl="toki" m="spraak, taal; praten, spreken" />
+  <Word sl="ma" m="land" />
+  <Word sl="tomo" m="gebouw, kamer, thuis" />
+</List>
+
+Je kent al één naam: _sitelen Lasina_! Hier zijn een paar namen van mensen:
+
+<List>
+  <Sentence sl="jan Nowa" m="persoon genaamd Noah (van het Nederlandse 'Noah')" />
+  <Sentence sl="jan Ema" m="persoon genaamd Emma (van het Nederlandse 'Emma')" />
+</List>
+
+{/* A note for translators */}
+{/*
+  Please keep the names Nowa and Ema. Your language may also have those names,
+  in which case replace "English" with your language.
+*/}
+
+Op basis van deze namen zien we het volgende:
+
+1. Namen zijn bijvoeglijke naamwoorden: ze staan achter een ander woord.
+2. Namen beginnen met een hoofdletter. Zie je een woord met een hoofdletter in het Toki Pona, dan weet je meteen dat het om een naam gaat!
+3. In _sitelen pona_ schrijven we namen in een grote **󱥂 nimi**. We noemen zo'n naamblok een _cartouche_, zoals die gebruikt worden in Egyptische hiërogliefen. Voor iedere klank in de naam schrijven we een woord dat begint met die klank. De naam ‘Ema’ kan bijvoorbeeld gespeld worden als 󱤉 **e**, 󱤶 **m**oku, 󱤂 **a**la.
+
+Niet alleen mensen hebben namen! Hier zien we een taal, een land en een stad:
+
+<List>
+  <Sentence
+    sl="toki Kanse"
+    m="taal genaamd Frans (van het Franse 'français')"
+  />
+  <Sentence sl="ma Tosi" m="land genaamd Duitsland (van het Duitse 'Deutsch')" />
+  <Sentence
+    sl="ma tomo Loma"
+    m="land van gebouwen genaamd Rome (van het Latijnse 'Rōma')"
+  />
+</List>
+
+Deze namen vertellen ons wat meer over hoe je een Toki-Pona-naam maakt:
+
+4. Als namen het Toki Pona binnenkomen, dan _passen ze zich aan_ aan het klankensysteem van het Toki Pona. Er bestaat geen **d** in het Toki Pona, dus het woord Deutsch begint met een **t**. Sommige aanpassingen zijn klein, zoals _Noah_ → _Nowa_; sommige zijn groot, zoals _français_ → _Kanse_.
+{/* Note by the Dutch translator: removed the reference to English in the next line, as that makes no sense when translated */}
+5. We gebruiken graag _endoniemen_: de namen die landen, talen, volken enzovoorts voor zichzelf gebruiken. De naam voor het Frans komt uit het Frans!
+
+Tijd voor wat oefening hoe je de nieuwe woorden en namen in zinnen gebruikt:
+
+<List>
+  <Sentence sl="waso li lukin e ma." m="De vogel kijkt naar het land." />
+  <Sentence sl="jan li toki e tomo." m="Mensen praten over een huis." />
+  <Sentence sl="jan pona li toki pona." m="Aardige mensen praten goed." />
+  <Sentence sl="nimi ona li jan Kenta." m="Zijn naam is Kenta." />
+  <Sentence sl="jan Sunita li sitelen e pipi." m="Sunita tekent een insect." />
+  <Sentence sl="jan Nina li toki Kanse." m="Nina spreekt Frans." />
+  <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma kent Duitsland goed." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## See also
+* [Q: wat is mijn naam in het Toki Pona?](/en/make-a-name/)
+* [Q: namen zien er zo lang uit in sitelen pona; hoe kan ik ze korter schrijven?](/en/simpler-cartouches/)
