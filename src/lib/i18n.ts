@@ -7,6 +7,7 @@ export const langNames: Record<string, string> = {
   de: "Deutsch",
   es: "español",
   fr: "français",
+  id: "Bahasa Indonesia",
   hu: "magyar",
   pl: "polski",
   pt: "português",
