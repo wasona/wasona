@@ -3,14 +3,20 @@ slug: "id/03"
 title: "pelajaran 3: kalimat sederhana"
 description: "Pelajari li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
 practice:
+- title: "1. Revise"
+  tasks:
   - l1: "Hewan mengetahui serangganya."
     l2: "soweli li sona e pipi."
+    junkChips: ["waso"]
   - l1: "Serangga memakan tanamannya."
     l2: "pipi li moku e kasi."
+    junkChips: ["soweli"]
   - l1: "Burung melihat tanamannya."
     l2: "waso li lukin e kasi."
+    junkChips: ["moku"]
   - l1: "Burung mengenal hewannya."
     l2: "waso li sona e soweli."
+    junkChips: ["pipi"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -51,4 +57,4 @@ Hal yang bisa kita pelajari:
 
 (**󱤧 li** dan **󱤉 e** awalnya mungkin tampak tidak penting. Kedepannya, Kita akan mempelajari mengapa kita masih membutuhkannya, untuk itu, kita perlu mempelajari bagian-bagian penting lainnya dari Toki Pona terlebih dahulu!)
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

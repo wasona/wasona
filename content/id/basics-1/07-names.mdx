@@ -3,20 +3,30 @@ slug: "id/07"
 title: "pelajaran 7: nama"
 description: "Pelajari nimi, jan, sitelen, toki, ma, tomo!"
 practice:
+- title: "1. Revise"
+  tasks:
   - l1: "Aku menggambar daratannya."
     l2: "mi sitelen e ma."
+    junkChips: ["li"]
   - l1: "Gambarmu besar."
     l2: "sitelen sina li suli."
+    junkChips: ["e"]
   - l1: "Orang-orang membicarakan rumahnya."
     l2: "jan li toki e tomo."
+    junkChips: ["ma"]
   - l1: "Namamu Maya."
     l2: "nimi sina li jan Maja."
+    junkChips: ["e"]
+    alsoAccept: ["sina jan Maja."]
   - l1: "Iman berbicara bahasa Arab."
     l2: "jan Iman li toki Alapi."
+    junkChips: ["e"]
   - l1: "kota Toronto itu luas."
     l2: "ma tomo Towano li suli."
+    junkChips: ["e"]
   - l1: "Aku melihat tulisan Sirilik."
     l2: "mi lukin e sitelen Kililisa."
+    junkChips: ["li"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -83,8 +93,8 @@ Mari kita berlatih menggunakan kata-kata baru dan nama-nama pada kalimat-kalimat
   <Sentence sl="jan Ema li sona pona e ma Tosi." m="Emma mengenal Jerman dengan baik." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Lihat juga
-* [Q: Seperti apa namaku di Toki Pona?](id/make-a-name)
-* [Q: Pada Sitelen Pona, nama-nama terlihat panjang. Bagaimana cara untuk membuatnya lebih pendek?](id/simpler-cartouches)
+* [Q: Seperti apa namaku di Toki Pona?](/id/make-a-name/)
+* [Q: Pada Sitelen Pona, nama-nama terlihat panjang. Bagaimana cara untuk membuatnya lebih pendek?](/id/simpler-cartouches/)

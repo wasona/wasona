@@ -3,22 +3,31 @@ slug: "id/08"
 title: "pelajaran 8: kata depan"
 description: "Pelajari weka, pana, kama, awen, tawa, lon, tan!"
 practice:
+- title: "1. Revise"
+  tasks:
   - l1: "di Inggris"
     l2: "lon ma Inli"
   - l1: "ke Ali"
     l2: "tawa jan Ali"
   - l1: "Kamu menyingkirkan para serangga dari rumahnya."
     l2: "sina weka e pipi tan tomo."
+    junkChips: ["li"]
   - l1: "Aku suka tanaman. (Tanamannya bagus untukku.)"
     l2: "kasi li pona tawa mi."
+    junkChips: ["e"]
   - l1: "Aku memberi burungnya sebuah serangga (Aku memberi sebuah serangga ke burungnya)."
     l2: "mi pana e pipi tawa waso."
+    junkChips: ["li"]
   - l1: "Seseorang tinggal di rumah."
     l2: "jan li awen lon tomo."
+    junkChips: ["e"]
   - l1: "Noah pergi ke Prancis."
     l2: "jan Nowa li tawa ma Kanse."
+    junkChips: ["e"]
   - l1: "Kota Toronto berada di Kanada."
     l2: "ma tomo Towano li lon ma Kanata."
+    junkChips: ["e"]
+    alsoAccept: ["ma Towano li lon ma Kanata."]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -89,8 +98,8 @@ Mari kita berlatih menggunakan kalimat-kalimat dibawah ini:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Lihat juga
-* [Q: Apakah aku harus menghafalkan nama-nama bahasa dan negara?](id/languages-countries)
-* [Q: Bukankah 'jan li toki Inli' agak aneh?](id/named-verbs)
+* [Q: Apakah aku harus menghafalkan nama-nama bahasa dan negara?](/id/languages-countries/)
+* [Q: Bukankah 'jan li toki Inli' agak aneh?](/id/named-verbs/)

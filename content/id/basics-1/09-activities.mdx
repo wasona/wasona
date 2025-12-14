@@ -3,20 +3,27 @@ slug: "id/09"
 title: "pelajaran 9: aktivitas"
 description: "Pelajari utala, lape, musi, nasa, kalama, wile, ken, alasa!"
 practice:
+- title: "1. Revise"
+  tasks:
   - l1: "Burung yang lucu sedang tidur."
     l2: "waso suwi li lape."
+    junkChips: ["e"]
   - l1: "Nama mereka panjang."
     l2: "nimi ona li suli."
+    junkChips: ["e"]
   - l1: "ingin bersenang-senang"
     l2: "wile musi"
   - l1: "mencoba untuk bernyanyi"
     l2: "alasa kalama"
   - l1: "Aku mulai menggambar tanamannya."
     l2: "mi kama sitelen e kasi."
+    junkChips: ["li"]
   - l1: "Anak hewannya dapat bertarung dengan bersenang-senang."
     l2: "soweli lili li ken utala musi."
+    junkChips: ["e"]
   - l1: "Aku mencoba untuk pergi ke China."
     l2: "mi alasa tawa ma Sonko."
+    junkChips: ["li"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -92,7 +99,7 @@ Mari kita mencoba untuk mengunakannya di kalimat-kalimat:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Lihat juga
-* [Q: Apakah masih ada praverba yang lebih banyak?](id/more-preverbs/)
+* [Q: Apakah masih ada praverba yang lebih banyak?](/id/more-preverbs/)
