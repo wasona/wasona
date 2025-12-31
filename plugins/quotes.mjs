@@ -18,11 +18,11 @@ export function i18nQuotes() {
 
     visit(tree, "text", (node) => {
       node.value = node.value
-        .replace(/“/g, quotes[0])
-        .replace(/”/g, quotes[1])
         // avoid replacing single quotes in contractions
-        .replace(/(?<!\b)‘/g, quotes[2])
-        .replace(/’(?!\b)/g, quotes[3]);
+        .replaceAll(/(?<![\b“”])‘/g, quotes[2])
+        .replaceAll(/’(?![\b“”])/g, quotes[3])
+        .replaceAll(/“/g, quotes[0])
+        .replaceAll(/”/g, quotes[1]);
     });
   };
 }
@@ -74,7 +74,7 @@ const QUOTES = {
   de: "„“‚‘", // German
   "de-sw": "«»‹›", // Swiss German
   el: "«»“”", // Greek
-  he: "”„’‚", // Hebrew
+  he: "””’’", // Hebrew
   hi: "“”‘’", // Hindi
   hu: "„”»«", // Hungarian
   is: "„“‚‘", // Icelandic
@@ -101,7 +101,7 @@ const QUOTES = {
   fa: "«»‘’", // Persian
   pl: "„”»«", // Polish
   pt: "“”‘’", // Portuguese, Brazil (changed from pt-BR)
-  "pt-PL": "«»“”", // Portuguese, Portugal
+  "pt-PT": "«»“”", // Portuguese, Portugal
   ro: "„”«»", // Romanian
   rm: "«»‹›", // Romansh
   ru: "«»„“", // Russian
