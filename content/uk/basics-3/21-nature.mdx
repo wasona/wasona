@@ -1,21 +1,21 @@
 ---
-slug: "en/21"
-title: "lesson 21: nature"
-description: "Learn akesi, kala, pan, kili, soko, misikeke, namako!"
+slug: "uk/21"
+title: "урок 21: природа"
+description: "Вчимо akesi, kala, pan, kili, soko, misikeke, namako!"
 practice:
-  - l1: "Fungi consume diseased plants."
+  - l1: "Гриби їдять мертві рослини."
     l2: "soko li moku e kasi moli."
     junkChips: ["mani"]
-  - l1: "Bake the dough."
+  - l1: "Спечи тісто."
     l2: "o seli e ko pan."
     junkChips: ["sewi"]
-  - l1: "I dug up the potato."
+  - l1: "Я викопала картоплю."
     l2: "mi weka e kili tan ma."
     junkChips: ["o"]
-  - l1: "Plants need water, sunlight, and land."
+  - l1: "Рослинам треба вода, світло й земля."
     l2: "kasi li wile e telo, e suno, e ma."
     junkChips: ["soko"]
-  - l1: "People talk, have fun, sing, and sleep."
+  - l1: "Люди спілкуються, веселяться, співають і сплять."
     l2: "jan li toki, li musi, li kalama, li lape."
     junkChips: ["e"]
 ---
@@ -25,64 +25,56 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-We already know most of the words for animal and plant stuff -- let's learn the remaining ones!
+Ми вже знаємо більшість слів для опису тварин і рослин -- вивчимо ж решту!
 
 <List>
-  <Word sl="akesi" m="reptile or amphibian, like a frog, lizard, snake" />
+  <Word sl="akesi" m="плазун чи земноводне, напр. жаба, ящірка, змія" />
   <Word
     sl="kala"
-    m="fish or sea creature, like a salmon, whale, shark, octopus"
+    m="риба чи морське створіння, напр. лосось, кит, акула, восьминіг"
   />
-  <Word sl="pan" m="starchy food, like wheat, rice, bread, pasta" />
-  <Word sl="kili" m="fruit, vegetable" />
-  <Word sl="soko" m="mushroom" />
-  <Word sl="misikeke" m="medicine" />
-  <Word sl="namako" m="spice, garnish, adornment" />
-  <Sentence sl="soko li kili nasa." m="Mushrooms are strange fruit." />
+  <Word sl="pan" m="крохмалиста їжа, напр. пшениця, рис, хліб, макарони" />
+  <Word sl="kili" m="фрукт, овоч" />
+  <Word sl="soko" m="гриб" />
+  <Word sl="misikeke" m="ліки" />
+  <Word sl="namako" m="спеція, приправа, родзинка" />
+  <Sentence sl="soko li kili nasa." m="Гриби -- дивні плоди." />
   <Sentence
     sl="kala suli li alasa e kala lili."
-    m="A large fish hunts smaller fish."
+    m="Велика риба ловить рибу дрібнішу."
   />
   <Sentence
     sl="mi o moku e misikeke lon tenpo mute."
-    m="I have to frequently take medication."
+    m="Я часто маю приймати ліки."
   />
 </List>
 
-## Ingredients
+## Інгредієнти
 
-Bread products are often used to hold together several different ingredients:
+Хлібні вироби часто вміщають в собі багато різних інгредієнтів:
 
 <List>
-  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="The pizza contains meat." />
-  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="The pizza contains vegetables." />
-  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="The pizza contains condiments." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="Піца має м'ясо." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="Піца має овочі." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="Піца має приправи." />
 </List>
 
-{/* A note for translators */}
-{/*
-  Your culture may have a different popular food that consists of meat, vegetables, and condiments, put into or onto bread. You are free to replace pizza with that food.
-*/}
-
-But how do we put them together into a single sentence? Well, each of them is the *object* of a sentence. A sentence can have *several objects*: several **󱤉 e**-phrases, which simply go one after the other:
+Але як це помістити в одне речення? Кожен інгредієнт -- *додаток* в реченні. Речення може мати *кілька додатків*: кілька виразів з **󱤉 e**, які ми просто ставимо один за одним:
 
 <List>
   <Sentence
     sl="pan li jo e soweli e kili e namako."
-    m="The pizza contains meat, vegetables, (and) condiments."
+    m="Піца має м'ясо, овочі та приправи."
   />
 </List>
 
-This is not special to just **󱤉 e**! You can combine several related ideas into one sentence with **󱤧 li**, **󱤡 la**, and prepositions too. For now let's just look at **󱤧 li**:
+Це не специфіка **󱤉 e**! Можна поєднувати кілька споріднених ідей у одне речення й з **󱤧 li**, **󱤡 la** та навіть прийменниками. Поки що, глянемо лише на **󱤧 li**:
 
 <List>
-  <Sentence sl="jan li alasa e kala." m="The person hunts fish. (= the person fishes)." />
-  <Sentence sl="jan li seli e ona." m="The person cooks them." />
-  <Sentence sl="jan li moku e ona." m="The person eats them." />
-  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="The person hunts fish, cooks them, eats them." />
+  <Sentence sl="jan li alasa e kala." m="Людина ловить рибу." />
+  <Sentence sl="jan li seli e ona." m="Людина смажить її." />
+  <Sentence sl="jan li moku e ona." m="Людина їсть її." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Людина ловить рибу, смажить її, їсть її." />
 </List>
-
-{/* A note for translators */}
-{/* If your language allows it, please list things without an "and" in between. */}
 
 <Practice exercises={frontmatter.practice} />
