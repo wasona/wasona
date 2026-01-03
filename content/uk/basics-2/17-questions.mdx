@@ -45,7 +45,7 @@ import Practice from "@/components/Practice.astro";
 
 Питання зазвичай бувають двох типів:
 
-* *питання так / ні*. На ці питання можна відповісти так або ні. Ствердно, чи з запереченням.
+* *питання так / ні*. На ці питання можна відповісти так або ні. Ствердно чи заперечливо.
 * *відкриті питання*. Тут треба заповнити пропуски: хто це зробив? що зробив? з чим? де? чому?
 
 ## Питання так / ні
@@ -69,7 +69,7 @@ import Practice from "@/components/Practice.astro";
 
 ### Відповідь
 
-В українській є особливе слово "так". Токі пона навпаки робить те, що робить фінська, китайська, латина та багато інших мов: повторює дієслово для "так" і дієслово + **󱤂 ala** для "ні".
+В українській є особливе слово "так". Токі пона ж робить те, що робить фінська, китайська, латина та багато інших мов: повторює дієслово для "так" і дієслово + **󱤂 ala** для "ні".
 
 <List>
   <Sentence sl="sitelen li musi ala musi?" m="Чи відео веселе?" />
@@ -105,6 +105,12 @@ import Practice from "@/components/Practice.astro";
 </List>
 
 Помітимо, що, відповідаючи, ми лише замінюємо **󱥙 seme** -- решта залишається незмінною! Контрастуючи з українською, токі пона не змінює порядок слів.
+
+{/* //REVIEW
+  Notice how only **󱥙 seme** gets swapped out for the answer -- everything else in the sentence stays in the same order! This is unlike English, where questions reorder the sentence, to put the wh-word first, but Toki Pona doesn't do that.
+  ---
+  gets swapped out for the answer - це типу замінюється в реченні-відповіді чи в реченні-питанні?
+*/}
 
 <Practice exercises={frontmatter.practice} />
 

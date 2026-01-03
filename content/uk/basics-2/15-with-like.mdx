@@ -39,7 +39,7 @@ import Practice from "@/components/Practice.astro";
 
 ## Чим та як
 
-В уроці 8, ми вивчили три прийменники: **󱥩 tawa**, **󱤬 lon**, **󱥧 tan**, які пов'язані з місцем та напрямком. Токі пона має ще два прийменника:
+В уроці 8, ми вивчили три прийменники: **󱥩 tawa**, **󱤬 lon**, **󱥧 tan**, які пов'язані з місцем та напрямком. Токі пона має ще два прийменники:
 
 <List>
   <Word sl="kepeken" m="з допомогою, користуючись" />
@@ -48,8 +48,8 @@ import Practice from "@/components/Practice.astro";
 
 В українській мові ми для такого часто використовуємо орудний відмінок (ким?, чим?), наприклад "Я користуюся **телефоном**", "Я забиваю **молотком**". Це схоже до ‍‍‍‍‍‍‍‍‍‍**󱤙 kepeken**, але варто бути обережним: "Я йду з **ними**" - тут ‍‍‍‍‍‍‍‍‍‍**󱤙 kepeken** не буде.
 
-{/* note
-  seems like in ukrainian there's a clear distinction of kepeken "with" and lon poka "with". maybe the last sentence is redundant or im missing something
+{/* //REVIEW
+  я гадаю варто залишити попередженя щодо "з *ким?/чим?*" і "*ким?/чим?*" стосовно кепекен, але можливо його можна й опустить
 */}
 
 Вивчимо ще кілька слів, які гарно сполучаються з прийменниками:
@@ -100,7 +100,7 @@ import Practice from "@/components/Practice.astro";
   <Sentence sl="sona mi li sama." m="Мої знання схожі." />
   <Sentence
     sl="toki sina li lon."
-    m="Твооя мова справжня.<br />(Те, що ти кажеш -- реальне.)"
+    m="Твоя мова справжня.<br />(Те, що ти кажеш -- реальне.)"
   />
   <Sentence
     sl="mi wile lukin e sitelen tawa."
@@ -126,5 +126,9 @@ import Practice from "@/components/Practice.astro";
     m="Я створюю місце.<br />Я засновую землю. (дієслово)"
   />
 </List>
+
+{/* //REVIEW
+  у реченні вище, "Я засновую землю" звучить як жахлива калька. мовою ориґіналу - I establish a territory
+*/}
 
 <Practice exercises={frontmatter.practice} />
