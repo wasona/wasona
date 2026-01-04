@@ -11,6 +11,7 @@ export const langNames: Record<string, string> = {
   pl: "polski",
   pt: "português",
   ru: "русский",
+  uk: "українська",
   ar: "العربية",
   he: "עברית",
   translate: "add language",
