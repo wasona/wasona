@@ -1,0 +1,82 @@
+---
+slug: "uk/21"
+title: "урок 21: природа"
+description: "Вчимо akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+- title: "1. Revise"
+  tasks:
+  - l1: "Гриби їдять мертві рослини."
+    l2: "soko li moku e kasi moli."
+    junkChips: ["mani"]
+  - l1: "Спечи тісто."
+    l2: "o seli e ko pan."
+    junkChips: ["sewi"]
+  - l1: "Я викопала картоплю."
+    l2: "mi weka e kili tan ma."
+    junkChips: ["o"]
+  - l1: "Рослинам треба вода, світло й земля."
+    l2: "kasi li wile e telo, e suno, e ma."
+    junkChips: ["soko"]
+  - l1: "Люди спілкуються, веселяться, співають і сплять."
+    l2: "jan li toki, li musi, li kalama, li lape."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Ми вже знаємо більшість слів для опису тварин і рослин -- вивчимо ж решту!
+
+<List>
+  <Word sl="akesi" m="плазун чи земноводне, напр. жаба, ящірка, змія" />
+  <Word
+    sl="kala"
+    m="риба чи морське створіння, напр. лосось, кит, акула, восьминіг"
+  />
+  <Word sl="pan" m="крохмалиста їжа, напр. пшениця, рис, хліб, макарони" />
+  <Word sl="kili" m="фрукт, овоч" />
+  <Word sl="soko" m="гриб" />
+  <Word sl="misikeke" m="ліки" />
+  <Word sl="namako" m="спеція, приправа, родзинка" />
+  <Sentence sl="soko li kili nasa." m="Гриби — дивні плоди." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="Велика риба ловить рибу дрібнішу."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Я часто маю приймати ліки."
+  />
+</List>
+
+## Інгредієнти
+
+Хлібні вироби часто вміщають в собі багато різних інгредієнтів:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="Піца має м'ясо." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="Піца має овочі." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="Піца має приправи." />
+</List>
+
+Але як це помістити в одне речення? Кожен інгредієнт -- *додаток* в реченні. Речення може мати *кілька додатків*: кілька виразів з **󱤉 e**, які ми просто ставимо один за одним:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="Піца має м'ясо, овочі та приправи."
+  />
+</List>
+
+Це не специфіка **󱤉 e**! Можна поєднувати кілька споріднених ідей у одне речення й з **󱤧 li**, **󱤡 la** та навіть прийменниками. Поки що, глянемо лише на **󱤧 li**:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="Людина ловить рибу." />
+  <Sentence sl="jan li seli e ona." m="Людина смажить її." />
+  <Sentence sl="jan li moku e ona." m="Людина їсть її." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Людина ловить рибу, смажить її, їсть її." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
