@@ -1,32 +1,32 @@
 ---
-slug: "en/24"
-title: "lesson 24: body"
-description: "Learn sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
+slug: "uk/24"
+title: "урок 24: тіло"
+description: "Вчимо sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
 practice:
-  - l1: "I have a headache."
+  - l1: "У мене болить голова."
     l2: "lawa mi li pakala."
     junkChips: ["kala"]
     alsoAccept: ["mi pakala lawa."]
-  - l1: "I heard a faint sound."
+  - l1: "Я почула тихий звук."
     l2: "mi kute e kalama lili."
     junkChips: ["li"]
-  - l1: "You obey. I command."
+  - l1: "Ти підкорюєшся. Я керую."
     l2: "sina kute. mi lawa."
     junkChips: ["luka"]
-  - l1: "Spice feels hot to my mouth."
+  - l1: "Спеції опікають мої вуста."
     l2: "namako li seli tawa uta mi."
     junkChips: ["e"]
-  - l1: "Please pet the lovely dog!"
+  - l1: "Погладь милого песика, будь ласка!"
     l2: "o luka e soweli suwi!"
     junkChips: ["sewi"]
-  - l1: "Medicine heals her body."
+  - l1: "Ліки допомагають її тілу."
     l2: "misikeke li pona e sijelo ona."
     junkChips: ["pi"]
-  - l1: "Her hair is nice to the touch."
+  - l1: "Її волосся приємне на дотик."
     l2: "linja lawa ona li pona tawa luka."
     junkChips: ["e"]
     alsoAccept: ["linja ona li pona tawa luka."]
-  - l1: "The mountain is similar to the nose on my face."
+  - l1: "Гора схожа на ніс на моєму обличчі."
     l2: "nena kiwen li sama nena pi sinpin mi."
     junkChips: ["e"]
 ---
@@ -36,35 +36,28 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-We already know the words for *eyes*, *heart*, *face*, and *back*, so let's learn the remaining parts of the body!
+Ми вже знаємо слова для *очей*, *серця*, *обличчя* і *спини*, тож вивчимо решту частин тіла!
 
 <List>
-  <Word sl="lawa" m="head; to lead" />
-  <Word sl="kute" m="ear; to hear" />
-  <Word sl="nena" m="bump, like a nose, hill, breast" />
-  <Word sl="uta" m="mouth, lips; to kiss, to bite" />
-  <Word sl="sijelo" m="body" />
-  <Word sl="luka" m="hand, arm; to touch" />
-  <Word sl="noka" m="foot, leg" />
-  <Word sl="palisa" m="long hard thing, like a branch, rod, staff" />
-  <Word sl="linja" m="long flexible thing, like a string, rope" />
+  <Word sl="lawa" m="голова; керувати" />
+  <Word sl="kute" m="вухо; чути" />
+  <Word sl="nena" m="горб, напр. ніс, груди, пагорб" />
+  <Word sl="uta" m="рот, губи; цілувати, кусати" />
+  <Word sl="sijelo" m="тіло" />
+  <Word sl="luka" m="рука, кисть; торкатися" />
+  <Word sl="noka" m="нога, стопа" />
+  <Word sl="palisa" m="довга тверда річ, напр. палиця, стержень, посох" />
+  <Word sl="linja" m="довга гнучка річ, напр. нитка, мотузка" />
 </List>
 
-{/* A note for translators */}
-{/*
-  Your language may have just one word for "hand, arm".
-  If that's the case, great, simply list the one word.
-  Same applies to "foot, leg".
-*/}
-
-Something fun to notice is how many parts of the body have an associated action! The head leads, the eyes see, the ears hear, the mouth kisses, the heart feels, the hands touch.
+Ось що цікаво: у багатьох частин тіла є якісь споріднені з ними дії! Голова керує, очі бачать, вуха чують, уста цілують, серце відчуває, руки торкаються.
 
 <List>
-    <Sentence sl="mi wile suli e linja lawa mi." m="I want to grow out my hair." />
-  <Sentence sl="jan lawa mi li kute e toki ike mi." m="My boss heard me running my mouth." />
-  <Sentence sl="ilo lukin li pana e sitelen ante." m="The mirror gives off an inverse image." />
-  <Sentence sl="sijelo mi li wile e lape." m="My body requires rest." />
-  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="My fingers are larger than my toes." />
+    <Sentence sl="mi wile suli e linja lawa mi." m="Я хочу відростити волосся." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="Мій керівник почув моє лихослів'я." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="Люстерко показує обернене зображення." />
+  <Sentence sl="sijelo mi li wile e lape." m="Моєму тілу треба відпочити." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Мої пальці рук більші ніж мої пальці ніг." />
 </List>
 
 <Practice exercises={frontmatter.practice} />
