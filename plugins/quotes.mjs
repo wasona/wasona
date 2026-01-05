@@ -18,11 +18,21 @@ export function i18nQuotes() {
 
     visit(tree, "text", (node) => {
       node.value = node.value
-        // avoid replacing single quotes in contractions
-        .replaceAll(/(?<![\b“”])‘/g, quotes[2])
-        .replaceAll(/’(?![\b“”])/g, quotes[3])
-        .replaceAll(/“/g, quotes[0])
-        .replaceAll(/”/g, quotes[1]);
+        // use a single pass; avoid replacing single quotes in contractions
+        .replaceAll(/“|”|(?<![“”])(?<=\W)‘|’(?=\W)(?![“”])/g, (match) => {
+          switch (match) {
+            case "“":
+              return quotes[0];
+            case "”":
+              return quotes[1];
+            case "‘":
+              return quotes[2];
+            case "’":
+              return quotes[3];
+            default:
+              throw new Error("unreachable");
+          }
+        });
     });
   };
 }
