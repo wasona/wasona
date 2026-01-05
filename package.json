@@ -21,6 +21,7 @@
     "react-dom": "^19.1.0",
     "selo-components": "github:AcipenserSturio/selo-components",
     "svelte": "^5.45.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "unist-util-visit": "^5.0.0"
   }
 }
