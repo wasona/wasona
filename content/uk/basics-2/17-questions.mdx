@@ -1,0 +1,114 @@
+---
+slug: "uk/17"
+title: "урок 17: питання"
+description: "Вчимо anu, seme!"
+practice:
+- title: "1. Revise"
+  tasks:
+  - l1: "Чи погіршує табак повітря?"
+    l2: "kasi nasa li ike ala ike e kon?"
+    junkChips: ["leko"]
+  - l1: "Це цеглина?"
+    l2: "ni li leko ala leko?"
+    junkChips: ["e"]
+  - l1: "Чи можеш ти співати як пташка?"
+    l2: "sina ken ala ken kalama sama waso?"
+    junkChips: ["e"]
+  - l1: "Користуєшся Ґуґлом?"
+    l2: "sina kepeken ala kepeken ilo Kuko?"
+    junkChips: ["li"]
+  - l1: "Я в Італії?"
+    l2: "mi lon ala lon ma Italija?"
+    junkChips: ["e"]
+  - l1: "Для цього ж треба гроші, чи не так?"
+    l2: "ni li wile e mani anu seme?"
+    junkChips: ["tawa"]
+  - l1: "Ти ж розмовляєш по-німецьки?"
+    l2: "sina toki Tosi anu seme?"
+    junkChips: ["Inli"]
+  - l1: "Де Японія?"
+    l2: "ma Nijon li lon seme?"
+    junkChips: ["e"]
+  - l1: "Хто з Індії?"
+    l2: "jan seme li tan ma Palata?"
+    junkChips: ["e"]
+  - l1: "Що ти хотів би їсти?"
+    l2: "sina wile moku e seme?"
+    junkChips: ["li"]
+    alsoAccept: ["sina wile e moku seme?"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Питання
+
+Питання зазвичай бувають двох типів:
+
+* *питання так / ні*. На ці питання можна відповісти так або ні. Ствердно чи заперечливо.
+* *відкриті питання*. Тут треба заповнити пропуски: хто це зробив? що зробив? з чим? де? чому?
+
+## Питання так / ні
+
+### Питання
+
+Пам'ятаємо, як у попередньому уроці ми навчилися заперечувати речення знайшовши перше слово присудка? Робимо щось схоже для питань так / ні. Ми *подвоюємо* перше слово присудка і ставимо **󱤂 ala** між цими двома.
+
+<List>
+  <Word sl="moku ala moku" m="чи їсть ...?" />
+  <Sentence sl="pipi li moku ala moku e len?" m="Чи їсть міль одяг?" />
+  <Word sl="pona ala pona" m="чи добре ...?" />
+  <Sentence sl="kalama musi li pona ala pona tawa sina?" m="Чи подобається тобі музика?" />
+  <Word sl="wile ala wile" m="чи хоче ...?" />
+  <Sentence sl="sina wile ala wile lape lon supa?" m="Чи хочеш ти спати в ліжку?" />
+  <Word sl="lon ala lon" m="чи знаходиться ... в ...?" />
+  <Sentence sl="ona li lon ala lon ma Mewika?" m="Вони в США?" />
+</List>
+
+Може здатися незвичним для нас! Але щось схоже є у [китайській](https://en.wikipedia.org/wiki/A-not-A_question#A-not-AB_form_4).
+
+### Відповідь
+
+В українській є особливе слово "так". Токі пона ж робить те, що робить фінська, китайська, латина та багато інших мов: повторює дієслово для "так" і дієслово + **󱤂 ala** для "ні".
+
+<List>
+  <Sentence sl="sitelen li musi ala musi?" m="Чи відео веселе?" />
+  <Word sl="musi." m="веселе. (= Так.)" />
+  <Word sl="musi ala." m="не веселе. (= Ні.)" />
+</List>
+
+Шаблон **Д ala Д** дуже поширений! Ось ще один:
+
+<List>
+  <Word sl="seme" m="що? який?" />
+  <Word sl="anu" m="або" />
+  <Word sl="anu seme" m="... правда? чи не так? чи як?" />
+</List>
+
+Можна додати **󱤇󱥙 anu seme** в кінці будь-якого речення, щоб зробити його запитанням:
+
+<List>
+  <Sentence sl="sitelen li musi anu seme?" m="Смішне відео, чи не так?" />
+</List>
+
+Можна відповісти **󱤻 musi** чи **󱤻󱤂 musi ala**, як і на звичайні так / ні питання! Але тут трохи інша форма: якщо використовувати **󱤇󱥙 anu seme**, то ви ніби заздалегідь очікуєте ствердну відповідь.
+
+## Відкриті питання
+
+Тож, ми щойно вивчили, що **󱥙 seme** означає "що?", і це є найголовнішою частиною відкритих питань! **󱥙 seme** є ніби пропуском, в який ви просите вашого товариша вставити потрібну інформацію:
+
+<List>
+  <Sentence sl="waso li lon seme?" m="Де пташка? (букв. 'Пташка є в чому?')" />
+  <Sentence sl="waso li lon tomo." m="Пташка вдома. (букв. 'в домі')" />
+  <Sentence sl="soweli li utala e jan seme?" m="На кого напав звір? (букв. 'Звір напав на яку людину?')" />
+  <Sentence sl="soweli li utala e jan Ema." m="Звір напав на Емму." />
+</List>
+
+Помітимо, що, ми лише замінюємо **󱥙 seme** -- решта речення залишається незмінною! Контрастуючи з українською, токі пона не змінює порядок слів.
+
+<Practice exercises={frontmatter.practice} />
+
+## Див. також
+* [Q: як сказати 'робити'?](/en/doing/)

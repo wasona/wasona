@@ -1,0 +1,104 @@
+---
+slug: "uk/22"
+title: "урок 22: дуже милі коти"
+description: "Вчимо pi!"
+practice:
+- title: "1. Revise"
+  tasks:
+  - l1: "багато снігу"
+    l2: "ko lete mute"
+    junkChips: ["pi"]
+    alsoAccept: ["ko mute lete"]
+  - l1: "дуже холодний сніг"
+    l2: "ko pi lete mute"
+  - l1: "багато моїх помилок"
+    l2: "pakala mi mute"
+    junkChips: ["pi"]
+    alsoAccept: ["pakala mute mi"]
+  - l1: "наша помилка"
+    l2: "pakala pi mi mute"
+  - l1: "інша мовна книжка"
+    l2: "lipu toki ante"
+    junkChips: ["pi"]
+    alsoAccept: ["lipu ante toki"]
+  - l1: "книжка іншою мовою"
+    l2: "lipu pi toki ante"
+  - l1: "чиясь маленька кімната"
+    l2: "tomo jan lili"
+    junkChips: ["pi"]
+    alsoAccept: ["tomo lili jan"]
+  - l1: "кімната когось маленького"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Недавно ми вивчили **󱤼 mute** -- дуже корисне слово!
+
+Подумаємо трохи більше над ним. Ми вже знаємо як зробити такі фрази:
+
+<List>
+  <Word sl="soweli suwi" m="милий кіт" />
+  <Word sl="soweli mute" m="багато котів" />
+  <Word sl="suwi mute" m="дуже мило" />
+</List>
+
+Але що станеться, якщо зліпити це все докупи? Ми отримаємо *багато милих котів* чи *дуже милий кіт*?
+
+<List>
+  <Word sl="soweli suwi mute" m="багато милих котів" />
+</List>
+
+Ця фраза значить *багато милих котів*, бо **󱥦 suwi** описує **󱥢 soweli** і **󱤼 mute** теж описує **󱥢 soweli**.  
+Але я думаю, що *мій* кіт дуже милий! Як мені це сказати? Що, якщо я хочу, щоб **󱤼 mute** описувало **󱥦 suwi** замість **󱥢 soweli**?
+Ось де нам допоможе нова частка:
+
+<List>
+  <Word sl="pi" m="частка, що групує прикметники" />
+  <Word sl="soweli pi suwi mute" m="дуже милий кіт" />
+</List>
+
+Ура! Тепер ми можемо говорити про **󱥢 soweli**, який **󱥦󱤼 suwi mute**! 
+Якщо ви захоплюєтесь математикою, то можна подумати про це як про дужки -- те що всередині, розв'язується першим: *'кіт милий багато'* проти *'кіт (милий багато)'*.
+
+Глянемо ще на приклад:
+
+<List>
+  <Word sl="sitelen tomo" m="світлина будинку" />
+  <Word sl="sitelen mute" m="світлини" />
+  <Word sl="tomo mute" m="будинки" />
+  <Word sl="sitelen tomo mute" m="світлини будинку" />
+  <Word sl="sitelen pi tomo mute" m="світлина будинків" />
+</List>
+
+Знову ж, можна подумати про це як про *'світлина будинок багато'* vs *'світлина (будинок багато)'*
+Звичайно, **󱤼 mute** -- не єдине слово, з яким допомагає **󱥍 pi**! Глянемо на кілька інших:
+
+<List>
+  <Word sl="jan pona" m="добра людина" />
+  <Word sl="jan lili" m="маленька людина" />
+  <Word sl="pona lili" m="трохи добрий" />
+  <Word sl="jan pona lili" m="маленька добра людина" />
+  <Word sl="jan pi pona lili" m="трохи добра людина" />
+</List>
+
+*'людина добрий маленький'* проти *'людина (добрий маленький)'*.
+
+<List>
+  <Word sl="sona utala" m="знання про конфлікт" />
+  <Word sl="sona sin" m="нове знаня" />
+  <Word sl="utala sin" m="новий конфлікт" />
+  <Word sl="sona utala sin" m="нове знання про конфлікт. знання нові." />
+  <Word sl="sona pi utala sin" m="знання про новий конфлікт. конфлікт новий." />
+</List>
+
+*'знання конфлікт новий'* vs *'знання (конфлікт новий)'*.
+
+В українському перекладі, ми опираємося на *частини мови*, *рід*, *відмінки* або *порядок слів*, щоб розібратися, що чого стосується. 
+
+А в токі поні частини мови -- непостійні, а роду й відмінків взагалі не існує. Сам порядок слів не зміг би розрізнити всі ситуації, як ми розглянули в цьому уроці, тому на допомогу приходить **󱥍 pi**.
+
+<Practice exercises={frontmatter.practice} />
