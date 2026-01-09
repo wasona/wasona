@@ -1,0 +1,24 @@
+{
+  "Index": "Índex",
+  "Next": "Següent",
+  "Previous": "Anterior",
+  "Translation": "Traducció",
+
+  "Consonants": "Consonants",
+  "Labial": "Labials",
+  "Coronal": "Coronals",
+  "Dorsal": "Dorsals",
+
+  "Vowels": "Vocals",
+  "Front": "Posterior",
+  "Central": "Central",
+  "Back": "Anterior",
+
+  "translate": "Tradueix aquesta oració",
+  "check": "comprovar",
+  "continue": "continuar",
+  "incorrect": "❌ No és així. Resposta correcta: ",
+  "correct": "✅ Correcte! Bona feina!",
+ 
+  "done": "🎉 Tots els exercicis completats!"
+}
