@@ -1,0 +1,77 @@
+﻿---
+slug: "tr/04"
+title: "4. ders: sıfatlar"
+description: "suli, lili, pona, ike, wawa ile suwi'yi öğrenin!"
+practice:
+- title: "1. Revise"
+  tasks:
+  - l1: "tatlı bir hayvan"
+    l2: "soweli suwi"
+  - l1: "kötü bir böcek"
+    l2: "pipi ike"
+  - l1: "güçlü bir kuş"
+    l2: "waso wawa"
+  - l1: "Kuş, güçlü bir hayvanı biliyor."
+    l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
+  - l1: "Küçük bir böcek, büyük bir hayvana bakıyor."
+    l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Betimle! 
+
+Artık bazı isimleri (şeyleri) ve fiilleri (eylemleri) biliyorsun. Şimdi sıra sıfatları (betimlemeleri) eklemeye geldi!
+Hadi birkaç tanesini ezberleyelim:
+
+<List>
+  <Word sl="suli" m="büyük, önemli" />
+  <Word sl="lili" m="küçük, genç" />
+  <Word sl="pona" m="iyi, hoş" />
+  <Word sl="ike" m="kötü, nahoş" />
+  <Word sl="wawa" m="güçlü, harika" />
+  <Word sl="sona" m="bilgili, bilge" />
+  <Word sl="suwi" m="sevimli, tatlı" />
+</List>
+
+Türkçede sıfatlar isimden önce gelir. Ancak Toki Pona'da her zaman isimden sonra gelirler:
+
+<List>
+  <Word sl="soweli suli" m="büyük bir hayvan" />
+  <Word sl="pipi lili" m="küçük bir böcek" />
+  <Word sl="waso suwi" m="sevimli bir kuş" />
+</List>
+
+Türkçe konuşanlar bazen bu sıralamayı kafa karıştırıcı bulabilirler; ancak Fransızca, İrlandaca, Arapça, Malayca ve diğer pek çok dilde sistem bu şekilde işler. Şöyle düşün: ilk kelime her zaman en önemli olanıdır!
+
+Hadi betimlemelerle bazı cümleler kuralım:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="Kuş, sevimli bir hayvan görür."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="Güçlü hayvan, büyük bitkiler yer."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Kötü böcekler hayvanı biraz ısırır."
+  />
+  <Sentence
+    sl="waso sona li sona pona e pipi."
+    m="Bilge kuş böcekleri iyi bilir."
+  />
+</List>
+
+Eğer bu cümleler uzun ve yorucu geliyorsa endişelenme! Yakında daha kısa cümlelere bakacağız. Unutma: cümle yapısı aslında oldukça basittir! **󱤧 li** ve **󱤉 e** kelimelerine bakarak hangi kısmın özne, fiil veya nesne olduğunu her zaman anlayabilirsin.
+
+İşte ilginç bir bilgi: Türkçede sıfatlar yalnızca isimleri niteler. Ama Toki Pona'da sıfatlar bir zarf gibi davranıp fiilleri de niteleyebilir! _Azıcık ısırmak_ ~ _moku lili_, _iyi bilmek_ ~ _sona pona_. Toki Pona'da zarflar ve sıfatlar arasında hiçbir fark yoktur!
+
+<Practice exercises={frontmatter.practice} />

@@ -1,0 +1,60 @@
+﻿---
+slug: "tr/03"
+title: "3. ders: basit cümleler"
+description: "li, e, soweli, waso, pipi, kasi, moku, lukin ve sona kelimelerini öğren!"
+practice:
+- title: "1. Revise"
+  tasks:
+  - l1: "Hayvan, böceği bilir."
+    l2: "soweli li sona e pipi."
+    junkChips: ["waso"]
+  - l1: "Böcek, bitki yer."
+    l2: "pipi li moku e kasi."
+    junkChips: ["soweli"]
+  - l1: "Kuş, çiçeklere bakar."
+    l2: "waso li lukin e kasi."
+    junkChips: ["moku"]
+  - l1: "Kuş, hayvanı tanır."
+    l2: "waso li sona e soweli."
+    junkChips: ["pipi"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Basit cümleler
+
+Toki Pona'nın nasıl okunduğunu öğrendiğimize göre kelime ve cümlelere geçebiliriz!
+İşte birkaç isim ve fiil kelimeleri:
+
+<List>
+  <Word sl="soweli" m="kara hayvanı, kedi, köpek, inek, fare, fil gibi" />
+  <Word sl="waso" m="kuş, güvercin, ördek, baykuş gibi" />
+  <Word sl="pipi" m="böcek, karınca, kelebek, örümcek gibi" />
+  <Word sl="kasi" m="bitki, yonca,huş ağacı, kaktüs, yosun gibi" />
+  <Word sl="moku" m="tüketmek" />
+  <Word sl="lukin" m="görmek" />
+  <Word sl="sona" m="bilmek" />
+</List>
+
+En çok kullanılan cümle yapısı "özne-yüklem-nesne" cümleleridir. Bir kaç örnek görelim:
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="Hayvan, otları yer." />
+  <Sentence sl="waso li moku e pipi." m="Kuş, böceği yer." />
+  <Sentence sl="pipi li lukin e soweli." m="Böcek, hayvana bakıyor." />
+  <Sentence sl="waso li sona e kasi." m="Kuş,bitkiyi tanır." />
+</List>
+
+Burdan çıkarabileceğimiz şeyler:
+
+- **󱤧 li**'den sonra yüklem gelir.
+- **󱤉 e**'den sonra nesne gelir.
+- Türkçe çevirisinde bazen kelimeler çoğul ya da tekil alınmıştır. Fakat bunlar sadece bi' tahmin. Cümlenin aslında çoğul olup olmadığını belirten birşey yoktur. Fakat bi' şeyin çoğul olup olmadığı, uzun konuşmalarda gayet nettir.
+
+(**󱤧 li** ve **󱤉 e** başta gereksiz gibi gelebilir. Bunların neden gerekli olduğunu öğreneceğiz fakat herşeyin bi' yeri ve zamanı var
+!)
+
+<Practice exercises={frontmatter.practice} />
