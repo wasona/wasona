@@ -1,0 +1,37 @@
+<style>
+  button {
+    line-height: 0;
+  }
+  /* Hamburger */
+  #hamburger {
+    /*font-size: 20px;*/
+    border: 0;
+    background: none;
+    cursor: pointer;
+    padding: 12px;
+    /*margin-right: 16px;*/
+  }
+  .ham {
+    stroke: var(--grey);
+  }
+  #hamburger:hover .ham {
+    stroke: var(--accent);
+  }
+</style>
+
+<button id="hamburger" aria-label="Open menu">
+  <svg
+    height="30px"
+    width="30px"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    aria-label="hamburger menu"
+  >
+    <path d="M4 18L20 18" class="ham" stroke-width="1.5" stroke-linecap="round"
+    ></path>
+    <path d="M4 12L20 12" class="ham" stroke-width="1.5" stroke-linecap="round"
+    ></path>
+    <path d="M4 6L20 6" class="ham" stroke-width="1.5" stroke-linecap="round"
+    ></path>
+  </svg></button
+>

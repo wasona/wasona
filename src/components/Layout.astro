@@ -1,0 +1,44 @@
+---
+import "selo-components/common.css"; // has to be above site-specific css
+
+import "@/global.css";
+
+import { BaseHead, Footer, FormattedDate } from "selo-components";
+import Header from "@/components/Header.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  date?: Date;
+  useRss?: boolean;
+  dir?: "auto" | "rtl" | "ltr";
+}
+const { title, description, date, useRss = false, dir = "auto" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} useRss={useRss} />
+    <slot name="head" />
+  </head>
+  <body>
+    <Header />
+    <main dir={dir}>
+      <h1>{title}</h1>
+      {
+        date && (
+          <h3 style="text-align: center;">
+            <FormattedDate date={date} />
+          </h3>
+        )
+      }
+      <slot name="pagenav" />
+      <article>
+        <slot />
+      </article>
+      <slot name="pagenav" />
+    </main>
+    <Footer />
+  </body>
+</html>

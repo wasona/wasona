@@ -1,0 +1,239 @@
+---
+import { config } from "selo-components/config";
+import DarkModeToggle from "@/components/DarkModeToggle.astro";
+import HamburgerToggle from "@/components/HamburgerToggle.astro";
+import { LanguageToggle } from "selo-components";
+
+const primary_links = [
+  ["https://wasona.com/", "Course"],
+  ["https://nimi.li/", "Dictionary"],
+  ["https://lipu.pona.la/", "Library"],
+  ["https://discord.gg/6zkugJFU4x", "Discord"],
+  ["https://sona.pona.la/", "Wiki"],
+];
+const secondary_links = [
+  ["https://sin-kulupu.pona.la/", "News"],
+  ["https://kute.pona.la/", "Music"],
+  ["https://utala.pona.la/", "Art contests"],
+  ["https://suno.pona.la/", "Toki Pona Day"],
+  ["https://pona.la/", "About"],
+  // ["https://sitelenpona.org/", "Sitelen Pona"],
+  // ["https://luka.pona.la/", "Luka Pona"],
+];
+const lang = Astro.url.pathname.split("/")[1];
+const localeRoot =
+  !config.use_language_toggle || lang == "en" ? "/" : `/${lang}`;
+---
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const extraLinks = document.getElementById("extraLinks");
+
+  hamburger!.addEventListener("click", () => {
+    extraLinks!.classList.toggle("open");
+  });
+</script>
+
+<nav class="navbar">
+  <!-- Left: logo + site name (home link) -->
+  <a href="/" class="brand">
+    <img src="/logo.png" alt={config.hostname} class="logo" />
+    <span class="site-name">{config.title}</span>
+  </a>
+
+  <div class="nav-links">
+    {primary_links.map(([url, label]) => <a href={url}>{label}</a>)}
+  </div>
+
+  <div class="extra-links" id="extraLinks">
+    {
+      primary_links.map(([url, label]) => (
+        <a class="narrow" href={url}>
+          {label}
+        </a>
+      ))
+    }
+    {secondary_links.map(([url, label]) => <a href={url}>{label}</a>)}
+  </div>
+
+  <HamburgerToggle />
+  <DarkModeToggle />
+</nav>
+
+<header>
+  <a href={localeRoot}>
+    <img class="header-image" alt={config.hostname} src="/header.svg" />
+  </a>
+  <slot />
+</header>
+
+<style>
+  body {
+    margin: 0;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /*height: ;*/
+    /*padding: 0 16px;*/
+    /*box-shadow: 0px 1px 5px var(--bg-3);*/
+    border-bottom: 1px solid var(--bg-3);
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  /* Brand (logo + name) */
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+    padding: 12px;
+    font-weight: bold;
+    margin-right: auto;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  a {
+    font-weight: 600;
+  }
+  a:focus,
+  a:hover {
+    color: var(--accent) !important;
+  }
+  /* Main right-side links */
+  .nav-links {
+    display: flex;
+    /*gap: 16px;*/
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: inherit;
+    padding: 16px;
+  }
+
+  /* Extra links dropdown */
+  .extra-links {
+    position: absolute;
+    top: 78px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    background: var(--bg);
+    border: 1px solid var(--bg-3);
+    border-radius: 12px;
+    padding: 8px;
+
+    /*padding: 8px;*/
+    /*padding: 16px;*/
+    z-index: 100;
+  }
+
+  .extra-links.open {
+    display: flex;
+  }
+
+  .extra-links a {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+    padding: 8px;
+  }
+
+  header {
+    position: relative;
+    max-width: 850px;
+    text-align: center;
+    /*border-bottom: 5px dotted var(--accent);*/
+    /*padding: 20px 0;*/
+    margin: auto;
+    margin-top: 10px;
+  }
+  img.header-image {
+    max-width: 100%;
+    max-height: 150px;
+  }
+  a:has(img.header-image) {
+    display: block; /*fix focus styling on main header*/
+  }
+  .narrow {
+    display: none;
+  }
+  @media only screen and (max-width: 700px) {
+    .nav-links {
+      display: none;
+    }
+    .narrow {
+      display: initial;
+    }
+  }
+</style>
+
+<!--
+<style>
+  header {
+    position: relative;
+    max-width: 850px;
+    text-align: center;
+    border-bottom: 5px dotted var(--accent);
+    padding: 20px 0;
+    margin: auto;
+    margin-top: 10px;
+  }
+  nav {
+    display: flex;
+  }
+  img {
+    display: inline-block;
+  }
+  img.header-image {
+    max-width: 100%;
+    max-height: 150px;
+  }
+  a:has(img.header-image) {
+    display: block; /*fix focus styling on main header*/
+  }
+  a {
+    text-decoration: none;
+    /* color: var(--txt); */
+  }
+</style>
+<nav>
+  <img alt={config.hostname} src="/logo.png" width="50" />
+  {
+    config.use_navbar && (
+      <div style="font-weight: 700">
+        {navbar
+          .map(([url, label]) =>
+            `https://${config.hostname}/` == url ? (
+              <span>{label}</span>
+            ) : (
+              <a href={url}>{label}</a>
+            ),
+          )
+          .reduce((prev, curr, i) => (
+            <>
+              {prev} {" · "} {curr}
+            </>
+          ))}
+      </div>
+    )
+  }
+  <DarkModeToggle />
+  {config.use_language_toggle && <LanguageToggle />}
+</nav>
+<header>
+  <a href={localeRoot}>
+    <img class="header-image" alt={config.hostname} src="/header.svg" />
+  </a>
+  <slot />
+</header> -->
