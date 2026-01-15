@@ -33,7 +33,15 @@
     }
   });
 
-  $: currentTask = taskQueue[currentIndex];
+  $: currentTask = getTaskAtIndex(currentIndex);
+
+  // The reactive statement is separated into a function
+  // so that it does not run when taskQueue mutates.
+  // This comes up when entering an incorrect sentence:
+  // the chips should not disappear.
+  function getTaskAtIndex(i: number) {
+    return taskQueue[i];
+  }
 
   function handleCheck() {
     completed += 1;
