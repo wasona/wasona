@@ -2,23 +2,25 @@
 import { config } from "selo-components/config";
 import DarkModeToggle from "@/components/DarkModeToggle.astro";
 import HamburgerToggle from "@/components/HamburgerToggle.astro";
-import { LanguageToggle } from "selo-components";
+// import { LanguageToggle } from "selo-components";
 
 const primary_links = [
   ["https://wasona.com/", "Course"],
   ["https://nimi.li/", "Dictionary"],
-  ["https://lipu.pona.la/", "Library"],
   ["https://discord.gg/6zkugJFU4x", "Discord"],
   ["https://sona.pona.la/", "Wiki"],
 ];
 const secondary_links = [
+  ["https://lipu.pona.la/", "Library"],
   ["https://sin-kulupu.pona.la/", "News"],
   ["https://kute.pona.la/", "Music"],
   ["https://utala.pona.la/", "Art contests"],
+  ["https://ma.pona.la/", "Pin map"],
   ["https://suno.pona.la/", "Toki Pona Day"],
+  ["https://kemeka.pona.la/", "Context dictionary"],
+  ["https://sitelenpona.org/", "Sitelen Pona"],
+  ["https://luka.pona.la/", "Luka Pona"],
   ["https://pona.la/", "About"],
-  // ["https://sitelenpona.org/", "Sitelen Pona"],
-  // ["https://luka.pona.la/", "Luka Pona"],
 ];
 const lang = Astro.url.pathname.split("/")[1];
 const localeRoot =
@@ -80,7 +82,7 @@ const localeRoot =
     /*box-shadow: 0px 1px 5px var(--bg-3);*/
     border-bottom: 1px solid var(--bg-3);
     position: relative;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
   }
 
@@ -168,7 +170,7 @@ const localeRoot =
   .narrow {
     display: none;
   }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 600px) {
     .nav-links {
       display: none;
     }
