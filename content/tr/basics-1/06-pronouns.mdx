@@ -1,0 +1,89 @@
+﻿---
+slug: "tr/06"
+title: "6. ders: zamirler"
+description: "ni, mi, sina ve ona'yı öğrenin!"
+practice:
+- title: "1. Revise"
+  tasks:
+  - l1: "Bu, sevimli bir bitki."
+    l2: "ni li kasi suwi."
+    junkChips: ["e"]
+  - l1: "Bunlar büyük gözler."
+    l2: "ni li lukin suli."
+    junkChips: ["e"]
+  - l1: "Gözlerin büyük."
+    l2: "lukin sina li suli."
+    junkChips: ["e"]
+  - l1: "Bu kuş küçüktür."
+    l2: "waso ni li lili."
+    junkChips: ["e"]
+  - l1: "Kötü böcek, bitkimi yedi."
+    l2: "pipi ike li moku e kasi mi."
+    junkChips: ["ona"]
+  - l1: "Sevimlisin."
+    l2: "sina suwi."
+    junkChips: ["li"]
+  - l1: "Onları görüyorum."
+    l2: "mi lukin e ona."
+    junkChips: ["li"]
+  - l1: "Onlar iyi yerler."
+    l2: "ona li moku pona."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Zamirler
+
+Muhtemelen uzun cümlelerden ve kelime türü dalaverelerinden yorulmuşsunuzdur. Bir şeyleri işaret ederek tempoyu biraz düşürelim:
+
+<List>
+  <Word sl="ni" m="bu, şu, o" />
+  <Sentence sl="ni li soweli." m="Bu bir hayvandır." />
+  <Sentence sl="ni li kasi." m="Bu bir bitkidir." />
+  <Sentence sl="ni li moku suwi." m="Bu tatlı yemektir." />
+  <Sentence sl="ni li suli." m="Bu önemlidir." />
+  <Sentence sl="ni li pona wawa." m="Bu inanılmaz derecede iyidir." />
+</List>
+
+Bunlar bizim ilk _nesnesiz cümlelerimiz_, ve bu yüzden bu cümlelerde **󱤉 e** bulunmuyor!
+
+Merak etmiş olabilirsiniz: **󱤧 li** fiili başlatır. Peki ya fiil nerede ki? Türkçede bu durumlar için sona -dır/-dir eki koyarız, yani bir isim fiil olmadan yüklem olabilir. Oysaki Toki Pona'da durum biraz daha farklıdır. Bunun yerine, cümlede fiil rolünü üstlenirken, kelimeler otomatik olarak anlamlarına 'olmak' fiilini de dahil ederler: **󱥢 soweli** "hayvan olmak", **󱥣 suli** "önemli olmak" anlamlarına gelebilir. Demek istediğim, her ne kadar **󱤧 li**'den sonraki kelime Türkçe düşünürsek isim gibi gözükse de, Toki Pona'da aslında birer fiildir! 
+
+Şimdi bir zamire baktığımıza göre, birkaçına daha bakalım:
+
+<List>
+  <Word sl="mi" m="Ben, biz; benim, bizim" />
+  <Word sl="sina" m="Sen, siz; senin, sizin" />
+  <Word sl="ona" m="O, onlar; onun, onların" />
+</List>
+
+Haydi **󱤴 mi**,**󱥞 sina**,**󱥆 ona**, ile **󱥁 ni**'yi cümlelerde kullanarak pratik yapalım:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Bu bitki, büyüktür." />
+  <Sentence sl="sona sina li wawa." m="Senin bilgin harikadır." />
+  <Sentence sl="pipi ni li pipi mi." m="Bu böcek, benim böceğimdir." />
+  <Sentence sl="waso sina li lukin e mi." m="Senin kuşun, beni görüyor." />
+  <Sentence sl="waso li moku e pipi ni." m="Kuş, bu böceği yer." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Benim hayvanım, onun bitkisini yiyor." />
+</List>
+
+Bu tarz cümlelere çoktan aşina olmuş olmalısınız! Cümledeki çoğu konumda zamirler tıpkı normal isimler ve sıfatlar gibi davranırlar. Ancak  **󱤴 mi** veya **󱥞 sina** cümlenin öznesi olduğunda işler biraz tuhaflaşır:
+
+<List>
+  <Sentence sl="mi wawa." m="Ben güçlüyüm." />
+  <Sentence sl="sina lukin e moku." m="Yemeği görürsün." />
+  <Sentence sl="mi sona e kasi suli." m="Büyük bitkiyi görürüm." />
+  <Sentence sl="sina sona e suli kasi." m="Bitkinin boyutunu bilirsin." />
+</List>
+
+Toki Pona'nın özel bir kuralı vardır: **󱤴 mi** veya **󱥞 sina**  cümlenin öznesi olduğunda, normalde özneden sonra yazılan **󱤧 li**'yi aradan çıkarırız. Bunun sebebi, **󱤴 mi** veya **󱥞 sina** ile başlayan cümlelerin çok yaygın olmasıdır!
+
+<Practice exercises={frontmatter.practice} />
+
+## Ayrıca bkz.
+* [Q: does 'li' mean 'is'?](en/li-and-is)
