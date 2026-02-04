@@ -1,0 +1,76 @@
+---
+slug: "nl/12"
+title: "les 12: verzoeken"
+description: "Leer o!"
+practice:
+  - l1: "Emma, probeer te slapen!"
+    l2: "jan Ema o alasa lape!"
+    junkChips: ["e"]
+  - l1: "Hé vogel, zing voor me!"
+    l2: "waso o kalama tawa mi!"
+    junkChips: ["e"]
+  - l1: "Hé, Kenta!"
+    l2: "jan Kenta o!"
+    junkChips: ["li"]
+  - l1: "Praat met Nina!"
+    l2: "o toki tawa jan Nina!"
+    junkChips: ["li"]
+  - l1: "Teken iets raars!"
+    l2: "o sitelen e ijo nasa!"
+    junkChips: ["li"]
+  - l1: "Maya, geef me de lepel!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+    junkChips: ["li"]
+    alsoAccept: ["jan Maja o pana e ilo tawa mi!"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Verzoeken
+
+In het Toki Pona is een zin met **󱤧 li** een feitelijke bewering. Maar soms wil je geen bewering, maar een verzoek doen. Met verzoeken vertel je andere mensen wat je wil dat er gebeurt. In een verzoek gebruik je **󱥄 o** in plaats van **󱤧 li**:
+
+{/* A note for translators */}
+{/*
+  By "statement of fact" and "request", I am explaining in simple words
+  the categories of "indicative mood" and "imperative mood". Please check
+  if your language has those. Your audience may or may not know what they are.
+*/}
+
+<List>
+  <Word sl="o" m="duidt een verzoek, bevel, instructie, wens aan" />
+  <Sentence sl="ilo li sitelen e pipi." m="De telefoon laat een insect zien." />
+  <Sentence sl="ilo o sitelen e waso!" m="O telefoon, laat alsjeblieft een vogel zien!" />
+</List>
+
+Hier zien we nog meer bevelen:
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="Mensen, lees alsjeblieft het goede papier!" />
+  <Sentence sl="soweli mi o moku pona!" m="Mijn kat, eet alsjeblieft goed!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="Moge je kind sterk worden!" />
+  <Sentence sl="pona o tawa sina!" m="Moge goedheid naar je gaan! (U zijt gezegend!)" />
+</List>
+
+Je ziet misschien dat sommige van deze zinnen netjes in twee stukken uiteenvallen:
+* De roep om iemands aandacht (voor **󱥄 o**)
+* Het verzoek zelf (na **󱥄 o**)
+
+{/* A note for translators */}
+{/*
+  If your language has "vocative case",
+  "The call for someone's attention" is simply vocative case.
+*/}
+
+We kunnen deze ook los gebruiken:
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Emma, sluit alsjeblieft de deur!" />
+  <Sentence sl="jan Ema o!" m="Hè, Emma!" />
+  <Sentence sl="o pini e lupa tomo!" m="Sluit alsjeblieft de deur!" />
+</List>
+
+<Practice exercises={frontmatter.practice} />
