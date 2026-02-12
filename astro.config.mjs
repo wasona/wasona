@@ -5,6 +5,8 @@ import sitemap from "@astrojs/sitemap";
 import { config } from "selo-components/config";
 import svelte from "@astrojs/svelte";
 
+import { i18nQuotes } from "./plugins/quotes.mjs";
+
 const deploy = import.meta.env.PROD
   ? { site: `https://${config.hostname}/` }
   : { site: "http://localhost/" };
@@ -13,6 +15,9 @@ const deploy = import.meta.env.PROD
 export default defineConfig({
   ...deploy,
   integrations: [mdx(), sitemap(), svelte()],
+  markdown: {
+    remarkPlugins: [i18nQuotes],
+  },
   redirects: {
     "/en/": {
       status: 301,
