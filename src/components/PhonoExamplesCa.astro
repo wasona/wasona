@@ -1,0 +1,60 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Paraula</th>
+      <th>Significat</th>
+      <th>Trucs útils</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="mi" />
+      <td>jo</td>
+      <td></td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kasi" />
+      <td>planta</td>
+      <td>Recorda que la <b>s</b> és sorda!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="jan" />
+      <td>persona</td>
+      <td>Recorda com es pronuncia la lletra <b>j</b>! </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kute" />
+      <td>sentir</td>
+      <td>La lletra - <b>e</b> del final no es pronuncia neutra! </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>nombre</td>
+      <td
+        >Per cert, s'escriu <b>np</b>, però es sol prononciar <b>mp</b>!
+      </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>so/td>
+      <td>Recorda que la primera síl·laba és la tònica!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>llangardaix</td>
+      <td>Hi han paraules que comencen en vocal!</td>
+    </tr>
+  </tbody>
+</table>
