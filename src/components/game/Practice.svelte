@@ -64,7 +64,7 @@
     border-right: 1px solid var(--grey);
     background-color: var(--bg);
   }
-  button:hover {
+  button:not(.active):hover {
     background-color: var(--bg-2);
   }
   .tab-content {
