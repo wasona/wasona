@@ -7,6 +7,7 @@
 
   export let tasks: Task[];
   export let locale: Record<string, string>;
+  export let nextTab: Function | null;
 
   const _ = (text: string) => locale[text];
 
@@ -67,6 +68,9 @@
       checked = false;
     } else {
       allDone = true;
+      if (nextTab) {
+        nextTab();
+      }
       sfx_done?.play();
     }
   }
@@ -83,7 +87,6 @@
 
     {#if allDone}
       <h2>{_("done")}</h2>
-      <!-- TODO: "open next exercise tab" button -->
     {:else}
       {#if currentTask.l2.split(" ").length == 1}
         <h2>{_("translate_word")}</h2>

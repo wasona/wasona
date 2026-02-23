@@ -30,7 +30,11 @@
   <div class="tab-content">
     {#each exercises as exercise, i}
       <div class="tab" class:active={i === activeIndex}>
-        <ExerciseWidget tasks={exercise.tasks} {locale} />
+        <ExerciseWidget
+          tasks={exercise.tasks}
+          {locale}
+          nextTab={i + 1 < exercises.length ? () => setActiveTab(i + 1) : null}
+        />
       </div>
     {/each}
   </div>
