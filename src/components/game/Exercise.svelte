@@ -3,6 +3,7 @@
   import ChipTask from "@/components/game/ChipTask.svelte";
   import { KALAMA } from "@/lib/audio";
   import { verifyChips, type Task } from "@/lib/exercise";
+  import ChooseTask from "@/components/game/ChooseTask.svelte";
 
   export let tasks: Task[];
   export let locale: Record<string, string>;
@@ -82,15 +83,29 @@
 
     {#if allDone}
       <h2>{_("done")}</h2>
+      <!-- TODO: "open next exercise tab" button -->
     {:else}
-      <h2>{_("translate")}</h2>
-      <h3>{currentTask.l1}</h3>
+      {#if currentTask.l2.split(" ").length == 1}
+        <h2>{_("translate_word")}</h2>
+        <h3>{currentTask.l1}</h3>
 
-      <ChipTask
-        task={currentTask}
-        setAssembledSentence={(words: string[]) => (assembledSentence = words)}
-        locked={checked}
-      />
+        <ChooseTask
+          task={currentTask}
+          setAssembledSentence={(words: string[]) =>
+            (assembledSentence = words)}
+          locked={checked}
+        />
+      {:else}
+        <h2>{_("translate")}</h2>
+        <h3>{currentTask.l1}</h3>
+
+        <ChipTask
+          task={currentTask}
+          setAssembledSentence={(words: string[]) =>
+            (assembledSentence = words)}
+          locked={checked}
+        />
+      {/if}
 
       <div class="footer">
         <button

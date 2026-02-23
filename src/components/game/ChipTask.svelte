@@ -181,6 +181,7 @@
     user-select: none;
     font-size: 120%;
     font-family: inherit;
+    transition: translate 0s;
   }
   .chip:not(.hidden):active {
     box-shadow: 0 0;
