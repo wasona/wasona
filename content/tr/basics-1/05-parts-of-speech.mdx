@@ -1,0 +1,106 @@
+﻿---
+slug: "tr/05"
+title: "5. ders: sözcük türleri"
+description: "İsimler, fiiller ve sıfatlar hakkında bilgi edinin!"
+practice:
+- title: "1. Revise"
+  tasks:
+  - l1: "güçlü bir böcek"
+    l2: "pipi wawa"
+  - l1: "böceğin gücü"
+    l2: "wawa pipi"
+  - l1: "büyük bir göz"
+    l2: "lukin suli"
+  - l1: "iyi yemek"
+    l2: "moku pona"
+  - l1: "inanılmaz derecede iyi"
+    l2: "pona wawa"
+  - l1: "Yemek, gözleri daha iyi yapar."
+    l2: "moku li pona e lukin."
+    junkChips: ["waso"]
+  - l1: "Hayvanlar, kuşun sevimliliğini bilirler."
+    l2: "soweli li sona e suwi waso."
+    junkChips: ["suli"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Sözcük türleri
+
+Bazılarınız **󱥡 sona** kelimesini iki kez tanıttığımı fark etmiş olabilir, önce bir fiil olarak 'bilmek', sonra bir sıfat olarak 'bilge'. Peki hangisi? Ve bunu nasıl bileceksiniz?
+
+Gerçekte, her ikisi de olabilir! Eğer bir isimden sonra geliyorsa, sıfattır. Eğer **󱤧 li** onu bir fiil olarak sunuyorsa, o zaman fiildir. Her şey cümledeki kelime sırasıyla ilgili!
+
+Aslında, aynısı _tüm_ kelimeler için geçerlidir: eğer bir şey isim, fiil veya sıfatsa, _üçünden herhangi biri_ olabilir! Zaten öğrendiğimiz kelimeler arasından bazı örneklere bakalım:
+
+<List>
+  <Word sl="lukin" m="İsim: göz; Fiil: görmek" />
+  <Word sl="moku" m="İsim: yiyecek; Fiil: tüketmek, yemek yemek" />
+  <Word sl="sona" m="İsim: bilgi, hikmet; Fiil: bilmek; Sıfat: bilgili, bilge" />
+  <Word sl="suli" m="İsim: boyut; Fiil: daha büyük yapmak, vurgulamak; Sıfat: büyük, önemli" />
+  <Word sl="pona" m="İsim: iyilik; Fiil: daha iyi yapmak, geliştirmek; Sıfat: iyi, hoş" />
+  <Word sl="waso" m="İsim: kuş; Fiil: kuş hâline getirmek, kuşlaştırmak; Sıfat: bir kuşun, kuşumsu, kuş gibi" />
+</List>
+
+Şimdiye kadar öğrendiğimiz kelimelerin sadece *bazılarını* listeledim -- kalıpları görmek için yeterli miktarda:
+* **Fiiller isme dönüştüğünde**, genellikle bir şeyi yapma eylemini (*bilgi*) veya eylemin çok önemli bir parçasını oluşturan bir şeyi (*yemek, göz*) ifade ederler.
+* **Fiiller sıfata dönüştüğünde**, bir şeyi yapanları ifade ederler: (*bilge insanlar ~ bilen insanlar*)
+* **İsimler fiile dönüştüğünde**, genellikle bir şeye dönüşmek veya bir şeyi bir şeye uygulamak anlamına gelirler (*kuşa dönüştürmek, kuş hâline getirmek, kuşlaştırmak*).
+* **İsimler sıfata dönüştüğünde**, sahiplik veya benzerlik ifade ederler (*kuşa ait, kuş gibi, kuşumsu*)
+* **Sıfatlar isme dönüştüğünde**, bir nitelik ifade ederler (*iyilik, boyut*).
+* **Sıfatlar fiile dönüştüğünde**, bir nitelik kazandırırlar (*daha iyi yapmak, büyütmek*).
+
+Ancak konuşurken, biz Toki Pona konuşurları çoğu zaman bu kalıpları düşünmek zorunda bile kalmayız! Birbirlerine karışmaya başlarlar. Bir noktada, bir şeyin orijinalinde isim mi, fiil mi yoksa sıfat mı olduğunu düşünmeyi bile bırakırsınız. Tutarlı bir bütün haline gelir!
+
+Hadi bu kelimeleri isim, fiil ve sıfat olarak kullanma alıştırması yapalım:
+
+<List>
+  <Sentence sl="lukin li pona e sona." m="Gözler, bilgiyi geliştirir." />
+  <Sentence sl="moku li suli e pipi." m="Yemek, böceği büyütür." />
+  <Sentence
+    sl="moku li wawa e soweli lili."
+    m="Yemek, küçük hayvanu güçlendirir."
+  />
+</List>
+
+## Kelime sırası önemlidir!
+
+Herhangi bir isim sıfat olabildiğinden ve herhangi bir sıfat isim olabildiğinden, kelime sırası gerçekten önemlidir! Şu iki ifadenin nasıl farklı anlamlara geldiğine dikkat edin:
+
+<List>
+  <Word sl="soweli suli" m="büyük hayvan" />
+  <Word sl="suli soweli" m="bir hayvanın boyutu" />
+  <Sentence
+    sl="soweli suli li sona e suli soweli."
+    m="Büyük hayvan, bir hayvanın büyüklüğünü/boyutunu bilir."
+  />
+</List>
+
+## li ve e de önemlidir!
+
+li ve e'nin nasıl biraz gereksiz göründüğünü hatırlıyor musunuz? Artık herhangi bir anlamlı kelimenin isim, fiil veya sıfat olarak her yerde kullanılabileceğini bildiğimize göre, nihayet ne kadar önemli olduklarını görebiliriz. Onlar sayesinde, şu üç çok farklı cümleyi ayırt edebiliriz:
+
+<List>
+  <Word sl="soweli sona" m="bilge hayvan" />
+  <Word sl="sona pona" m="iyi bilgi; iyi bilmek" />
+  <Word sl="pona waso" m="kuşun iyiliği" />
+  <Sentence
+    sl="soweli sona li pona e waso."
+    m="Bilge hayvan, kuşa yardım eder."
+  />
+  <Sentence
+    sl="soweli li sona pona e waso."
+    m="Hayvan, kuşu iyi bilir."
+  />
+  <Sentence
+    sl="soweli li sona e pona waso."
+    m="Hayvan kuşun ne kadar iyi olduğunu bilir."
+  />
+</List>
+Eğer bir cümleyi nasıl okuyacağınız veya yazacağınız konusunda kafanız karışırsa, şu soruları sorarak başlayın:
+"Özne nerede? Fiil nerede? Nesne nerede?", böylece her şey düzgün bir şekilde küçük ifadelere ayrılır!
+
+<Practice exercises={frontmatter.practice} />
