@@ -1,0 +1,76 @@
+---
+slug: "nl/11"
+title: "les 11: thuis"
+description: "Leer ilo, lipu, poki, supa, lupa, len, open, pini, jo, ijo!"
+practice:
+  - l1: "Je sluit de deur."
+    l2: "sina pini e lupa."
+    junkChips: ["supa"]
+  - l1: "Er zit een kat in mijn huis."
+    l2: "soweli li lon tomo mi."
+    junkChips: ["e"]
+  - l1: "Mijn huis bevat een kat."
+    l2: "tomo mi li jo e soweli."
+    junkChips: ["ni"]
+  - l1: "Je vogel heeft eten nodig."
+    l2: "waso sina li wile e moku."
+    junkChips: ["ona"]
+  - l1: "Sunita kan goed zingen."
+    l2: "jan Sunita li ken kalama pona."
+    junkChips: ["e"]
+  - l1: "Ik wil het hebben over een naaimachine."
+    l2: "mi wile toki e ilo len."
+    junkChips: ["li"]
+  - l1: "Iemand heeft het boek over insecten op het bureau gelegd."
+    l2: "jan li pana e lipu pipi tawa supa."
+    junkChips: ["pona"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Thuis
+
+Mensen hebben een hoop spullen in huis:
+
+<List>
+  <Word sl="ilo" m="gereedschap, zoals een hamer, vork, telefoon, app" />
+  <Word sl="lipu" m="plat ding voor 󱥡 sona, zoals papier, kaart, boek, website" />
+  <Word sl="poki" m="container, zoals een doos, lade, fles" />
+  <Word sl="supa" m="horizontaal oppervlak, zoals een boekenplank, bureau, bank" />
+  <Word sl="lupa" m="opening, zoals een deur, raam, gat" />
+  <Word sl="len" m="afdekking, zoals kleren, schoenen, deken" />
+</List>
+
+En met die spullen doen we het volgende:
+
+<List>
+  <Word sl="open" m="beginen, openen, aanzetten" />
+  <Word sl="pini" m="beëindigen, sluiten, uitzetten" />
+  <Word sl="jo" m="vasthouden, bevatten" />
+</List>
+
+Tijd voor wat oefening!
+
+<List>
+  <Sentence sl="mi open e lupa." m="Ik open de deur." />
+  <Sentence sl="jan li pini e poki moku." m="De persoon sluit de koelkast." />
+  <Sentence sl="lipu li lon supa lape." m="Het boek ligt op het bed." />
+  <Sentence sl="poki mi li ken jo e len." m="Mijn lade bevat misschien schoenen." />
+  <Sentence sl="ilo mi li wile e wawa." m="Mijn telefoon heeft stroom nodig." />
+</List>
+
+## Iets
+
+In een doos kun je kleren, paperassen, gereedschappen, foto's … eigenlijk van alles vinden! Hoe kunnen we in het algemeen over dit alles praten?
+
+<List>
+  <Word sl="ijo" m="iets, ding, spullen" />
+  <Sentence sl="poki li jo e ijo." m="De doos bevat spullen." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="Iemand tekent iets schattigs." />
+  <Sentence sl="mi wile toki e ijo kasi." m="Ik zou het graag hebben over iets wat te maken heeft met planten." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

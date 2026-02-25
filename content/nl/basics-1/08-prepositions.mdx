@@ -1,0 +1,124 @@
+---
+slug: "nl/08"
+title: "les 8: voorzetsels"
+description: "Leer weka, pana, kama, awen, tawa, lon, tan!"
+practice:
+  - l1: "in Engeland"
+    l2: "lon ma Inli"
+  - l1: "naar Ali"
+    l2: "tawa jan Ali"
+  - l1: "Je haalt het insect weg uit het huis."
+    l2: "sina weka e pipi tan tomo."
+    junkChips: ["li"]
+  - l1: "Ik hou van planten. (Planten zijn goed voor me.)"
+    l2: "kasi li pona tawa mi."
+    junkChips: ["e"]
+  - l1: "Ik geef de vogel een rups."
+    l2: "mi pana e pipi tawa waso."
+    junkChips: ["li"]
+  - l1: "Mensen blijven thuis."
+    l2: "jan li awen lon tomo."
+    junkChips: ["e"]
+  - l1: "Noah gaat naar Frankrijk."
+    l2: "jan Nowa li tawa ma Kanse."
+    junkChips: ["e"]
+  - l1: "Toronto ligt in Canada."
+    l2: "ma tomo Towano li lon ma Kanata."
+    junkChips: ["e"]
+    alsoAccept: ["ma Towano li lon ma Kanata."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Voorzetsels
+
+Nu we een paar landen kennen, kunnen we het over reizen hebben! Maar hoe zeg je “gaan naar” en “komen uit”? Daarvoor hebben we werkwoorden en voorzetsels nodig:
+
+<List>
+  <Word sl="weka" m="verwijderen, weggaan; weg" />
+  <Word sl="pana" m="geven, neerzetten" />
+  <Word sl="kama" m="komen, arriveren" />
+  <Word sl="awen" m="blijven, beschermen" />
+  <Word sl="tawa" m="naar" />
+  <Word sl="lon" m="in, op, bij" />
+  <Word sl="tan" m="uit, van, omdat" />
+</List>
+
+{/* A note for translators */}
+{/*
+  If your language has noun case, please think about
+  how "tawa, lon, tan" compare to your noun cases.
+  The terms "dative case" and "locative case" are
+  especially important to check.
+*/}
+
+{/*
+  Note by the Dutch translator: Dutch doesn't seem to have a good translation for “prepositional phrase”. There apparently is “voorzetselconstituent” but this term is so obscure (I had to do a Wikipedia dive to find it) that I think it would be pretty non-pona to apply it here. Therefore I came up with the less-scary term “voorzetselgroep” (= “preposition group”) here.
+*/}
+
+Een _voorzetsel_ is een woord dat voor een ander woord staat en je vertelt hoe dat woord zich verhoudt tot de zin. Een voorzetsel + het woord waar het bijhoort, noemen we een _voorzetselgroep_:
+
+<List>
+  <Word sl="tawa soweli" m="naar het dier" />
+  <Word sl="lon ma" m="op/in het land" />
+  <Word sl="tan tomo" m="uit het huis" />
+</List>
+
+In het Toki Pona kun je voorzetselgroepen op twee manieren gebruiken. Ten eerste kunnen we ze aan het eind van een zin zetten. Dit kun je gebruiken om de plaats of richting van een handeling te noemen:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="Ik zet een vogel in een boom." />
+  <Sentence sl="waso li awen lon kasi." m="De vogel blijft in een boom." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="Je haalt de vogel uit de boom."
+  />
+</List>
+
+Ten tweede: wat als we willen praten over plaats of richting … zonder dat er iets anders gebeurt? Dat kan gelukkig ook. Voorzetselgroepen kunnen direct achter **󱤧 li** komen, en in hun eentje als werkwoord dienen. Als voorzetsels als werkwoorden dienen, dan betekenen ze: **󱥩 tawa** 'naar … gaan', **󱤬 lon** 'in … zijn', **󱥧 tan** 'uit … komen':
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma gaat naar Japan." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Nina is in Rusland." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Millie komt uit Frankrijk." />
+</List>
+
+Laten we wat oefenen met de volgende zinnen:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="Ik ga naar het land van de planten.<br />(Misschien een bos, een grasveld, een weelderige plek.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="Kennis is van me weggegaan.<br />(Ik ben het vergeten.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="Schattige dieren zijn goed naar (= vanuit het perspectief van) mij.<br />(Ik hou van schattige dieren.)"
+  />
+
+{/* A note for translators */}
+{/*
+  Some languages have a verb "I like ...",
+  other languages have a verb more like "to me it is nice ...".
+  If your language is more like the second group,
+  you might not need the text in brackets.
+*/}
+
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah praat naar (= tegen) Emma." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="In Duitsland spreken de mensen Duits."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## See also
+* [Q: moet ik taal- en landnamen uit het hoofd leren?](/en/languages-countries/)
+* [Q: is de constructie ‘jan li toki Netelan’ niet een beetje raar?](/en/named-verbs/)
