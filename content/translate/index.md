@@ -18,6 +18,7 @@ description: "Help us by translating the course to your language!"
 * [Esperanto](https://github.com/wasona/wasona/pull/55) by jan Lekasi
 * [Dutch](https://github.com/wasona/wasona/pull/57) by akesi Wilin
 * [Turkish](https://github.com/wasona/wasona/pull/63) by jan Erd, jan Jasi, nat
+* [Croatian](https://github.com/wasona/wasona/pull/70) by gitingtonhub
 
 **Romanian** -- a volunteer has reached out to me earlier, but have yet to send any translations. If you start a translation into one of these languages, let me know! I'll notify the earlier volunteers, to avoid duplicate work being done.
 
