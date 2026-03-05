@@ -6,5 +6,6 @@
   "url_github": "https://github.com/wasona/wasona/",
 
   "use_navbar": true,
+  "use_socials": true,
   "use_language_toggle": false
 }
