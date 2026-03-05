@@ -1,0 +1,30 @@
+---
+import { config } from "selo-components/config";
+import Socials from "./Socials.astro";
+---
+
+<style>
+  footer {
+    max-width: 850px;
+    text-align: center;
+    border-top: 5px dotted var(--accent);
+    padding: 20px 0;
+    margin: auto;
+    margin-bottom: 100px;
+    color: var(--grey);
+  }
+  a {
+    display: inline-block;
+    text-decoration: auto;
+    font-weight: initial;
+  }
+</style>
+
+<footer>
+  Made by the Toki Pona community.<br />
+  Built with <a href="https://docs.astro.build/">Astro</a> with the
+  <a href="https://github.com/AcipenserSturio/selo-components">selo</a>
+  theme.<br />
+  Source code is available on <a href={config.url_github}>GitHub</a>.
+  <Socials />
+</footer>

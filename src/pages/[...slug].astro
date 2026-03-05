@@ -6,6 +6,8 @@ import "@/global.css";
 import { getLang, posts, prevnexts } from "@/lib/content";
 import { render } from "astro:content";
 import { Layout } from "selo-components";
+import Socials from "@/components/Socials.astro";
+import Footer from "@/components/Footer.astro";
 
 export const getStaticPaths = async () =>
   posts.map((post) => ({
@@ -40,3 +42,4 @@ const prevnext = post.filePath!.includes("index.md")
   <PageNav prevnext={prevnext} current={post.id} slot="pagenav" />
   <Content />
 </Layout>
+<Footer />
