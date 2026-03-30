@@ -3,30 +3,70 @@ slug: "de/17"
 title: "Lektion 17: Fragen"
 description: "Lerne anu, seme!"
 practice:
-- title: "1. Revise"
+- title: "1. Vokabeln"
+  tasks:
+  - l1: "oder"
+    l2: "anu"
+    junkChips: ["ala", "lete", "ante"]
+  - l1: "was"
+    l2: "seme"
+    junkChips: ["jo", "esun", "o"]
+- title: "2. Wiederholung"
   tasks:
   - l1: "Macht Tabak die Luft dreckig?"
     l2: "kasi nasa li ike ala ike e kon?"
+    junkChips: ["leko"]
   - l1: "Ist das ein Ziegelstein?"
     l2: "ni li leko ala leko?"
+    junkChips: ["e"]
   - l1: "Kannst du wie ein Vogel singen?"
     l2: "sina ken ala ken kalama sama waso?"
+    junkChips: ["e"]
   - l1: "Benutzt du Google?"
     l2: "sina kepeken ala kepeken ilo Kuko?"
+    junkChips: ["li"]
   - l1: "Bin ich in Italien?"
     l2: "mi lon ala lon ma Italija?"
+    junkChips: ["e"]
   - l1: "Das benötigt Geld, oder?"
     l2: "ni li wile e mani anu seme?"
+    junkChips: ["tawa"]
   - l1: "Du sprichst Deutsch, oder?"
     l2: "sina toki Tosi anu seme?"
+    junkChips: ["Inli"]
   - l1: "Wo ist Japan?"
     l2: "ma Nijon li lon seme?"
+    junkChips: ["e"]
   - l1: "Wer kommt aus Indien?"
     l2: "jan seme li tan ma Palata?"
+    junkChips: ["e"]
   - l1: "Was willst du essen?"
     l2: "sina wile moku e seme?"
-    alsoAccept:
-      - "sina wile e moku seme?"
+    junkChips: ["li"]
+    alsoAccept: ["sina wile e moku seme?"]
+- title: "3. Zusatzübungen"
+  tasks:
+  - l1: "Der Tod ist schlimm, oder?"
+    l2: "moli li ike anu seme?"
+    junkChips: ["ala"]
+  - l1: "Welches Tier hat meine Pflanze gefressen?"
+    l2: "soweli seme li moku e kasi mi?"
+    junkChips: ["anu"]
+  - l1: "Braucht das Radio Strom?"
+    l2: "ilo kalama li wile ala wile e wawa?"
+    junkChips: ["seme"]
+  - l1: "Reist du nach Korea?"
+    l2: "sina tawa ala tawa ma Anku?"
+    junkChips: ["e"]
+  - l1: "Ist das ein Löffel?"
+    l2: "ni li ilo ala ilo moku?"
+    junkChips: ["e"]
+  - l1: "Welche Sprachen gefallen dir?"
+    l2: "toki seme li pona tawa sina?"
+    junkChips: ["anu"]
+  - l1: "Welche Sprachen kann Emma sprechen?"
+    l2: "jan Ema li ken toki seme?"
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -51,7 +91,7 @@ Erinnerst du dich daran, wie wir in den letzten Lektionen gelernt haben, einen S
   <Word sl="moku ala moku" m="Frisst ...?" />
   <Sentence sl="pipi li moku ala moku e len?" m="Frisst die Motte das Tuch?" />
   <Word sl="pona ala pona" m="Ist ... gut?" />
-  <Sentence sl="kalama musi li pona ala pona tawa sina?" m="Ist die Musik gut für dich? (Magst du die Musik?)" />
+  <Sentence sl="kalama musi li pona ala pona tawa sina?" m="Gefällt dir die Musik?" />
   <Word sl="wile ala wile" m="Will ...?" />
   <Sentence sl="sina wile ala wile lape lon supa?" m="Willst du im Bett schlafen?" />
   <Word sl="lon ala lon" m="Ist ... in ...?" />
@@ -97,7 +137,28 @@ Wir haben gerade gelernt, dass **󱥙 seme** 'was?' bedeutet, und es ist der wic
   <Sentence sl="soweli li utala e jan Ema." m="Das Tier hat Emma angegriffen." />
 </List>
 
-Wie du siehst, wird **󱥙 seme** in der Antwort nur ausgetauscht — alles andere im Satz bleibt gleich! Das ist anders als auf Deutsch, wo Fragen den Satzbau verändern, um das W-Wort an den Anfang zu stellen. Auf Toki Pona passiert das nicht.
+Die Frage und Antwort sehen genau gleich aus, nur steht anstelle von **󱥙 seme** die Antwort. Alles andere im Satz bleibt in der gleichen Reihenfolge! Das ist anders als auf Deutsch, wo sich Fragewörter an den Anfang des Satzes bewegen.
+
+{/* A note for translators */}
+{/*
+  If your language has the same word order in questions and statements,
+  highlight this as a similarity between Toki Pona and your language.
+*/}
+
+Tipp: Wenn du dir mal unsicher bist, wie man **󱥙 seme** benutzen soll, stell dir zuerst einen möglichen Antwortsatz vor, und ersetze die Antwort in diesem Satz dann mit **󱥙 seme**. Praktisch!
+
+<List>
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱤜"
+    sl="kiwen li ken kama <u>ko</u>."
+    m="Steine können zu Sand werden."
+  />
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱥙"
+    sl="kiwen li ken kama <u>seme</u>?"
+    m="Zu was können Steine werden?"
+  />
+</List>
 
 <Practice exercises={frontmatter.practice} />
 

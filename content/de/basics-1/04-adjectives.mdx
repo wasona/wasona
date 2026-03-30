@@ -3,7 +3,27 @@ slug: "de/04"
 title: "Lektion 4: Adjektive"
 description: "Lerne suli, lili, pona, ike, wawa, suwi!"
 practice:
-- title: "1. Revise"
+- title: "1. Vokabeln"
+  tasks:
+  - l1: "groß"
+    l2: "suli"
+    junkChips: ["lili", "wawa", "sona"]
+  - l1: "klein"
+    l2: "lili"
+    junkChips: ["suli", "suwi", "pona"]
+  - l1: "gut"
+    l2: "pona"
+    junkChips: ["ike", "kasi", "suwi"]
+  - l1: "schlecht"
+    l2: "ike"
+    junkChips: ["wawa", "pipi", "suli"]
+  - l1: "stark"
+    l2: "wawa"
+    junkChips: ["suli", "soweli", "lili"]
+  - l1: "süß"
+    l2: "suwi"
+    junkChips: ["pona", "waso", "lili"]
+- title: "2. Wiederholung"
   tasks:
   - l1: "ein süßes Tier"
     l2: "soweli suwi"
@@ -13,8 +33,10 @@ practice:
     l2: "waso wawa"
   - l1: "Der Vogel kennt ein starkes Tier."
     l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
   - l1: "Ein kleines Insekt schaut ein großes Tier an."
     l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -62,14 +84,22 @@ Bilden wir ein paar Sätze mit Beschreibungen:
     sl="pipi ike li moku lili e soweli."
     m="Gemeine Käfer beißen das Tier leicht."
   />
-  <Sentence
-    sl="waso sona li sona pona e pipi."
-    m="Der weise Vogel kennt Käfer gut."
-  />
 </List>
 
-Wenn diese Sätze sich langwierig anfühlen, keine Sorge! Wir schauen uns gleich kürzere Sätze an. Denke daran: Die Satzstruktur ist eigentlich ganz einfach! Du kannst immer sehen, welcher Teil das Subjekt, das Prädikat und das Objekt ist, indem du nach **󱤧 li** und **󱤉 e** suchst.
+Wenn diese Sätze sich langwierig anfühlen, keine Sorge! Wir schauen uns gleich kürzere Sätze an. Denke daran: **󱤧 li** und **󱤉 e** sind beim Lesen eine Art Wegweiser! Mit ihrer Hilfe kannst du einen langen Satz in drei Teile teilen: das Subjekt, das Verb und das Objekt:
 
-Hier ist etwas Interessantes: Auf deutsch können Adjektive nur an Nomen angehängt werden. Auf Toki Pona können sie aber auch an Verben sein: *leicht beißen ~ moku lili*, *gut kennen ~ sona pona*. Es gibt keinen Unterschied zwischen Adjektiven und Adverbien auf Toki Pona.
+<List>
+  <Word sl="waso sona..." m="Der weise Vogel..."/>
+  <Word sl="...li sona pona..." m="...kennt gut..."/>
+  <Word sl="...e pipi lili." m="...kleine Käfer."/>
+
+  <Sentence
+    sl="waso sona li sona pona e pipi lili."
+    m="Der weise Vogel kennt kleine Käfer gut."
+  />
+
+</List>
+
+Hier ist etwas Interessantes: Auf Deutsch können Adjektive nur an Nomen angehängt werden. Auf Toki Pona können sie aber auch an Verben sein: *leicht beißen ~ moku lili*, *gut kennen ~ sona pona*. Es gibt keinen Unterschied zwischen Adjektiven und Adverbien auf Toki Pona. Auf Deutsch funktionieren viele Adjektive genauso!
 
 <Practice exercises={frontmatter.practice} />

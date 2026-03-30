@@ -3,7 +3,30 @@ slug: "de/08"
 title: "Lektion 8: Präpositionen"
 description: "Lerne weka, pana, kama, awen, tawa, lon, tan!"
 practice:
-- title: "1. Revise"
+- title: "1. Vokabeln"
+  tasks:
+  - l1: "entfernen"
+    l2: "weka"
+    junkChips: ["pana", "kama", "ma"]
+  - l1: "geben"
+    l2: "pana"
+    junkChips: ["weka", "awen", "sona"]
+  - l1: "kommen"
+    l2: "kama"
+    junkChips: ["weka", "awen", "pana"]
+  - l1: "bleiben"
+    l2: "awen"
+    junkChips: ["kama", "weka", "pana"]
+  - l1: "zu, nach"
+    l2: "tawa"
+    junkChips: ["lon", "e", "tan"]
+  - l1: "bei"
+    l2: "lon"
+    junkChips: ["e", "tan", "tawa"]
+  - l1: "von"
+    l2: "tan"
+    junkChips: ["tawa", "lon", "e"]
+- title: "2. Wiederholung"
   tasks:
   - l1: "in England"
     l2: "lon ma Inli"
@@ -11,17 +34,50 @@ practice:
     l2: "tawa jan Ali"
   - l1: "Du entfernst den Käfer aus dem Haus."
     l2: "sina weka e pipi tan tomo."
-  - l1: "Ich mag Pflanzen. (Pflanzen sind gut zu mir.)"
+    junkChips: ["li"]
+  - l1: "Ich mag Pflanzen. (Pflanzen gefallen mir.)"
     l2: "kasi li pona tawa mi."
+    junkChips: ["e"]
   - l1: "Ich gebe dem Vogel eine Raupe."
     l2: "mi pana e pipi tawa waso."
+    junkChips: ["li"]
   - l1: "Leute bleiben im Haus."
     l2: "jan li awen lon tomo."
+    junkChips: ["e"]
   - l1: "Noah fährt nach Frankreich."
     l2: "jan Nowa li tawa ma Kanse."
   - l1: "Toronto ist in Kanada."
     l2: "ma tomo Towano li lon ma Kanata."
+    junkChips: ["e"]
+    alsoAccept: ["ma Towano li lon ma Kanata."]
+- title: "3. Zusatzübungen"
+  tasks:
+  - l1: "Im Garten gibt es Blumen."
+    l2: "kasi li lon ma kasi."
+    junkChips: ["e"]
+  - l1: "Meine Katze ist von mir weggelaufen."
+    l2: "soweli mi li weka tan mi."
+    junkChips: ["e"]
+  - l1: "Ich bleibe wegen dir."
+    l2: "mi awen tan sina."
+    junkChips: ["e"]
+  - l1: "Geographie ist mir wichtig."
+    l2: "sona ma li suli tawa mi."
+    junkChips: ["e"]
+  - l1: "San Fransisco ist in den USA."
+    l2: "ma Sanpansiko li lon ma Mewika."
+    junkChips: ["e"]
+  - l1: "Der Vogel beschützt sein Nest."
+    l2: "waso li awen e tomo ona."
+    junkChips: ["tawa"]
 ---
+
+{/*
+  Translator's note: One of the practice sentences required readers
+  to translate English's "there is..." expression.
+  I've changed the sentence to one that asks about German's equivalent
+  "es gibt..." expression.
+*/}
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
@@ -30,19 +86,24 @@ import Practice from "@/components/Practice.astro";
 
 ## Präpositionen
 
-Jetzt, wo wir ein paar Länder kennen, können wir über das Reisen reden! Aber wie sagt man, dass man irgendwohin geht oder von irgendwoher kommt?
+Jetzt, wo wir ein paar Länder kennen, können wir über das Reisen reden! Aber wie sagt man, dass man irgendwohin geht oder von irgendwoher kommt? Dafür brauchen wir ein paar Verben:
 
 <List>
   <Word sl="weka" m="entfernen, weggehen; abwesend, weg" />
   <Word sl="pana" m="geben, hintun" />
   <Word sl="kama" m="kommen, ankommen" />
   <Word sl="awen" m="bleiben, beschützen" />
-  <Word sl="tawa" m="zu, zu ... hin" />
+</List>
+
+Neben diesen Verben findet man oft Präpositionen:
+
+<List>
+  <Word sl="tawa" m="zu, nach, zu ... hin" />
   <Word sl="lon" m="bei, auf, in" />
   <Word sl="tan" m="von, aus, wegen" />
 </List>
 
-Eine *Präposition* ist ein Wort, das vor ein anderes geht. Es sagt dir, wie es mit dem Satz in Verbindung steht. Eine Präposition + das Wort, an dem sie hängt, ist eine präpositionale Phrase:
+Eine *Präposition* ist ein Wort, das vor ein anderes geht. Es sagt dir, wie es mit dem Satz in Verbindung steht. Eine Präposition + das Wort, an dem sie hängt, ist eine *Präpositionalphrase*:
 
 <List>
   <Word sl="tawa soweli" m="zum Tier" />
@@ -50,7 +111,7 @@ Eine *Präposition* ist ein Wort, das vor ein anderes geht. Es sagt dir, wie es 
   <Word sl="tan tomo" m="vom Haus (weg)" />
 </List>
 
-Auf Toki Pona können präpositionale Phrasen auf zwei Arten genutzt werden. Zum Einem kann man sie ans Ende von einem Satz tun. Wir können das nutzen, um Ort und Richtung einer Aktion zu nennen:
+Auf Toki Pona können Präpositionalphrasen auf zwei Arten genutzt werden. Zum einem kann man sie ans Ende von einem Satz tun. Wir können das nutzen, um Ort und Richtung einer Aktion zu nennen:
 
 <List>
   <Sentence sl="mi pana e waso tawa kasi." m="Ich setze den Vogel auf einen Baum." />
@@ -61,7 +122,7 @@ Auf Toki Pona können präpositionale Phrasen auf zwei Arten genutzt werden. Zum
   />
 </List>
 
-Andererseits könnten wir aber auch über Ort oder Richtung reden wollen... ohne das etwas anderes passiert. Zum Glück können wir das auch machen. Präpositionale Phrasen können direkt nach **󱤧 li** kommen, und die Rolle des Verbs ganz alleine aufnehmen. Wenn Präpositionen als Verben funktionieren, bedeuten sie: **󱥩 tawa** 'zu ... gehen', **󱤬 lon** 'bei ... sein', **󱥧 tan** 'von ... kommen':
+Andererseits könnten wir aber auch über Ort oder Richtung reden wollen... ohne das etwas anderes passiert. Zum Glück können wir das auch machen. Präpositionalphrasen können direkt nach **󱤧 li** kommen, und die Rolle des Verbs ganz alleine aufnehmen. Wenn Präpositionen als Verben funktionieren, bedeuten sie: **󱥩 tawa** 'zu ... gehen', **󱤬 lon** 'bei ... sein', **󱥧 tan** 'von ... kommen':
 
 <List>
   <Sentence sl="jan Ema li tawa ma Nijon." m="Emma fliegt nach Japan." />
@@ -82,7 +143,7 @@ Andererseits könnten wir aber auch über Ort oder Richtung reden wollen... ohne
   />
   <Sentence
     sl="soweli suwi li pona tawa mi."
-    m="Süße Tiere sind gut für mich.<br />(Ich mag süße Tiere.)"
+    m="Süße Tiere gefallen mir."
   />
   <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah spricht zu Emma." />
   <Sentence
