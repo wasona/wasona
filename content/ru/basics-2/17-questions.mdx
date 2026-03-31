@@ -3,30 +3,70 @@ slug: "ru/17"
 title: "занятие 17: вопросы"
 description: "Выучим anu, seme!"
 practice:
-- title: "1. Revise"
+- title: "1. Слова"
+  tasks:
+  - l1: "или"
+    l2: "anu"
+    junkChips: ["ala", "lete", "ante"]
+  - l1: "что"
+    l2: "seme"
+    junkChips: ["jo", "esun", "o"]
+- title: "1. Повторение"
   tasks:
   - l1: "Портит ли табак воздух?"
     l2: "kasi nasa li ike ala ike e kon?"
+    junkChips: ["leko"]
   - l1: "Это кирпич?"
     l2: "ni li leko ala leko?"
+    junkChips: ["e"]
   - l1: "Ты можешь петь как птица?"
     l2: "sina ken ala ken kalama sama waso?"
+    junkChips: ["e"]
   - l1: "Ты используешь Гугл?"
     l2: "sina kepeken ala kepeken ilo Kuko?"
+    junkChips: ["li"]
   - l1: "Я в Италии?"
     l2: "mi lon ala lon ma Italija?"
+    junkChips: ["e"]
   - l1: "Для этого нужны деньги, да?"
     l2: "ni li wile e mani anu seme?"
+    junkChips: ["tawa"]
   - l1: "Ты говоришь по-немецки, не так ли?"
     l2: "sina toki Tosi anu seme?"
+    junkChips: ["Inli"]
   - l1: "Где Япония?"
     l2: "ma Nijon li lon seme?"
+    junkChips: ["e"]
   - l1: "Кто из Индии?"
     l2: "jan seme li tan ma Palata?"
+    junkChips: ["e"]
   - l1: "Чего ты хочешь покушать?"
     l2: "sina wile moku e seme?"
-    alsoAccept:
-      - "sina wile e moku seme?"
+    junkChips: ["li"]
+    alsoAccept: ["sina wile e moku seme?"]
+- title: "3. More practice"
+  tasks:
+  - l1: "Смерть — это же плохо?"
+    l2: "moli li ike anu seme?"
+    junkChips: ["ala"]
+  - l1: "Который зверь съел моё растение?"
+    l2: "soweli seme li moku e kasi mi?"
+    junkChips: ["anu"]
+  - l1: "Радио нужно электричество?"
+    l2: "ilo kalama li wile ala wile e wawa?"
+    junkChips: ["seme"]
+  - l1: "Ты в Корею?"
+    l2: "sina tawa ala tawa ma Anku?"
+    junkChips: ["e"]
+  - l1: "Это ложка?"
+    l2: "ni li ilo ala ilo moku?"
+    junkChips: ["e"]
+  - l1: "Какие языки тебе нравятся?"
+    l2: "toki seme li pona tawa sina?"
+    junkChips: ["anu"]
+  - l1: "На каких языках Эмма может говорить?"
+    l2: "jan Ema li ken toki seme?"
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -39,7 +79,6 @@ import Practice from "@/components/Practice.astro";
 Вопросы обычно бывают двух видов:
 
 * *вопросы с ответом да / нет*. Это вопросы, на которые можно ответить положительно или отрицательно.
-
 * *открытые вопросы*. Это вопросы, в которых вас просят заполнить пробелы: кто это сделал? что сделал? с кем? где? почему?
 
 ## Вопросы с ответом да / нет
@@ -99,6 +138,21 @@ import Practice from "@/components/Practice.astro";
 </List>
 
 Обратите внимание, что только слово **󱥙 seme** заменяется на ответ -- всё остальное в предложении остаётся неизменным! В отличие от русского, в токи поне порядок слов в вопросах не меняется.
+
+Полезный совет: если вы не можете разобраться, как использовать **󱥙 seme**, сначала представьте возможный ответ, а потом замените сам ответ вопросительным словом **󱥙 seme**. Удобно!
+
+<List>
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱤜"
+    sl="kiwen li ken kama <u>ko</u>."
+    m="Камень может стать песком."
+  />
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱥙"
+    sl="kiwen li ken kama <u>seme</u>?"
+    m="Во что может превратиться камень?"
+  />
+</List>
 
 <Practice exercises={frontmatter.practice} />
 

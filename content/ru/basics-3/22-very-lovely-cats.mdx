@@ -7,26 +7,26 @@ practice:
   tasks:
   - l1: "много снега"
     l2: "ko lete mute"
-    alsoAccept:
-      - "ko mute lete"
+    junkChips: ["pi"]
+    alsoAccept: ["ko mute lete"]
   - l1: "очень холодный снег"
     l2: "ko pi lete mute"
   - l1: "мои ошибки"
     l2: "pakala mi mute"
-    alsoAccept:
-      - "pakala mute mi"
+    junkChips: ["pi"]
+    alsoAccept: ["pakala mute mi"]
   - l1: "наша ошибка"
     l2: "pakala pi mi mute"
   - l1: "другая книга о языке"
     l2: "lipu toki ante"
-    alsoAccept:
-      - "lipu ante toki"
+    junkChips: ["pi"]
+    alsoAccept: ["lipu ante toki"]
   - l1: "книга на другом языке"
     l2: "lipu pi toki ante"
   - l1: "чья-то маленькая комната"
     l2: "tomo jan lili"
-    alsoAccept:
-      - "tomo lili jan"
+    junkChips: ["pi"]
+    alsoAccept: ["tomo lili jan"]
   - l1: "комната кого-то маленького"
     l2: "tomo pi jan lili"
 ---
@@ -41,7 +41,6 @@ import Practice from "@/components/Practice.astro";
 Давайте порассуждаем о нём. Мы уже умеем строить такие фразы:
 
 <List>
-  {/*<Word sl="pi" m="" />*/}
   <Word sl="soweli suwi" m="милый котик" />
   <Word sl="soweli mute" m="много котиков" />
   <Word sl="suwi mute" m="очень милый" />
@@ -68,7 +67,6 @@ import Practice from "@/components/Practice.astro";
 Посмотрим на ещё один пример:
 
 <List>
-  {/*<Word sl="pi" m="" />*/}
   <Word sl="sitelen tomo" m="фотография здания" />
   <Word sl="sitelen mute" m="фотографии" />
   <Word sl="tomo mute" m="здания" />
@@ -80,7 +78,6 @@ import Practice from "@/components/Practice.astro";
 Конечно, **󱤼 mute** — не единственное слово, с которым частица **󱥍 pi** приходит на помощь! Вот ещё несколько примеров:
 
 <List>
-  {/*<Word sl="pi" m="" />*/}
   <Word sl="jan pona" m="хороший человек" />
   <Word sl="jan lili" m="маленький человек" />
   <Word sl="pona lili" m="немного хороший" />
