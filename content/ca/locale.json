@@ -15,10 +15,10 @@
   "Back": "Anterior",
 
   "translate": "Tradueix aquesta oració",
+  "translate_word": "Quina d'aquestees vol dir...",
   "check": "comprovar",
   "continue": "continuar",
   "incorrect": "❌ No és així. Resposta correcta: ",
   "correct": "✅ Correcte! Bona feina!",
- 
   "done": "🎉 Tots els exercicis completats!"
 }
