@@ -1,37 +1,36 @@
 ---
 slug: "pl/fonts"
 title: "P: jak mogę pisać sitelen ponę na klawiaturze?"
-description: "Learn about fonts!"
+description: "Dowiedz się o czcionkach!"
 ---
 
-*sitelen pona* is really cool! But it is not yet in Unicode. Most fonts only care about characters that Unicode defines. This means that fonts on your device probably don't know anything about sitelen pona.
+*sitelen pona* jest naprawdę fajna! Ale jeszcze nie ma jej w Unicodzie. Większość czcionek zna tylko znaki zdefiniowane przez Unicode. To znaczy, że czcionki na twoim urządzeniu pewnie nic nie wiedzą o sitelen ponie. 
 
-To fix that, you can install a sitelen pona font! There is more than a [hundred](https://linku.la/fonts/) to choose from, so let me highlight a few:
+Żeby to naprawić, możesz zainstalować czcionkę z sitelen poną! Można wybierać z ponad [stu](https://linku.la/fonts/) dostępnych czcionek, więc wyróżnię kilka z nich:
 
-* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) by jan Itan is the font we're using on this website. It has quite a rigid, geometric design.<br /><img src="/example-nasin-nanpa.webp" />
-* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) by jan Lepeka is a more playful, handwritten design.<br /><img src="/example-sitelen-seli-kiwen.webp" />
-* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) is another handwritten design. It uses Sonja Lang's handwriting from her 2014 book, plus some newer characters drawn by jan Pensa.<br /><img src="/example-pu-mono.webp" />
+* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) stworzona przez jan Itan to czcionka, której używam na tej stronie. Ma dość solidny, geometryczny wygląd.<br /><img src="/example-nasin-nanpa.webp" />
+* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) stworzona przez jan Lepeka jest.<br /><img src="/example-sitelen-seli-kiwen.webp" />
+* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) to kolejna ręcznie pisana czcionka. Używa odręcznego pisma Sonji Lang z jej książki z r.2014, i kilku nowszych znaków narysowanych przez jan Pensa.<br /><img src="/example-pu-mono.webp" />
 
-You should also know a font of great historic significance:
+Powinienieś też znać jedną historycznie ważną czcionkę:
 
-* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) by jan Same. It was made in 2016–2021, and it was the first popular sitelen pona font. It has a slightly non-standard design that looks much wider and more square than most fonts today. While linja pona was popular, *sitelen pona* gained several new glyphs, like **󱦀 kijetesantakalu** and **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
+* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) stworzona przez jan Same. Była tworzona od 2016 do 2021, i była pierwszą popularną czcionką z sitelen poną. Ma nieco niestandardowy wygląd, jest szersza i bardziej kwadratowa niż większość dzisiejszych czcionek. Podczas popularności linja pona, *sitelen pona* zdobyła kilka nowych znaków, jak **󱦀 kijetesantakalu** czy **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
 
-**On Discord**, we have a bot, ilo Linku, that can draw text in any sitelen pona font onto an image! This way you can chat in sitelen pona without installing anything.  
-**On desktop**, you can download one of the fonts above, and click on it. Then your system will try to install it.  
-**On mobile**, installing fonts is quite difficult. You might want to talk to someone with technical knowledge.
+**Na Discordzie** mamy bota, ilo Linku, który potrafi rysować tekst dowolną czcionką sitelen pony na obraz. W ten sposób można rozmawiać w sitelen ponie bez instalowania czegokolwiek 
+**Na komputerze** możesz pobrać dowolną z wyżej wymienionych czcionek i na nią kliknąć. Wtedy twój system spróbuje ją zainstalować
+**Na urządzeniach przenośnych**, instalowanie czcionek jest dość trudne. Możesz chcieć porozmawiać z kimś obytym technicznie.
 
-## Technical details: ascii vs ucsur fonts
+## Detale techniczne: czcionki ascii vs ucsur
 
-There are two main approaches to making a sitelen pona font, which we call **ascii fonts** and **ucsur fonts**.
+Są dwa główne sposoby robienia czcionek z sitelen poną, na które mówimy **czcionki ascii** i **czcionki ucsur**
 
-In **ascii fonts**, you type Latin characters, and they get scooped up by the font, and automatically converted to sitelen pona characters while being drawn.
+W **czcionkach ascii** wpisujesz znaki łacińskie a czcionka je zbiera i automatycznie przerabia na znaki sitelen pony podczas rysowania.
+* 🎉 bardzo intuicyjne w użyciu!
+* 🙁 dużo roboty żeby stworzyć.
+* 🙁 nie w ten sposób działają inne systemy pisma działają na komputerach.
 
-* 🎉 very intuitive to use!
-* 🙁 a lot of work to make.
-* 🙁 this is not how other writing systems work on computers.
+W **czcionkach ucsur**, zamiast wpisywać litery alfabetu łacińskiego, wpisuje się znaki z *innej części Unicodu*. Unicode specjalnie zostawia tą część pustą, żeby inni mogli używać jej do [swoich własnych potrzeb](https://en.wikipedia.org/wiki/Private_Use_Areas). Więc inna organizacja, [UCSUR](https://www.kreativekorp.com/ucsur/) zdecydowała, że ta część teraz zawiera sitelen ponę.
 
-In **ucsur fonts**, instead of typing Latin characters, you type characters from *a different part of Unicode*. Unicode intentionally left this part blank, so that other people can use it for [their own private purposes](https://en.wikipedia.org/wiki/Private_Use_Areas). So a different organisation, [UCSUR](https://www.kreativekorp.com/ucsur/), decided this part now holds sitelen pona.
-
-* 🎉 this is how other writing systems work!
-* 🎉 less work to make!
-* 🙁 harder to use: you need to install an input method similar to the ones that exist for Hanzi, or make a keyboard layout.
+* 🎉 w ten sposób działają inne systemy pisma!
+* 🎉 łatwiejsze do stworzenia!
+* 🙁 trudniejsze w użyciu: musisz zainstalować metodę wprowadzania podobną do tych, które istnieją dla chińskich znaków, lub stworzyć układ klawiatury.
