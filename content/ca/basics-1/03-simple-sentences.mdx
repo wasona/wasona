@@ -30,12 +30,16 @@ practice:
   tasks:
   - l1: "L'animal coneix l'insecte."
     l2: "soweli li sona e pipi."
+    junkChips: ["waso"]
   - l1: "L'insecte menja plantes."
     l2: "pipi li moku e kasi."
+    junkChips: ["soweli"]
   - l1: "L'ocell veu plantes."
     l2: "waso li lukin e kasi."
+    junkChips: ["moku"]
   - l1: "L'ocell coneix l'animal."
     l2: "waso li sona e soweli."
+    junkChips: ["pipi"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -43,10 +47,7 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Frases senzilles
-
-Ara que saps llegir en toki pona, toca aprendre paraules i frases!  
-Aquestes son algunes paraules de coses:
+Ara que saps llegir en toki pona, toca aprendre paraules i frases! Aquestes son algunes paraules de coses:
 
 <List>
   <Word sl="soweli" m="animal terrestre, com ara un gat, una gossa, una vaca, un ratolí, un elefant, etc." />
