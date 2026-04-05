@@ -3,28 +3,77 @@ slug: "tl/09"
 title: "ika-9 na aralin: mga gawain"
 description: "Matuto ang salitang utala, lape, musi, nasa, kalama, wile, ken, at alasa!"
 practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "fight"
+    l2: "utala"
+    junkChips: ["weka", "kalama", "wile"]
+  - l1: "sleep"
+    l2: "lape"
+    junkChips: ["ona", "nasa", "musi"]
+  - l1: "funny"
+    l2: "musi"
+    junkChips: ["ma", "kalama", "alasa"]
+  - l1: "strange"
+    l2: "nasa"
+    junkChips: ["ma", "wile", "utala"]
+  - l1: "sound"
+    l2: "kalama"
+    junkChips: ["pana", "sona", "musi"]
+  - l1: "want"
+    l2: "wile"
+    junkChips: ["ken", "alasa", "lape"]
+  - l1: "can"
+    l2: "ken"
+    junkChips: ["alasa", "waso", "kalama"]
+  - l1: "try"
+    l2: "alasa"
+    junkChips: ["pipi", "ni", "wile"]
+- title: "2. Revise"
+  tasks:
   - l1: "Natutulog ang cute na ibon."
     l2: "waso suwi li lape."
+    junkChips: ["e"]
   - l1: "Malaki ang pangalan niya."
     l2: "nimi ona li suli."
+    junkChips: ["e"]
   - l1: "gustong magsaya"
     l2: "wile musi"
   - l1: "subukang kumanta"
     l2: "alasa kalama"
   - l1: "Nagsimula akong maglarawan ng halaman."
     l2: "mi kama sitelen e kasi."
+    junkChips: ["li"]
   - l1: "Kayang mag-away ng masaya ang maliit na hayop."
     l2: "soweli lili li ken utala musi."
+    junkChips: ["e"]
   - l1: "Sinubukan kong pumunta sa China."
     l2: "mi alasa tawa ma Sonko."
+    junkChips: ["li"]
+- title: "3. More practice"
+  tasks:
+  - l1: "The bird still wants to sleep."
+    l2: "waso li awen wile lape."
+    junkChips: ["e"]
+  - l1: "The bug wants to be strong."
+    l2: "pipi li wile wawa."
+    junkChips: ["e"]
+  - l1: "Fighting requires strength."
+    l2: "utala li wile e wawa."
+    junkChips: ["pipi"]
+  - l1: "I begin to sing out of joy."
+    l2: "mi kama kalama tan musi."
+    junkChips: ["e"]
+  - l1: "The players try to find the absent person."
+    l2: "jan musi li alasa lukin e jan weka."
+    junkChips: ["li"]
+    alsoAccept: ["jan musi li alasa e jan weka."]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
-
-## Mga gawain
 
 Matuto tayo ng iilan pang mga salita tungkol sa mga gawain!
 
@@ -34,7 +83,6 @@ Matuto tayo ng iilan pang mga salita tungkol sa mga gawain!
   <Word sl="kalama" m="tumuog; ingay, tunog" />
   <Word sl="musi" m="magsaya; nakakatawa, nakakawili" />
   <Word sl="nasa" m="nakakaiba, di-madalas, makulit, lasing" />
-  {/*<Word sl="lipu" m="papel, karton, libro, website, isang patag na bagay na mayroong kaalaman" />*/}
 </List>
 
 Ang dali lamang ng mga salitang ito! Gamitin natin sila:
@@ -64,10 +112,12 @@ Sa Ingles, ito ay ang mga *auxilliary and modal verbs*. Sa Tagalog, mayroong gan
 Iilan lang na pandiwa sa Toki Pona ay puwedeng maging preverb. Kaya aralin din natin ang mga natitira:
 
 <List>
-  <Word sl="wile" m="gustong (mag-)..." />
-  <Word sl="ken" m="magkaroon ng kakayahan na (mag-)..." />
-  <Word sl="alasa" m="subukan na (mag-)..." />
+  <Word sl="wile" m="gustong (mag-)...; to want, to require" />
+  <Word sl="ken" m="magkaroon ng kakayahan na (mag-)...; to allow, to be possible" />
+  <Word sl="alasa" m="subukan na (mag-)...; to seek, to hunt, to gather" />
 </List>
+
+Just like **󱤖 kama** and **󱤈 awen**, they can be both preverbs and normal verbs!
 
 Mahalaga talaga ang mga preverbs! Tumingin tayo sa mga parirala na gumagamit nito:
 
@@ -95,4 +145,4 @@ Gamitin natin ito sa mga pangungusap:
 <Practice exercises={frontmatter.practice} client:load />
 
 ## Puwede mo rin tignan ang...
-* [Q: Mayroon pa bang ibang preverbs?](tl/more-preverbs/)
+* [Q: Mayroon pa bang ibang preverbs?](/en/more-preverbs/)

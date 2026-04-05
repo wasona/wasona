@@ -3,30 +3,80 @@ slug: "tl/08"
 title: "ika-8 aralin: pang-ukol"
 description: "Matuto ang salitang weka, pana, kama, awen, tawa, lon, at tan!"
 practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "to remove"
+    l2: "weka"
+    junkChips: ["pana", "kama", "ma"]
+  - l1: "to give"
+    l2: "pana"
+    junkChips: ["weka", "awen", "sona"]
+  - l1: "to come"
+    l2: "kama"
+    junkChips: ["weka", "awen", "pana"]
+  - l1: "to stay"
+    l2: "awen"
+    junkChips: ["kama", "weka", "pana"]
+  - l1: "towards"
+    l2: "tawa"
+    junkChips: ["lon", "e", "tan"]
+  - l1: "at"
+    l2: "lon"
+    junkChips: ["e", "tan", "tawa"]
+  - l1: "from"
+    l2: "tan"
+    junkChips: ["tawa", "lon", "e"]
+- title: "2. Revise"
+  tasks:
   - l1: "sa England"
     l2: "lon ma Inli"
   - l1: "kay Ali"
     l2: "tawa jan Ali"
   - l1: "Tinatanggal mo ang insekto sa bahay."
     l2: "sina weka e pipi tan tomo."
+    junkChips: ["li"]
   - l1: "Sa aking palagay, mabuti ang halaman. (Mabuti ang halaman sa akin)"
     l2: "kasi li pona tawa mi."
+    junkChips: ["e"]
   - l1: "Binigyan ko ng uod ang ibon. (Nagbigay ako ng uod sa ibon)"
     l2: "mi pana e pipi tawa waso."
+    junkChips: ["li"]
   - l1: "Nananatili sa loob ang tao."
     l2: "jan li awen lon tomo."
+    junkChips: ["e"]
   - l1: "Si Noah ay pupunta sa France."
     l2: "jan Nowa li tawa ma Kanse."
+    junkChips: ["e"]
   - l1: "Ang Toronto ay nasa Canada."
     l2: "ma tomo Towano li lon ma Kanata."
+    junkChips: ["e"]
+    alsoAccept: ["ma Towano li lon ma Kanata."]
+- title: "3. More practice"
+  tasks:
+  - l1: "There is a bird in the restaurant."
+    l2: "waso li lon tomo moku."
+    junkChips: ["e"]
+  - l1: "My cat ran away from me."
+    l2: "soweli mi li weka tan mi."
+    junkChips: ["e"]
+  - l1: "I stay because of you."
+    l2: "mi awen tan sina."
+    junkChips: ["e"]
+  - l1: "Geography is important to me."
+    l2: "sona ma li suli tawa mi."
+    junkChips: ["e"]
+  - l1: "San Francisco is in the United States."
+    l2: "ma Sanpansiko li lon ma Mewika."
+    junkChips: ["e"]
+  - l1: "The bird protects its nest."
+    l2: "waso li awen e tomo ona."
+    junkChips: ["tawa"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
-
-## Mga pang-ukol
 
 Ngayon na may alam na tayong bansa, gumala na tayo! Pero paano mo sasabihin ang "pumunta sa" at "galing sa"? Ngayon, kailangan na ntin ang aksyon, o pandiwa at lokasyon, o pang-ukol:
 
@@ -35,6 +85,11 @@ Ngayon na may alam na tayong bansa, gumala na tayo! Pero paano mo sasabihin ang 
   <Word sl="pana" m="bigyan, lagyan" />
   <Word sl="kama" m="dumating" />
   <Word sl="awen" m="manatili, magbantay" />
+</List>
+
+Next to these verbs you will often find prepositions:
+
+<List>
   <Word sl="tawa" m="kay, pumunta ka, pumunta sa" />
   <Word sl="lon" m="sa, doon sa" />
   <Word sl="tan" m="galing sa, dahil" />
@@ -92,5 +147,5 @@ Magsanay tayo gamit nitong mga pangungusap:
 <Practice exercises={frontmatter.practice} client:load />
 
 ## Puwede mo rin tignan ang...
-* [Q: Kailangan ko bang kabisaduhin ang mga pangalan ng mga bansa't wika?](tl/languages-countries)
-* [Q: Hindi pa ba nakakaiba ang 'jan li toki Inli'?](tl/named-verbs)
+* [Q: Kailangan ko bang kabisaduhin ang mga pangalan ng mga bansa't wika?](/en/languages-countries/)
+* [Q: Hindi pa ba nakakaiba ang 'jan li toki Inli'?](/en/named-verbs/)

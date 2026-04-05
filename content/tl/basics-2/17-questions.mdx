@@ -3,28 +3,70 @@ slug: "tl/17"
 title: "ika-17 aralin: mga tanong"
 description: "Matuto ang salitang anu, at seme!"
 practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "or"
+    l2: "anu"
+    junkChips: ["ala", "lete", "ante"]
+  - l1: "what"
+    l2: "seme"
+    junkChips: ["jo", "esun", "o"]
+- title: "2. Revise"
+  tasks:
   - l1: "Isinasamà ba ng tobacco ang hangin?"
     l2: "kasi nasa li ike ala ike e kon?"
+    junkChips: ["leko"]
   - l1: "Ladriyo ba ito?"
     l2: "ni li leko ala leko?"
+    junkChips: ["e"]
   - l1: "Kaya mo bang kumanta parang ibon?"
     l2: "sina ken ala ken kalama sama waso?"
+    junkChips: ["e"]
   - l1: "Gumagamit ka ba ng Google?"
     l2: "sina kepeken ala kepeken ilo Kuko?"
+    junkChips: ["li"]
   - l1: "Nasa Italy ba ako?"
     l2: "mi lon ala lon ma Italija?"
+    junkChips: ["e"]
   - l1: "Kailangan nito ng pera, no?"
     l2: "ni li wile e mani anu seme?"
+    junkChips: ["tawa"]
   - l1: "Nagsasalita ka ng German, no?"
     l2: "sina toki Tosi anu seme?"
+    junkChips: ["Inli"]
   - l1: "Nasaan ang Japan?"
     l2: "ma Nijon li lon seme?"
+    junkChips: ["e"]
   - l1: "Sino ay galing sa India?"
     l2: "jan seme li tan ma Palata?"
+    junkChips: ["e"]
   - l1: "Ano ang gusto mong kainin?"
     l2: "sina wile moku e seme?"
-    alsoAccept:
-      - "sina wile e moku seme?"
+    junkChips: ["li"]
+    alsoAccept: ["sina wile e moku seme?"]
+- title: "3. More practice"
+  tasks:
+  - l1: "Death is bad, right?"
+    l2: "moli li ike anu seme?"
+    junkChips: ["ala"]
+  - l1: "Which animal ate my plant?"
+    l2: "soweli seme li moku e kasi mi?"
+    junkChips: ["anu"]
+  - l1: "Does the radio require electricity?"
+    l2: "ilo kalama li wile ala wile e wawa?"
+    junkChips: ["seme"]
+  - l1: "Are you going to Korea?"
+    l2: "sina tawa ala tawa ma Anku?"
+    junkChips: ["e"]
+  - l1: "Is this a spoon?"
+    l2: "ni li ilo ala ilo moku?"
+    junkChips: ["e"]
+  - l1: "Which languages do you like?"
+    l2: "toki seme li pona tawa sina?"
+    junkChips: ["anu"]
+  - l1: "Which languages can Emma speak?"
+    l2: "jan Ema li ken toki seme?"
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -32,15 +74,12 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.tsx";
 
-## Mga katanungan
-
 Sa mundo, may dalawang uri ng katanungan:
 
 * *Patanong na Oo / Hindi*. Nasasagutan ang mga tanong na ito gamit ng oo at hindi lamang.
-
 * *Open-ended na tanong*. Dito, kailangan mong saguting ang patlang: *sino* ang gumawa nito? *ano* ang ginawa nila? *kanino*? *saan*? *bakit*? *paano*?
 
-## Patanong na Oo /Hindi
+## Patanong na Oo / Hindi
 
 ### Pagtatanong
 
@@ -98,7 +137,22 @@ Natuto natin na ang **󱥙 seme** ay may kahulugan na 'ano?', at ito ay ang pina
 
 Baka nakita mo na ang **󱥙 seme** ay napapalitan sa sagot -- at walang pagbabago sa ibang bahagi ng pangungusap! Ang Tagalog rin ay minsan gumagamit nitong paraan ng pagsasagot.
 
+Protip: if you're ever not sure how to use **󱥙 seme**, imagine with a possible reply first, and then replace the answer in that reply with **󱥙 seme**. Convenient!
+
+<List>
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱤜"
+    sl="kiwen li ken kama <u>ko</u>."
+    m="Rock can turn into sand."
+  />
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱥙"
+    sl="kiwen li ken kama <u>seme</u>?"
+    m="What can rock turn into?"
+  />
+</List>
+
 <Practice exercises={frontmatter.practice} client:load />
 
 ## Puwede mo rin tignan ang...
-* [Q: Hindi palaging ibig sabihin ng "pali" ang "ginagawa"](en/doing/)
+* [Q: Hindi palaging ibig sabihin ng "pali" ang "ginagawa"](/en/doing/)

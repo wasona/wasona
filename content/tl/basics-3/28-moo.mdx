@@ -3,22 +3,47 @@ slug: "tl/28"
 title: "lesson 28: moo!"
 description: "Learn taso, n, mu, pu, ku, kijetesantakalu!"
 practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "but"
+    l2: "taso"
+    junkChips: ["kin", "anu", "la"]
+  - l1: "hmm"
+    l2: "n"
+    junkChips: ["a", "o", "kin"]
+  - l1: "moo"
+    l2: "mu"
+    junkChips: ["musi", "kalama", "soweli"]
+  - l1: "'Toki Pona: The Language of Good (2014)' by Sonja Lang"
+    l2: "pu"
+    junkChips: ["ku", "lipu", "toki"]
+  - l1: "'Toki Pona Dictionary (2021)' by Sonja Lang"
+    l2: "ku"
+    junkChips: ["pu", "lipu", "nimi"]
+  - l1: "raccoon"
+    l2: "kijetesantakalu"
+    junkChips: ["soweli", "waso", "akesi"]
+- title: "2. Revise"
+  tasks:
   - l1: "I see a lone turquoise duck."
     l2: "mi lukin e waso laso taso."
-    alsoAccept:
-      - "mi lukin e waso taso laso."
+    junkChips: ["pi"]
+    alsoAccept: ["mi lukin e waso taso laso."]
+  - l1: "The sky gave off a terrifying boom."
+    l2: "sewi li pana e mu monsuta."
+    junkChips: ["kute"]
+  - l1: "I want to sleep. But I cannot."
+    l2: "mi wile lape. taso mi ken ala."
+    junkChips: ["la"]
   - l1: "The raccoon loves you."
     l2: "kijetesantakalu li olin e sina."
-  - l1: "If you want to, please read 'Toki Pona: The Language of Good' by Sonja Lang."
-    l2: "sina wile la o pu."
-  - l1: "But if you don't want to, no problem."
-    l2: "taso sina wile ala la, ale li pona."
+    junkChips: ["pona"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Just one more important word to learn, before we get to the silly part!
 
@@ -29,13 +54,14 @@ Just one more important word to learn, before we get to the silly part!
 **󱥨 taso** can be a normal adjective meaning "only", but it can also be put at the beginning of a sentence to mean "but".
 
 <List>
+  <Sentence sl="mi taso li sona e ni." m="Only I am aware of this." />
   <Sentence sl="mi awen wan taso." m="I remain alone." />
   <Sentence sl="taso mi awen pilin pona." m="But I keep my spirits up." />
 </List>
 
 ## The silly!
 
-**󱦆 n** is just **󱤀 a**, but nasally:
+**󱦆 n** is an interjection just like **󱤀 a**, but nasally:
 
 <List>
   <Word sl="n" m="hmm, umm" />
@@ -54,6 +80,7 @@ People often use **󱤹 mu** for silly reasons, but it has got genuine uses too.
 <List>
   <Sentence sl="mi kute e kalama suli." m="I heard a loud noise." />
   <Sentence sl="mi kute e mu suli." m="I heard a loud bang." />
+  <Sentence sl="ike la ilo li awen mu e mi." m="Unfortunately, the app keeps pinging me." />
 </List>
 
 ## More words?
@@ -64,17 +91,16 @@ We have looked over all the words you *need* to speak the language. But people u
   <Word sl="kijetesantakalu" m="raccoon; raccoon-like animal, like a cacomistle, red panda, kinkajou" />
 </List>
 
-It's so long! And so specific! This is because it was created by jan Sonja for the 2009 April fools. But people remembered it many years later, and loved it! It has become a bit of a mascot.
+It's so long! And so specific! This is because it's an April fools joke from 2009. But people remembered it many years later, and loved it! It has become a bit of a mascot.
 
 These two words also require a history note:
 
 <List>
-  <Word sl="pu" m="(to interact with) <i>Toki Pona: The Language of Good (2014)</i>, by jan Sonja" />
-  <Word sl="ku" m="(to interact with) <i>Toki Pona Dictionary (2021)</i>, by jan Sonja" />
+  <Word sl="pu" m="(to interact with) <i>Toki Pona: The Language of Good (2014)</i>, by Sonja Lang" />
+  <Word sl="ku" m="(to interact with) <i>Toki Pona Dictionary (2021)</i>, by Sonja Lang" />
 </List>
 
-These words refer specifically to books made by [jan Sonja](https://tokipona.org), the creator of Toki Pona. They are good books! Why do they have specialised words? Probably because it's funny.
-And also, we love to talk about what's in the books, and what's not in the books -- so these words come in handy.
+These words refer specifically to books made by <a href="https://tokipona.org/" rel="nofollow">Sonja Lang</a>, the creator of Toki Pona. Why do they have specialised words? Maybe because they're funny. Maybe because people love to talk about what's in the books, and what's not in the books -- so these words come in handy.
 
 If you join a Toki Pona community, you will almost certainly see more words. When you do, think of them as *cultural artefacts*. They exist not to make the language work -- you've seen all about how it works now! -- but rather to experiment, to have fun, to be creative, to make in-jokes.
 
@@ -84,9 +110,9 @@ If you join a Toki Pona community, you will almost certainly see more words. Whe
 
 You might not know the word **󱦅 lanpan**, but you can see the translation, and you know enough by now to think of a suitable replacement in common words (**󱤖󱤓 kama jo**)! It's much the same for other words you might see in the wild.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: what is jan Sonja up to these days?](tl/jan-sonja/)
-* [Q: what other, uncommon words might I encounter?](tl/uncommon-words/)
+* [Q: what other, uncommon words might I encounter?](/en/uncommon-words/)
+* [what is Sonja Lang up to these days?](https://tokipona.org/madame_lang)
 * [funny video: animal sounds are all **󱤹 mu**](https://www.youtube.com/watch?v=zh-kLJI43xw)
