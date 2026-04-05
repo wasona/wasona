@@ -1,77 +1,97 @@
 ---
 slug: "tl/21"
-title: "lesson 21: nature"
-description: "Learn akesi, kala, pan, kili, soko, misikeke, namako!"
+title: "ika-21 aralin: ang kalikasan"
+description: "Matuto ng akesi, kala, pan, kili, soko, misikeke, at namako!"
 practice:
-  - l1: "Fungi consume diseased plants."
+- title: "1. Revise"
+  tasks:
+  - l1: "Kinakain ng amag ang patay na halaman."
     l2: "soko li moku e kasi moli."
-  - l1: "Bake the dough."
+    junkChips: ["mani"]
+  - l1: "Lutuin ang masa."
     l2: "o seli e ko pan."
-  - l1: "I dug up the potato."
+    junkChips: ["sewi"]
+  - l1: "Inani ko ang patatas."
     l2: "mi weka e kili tan ma."
-  # - l1: "I am scared of snakes."  # 21_4
-    # l2: "mi pilin monsuta tan akesi linja."
-  - l1: "Plants need water, sunlight, and land."
+    junkChips: ["o"]
+  - l1: "Kailangan ng halaman ang tubig, araw, at lupa."
     l2: "kasi li wile e telo, e suno, e ma."
-  - l1: "People talk, have fun, sing, and sleep."
+    junkChips: ["soko"]
+  - l1: "Nagsasalita't nagsisiyahan at kumakanta't natututulog ang mga tao."
     l2: "jan li toki, li musi, li kalama, li lape."
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
-We already know most of the words for animal and plant stuff -- let's learn the remaining ones!
+Alam na natin halos lahat ng mga salita tungkol sa mga hayop at halaman -- ngayon, ang mga iba naman!
 
 <List>
-  <Word sl="akesi" m="reptile or amphibian, like a frog, lizard, snake" />
+  <Word sl="akesi" m="isang *reptile* o *amphibian*, tulad ng mga palaka, butiki, o ahas" />
   <Word
     sl="kala"
-    m="fish or sea creature, like a salmon, whale, shark, octopus"
+    m="mga isda, o hayop sa tubig, tulad ng bangus, *whale*, *shark*, o *octopus*"
   />
-  <Word sl="pan" m="starchy food, like wheat, rice, bread, pasta" />
-  <Word sl="kili" m="fruit, vegetable" />
-  <Word sl="soko" m="mushroom" />
-  <Word sl="misikeke" m="medicine" />
-  <Word sl="namako" m="spice, garnish, adornment" />
-  <Sentence sl="soko li kili nasa." m="Mushrooms are strange fruit." />
+  <Word sl="pan" m="mga kakanin, o mga katulad nito, tulad ng palay, kanin, tinapay, o pasta" />
+  <Word sl="kili" m="prutas, gulay" />
+  <Word sl="soko" m="amag, kabute" />
+  <Word sl="misikeke" m="pampagaling, mga *medicine* o gamot" />
+  <Word sl="namako" m="pampalasa, dekorasyon" />
+  <Sentence sl="soko li kili nasa." m="Nakakaibang prutas ang mga kabute." />
   <Sentence
     sl="kala suli li alasa e kala lili."
-    m="A large fish hunts smaller fish."
+    m="Hinahabol ng malaking isda ang maliit na isda."
   />
   <Sentence
     sl="mi o moku e misikeke lon tenpo mute."
-    m="I have to frequently take medication."
+    m="Kailangan kong uminom ng gamot nang madalas."
   />
 </List>
 
-## Ingredients
+## Mga sangkap
 
-Bread products are often used to hold together several different ingredients:
+Madalas na ginagamit ang mga gawa sa tinapay para ipagsama-sama ang iba't ibang mga sangkap:
 
 <List>
-  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="The pizza contains meat." />
-  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="The pizza contains vegetables." />
-  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="The pizza contains condiments." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="Mayroong karne ang pizza." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="Mayroong gulay ang pizza." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="Mayroong pampalasa ang pizza." />
 </List>
 
-But how do we put them together into a single sentence? Well, each of them is the *object* of a sentence. A sentence can have *several objects*: several **󱤉 e**-phrases, which simply go one after the other:
+{/* A note for translators */}
+{/*
+  Your culture may have a different popular food that consists of meat, vegetables, and condiments, put into or onto bread. You are free to replace pizza with that food.
+  
+  Note from juna Jona:
+  aight, the philippines doesn't really uh... *have* any good examples that most people will be familiar with so I'll just use pizza here :P
+*/}
+
+Kaya nga lang, paano natin ito mailalahad sa isang pangungusap? Ang solusyon dito ay ang kaalaman na lahat nito ay ang mga *obheto* sa pangungusap. Kayang magkaroon ng *higit sa isang obheto* ang isang pangungusap: maraming parirala na gumagamit ng partikulong **󱤉 e**, na magkasunod-sunod:
 
 <List>
   <Sentence
     sl="pan li jo e soweli e kili e namako."
-    m="The pizza contains meat, vegetables, (and) condiments."
+    m="Mayroong karne, gulay, at pampalasa ang pizza."
   />
 </List>
 
-This is not special to just **󱤉 e**! You can combine several related ideas into one sentence with **󱤧 li**, **󱤡 la**, and prepositions too. For now let's just look at **󱤧 li**:
+Hindi lang ito sa **󱤉 e**! Kaya mong maglahad ng maraming magkaugnay na ideya gamit ng **󱤧 li**, **󱤡 la**, at mga pang-ukol. Tingan na muna natin ang **󱤧 li** bilang halimbawa:
 
 <List>
-  <Sentence sl="jan li alasa e kala." m="The person hunts fish. (= the person fishes)." />
-  <Sentence sl="jan li seli e ona." m="The person cooks them." />
-  <Sentence sl="jan li moku e ona." m="The person eats them." />
-  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="The person hunts fish, cooks them, eats them." />
+  <Sentence sl="jan li alasa e kala." m="Nanghuhuli ng isda ang tao. (= Nangingisda ang tao)." />
+  <Sentence sl="jan li seli e ona." m="Iniluluto iyon ng tao." />
+  <Sentence sl="jan li moku e ona." m="Kinakain iyon ng tao." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Hinuhuli't niluluto't kinakain ng tao ang isda." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+{/* A note for translators */}
+{/*
+  If your language allows it, please list things without an "and" in between. 
+  Note from juna Jona:
+  unfortunately, tagalog can't
+*/}
+
+<Practice exercises={frontmatter.practice} />

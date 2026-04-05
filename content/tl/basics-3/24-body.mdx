@@ -1,53 +1,72 @@
 ---
 slug: "tl/24"
-title: "lesson 24: body"
-description: "Learn sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
+title: "ika-24 na aralin: ang katawan"
+description: "Matuto ng salitang sijelo, luka, noka, lawa, kute, uta, nena, palisa, at linja!"
 practice:
-  - l1: "I have a headache."
+- title: "1. Revise"
+  tasks:
+  - l1: "Masakit ang ulo ko."
     l2: "lawa mi li pakala."
-  - l1: "I heard a faint sound."
+    junkChips: ["kala"]
+    alsoAccept: ["mi pakala lawa."]
+  - l1: "Nakarinig ako ng mahina na tunog."
     l2: "mi kute e kalama lili."
-  - l1: "You obey. I command."
+    junkChips: ["li"]
+  - l1: "Sumusunod ka. Naguutos ako."
     l2: "sina kute. mi lawa."
-  - l1: "Spice feels hot to my mouth."
+    junkChips: ["luka"]
+  - l1: "Sa dila ko, mainit ang pampalasa."
     l2: "namako li seli tawa uta mi."
-  - l1: "Please pet the lovely dog!"
+    junkChips: ["e"]
+  - l1: "Paki-*pet* ang aso!"
     l2: "o luka e soweli suwi!"
-  - l1: "Medicine heals her body."
+    junkChips: ["sewi"]
+  - l1: "Nagpapagaling ang gamot sa kaniyang katawan."
     l2: "misikeke li pona e sijelo ona."
-  - l1: "Her hair is nice to the touch."
+    junkChips: ["pi"]
+  - l1: "Mabuti ang pakiramdam ng kaniyang buhok."
     l2: "linja lawa ona li pona tawa luka."
-  - l1: "The mountain is similar to the nose on my face."
+    junkChips: ["e"]
+    alsoAccept: ["linja ona li pona tawa luka."]
+  - l1: "Parang ilong ko ang bundok."
     l2: "nena kiwen li sama nena pi sinpin mi."
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
-We already know the words for *eyes*, *heart*, *face*, and *back*, so let's learn the remaining parts of the body!
-
-<List>
-  <Word sl="lawa" m="head; to lead" />
-  <Word sl="kute" m="ear; to hear" />
-  <Word sl="nena" m="bump, like a nose, hill, breast" />
-  <Word sl="uta" m="mouth, lips; to kiss, to bite" />
-  <Word sl="sijelo" m="body" />
-  <Word sl="luka" m="hand, arm; to touch" />
-  <Word sl="noka" m="foot, leg" />
-  <Word sl="palisa" m="long hard thing, like a branch, rod, staff" />
-  <Word sl="linja" m="long flexible thing, like a string, rope" />
-</List>
-
-Something fun to notice is how many parts of the body have an associated action! The head leads, the eyes see, the ears hear, the mouth kisses, the heart feels, the hands touch.
+Alam na natin ang mga salita para sa ating *mata*, *puso*, *mukha*, at *likod*, kaya matuto na tayo ng mga ibang parte ng katawan.
 
 <List>
-    <Sentence sl="mi wile suli e linja lawa mi." m="I want to grow out my hair." />
-  <Sentence sl="jan lawa mi li kute e toki ike mi." m="My boss heard me running my mouth." />
-  <Sentence sl="ilo lukin li pana e sitelen ante." m="The mirror gives off an inversed image." />
-  <Sentence sl="sijelo mi li wile e lape." m="My body requires rest." />
-  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="My fingers are larger than my toes." />
+  <Word sl="lawa" m="ulo; mangulo" />
+  <Word sl="kute" m="tainga; makinig" />
+  <Word sl="nena" m="isang *bump*, tulad ng ilong, burol" />
+  <Word sl="uta" m="bibig, dila, labi; ikagat, halikan" />
+  <Word sl="sijelo" m="katawan" />
+  <Word sl="luka" m="kamay, braso; hawakan" />
+  <Word sl="noka" m="paa, binti" />
+  <Word sl="palisa" m="mahaba't matigas na bagay, tulad ng sanga, tungkod" />
+  <Word sl="linja" m="mahaba't nababaluktot na bagay, tulad ng sinulid, lubid" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+{/* A note for translators */}
+{/*
+  Your language may have just one word for "hand, arm".
+  If that's the case, great, simply list the one word.
+  Same applies to "foot, leg".
+*/}
+
+Baka mayroon kayong nakitang pattern dito! Nangungulo ang ulo, Tumitingin ang mata, Nakikinig ang tainga, Naghahalik ang mga labi, nakikiramdam ang puso, at humahawak ang kamay.
+
+<List>
+    <Sentence sl="mi wile suli e linja lawa mi." m="Gusto kong pahabaan ang buhok ko." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="Narinig ng boss ko ang pagmumura ko." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="Nagpapakita ang salamin ng nakabaliktad na larawan." />
+  <Sentence sl="sijelo mi li wile e lape." m="Kailangan ng katawan ko ng pahinga." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Mas malaki ang daliri ko sa kamay kaysa sa daliri ko sa paa." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

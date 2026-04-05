@@ -1,60 +1,67 @@
 ---
 slug: "tl/23"
-title: "lesson 23: places"
-description: "Learn pi, selo, insa, monsi, sinpin, anpa!"
+title: "ika-23 aralin: mga lugar"
+description: "Matuto ng pi, selo, insa, monsi, sinpin, at anpa!"
 practice:
-  - l1: "The tree bark protects the insides of a plant."
+- title: "1. Revise"
+  tasks:
+  - l1: "Pinoprotektahan ng balat ng puno ang loob ng puno."
     l2: "selo kasi li awen e insa kasi."
-  - l1: "The walls of a house are damaged."
+    junkChips: ["pi"]
+  - l1: "Sira-sira ang pader ng bahay."
     l2: "sinpin tomo li pakala."
-  - l1: "The wall of this house requires bricks."
+    junkChips: ["pi"]
+  - l1: "Kailangan ng ladrilyo ang pader ng bahay."
     l2: "sinpin pi tomo ni li wile e leko."
-  - l1: "Sunita's bird is cute."
+    junkChips: ["telo"]
+  - l1: "Cute ang ibon ni Sunita."
     l2: "waso pi jan Sunita li suwi."
-  - l1: "Belgium is next to France."
+    junkChips: ["e"]
+  - l1: "Katabi ng Belgium ang France."
     l2: "ma Pesije li lon poka pi ma Kanse."
-  - l1: "Your frog is behind mine."
+    junkChips: ["e"]
+  - l1: "Nasa likod ng palaka ko ang palaka mo."
     l2: "akesi sina li lon monsi pi akesi mi."
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
-In the previous lesson, we looked at **󱥍 pi**. As you saw, there are many phrases with two very reasonable meanings, depending on if they have **󱥍 pi** or not. But there are also a lot of phrases which make *very little sense* if  **󱥍 pi** is missing! You'll see this a lot with names:
-
-<List>
-  {/*<Word sl="pi" m="" />*/}
-  <Sentence sl="soweli pi jan Ema" m="Emma's dog" />
-  <Sentence sl="soweli jan Ema" m="A human-like dog named Emma (???)" />
-  <Sentence sl="toki pi jan Mili" m="Millie's speech" />
-  <Sentence sl="toki jan Mili" m="A human language named Millie (???)" />
-</List>
-
-If you don't use **󱥍 pi**, the name instead applies to the *first* word! And that can turn out to be silly. For this reason, you will often find **󱥍 pi** near names!
-
-You will also often find it after words that refer to locations, such as these new ones:
+Sa nakaraang aralin, natutunan natin ang **󱥍 pi**. Kita mo naman na mayroong maraming pariralang may dalawang karaniwang ibig sabihin, kung meron bang **󱥍 pi** o hindi. Pero mayroong nga pariralang *'di karaniwang ibig-sabihin* kung wala ang**󱥍 pi**. Sa mga pangalan, madalas itong nakikita:
 
 <List>
-  <Word sl="selo" m="skin, peel, shell, bark" />
-  <Word sl="insa" m="the internal part, centre, middle" />
-  <Word sl="monsi" m="back, rear" />
-  <Word sl="sinpin" m="face, front, wall" />
-  <Word sl="anpa" m="bottom; to defeat" />
+  <Sentence sl="soweli pi jan Ema" m="Aso ni Emma" />
+  <Sentence sl="soweli jan Ema" m="Asong tao na may pangalang Emma (???)" />
+  <Sentence sl="toki pi jan Mili" m="Salita ni Millie" />
+  <Sentence sl="toki jan Mili" m="Wikang pantao na may pangalang Millie (???)" />
 </List>
 
-Let's use them in some sentences:
+Kung hindi ginamit ang **󱥍 pi**, sa *pinaka unang* salita siya mapupunta! Madalas, nakakaiba ito. Dahil dito, madalas sa tabi ng pangalan ang **󱥍 pi**.
+
+Mahahanap mo rin ito sa tabi ng mga salitang naglalahad ng lugar, tulag ng mga ito:
 
 <List>
-  <Sentence sl="selo kasi li kiwen." m="The bark of a tree is hard and wooden." />
-  <Sentence sl="selo pi kasi ni li pakala." m="The bark of this tree is damaged." />
-  <Sentence sl="soweli li lon insa tomo." m="The cat is inside the house." />
-  <Sentence sl="o tawa insa pi tomo mi!" m="Go inside my house!" />
-  <Sentence sl="sinpin pi jan Ali li pona." m="Ali's face is nice." />
-  <Sentence sl="mani li lon anpa pi telo suli." m="The treasure is on the ocean floor." />
+  <Word sl="selo" m="balat, kabibi" />
+  <Word sl="insa" m="loob, gitna" />
+  <Word sl="monsi" m="likod" />
+  <Word sl="sinpin" m="mukha, sa harap, pader" />
+  <Word sl="anpa" m="ibaba; talunin" />
 </List>
 
-Protip: since **󱥍 pi** only exists for rebracketing, it will never occur before just one word! There are always two words or more after it.
+Magagamit ang mga salitang ito tulad sa mga halimbawang ito:
 
-<Practice exercises={frontmatter.practice} client:load />
+<List>
+  <Sentence sl="selo kasi li kiwen." m="Matigas ang balat ng puno." />
+  <Sentence sl="selo pi kasi ni li pakala." m="Sira ang balat ng punong ito." />
+  <Sentence sl="soweli li lon insa tomo." m="Nasa loob ng bahay ang pusa." />
+  <Sentence sl="o tawa insa pi tomo mi!" m="Pumasok kayo sa bahay namin!" />
+  <Sentence sl="sinpin pi jan Ali li pona." m="Maganda ang mukha ni Ali." />
+  <Sentence sl="mani li lon anpa pi telo suli." m="Nasa sahig ng dagat ang kayamanan." />
+</List>
+
+Life hack: samantala na ang salitang **󱥍 pi** ay pambago lamang ng pagkasunod-sunod ng pagbago ng salita, hindi ito mangyayari sa likod ng iisang salita lamang! Palaging may dalawa, o higit pang salita pagkatapos nito.
+
+<Practice exercises={frontmatter.practice} />
