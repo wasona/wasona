@@ -42,7 +42,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Ngayon na mayroon ka nang alam na pangngalan (bagay) at pandiwa (aksyon). Ngayon matuto naman tayo ng mga pang-uri (pang-larawan)!  
 Kabisaduhin natin ang iilan nito:
@@ -92,4 +92,4 @@ Kung mukhang malaki't nakakapagod ang mga pangungusap na ito, oks lang iyan! Mak
 
 Mayroon ding isang nakakainteresadong bagay sa mga pang-uri: sa Tagalog, magkahiwalay ang pang-abay at pang-uri. Pang-abay sa pandiwa, ang pang-uri sa pangngalan. Pero sa Toki Pona, magkasingparehas lang ito: _ikagat ng maliit_ ~ _moku lili_, _malaman ng mabuti_ ~ _sona pona_. Wala silang pagkakaiba sa Toki Pona.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

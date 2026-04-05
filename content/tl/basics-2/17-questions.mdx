@@ -72,7 +72,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Sa mundo, may dalawang uri ng katanungan:
 
@@ -152,7 +152,7 @@ Protip: if you're ever not sure how to use **󱥙 seme**, imagine with a possibl
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Puwede mo rin tignan ang...
 * [Q: Hindi palaging ibig sabihin ng "pali" ang "ginagawa"](/en/doing/)

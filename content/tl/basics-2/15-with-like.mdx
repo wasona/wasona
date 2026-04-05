@@ -74,7 +74,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Doon sa ika-8 aralin, natuto tayo ng tatlong pang-ukol: **󱥩 tawa**, **󱤬 lon**, **󱥧 tan**, na nagsasabi tungkol sa direksyon and lokasyon.Pero sa katotohanan, ang Toki Pona ay mayroong pang dalawang pang-ukol:
 
@@ -158,4 +158,4 @@ Siguraduhin mong matitiyak mo ang dalawa:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

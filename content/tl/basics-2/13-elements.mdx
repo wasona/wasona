@@ -75,7 +75,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Okay, para sa araling ito, magpahinga na muna tayo sa gramatika't mag-pilosopo tayo!
 
@@ -113,4 +113,4 @@ Matuto tayo sa mga salitang ito gamit ng mga parirala't pangungusap:
   <Sentence sl="o kama sona e kon toki!" m="Aralin mo nga ang kahulugan ng salita!" />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

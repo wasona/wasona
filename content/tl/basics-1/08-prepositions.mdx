@@ -76,7 +76,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Ngayon na may alam na tayong bansa, gumala na tayo! Pero paano mo sasabihin ang "pumunta sa" at "galing sa"? Ngayon, kailangan na ntin ang aksyon, o pandiwa at lokasyon, o pang-ukol:
 
@@ -144,7 +144,7 @@ Magsanay tayo gamit nitong mga pangungusap:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Puwede mo rin tignan ang...
 * [Q: Kailangan ko bang kabisaduhin ang mga pangalan ng mga bansa't wika?](/en/languages-countries/)

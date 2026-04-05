@@ -45,7 +45,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Ngayon na alam mo na kung paano basahin ang Toki Pona, oras na ngayon para matuto ng mga salita't pangungusap!  
 Ito ay iilan na mga salita para sa mga bagay at aksyon:
@@ -84,4 +84,4 @@ Ang isinalin na pangungusap sa Tagalog ay mayroong nga partikulang gramatika tul
 
 (Sa simula, mukhang hindi importante ang **󱤧 li** at ang **󱤉 e**. Matutunan natin kung bakit nga ba kailangan ito, pero para gawin iyon, kailangan na muna natin mas matutunan ang mga bahagi ng pananalita!)
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

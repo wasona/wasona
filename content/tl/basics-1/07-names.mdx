@@ -74,7 +74,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Ok lang naman ang paturo sa mga bagay, pero minsan, mas magaganda ang pagiging matiyak. Ano ang solusyon natin? Mga pangalan, siyempre! Isang nakababagong inobasyon sa wika na sa paggamit nito, puwede ka nang magsalita tungkol sa isang partikular na bagay o tao.
 
@@ -133,7 +133,7 @@ Magsanay tayo sa paggamit ng mga bagong salita't pangalan sa mga pangungusap:
   <Sentence sl="jan Ema li sona pona e ma Tosi." m="Alam ng mabuti ni Emma ang tungkol sa Germany." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Puwede mo rin tignan ang...
 * [Q: Ano ang pangalan ko sa Toki Pona?](/en/make-a-name/)

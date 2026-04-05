@@ -73,7 +73,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Matuto tayo ng iilan pang mga salita tungkol sa mga gawain!
 
@@ -142,7 +142,7 @@ Gamitin natin ito sa mga pangungusap:
   />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Puwede mo rin tignan ang...
 * [Q: Mayroon pa bang ibang preverbs?](/en/more-preverbs/)

@@ -51,7 +51,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Natuto na tayong humingi na gawin ang isang aksyon. Pero paano tayo hiningi na *huwag* gawin ang isang aksyon? Oras nang matuto tungkol sa negation, gamit ng **󱤂 ala**:
 
@@ -86,4 +86,4 @@ Baka may nakita kang nakaka-interesado. Kahit na ang **󱤂 ala** ay puwedeng ma
 
 Lohikal naman ito -- ang pag-negate ng unang pandiwa sa isang pangungusap ay nagnenegate ng buong pangugusap, at kadalasan natin iton ninanais!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

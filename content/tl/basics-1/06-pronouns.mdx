@@ -75,7 +75,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Baka napagod ka na sa pagaaral ng mga bahagi ng pagsasalita. Pumunta na muna tayo sa isang mas simpleng aralin, sa pagtuturo sa mga bagay:
 
@@ -120,9 +120,9 @@ Dapat alam na alam mo na ang mga pangungusap parang ganito! Kadalasan, sa marami
   <Sentence sl="sina sona e suli kasi." m="Alam mo ang laki ng halaman." />
 </List>
 
-Mayroong isang eksepsyon ang Toki Pona: kung ang *󱤴 mi** o ang **󱥞 sina** ay ang nagsasagawa ng aksyon sa isang pangungusapq, nawawala ang **󱤧 li** na kadalasang sumusunod sa nagsasagawa ng aksyon. Ito'y dahil ang mga pangungusap na nagsisimula sa **󱤴 mi** o **󱥞 sina** ay sobrang madalas na isinusulat!
+Mayroong isang eksepsyon ang Toki Pona: kung ang **󱤴 mi** o ang **󱥞 sina** ay ang nagsasagawa ng aksyon sa isang pangungusapq, nawawala ang **󱤧 li** na kadalasang sumusunod sa nagsasagawa ng aksyon. Ito'y dahil ang mga pangungusap na nagsisimula sa **󱤴 mi** o **󱥞 sina** ay sobrang madalas na isinusulat!
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
 
 ## Puwede mo rin tignan ang...
 * [Q: magkaparehas lang ba ang "li" at "ay"/"maging"?](/en/li-and-is/)

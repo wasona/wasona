@@ -75,7 +75,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Magsalita tayo tunfkol sa oras! Baka nakita mo na medyong naiiba-iba ang pagsalin ko sa Tagalog ng mga pangungusap sa Toki Pona: minsan nangyayari ngayon, sa nakaraan, o sa kabukasan. Ito ay dahil, ang pangungusap sa Toki Pona ay walang idinadalang impormasyon tungkol sa oras na iginanap ito, kaya puwede ito maging kahit anong oras! Pero siyempre naman, kaya nating gumamit ng mga salita na may relasyon sa oras para maipahitwatig ito.
 
@@ -122,4 +122,4 @@ Puwede ring gamitin ang **󱤡 la** sa pagitan ng dalawang pangungusap, na ipina
   <Sentence sl="suno li pini la, mi lape." m="Kapag lumulubog na ang araw, natutulog ako." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

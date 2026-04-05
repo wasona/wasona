@@ -78,7 +78,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 ## Ang bahay
 
@@ -122,4 +122,4 @@ Sa loob ng isang karton, baka makahanap tayo ng damit, dyaryo, gamit, piktura...
   <Sentence sl="mi wile toki e ijo kasi." m="Gusto kong magsalita tungkol sa mga bagay na may relasyon sa halaman." />
 </List>
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

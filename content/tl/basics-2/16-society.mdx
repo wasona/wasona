@@ -72,7 +72,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Parte tayo ng lipunan! Matuto tayo ng salitang makakatulong sa atin sa pagnanabigado ng lipunan:
 
@@ -120,4 +120,4 @@ Baka nakita mo na hindi natanggal ang **󱤧 li**! Dahil ito na ang subject ay h
 
 Mukhang magkakaiba ito, pero alahanin mo ito -- ang layunin ng **󱤧 li** ay na magpakita kung saan nagsisimula ang pandiwa! Kung itinanggal ito dito, maiisipan natin na ang **󱤼 mute** ay ang pandiwa.
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />

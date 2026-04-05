@@ -48,7 +48,7 @@ practice:
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
-import Practice from "@/components/Practice.tsx";
+import Practice from "@/components/Practice.astro";
 
 Matuto tayo kung paanong mapahiwatig ang mga emosyon sa Toki Pona!
 
@@ -132,4 +132,4 @@ But if you speak to me in Toki Pona, you are already as polite as you need to be
 * ✅ o pana e suwi!
 * ✅ tomo lipu li lon seme?
 
-<Practice exercises={frontmatter.practice} client:load />
+<Practice exercises={frontmatter.practice} />
