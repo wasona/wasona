@@ -1,9 +1,34 @@
 <script lang="ts">
   import { type Exercise } from "@/lib/exercise";
+  import { onMount } from "svelte";
+  import { onDestroy } from "svelte";
   import ExerciseWidget from "@/components/game/Exercise.svelte";
 
   export let exercises: Exercise[];
   export let locale: Record<string, string>;
+
+  let enterCallbacks = [];
+  // This is to enable the user to check/continue chips and exercises
+  // We do it in here because each individual exercise is not aware of whether it's active (focused)
+  function handleEnterKeyPress(e) {
+    if (e.key != "Enter") return;
+
+    let callback = enterCallbacks[activeIndex];
+    if (!callback) return;
+    callback();
+  }
+
+  function setEnterCallback(index: number, callback: () => void) {
+    enterCallbacks[index] = callback;
+  }
+
+  onMount(() => {
+    window.addEventListener("keypress", handleEnterKeyPress);
+  });
+
+  onDestroy(() => {
+    window.removeEventListener("keypress", handleEnterKeyPress);
+  });
 
   let activeIndex = 0;
   const setActiveTab = (index: number) => {
@@ -34,6 +59,7 @@
           tasks={exercise.tasks}
           {locale}
           nextTab={i + 1 < exercises.length ? () => setActiveTab(i + 1) : null}
+          enterCallbackSetter={(callback) => setEnterCallback(i, callback)}
         />
       </div>
     {/each}

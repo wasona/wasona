@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { onDestroy } from "svelte";
   import { encode } from "@/lib/ucsur";
   import { KALAMA } from "@/lib/audio";
   import type { Task } from "@/lib/exercise";
@@ -37,13 +38,26 @@
     selected = "";
   })();
 
+  function handleKeyInput(e) {
+    let optionNumber = Number(e.key);
+    if (Number.isNaN(optionNumber)) return;
+    if (options[optionNumber - 1] === undefined) return;
+
+    selectOption(options[optionNumber - 1]);
+  }
+
   onMount(() => {
+    window.addEventListener("keypress", handleKeyInput);
     isMounted = true;
     if (typeof Audio !== "undefined") {
       sfx_yes = new Audio(`${KALAMA}/sfx/yes.mp3`);
       sfx_no = new Audio(`${KALAMA}/sfx/no.mp3`);
       sfx_done = new Audio(`${KALAMA}/sfx/done.mp3`);
     }
+  });
+
+  onDestroy(() => {
+    removeEventListener("keypress", handleKeyInput);
   });
 
   function audioLink(word: string) {
@@ -65,20 +79,24 @@
 </script>
 
 <div class="container">
-  {#each options as option}
+  {#each options as option, index}
     <audio id={"audio-" + option} preload="auto" src={audioLink(option)}
     ></audio>
     {#if selected != option}
       <button class="chip" on:click={() => selectOption(option)}>
+        <span class="chipnumber" on:keydown={(e) => {
+          console.log(e);
+        }}>
+          {index + 1}
+        </span>
         <span class="sitelenpona">{encode(option)}</span>
-        <br />
-        {option}
+        <span class="sitelenLasina">{option}</span>
       </button>
     {:else}
       <button class="selected chip" on:click={() => selectOption(option)}>
+        <span class="chipnumber">{index + 1}</span>
         <span class="sitelenpona">{encode(option)}</span>
-        <br />
-        {option}
+        <span class="sitelenLasina">{option}</span>
       </button>
     {/if}
   {/each}
@@ -93,7 +111,7 @@
     margin: auto;
   }
   .chip {
-    display: inline-block;
+    display: inline-grid;
     background-color: var(--bg-1);
     padding: 10px 17px;
     border-radius: 15px;
@@ -106,9 +124,11 @@
     font-family: inherit;
     transition: translate 0s;
   }
-  .chip:not(.selected):hover {
-    background-color: var(--bg-2);
+
+  .chipnumber {
+    justify-self: left;
   }
+
   .chip:not(.selected):active {
     box-shadow: 0 0;
     transform: translate(0, 2px);

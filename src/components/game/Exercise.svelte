@@ -8,6 +8,7 @@
   export let tasks: Task[];
   export let locale: Record<string, string>;
   export let nextTab: Function | null;
+  export let enterCallbackSetter: (callback: () => void) => void; 
 
   const _ = (text: string) => locale[text];
 
@@ -26,7 +27,13 @@
 
   let currentTask: Task;
 
+  function handleButtonClicked() {
+    if (checked) handleContinue();
+    else handleCheck();
+  }
+
   onMount(() => {
+    enterCallbackSetter(handleButtonClicked);
     isMounted = true;
     if (typeof Audio !== "undefined") {
       sfx_yes = new Audio(`${KALAMA}/sfx/yes.mp3`);
@@ -112,7 +119,7 @@
 
       <div class="footer">
         <button
-          on:click={checked ? handleContinue : handleCheck}
+          on:click={handleButtonClicked()}
           class="button"
         >
           {checked ? _("continue") : _("check")}
