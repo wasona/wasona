@@ -198,7 +198,8 @@
           on:click={() => addAssembled(i)}
         >
           {#if word.startsWith(input)}
-            <span style="color: red">{input}</span>{word.slice(input.length)}
+            <!-- The reason we use use the slice of word, and not input is because input may be miscapitalised -->
+            <span style="color: red">{word.slice(0, input.length)}</span>{word.slice(input.length)}
           {:else}
             {word}
           {/if}
