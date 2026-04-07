@@ -154,6 +154,10 @@
     transition: translate 0s;
   }
 
+  .chip:not(.selected):hover {
+    background-color: var(--bg-2);
+  }
+
   .chipnumber {
     justify-self: left;
   }
