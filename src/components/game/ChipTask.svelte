@@ -6,6 +6,61 @@
   export let task: Task;
   export let locked: boolean;
   export let setAssembledSentence: (words: string[]) => void;
+  export let setKeyCallback: (callback: (e: Event) => void) => void;
+
+  let input = "";
+
+  function getInputCandidates(input: string) {
+    input = input.toLowerCase();
+
+    let pairs = unused.map(i => [words[i], i])
+    let uniqueWords = [];
+    let uniqueWordsIndexes = [];
+
+    for (const i of pairs) {
+      if (uniqueWords.includes(i[0])) continue;
+
+      uniqueWords.push(i[0]);
+      uniqueWordsIndexes.push(i[1]);
+    }
+
+    // If there are several words and on of them starts with another (like `lili` and `li`),
+    // the user can use space to choose the short one (`li` in this example)
+    if (input.endsWith(' '))
+      return uniqueWordsIndexes.filter(i => words[i].toLowerCase() == input.slice(0, -1));
+
+    return uniqueWordsIndexes.filter(i => words[i].toLowerCase().startsWith(input));
+  }
+
+  function handleKeyInput(e: Event) {
+    if (locked) return;
+
+    if (e.key === "Backspace") {
+      if (input == "") {
+        // Removes the last added word
+        let indexToRemove = assembled.at(-1);
+        if (indexToRemove == undefined) return;
+        addUnused(indexToRemove);
+        return;
+      }
+
+      input = input.slice(0, -1);
+    }
+
+    if (e.key == " ") e.preventDefault(); // It scrolls by default
+    if (e.key.length !== 1) return; // It must be something non-printable
+
+    let candidates = getInputCandidates(input + e.key);
+
+    if (candidates.length === 0) return;
+    if (candidates.length === 1) addAssembled(candidates[0]); // It's up to addAssembled to clear the input
+    else input += e.key;
+  }
+
+  onMount(() => {
+    input = "";
+    setKeyCallback(handleKeyInput);
+  });
 
   let words: string[] = [];
   let assembled: number[] = [];
@@ -50,6 +105,7 @@
 
   // Initialize on exercise change
   $: (() => {
+    input = "";
     let tokens = tokeniseSentence(task.l2);
     if (task.junkChips) tokens = [...tokens, ...task.junkChips];
     words = shuffleArray(tokens);
@@ -67,6 +123,7 @@
 
   function addAssembled(chip: number) {
     if (locked) return;
+    input = "";
     assembled = appended(without(assembled, chip), chip);
     play(words[chip]);
   }
@@ -140,7 +197,11 @@
           on:dragstart={(e) => onDragStart(e, i, "unused")}
           on:click={() => addAssembled(i)}
         >
-          {word}
+          {#if word.startsWith(input)}
+            <span style="color: red">{input}</span>{word.slice(input.length)}
+          {:else}
+            {word}
+          {/if}
         </button>
       {:else}
         <button class="chip hidden">{word}</button>

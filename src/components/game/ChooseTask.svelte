@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { onDestroy } from "svelte";
   import { encode } from "@/lib/ucsur";
   import { KALAMA } from "@/lib/audio";
   import type { Task } from "@/lib/exercise";
@@ -8,6 +7,7 @@
   export let task: Task;
   export let locked: boolean;
   export let setAssembledSentence: (words: string[]) => void;
+  export let setKeyCallback: (callback: (e: Event) => void) => void;
 
   let isMounted = false;
   let options: string[] = [];
@@ -47,17 +47,13 @@
   }
 
   onMount(() => {
-    window.addEventListener("keypress", handleKeyInput);
+    setKeyCallback(handleKeyInput);
     isMounted = true;
     if (typeof Audio !== "undefined") {
       sfx_yes = new Audio(`${KALAMA}/sfx/yes.mp3`);
       sfx_no = new Audio(`${KALAMA}/sfx/no.mp3`);
       sfx_done = new Audio(`${KALAMA}/sfx/done.mp3`);
     }
-  });
-
-  onDestroy(() => {
-    removeEventListener("keypress", handleKeyInput);
   });
 
   function audioLink(word: string) {
@@ -84,13 +80,11 @@
     ></audio>
     {#if selected != option}
       <button class="chip" on:click={() => selectOption(option)}>
-        <span class="chipnumber" on:keydown={(e) => {
-          console.log(e);
-        }}>
+        <span class="chipnumber">
           {index + 1}
         </span>
         <span class="sitelenpona">{encode(option)}</span>
-        <span class="sitelenLasina">{option}</span>
+        {option}
       </button>
     {:else}
       <button class="selected chip" on:click={() => selectOption(option)}>

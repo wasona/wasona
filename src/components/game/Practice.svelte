@@ -7,27 +7,25 @@
   export let exercises: Exercise[];
   export let locale: Record<string, string>;
 
-  let enterCallbacks = [];
-  // This is to enable the user to check/continue chips and exercises
+  let keyCallbacks = [];
+  // This is to enable the user to use keys for exercises
   // We do it in here because each individual exercise is not aware of whether it's active (focused)
-  function handleEnterKeyPress(e) {
-    if (e.key != "Enter") return;
-
-    let callback = enterCallbacks[activeIndex];
+  function redirectKeyPress(e) {
+    let callback = keyCallbacks[activeIndex];
     if (!callback) return;
-    callback();
+    callback(e);
   }
 
-  function setEnterCallback(index: number, callback: () => void) {
-    enterCallbacks[index] = callback;
+  function setKeyCallback(index: number, callback: (e: Event) => void) {
+    keyCallbacks[index] = callback;
   }
 
   onMount(() => {
-    window.addEventListener("keypress", handleEnterKeyPress);
+    window.addEventListener("keydown", redirectKeyPress);
   });
 
   onDestroy(() => {
-    window.removeEventListener("keypress", handleEnterKeyPress);
+    window.removeEventListener("keydown", redirectKeyPress);
   });
 
   let activeIndex = 0;
@@ -59,7 +57,7 @@
           tasks={exercise.tasks}
           {locale}
           nextTab={i + 1 < exercises.length ? () => setActiveTab(i + 1) : null}
-          enterCallbackSetter={(callback) => setEnterCallback(i, callback)}
+          setKeyCallback={(callback) => setKeyCallback(i, callback)}
         />
       </div>
     {/each}
