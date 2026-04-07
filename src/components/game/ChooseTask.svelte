@@ -115,7 +115,7 @@
         <span class="sitelenpona">{encode(option)}</span>
         <span>
           {#if option.toLowerCase().startsWith(input.toLowerCase())}
-            <span style="color: red">{option.slice(0, input.length)}</span>{option.slice(input.length)}
+            <span class="inputprefix">{option.slice(0, input.length)}</span>{option.slice(input.length)}
           {:else}
             {option}
           {/if}

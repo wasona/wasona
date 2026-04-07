@@ -22,3 +22,7 @@
 .sl {
     font-style: italic;
 }
+
+.inputprefix {
+    color: var(--accent);
+}
