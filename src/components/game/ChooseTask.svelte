@@ -30,6 +30,32 @@
     return shuffled;
   }
 
+  let input = "";
+
+  function getInputCandidates(input: string) {
+    input = input.toLowerCase();
+
+    // If there are several words and on of them starts with another (like `lili` and `li`),
+    // the user can use space to choose the short one (`li` in this example)
+    if (input.endsWith(' '))
+      return options.filter(o => o.toLowerCase() == input.slice(0, -1));
+
+    return options.filter(o => o.toLowerCase().startsWith(input));
+  }
+
+  function handleCharacterInput(e: Event) {
+    if (e.key === "Backspace") input = input.slice(0, -1);
+
+    if (e.key == " ") e.preventDefault(); // It scrolls by default
+    if (e.key.length !== 1) return; // In this case, it must be something non-printable
+
+    let candidates = getInputCandidates(input + e.key);
+
+    if (candidates.length === 0) return;
+    if (candidates.length === 1) selectOption(candidates[0]); // It's up to addAssembled to clear the input
+    else input += e.key;
+  }
+
   // Initialize on exercise change
   $: (() => {
     let tokens = [task.l2];
@@ -39,8 +65,10 @@
   })();
 
   function handleKeyInput(e) {
+    if (locked) return;
+
     let optionNumber = Number(e.key);
-    if (Number.isNaN(optionNumber)) return;
+    if (Number.isNaN(optionNumber)) return handleCharacterInput(e);
     if (options[optionNumber - 1] === undefined) return;
 
     selectOption(options[optionNumber - 1]);
@@ -69,6 +97,7 @@
 
   function selectOption(option: string) {
     if (locked) return;
+    input = "";
     selected = option;
     play(option);
   }
@@ -84,13 +113,19 @@
           {index + 1}
         </span>
         <span class="sitelenpona">{encode(option)}</span>
-        {option}
+        <span>
+          {#if option.toLowerCase().startsWith(input.toLowerCase())}
+            <span style="color: red">{option.slice(0, input.length)}</span>{option.slice(input.length)}
+          {:else}
+            {option}
+          {/if}
+        </span>
       </button>
     {:else}
       <button class="selected chip" on:click={() => selectOption(option)}>
         <span class="chipnumber">{index + 1}</span>
         <span class="sitelenpona">{encode(option)}</span>
-        <span class="sitelenLasina">{option}</span>
+        {option}
       </button>
     {/if}
   {/each}

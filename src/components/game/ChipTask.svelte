@@ -48,7 +48,7 @@
     }
 
     if (e.key == " ") e.preventDefault(); // It scrolls by default
-    if (e.key.length !== 1) return; // It must be something non-printable
+    if (e.key.length !== 1) return; // In this case, it must be something non-printable
 
     let candidates = getInputCandidates(input + e.key);
 
@@ -197,7 +197,7 @@
           on:dragstart={(e) => onDragStart(e, i, "unused")}
           on:click={() => addAssembled(i)}
         >
-          {#if word.startsWith(input)}
+          {#if word.toLowerCase().startsWith(input.toLowerCase())}
             <!-- The reason we use use the slice of word, and not input is because input may be miscapitalised -->
             <span style="color: red">{word.slice(0, input.length)}</span>{word.slice(input.length)}
           {:else}
