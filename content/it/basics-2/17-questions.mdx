@@ -74,8 +74,6 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Domande
-
 In generale ci sono due tipi di domande:
 
 * *domande sì / no*. Sono domande a cui si può rispondere sì o no; in modo affermativo o negativo.
@@ -102,7 +100,7 @@ Per una persona italofona questa è una cosa un po' insolita! Ma qualcosa di sim
 
 ### Risposta
 
-L'Italiano ha una parola apposita per dire 'sì'. La Toki Pona invece funziona come Finlandese, Mandarino, Latino e molte altre lingue: per rispondere di sì si ripete il verbo, per rispondere di no si ripete il verbo negato da **󱤂 ala**.
+L'Italiano ha una parola apposita per dire 'sì'. La toki pona invece funziona come Finlandese, Mandarino, Latino e molte altre lingue: per rispondere di sì si ripete il verbo, per rispondere di no si ripete il verbo negato da **󱤂 ala**.
 
 <List>
   <Sentence sl="sitelen li musi ala musi?" m="È divertente il video?" />
@@ -137,7 +135,29 @@ Dunque abbiamo appena imparato che **󱥙 seme** significa 'cosa?', e questa par
   <Sentence sl="soweli li utala e jan Ema." m="L'animale ha assalito Emma." />
 </List>
 
-Si noti come solo **󱥙 seme** sia scambiato con la risposta -- tutto il resto della frase rimane nello stesso ordine! In Italiano l'espressione interrogativa di solito si sposta all'inizio della frase: "*Dove* sei? Sono qui"; "*Quale colore* vuoi? Voglio il blu"; ma in Toki Pona non si fa: "sina lon seme? mi lon ni"; "sina wile e kule seme? mi wile e laso". 
+Domanda e risposta sono praticamente uguali -- l'unica differenza è che al posto **󱥙 seme** compare la risposta desiderata. Tutto il resto della frase rimane esattamente uguale!
+In Italiano l'espressione interrogativa di solito si sposta all'inizio della frase: "*Dove* sei? Sono qui"; "*Quale colore* vuoi? Voglio il blu"; ma in toki pona non si fa: "sina lon seme? mi lon ni"; "sina wile e kule seme? mi wile e laso".
+
+{/* A note for translators */}
+{/*
+  If your language has the same word order in questions and statements,
+  highlight this as a similarity between Toki Pona and your language.
+*/}
+
+Suggerimento: se si hanno dubbi su come usare **󱥙 seme**, basta prima immaginare una possibile risposta e poi nella frase sostituire la partre che si voleva sapere con **󱥙 seme**. Comodo!
+
+<List>
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱤜"
+    sl="kiwen li ken kama <u>ko</u>."
+    m="La roccia può diventare sabbia."
+  />
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱥙"
+    sl="kiwen li ken kama <u>seme</u>?"
+    m="Cosa può diventare la roccia? (la roccia più diventare <u>cosa</u>?)"
+  />
+</List>
 
 <Practice exercises={frontmatter.practice} />
 
