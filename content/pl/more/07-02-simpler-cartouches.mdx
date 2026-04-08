@@ -1,7 +1,7 @@
 ---
 slug: "pl/simpler-cartouches"
 title: "P: w sitelen ponie imiona wyglądają na długie. Jak mogę je skrócić?"
-description: "Learn about dots, tacks, and abbreviations!"
+description: "Dowiedz się o kropkach, kreskach i skrótach!" 
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -9,7 +9,7 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-_sitelen pona_ names can be quite long:
+Nazwy w _sitelen ponie_ potrafią być dość długie:
 
 <List>
   <Sentence sl="lipu Wikipesija" m="Wikipedia" />
@@ -17,18 +17,18 @@ _sitelen pona_ names can be quite long:
   <Sentence sl="ma Kolonpija" m="Colombia" />
 </List>
 
-People have come up with three notable systems to make names easier to read and write.
+Wymyślono trzy znaczne systemy do łatwiejszego pisania i czytania nazw.
 
-## 1. dot system: 󱤿󱥠󱤕
+## 1. system kropek: 󱤿󱥠󱤕
 
-The dot system, or _nasin sitelen kalama_, was created by jan Pumiko in 2022. 40–60% of Toki Pona speakers say they use it, or use it in some situations. In _nasin sitelen kalama_, you split up a word into _morae_: chunks that are like a syllable, but smaller. One mora is either consonant+vowel, or the -n after a vowel:
+System kropek, albo _nasin sitelen kalama_ został stworzony przez jan Pumiko w 2022. 40-60% mówców toki pony deklaruje że go używa, lub używa w niektórych sytuacjach. W _nasin sitelen kalama_ słowo dzieli się na _mory_: części podobne do sylab, ale mniejsze. Jedna mora to albo spółgłoska+samogłoska albo -n po samogłosce:
 
 - to-ki
 - ja-n
 - a-n-pa
 - si-n-pi-n
 
-By adding middle-dots after a character, you increase how many morae should be pronounced in the name:
+Dodając kropki środkowe po znaku, zwiększa się liczbę mor, które należy wymówić w nazwie:
 
 <List>
   <Word sp="󱦐󱤅󱦑" sl="A" />
@@ -41,16 +41,16 @@ By adding middle-dots after a character, you increase how many morae should be p
   <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
 </List>
 
-(You might notice a funny quirk of this system: **󱦐󱤅󱦑** makes up a full mora, so adding a dot adds the next mora, which is **-n**. But **󱦐󱥟󱦑** is not a full mora, so adding a dot only completes the first mora, which is **si**.)
+(Możesz zauważyć dziwną cechę tego systemu: **󱦐󱤅󱦑** zajmuje całą morę, więc dodanie kropki dodaje kolejną morę, czyli **-n**. Ale **󱦐󱥟󱦑** nie jest pełną morą, więc dodanie kropki tylko dopełnia pierwszą morę, czyli **si**.)
 
-You can also use a colon to mean the entire word should be pronounced:
+Można też używać dwukropka żeby zaznaczyć, że należy wymówić całe słowo:
 
 <List>
   <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
   <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
 </List>
 
-Put several characters together in a cartouche, and you can write a name:
+Umieszczając kilka znaków razem w kartuszu można zapisać nazwę:
 
 <List>
   <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
@@ -58,14 +58,14 @@ Put several characters together in a cartouche, and you can write a name:
   <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
 </List>
 
-* 🎉 you use fewer word characters to write one name!
-* 🙁 the cartouche is still quite long.
+* 🎉 można zapisać imię używając mniejszej ilości znaków słownych!
+* 🙁 kartusz ciągle jest dość długi.
 
-## 2. tally system: 󱤿󱥠󱤕󱥍󱤩󱤨
+## 2. system kresek: 󱤿󱥠󱤕󱥍󱤩󱤨
 
-The tally system was created by Sonja Lang in 2024 for use in official letters and books, where narrow pages require shorter names. In it, every character in the cartouche gets a tally mark below. You use one tally mark for every sound or letter you want to pronounce:
+System kresek stworzyła Sonja Lang w 2024 na potrzeby swoich oficjalnych listów i książek, których wąskie strony wymagają krótszych imion. W tym systemie, każdy znak w kartuszu ma pionową kreskę pod spodem. Używa się jednej kreski na każdy wymawiany dźwięk lub literę: 
 
-{/* Note: this section uses non-standard codepoints F19FC-F19FF, which I modded into nasin nanpa. If you ever update nasin nanpa, this section will break. Ideally, nskpll gets standardised later. */}
+{/* Notatka: ta część używa niestandardowych codepointów F19FC-F19FF, które wmodowałam do nasin nanpa. Jeśli zmienisz nasin nanpa, ta część się zepsuje. W idelnym przypadku nskpll zostanie ustandaryzowany później. */}
 
 <List>
   <Sentence sp="󱤰󱦐󱥡&#xF19FE;󱤜&#xF19FD;󱦑" sl="ma Sonko" />
@@ -73,16 +73,15 @@ The tally system was created by Sonja Lang in 2024 for use in official letters a
   <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
 </List>
 
-## 3. initial system
+## 3. system początków
 
-This method was first shown by DavidAR in 2019, and was tried by Sonja Lang in *lipu su*: "The Wonderful Wizard of Oz (Toki Pona edition)". At first, you introduce a person, language, or place with its full name:
+Ta metoda została zaprezentowana przez DavidAR w 2019, a Sonja Lang użyła jej w *lipu su*: "Czarnoksiężnik z krainy Oz (edycja Toki Pona)". Najpierw przedstawia się osobę, język, lub miejsce pełnym imieniem:
 
 <List>
-  <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorothy" />
+  <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorotka" />
 </List>
 
-But in following sentences, you abbreviate the name to just the first character:
-
+W następujących zdaniach skraca się imię do tylko pierwszego znaku:
 <List>
-  <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorothy" />
+  <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorotka" />
 </List>
