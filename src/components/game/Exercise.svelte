@@ -33,11 +33,6 @@
   }
 
   function handleKeyPress(e: Event) {
-    if (e.key == "Enter") {
-      checkOrContinue();
-      return;
-    }
-
     if (taskKeyCallback) taskKeyCallback(e);
   }
 
@@ -122,6 +117,7 @@
             (assembledSentence = words)}
           locked={checked}
           setKeyCallback={setTaskKeyCallback}
+          checkOrContinueCallback={checkOrContinue}
         />
       {:else}
         <h2>{_("translate")}</h2>
@@ -133,6 +129,7 @@
             (assembledSentence = words)}
           locked={checked}
           setKeyCallback={setTaskKeyCallback}
+          checkOrContinueCallback={checkOrContinue}
         />
       {/if}
 

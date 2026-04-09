@@ -7,6 +7,7 @@
   export let locked: boolean;
   export let setAssembledSentence: (words: string[]) => void;
   export let setKeyCallback: (callback: (e: Event) => void) => void;
+  export let checkOrContinueCallback: () => void;
 
   let input = "";
 
@@ -33,6 +34,11 @@
   }
 
   function handleKeyInput(e: Event) {
+    if (e.key == "Enter" && input == "") {
+      checkOrContinueCallback();
+      return;
+    }
+
     if (locked) return;
     if (e.key == " " && input != "") e.preventDefault(); // It scrolls by default
 
@@ -49,19 +55,22 @@
       return;
     }
 
-    if (e.key.length !== 1) return; // In this case, it must be something non-printable
+    let key = e.key;
+    if (e.key == "Enter") key = " "; // A bit hackish, but it's fine
+    if (key.length !== 1) return; // In this case, it must be something non-printable
 
-    let candidates = getInputCandidates(input + e.key);
+    let candidates = getInputCandidates(input + key);
 
     if (candidates.length === 0) return;
 
-    if (e.key == " ") {
+    console.log(e);
+    if (key == " " || key == "Enter") {
       if (candidates.length !== 1) return;
       addAssembled(candidates[0]); // It's up to addAssembled to clear the input
       return;
     }
 
-    else input += e.key;
+    else input += key;
   }
 
   onMount(() => {

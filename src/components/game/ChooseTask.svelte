@@ -8,6 +8,7 @@
   export let locked: boolean;
   export let setAssembledSentence: (words: string[]) => void;
   export let setKeyCallback: (callback: (e: Event) => void) => void;
+  export let checkOrContinueCallback: () => void;
 
   let isMounted = false;
   let options: string[] = [];
@@ -47,19 +48,24 @@
     if (e.key === "Backspace") input = input.slice(0, -1);
 
     if (e.key == " " && input != "") e.preventDefault(); // It scrolls by default
-    if (e.key.length !== 1) return; // In this case, it must be something non-printable
 
-    let candidates = getInputCandidates(input + e.key);
+    console.log(e.key);
+    let key = e.key;
+    if (key == "Enter") key = " "; // A bit hackish, but it's fine
+    if (key.length !== 1) return; // In this case, it must be something non-printable
+    console.log(key);
+
+    let candidates = getInputCandidates(input + key);
 
     if (candidates.length === 0) return;
 
-    if (e.key == " ") {
+    if (key == " ") {
       if (candidates.length !== 1) return;
       selectOption(candidates[0]); // It's up to selectOption to clear the input
       return;
     }
 
-    input += e.key;
+    input += key;
   }
 
   // Initialize on exercise change
@@ -71,6 +77,12 @@
   })();
 
   function handleKeyInput(e) {
+    if (e.key == "Enter" && input == "") {
+      console.log(123);
+      checkOrContinueCallback();
+      return;
+    }
+
     if (locked) return;
 
     let optionNumber = Number(e.key);
