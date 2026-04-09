@@ -171,7 +171,7 @@
     font-size: 80%;
   }
 
-  .chipnumber:not(.selected) {
+  .chipnumber:not(.selected>.chipnumber) {
     color: grey;
   }
 
