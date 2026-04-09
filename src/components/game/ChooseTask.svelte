@@ -47,13 +47,20 @@
     if (e.key === "Backspace") input = input.slice(0, -1);
 
     if (e.key == " ") e.preventDefault(); // It scrolls by default
+    console.log('handleKeyInput');
     if (e.key.length !== 1) return; // In this case, it must be something non-printable
 
     let candidates = getInputCandidates(input + e.key);
 
     if (candidates.length === 0) return;
-    if (candidates.length === 1) selectOption(candidates[0]); // It's up to addAssembled to clear the input
-    else input += e.key;
+
+    if (e.key == " ") {
+      if (candidates.length !== 1) return;
+      selectOption(candidates[0]); // It's up to selectOption to clear the input
+      return;
+    }
+
+    input += e.key;
   }
 
   // Initialize on exercise change
@@ -68,7 +75,8 @@
     if (locked) return;
 
     let optionNumber = Number(e.key);
-    if (Number.isNaN(optionNumber)) return handleCharacterInput(e);
+    // We check if it's a space, because JS is dumb and `Number(' ')` returns 0
+    if (Number.isNaN(optionNumber) || e.key == ' ') return handleCharacterInput(e);
     if (options[optionNumber - 1] === undefined) return;
 
     selectOption(options[optionNumber - 1]);

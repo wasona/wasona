@@ -34,6 +34,7 @@
 
   function handleKeyInput(e: Event) {
     if (locked) return;
+    if (e.key == " ") e.preventDefault(); // It scrolls by default
 
     if (e.key === "Backspace") {
       if (input == "") {
@@ -45,15 +46,21 @@
       }
 
       input = input.slice(0, -1);
+      return;
     }
 
-    if (e.key == " ") e.preventDefault(); // It scrolls by default
     if (e.key.length !== 1) return; // In this case, it must be something non-printable
 
     let candidates = getInputCandidates(input + e.key);
 
     if (candidates.length === 0) return;
-    if (candidates.length === 1) addAssembled(candidates[0]); // It's up to addAssembled to clear the input
+
+    if (e.key == " ") {
+      if (candidates.length !== 1) return;
+      addAssembled(candidates[0]); // It's up to addAssembled to clear the input
+      return;
+    }
+
     else input += e.key;
   }
 
@@ -197,7 +204,9 @@
           on:dragstart={(e) => onDragStart(e, i, "unused")}
           on:click={() => addAssembled(i)}
         >
-          {#if word.toLowerCase().startsWith(input.toLowerCase())}
+          {#if word.toLowerCase() == input.toLowerCase()}
+            <span class="inputmatch">{word}</span>
+          {:else if word.toLowerCase().startsWith(input.toLowerCase())}
             <!-- The reason we use use the slice of word, and not input is because input may be miscapitalised -->
             <span class="inputprefix">{word.slice(0, input.length)}</span>{word.slice(input.length)}
           {:else}
