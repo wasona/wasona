@@ -168,6 +168,11 @@
 
   .chipnumber {
     justify-self: left;
+    font-size: 80%;
+  }
+
+  .chipnumber:not(.selected) {
+    color: grey;
   }
 
   .chip:not(.selected):active {
