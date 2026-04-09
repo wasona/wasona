@@ -122,7 +122,9 @@
         </span>
         <span class="sitelenpona">{encode(option)}</span>
         <span>
-          {#if option.toLowerCase().startsWith(input.toLowerCase())}
+          {#if option.toLowerCase() === input.toLowerCase()}
+            <span class="inputmatch">{option}</span>
+          {:else if option.toLowerCase().startsWith(input.toLowerCase())}
             <span class="inputprefix">{option.slice(0, input.length)}</span>{option.slice(input.length)}
           {:else}
             {option}
