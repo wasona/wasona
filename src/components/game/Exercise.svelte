@@ -138,7 +138,7 @@
 
       <div class="footer">
         <button
-          on:click={checkOrContinue()}
+          on:click={() => checkOrContinue()}
           class="button"
         >
           {checked ? _("continue") : _("check")}
