@@ -22,3 +22,11 @@
 .sl {
     font-style: italic;
 }
+
+.inputprefix {
+    color: var(--accent);
+}
+
+.inputmatch {
+    color: #0eb90e;
+}

@@ -1,9 +1,32 @@
 <script lang="ts">
   import { type Exercise } from "@/lib/exercise";
+  import { onMount } from "svelte";
+  import { onDestroy } from "svelte";
   import ExerciseWidget from "@/components/game/Exercise.svelte";
 
   export let exercises: Exercise[];
   export let locale: Record<string, string>;
+
+  let keyCallbacks = [];
+  // This is to enable the user to use keys for exercises
+  // We do it in here because each individual exercise is not aware of whether it's active (focused)
+  function redirectKeyPress(e) {
+    let callback = keyCallbacks[activeIndex];
+    if (!callback) return;
+    callback(e);
+  }
+
+  function setKeyCallback(index: number, callback: (e: Event) => void) {
+    keyCallbacks[index] = callback;
+  }
+
+  onMount(() => {
+    window.addEventListener("keydown", redirectKeyPress);
+  });
+
+  onDestroy(() => {
+    window.removeEventListener("keydown", redirectKeyPress);
+  });
 
   let activeIndex = 0;
   const setActiveTab = (index: number) => {
@@ -34,6 +57,7 @@
           tasks={exercise.tasks}
           {locale}
           nextTab={i + 1 < exercises.length ? () => setActiveTab(i + 1) : null}
+          setKeyCallback={(callback) => setKeyCallback(i, callback)}
         />
       </div>
     {/each}

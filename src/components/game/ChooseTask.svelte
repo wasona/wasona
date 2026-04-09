@@ -7,6 +7,8 @@
   export let task: Task;
   export let locked: boolean;
   export let setAssembledSentence: (words: string[]) => void;
+  export let setKeyCallback: (callback: (e: Event) => void) => void;
+  export let checkOrContinueCallback: () => void;
 
   let isMounted = false;
   let options: string[] = [];
@@ -29,6 +31,43 @@
     return shuffled;
   }
 
+  let input = "";
+
+  function getInputCandidates(input: string) {
+    input = input.toLowerCase();
+
+    // If there are several words and on of them starts with another (like `lili` and `li`),
+    // the user can use space to choose the short one (`li` in this example)
+    if (input.endsWith(' '))
+      return options.filter(o => o.toLowerCase() == input.slice(0, -1));
+
+    return options.filter(o => o.toLowerCase().startsWith(input));
+  }
+
+  function handleCharacterInput(e: Event) {
+    if (e.key === "Backspace") input = input.slice(0, -1);
+
+    if (e.key == " " && input != "") e.preventDefault(); // It scrolls by default
+
+    console.log(e.key);
+    let key = e.key;
+    if (key == "Enter") key = " "; // A bit hackish, but it's fine
+    if (key.length !== 1) return; // In this case, it must be something non-printable
+    console.log(key);
+
+    let candidates = getInputCandidates(input + key);
+
+    if (candidates.length === 0) return;
+
+    if (key == " ") {
+      if (candidates.length !== 1) return;
+      selectOption(candidates[0]); // It's up to selectOption to clear the input
+      return;
+    }
+
+    input += key;
+  }
+
   // Initialize on exercise change
   $: (() => {
     let tokens = [task.l2];
@@ -37,7 +76,25 @@
     selected = "";
   })();
 
+  function handleKeyInput(e) {
+    if (e.key == "Enter" && input == "") {
+      console.log(123);
+      checkOrContinueCallback();
+      return;
+    }
+
+    if (locked) return;
+
+    let optionNumber = Number(e.key);
+    // We check if it's a space, because JS is dumb and `Number(' ')` returns 0
+    if (Number.isNaN(optionNumber) || e.key == ' ') return handleCharacterInput(e);
+    if (options[optionNumber - 1] === undefined) return;
+
+    selectOption(options[optionNumber - 1]);
+  }
+
   onMount(() => {
+    setKeyCallback(handleKeyInput);
     isMounted = true;
     if (typeof Audio !== "undefined") {
       sfx_yes = new Audio(`${KALAMA}/sfx/yes.mp3`);
@@ -59,25 +116,36 @@
 
   function selectOption(option: string) {
     if (locked) return;
+    input = "";
     selected = option;
     play(option);
   }
 </script>
 
 <div class="container">
-  {#each options as option}
+  {#each options as option, index}
     <audio id={"audio-" + option} preload="auto" src={audioLink(option)}
     ></audio>
     {#if selected != option}
       <button class="chip" on:click={() => selectOption(option)}>
+        <span class="chipnumber">
+          {index + 1}
+        </span>
         <span class="sitelenpona">{encode(option)}</span>
-        <br />
-        {option}
+        <span>
+          {#if option.toLowerCase() === input.toLowerCase()}
+            <span class="inputmatch">{option}</span>
+          {:else if option.toLowerCase().startsWith(input.toLowerCase())}
+            <span class="inputprefix">{option.slice(0, input.length)}</span>{option.slice(input.length)}
+          {:else}
+            {option}
+          {/if}
+        </span>
       </button>
     {:else}
       <button class="selected chip" on:click={() => selectOption(option)}>
+        <span class="chipnumber">{index + 1}</span>
         <span class="sitelenpona">{encode(option)}</span>
-        <br />
         {option}
       </button>
     {/if}
@@ -93,7 +161,7 @@
     margin: auto;
   }
   .chip {
-    display: inline-block;
+    display: inline-grid;
     background-color: var(--bg-1);
     padding: 10px 17px;
     border-radius: 15px;
@@ -106,9 +174,20 @@
     font-family: inherit;
     transition: translate 0s;
   }
+
   .chip:not(.selected):hover {
     background-color: var(--bg-2);
   }
+
+  .chipnumber {
+    justify-self: left;
+    font-size: 80%;
+  }
+
+  .chipnumber:not(.selected>.chipnumber) {
+    color: grey;
+  }
+
   .chip:not(.selected):active {
     box-shadow: 0 0;
     transform: translate(0, 2px);
