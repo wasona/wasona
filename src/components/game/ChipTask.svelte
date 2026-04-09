@@ -34,7 +34,7 @@
 
   function handleKeyInput(e: Event) {
     if (locked) return;
-    if (e.key == " ") e.preventDefault(); // It scrolls by default
+    if (e.key == " " && input != "") e.preventDefault(); // It scrolls by default
 
     if (e.key === "Backspace") {
       if (input == "") {

@@ -46,8 +46,7 @@
   function handleCharacterInput(e: Event) {
     if (e.key === "Backspace") input = input.slice(0, -1);
 
-    if (e.key == " ") e.preventDefault(); // It scrolls by default
-    console.log('handleKeyInput');
+    if (e.key == " " && input != "") e.preventDefault(); // It scrolls by default
     if (e.key.length !== 1) return; // In this case, it must be something non-printable
 
     let candidates = getInputCandidates(input + e.key);
