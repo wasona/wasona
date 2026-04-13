@@ -3,6 +3,16 @@ slug: "en/17"
 title: "lesson 17: questions"
 description: "Learn anu, seme!"
 practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "or"
+    l2: "anu"
+    junkChips: ["ala", "lete", "ante"]
+  - l1: "what"
+    l2: "seme"
+    junkChips: ["jo", "esun", "o"]
+- title: "2. Revise"
+  tasks:
   - l1: "Does tobacco make the air foul?"
     l2: "kasi nasa li ike ala ike e kon?"
     junkChips: ["leko"]
@@ -34,14 +44,35 @@ practice:
     l2: "sina wile moku e seme?"
     junkChips: ["li"]
     alsoAccept: ["sina wile e moku seme?"]
+- title: "3. More practice"
+  tasks:
+  - l1: "Death is bad, right?"
+    l2: "moli li ike anu seme?"
+    junkChips: ["ala"]
+  - l1: "Which animal ate my plant?"
+    l2: "soweli seme li moku e kasi mi?"
+    junkChips: ["anu"]
+  - l1: "Does the radio require electricity?"
+    l2: "ilo kalama li wile ala wile e wawa?"
+    junkChips: ["seme"]
+  - l1: "Are you going to Korea?"
+    l2: "sina tawa ala tawa ma Anku?"
+    junkChips: ["e"]
+  - l1: "Is this a spoon?"
+    l2: "ni li ilo ala ilo moku?"
+    junkChips: ["e"]
+  - l1: "Which languages do you like?"
+    l2: "toki seme li pona tawa sina?"
+    junkChips: ["anu"]
+  - l1: "Which languages can Emma speak?"
+    l2: "jan Ema li ken toki seme?"
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
-
-## Questions
 
 Questions usually come in two flavours:
 
@@ -104,7 +135,28 @@ So we just learned that **󱥙 seme** means 'what?', and it's the most important
   <Sentence sl="soweli li utala e jan Ema." m="The animal attacked Emma." />
 </List>
 
-Notice how only **󱥙 seme** gets swapped out for the answer -- everything else in the sentence stays in the same order! This is unlike English, where questions reorder the sentence, to put the wh-word first, but Toki Pona doesn't do that.
+The question and answer look exactly the same, except the answer appears in place of **󱥙 seme**. Everything else in the sentence stays in the same order! This is unlike English, where question words (wh-words) move themselves first in the sentence.
+
+{/* A note for translators */}
+{/*
+  If your language has the same word order in questions and statements,
+  highlight this as a similarity between Toki Pona and your language.
+*/}
+
+Protip: if you're ever not sure how to use **󱥙 seme**, imagine with a possible reply first, and then replace the answer in that reply with **󱥙 seme**. Convenient!
+
+<List>
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱤜"
+    sl="kiwen li ken kama <u>ko</u>."
+    m="Rock can turn into sand."
+  />
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱥙"
+    sl="kiwen li ken kama <u>seme</u>?"
+    m="What can rock turn into?"
+  />
+</List>
 
 <Practice exercises={frontmatter.practice} />
 
