@@ -3,6 +3,28 @@ slug: "zh/04"
 title: "第四课：简单的句子"
 description: "学习这些单词：suli、lili、pona、ike、wawa、和 suwi。"
 practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "large"
+    l2: "suli"
+    junkChips: ["lili", "wawa", "sona"]
+  - l1: "small"
+    l2: "lili"
+    junkChips: ["suli", "suwi", "pona"]
+  - l1: "good"
+    l2: "pona"
+    junkChips: ["ike", "kasi", "suwi"]
+  - l1: "bad"
+    l2: "ike"
+    junkChips: ["wawa", "pipi", "suli"]
+  - l1: "strong"
+    l2: "wawa"
+    junkChips: ["suli", "soweli", "lili"]
+  - l1: "cute"
+    l2: "suwi"
+    junkChips: ["pona", "waso", "lili"]
+- title: "2. Revise"
+  tasks:
   - l1: "可爱的动物"
     l2: "soweli suwi"
   - l1: "不好的昆虫"
@@ -21,8 +43,6 @@ import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
-
-## 描述！
 
 我们现在已经看到了一些名词和动词。接下来，让我们看看形容词！
 记住以下词汇：
@@ -69,13 +89,19 @@ import Practice from "@/components/Practice.astro";
     sl="pipi ike li moku lili e soweli."
     m="那只凶恶的虫子浅浅地咬了一下那只动物。"
   />
-  <Sentence
-    sl="waso sona li sona pona e pipi."
-    m="那只聪慧的小鸟对虫子熟悉。"
-  />
 </List>
 
-如果这些句子让你感到很长而令人厌倦，不要担心！我们马上就会看一些更短的句子。记住：道本语的句式其实是很简单的！你可以仅凭句子中的 **󱤧 *li*** 和 **󱤉 *e*** 判断出来哪一部分是主语，哪一部分是谓语，哪一部分是宾语。
+If these sentences feel long and tiresome, don't worry! We will look at some shorter sentences soon. Remember: **󱤧 li** and **󱤉 e** are your friends! They help you cut a long sentence into three pieces: the subject, the verb, and the object:
+
+<List>
+  <Word sl="waso sona..." m="The wise bird..."/>
+  <Word sl="...li sona pona..." m="...knows well..."/>
+  <Word sl="...e pipi lili." m="...little bugs."/>
+  <Sentence
+    sl="waso sona li sona pona e pipi lili."
+    m="The wise bird knows little bugs well."
+  />
+</List>
 
 在道本语中，能描述名词的形容词也能描述动词！例如，*moku lili* 可以翻译为「浅浅地咬」；*sona pona* 可以翻译为「好地知道」或是「熟悉」。
 
