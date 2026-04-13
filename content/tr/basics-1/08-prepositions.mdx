@@ -1,0 +1,152 @@
+﻿---
+slug: "tr/08"
+title: "8. ders: edatlar"
+description: "weka, pana, kama, awen, tawa, lon ve tan'ı öğrenin!"
+practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "to remove"
+    l2: "weka"
+    junkChips: ["pana", "kama", "ma"]
+  - l1: "to give"
+    l2: "pana"
+    junkChips: ["weka", "awen", "sona"]
+  - l1: "to come"
+    l2: "kama"
+    junkChips: ["weka", "awen", "pana"]
+  - l1: "to stay"
+    l2: "awen"
+    junkChips: ["kama", "weka", "pana"]
+  - l1: "towards"
+    l2: "tawa"
+    junkChips: ["lon", "e", "tan"]
+  - l1: "at"
+    l2: "lon"
+    junkChips: ["e", "tan", "tawa"]
+  - l1: "from"
+    l2: "tan"
+    junkChips: ["tawa", "lon", "e"]
+- title: "2. Revise"
+  tasks:
+  - l1: "İngiltere'de"
+    l2: "lon ma Inli"
+  - l1: "Ali'ye"
+    l2: "tawa jan Ali"
+  - l1: "Böceği evden çıkarıyorsun."
+    l2: "sina weka e pipi tan tomo."
+    junkChips: ["li"]
+  - l1: "Bitkileri severim. (Bitkiler bana iyidir.)"
+    l2: "kasi li pona tawa mi."
+    junkChips: ["e"]
+  - l1: "Kuşa bir tırtıl verdim."
+    l2: "mi pana e pipi tawa waso."
+    junkChips: ["li"]
+  - l1: "İnsanlar evde kalır."
+    l2: "jan li awen lon tomo."
+    junkChips: ["e"]
+  - l1: "Noah Fransa'ya gider."
+    l2: "jan Nowa li tawa ma Kanse."
+    junkChips: ["e"]
+  - l1: "Toronto, Kanada'dadır."
+    l2: "ma tomo Towano li lon ma Kanata."
+    junkChips: ["e"]
+    alsoAccept: ["ma Towano li lon ma Kanata."]
+- title: "3. More practice"
+  tasks:
+  - l1: "There is a bird in the restaurant."
+    l2: "waso li lon tomo moku."
+    junkChips: ["e"]
+  - l1: "My cat ran away from me."
+    l2: "soweli mi li weka tan mi."
+    junkChips: ["e"]
+  - l1: "I stay because of you."
+    l2: "mi awen tan sina."
+    junkChips: ["e"]
+  - l1: "Geography is important to me."
+    l2: "sona ma li suli tawa mi."
+    junkChips: ["e"]
+  - l1: "San Francisco is in the United States."
+    l2: "ma Sanpansiko li lon ma Mewika."
+    junkChips: ["e"]
+  - l1: "The bird protects its nest."
+    l2: "waso li awen e tomo ona."
+    junkChips: ["tawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.tsx";
+
+Bazı ülkeleri öğrendiğimize göre, haydi seyahat hakkında konuşalım! Peki, "-e gitmek" ve "-den gelmek" ifadelerini nasıl söylersiniz? Bunun için bazı fiillere ve edatlara ihtiyacımız olacak:
+
+<List>
+  <Word sl="weka" m="ortadan kaldırmak, uzaklaşmak; bulunmayan, uzakta" />
+  <Word sl="pana" m="vermek, koymak" />
+  <Word sl="kama" m="gelmek, varmak" />
+  <Word sl="awen" m="kalmak, sürdürmek, korumak" />
+</List>
+
+Next to these verbs you will often find prepositions:
+
+<List>
+  <Word sl="tawa" m="-a/-e, -a doğru" />
+  <Word sl="lon" m="-da/-de" />
+  <Word sl="tan" m="-dan/-den, -nın yüzünden" />
+</List>
+
+Bir _edat_, başka bir kelimeden önce gelen kelimedir. Size o kelimenin cümleyle nasıl bir ilişkisi olduğunu söyler. Bir edat + bağlandığı kelimeye _edat tamlaması_ denir:
+
+<List>
+  <Word sl="tawa soweli" m="hayvana doğru" />
+  <Word sl="lon ma" m="karada, ülkede" />
+  <Word sl="tan tomo" m="evden" />
+</List>
+
+Toki Pona'da, edat tamlamaları iki yoldan biriyle kullanılabilir. İlk olarak, onları bir cümlenin sonuna ekleyebiliriz. Bunu bir eylemin konumunu ve yönünü belirtmek için kullanabiliriz:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="Bir kuşu bir ağacın üzerine koyuyorum." />
+  <Sentence sl="waso li awen lon kasi." m="Kuş, bir ağacın üzerinde kalmaya devam ediyor." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="Kuşu ağaçtan uzaklaştırıyorsun."
+  />
+</List>
+
+İkinci olarak, ya başka hiçbir şey olmuyorken konum veya yön hakkında konuşmak istersek? Neyse ki bunu da yapabiliriz. Edat tamlamaları doğrudan **󱤧 li** kelimesinden sonra gelebilir ve tek başlarına fiil görevi görebilirler. Edatlar fiil olarak kullanıldıklarında şu anlamlara gelirler: **󱥩 tawa** '-e gitmek', **󱤬 lon** '-de bulunmak', **󱥧 tan** '-den gelmek':
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma Japonya'ya gidiyor." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Nina Rusya'dadır." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Millie, Fransa'dandır." />
+</List>
+
+Hadi bu cümlelerle pratik yapalım:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="Bitki diyarına gidiyorum.<br />(Burası bir orman, çimenlik bir alan, gür yeşillikli bir yer olabilir.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="Bilgi benden uzaklaştı.
+    <br />(Unuttum.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="Sevimli hayvanlar bana iyidir.<br />(Sevimli hayvanları severim.)"
+  />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah, Emma'ya konuşuyor." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="İnsanlar Almanya'da Almanca konuşur."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} client:load />
+
+## Ayrıca bkz.
+* [Q: do I have to memorise language and country names?](en/languages-countries)
+* [Q: isn't 'jan li toki Inli' a bit strange?](en/named-verbs)
