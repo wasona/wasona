@@ -8,6 +8,7 @@
   export let tasks: Task[];
   export let locale: Record<string, string>;
   export let nextTab: Function | null;
+  export let setKeyCallback: (callback: (e: Event) => void) => void;
 
   const _ = (text: string) => locale[text];
 
@@ -26,7 +27,25 @@
 
   let currentTask: Task;
 
+  function checkOrContinue() {
+    if (checked) handleContinue();
+    else handleCheck();
+  }
+
+  function handleKeyPress(e: Event) {
+    if (taskKeyCallback) taskKeyCallback(e);
+  }
+
+  // This is what we'll be calling when a key is pressed (except Enter, which we handle separately)
+  // It is set by the current task
+  let taskKeyCallback: (e: Event) => void;
+
+  function setTaskKeyCallback(callback: (e: Event) => void) {
+    taskKeyCallback = callback;
+  }
+
   onMount(() => {
+    setKeyCallback(handleKeyPress);
     isMounted = true;
     if (typeof Audio !== "undefined") {
       sfx_yes = new Audio(`${KALAMA}/sfx/yes.mp3`);
@@ -97,6 +116,8 @@
           setAssembledSentence={(words: string[]) =>
             (assembledSentence = words)}
           locked={checked}
+          setKeyCallback={setTaskKeyCallback}
+          checkOrContinueCallback={checkOrContinue}
         />
       {:else}
         <h2>{_("translate")}</h2>
@@ -107,12 +128,14 @@
           setAssembledSentence={(words: string[]) =>
             (assembledSentence = words)}
           locked={checked}
+          setKeyCallback={setTaskKeyCallback}
+          checkOrContinueCallback={checkOrContinue}
         />
       {/if}
 
       <div class="footer">
         <button
-          on:click={checked ? handleContinue : handleCheck}
+          on:click={() => checkOrContinue()}
           class="button"
         >
           {checked ? _("continue") : _("check")}

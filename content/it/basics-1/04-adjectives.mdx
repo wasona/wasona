@@ -1,0 +1,113 @@
+---
+slug: "it/04"
+title: "lezione 4: aggettivi"
+description: "Impariamo suli, lili, pona, ike, wawa, suwi!"
+practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "grande"
+    l2: "suli"
+    junkChips: ["lili", "wawa", "sona"]
+  - l1: "piccolo"
+    l2: "lili"
+    junkChips: ["suli", "suwi", "pona"]
+  - l1: "buona"
+    l2: "pona"
+    junkChips: ["ike", "kasi", "suwi"]
+  - l1: "cattivo"
+    l2: "ike"
+    junkChips: ["wawa", "pipi", "suli"]
+  - l1: "forte"
+    l2: "wawa"
+    junkChips: ["suli", "soweli", "lili"]
+  - l1: "adorabile"
+    l2: "suwi"
+    junkChips: ["pona", "waso", "lili"]
+- title: "2. Revise"
+  tasks:
+  - l1: "una bestiola adorabile"
+    l2: "soweli suwi"
+  - l1: "un insettaccio"
+    l2: "pipi ike"
+  - l1: "un uccello possente"
+    l2: "waso wawa"
+  - l1: "L'uccello conosce un forte animale."
+    l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
+  - l1: "Un insettino guarda un bestione."
+    l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Adesso che conoscete alcuni sostantivi (cose) e verbi (azioni), è tempo di aggiungere gli aggettivi (descrizioni)! Impariamone alcuni:
+
+<List>
+  <Word sl="suli" m="grande, importante" />
+  <Word sl="lili" m="piccolo, giovane" />
+  <Word sl="pona" m="buono, piacevole; semplice" />
+  <Word sl="ike" m="cattivo, spiacevole" />
+  <Word sl="wawa" m="potente, forte, straordinario" />
+  <Word sl="sona" m="sapiente, saggio" />
+  <Word sl="suwi" m="adorabile, dolce" />
+</List>
+
+In toki pona gli aggettivi seguono sempre il sostantivo, come _di solito_ accade in Italiano _(e al contrario dell'Inglese in cui lo precedono)_:
+
+<List>
+  <Word sl="kasi sona" m="l'Albero Saggio" />
+  <Word sl="soweli suli" m="un grosso mammifero, un bestione" />
+  <Word sl="pipi lili" m="un insettino" />
+  <Word sl="waso suwi" m="un uccello adorabile" />
+</List>
+
+Si noti come in Italiano alcuni aggettivi _possano_ precedere il sostantivo (_piccolo insetto_, _grosso animale_) e in alcuni casi si possano rendere con un suffisso (_insettino_, _bestione_); ma in toki pona l'aggettivo va **sempre** dopo il sostantivo: **󱥑󱤨 pipi lili** , **󱥢󱥣 soweli suli**!
+
+{/* A note for translators */}
+{/*
+  If your language puts adjectives after nouns, just like Toki Pona,
+  please highlight this as a nice similarity between the two languages.
+*/}
+
+Proviamo a comporre alcune frasi con descrizioni:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="L'uccello vede un animale carino."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="La forte bestia mangia grosse piante."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Degli insetti molesti mordono un po' l'animale."
+  />
+</List>
+
+Se queste frasi sembrano lunghe e noiose, non preoccupatevi: fra poco vedremo alcune frasi piu brevi! Ricordate che **󱤧 li** ed **󱤉 e** sono vostri amici! Aiutano a suddividere una frase lunga in tre parti: il soggetto, il verbo e l'oggetto:
+
+<List>
+  <Word sl="waso sona..." m="L'uccello sapiente...."/>
+  <Word sl="...li sona pona..." m="...conosce bene..."/>
+  <Word sl="...e pipi lili." m="...i piccoli insetti."/>
+  <Sentence
+    sl="waso sona li sona pona e pipi lili."
+    m="L'uccello sapiente conosce bene i piccoli insetti."
+  />
+</List>
+
+Una cosa interessante da notare è che, mentre in Italiano gli aggettivi accompagnano solo i sostantivi, in toki pona possono accompagnare anche i verbi -- in pratica, non c'è distinzione tra aggettivi e avverbi: _mordere un po', mordicchiare_ ~ _moku lili_, _sapere bene_ ~ _sona pona_.
+
+{/* A note for translators */}
+{/*
+  If your language also uses the same words as adjectives and adverbs,
+  please highlight this as a nice similarity between the two languages.
+*/}
+
+<Practice exercises={frontmatter.practice} />

@@ -1,0 +1,123 @@
+---
+slug: "it/11"
+title: "lezione 11: in casa"
+description: "Impariamo ilo, lipu, poki, supa, lupa, len, open, pini, jo, ijo!"
+practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "utensile"
+    l2: "ilo"
+    junkChips: ["lipu", "poki", "open"]
+  - l1: "documento"
+    l2: "lipu"
+    junkChips: ["len", "sona", "open"]
+  - l1: "scatola"
+    l2: "poki"
+    junkChips: ["open", "len", "lipu"]
+  - l1: "mensola"
+    l2: "supa"
+    junkChips: ["len", "lon", "pini"]
+  - l1: "buco"
+    l2: "lupa"
+    junkChips: ["pona", "musi", "ijo"]
+  - l1: "copertura"
+    l2: "len"
+    junkChips: ["open", "poki", "lipu"]
+  - l1: "aprire"
+    l2: "open"
+    junkChips: ["ilo", "poki", "jo"]
+  - l1: "chiudere"
+    l2: "pini"
+    junkChips: ["pipi", "ilo", "tomo"]
+  - l1: "tenere"
+    l2: "jo"
+    junkChips: ["ijo", "musi", "lupa"]
+  - l1: "qualcosa"
+    l2: "ijo"
+    junkChips: ["toki", "jan", "lape"]
+- title: "2. Revise"
+  tasks:
+  - l1: "Hai chiuso la porta."
+    l2: "sina pini e lupa."
+    junkChips: ["supa"]
+  - l1: "C'è un gatto in casa mia."
+    l2: "soweli li lon tomo mi."
+    junkChips: ["e"]
+  - l1: "La mia casa contiene una gatta."
+    l2: "tomo mi li jo e soweli."
+    junkChips: ["ni"]
+  - l1: "Il tuo uccello ha bisogno di cibo."
+    l2: "waso sina li wile e moku."
+    junkChips: ["ona"]
+  - l1: "Sunita sa cantare bene."
+    l2: "jan Sunita li ken kalama pona."
+    junkChips: ["e"]
+  - l1: "Vorrei parlare di macchine per cucire."
+    l2: "mi wile toki e ilo len."
+    junkChips: ["li"]
+- title: "3. More practice"
+  tasks:
+  - l1: "I gatti cacciano gli uccelli."
+    l2: "soweli li alasa e waso."
+    junkChips: ["wile"]
+  - l1: "Questo baule richiede una chiave."
+    l2: "poki ni li wile e ilo open."
+    junkChips: ["ijo"]
+  - l1: "Coprì la bimba addormentata (con una coperta)."
+    l2: "ona li len e jan lili lape."
+    junkChips: ["lon"]
+    alsoAccept: ["ona li len e jan lape lili."]
+  - l1: "Qualcuno ha messo sul tavolo il libro sugli insetti."
+    l2: "jan li pana e lipu pipi tawa supa."
+    junkChips: ["pona"]
+  - l1: "Il sito Web chiamato Wikipedia offre utili conoscenze."
+    l2: "lipu Wikipesija li pana e sona pona."
+    junkChips: ["tawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+C'è un sacco di roba nelle nostre case:
+
+<List>
+  <Word sl="ilo" m="utensile o strumento, per esempio martello, forchetta, cellulare, applicazione" />
+  <Word sl="lipu" m="oggetto piatto per 󱥡 sona, per esempio foglio, scheda, libro, sito Web" />
+  <Word sl="poki" m="contenitore, per esempio scatola, cassetto, bottiglia, sacchetto" />
+  <Word sl="supa" m="superficie orizzontale, per esempio scaffale, scrivania, divano" />
+  <Word sl="lupa" m="apertura, per esempio porta, finestra, foro" />
+  <Word sl="len" m="copertura, per esempio indumenti, scarpe, coperta" />
+</List>
+
+Ed ecco cosa ci facciamo:
+
+<List>
+  <Word sl="open" m="iniziare, aprire, accendere" />
+  <Word sl="pini" m="finire, chiudere, spegnere" />
+  <Word sl="jo" m="tenere, contenere, includere" />
+</List>
+
+Proviamo a far pratica!
+
+<List>
+  <Sentence sl="mi open e lupa." m="Apro la porta." />
+  <Sentence sl="jan li pini e poki moku." m="La persona chiude il frigo." />
+  <Sentence sl="lipu li lon supa lape." m="Il libro e sul letto." />
+  <Sentence sl="poki mi li ken jo e len." m="Il mio cassetto potrebbe contenere indumenti." />
+  <Sentence sl="ilo mi li wile e wawa." m="Il mio telefono richiede elettricità." />
+</List>
+
+## Qualcosa
+
+Dentro una scatola potrebbero trovarsi indumenti, carte, arnesi, fotografie... Roba di ogni tipo! Come si può parlare di tutto ciò in generale?
+
+<List>
+  <Word sl="ijo" m="qualcosa, cosa, roba" />
+  <Sentence sl="poki li jo e ijo." m="La scatola ha (dentro) della roba." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="Qualcuno sta disegnando una cosa carina." />
+  <Sentence sl="mi wile toki e ijo kasi." m="Vorrei parlare di qualcosa riguardo le piante." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
