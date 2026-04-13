@@ -1,24 +1,24 @@
 {
-  "Index": "Index",
-  "Next": "Next",
-  "Previous": "Previous",
-  "Translation": "Translation",
+  "Index": "Indeks",
+  "Next": "Sunod",
+  "Previous": "Bumalik",
+  "Translation": "Ang pagsasalin",
 
-  "Consonants": "Consonants",
+  "Consonants": "Mga katinig",
   "Labial": "Labial",
   "Coronal": "Coronal",
   "Dorsal": "Dorsal",
 
-  "Vowels": "Vowels",
-  "Front": "Front",
-  "Central": "Central",
-  "Back": "Back",
+  "Vowels": "Mga patinig",
+  "Front": "Harap",
+  "Central": "Sentral",
+  "Back": "Likod",
 
-  "translate": "Translate the sentence",
-  "translate_word": "Which of these means...",
-  "check": "check",
-  "continue": "continue",
-  "incorrect": "❌ Not quite. Correct answer: ",
-  "correct": "✅ Correct! Well done!",
-  "done": "🎉 All exercises completed!"
+  "translate": "Isalin ang pangungusap",
+  "translate_word": "Saan dito ay nangangahulugang...",
+  "check": "Tsek",
+  "continue": "Ipagpatuloy",
+  "incorrect": "❌ Hindi masyado. Ang tamang sagot: ",
+  "correct": "✅ Tama! Magaling!",
+  "done": "🎉 Tapos na ang lahat ng pagsasanay!"
 }
