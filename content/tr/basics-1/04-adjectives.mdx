@@ -3,7 +3,27 @@ slug: "tr/04"
 title: "4. ders: sıfatlar"
 description: "suli, lili, pona, ike, wawa ile suwi'yi öğrenin!"
 practice:
-- title: "1. Revise"
+- title: "1. Vocab"
+  tasks:
+  - l1: "large"
+    l2: "suli"
+    junkChips: ["lili", "wawa", "sona"]
+  - l1: "small"
+    l2: "lili"
+    junkChips: ["suli", "suwi", "pona"]
+  - l1: "good"
+    l2: "pona"
+    junkChips: ["ike", "kasi", "suwi"]
+  - l1: "bad"
+    l2: "ike"
+    junkChips: ["wawa", "pipi", "suli"]
+  - l1: "strong"
+    l2: "wawa"
+    junkChips: ["suli", "soweli", "lili"]
+  - l1: "cute"
+    l2: "suwi"
+    junkChips: ["pona", "waso", "lili"]
+- title: "2. Revise"
   tasks:
   - l1: "tatlı bir hayvan"
     l2: "soweli suwi"
@@ -24,10 +44,7 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Betimle! 
-
-Artık bazı isimleri (şeyleri) ve fiilleri (eylemleri) biliyorsun. Şimdi sıra sıfatları (betimlemeleri) eklemeye geldi!
-Hadi birkaç tanesini ezberleyelim:
+Artık bazı isimleri (şeyleri) ve fiilleri (eylemleri) biliyorsun. Şimdi sıra sıfatları (betimlemeleri) eklemeye geldi! Hadi birkaç tanesini ezberleyelim:
 
 <List>
   <Word sl="suli" m="büyük, önemli" />
@@ -70,7 +87,17 @@ Hadi betimlemelerle bazı cümleler kuralım:
   />
 </List>
 
-Eğer bu cümleler uzun ve yorucu geliyorsa endişelenme! Yakında daha kısa cümlelere bakacağız. Unutma: cümle yapısı aslında oldukça basittir! **󱤧 li** ve **󱤉 e** kelimelerine bakarak hangi kısmın özne, fiil veya nesne olduğunu her zaman anlayabilirsin.
+If these sentences feel long and tiresome, don't worry! We will look at some shorter sentences soon. Remember: **󱤧 li** and **󱤉 e** are your friends! They help you cut a long sentence into three pieces: the subject, the verb, and the object:
+
+<List>
+  <Word sl="waso sona..." m="The wise bird..."/>
+  <Word sl="...li sona pona..." m="...knows well..."/>
+  <Word sl="...e pipi lili." m="...little bugs."/>
+  <Sentence
+    sl="waso sona li sona pona e pipi lili."
+    m="The wise bird knows little bugs well."
+  />
+</List>
 
 İşte ilginç bir bilgi: Türkçede sıfatlar yalnızca isimleri niteler. Ama Toki Pona'da sıfatlar bir zarf gibi davranıp fiilleri de niteleyebilir! _Azıcık ısırmak_ ~ _moku lili_, _iyi bilmek_ ~ _sona pona_. Toki Pona'da zarflar ve sıfatlar arasında hiçbir fark yoktur!
 
