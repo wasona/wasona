@@ -15,6 +15,7 @@ export const langNames: Record<string, string> = {
   uk: "українська",
   ar: "العربية",
   he: "עברית",
+  zh: "中文",
   translate: "add language",
 };
 export const langs = Object.keys(langNames);
