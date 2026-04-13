@@ -1,0 +1,108 @@
+---
+slug: "zh/05"
+title: "第五课：词性"
+description: "学习名词，动词，和形容词！"
+practice:
+  - l1: "一只强壮的虫子"
+    l2: "pipi wawa"
+  - l1: "一只虫子的力量"
+    l2: "wawa pipi"
+  - l1: "一只大眼睛"
+    l2: "lukin suli"
+  - l1: "美味的食物"
+    l2: "moku pona"
+  - l1: "令人惊奇地好"
+    l2: "pona wawa"
+  - l1: "食物能让眼睛变好。"
+    l2: "moku li pona e lukin."
+    junkChips: ["waso"]
+  - l1: "动物们知道鸟的可爱"
+    l2: "soweli li sona e suwi waso."
+    junkChips: ["suli"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## 词性
+
+你可能会注意到，**󱥡 *sona*** 这个词我们介绍了两次：第一次是动词「知道」，第二次是形容词「聪明的」。所以 **󱥡 *sona*** 到底是哪个意思？
+
+其实都可以！如果它跟着一个名词，它就是一个形容词。如果它跟着 **󱤧 *li***，它就是一个名词。这些都是语序决定的！
+
+这个原则适用于**所有词汇**：尽管一个词可能被称为是名词，动词，或是形容词，它可以根据语序变换为**任何一种词性**！让我们来看一些我们学过的词汇的例子：
+
+<List>
+  <Word sl="lukin" m="名：眼睛；动：看" />
+  <Word sl="moku" m="名：食物；动：食用" />
+  <Word sl="sona" m="名：知识，智慧；动：知道；形：聪明的，博学的" />
+  <Word sl="suli" m="名：大小；动：强调，增大；形：大的，重要的" />
+  <Word sl="pona" m="名：好；动：改善；形：好的，令人愉快的" />
+  <Word sl="waso" m="名：鸟；动：使变成鸟，使能飞；形：鸟的，像鸟的" />
+</List>
+
+我只列了一部分我们学过的词，但应该足够你发现规律了：
+* 当动词变为名词时，它们经常代表做某件事情的行为（*sona*「知识」），或是对这个行为至关重要的物体（例如，*moku*「食物」）。
+* 当动词变为形容词时，它们表示做这些事情的人或事物（*sona*「聪明的，有知识的」）。
+* 当名词变为动词时，它们一般表示变为或是使用这个物体（*waso*「使变成鸟，使能飞」）。
+* 当名词变为形容词时，它们表示包含关系或是相似关系（*waso*「鸟的，像鸟一样的」）。
+* 当形容词变为名词时，它们表示这样的一种性质（*pona*「好」，*suli*「大小」）。
+* 当形容词变为动词时，它们表示使得物体拥有这样的性质（*pona*「使变好」，*suli*「使变大」）。
+
+在沟通的时候，道本语用者基本都不会去仔细思考这些变化规律，也不会考虑它们原先是名词，动词，还是形容词，变成了一个连贯的整体。
+
+让我们练习一下：
+
+<List>
+  <Sentence sl="lukin li pona e sona." m="眼睛能完善你的知识。" />
+  <Sentence sl="moku li suli e pipi." m="食物能使虫子长大。" />
+  <Sentence
+    sl="moku li wawa e soweli lili."
+    m="食物使得那只小动物拥有力量。"
+  />
+</List>
+
+## 语序很重要！
+
+由于任何名词都可以是形容词，而任何形容词都可以是名词，语序是很重要的！让我们看一看语序不同可能导致的含义的区别：
+
+<List>
+  <Word sl="soweli suli" m="大动物" />
+  <Word sl="suli soweli" m="动物的大小" />
+  <Sentence
+    sl="soweli suli li sona e suli soweli."
+    m="那只大动物知道动物的大小。"
+  />
+</List>
+
+## *li* 和 *e* 也很重要！
+
+还记得 *li* 和 *e* 当时显得很多余吗？现在，由于我们知道词性之间可以做转换，我们已经可以看到它们的重要性了。正是它们的存在使得我们可以区分一下三个句子：
+
+<List>
+  <Word sl="soweli sona" m="聪明的动物" />
+  <Word sl="sona pona" m="了解" />
+  <Word sl="pona waso" m="鸟儿的好" />
+  <Sentence
+    sl="soweli sona li pona e waso."
+    m="那只聪明的动物知道那只鸟。"
+  />
+  <Sentence
+    sl="soweli li sona pona e waso."
+    m="那只动物了解那只鸟。"
+  />
+  <Sentence
+    sl="soweli li sona e pona waso."
+    m="那只动物知道鸟儿的好。"
+  />
+</List>
+
+如果你在任何时候对如何读写句子感到困惑，那么问自己以下几个问题：
+
+1. 主语在哪里？
+2. 谓语在哪里？
+3. 宾语在哪里？
+
+<Practice exercises={frontmatter.practice} />
