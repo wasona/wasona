@@ -1,0 +1,115 @@
+---
+slug: "tl/24"
+title: "ika-24 na aralin: ang katawan"
+description: "Matuto ng salitang sijelo, luka, noka, lawa, kute, uta, nena, palisa, at linja!"
+practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "katawan"
+    l2: "sijelo"
+    junkChips: ["len", "selo", "supa"]
+  - l1: "kamay"
+    l2: "luka"
+    junkChips: ["pana", "moku", "pali"]
+  - l1: "paa"
+    l2: "noka"
+    junkChips: ["kama", "tawa", "awen"]
+  - l1: "ulo"
+    l2: "lawa"
+    junkChips: ["misikeke", "ijo", "moli"]
+  - l1: "tainga"
+    l2: "kute"
+    junkChips: ["la", "tenpo", "mun"]
+  - l1: "bibig"
+    l2: "uta"
+    junkChips: ["kalama", "moku", "soko"]
+  - l1: "bump/bukol"
+    l2: "nena"
+    junkChips: ["palisa", "lupa", "ike"]
+  - l1: "rod"
+    l2: "palisa"
+    junkChips: ["nena", "lupa", "misikeke"]
+  - l1: "lubid"
+    l2: "linja"
+    junkChips: ["telo", "kon", "sama"]
+- title: "2. Revise"
+  tasks:
+  - l1: "Masakit ang ulo ko."
+    l2: "lawa mi li pakala."
+    junkChips: ["kala"]
+    alsoAccept: ["mi pakala lawa."]
+  - l1: "Nakarinig ako ng mahina na tunog."
+    l2: "mi kute e kalama lili."
+    junkChips: ["li"]
+  - l1: "Sumusunod ka. Naguutos ako."
+    l2: "sina kute. mi lawa."
+    junkChips: ["luka"]
+  - l1: "Sa dila ko, mainit ang pampalasa."
+    l2: "namako li seli tawa uta mi."
+    junkChips: ["e"]
+  - l1: "Paki-*pet* ang aso!"
+    l2: "o luka e soweli suwi!"
+    junkChips: ["sewi"]
+  - l1: "Nagpapagaling ang gamot sa kaniyang katawan."
+    l2: "misikeke li pona e sijelo ona."
+    junkChips: ["pi"]
+  - l1: "Mabuti ang pakiramdam ng kaniyang buhok."
+    l2: "linja lawa ona li pona tawa luka."
+    junkChips: ["e"]
+    alsoAccept: ["linja ona li pona tawa luka."]
+- title: "3. More practice"
+  tasks:
+  - l1: "Ako'y nakakarinig ng tunog na mahina."
+    l2: "mi kute e kalama lili."
+    junkChips: ["li"]
+  - l1: "Ang ibon ba makakalipad gamit ang pakpak?"
+    l2: "waso li ken ala ken tawa kepeken luka?"
+    junkChips: ["seme"]
+  - l1: "Si Anna ay gusto maging chancellor ng Germany."
+    l2: "jan Ana li wile lawa e ma Tosi."
+    junkChips: ["jan"]
+  - l1: "Parang ilong ko ang bundok."
+    l2: "nena kiwen li sama nena pi sinpin mi."
+    junkChips: ["e"]
+  - l1: "Ang mayayamang tao ay hindi nakikinig sa taong mahirap."
+    l2: "jan pi mani mute li kute ala e jan pi mani lili."
+    junkChips: ["seme"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Alam na natin ang mga salita para sa ating *mata*, *puso*, *mukha*, at *likod*, kaya matuto na tayo ng mga ibang parte ng katawan.
+
+<List>
+  <Word sl="lawa" m="ulo; mangulo" />
+  <Word sl="kute" m="tainga; makinig" />
+  <Word sl="nena" m="isang <i>bump</i>, tulad ng ilong, burol" />
+  <Word sl="uta" m="bibig, dila, labi; ikagat, halikan" />
+  <Word sl="sijelo" m="katawan" />
+  <Word sl="luka" m="kamay, braso; hawakan" />
+  <Word sl="noka" m="paa, binti" />
+  <Word sl="palisa" m="mahaba't matigas na bagay, tulad ng sanga, tungkod" />
+  <Word sl="linja" m="mahaba't nababaluktot na bagay, tulad ng sinulid, lubid" />
+</List>
+
+{/* A note for translators */}
+{/*
+  Your language may have just one word for "hand, arm".
+  If that's the case, great, simply list the one word.
+  Same applies to "foot, leg".
+*/}
+
+Baka mayroon kayong nakitang pattern dito! Nangungulo ang ulo, Tumitingin ang mata, Nakikinig ang tainga, Naghahalik ang mga labi, nakikiramdam ang puso, at humahawak ang kamay.
+
+<List>
+    <Sentence sl="mi wile suli e linja lawa mi." m="Gusto kong pahabaan ang buhok ko." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="Narinig ng boss ko ang pagmumura ko." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="Nagpapakita ang salamin ng nakabaliktad na larawan." />
+  <Sentence sl="sijelo mi li wile e lape." m="Kailangan ng katawan ko ng pahinga." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Mas malaki ang daliri ko sa kamay kaysa sa daliri ko sa paa." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

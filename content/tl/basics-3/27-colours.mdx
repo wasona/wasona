@@ -1,0 +1,99 @@
+---
+slug: "tl/27"
+title: "ika-27 na aralin: mga kulay"
+description: "Matuto ng salitang kule, walo, pimeja, laso, loje, jelo, at kin!"
+practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "kulay"
+    l2: "kule"
+    junkChips: ["walo", "pimeja", "misikeke"]
+  - l1: "puti"
+    l2: "walo"
+    junkChips: ["pimeja", "kule", "mani"]
+  - l1: "itim"
+    l2: "pimeja"
+    junkChips: ["walo", "ala", "kule"]
+  - l1: "asul/bughaw"
+    l2: "laso"
+    junkChips: ["jelo", "loje", "kasi"]
+  - l1: "pula"
+    l2: "loje"
+    junkChips: ["laso", "jelo", "uta"]
+  - l1: "dilaw"
+    l2: "jelo"
+    junkChips: ["laso", "loje", "suno"]
+  - l1: "saka/at saka"
+    l2: "kin"
+    junkChips: ["a", "o", "lete"]
+- title: "2. Revise"
+  tasks:
+  - l1: "Tuwing gabi, nagpaparty ako."
+    l2: "tenpo pimeja la mi musi."
+    alsoAccept: ["pimeja la mi musi."]
+    junkChips: ["jelo"]
+  - l1: "May dilaw na buhangin sa bubuyog."
+    l2: "ko jelo li lon pipi."
+    junkChips: ["loje"]
+  - l1: "Ako, rin, ay naglalaro gamit ng mga makulay na bloke."
+    l2: "mi kin li musi kepeken leko kule."
+    junkChips: ["e"]
+  - l1: "Ang lahat ng niyebeng ito ay nakakabulag sa akin."
+    l2: "mi ken ala lukin tan ko walo."
+    junkChips: ["seli"]
+  - l1: "Asul, puti, at bughaw ang nasa watawat."
+    l2: "laso en walo en loje li lon lipu."
+    junkChips: ["jelo"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Mag-usap tayo tungkol sa mga kulay!
+
+<List>
+  <Word sl="kule" m="kulay, uri; makulay" />
+  <Word sl="walo" m="puti, maputla" />
+  <Word sl="pimeja" m="itim, dilim" />
+  <Word sl="loje" m="pula, magenta" />
+  <Word sl="jelo" m="dilaw" />
+  <Word sl="laso" m="berde, asul-berde, asul" />
+</List>
+
+Sa *sitelen pona*, maraming pangkulay na salita ay mukhang *compounds*: binubuo sila ng pormang tatsulok sa **󱤞 kule** na sumama sa isa pang salita, kagaya ng **󱤂 ala**, **󱥰 uta**, **󱥤 suno**, **󱤗 kasi**. Mayroon pang ibang mga compound glyph sa *sitelen pona*, pati: **󱤶 moku**, **󱥉 pali**, **󱤙 kepeken** may **󱤭 luka**, at **󱤕 kalama**, **󱥌 pana**, **󱥡 sona**, **󱥬 toki** gamitin ang tatlong guhit na tinawag naming mga *'emitters'*. Saludo sa iyo kung nakita mo ang mga pattern na ito kanina!
+
+Ang mga salitang pangkulay, siyempre, ay nangangahulugang buong *espektro* ng mga kulay, hindi lang yung mga nakalista dito. Ang **󱤣 laso** ay mas lalong nakakawili: sa Toki Pona, ang berde at asul ay uri lang ng isang kulay, kagaya sa wikang Hapon, Vietnamese, Zulu at iba pang mga wika. Ang dalawang pangungusap na ito na makakasama ay may saysay sa Toki Pona, pero hindi sa wikang Ingles:
+
+<List>
+  <Word sl="kin" m="at saka, din/rin" />
+  <Sentence sl="sewi li laso." m="Ang langit ay asul." />
+  <Sentence sl="kasi kin li laso." m="Ang damo, rin, ay berde." />
+</List>
+
+## Kailangan mo ba ng kulay?
+
+Kagaya ng mga kasarian, ang kulay sa Toki Pona ay hindi masyado ginagamit kaysa sa ineexpect mo. Sa mga natural na wika, ang mga kulay ay madalas ginagamit bilang shortcut na tumutukoy sa mas espesipiko na kahulugan: *ang kasinungalingang puti*, *ang palengkeng itim*, *ang bahay na berde*. Ayaw ng Toki Pona ang mga shortcut na hindi agad dumidiretso sa punto:
+
+{/* A note for translators */}
+{/*
+  "white lie, black market, greenhouse" may not make sense in your language.
+  You may replace them with similar colour-noun pairs that are more suitable.
+*/}
+
+<List>
+  <Sentence sl="tomo laso" m="bahay na berde" />
+  <Sentence sl="tomo kasi" m="bahay-patubuan" />
+</List>
+
+May malaking diperensiya sa pagitan ng bahay na puti at ang Bahay na puti (galing amerika):
+
+<List>
+  <Sentence sl="tomo walo" m="bahay na puti" />
+  <Sentence sl="tomo ni la jan li lawa e ma Mewika." m="ang Bahay na puti (galing Amerika)" />
+</List>
+
+Ngayon ko lang ito binanggit, dahil ang mga kulay ay ang pinakahalatang halimbawa, pero ang kaparehas pala ay puwedeng i-apply sa kahit anong parirala! Bago gumamit ng pang-uri, mas mapapakinabangan kung ikaw ay huminto at mag-isip: ang mga pang-uri na ito ay nakakakuha ba ng pinaka-importanteng bahagi ng gusto mong pag-usapan?, o shortcut lang ba ito para sa ibang bagay?
+
+<Practice exercises={frontmatter.practice} />

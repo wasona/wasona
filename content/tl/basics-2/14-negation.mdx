@@ -1,0 +1,89 @@
+---
+slug: "tl/14"
+title: "ika-14 na aralin: negation"
+description: "Matuto ang salitang ala!"
+practice:
+- title: "1. Revise"
+  tasks:
+  - l1: "Hindi ka kumakain ng insekto."
+    l2: "sina moku ala e pipi."
+    junkChips: ["li"]
+  - l1: "Hindi alam ako ng tao."
+    l2: "jan li sona ala e mi."
+    junkChips: ["o"]
+  - l1: "Walang taong nakakaalam sa akin."
+    l2: "jan ala li sona e mi."
+    junkChips: ["o"]
+  - l1: "Hindi gusto ni Millie ang aklat."
+    l2: "jan Mili li wile ala e lipu."
+    junkChips: ["tawa"]
+  - l1: "Hindi kayang maglarawan ng bahay ang ibon."
+    l2: "waso li ken ala sitelen e tomo."
+    junkChips: ["lon"]
+  - l1: "Hindi pumupunta sa Germany si Anna."
+    l2: "jan Ana li tawa ala ma Tosi."
+    junkChips: ["e"]
+  - l1: "Hindi nasa US si Iman."
+    l2: "jan Iman li lon ala ma Mewika."
+    junkChips: ["e"]
+- title: "2. More practice"
+  tasks:
+  - l1: "Hindi ka makatulog."
+    l2: "sina ken ala lape."
+    junkChips: ["li"]
+  - l1: "Puwede kang gumising."
+    l2: "sina ken lape ala."
+    junkChips: ["li"]
+  - l1: "Ang bansang Turkey ay hindi ibon."
+    l2: "ma Tuki li waso ala."
+    junkChips: ["e"]
+  - l1: "Ang Ehipto ay hindi nasa Europa."
+    l2: "ma Masu li lon ala ma Elopa."
+    junkChips: ["Mewika"]
+  - l1: "Wag kang mag-idolise ng mga tao."
+    l2: "o sewi ala e jan."
+    junkChips: ["suwi"]
+  - l1: "Ang mga bansa ay hindi dapat lumaban ng isa't isa!"
+    l2: "ma o utala ala e ma!"
+    junkChips: ["li"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Natuto na tayong humingi na gawin ang isang aksyon. Pero paano tayo hiningi na *huwag* gawin ang isang aksyon? Oras nang matuto tungkol sa negation, gamit ng **󱤂 ala**:
+
+<List>
+  <Word sl="ala" m="hindi, wala" />
+</List>
+
+Sa Tagalog, medyo itong espesyal. Pero sa Toki Pona, isa lamang itong karaniwang pang-uri! At kagaya ng mga iba nito, sumusunod ito sa salita. Madalas mo itong mahahanap sa mga pangngalan, pandiwa, at pang-uri:
+
+<List>
+  <Word sl="jan ala" m="walang tao, hindi tao" />
+  <Sentence sl="jan ala li wile utala." m="Walang taong gustong mag-away." />
+  <Word sl="suli ala" m="hindi malaki, hindi importante" />
+  <Sentence sl="ni li suli ala tawa mi." m="Hindi ito importante para sa akin." />
+  <Word sl="moku ala" m="hindi kainin" />
+  <Sentence sl="pipi li moku ala e soweli." m="Hindi kinakain ng insekto ang hayop." />
+</List>
+
+Pero minsan, nangyayari din ang **󱤂 ala** sa tabi ng mga pang-ukol at preverb:
+
+<List>
+  <Word sl="wile ala" m="Hindi gustong (mag-)..." />
+  <Sentence sl="sina wile ala moku e suwi." m="Hindi mo gustong kumain ng kendi." />
+  <Word sl="tawa ala" m="hindi pumunta sa..." />
+  <Sentence sl="pipi li tawa ala kasi." m="Hindi pumupunta sa halaman ang insekto." />
+</List>
+
+Baka may nakita kang nakaka-interesado. Kahit na ang **󱤂 ala** ay puwedeng manatili kung kahit saan na pinapayagan ang ibang mga pang-uri, kadalasan siyang sumusunod sa pinakaunang pandiwa:
+* **󱤧󱤶󱤂 li moku ala ...**
+* **󱤧󱥷󱤂 li wile ala ...**
+* **󱤧󱥩󱤂 li tawa ala ...**
+
+Lohikal naman ito -- ang pag-negate ng unang pandiwa sa isang pangungusap ay nagnenegate ng buong pangugusap, at kadalasan natin iton ninanais!
+
+<Practice exercises={frontmatter.practice} />
