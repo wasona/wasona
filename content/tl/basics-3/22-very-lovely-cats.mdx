@@ -1,0 +1,110 @@
+---
+slug: "tl/22"
+title: "ika-22 aralin: cute na cute na pusa"
+description: "Matuto ng pi!"
+practice:
+- title: "1. Revise"
+  tasks:
+  - l1: "maraming niyebe"
+    l2: "ko lete mute"
+    junkChips: ["pi"]
+    alsoAccept: ["ko mute lete"]
+  - l1: "malamig na malamig na niyebe"
+    l2: "ko pi lete mute"
+  - l1: "maraming pagkakamali ko"
+    l2: "pakala mi mute"
+    junkChips: ["pi"]
+    alsoAccept: ["pakala mute mi"]
+  - l1: "pagkamali namin"
+    l2: "pakala pi mi mute"
+  - l1: "ang ibang diksyonaryo"
+    l2: "lipu toki ante"
+    junkChips: ["pi"]
+    alsoAccept: ["lipu ante toki"]
+  - l1: "libro sa ibang wika"
+    l2: "lipu pi toki ante"
+  - l1: "kuwartong maliit ng tao"
+    l2: "tomo jan lili"
+    junkChips: ["pi"]
+    alsoAccept: ["tomo lili jan"]
+  - l1: "kuwarto ng maliit na tao"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Natuto na natin ang **󱤼 mute** noong nakaraan, at mahalaga naman ito!
+
+Pero pagnilayan na muna natin ito. Alam na natin kung paano ilahad ito:
+
+<List>
+  <Word sl="soweli suwi" m="nakakatuwang pusa" />
+  <Word sl="soweli mute" m="maraming pusa" />
+  <Word sl="suwi mute" m="nakakatuwa na nakakatuwa (o, sobrang nakakatuwa)" />
+</List>
+
+Pero paano naman kung pinagsama-sama natin itong lahat? Masasabi ba natin na mayroong *maraming nakakatuwang mga pusa* o *isang sobrang nakakatuwang pusa*?
+
+<List>
+  <Word sl="soweli suwi mute" m="maraming nakakatuwang pusa" />
+</List>
+
+Ibig sabihin nga nito na mayroong *maraming nakakatuwang pusa*, kasi ang **󱥦 suwi** ay naglalarawan sa **󱥢 soweli**, at ang **󱤼 mute** ay naglalarawan din sa **󱥢 soweli**.  
+Pero sa tingin ko, *sobrang* nakakatuwa ang pusa ko! Paano ko nga lang ito masasabi? Paano kung gusto ko na ang **󱤼 mute** ay maglalarawan sa **󱥦 suwi**, hindi **󱥢 soweli**?  
+Dito na papasok ang isa pang bagong partikulo:
+
+<List>
+  <Word sl="pi" m="isang partikulo na nagsasama ng mga pang-uri" />
+  <Word sl="soweli pi suwi mute" m="sobrang nakakatuwang pusa" />
+</List>
+
+Voilà! Ngayon, kaya na nating makipag-usap ng isang **󱥢 soweli** na **󱥦󱤼 suwi mute**!  
+Kung nai-interes ka sa mga maths, kaya mo itong itulad sa paglagay nito sa loob ng mga parentheses, at baguhin ang pagkasunod-sunod ng mga gawain: *'pusa matuwa marami'* vs *'pusa (matuwa marami)'*.
+
+Isa pang halimbawa:
+
+<List>
+  <Word sl="sitelen tomo" m="larawan ng bahay" />
+  <Word sl="sitelen mute" m="mga larawan" />
+  <Word sl="tomo mute" m="mga bahay" />
+  <Word sl="sitelen tomo mute" m="mga larawan ng bahay" />
+  <Word sl="sitelen pi tomo mute" m="larawan ng mga bahay" />
+</List>
+
+Ulit, kaya mo itong isipin bilang *'larawan bahay marami'* vs *'larawan (bahay marami)'*.  
+Siyempre naman, hindi lang sa **󱤼 mute** pumapasok ang **󱥍 pi**! Tignan natin ang mga ibang halimbawa:
+
+<List>
+  <Word sl="jan pona" m="mabuting tao" />
+  <Word sl="jan lili" m="maliit na tao" />
+  <Word sl="pona lili" m="medyong mabuti" />
+  <Word sl="jan pona lili" m="maliit na mabuting tao" />
+  <Word sl="jan pi pona lili" m="medyong bagong tao" />
+</List>
+
+*'tao mabuti maliit'* vs *'tao (maliit mabuti)'*.
+
+<List>
+  <Word sl="sona utala" m="kaalamang guerra (o, estratehiya)" />
+  <Word sl="sona sin" m="kaalamang bago" />
+  <Word sl="utala sin" m="bagong guerra" />
+  <Word sl="sona utala sin" m="bagong kaalaman ng guerra. Ang kaalaman ang bago." />
+  <Word sl="sona pi utala sin" m="kaalaman ng bagong guerra. Ang kaalaman ang bago." />
+</List>
+
+*'kaalaman guerra bago'* vs *'kaalaman (guerra bago)'*.
+
+*Bakit may pinagkaiba ang pagkasunod-sunod ng salita sa Tagalog, eh, 'di naman nagbago sa Toki Pona?* Baka tanungin mo ito. Kadalasang ginagamit ang mga *bahagi ng pangungusap* ang ang pagkasunod-sunod nito sa Tagalog. Ang *Marami* ay isang pang-uri, pero ang *sobra* ay isang pang-ukol. Kung meron itong dalawa sa isang pangungusap, kadalasang ginagait natin ang salitang 'ng' (o ang hulaping '-ng') para paglinawan ito.
+
+{/* A note for translators */}
+{/*
+  Your language may rely on other methods of distinguishing the two situations.
+  Sorry, translating this paragraph may take some thinking!
+*/}
+
+Pero sa Toki Pona, ang mga salita ay kayang maging lahat ng mga bahagi ng pangungusap, kaya hindi naman ito gagana. Dahil dito, ang Toki Pona ay gumagamit na lang ng isang partikulo para baguhin ang pagkasunod-sunod nito.
+
+<Practice exercises={frontmatter.practice} />
