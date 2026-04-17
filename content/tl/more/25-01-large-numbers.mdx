@@ -1,0 +1,49 @@
+---
+slug: "tl/large-numbers"
+title: "Q: Paano ko pag-uusapan ang mga malalaking bilang?"
+description: ""
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+
+Ang nakakatawa tungkol sa malalaking numero ay mas madalang mo itong kailanganin kaysa sa iniisip mo.
+
+Mayroong malaki at makabuluhang pagkakaiba sa pagitan ng *'Tatalunan tayo ng isang tigre!'* at *'Tatalunan tayo ng dalawang tigre!'*. Marahil ay maaari mong labanan ang isang tigre, ngunit wala nang pag-asa kung dalawa ang tigre.
+
+Pero, i-kumpara mo ang *'Tatalunan tayo ng 77 na tigre!'* at *"Tatalunan tayo ng 78ng tigre!'* -- mahalaga pa ba yun? Ang iyong mga desisyon at ang iyong magiging kapalaran ay halos pareho. Kaya kadalasan, tatlong salitang panbilang lang talaga ang kailangan natin: **󱥳 wan**, **󱥮 tu**, at **󱤼 mute**.
+
+Kapag gumagamit ng maliliit na halaga ng pera, maaaring makakatulong ang mas tumpak na pagkalkula. Marahil ay kaya mong bilhin ang isang bagay na nagkakahalaga ng ₱77, ngunit kung nagkakahalaga ito ng ₱78, kulang ka ng isang piso. Para sa mga numerong mas mababa o humigit-kumulang isang daan, ginagamit namin ang mga salitang **󱥳 wan**, **󱥮 tu**, **󱤭 luka**, **󱤼 mute**, at **󱤄 ale**, na para bang mga barya ang mga ito na nagkakahalaga ng 1, 2, 5, 20, at 100:
+
+<List>
+    <Sentence sl="mute mute mute luka luka luka tu wan" m="78 (= 20 + 20 + 20 + 5 + 5 + 5 + 2 + 1)" />
+</List>
+
+Ngunit paglagpas ng 100, ang sistemang ito ay mabilis na nagiging nakakainis:
+
+<List>
+    <Sentence sl="ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale" m="1500 (= 100 + 100 + 100 + ...)" />
+</List>
+
+Noong 2021, nakabuo sina jan Kapilu at jan Tepo ng isang [pinalawak at backwards-compatible na sistema](https://sona.pona.la/wiki/nasin_nanpa_pona) upang pag-usapan ang malalaking numero: sa halip na magdagdag ng 100, pinaparami ng **󱤄 ale** ang nakaraang numero ng 100.
+
+<List>
+    <Sentence sl="luka luka luka ale" m="1500 (= (5 + 5 + 5) * 100)" />
+</List>
+
+Ito ay kapaki-pakinabang sa loob ng maraming taon sa kalendaryong Gregorian, at lalong maginhawa para sa kasalukuyang milenyo:
+
+<List>
+    <Sentence sl="mute ale mute luka" m="2025 (= 20 * 100 + 20 + 5)" />
+</List>
+
+Protip: Pwede mo na ihati ng mga numero sa dalawang pares ng digit: 2025 -> 20,25, 123456789 -> 1,23,45,67,89, isalin ang bawat numero tulad ng 23 at 67, at ipagsasama ang mga ito gamit ang **󱤄 ale**. Ang "pagpaparami sa 100" ay pareho lang, ngunit medyo naiiba ng kaunti ang paliwanag!
+
+Kapag nagsusulat ka gamit ng karakter na Latin, pwede mong paikliin ang nga malalaking numero bilang W, T, L, M, at A:
+
+<List>
+    <Sentence sp="󱥫󱥜󱤽󱤭󱤭󱤭󱥮󱥮󱤄󱤼󱤭󱤭󱤭󱥮󱥮󱤡<br />󱥫󱤺󱤽󱤭󱥮󱥮󱤡<br />󱥫󱥤󱤽󱥳󱤡<br />󱤰󱦐󱥨󱥇󱥣󱤍󱦑<br />󱤧󱤖󱥱󱤉󱤰󱦐󱥎󱥄󱥖󱥱󱤟󱤈󱦑<br />" sl="tenpo sike #LLLTTAMLLLTT la, tenpo mun #LTT la, tenpo suno #W la, ma Tosi li kama utala e ma Posuka." m="Noong ika-1 ng Setyembre 1939, sinakop ng Germany ang Poland." />
+</List>
