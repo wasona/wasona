@@ -1,0 +1,88 @@
+---
+slug: "it/simpler-cartouches"
+title: "D: in sitelen pona i nomi propri paiono lunghi. Come li posso accorciare?"
+description: "Impariamo a usare punti, tacche e abbreviazioni!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+I nomi in _sitelen pona_ possono essere piuttosto lunghi:
+
+<List>
+  <Sentence sl="lipu Wikipesija" m="Wikipedia" />
+  <Sentence sl="ma Antasika" m="Antartide<br />(Antarctica)" />
+  <Sentence sl="ma Kolonpija" m="Colombia" />
+</List>
+
+Alcune persone hanno escogitato tre sistemi degni di nota per rendere più facile leggere e scrivere i nomi.
+
+## 1. sistema a punti: 󱤿󱥠󱤕
+
+Il sistema a punti, o _nasin sitelen kalama_, fu creato da jan Pumiko nel 2022. Tra le persone che parlano toki pona dal 40 al 60% dicono di usarlo, o lo usano in certe situazioni. In _nasin sitelen kalama_ si suddivide una parola in _more_ (dal Latino _mŏra_, 'ritardo, indugio'): parti simili a sillabe ma piu piccole. Una _mora_ è o consonante+vocale o la -n dopo una vocale:
+
+- to-ki
+- ja-n
+- a-n-pa
+- si-n-pi-n
+
+Il numero di punti mediani (punti a metà altezza) aggiunti dopo un carattere rappresenta il numero di more da pronunciare nel nome:
+
+<List>
+  <Word sp="󱦐󱤅󱦑" sl="A" />
+  <Word sp="󱦐󱤅󱦜󱦑" sl="An" />
+  <Word sp="󱦐󱤅󱦜󱦜󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦑" sl="S" />
+  <Word sp="󱦐󱥟󱦜󱦑" sl="Si" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦑" sl="Sin" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦑" sl="Sinpi" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
+</List>
+
+(Si puo notare una curiosa peculiarità di questo sistema: **󱦐󱤅󱦑** costituisce un'intera mora, per cui aggiungere un punto aggiunge la mora successiva, che è **-n**. Ma **󱦐󱥟󱦑** non è una mora intera, per cui l'aggiunta di un punto si limita a completare la prima mora, che è **si**.)
+
+Si possono anche usare i due punti per indicare che dev'essere pronunciata l'intera parola:
+
+<List>
+  <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
+</List>
+
+Mettendo insieme diversi caratteri in un cartiglio si può scrivere un nome:
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅󱦜󱥩󱦜󱥜󱦜󱤔󱦜󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
+</List>
+
+* 🎉 si usano meno caratteri logografici per scrivere un nome!
+* 🙁 il cartiglio e ancora piuttosto lungo.
+
+## 2. sistema a tacche: 󱤿󱥠󱤕󱥍󱤩󱤨
+
+Il sistema a tacche fu creato da Sonja Lang nel 2024 per l'uso in lettere e libri ufficiali, in cui pagine strette richiedono nomi più corti. In questo sistema ogni carattere nel cartiglio riceve una o più tacche al di sotto. Si segna una tacca per ogni suono o lettera che va pronunciato:
+
+{/* Note: this section uses non-standard codepoints F19FC-F19FF, which I modded into nasin nanpa. If you ever update nasin nanpa, this section will break. Ideally, nskpll gets standardised later. */}
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡&#xF19FE;󱤜&#xF19FD;󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅&#xF19FD;󱥩&#xF19FD;󱥜&#xF19FD;󱤔&#xF19FD;󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
+</List>
+
+## 3. sistema per iniziali
+
+Questo metodo fu collaudato la prima volta da DavidAR nel 2019, e fu provato da Sonja Lang nel *lipu su*: "The Wonderful Wizard of Oz (Toki Pona edition)". All'inizio, si introduce una persona, lingua o luogo col suo nome intero:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorothy" />
+</List>
+
+Ma poi nel resto del testo si abbrevia il nome al solo primo carattere:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorothy" />
+</List>
