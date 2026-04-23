@@ -1,6 +1,23 @@
 # Wasona
 
-A crash course in Toki Pona.
+A crash course in Toki Pona. Includes the [sitelen pona](https://sitelenpona.net/) writing system, interactive exercises, audio, and more!
+
+## Contributing
+
+This is a collaborative project brought to you by the Toki Pona community.
+
+<div align="center">
+  <a href="https://github.com/wasona/wasona/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=wasona/wasona" />
+  </a>
+</div>
+
+Want to help? Open issues and pull requests with your changes.  
+You can also join the Discord and talk to the maintainers!
+
+<a href="https://discord.gg/A3ZPqnHHsy">
+  <img src="https://raw.githubusercontent.com/pona-la/.github/refs/heads/main/assets/pali-pona-server.png">
+</a>
 
 ## Local development
 
@@ -11,12 +28,6 @@ npm run dev
 
 ## License
 
-Content (`/content/`) is dual-licensed under:
+Content (`/content/`) is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
 
-- Creative Commons Attribution-ShareAlike 3.0 Unported;
-
-- Creative Commons Attribution-ShareAlike 4.0 International.
-
-(Dual-licensing is done to avoid any potential online encyclopedia issues).
-
-Code (`/src/`) is licensed under the GNU General Public License Version 3.
+Code (`/src/`) is licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
