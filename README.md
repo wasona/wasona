@@ -6,7 +6,7 @@ A crash course in Toki Pona. Includes the [sitelen pona](https://sitelenpona.net
 
 This is a collaborative project brought to you by the Toki Pona community.
 
-<div align="center">
+<div align="center" style="max-width: 75%; margin: auto 10px;">
   <a href="https://github.com/wasona/wasona/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=wasona/wasona" />
   </a>
