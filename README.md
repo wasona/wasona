@@ -19,7 +19,7 @@ Want to help but you're [new to Github? We can help!](https://github.com/pona-la
 You can also join the Discord and talk to the maintainers!
 
 <a href="https://discord.gg/A3ZPqnHHsy">
-  <img src="https://raw.githubusercontent.com/pona-la/.github/refs/heads/main/assets/pali-pona-server.png">
+  <img src="https://raw.githubusercontent.com/pona-la/.github/refs/heads/main/assets/pali-pona-badge.svg">
 </a>
 
 ## Local development
