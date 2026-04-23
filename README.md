@@ -24,6 +24,8 @@ You can also join the Discord and talk to the maintainers!
 
 ## Local development
 
+Install [Node.js + NPM](https://nodejs.org/en/download) on your system. Clone the repo. Run in terminal:
+
 ```sh
 npm i
 npm run dev
