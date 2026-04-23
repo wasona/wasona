@@ -1,12 +1,12 @@
 # Wasona
 
-A crash course in Toki Pona. Includes the [sitelen pona](https://sitelenpona.net/) writing system, interactive exercises, audio, and more!
+A crash course in [Toki Pona](https://tokipona.net/). Includes interactive exercises, audio, the [sitelen pona](https://sitelenpona.net/) writing system, and more. Available in 10+ languages!
 
 ## Contributing
 
 This is a collaborative project brought to you by the Toki Pona community.
 
-<div align="center" style="max-width: 75%; margin: auto 10px;">
+<div align="center">
   <a href="https://github.com/wasona/wasona/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=wasona/wasona" />
   </a>
