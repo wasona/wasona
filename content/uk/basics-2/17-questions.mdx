@@ -3,7 +3,15 @@ slug: "uk/17"
 title: "урок 17: питання"
 description: "Вчимо anu, seme!"
 practice:
-- title: "1. Revise"
+- title: "1. Лексика"
+  tasks:
+  - l1: "або"
+    l2: "anu"
+    junkChips: ["ala", "lete", "ante"]
+  - l1: "що"
+    l2: "seme"
+    junkChips: ["jo", "esun", "o"]
+- title: "2. Повторення"
   tasks:
   - l1: "Чи погіршує табак повітря?"
     l2: "kasi nasa li ike ala ike e kon?"
@@ -36,14 +44,35 @@ practice:
     l2: "sina wile moku e seme?"
     junkChips: ["li"]
     alsoAccept: ["sina wile e moku seme?"]
+- title: "3. Більше практики"
+  tasks:
+  - l1: Смерть це погано, чи не так?"
+    l2: "moli li ike anu seme?"
+    junkChips: ["ala"]
+  - l1: "Що за тварина з'їла мою рослину?"
+    l2: "soweli seme li moku e kasi mi?"
+    junkChips: ["anu"]
+  - l1: "Чи потребує радіо електрики?"
+    l2: "ilo kalama li wile ala wile e wawa?"
+    junkChips: ["seme"]
+  - l1: "Чи ти їдеш у Корею?"
+    l2: "sina tawa ala tawa ma Anku?"
+    junkChips: ["e"]
+  - l1: "Це ложка?"
+    l2: "ni li ilo ala ilo moku?"
+    junkChips: ["e"]
+  - l1: "Які мови тобі подобаються?"
+    l2: "toki seme li pona tawa sina?"
+    junkChips: ["anu"]
+  - l1: "Якими мовами розмовляє Емма?"
+    l2: "jan Ema li ken toki seme?"
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
-
-## Питання
 
 Питання зазвичай бувають двох типів:
 
@@ -106,7 +135,22 @@ import Practice from "@/components/Practice.astro";
   <Sentence sl="soweli li utala e jan Ema." m="Звір напав на Емму." />
 </List>
 
-Помітимо, що, ми лише замінюємо **󱥙 seme** -- решта речення залишається незмінною! Контрастуючи з українською, токі пона не змінює порядок слів.
+Питання та відповідь виглядають зовсім однаково, лиш потрібно замінити **󱥙 seme**. Все інше в реченні залишається в тому ж порядку! Це не так як в українській, де ми часто виносимо слово-питання наперед.
+
+Порада: якщо ви не впевнені як використати **󱥙 seme**, уявіть можливу відповідь, та замініть ключове слово в цій відповіді на **󱥙 seme**. Як зручно!
+
+<List>
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱤜"
+    sl="kiwen li ken kama <u>ko</u>."
+    m="Камінь може стати піском."
+  />
+  <Sentence
+    sp="󱤛󱤧󱤘󱤖󱥙"
+    sl="kiwen li ken kama <u>seme</u>?"
+    m="Чим може стати камінь?"
+  />
+</List>
 
 <Practice exercises={frontmatter.practice} />
 
