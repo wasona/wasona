@@ -3,7 +3,7 @@ import { ipaRecordings, KALAMA } from "@/lib/audio";
 
 interface Props {
   td?: boolean;
-  from: "ipa" | "linku/asi" | "wasona/ipa";
+  from: "ipa" | "linku/asi" | "wasona/ipa" | "wikimedia/ipa";
   file: string;
   text?: string;
 }
@@ -12,9 +12,11 @@ const { td, from, file, text } = Astro.props;
 const link =
   from == "ipa"
     ? ipaRecordings[file]
-    : from == "wasona/ipa"
-      ? `${KALAMA}/kala-asi/ipa/${file}.mp3`
-      : `${KALAMA}/kala-asi/words/${file}.mp3`;
+    : from == "wikimedia/ipa"
+      ? `${KALAMA}/wikimedia/ipa/${file}.mp3`
+      : from == "wasona/ipa"
+        ? `${KALAMA}/kala-asi/ipa/${file}.mp3`
+        : `${KALAMA}/kala-asi/words/${file}.mp3`;
 
 const action = `new Audio('${link}').play().catch((e) => {})`;
 ---

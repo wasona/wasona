@@ -45,27 +45,62 @@ const _ = (text: string) => locales[Astro.url.pathname.split("/")[1]][text];
       <tbody>
         <tr>
           <!-- <td>{_("Nasal")}</td> -->
-          <Audio td from="ipa" file="m" />
-          <Audio td from="ipa" file="n" />
+          <Audio td from="wikimedia/ipa" text="m" file="m_Bilabial_nasal" />
+          <Audio td from="wikimedia/ipa" text="n" file="n_Alveolar_nasal" />
           <td></td>
         </tr>
         <tr>
           <!-- <td>{_("Stop")}</td> -->
-          <Audio td from="ipa" file="p" />
-          <Audio td from="ipa" file="t" />
-          <Audio td from="ipa" file="k" />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="p"
+            file="p_Voiceless_bilabial_plosive"
+          />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="t"
+            file="t_Voiceless_alveolar_plosive"
+          />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="k"
+            file="k_Voiceless_velar_plosive"
+          />
         </tr>
         <tr>
           <!-- <td>{_("Fricative")}</td> -->
           <td></td>
-          <Audio td from="ipa" file="s" />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="s"
+            file="s_Voiceless_alveolar_sibilant"
+          />
           <td></td>
         </tr>
         <tr>
           <!-- <td>{_("Approximant")}</td> -->
-          <Audio td from="ipa" file="w" />
-          <Audio td from="ipa" file="l" />
-          <Audio td from="ipa" file="j" />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="w"
+            file="w_Voiced_labio-velar_approximant"
+          />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="l"
+            file="l_Alveolar_lateral_approximant"
+          />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="j"
+            file="j_Palatal_approximant"
+          />
         </tr>
       </tbody>
     </table>
@@ -84,20 +119,45 @@ const _ = (text: string) => locales[Astro.url.pathname.split("/")[1]][text];
       <tbody>
         <tr>
           <!-- <td>{_("High")}</td> -->
-          <Audio td from="wasona/ipa" file="i" />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="i"
+            file="i_Close_front_unrounded_vowel"
+          />
           <td></td>
-          <Audio td from="wasona/ipa" file="u" />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="u"
+            file="u_Close_back_rounded_vowel"
+          />
         </tr>
         <tr>
           <!-- <td>{_("Mid")}</td> -->
-          <Audio td from="wasona/ipa" file="e" />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="e"
+            file="e_Mid_front_unrounded_vowel"
+          />
           <td></td>
-          <Audio td from="wasona/ipa" file="o" />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="o"
+            file="o_Mid_back_rounded_vowel"
+          />
         </tr>
         <tr>
           <!-- <td>{_("Low")}</td> -->
           <td></td>
-          <Audio td from="wasona/ipa" file="a" />
+          <Audio
+            td
+            from="wikimedia/ipa"
+            text="a"
+            file="a_Open_central_unrounded_vowel"
+          />
           <td></td>
         </tr>
       </tbody>
