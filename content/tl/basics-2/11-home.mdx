@@ -1,0 +1,123 @@
+---
+slug: "tl/11"
+title: "ika-11 aralin: ang bahay"
+description: "Matuto ang salintang ilo, lipu, poki, supa, lupa, len, open, pini, jo, at ijo!"
+practice:
+- title: "1. Vocab"
+  tasks:
+  - l1: "gamit"
+    l2: "ilo"
+    junkChips: ["lipu", "poki", "open"]
+  - l1: "dokumento"
+    l2: "lipu"
+    junkChips: ["len", "sona", "open"]
+  - l1: "kahon"
+    l2: "poki"
+    junkChips: ["open", "len", "lipu"]
+  - l1: "shelf/istante"
+    l2: "supa"
+    junkChips: ["len", "lon", "pini"]
+  - l1: "butas"
+    l2: "lupa"
+    junkChips: ["pona", "musi", "ijo"]
+  - l1: "takip"
+    l2: "len"
+    junkChips: ["open", "poki", "lipu"]
+  - l1: "bukas"
+    l2: "open"
+    junkChips: ["ilo", "poki", "jo"]
+  - l1: "sarado"
+    l2: "pini"
+    junkChips: ["pipi", "ilo", "tomo"]
+  - l1: "hawak"
+    l2: "jo"
+    junkChips: ["ijo", "musi", "lupa"]
+  - l1: "kahit anong bagay"
+    l2: "ijo"
+    junkChips: ["toki", "jan", "lape"]
+- title: "2. Revise"
+  tasks:
+  - l1: "Isinara mo ang pinto."
+    l2: "sina pini e lupa."
+    junkChips: ["supa"]
+  - l1: "May pusa sa bahay ko."
+    l2: "soweli li lon tomo mi."
+    junkChips: ["e"]
+  - l1: "Ang bahay ko ay mayroong pusa."
+    l2: "tomo mi li jo e soweli."
+    junkChips: ["ni"]
+  - l1: "Kinakailangan ng ibon mo ang pagkain."
+    l2: "waso sina li wile e moku."
+    junkChips: ["ona"]
+  - l1: "Kayang kunmanta ng mabuti si Sunita."
+    l2: "jan Sunita li ken kalama pona."
+    junkChips: ["e"]
+  - l1: "Gusto kong mag-usap tungkol sa makinang panahi."
+    l2: "mi wile toki e ilo len."
+    junkChips: ["li"]
+- title: "3. More practice"
+  tasks:
+  - l1: "Ang pusa ay nanghuhuli ng mga ibon."
+    l2: "soweli li alasa e waso."
+    junkChips: ["wile"]
+  - l1: "Ang kahong ito ay kailangan ng susi."
+    l2: "poki ni li wile e ilo open."
+    junkChips: ["ijo"]
+  - l1: "Tinakip niya ang natutulog na bata (gamit ang kumot)."
+    l2: "ona li len e jan lili lape."
+    junkChips: ["lon"]
+    alsoAccept: ["ona li len e jan lape lili."]
+  - l1: "Naglagay ang tao ng libro ng mga insekto sa lamesa."
+    l2: "jan li pana e lipu pipi tawa supa."
+    junkChips: ["pona"]
+  - l1: "Ang website na tinatawagang Wikipedia ay nagsha-share ng kaalamang nakakatulong."
+    l2: "lipu Wikipesija li pana e sona pona."
+    junkChips: ["tawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Mayroong maraming bagay sa bahay natin:
+
+<List>
+  <Word sl="ilo" m="gamit, tulad ng martilyo, tinidor, phone, app" />
+  <Word sl="lipu" m="malapad na bagay na nagbibigay ng sona, tulad ng papel, aklat, website" />
+  <Word sl="poki" m="lalagyan, tulad ng karton, aparador, bote" />
+  <Word sl="supa" m="isang bagay na malapad ang ibabaw, tulad ng isang istante, lamesa, sopa" />
+  <Word sl="lupa" m="isang butas o isang bagay na binubukas, rulad ng pinto, bintana" />
+  <Word sl="len" m="mga bagay na kumukobre ng bagay, tulad ng damit, sapatos, kumot" />
+</List>
+
+At ito'y mga ginagawa natin sa kanila:
+
+<List>
+  <Word sl="open" m="magsimula, buksan" />
+  <Word sl="pini" m="iwakas, isara" />
+  <Word sl="jo" m="hawakin, magkaroon ng laman, isama" />
+</List>
+
+Magsanay tayo dito!
+
+<List>
+  <Sentence sl="mi open e lupa." m="Binuksan ko ang pinto." />
+  <Sentence sl="jan li pini e poki moku." m="Isinara ng tao ang ref." />
+  <Sentence sl="lipu li lon supa lape." m="Ang libro ay nasa kama." />
+  <Sentence sl="poki mi li ken jo e len." m="Puwedeng magkaroon ng damit ang aparador ko." />
+  <Sentence sl="ilo mi li wile e wawa." m="Kalangan ng kuryente ang phone ko." />
+</List>
+
+## Isang bagay
+
+Sa loob ng isang karton, baka makahanap tayo ng damit, dyaryo, gamit, piktura... maraming bagay puwede! Pero sa pangkalahatang sitwasyon, paano natin ito masasabi?
+
+<List>
+  <Word sl="ijo" m="bagay" />
+  <Sentence sl="poki li jo e ijo." m="Mayroong bagay ang karton." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="Naglalarawan ang tao ng cute na bagay." />
+  <Sentence sl="mi wile toki e ijo kasi." m="Gusto kong magsalita tungkol sa mga bagay na may relasyon sa halaman." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

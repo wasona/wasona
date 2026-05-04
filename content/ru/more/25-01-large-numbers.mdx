@@ -9,40 +9,40 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-The funny thing about large numbers is you need them less often than you think. 
+Забавная вещь с большими числами в том, что они нужны реже, чем кажется.
 
-There's a large, meaningful difference between *'A tiger is about to jump us!'* and *'Two tigers are about to jump us!'*. Maybe you can fight off one tiger, but it's hopeless with two.
+Есть большая, существенная разница между *"Тигр собирается на нас прыгнуть!"* и *"Два тигра собираются на нас прыгнуть!"*. Возможно, вы сможете отбиться от одного тигра, но с двумя это безнадёжно.
 
-But compare *'77 tigers are about to jump us!'* and *'78 tigers are about to jump us!'* -- does it matter? Your decisions and your fate will be much the same. So most of the time, we only really need three number words: **󱥳 wan**, **󱥮 tu**, **󱤼 mute**.
+Но сравните *"77 тигров собираются на нас прыгнуть!"* и *"78 тигров собираются на нас прыгнуть!"*: имеет ли это значение? Ваши решения и ваша судьба будут примерно одинаковыми. Поэтому в большинстве случаев нам действительно нужны всего три числовых слова: **󱥳 wan**, **󱥮 tu**, **󱤼 mute**.
 
-When dealing with small sums of money, more precision might actually make a difference. Maybe you can afford something that costs $77, but if it costs $78 you're one dollar short. For numbers below or around a hundred, we use words **󱥳 wan**, **󱥮 tu**, **󱤭 luka**, **󱤼 mute**, **󱤄 ale**, as if they were coins worth 1, 2, 5, 20, and 100:
+Когда речь идёт о небольших суммах денег, большая точность действительно может иметь значение. Возможно, вы можете позволить себе что-то за 77 рублей, но если оно стоит 78 рублей, вам не хватает одного рубля. Для чисел ниже или около ста мы используем слова **󱥳 wan**, **󱥮 tu**, **󱤭 luka**, **󱤼 mute**, **󱤄 ale**, как если бы это были монеты номиналом 1, 2, 5, 20 и 100:
 
 <List>
     <Sentence sl="mute mute mute luka luka luka tu wan" m="78 (= 20 + 20 + 20 + 5 + 5 + 5 + 2 + 1)" />
 </List>
 
-But above 100, this system quickly becomes annoying:
+Но выше 100 эта система быстро становится неудобной:
 
 <List>
     <Sentence sl="ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale" m="1500 (= 100 + 100 + 100 + ...)" />
 </List>
 
-In 2021, jan Kapilu and jan Tepo came up with an [expanded and backward-compatible system](https://sona.pona.la/wiki/nasin_nanpa_pona) to talk about large numbers: instead of adding 100, **󱤄 ale** multiplies the previous number by 100.
+В 2021 году jan Kapilu и jan Tepo предложили [расширенную и обратно совместимую систему](https://sona.pona.la/wiki/nasin_nanpa_pona) для обозначения больших чисел: вместо сложения 100, **󱤄 ale** умножает предыдущее число на 100.
 
 <List>
     <Sentence sl="luka luka luka ale" m="1500 (= (5 + 5 + 5) * 100)" />
 </List>
 
-This is useful for years in the Gregorian calendar, and especially convenient for the current millenium:
+Это удобно для годов в григорианском календаре и особенно удобно для текущего тысячелетия:
 
 <List>
     <Sentence sl="mute ale mute luka" m="2025 (= 20 * 100 + 20 + 5)" />
 </List>
 
-Protip: you can imagine splitting numbers into two digit pairs: 2025 -> 20,25, 123456789 -> 1,23,45,67,89, translating each number like 23 and 67, and joining them using **󱤄 ale**. "Multiplying by 100" is just the same thing, but explained slightly differently!
+Совет: можно представить, что числа разбиваются на пары цифр: 2025 -> 20,25; 123456789 -> 1,23,45,67,89, перевести каждое число вроде 23 и 67, а затем соединить их с помощью **󱤄 ale**. "Умножение на 100" — это по сути то же самое, просто объяснено немного иначе!
 
-When writing in Latin characters, you can also abbreviate large numbers as W, T, L, M, A:
+При записи с помощью sitelen Lasina вы также можете сокращать большие числа как W, T, L, M, A:
 
 <List>
-    <Sentence sp="󱥫󱥜󱤽󱤭󱤭󱤭󱥮󱥮󱤄󱤼󱤭󱤭󱤭󱥮󱥮󱤡<br />󱥫󱤺󱤽󱤭󱥮󱥮󱤡<br />󱥫󱥤󱤽󱥳󱤡<br />󱤰󱦐󱥨󱥇󱥣󱤍󱦑<br />󱤧󱤖󱥱󱤉󱤰󱦐󱥎󱥄󱥖󱥱󱤟󱤈󱦑<br />" sl="tenpo sike #LLLTTAMLLLTT la, tenpo mun #LTT la, tenpo suno #W la, ma Tosi li kama utala e ma Posuka." m="On September 1st, 1939, Germany invaded Poland." />
+    <Sentence sp="󱥫󱥜󱤽󱤭󱤭󱤭󱥮󱥮󱤄󱤼󱤭󱤭󱤭󱥮󱥮󱤡<br />󱥫󱤺󱤽󱤭󱥮󱥮󱤡<br />󱥫󱥤󱤽󱥳󱤡<br />󱤰󱦐󱥨󱥇󱥣󱤍󱦑<br />󱤧󱤖󱥱󱤉󱤰󱦐󱥎󱥄󱥖󱥱󱤟󱤈󱦑<br />" sl="tenpo sike #LLLTTAMLLLTT la, tenpo mun #LTT la, tenpo suno #W la, ma Tosi li kama utala e ma Posuka." m="1 сентября 1939 года Германия вторглась в Польшу." />
 </List>

@@ -1,0 +1,37 @@
+---
+slug: "it/fonts"
+title: "D: come si fa a digitare in sitelen pona?"
+description: "Per saperne di più sui tipi di carattere!"
+---
+
+La scrittura *sitelen pona* è ganzissima! Ma ancora non fa parte dell'Unicode. La maggior parte dei tipi di carattere prendono in considerazione solo i caratteri definiti in Unicode; e questo significa che i *font* sul vosro dispositivo probabilmente non sanno nulla dei glifi sitelen pona.
+
+Per ovviare a questo problema, si può installare un tipo di carattere sitelen pona! Ce ne sono più di [un centinaio](https://linku.la/fonts/) fra cui scegliere, per cui mettiamone alcuni in evidenza:
+
+* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) di jan Itan è il tipo utilizzato in questo sito. Ha uno stile piuttosto rigido e geometrico.<br /><img src="/example-nasin-nanpa.webp" />
+* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) di jan Lepeka ha uno stile manoscritto più giocoso.<br /><img src="/example-sitelen-seli-kiwen.webp" />
+* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) è un altro in stile scritto a mano; utilizza la calligrafia di Sonja Lang dal suo libro del 2014, più alcuni caratteri aggiuntivi disegnati da jan Pensa.<br /><img src="/example-pu-mono.webp" />
+
+È bene anche conoscere un tipo di carattere storicamente molto significativo:
+
+* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) di jan Same. Fu creato tra il 2016 e il 2021, e fu il primo tipo di carattere sitelen pona a essere davvero popolare. Ha un disegno non completamente nella norma che appare molto piu largo e squadrato della maggior parte dei tipi odierni. Nel periodo in cui linja pona era popolare, la scrittura *sitelen pona* acquisì diversi nuovi glifi, come **󱦀 kijetesantakalu** e **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
+
+**Su Discord** abbiamo un bot, ilo Linku, che può convertire testo in qualunque carattere sitelen pona in un'immagine! In questo modo si puo chattare in sitelen pona senza installare nulla.  
+**Su desktop** si puo scaricare uno dei tipi di carattere sopra e cliccarci. A quel punto il vostro sistema cercherà di installarlo.  
+**Su dispositivo mobile** installare tipi di carattere è piuttosto difficile; la cosa migliore potrebbe essere chiedere a una persona con conoscenze tecniche.
+
+## Dettagli tecnici: tipi di carattere ascii contro ucsur
+
+Ci sono due approcci principali per creare un tipo di carattere sitelen pona, che sono detti **caratteri ascii** e **caratteri ucsur**.
+
+Nei **caratteri ascii** si digitano caratteri Latini e il *font* stesso li raccoglie insieme e converte automaticamente e in tempo reale in caratteri sitelen pona.
+
+* 🎉 molto intuitivi da usare!
+* 🙁 crearli richiede molto lavoro.
+* 🙁 non è il modo in cui gli altri sistemi di scrittura funzionano al computer.
+
+Nei **caratteri ucsur** invece di digitare caratteri Latini si digitano caratteri da *una sezione di Unicode diversa*. In Unicode questa parte è stata lasciata intenzionalmente vuota, in modo che altre persone potessero usarla per [i loro scopi privati](https://en.wikipedia.org/wiki/Private_Use_Areas). Per cui un'organizzazione diversa, [UCSUR](https://www.kreativekorp.com/ucsur/), ha deciso che questa parte avrebbe contenuto la scrittura sitelen pona.
+
+* 🎉 è il modo in cui funzionano gli altri sistemi di scrittura!
+* 🎉 meno lavoro per crearli!
+* 🙁 piu difficili da usare: bisogna installare un metodo di inserimento simile a quelli esistenti per gli ideogrammi *Hanzi* Cinesi, o creare un *layout* di tastiera.

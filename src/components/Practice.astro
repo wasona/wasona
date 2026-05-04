@@ -7,7 +7,7 @@ interface Props {
 }
 const { exercises } = Astro.props;
 const lang = Astro.url.pathname.split("/")[1] ?? "en";
-console.log("current locale:", lang);
+// console.log("current locale:", lang);
 const locale = locales[lang];
 ---
 

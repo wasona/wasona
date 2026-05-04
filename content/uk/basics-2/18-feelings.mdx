@@ -3,7 +3,24 @@ slug: "uk/18"
 title: "урок 18: чуття"
 description: "Вчимо pilin, jaki, monsuta, pakala, a!"
 practice:
-- title: "1. Revise"
+- title: "1. Лексика"
+  tasks:
+  - l1: "відчувати"
+    l2: "pilin"
+    junkChips: ["wile", "musi", "lupa"]
+  - l1: "брудний"
+    l2: "jaki"
+    junkChips: ["nasa", "esun", "monsuta"]
+  - l1: "страшний"
+    l2: "monsuta"
+    junkChips: ["utala", "pakala", "kalama"]
+  - l1: "шкода"
+    l2: "pakala"
+    junkChips: ["lipu", "sitelen", "len"]
+  - l1: "ой"
+    l2: "a"
+    junkChips: ["o", "nasin", "pini"]
+- title: "2. Повторення"
   tasks:
   - l1: "Я погано почуваюсь через роботу."
     l2: "mi pilin ike tan pali."
@@ -20,12 +37,26 @@ practice:
   - l1: "Привіт! Ти ж Емма?"
     l2: "toki! sina jan Ema anu seme?"
     junkChips: ["li"]
-  - l1: "Цей звір наляканий через океан."
-    l2: "soweli ni li pilin monsuta tan telo suli."
-    junkChips: ["sewi"]
+  - l1: "Що злякало маленького зайчика?"
+    l2: "seme li monsuta e soweli lili?"
+    junkChips: ["o"]
   - l1: "Чи пошкодив великий звір будинок?"
     l2: "soweli suli li pakala ala pakala e tomo?"
     junkChips: ["seli"]
+- title: "3. Більше практики"
+  tasks:
+  - l1: "Це ти зробив? Круто!"
+    l2: "sina pali e ni anu seme? wawa!"
+    junkChips: ["ala"]
+  - l1: "Я засмучений через свої помилки."
+    l2: "mi pilin ike tan pakala mi."
+    junkChips: ["e"]
+  - l1: "А. Це не важливо."
+    l2: "a. ni li suli ala."
+    junkChips: ["o."]
+  - l1: "Цей звір наляканий через океан."
+    l2: "soweli ni li pilin monsuta tan telo suli."
+    junkChips: ["sewi"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -98,7 +129,20 @@ import Practice from "@/components/Practice.astro";
 У повних реченнях, воно посилює слово, що стоїть перед ним.
 
 <List>
-    <Sentence sl="mi sona ala a e ni!" m="Я <strong>не розумію</strong> цього!" />
+    <Sentence sl="mi sona ala a e ni!" m="Я цього <strong>не</strong> розумію!" />
 </List>
+
+## Увічливо за нормальних обставин
+
+Часто ми робимо нашу мову більш складною, коли ми хочемо бути ввічливими чи люб'язним:
+
+* ❌ дай цукор!
+* ❌ де бібліотека?
+* ✅ Чи не могли б Ви, будь ласка, подати мені цукор? Дякую.
+* ✅ Вибачте, я не хотів Вас турбувати, але чи не могли б Ви показати де тут бібліотека?
+
+Але токі поною, ви вже настільки ввічливі, наскільки потрібно:
+* ✅ o pana e suwi!
+* ✅ tomo lipu li lon seme?
 
 <Practice exercises={frontmatter.practice} />
