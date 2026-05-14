@@ -1,0 +1,120 @@
+---
+slug: "da/21"
+title: "lektion 21: natur"
+description: "Lær akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+- title: "1. Ordforråd"
+  tasks:
+  - l1: "firben"
+    l2: "akesi"
+    junkChips: ["pipi", "soweli", "waso"]
+  - l1: "fisk"
+    l2: "kala"
+    junkChips: ["akesi", "lape", "misikeke"]
+  - l1: "brød"
+    l2: "pan"
+    junkChips: ["lili", "suli", "pipi"]
+  - l1: "frugt"
+    l2: "kili"
+    junkChips: ["pilin", "wile", "namako"]
+  - l1: "svamp"
+    l2: "soko"
+    junkChips: ["kili", "kalama", "ike"]
+  - l1: "medicin"
+    l2: "misikeke"
+    junkChips: ["akesi", "kala", "alasa"]
+  - l1: "krydderi"
+    l2: "namako"
+    junkChips: ["kili", "ko", "pana"]
+- title: "2. Repetition"
+  tasks:
+  - l1: "Svampe spiser syge planter."
+    l2: "soko li moku e kasi moli."
+    junkChips: ["mani"]
+  - l1: "Bag dejen."
+    l2: "o seli e ko pan."
+    junkChips: ["sewi"]
+  - l1: "Jeg gravede kartoflen op."
+    l2: "mi weka e kili tan ma."
+    junkChips: ["o"]
+  - l1: "Planter har brug for vand, sollys og jord."
+    l2: "kasi li wile e telo, e suno, e ma."
+    junkChips: ["soko"]
+  - l1: "Folk taler, morer sig, synger og sover."
+    l2: "jan li toki, li musi, li kalama, li lape."
+    junkChips: ["e"]
+- title: "3. Yderligere øvelse"
+  tasks:
+  - l1: "Kan fisk spise brød?"
+    l2: "kala li ken ala ken moku e pan?"
+    junkChips: ["seme"]
+  - l1: "Skal din pizza have sød frugt?"
+    l2: "pan sina o jo ala jo e kili suwi?"
+    junkChips: ["li"]
+  - l1: "Spis ikke rådne frugter og mærkelige svampe."
+    l2: "o moku ala e kili jaki e soko nasa."
+    junkChips: ["pan"]
+  - l1: "Frøer kan være i vand og på land."
+    l2: "akesi li ken lon telo li ken lon ma."
+    junkChips: ["sewi"]
+    alsoAccept: ["akesi li ken lon telo lon ma."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Vi kender allerede de fleste ord for dyr og planter -- lad os lære resten!
+
+<List>
+  <Word sl="akesi" m="krybdyr eller padde, såsom en frø, et firben, en slange" />
+  <Word
+    sl="kala"
+    m="fisk eller havdyr, såsom en laks, en hval, en haj, en blæksprutte"
+  />
+  <Word sl="pan" m="stivelsesholdig mad, såsom hvede, ris, brød, pasta" />
+  <Word sl="kili" m="frugt, grøntsag" />
+  <Word sl="soko" m="svamp" />
+  <Word sl="misikeke" m="medicin" />
+  <Word sl="namako" m="krydderi, pynt, udsmykning" />
+  <Sentence sl="soko li kili nasa." m="Svampe er mærkelige frugter." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="En stor fisk jager mindre fisk."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Jeg er ofte nødt til at tage medicin."
+  />
+</List>
+
+## Ingredienser
+
+Brødprodukter bruges ofte til at holde flere forskellige ingredienser sammen:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="Pizzaen indeholder kød." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="Pizzaen indeholder grøntsager." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="Pizzaen indeholder krydderier." />
+</List>
+
+Men hvordan sætter vi dem sammen i en enkel sætning? Tja, hver af dem er *objektet* i en sætning. En sætning kan have *flere objekter*: flere **󱤉 e** sætninger, som ganske enkelt følger efter hinanden:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="Pizzaen indeholder kød, grøntsager, (og) krydderier."
+  />
+</List>
+
+Dette er ikke kun specielt for **󱤉 e**! Du kan kombinere flere relaterede idéer med **󱤧 li**, **󱤡 la** og også forholdsord. Lad os nu bare se på **󱤧 li**:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="Personen jager fisk. (= personen fisker)." />
+  <Sentence sl="jan li seli e ona." m="Personen koger dem." />
+  <Sentence sl="jan li moku e ona." m="Personen spiser dem." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Personen jager fisk, koger dem, spiser dem." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

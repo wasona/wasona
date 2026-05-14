@@ -1,0 +1,123 @@
+---
+slug: "da/11"
+title: "lektion 11: hjem"
+description: "Lær ilo, lipu, poki, supa, lupa, len, open, pini, jo, ijo!"
+practice:
+- title: "1. Ordforråd"
+  tasks:
+  - l1: "værktøj"
+    l2: "ilo"
+    junkChips: ["lipu", "poki", "open"]
+  - l1: "dokument"
+    l2: "lipu"
+    junkChips: ["len", "sona", "open"]
+  - l1: "kasse"
+    l2: "poki"
+    junkChips: ["open", "len", "lipu"]
+  - l1: "hylde"
+    l2: "supa"
+    junkChips: ["len", "lon", "pini"]
+  - l1: "hul"
+    l2: "lupa"
+    junkChips: ["pona", "musi", "ijo"]
+  - l1: "dække"
+    l2: "len"
+    junkChips: ["open", "poki", "lipu"]
+  - l1: "åbne"
+    l2: "open"
+    junkChips: ["ilo", "poki", "jo"]
+  - l1: "lukke"
+    l2: "pini"
+    junkChips: ["pipi", "ilo", "tomo"]
+  - l1: "holde"
+    l2: "jo"
+    junkChips: ["ijo", "musi", "lupa"]
+  - l1: "noget"
+    l2: "ijo"
+    junkChips: ["toki", "jan", "lape"]
+- title: "2. Repetition"
+  tasks:
+  - l1: "Du lukker døren."
+    l2: "sina pini e lupa."
+    junkChips: ["supa"]
+  - l1: "Der er en kat i mit hus."
+    l2: "soweli li lon tomo mi."
+    junkChips: ["e"]
+  - l1: "Mit hus har en kat."
+    l2: "tomo mi li jo e soweli."
+    junkChips: ["ni"]
+  - l1: "Din fugl har brug for mad."
+    l2: "waso sina li wile e moku."
+    junkChips: ["ona"]
+  - l1: "Sunita kan synge godt."
+    l2: "jan Sunita li ken kalama pona."
+    junkChips: ["e"]
+  - l1: "Jeg vil tale om en symaskine."
+    l2: "mi wile toki e ilo len."
+    junkChips: ["li"]
+- title: "3. Yderligere øvelse"
+  tasks:
+  - l1: "Katte jager fugle."
+    l2: "soweli li alasa e waso."
+    junkChips: ["wile"]
+  - l1: "Denne kiste kræver en nøgle."
+    l2: "poki ni li wile e ilo open."
+    junkChips: ["ijo"]
+  - l1: "Hun dækkede det sovende barn (med et tæppe)."
+    l2: "ona li len e jan lili lape."
+    junkChips: ["lon"]
+    alsoAccept: ["ona li len e jan lape lili."]
+  - l1: "Nogen lagde bogen om insekter på skrivebordet."
+    l2: "jan li pana e lipu pipi tawa supa."
+    junkChips: ["pona"]
+  - l1: "Hjemmesiden ved navn Wikipedia deler brugbar viden."
+    l2: "lipu Wikipesija li pana e sona pona."
+    junkChips: ["tawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Der er en masse ting i vores hjem:
+
+<List>
+  <Word sl="ilo" m="værktøj, såsom en hammer, en gaffel, en telefon, en app" />
+  <Word sl="lipu" m="flad ting til 󱥡 sona, såsom papir, et kort, en bog, en hjemmeside" />
+  <Word sl="poki" m="beholder, såsom en kasse, en skuffe, en flaske" />
+  <Word sl="supa" m="vandret overflade, såsom en hylde, et skrivebord, en sofa" />
+  <Word sl="lupa" m="en åbning, såsom en dør, et vindue, et hul" />
+  <Word sl="len" m="et dække, såsom tøj, sko, et tæppe" />
+</List>
+
+Og her er, hvad vi gør med dem:
+
+<List>
+  <Word sl="open" m="at begynde, at åbne, at tænde" />
+  <Word sl="pini" m="at afslutte, at lukke, at slukke" />
+  <Word sl="jo" m="at holde, at indeholde, at omfatte" />
+</List>
+
+Lad os øve os!
+
+<List>
+  <Sentence sl="mi open e lupa." m="Jeg åbner døren." />
+  <Sentence sl="jan li pini e poki moku." m="Personen lukker køleskabet." />
+  <Sentence sl="lipu li lon supa lape." m="Bogen er på sengen." />
+  <Sentence sl="poki mi li ken jo e len." m="Min skuffe kan indeholde tøj." />
+  <Sentence sl="ilo mi li wile e wawa." m="Min telefon kræver elektricitet." />
+</List>
+
+## Noget
+
+I en kasse kan vi finde tøj, papirer, værktøjer, billeder... alle slags ting! Hvordan kan vi snakke om disse ting generelt?
+
+<List>
+  <Word sl="ijo" m="noget, ting, sager" />
+  <Sentence sl="poki li jo e ijo." m="Kassen har ting." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="Nogen tegner noget nuttet." />
+  <Sentence sl="mi wile toki e ijo kasi." m="Jeg vil tale om noget relateret til planter." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

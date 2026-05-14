@@ -1,0 +1,37 @@
+---
+slug: "da/fonts"
+title: "Q: hvordan indtaster jeg sitelen pona?"
+description: "Lær om skrifttyper!"
+---
+
+*sitelen pona* er virkelig sejt! Men det er ikke en del af Unicode endnu. De fleste skrifttyper arbejder kun med tegn, der er defineret af Unicode. Det betyder, at skrifttyper på din enhed sikkert ikke ved noget om sitelen pona.
+
+For at løse det, kan du installere en sitelen pona-skrifttype! Der er over [et hundrede](https://linku.la/fonts/) at vælge imellem, så lad mig fremhæve nogle få:
+
+* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) af jan Itan er den skrifttype, vi bruger på denne side. Den har et ret stivt, geometrisk design.<br /><img src="/example-nasin-nanpa.webp" />
+* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) af jan Lepeka er et mere muntert, håndskrevet design.<br /><img src="/example-sitelen-seli-kiwen.webp" />
+* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) er endnu et håndskrevet design. Det bruger Sonja Langs håndskrift fra hendes bog fra 2014, plus nogle nyere tegn tegnet af jan Pensa.<br /><img src="/example-pu-mono.webp" />
+
+Du bør også kende til en skrifttype, der har stor historisk betydning:
+
+* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) af jan Same. Den blev skabt i 2016–2021 og var den første populære sitelen pona-skrifttype. Den har et lidt ustandardiseret design, der ser bredere og mere firkantet ud end de fleste skrifttyper nu om dage. Mens linja var populær, fik *sitelen pona* flere nye glyffer, såsom **󱦀 kijetesantakalu** og **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
+
+**På Discord** har vi en bot, ilo Linku, der kan lave tekst i hvilken som helst sitelen pona-skrifttype om til et billede! Så kan du chatte i sitelen pona uden at skulle installere noget.  
+**På stationære computere** kan du installere en af skrifttyperne ovenfor og klikke på det. Så vil dit system prøve at installere den.
+**På mobil** er det lidt sværere at installere skrifttyper. Du får måske brug for at spørge nogen med teknisk viden.
+
+## Tekniske detaljer: ascii- vs. ucsur-skrifttyper
+
+Der er to hovedsagelige tilgange at lave en sitelen pona-skrifttype, som vi kalder **ascii-skrifttyper** og **ucsur-skrifttyper**.
+
+I **ascii-skrifttyper** skriver du latinske tegn, der registreres af skrifttypen og automatisk bliver konverteret til sitelen pona-tegn, mens det skrives.
+
+* 🎉 meget intuitivt at bruge!
+* 🙁 kræver meget arbejde.
+* 🙁 sådan fungerer andre skriftsystemer ikke på computere.
+
+I **ucsur-skrifttyper** skriver du tegn fra *en anden del af Unicode* i stedet for at skrive latinske tegn. Unicode har med vilje ladet denne del være tom, så folk kan bruge det til [deres egne private formål](https://en.wikipedia.org/wiki/Private_Use_Areas). Så en anden organisation, [UCSUR](https://www.kreativekorp.com/ucsur/), har besluttet, at denne del nu indeholder sitelen pona.
+
+* 🎉 sådan fungerer andre skriftsystemer!
+* 🎉 kræver mindre arbejde!
+* 🙁 sværere at bruge: du skal installere en inputmetode, der ligner dem til Hànzi, eller lave et tastaturlayout.

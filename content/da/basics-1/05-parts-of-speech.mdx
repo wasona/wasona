@@ -1,0 +1,108 @@
+---
+slug: "da/05"
+title: "lektion 5: ordklasser"
+description: "Lær om navneord, udsagnsord og adjektiver!"
+practice:
+- title: "1. Repetition"
+  tasks:
+  - l1: "en stærk bille"
+    l2: "pipi wawa"
+  - l1: "insektets styrke"
+    l2: "wawa pipi"
+  - l1: "et stort øje"
+    l2: "lukin suli"
+  - l1: "god mad"
+    l2: "moku pona"
+  - l1: "forbløffende godt"
+    l2: "pona wawa"
+  - l1: "den rigtige størrelse"
+    l2: "suli pona"
+  - l1: "for lille"
+    l2: "lili ike"
+  - l1: "Mad gør øjnene bedre."
+    l2: "moku li pona e lukin."
+    junkChips: ["waso"]
+  - l1: "Dyr kender fuglenes nuttethed."
+    l2: "soweli li sona e suwi waso."
+    junkChips: ["suli"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nogle af jer har sikkert spottet, at jeg introducerede ordet **󱥡 sona** to gange, først som udsagnsordet 'at kende', derefter som adjektivet 'klog'. Så hvilken en er det? Og hvordan ved man det?
+
+Det kan faktisk være begge dele! Hvis det kommer efter et navneord, er det et adjektiv. Hvis **󱤧 li** introducerer det som et udsagnsord, er det et udsagnsord. Det handler alt sammen om ordrækkefølge i en sætning!
+
+Det samme gælder _alle_ ord: hvis noget er et navneord, udsagnsord eller adjektiver, kan det blive til _hver af de tre_! Lad os kigge på nogle eksempler blandt de ord vi allerede har lært:
+
+<List>
+  <Word sl="lukin" m="N: øje; U: at se" />
+  <Word sl="moku" m="N: mad; U: at indtage, at spise" />
+  <Word sl="sona" m="N: viden, visdom; U: at vide; Adj: kyndig, klog" />
+  <Word sl="suli" m="N: størrelse; U: at forstørre, at understrege; Adj: stor, vigtig" />
+  <Word sl="pona" m="N: godhed; U: at forbedre; Adj: god, behagelig" />
+  <Word sl="waso" m="N: fugl; U: at gøre noget til en fugl; Adj: af en fugl, som en fugl" />
+</List>
+
+Jeg har kun opremset *nogle* ord vi har lært indtil videre -- nok til at se mønstrene:
+* Når **udsagnsord bliver til navneord** betyder de som regel at gøre noget (*viden*) eller noget, der danner en afgørende del af handlingen (*mad, øje*).
+* Når **udsagnsord bliver til adjektiver** betyder de som regel dem, der udfører handlingen (*kloge folk ~ folk, som ved*).
+* Når **navneord bliver til udsagnsord** betyder de som regel at gøre eller give noget til noget andet. (*at blive til en fugl*).
+* Når **navneord bliver til adjektiver** betyder de besiddelse eller lighed (*af en fugl, som en fugl*).
+* Når **adjektiver bliver til navneord** betyder de en egenskab (*godhed, størrelse*).
+* Når **adjektiver bliver til udsagnsord** formidler de en egenskab (*at forbedre, at forstørre*).
+
+Men når os toki pona-talere snakker, behøver vi for det meste ikke at tænke på disse mønstre! De begynder at flette sig sammen. På et tidspunkt stopper du endda med at tænke over, om et ord oprindeligt var et navneord, et udsagnsord eller et adjektiv, man ser det som en helhed!
+
+Lad os øve os i at bruge disse ord som navneord, udsagnsord og adjektiver:
+
+<List>
+  <Sentence sl="lukin li pona e sona." m="Øjne forbedrer viden." />
+  <Sentence sl="moku li suli e pipi." m="Mad får insekterne til at vokse." />
+  <Sentence
+    sl="moku li wawa e soweli lili."
+    m="Mad styrker det lille dyr."
+  />
+</List>
+
+## Ordrækkefølge betyder noget!
+
+Da ethvert navneord kan være et adjektiv, og ethvert adjektiv kan være et navneord, betyder rækkefølge altså noget! Se, hvordan disse to sætninger betyder forskellige ting:
+
+<List>
+  <Word sl="soweli suli" m="stort dyr" />
+  <Word sl="suli soweli" m="størrelsen af et dyr" />
+  <Sentence
+    sl="soweli suli li sona e suli soweli."
+    m="Det store dyr kender størrelsen af et dyr."
+  />
+</List>
+
+## li og e betyder også noget!
+
+Kan du huske, hvordan li og e virkede lidt unødvendige? Nu hvor vi ved at ethvert meningsfuldt ord kan bruges hvor som helst som et navneord, udsagnsord eller adjektiver, ser vi endelig hvor vigtige de er. Takket være dem kan vi skelne mellem disse tre vidt forskellige sætninger:
+
+<List>
+  <Word sl="soweli sona" m="klogt dyr" />
+  <Word sl="sona pona" m="god viden; at kende godt" />
+  <Word sl="pona waso" m="godheden af fuglen" />
+  <Sentence
+    sl="soweli sona li pona e waso."
+    m="Det kloge dyr hjælper fuglen."
+  />
+  <Sentence
+    sl="soweli li sona pona e waso."
+    m="Dyret kender fuglen godt."
+  />
+  <Sentence
+    sl="soweli li sona e pona waso."
+    m="Dyret ved, hvor god fuglen er."
+  />
+</List>
+
+Hvis du nogensinde er forvirret over, hvordan du læser eller skriver en sætning, start med at spørge dig selv: "Hvor er subjektet? Hvor er verbet? Hvor er objektet?", og det hele vil blive opdelt pænt i små sætninger!
+
+<Practice exercises={frontmatter.practice} />

@@ -1,0 +1,152 @@
+---
+slug: "da/08"
+title: "lektion 8: forholdsord"
+description: "Lær weka, pana, kama, awen, tawa, lon, tan!"
+practice:
+- title: "1. Ordforråd"
+  tasks:
+  - l1: "at fjerne"
+    l2: "weka"
+    junkChips: ["pana", "kama", "ma"]
+  - l1: "at give"
+    l2: "pana"
+    junkChips: ["weka", "awen", "sona"]
+  - l1: "at komme"
+    l2: "kama"
+    junkChips: ["weka", "awen", "pana"]
+  - l1: "at blive"
+    l2: "awen"
+    junkChips: ["kama", "weka", "pana"]
+  - l1: "mod"
+    l2: "tawa"
+    junkChips: ["lon", "e", "tan"]
+  - l1: "ved"
+    l2: "lon"
+    junkChips: ["e", "tan", "tawa"]
+  - l1: "fra"
+    l2: "tan"
+    junkChips: ["tawa", "lon", "e"]
+- title: "2. Repetition"
+  tasks:
+  - l1: "i England"
+    l2: "lon ma Inli"
+  - l1: "til Ali"
+    l2: "tawa jan Ali"
+  - l1: "Du fjerner insektet fra huset."
+    l2: "sina weka e pipi tan tomo."
+    junkChips: ["li"]
+  - l1: "Jeg kan lide planter. (Planter er gode for mig.)"
+    l2: "kasi li pona tawa mi."
+    junkChips: ["e"]
+  - l1: "Jeg gav fuglen en larve."
+    l2: "mi pana e pipi tawa waso."
+    junkChips: ["li"]
+  - l1: "Folk bliver i huset."
+    l2: "jan li awen lon tomo."
+    junkChips: ["e"]
+  - l1: "Noah tager til Frankrig."
+    l2: "jan Nowa li tawa ma Kanse."
+    junkChips: ["e"]
+  - l1: "Toronto ligger i Canada."
+    l2: "ma tomo Towano li lon ma Kanata."
+    junkChips: ["e"]
+    alsoAccept: ["ma Towano li lon ma Kanata."]
+- title: "3. Yderligere øvelse"
+  tasks:
+  - l1: "Der er en fugl i restauranten."
+    l2: "waso li lon tomo moku."
+    junkChips: ["e"]
+  - l1: "Min kat løb væk fra mig."
+    l2: "soweli mi li weka tan mi."
+    junkChips: ["e"]
+  - l1: "Jeg bliver på grund af dig."
+    l2: "mi awen tan sina."
+    junkChips: ["e"]
+  - l1: "Geografi er vigtig for mig."
+    l2: "sona ma li suli tawa mi."
+    junkChips: ["e"]
+  - l1: "San Francisco ligger i USA."
+    l2: "ma Sanpansiko li lon ma Mewika."
+    junkChips: ["e"]
+  - l1: "Fuglen beskytter sin rede."
+    l2: "waso li awen e tomo ona."
+    junkChips: ["tawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nu hvor vi kender nogle lande, skal vi tale om at rejse! Men hvordan siger man "tage til" og "komme fra"? Til det skal vi bruge nogle udsagnsord:
+
+<List>
+  <Word sl="weka" m="at fjerne, at gå væk; fraværende, væk" />
+  <Word sl="pana" m="at give, at sætte" />
+  <Word sl="kama" m="at komme, at ankomme" />
+  <Word sl="awen" m="at blive, at forblive, at beskytte" />
+</List>
+
+Ved siden af disse udsagnsord finder du ofte forholdsord:
+
+<List>
+  <Word sl="tawa" m="til, mod" />
+  <Word sl="lon" m="ved, på, i" />
+  <Word sl="tan" m="fra, på grund af" />
+</List>
+
+Et _forholdsord_ er et ord, der kommer før et andet ord. Det fortæller dig, hvordan det forholder sig til resten af sætningen. Et forholdsord + det ord, det knytter sig til, hedder en _forholdsordsfrase_:
+
+<List>
+  <Word sl="tawa soweli" m="imod dyret" />
+  <Word sl="lon ma" m="på jord, i landet" />
+  <Word sl="tan tomo" m="fra huset" />
+</List>
+
+På toki pona kan forholdsordsfraser bruges på to forskellige måder. For det første kan vi sætte dem i slutningen af en sætning. Vi kan bruge dette til at beskrive placeringen og retningen af en handling:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="Jeg sætter en fugl på et træ." />
+  <Sentence sl="waso li awen lon kasi." m="Fuglen bliver på træet." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="Du fjerner fuglen fra træet."
+  />
+</List>
+
+For det andet, hvad hvis vi vil snakke om placering og retning...uden at der sker noget andet? Heldigvis kan vi også gøre det. Forholdsordsfraser kan stå direkte efter **󱤧 li** og fungerer som udsagnsordet helt for sig selv. Når forholdsord fungerer som udsagnsord betyder de: **󱥩 tawa** 'at tage til', **󱤬 lon** 'at være ved', **󱥧 tan** 'at komme fra':
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma tager til Japan." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Nina er i Rusland." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Millie kommer fra Frankrig." />
+</List>
+
+Lad os øve os med disse sætninger:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="Jeg tager til planteområdet.<br />(Kan være en skov, en græsmark, et frodigt sted.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="Viden forsvandt fra mig.<br />(Jeg glemte.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="Nuttede dyr er gode for mig.<br />(Jeg kan lide nuttede dyr.)"
+  />
+
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah snakker til Emma." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="Folk taler tysk i Tyskland."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## Se også
+* [Q: behøver jeg at lære navnene på sprog og lande udenad?](/da/languages-countries/)
+* [Q: er 'jan li toki Inli' ikke lidt mærkeligt?](/da/named-verbs/)

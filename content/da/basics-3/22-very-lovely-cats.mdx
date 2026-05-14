@@ -1,0 +1,104 @@
+---
+slug: "da/22"
+title: "lektion 22: meget dejlige katte"
+description: "Lær pi!"
+practice:
+- title: "1. Repetition"
+  tasks:
+  - l1: "en masse sne"
+    l2: "ko lete mute"
+    junkChips: ["pi"]
+    alsoAccept: ["ko mute lete"]
+  - l1: "meget kold sne"
+    l2: "ko pi lete mute"
+  - l1: "mine mange fejl"
+    l2: "pakala mi mute"
+    junkChips: ["pi"]
+    alsoAccept: ["pakala mute mi"]
+  - l1: "vores fejl"
+    l2: "pakala pi mi mute"
+  - l1: "den anden sprogbog"
+    l2: "lipu toki ante"
+    junkChips: ["pi"]
+    alsoAccept: ["lipu ante toki"]
+  - l1: "a book in another language"
+    l2: "en bog på et andet sprog"
+  - l1: "nogens lille værelse"
+    l2: "tomo jan lili"
+    junkChips: ["pi"]
+    alsoAccept: ["tomo lili jan"]
+  - l1: "et værelse til en, der er lille"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Vi har for nylig lært **󱤼 mute**, som er et meget nyttigt ord!
+
+Lad os tænke lidt mere over det. Vi ved allerede, hvordan vi skaber disse sætninger:
+
+<List>
+  <Word sl="soweli suwi" m="en dejlig kat" />
+  <Word sl="soweli mute" m="mange katte" />
+  <Word sl="suwi mute" m="meget dejlig" />
+</List>
+
+Men hvad hvis vi sætter dem alle sammen? Får vi *mange dejlige katte* eller *en meget dejlig kat*?
+
+<List>
+  <Word sl="soweli suwi mute" m="mange dejlige katte" />
+</List>
+
+Denne sætning betyder *mange dejlige katte*, fordi **󱥦 suwi** beskriver **󱥢 soweli** og **󱤼 mute** også beskriver **󱥢 soweli**.  
+Men jeg synes *min* kat er meget dejlig! Hvordan snakker jeg om det? Hvad hvis jeg vil have **󱤼 mute** til at beskrive **󱥦 suwi** i stedet for at beskrive **󱥢 soweli**?  
+Det er her, den nye partikel hjælper os:
+
+<List>
+  <Word sl="pi" m="en partikel, der grupperer adjektiver" />
+  <Word sl="soweli pi suwi mute" m="en meget dejlig kat" />
+</List>
+
+Hurra! Nu kan vi snakke om et **󱥢 soweli**, der er **󱥦󱤼 suwi mute**!  
+Hvis du kan lide matematik, kan du tænke på det som at åbne en parentes og ændre rækkefølgen af operationerne: *'kat sød mange'* vs. *'kat (sød mange)'*.
+
+Lad os kigge på et andet eksempel:
+
+<List>
+  <Word sl="sitelen tomo" m="et billede af et hus" />
+  <Word sl="sitelen mute" m="billeder" />
+  <Word sl="tomo mute" m="huse" />
+  <Word sl="sitelen tomo mute" m="billeder af huse" />
+  <Word sl="sitelen pi tomo mute" m="et billede af huse" />
+</List>
+
+Som sagt kan du tænke på det som *'billede hus mange'* vs. *'billede (hus mange)'*.  
+Selvfølgelig er **󱤼 mute** ikke det eneste ord **󱥍 pi** hjælper med! Lad os kigge på nogle andre ord:
+
+<List>
+  <Word sl="jan pona" m="en rar person" />
+  <Word sl="jan lili" m="en lille person" />
+  <Word sl="pona lili" m="nogenlunde rar" />
+  <Word sl="jan pona lili" m="en lille, rar person" />
+  <Word sl="jan pi pona lili" m="en nogenlunde rar person" />
+</List>
+
+*'person rar lille'* vs. *'person (rar lille)'*.
+
+<List>
+  <Word sl="sona utala" m="krigsviden" />
+  <Word sl="sona sin" m="ny viden" />
+  <Word sl="utala sin" m="ny krig" />
+  <Word sl="sona utala sin" m="ny krig-viden. viden er ny." />
+  <Word sl="sona pi utala sin" m="ny-krig viden. krigen er ny." />
+</List>
+
+*'viden krig ny'* vs. *'viden (krig ny)'*.
+
+*Hvorfor er alle oversættelserne til dansk så anderledes?!*, spørger du nok! Dansk bruger normalt *ordklasser* for at tyde hvilke ord, der hører til hinanden. *Mange* er et adjektiv, men *meget* er et biord. Når alle ordklasserne er ens, kommer bindestreger til hjælp.
+
+Men på toki pona kan navneord, udsagnsord og adjektiver alle blive til hinanden. Så de hjælper ikke! I stedet bruger toki pona blot én partikel til at omgruppere.
+
+<Practice exercises={frontmatter.practice} />

@@ -1,0 +1,108 @@
+---
+slug: "da/24"
+title: "lektion 24: krop"
+description: "Lær sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
+practice:
+- title: "1. Ordforråd"
+  tasks:
+  - l1: "krop"
+    l2: "sijelo"
+    junkChips: ["len", "selo", "supa"]
+  - l1: "hånd"
+    l2: "luka"
+    junkChips: ["pana", "moku", "pali"]
+  - l1: "fod"
+    l2: "noka"
+    junkChips: ["kama", "tawa", "awen"]
+  - l1: "hoved"
+    l2: "lawa"
+    junkChips: ["misikeke", "ijo", "moli"]
+  - l1: "øre"
+    l2: "kute"
+    junkChips: ["la", "tenpo", "mun"]
+  - l1: "mund"
+    l2: "uta"
+    junkChips: ["kalama", "moku", "soko"]
+  - l1: "bule"
+    l2: "nena"
+    junkChips: ["palisa", "lupa", "ike"]
+  - l1: "stang"
+    l2: "palisa"
+    junkChips: ["nena", "lupa", "misikeke"]
+  - l1: "reb"
+    l2: "linja"
+    junkChips: ["telo", "kon", "sama"]
+- title: "2. Repetition"
+  tasks:
+  - l1: "Jeg har en hovedpine."
+    l2: "lawa mi li pakala."
+    junkChips: ["kala"]
+    alsoAccept: ["mi pakala lawa."]
+  - l1: "Du adlyder. Jeg befaler."
+    l2: "sina kute. mi lawa."
+    junkChips: ["luka"]
+  - l1: "Krydderi føles stærkt for min mund."
+    l2: "namako li seli tawa uta mi."
+    junkChips: ["e"]
+  - l1: "Klap venligst den dejlige hund!"
+    l2: "o luka e soweli suwi!"
+    junkChips: ["sewi"]
+  - l1: "Er der bakker i Nederlandene?"
+    l2: "nena li lon ala lon ma Netelan?"
+    junkChips: ["e"]
+  - l1: "Medicin helbreder hendes krop."
+    l2: "misikeke li pona e sijelo ona."
+    junkChips: ["pi"]
+  - l1: "Hendes hår er rar ved berøring."
+    l2: "linja lawa ona li pona tawa luka."
+    junkChips: ["e"]
+    alsoAccept: ["linja ona li pona tawa luka."]
+- title: "3. Yderligere øvelse"
+  tasks:
+  - l1: "Jeg hørte en svag lyd."
+    l2: "mi kute e kalama lili."
+    junkChips: ["li"]
+  - l1: "Kan fugle flyve med vinger?"
+    l2: "waso li ken ala ken tawa kepeken luka?"
+    junkChips: ["seme"]
+  - l1: "Anna vil være kansler af Tyskland."
+    l2: "jan Ana li wile lawa e ma Tosi."
+    junkChips: ["jan"]
+  - l1: "Bjerget ligner næsen på mit ansigt."
+    l2: "nena kiwen li sama nena pi sinpin mi."
+    junkChips: ["e"]
+  - l1: "Rige folk lytter ikke til fattige folk."
+    l2: "jan pi mani mute li kute ala e jan pi mani lili."
+    junkChips: ["seme"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Vi kender allerede ordene for *øjne*, *hjerte*, *ansigt*, og *ryg*, så lad os lære de resterende kropsdele!
+
+<List>
+  <Word sl="lawa" m="hoved; at lede, at føre" />
+  <Word sl="kute" m="øre; at høre" />
+  <Word sl="nena" m="bule, som en næse, en bakke, et bryst" />
+  <Word sl="uta" m="mund, læber; at kysse, at bide" />
+  <Word sl="sijelo" m="krop" />
+  <Word sl="luka" m="hånd, arm; at røre" />
+  <Word sl="noka" m="fod, ben" />
+  <Word sl="palisa" m="lang hård ting, som en kæp, en stang, en stav" />
+  <Word sl="linja" m="lang fleksibel ting, som en snor, et reb" />
+</List>
+
+Noget sjovt at bemærke er, hvor mange kropsdele der har en tilknyttet handling! Hovedet fører, øjnene ser, ørerne hører, munden kysser, hjerter føler, hænderne rører.
+
+<List>
+    <Sentence sl="mi wile suli e linja lawa mi." m="Jeg vil lade mit hår gro." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="Min chef hørte mig snakke dårligt." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="Spejlet giver et omvendt billede." />
+  <Sentence sl="sijelo mi li wile e lape." m="Min krop kræver hvile." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Mine fingre er større end mine tæer." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

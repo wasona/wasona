@@ -1,0 +1,128 @@
+---
+slug: "da/06"
+title: "lektion 6: stedord"
+description: "Lær ni, mi, sina, ona!"
+practice:
+- title: "1. Ordforråd"
+  tasks:
+  - l1: "dette/denne"
+    l2: "ni"
+    junkChips: ["mi", "sina", "ona"]
+  - l1: "jeg"
+    l2: "mi"
+    junkChips: ["ni", "sina", "ona"]
+  - l1: "du"
+    l2: "sina"
+    junkChips: ["ni", "mi", "ona"]
+  - l1: "dem"
+    l2: "ona"
+    junkChips: ["ni", "mi", "sina"]
+- title: "2. Repetition"
+  tasks:
+  - l1: "Dette er en sød plante."
+    l2: "ni li kasi suwi."
+    junkChips: ["e"]
+  - l1: "Disse er nogle store øjne."
+    l2: "ni li lukin suli."
+    junkChips: ["e"]
+  - l1: "Dine øjne er store."
+    l2: "lukin sina li suli."
+    junkChips: ["e"]
+  - l1: "Denne fugl er lille."
+    l2: "waso ni li lili."
+    junkChips: ["e"]
+  - l1: "Lede insekter spiste min plante."
+    l2: "pipi ike li moku e kasi mi."
+    junkChips: ["ona"]
+  - l1: "Du er nuttet."
+    l2: "sina suwi."
+    junkChips: ["li"]
+  - l1: "Jeg ser dem."
+    l2: "mi lukin e ona."
+    junkChips: ["li"]
+  - l1: "De spiser godt."
+    l2: "ona li moku pona."
+    junkChips: ["e"]
+- title: "3. Yderligere øvelse"
+  tasks:
+  - l1: "denne stærke bille"
+    l2: "pipi wawa ni"
+    junkChips: ["mi"]
+    alsoAccept: ["pipi ni wawa"]
+  - l1: "Jeg kender dine styrker godt."
+    l2: "mi sona pona e wawa sina."
+    junkChips: ["li"]
+  - l1: "Viden om fugle er vigtig."
+    l2: "sona waso li suli."
+    junkChips: ["e"]
+  - l1: "Deres træ er for stort."
+    l2: "kasi ona li suli ike."
+    junkChips: ["e"]
+  - l1: "Din hjælp har styrket mig."
+    l2: "pona sina li wawa e mi."
+    junkChips: ["ike"]
+  - l1: "min bedårende lille due"
+    l2: "waso lili suwi mi"
+    junkChips: ["e"]
+    alsoAccept: 
+    - "waso lili mi suwi"
+    - "waso suwi lili mi"
+    - "waso suwi mi lili"
+    - "waso mi suwi lili"
+    - "waso mi lili suwi"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Du er sikkert træt af lange sætninger og ordklassernes drillerier. Lad os sænke niveauet ved at pege på ting:
+
+<List>
+  <Word sl="ni" m="denne, dette, den her, det her; den, det, den der, det der" />
+  <Sentence sl="ni li soweli." m="Det her er et dyr." />
+  <Sentence sl="ni li kasi." m="Det her er en plante." />
+  <Sentence sl="ni li moku suwi." m="Det her er noget sødt mad." />
+  <Sentence sl="ni li suli." m="Det her er vigtigt."/>
+  <Sentence sl="ni li pona wawa." m="Det her er forbløffende godt." />
+</List>
+
+Disse er vores første _sætninger uden objekt_, så der er ikke noget **󱤉 e** i disse sætninger!
+
+Du tænker sikkert: **󱤧 li** starter udsagnsordet. Men hvor er udsagnsordet? På dansk er udsagnsordet normalt 'at være'. På toki pona er der ikke noget udsagnsord 'at være'. I stedet inkluderer ord, der tager rollen som udsagnsord, automatisk 'at være' i deres betydning: **󱥢 soweli** 'at være et dyr', **󱥣 suli** 'at være vigtig'.
+
+Nu hvor vi har set ét stedord, lad os få nogle flere:
+
+<List>
+  <Word sl="mi" m="jeg, vi; min, mit, vores" />
+  <Word sl="sina" m="du; din, dit" />
+  <Word sl="ona" m="han, hun, den, det, de; hans, hendes, dens, dets, sin, sit, deres" />
+</List>
+
+Lad os øve os i at bruge **󱤴 mi**, **󱥞 sina**, **󱥆 ona** og **󱥁 ni** i nogle sætninger:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Denne plante er stor." />
+  <Sentence sl="sona sina li wawa." m="Din viden er forbløffende." />
+  <Sentence sl="pipi ni li pipi mi." m="Dette insekt er mit insekt." />
+  <Sentence sl="waso sina li lukin e mi." m="Din fugl ser mig." />
+  <Sentence sl="waso li moku e pipi ni." m="Fuglen spiser dette insekt." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Mit dyr spiser sin plante." />
+</List>
+
+Du burde allerede være bekendt med sætninger som disse! I de fleste positioner i sætningen opfører stedord sig ligesom normale navneord og adjektiver. Men noget mærkeligt sker når **󱤴 mi** eller **󱥞 sina** er subjektet af sætninger:
+
+<List>
+  <Sentence sl="mi wawa." m="Jeg er stærk." />
+  <Sentence sl="sina lukin e moku." m="Du ser mad." />
+  <Sentence sl="mi sona e kasi suli." m="Jeg kender den store plante." />
+  <Sentence sl="sina sona e suli kasi." m="Du kender plantens størrelse." />
+</List>
+
+Toki pona har en speciel regel: når **󱤴 mi** eller **󱥞 sina** er subjektet af sætningen, dropper vi ordet **󱤧 li**, som normalt ville komme efter subjektet. Det er, fordi sætninger, der starter med **󱤴 mi** eller **󱥞 sina** er ekstremt almindelige!
+
+<Practice exercises={frontmatter.practice} />
+
+## Se også
+* [Q: betyder 'li' 'at være'?](/da/li-and-is/)

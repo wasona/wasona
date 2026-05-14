@@ -1,0 +1,100 @@
+---
+slug: "da/04"
+title: "lektion 4: adjektiver"
+description: "Lær suli, lili, pona, ike, wawa, suwi!"
+practice:
+- title: "1. Ordforråd"
+  tasks:
+  - l1: "stor"
+    l2: "suli"
+    junkChips: ["lili", "wawa", "sona"]
+  - l1: "lille"
+    l2: "lili"
+    junkChips: ["suli", "suwi", "pona"]
+  - l1: "god"
+    l2: "pona"
+    junkChips: ["ike", "kasi", "suwi"]
+  - l1: "dårlig"
+    l2: "ike"
+    junkChips: ["wawa", "pipi", "suli"]
+  - l1: "stærk"
+    l2: "wawa"
+    junkChips: ["suli", "soweli", "lili"]
+  - l1: "nuttet"
+    l2: "suwi"
+    junkChips: ["pona", "waso", "lili"]
+- title: "2. Repetition"
+  tasks:
+  - l1: "et sødt dyr"
+    l2: "soweli suwi"
+  - l1: "et dårligt insekt"
+    l2: "pipi ike"
+  - l1: "en kraftig fugl"
+    l2: "waso wawa"
+  - l1: "Fuglen kender et stærkt dyr."
+    l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
+  - l1: "Et lillebitte insekt kigger på et stort dyr."
+    l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nu kender du nogle navneord (ting) og udsagnsord (handlinger). Tid til at tilføje adjektiver (beskrivelser)! Lad os lære nogle af dem udenad:
+
+<List>
+  <Word sl="suli" m="stor, vigtig" />
+  <Word sl="lili" m="lille, ung" />
+  <Word sl="pona" m="god, behagelig" />
+  <Word sl="ike" m="dårlig, ubehagelig" />
+  <Word sl="wawa" m="kraftig, forbløffende" />
+  <Word sl="sona" m="kyndig, klog" />
+  <Word sl="suwi" m="nuttet, sød" />
+</List>
+
+På dansk kommer adjektiver før navneord. Men på toki pona kommer de altid efter:
+
+<List>
+  <Word sl="soweli suli" m="et stort dyr" />
+  <Word sl="pipi lili" m="et lille insekt" />
+  <Word sl="waso suwi" m="en nuttet fugl" />
+</List>
+
+Dansktalende finder nogle gange denne rækkefølge forvirrende, men sådan fungerer det på fransk, irsk, arabisk, malaysisk og mange andre sprog. Tænk på det sådan her: det første ord er altid det vigtigste!
+
+Lad os lave nogle sætninger med beskrivelser:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="Fuglen ser et nuttet dyr."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="Det stærke dyr spiser store planter."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Lede insekter bider dyret lidt."
+  />
+</List>
+
+Bare rolig, hvis disse sætninger føles lange og trættende! Vi kigger på nogle kortere sætninger om lidt. Husk: **󱤧 li** og **󱤉 e** er dine venner! De hjælper dig med at dele en lang sætning op i tre dele: subjektet, verbet og objektet:
+
+<List>
+  <Word sl="waso sona..." m="Den kloge fugl..."/>
+  <Word sl="...li sona pona..." m="...kender godt..."/>
+  <Word sl="...e pipi lili." m="...små insekter."/>
+  <Sentence
+    sl="waso sona li sona pona e pipi lili."
+    m="Den kloge fugl kender små insekter godt."
+  />
+</List>
+
+Her er noget interessant: på dansk kommer adjektiver kun efter navneord. Men på toki pona kan de også komme efter udsagnsord: _at bide lidt_ ~ _moku lili_, _at kende godt_ ~ _sona pona_. Der er ingen forskel mellem adjektiver og biord på toki pona.
+
+<Practice exercises={frontmatter.practice} />

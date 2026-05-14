@@ -1,0 +1,93 @@
+---
+slug: "da/27"
+title: "lektion 27: farver"
+description: "Lær kule, walo, pimeja, laso, loje, jelo, kin!"
+practice:
+- title: "1. Ordforråd"
+  tasks:
+  - l1: "farve"
+    l2: "kule"
+    junkChips: ["walo", "pimeja", "misikeke"]
+  - l1: "hvid"
+    l2: "walo"
+    junkChips: ["pimeja", "kule", "mani"]
+  - l1: "sort"
+    l2: "pimeja"
+    junkChips: ["walo", "ala", "kule"]
+  - l1: "cyan"
+    l2: "laso"
+    junkChips: ["jelo", "loje", "kasi"]
+  - l1: "rød"
+    l2: "loje"
+    junkChips: ["laso", "jelo", "uta"]
+  - l1: "gul"
+    l2: "jelo"
+    junkChips: ["laso", "loje", "suno"]
+  - l1: "også"
+    l2: "kin"
+    junkChips: ["a", "o", "lete"]
+- title: "2. Repetition"
+  tasks:
+  - l1: "Om natten fester jeg."
+    l2: "tenpo pimeja la mi musi."
+    alsoAccept: ["pimeja la mi musi."]
+    junkChips: ["jelo"]
+  - l1: "Der er gult støv på bien."
+    l2: "ko jelo li lon pipi."
+    junkChips: ["loje"]
+  - l1: "Også jeg leger med farverige klodser."
+    l2: "mi kin li musi kepeken leko kule."
+    junkChips: ["e"]
+  - l1: "Alt det her sne blænder mig."
+    l2: "mi ken ala lukin tan ko walo."
+    junkChips: ["seli"]
+  - l1: "Blå, hvid og rød er på flaget."
+    l2: "laso en walo en loje li lon lipu."
+    junkChips: ["jelo"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Lad os snakke farver!
+
+<List>
+  <Word sl="kule" m="farve, slags; farverig" />
+  <Word sl="walo" m="hvid, bleg" />
+  <Word sl="pimeja" m="sort, mørk" />
+  <Word sl="loje" m="rød, magenta" />
+  <Word sl="jelo" m="gul" />
+  <Word sl="laso" m="grøn, grønblå, blå" />
+</List>
+
+I *sitelen pona* ser mange ord for farver ud, som om de var *sammensætninger*: de består af en trekant fra **󱤞 kule** kombineret med et andet ord, såsom **󱤂 ala**, **󱥰 uta**, **󱥤 suno**, **󱤗 kasi**. Der er mange andre sammensatte glyffer i *sitelen pona*: **󱤶 moku**, **󱥉 pali**, **󱤙 kepeken** har **󱤭 luka**, og **󱤕 kalama**, **󱥌 pana**, **󱥡 sona**, **󱥬 toki** bruger tre streger, vi kalder for *'emittere'*. Stor ros til dig, hvis du opdagede disse mønstre tidligere!
+
+Ordene for farver betyder selvfølgelig et helt *spektrum* af farver, ikke kun dem, der er opremset her. **󱤣 laso** er især interessant: på toki pona er grøn og blå blot nuancer af den samme farve, ligesom på japansk, vietnamesisk, zulu og mange andre sprog. Disse to sætninger giver tilsammen mening på toki pona, men ikke på dansk:
+
+<List>
+  <Word sl="kin" m="også" />
+  <Sentence sl="sewi li laso." m="Himlen er blå." />
+  <Sentence sl="kasi kin li laso." m="Også græsset er grønt." />
+</List>
+
+## Har vi brug for farver?
+
+På toki pona er farver, ligesom køn, ikke brugt så ofte som du nok forventer. I naturlige sprog fungerer farver ofte som nemme genveje til at betyde noget meget mere specifikt: *en hvid løgn*, *det sorte marked*, *en grå zone*. Toki pona kan ikke lide genveje, der ikke kommer til sagen:
+
+<List>
+  <Sentence sl="tomo laso" m="et grønt hus" />
+  <Sentence sl="tomo kasi" m="et drivhus" />
+</List>
+
+Der er en stor forskel mellem et hvidt hus og Det Hvide Hus:
+
+<List>
+  <Sentence sl="tomo walo" m="et hvidt hus" />
+  <Sentence sl="tomo ni la jan li lawa e ma Mewika." m="Det Hvide Hus" />
+</List>
+
+Jeg nævner det kun nu, fordi farver er det mest åbenlyse eksempel, men det samme gælder faktisk enhver sætning! Før du bruger adjektiver, er det ofte nyttigt at stoppe op og tænke: Formidler disse adjektiver den vigtige del, du gerne vil tale om, eller er de bare en forkortelse for noget andet?
+
+<Practice exercises={frontmatter.practice} />

@@ -1,0 +1,48 @@
+---
+slug: "da/large-numbers"
+title: "Q: hvordan taler jeg om store tal?"
+description: ""
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Den sjove ting ved store tal er, at man har brug for dem sjældnere, end man tror.
+
+Der er en stor, betydningsfuld forskel mellem *'En tiger er ved at overfalde os!'* og *'To tigre er ved at overfalde os!'*. Måske kan du bekæmpe én tiger, men det er håbløst med to.
+
+Men sammenlign *'77 tigre er ved at overfalde os!'* og *'78 tigre er ved at overfalde os!'* -- betyder det noget? Dine valg og din skæbne vil stort set være det samme. Så ofte har vi egentlig kun brug for tre ord for tal: **󱥳 wan**, **󱥮 tu**, **󱤼 mute**.
+
+Når man har med små pengebeløb at gøre, kan mere præcision faktisk gøre en forskel. Måske har du råd til noget, der koster 77 kr., men hvis det koster 78 kr., har du én krone for lidt. For tal under eller omkring hundrede, bruger vi ordene **󱥳 wan**, **󱥮 tu**, **󱤭 luka**, **󱤼 mute**, **󱤄 ale**, som om de var en-, to-, fem-, tyve- og hundrede-kroner:
+
+<List>
+    <Sentence sl="mute mute mute luka luka luka tu wan" m="78 (= 20 + 20 + 20 + 5 + 5 + 5 + 2 + 1)" />
+</List>
+
+Men for tal over 100 bliver dette system hurtigt træls:
+
+<List>
+    <Sentence sl="ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale" m="1500 (= 100 + 100 + 100 + ...)" />
+</List>
+
+I 2021, opfandt jan Kapilu og jan Tepo et [udvidet og bagudkompatibelt system](https://sona.pona.la/wiki/nasin_nanpa_pona) for at tale om store tal: i stedet for at lægge 100 til, ganger **󱤄 ale** det foregående tal med 100.
+
+<List>
+    <Sentence sl="luka luka luka ale" m="1500 (= (5 + 5 + 5) * 100)" />
+</List>
+
+Dette er nyttigt for årstal i den gregorianske kalender, og især praktisk for det nuværende årtusinde:
+
+<List>
+    <Sentence sl="mute ale mute luka" m="2025 (= 20 * 100 + 20 + 5)" />
+</List>
+
+Professionelt tip: du kan forestille dig, at du deler tal op i tocifrede par: 2025 -> 20,25, 123456789 -> 1,23,45,67,89, oversætter hvert tocifret tal som 23 og 67 og sætter dem sammen ved at bruge **󱤄 ale**. "At gange med 100" er præcis den samme ting, men forklaret lidt anderledes!
+
+Når du skriver med latinske tegn, kan du også forkorte store tal som W, T, L, M, A:
+
+<List>
+    <Sentence sp="󱥫󱥜󱤽󱤭󱤭󱤭󱥮󱥮󱤄󱤼󱤭󱤭󱤭󱥮󱥮󱤡<br />󱥫󱤺󱤽󱤭󱥮󱥮󱤡<br />󱥫󱥤󱤽󱥳󱤡<br />󱤰󱦐󱥨󱥇󱥣󱤍󱦑<br />󱤧󱤖󱥱󱤉󱤰󱦐󱥎󱥄󱥖󱥱󱤟󱤈󱦑<br />" sl="tenpo sike #LLLTTAMLLLTT la, tenpo mun #LTT la, tenpo suno #W la, ma Tosi li kama utala e ma Posuka." m="Den 1. september, 1939 invaderede Tyskland Polen." />
+</List>

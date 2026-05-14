@@ -1,0 +1,55 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Ord</th>
+      <th>Betydning</th>
+      <th>Nyttige tip</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="wan" />
+      <td>en</td>
+      <td>Husk, hvordan bogstavet <b>w</b> udtales!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="jan" />
+      <td>person</td>
+      <td>Husk, hvordan bogstavet <b>a</b> udtales! </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kute" />
+      <td>høre</td>
+      <td>Husk på, at bogstavet <b>e</b> sidst i ordet ikke udtales svagt! </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>tal</td>
+      <td
+        >I øvrigt skriver vi <b>np</b>, men udtaler det normalt <b>mp</b>!
+      </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>lyd</td>
+      <td>Test din evne til at lægge tryk på den første stavelse!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>firben</td>
+      <td>Ord kan starte med en vokal!</td>
+    </tr>
+  </tbody>
+</table>

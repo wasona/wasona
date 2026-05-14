@@ -1,0 +1,86 @@
+---
+slug: "da/03"
+title: "lektion 3: enkle sætninger"
+description: "Lær li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
+practice:
+- title: "1. Ordforråd"
+  tasks:
+  - l1: "fugl"
+    l2: "waso"
+    junkChips: ["soweli", "pipi", "kasi"]
+  - l1: "landdyr"
+    l2: "soweli"
+    junkChips: ["waso", "pipi", "kasi"]
+  - l1: "insekt"
+    l2: "pipi"
+    junkChips: ["soweli", "waso", "kasi"]
+  - l1: "plante"
+    l2: "kasi"
+    junkChips: ["soweli", "pipi", "waso"]
+  - l1: "at spise"
+    l2: "moku"
+    junkChips: ["kasi", "lukin", "sona"]
+  - l1: "at se"
+    l2: "lukin"
+    junkChips: ["waso", "moku", "sona"]
+  - l1: "at vide"
+    l2: "sona"
+    junkChips: ["pipi", "moku", "lukin"]
+- title: "2. Repetition"
+  tasks:
+  - l1: "Dyret kender insektet."
+    l2: "soweli li sona e pipi."
+    junkChips: ["waso"]
+  - l1: "Insektet spiser planter."
+    l2: "pipi li moku e kasi."
+    junkChips: ["soweli"]
+  - l1: "Fuglen ser planter."
+    l2: "waso li lukin e kasi."
+    junkChips: ["moku"]
+  - l1: "Fuglen kender dyret."
+    l2: "waso li sona e soweli."
+    junkChips: ["pipi"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nu hvor du ved hvordan man læser toki pona, er der tid til at lære ord og sætninger! Her er nogle ord for ting:
+
+<List>
+  <Word sl="soweli" m="landdyr, såsom en kat, en hund, en mus, en elefant" />
+  <Word sl="waso" m="fugl, såsom en due, en gås, en ugle" />
+  <Word sl="pipi" m="insekt, såsom en bille, en myre, en sommerfugl, en edderkop" />
+  <Word sl="kasi" m="plante, såsom en kløver, et birketræ, en kaktus, mos" />
+</List>
+
+Og her er nogle ord for handlinger:
+
+<List>
+  <Word sl="moku" m="at indtage" />
+  <Word sl="lukin" m="at se" />
+  <Word sl="sona" m="at vide, at kende, at forstå" />
+</List>
+
+En meget almindelig sætningsform kaldes en "subjekt-verbum-objekt"-sætning. Det betyder, at én ting (subjektet) gør noget ved en anden ting (objektet). Lad os lave nogle få sætninger:
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="Dyret spiser planter." />
+  <Sentence sl="waso li moku e pipi." m="Fuglen spiser insekter." />
+  <Sentence sl="pipi li lukin e soweli." m="Insektet ser et dyr." />
+  <Sentence sl="waso li sona e kasi." m="Fuglen kender træet." />
+</List>
+
+Her er, hvad vi kan lære:
+
+- Ordrækkefølgen er den samme som på dansk: subjekt, verbum, objekt.
+- **󱤧 li** er en partikel, der starter verbet.
+- **󱤉 e** er en partikel, der starter objektet.
+
+Den danske oversættelse bruger ord og orddele såsom "-en/-et", "en/et", "-er", men de er alle gæt! Toki pona-sætningen siger ikke, om vi taler om "_en_ fugl" eller "fugl_en_". I længere samtaler bliver det rimeligt tydeligt.
+
+(**󱤧 li** og **󱤉 e** ser måske unødvendige ud i starten. Vi kommer til at lære om, hvorfor de er obligatoriske, men for at gøre det, skal vi først lære mere om ordklasser!)
+
+<Practice exercises={frontmatter.practice} />

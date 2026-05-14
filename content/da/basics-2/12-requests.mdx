@@ -1,0 +1,82 @@
+---
+slug: "da/12"
+title: "lektion 12: anmodninger"
+description: "Lær o!"
+practice:
+- title: "1. Repetition"
+  tasks:
+  - l1: "Emma, try to sleep!"
+    l2: "Emma, prøv at sove!"
+    junkChips: ["e"]
+  - l1: "Hey, fugl, syng for mig!"
+    l2: "waso o kalama tawa mi!"
+    junkChips: ["e"]
+  - l1: "Hey, Kenta!"
+    l2: "jan Kenta o!"
+    junkChips: ["li"]
+  - l1: "Tal til Nina!"
+    l2: "o toki tawa jan Nina!"
+    junkChips: ["li"]
+  - l1: "Tegn noget mærkeligt!"
+    l2: "o sitelen e ijo nasa!"
+    junkChips: ["li"]
+  - l1: "Maya, giv mig skeen!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+    junkChips: ["li"]
+    alsoAccept: ["jan Maja o pana e ilo tawa mi!"]
+- title: "2. Yderligere øvelse"
+  tasks:
+  - l1: "Syng noget rart!"
+    l2: "o kalama e ijo pona!"
+    junkChips: ["ilo"]
+    alsoAccept: ["o kalama pona!", "o kalama pona e ijo!"]
+  - l1: "Kom ud af hulen!"
+    l2: "o weka tan lupa ma!"
+    junkChips: ["e"]
+  - l1: "Artiklen burde snakke om Singapore."
+    l2: "lipu o toki e ma Sinkapo."
+    junkChips: ["li"]
+  - l1: "Hey, Noah, din hund vil more sig!"
+    l2: "jan Nowa o, soweli sina li wile musi!"
+    junkChips: ["e"]
+  - l1: "Hey, Iman, bliv venligst i sengen."
+    l2: "jan Iman o awen lon supa lape."
+    junkChips: ["e"]
+    alsoAccept: ["jan Iman o awen lon supa."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+På toki pona er en sætning med **󱤧 li** et faktuelt udsagn. Men sommetider vil vi i stedet gerne fremsætte en anmodning. Anmodninger er en måde at fortælle andre, hvad vi ønsker skal ske. I en anmodning bruger vi **󱥄 o** i stedet for **󱤧 li**:
+
+<List>
+  <Word sl="o" m="starter en anmodning, kommando, instruktion, ønske" />
+  <Sentence sl="ilo li sitelen e pipi." m="Telefonen viser et insekt." />
+  <Sentence sl="ilo o sitelen e waso!" m="Åh, telefon, vis mig venligst en fugl!" />
+</List>
+
+Lad os kigge på nogle flere kommandoer:
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="Folk, læs venligst det gode papir!" />
+  <Sentence sl="soweli mi o moku pona!" m="Min kat, spis venligst godt!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="Må dit barn blive stærkt!" />
+  <Sentence sl="pona o tawa sina!" m="Må godhed følge dig! (Velsignelse være med dig!)" />
+</List>
+
+Du opdager nok, at nogle af sætningerne er delt op ret pænt i to dele:
+* Opfordringen til nogens opmærksomhed (før **󱥄 o**)
+* Selve anmodningen (efter **󱥄 o**)
+
+Vi kan bruge dem adskilt:
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Emma, luk venligst døren!" />
+  <Sentence sl="jan Ema o!" m="Hey, Emma!" />
+  <Sentence sl="o pini e lupa tomo!" m="Luk venligst døren!" />
+</List>
+
+<Practice exercises={frontmatter.practice} />

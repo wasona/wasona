@@ -1,0 +1,106 @@
+---
+slug: "da/25"
+title: "lektion 25: tal"
+description: "Lær nanpa, wan, tu, ale, kipisi!"
+practice:
+- title: "1. Ordforråd"
+  tasks:
+  - l1: "nummer"
+    l2: "nanpa"
+    junkChips: ["mute", "sama", "li"]
+  - l1: "en"
+    l2: "wan"
+    junkChips: ["pini", "nasin", "ni"]
+  - l1: "to"
+    l2: "tu"
+    junkChips: ["sama", "mute", "kipisi"]
+  - l1: "alle"
+    l2: "ale"
+    junkChips: ["kala", "linja", "ala"]
+  - l1: "at dele"
+    l2: "kipisi"
+    junkChips: ["anu", "ken", "weka"]
+- title: "2. Repetition"
+  tasks:
+  - l1: "otte"
+    l2: "luka tu wan"
+    junkChips: ["tu"]
+  - l1: "Du skærer brødet."
+    l2: "sina kipisi e pan."
+    junkChips: ["li"]
+  - l1: "Vi to slutter os sammen."
+    l2: "mi tu li kama wan."
+    junkChips: ["pi"]
+  - l1: "Jeg kan tale tre sprog."
+    l2: "mi sona e toki tu wan."
+    junkChips: ["luka"]
+    alsoAccept: ["mi sona toki tu wan."]
+  - l1: "5 euro"
+    l2: "mani luka pi ma Elopa"
+    junkChips: ["tu"]
+  - l1: "April begynder."
+    l2: "tenpo mun nanpa tu tu li open."
+    junkChips: ["suno"]
+    alsoAccept: ["mun nanpa tu tu li open."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Kardinaltal
+
+Lad os tale om tal!
+
+<List>
+  <Word sl="wan" m="en; forenet" />
+  <Word sl="tu" m="to; delt" />
+  <Word sl="luka" m="fem, hånd" />
+  <Word sl="mute" m="mange" />
+  <Word sl="ale" m="alle, hver" />
+  <Word sl="kipisi" m="stykke, del; at splitte" />
+</List>
+
+Toki pona har ord for 1, 2, 5, men ikke 3 eller 4! Men det er ikke så mærkeligt. Du kan sammenligne **󱥳 wan**, **󱥮 tu**, **󱤭 luka** med enkroner, tokroner og femkroner. Lad os prøve at tælle fra 1 til 10:
+
+<List>
+    <Word sl="wan" m="en" />
+    <Word sl="tu" m="to" />
+    <Word sl="tu wan" m="tre" />
+    <Word sl="tu tu" m="fire" />
+    <Word sl="luka" m="fem" />
+    <Word sl="luka wan" m="seks" />
+    <Word sl="luka tu" m="syv" />
+    <Word sl="luka tu wan" m="otte" />
+    <Word sl="luka tu tu" m="ni" />
+    <Word sl="luka luka" m="ti" />
+</List>
+
+I mange situationer vil det være nok bare at kende små tal. Men hvis du vil tale om køb eller den gregorianske kalender, er der en ekstra side om store tal nederst på siden.
+
+## Ordenstal
+
+Normalt er tal kun adjektiver:
+
+<List>
+    <Word sl="kala wan" m="en fisk" />
+    <Word sl="soko tu tu" m="fire svampe" />
+    <Word sl="mun luka" m="fem måneder" />
+</List>
+
+Men disse er kardinaltal: tal, der beskriver mængde. Der er også *ordenstal*: dem, der beskriver orden. For at lave ordenstal, skal du blot bruge **󱤽 nanpa** + et tal:
+
+<List>
+    <Word sl="nanpa" m="nummer; den n'te" />
+    <Word sl="kala nanpa wan" m="den første fisk" />
+    <Word sl="soko nanpa tu tu" m="den fjerde svamp" />
+    <Word sl="mun nanpa luka" m="den femte måned" />
+</List>
+
+(Forresten er **󱤽 nanpa** særlig! Det behøver ikke **󱥍 pi**.)
+
+<Practice exercises={frontmatter.practice} />
+
+## See also
+* [Q: hvordan taler jeg om store tal?](/da/large-numbers/)

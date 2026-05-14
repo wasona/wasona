@@ -1,0 +1,24 @@
+{
+  "Index": "Indeks",
+  "Next": "Næste",
+  "Previous": "Forrige",
+  "Translation": "Oversættelse",
+
+  "Consonants": "Konsonanter",
+  "Labial": "Labial",
+  "Coronal": "Koronal",
+  "Dorsal": "Dorsal",
+
+  "Vowels": "Vokaler",
+  "Front": "Fortunge",
+  "Central": "Mellemtunge",
+  "Back": "Bagtunge",
+
+  "translate": "Oversæt sætningen",
+  "translate_word": "Hvilken af disse betyder...",
+  "check": "tjek",
+  "continue": "fortsæt",
+  "incorrect": "❌ Ikke helt. Korrekt svar: ",
+  "correct": "✅ Korrekt! Godt gået!",
+  "done": "🎉 Alle øvelser fuldført!"
+}

@@ -1,0 +1,86 @@
+---
+slug: "da/simpler-cartouches"
+title: "Q: navnene ser lange ud i sitelen pona. hvordan kan jeg forkorte dem?"
+description: "Lær om prikker, streger og forkortelser!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Navne i _sitelen pona_ kan være ret lange:
+
+<List>
+  <Sentence sl="lipu Wikipesija" m="Wikipedia" />
+  <Sentence sl="ma Antasika" m="Antarktis" />
+  <Sentence sl="ma Kolonpija" m="Colombia" />
+</List>
+
+Folk har opfundet tre bemærkelsesværdige systemer for at gøre navne nemmere at læse og skrive.
+
+## 1. priksystem: 󱤿󱥠󱤕
+
+Priksystemet, også kaldet _nasin sitelen kalama_, blev skabt af jan Pumiko i 2022. 40–60% af toki pona-talere siger, de bruger det, eller bruger det i nogle situationer. I _nasin sitelen kalama_, deler man et ord op i _morae_: stykker, der er ligesom stavelser, men mindre. Én mora er enten en konsonant+vokal, eller -n efter en konsonant.
+
+- to-ki
+- ja-n
+- a-n-pa
+- si-n-pi-n
+
+Du kan øge antallet af morae, der skal udtales i navnet, ved at tilføje prikker efter et tegn:
+
+<List>
+  <Word sp="󱦐󱤅󱦑" sl="A" />
+  <Word sp="󱦐󱤅󱦜󱦑" sl="An" />
+  <Word sp="󱦐󱤅󱦜󱦜󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦑" sl="S" />
+  <Word sp="󱦐󱥟󱦜󱦑" sl="Si" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦑" sl="Sin" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦑" sl="Sinpi" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
+</List>
+
+(Du bemærker nok en sjov særhed ved dette system: **󱦐󱤅󱦑** danner en hel mora, så en prik tilføjer den næste mora, som er **-n**. Men **󱦐󱥟󱦑** er ikke en hel mora, så en prik fuldender blot den første mora, som er **si**.)
+
+Du kan også bruge et kolon for at markere, at hele ordet skal udtales:
+
+<List>
+  <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
+</List>
+
+Sæt flere tegn sammen i en kartouche, og du kan skrive et navn:
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅󱦜󱥩󱦜󱥜󱦜󱤔󱦜󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
+</List>
+
+* 🎉 du bruger færre tegn til at skrive ét navn!
+* 🙁 kartouchen er stadig forholdsvis lang.
+
+## 2. streger: 󱤿󱥠󱤕󱥍󱤩󱤨
+
+Stregsystemet blev skabt af Sonja Lang i 2024 til brug i officielle breve og bøger, hvor smalle sider kræver kortere navne. I systemet får hvert tegn i kartouchen en streg nedenfor. Du bruger én streg for hver lyd eller bogstav, du vil udtale:
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡&#xF19FE;󱤜&#xF19FD;󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅&#xF19FD;󱥩&#xF19FD;󱥜&#xF19FD;󱤔&#xF19FD;󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
+</List>
+
+## 3. initialsystem
+
+Denne metode blev første gang vist af DavidAR i 2019, og blev afprøvet af Sonja Lang i *lipu su*: "Troldmanden fra Oz (toki pona-udgave)". Først introducerer du en person, et sprog eller et sted med dets fulde navn:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorothy" />
+</List>
+
+Men i følgende sætninger forkorter du navnet til kun det første tegn:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorothy" />
+</List>

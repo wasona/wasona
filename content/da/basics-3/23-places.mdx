@@ -1,0 +1,101 @@
+---
+slug: "da/23"
+title: "lektion 23: steder"
+description: "Lær pi, selo, insa, monsi, sinpin, anpa!"
+practice:
+- title: "1. Ordforråd"
+  tasks:
+  - l1: "ydre skal"
+    l2: "selo"
+    junkChips: ["supa", "len", "poka"]
+  - l1: "indre del"
+    l2: "insa"
+    junkChips: ["poki", "poka", "anpa"]
+  - l1: "foran"
+    l2: "sinpin"
+    junkChips: ["monsi", "anpa", "poka"]
+  - l1: "bag"
+    l2: "monsi"
+    junkChips: ["sinpin", "anpa", "poka"]
+  - l1: "under"
+    l2: "anpa"
+    junkChips: ["insa", "sinpin", "monsi"]
+- title: "2. Repetition"
+  tasks:
+  - l1: "Træets bark beskytter indersiden af en plante."
+    l2: "selo kasi li awen e insa kasi."
+    junkChips: ["pi"]
+  - l1: "Væggene af et hus er beskadigede."
+    l2: "sinpin tomo li pakala."
+    junkChips: ["pi"]
+  - l1: "Væggen af dette hus kræver mursten."
+    l2: "sinpin pi tomo ni li wile e leko."
+    junkChips: ["telo"]
+  - l1: "Sunitas fugl er nuttet."
+    l2: "waso pi jan Sunita li suwi."
+    junkChips: ["e"]
+  - l1: "Belgien er ved siden af Frankrig."
+    l2: "ma Pesije li lon poka pi ma Kanse."
+    junkChips: ["e"]
+  - l1: "Din frø er bag min."
+    l2: "akesi sina li lon monsi pi akesi mi."
+    junkChips: ["e"]
+- title: "3. Yderligere øvelse"
+  tasks:
+  - l1: "Toki pona-fællesskabet vokser."
+    l2: "kulupu pi toki pona li kama suli."
+    junkChips: ["e"]
+  - l1: "Hvor mange folk er der i Egypten?"
+    l2: "jan pi mute seme li lon ma Masu?"
+    junkChips: ["e"]
+  - l1: "Kender du nogen nederlandske folk?"
+    l2: "sina sona ala sona e jan pi ma Netelan?"
+    junkChips: ["seme"]
+  - l1: "Denne bog er af en anonym forfatter."
+    l2: "lipu ni li tan jan pi nimi ala."
+    junkChips: ["e"]
+  - l1: "Ali vil besøge det geografiske institut."
+    l2: "jan Ali li wile tawa tomo pi sona ma."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+I den forrige lektion kiggede vi på **󱥍 pi**. Som du så, er der mange sætninger med to meget fornuftige betydninger, afhængigt af om de har **󱥍 pi** eller ej. Men der er også en masse sætninger, der giver *næsten ingen mening* hvis **󱥍 pi** mangler! Du ser det ofte med navne:
+
+<List>
+  <Sentence sl="soweli pi jan Ema" m="Emmas hund" />
+  <Sentence sl="soweli jan Ema" m="En menneskelignende hund, der hedder Emma (???)" />
+  <Sentence sl="toki pi jan Mili" m="Millies tale" />
+  <Sentence sl="toki jan Mili" m="Et menneskesprog, der hedder Millie (???)" />
+</List>
+
+Hvis du ikke bruger **󱥍 pi**, gælder navnet i stedet for det *første* ord! Og det kan vise sig at være fjollet. Af denne grund finder du ofte **󱥍 pi** i nærheden af navne!
+
+Ofte finder du det også efter ord, der refererer til placeringer, såsom disse nye:
+
+<List>
+  <Word sl="selo" m="hud, skræl, skal, bark" />
+  <Word sl="insa" m="den indre del, centrum, midte" />
+  <Word sl="monsi" m="bagside" />
+  <Word sl="sinpin" m="ansigt, forside, væg" />
+  <Word sl="anpa" m="bund; at besejre" />
+</List>
+
+Lad os bruge dem i nogle sætninger:
+
+<List>
+  <Sentence sl="selo kasi li kiwen." m="Et træs bark er hårdt." />
+  <Sentence sl="selo pi kasi ni li pakala." m="Dette træs bark er beskadiget." />
+  <Sentence sl="soweli li lon insa tomo." m="Katten er inde i huset." />
+  <Sentence sl="o tawa insa pi tomo mi!" m="Gå ind i mit hus!" />
+  <Sentence sl="sinpin pi jan Ali li pona." m="Alis ansigt er pænt." />
+  <Sentence sl="mani li lon anpa pi telo suli." m="Skatten er på bunden af havet." />
+</List>
+
+Professionelt tip: siden **󱥍 pi** kun eksisterer for omgruppering, står det aldrig før kun ét ord! Der står altid mindst to ord efter det.
+
+<Practice exercises={frontmatter.practice} />
