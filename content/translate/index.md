@@ -19,8 +19,6 @@ description: "Help us by translating the course to your language!"
 * [Turkish](https://github.com/wasona/wasona/pull/63) by jan Erd, jan Jasi, nat
 * [Croatian](https://github.com/wasona/wasona/pull/70) by gitingtonhub
 
-**Romanian** -- a volunteer has reached out to me earlier, but have yet to send any translations. If you start a translation into one of these languages, let me know! I'll notify the earlier volunteers, to avoid duplicate work being done.
-
 **Some notes for translators:**
 
 * You can find course files in English [on Github](https://github.com/wasona/wasona/tree/main/content/en). They can be opened in any simple text editor. To translate the course, download the files, and change the text in each one.
