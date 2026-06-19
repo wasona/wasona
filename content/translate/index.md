@@ -17,6 +17,7 @@ description: "Help us by translating the course to your language!"
 * [Dutch](https://github.com/wasona/wasona/pull/57) by akesi Wilin
 * [Turkish](https://github.com/wasona/wasona/pull/63) by jan Erd, jan Jasi, nat
 * [Croatian](https://github.com/wasona/wasona/pull/70) by gitingtonhub
+* [Japanese](https://github.com/wasona/wasona/pull/114) by ijo Jomo
 
 Orphaned: [Korean](https://github.com/wasona/wasona/pull/11)
 
