@@ -1,0 +1,102 @@
+---
+slug: "jp/03"
+title: "第 3 講　簡単な文章"
+description: "li・e・soweli・waso・pipi・kasi・moku・lukin・sona を覚えよう！"
+practice:
+- title: "1. 語彙"
+  tasks:
+  - l1: "鳥"
+    l2: "waso"
+    junkChips: ["soweli", "pipi", "kasi"]
+  - l1: "陸の動物"
+    l2: "soweli"
+    junkChips: ["waso", "pipi", "kasi"]
+  - l1: "虫"
+    l2: "pipi"
+    junkChips: ["soweli", "waso", "kasi"]
+  - l1: "植物"
+    l2: "kasi"
+    junkChips: ["soweli", "pipi", "waso"]
+  - l1: "食べる"
+    l2: "moku"
+    junkChips: ["kasi", "lukin", "sona"]
+  - l1: "見る"
+    l2: "lukin"
+    junkChips: ["waso", "moku", "sona"]
+  - l1: "知る"
+    l2: "sona"
+    junkChips: ["pipi", "moku", "lukin"]
+- title: "2. 復習"
+  tasks:
+  - l1: "動物は虫を知っている。"
+    l2: "soweli li sona e pipi."
+    junkChips: ["waso"]
+  - l1: "虫は草木を食べる。"
+    l2: "pipi li moku e kasi."
+    junkChips: ["soweli"]
+  - l1: "鳥は草木を見る。"
+    l2: "waso li lukin e kasi."
+    junkChips: ["moku"]
+  - l1: "鳥は動物を知っている。"
+    l2: "waso li sona e soweli."
+    junkChips: ["pipi"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+では、トキポナ語の読み方の基本を習ったので、さっそく単語や文法にかかってまいりましょう！　まず、ものを表す単語を四つ覚えましょう。
+
+<List>
+  <Word sl="soweli" m="陸の動物。ネコ、犬、牛、ネズミ、ゾウなど。" />
+  <Word sl="waso" m="鳥。ハト、ガチョウ、フクロウなど。" />
+  <Word sl="pipi" m="虫。カブトムシ、アリ、チョウ、クモなど。" />
+  <Word sl="kasi" m="草木。クローバー、カバノキ、サボテン、コケなど。" />
+</List>
+
+そして、行為を表す単語を三つ覚えましょう。
+
+<List>
+  <Word sl="moku" m="食べる、飲む、吸う" />
+  <Word sl="lukin" m="見る" />
+  <Word sl="sona" m="知る" />
+</List>
+
+{/* A note for translators */}
+{/*
+  When translating word definitions, such as "land animal", "insect", "plant",
+  it's better to use everyday words rather than scientific ones.
+*/}
+
+日本語の文章は、「S が・O を・V した」という「主語－目的語－述語」構造ですが、トキポナ語では、「S が・V した・O を」というように、「主語・述語・目的語」構造です。例文を見てみましょう。
+
+{/* A note for translators */}
+{/*
+  Your language may instead be SOV or VSO. If it is, please draw attention
+  to this difference between your language and Toki Pona.
+*/}
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="動物が草木を食べる。" />
+  <Sentence sl="waso li moku e pipi." m="鳥が虫を食べる。" />
+  <Sentence sl="pipi li lukin e soweli." m="虫が動物を見る。" />
+  <Sentence sl="waso li sona e kasi." m="鳥が草木を知っている。" />
+</List>
+
+ここでのポイント
+- **󱤧 li** は述語の前に来る助詞です。
+- **󱤉 e** は目的語の前に来る助詞です。
+
+トキポナ語では、動詞の活用のようなものはありませんので、「食べる」も「食べている」も「食べた」も同じように書きます。
+
+{/* A note for translators */}
+{/*
+  Your language may not have articles. Your language may have gender markers.
+  You can adjust the bullet point above to better suit your language.
+*/}
+
+(**󱤧 li** and **󱤉 e** may seem unnecessary at first. We will learn about why they are required, but to do that, we first need to learn more about parts of speech!)
+
+<Practice exercises={frontmatter.practice} />

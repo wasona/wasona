@@ -1,0 +1,169 @@
+---
+slug: "jp/08"
+title: "第 8 講　前置詞"
+description: "weka・pana・kama・awen・tawa・lon・tan を覚えよう！"
+practice:
+- title: "1. 語彙"
+  tasks:
+  - l1: "取り除く"
+    l2: "weka"
+    junkChips: ["pana", "kama", "ma"]
+  - l1: "渡す"
+    l2: "pana"
+    junkChips: ["weka", "awen", "sona"]
+  - l1: "来る"
+    l2: "kama"
+    junkChips: ["weka", "awen", "pana"]
+  - l1: "とどまる"
+    l2: "awen"
+    junkChips: ["kama", "weka", "pana"]
+  - l1: "～へ"
+    l2: "tawa"
+    junkChips: ["lon", "e", "tan"]
+  - l1: "～で"
+    l2: "lon"
+    junkChips: ["e", "tan", "tawa"]
+  - l1: "～から"
+    l2: "tan"
+    junkChips: ["tawa", "lon", "e"]
+- title: "2. 復習"
+  tasks:
+  - l1: "イギリスで"
+    l2: "lon ma Inli"
+  - l1: "アリさんへ"
+    l2: "tawa jan Ali"
+  - l1: "あなたは家から虫を取り除く。"
+    l2: "sina weka e pipi tan tomo."
+    junkChips: ["li"]
+  - l1: "私は植物が好きだ。（＝ 植物は私にとっていい。）"
+    l2: "kasi li pona tawa mi."
+    junkChips: ["e"]
+  - l1: "私は鳥に毛虫を与えた。"
+    l2: "mi pana e pipi tawa waso."
+    junkChips: ["li"]
+  - l1: "人は家にとどまる。"
+    l2: "jan li awen lon tomo."
+    junkChips: ["e"]
+  - l1: "ノアさんはフランスに行く。"
+    l2: "jan Nowa li tawa ma Kanse."
+    junkChips: ["e"]
+  - l1: "トロント市はカナダにある。"
+    l2: "ma tomo Towano li lon ma Kanata."
+    junkChips: ["e"]
+    alsoAccept: ["ma Towano li lon ma Kanata."]
+- title: "3. さらに演習"
+  tasks:
+  - l1: "レストランに鳥がいる。"
+    l2: "waso li lon tomo moku."
+    junkChips: ["e"]
+  - l1: "猫が私から逃げてしまった。"
+    l2: "soweli mi li weka tan mi."
+    junkChips: ["e"]
+  - l1: "私がとどまるのはあなたにちなむ。"
+    l2: "mi awen tan sina."
+    junkChips: ["e"]
+  - l1: "地理は私にとって重要だ。"
+    l2: "sona ma li suli tawa mi."
+    junkChips: ["e"]
+  - l1: "サンフランシスコ市はアメリカ合衆国にある。"
+    l2: "ma Sanpansiko li lon ma Mewika."
+    junkChips: ["e"]
+  - l1: "鳥は自分の巣を守る。"
+    l2: "waso li awen e tomo ona."
+    junkChips: ["tawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+国の名前を言えるようになったから、旅について話したくなりますね。しかし、「～へ行った」や「～から来た」はどうやって言うのでしょうか。まずは動詞を学びましょう。
+
+<List>
+  <Word sl="weka" m="取り除く、（～が）去る、いない、遠い" />
+  <Word sl="pana" m="渡す、置く、放つ" />
+  <Word sl="kama" m="来る、参る" />
+  <Word sl="awen" m="とどまる、待つ、残る、守る" />
+</List>
+
+また、動詞の近くには前置詞をよく見かけます。
+
+<List>
+  <Word sl="tawa" m="～へ（行く）、～に向かって、～に対して、～にとって" />
+  <Word sl="lon" m="～に（いる・ある）、～には、～で、～では" />
+  <Word sl="tan" m="～から（来る）、～より、～だから、～にちなんで（いる）、～に基づいて（いる）" />
+</List>
+
+{/* A note for translators */}
+{/*
+  If your language has noun case, please think about
+  how "tawa, lon, tan" compare to your noun cases.
+  The terms "dative case" and "locative case" are
+  especially important to check.
+*/}
+
+A _preposition_ is a word that goes before another word. It tells you how it relates to the sentence. A preposition + the word it attaches is called a _prepositional phrase_:
+**前置詞**は、単語の前について文との関係を表す単語のことを言います。前置詞とその後につく言葉を合わせて**前置詞句**といいます。
+
+<List>
+  <Word sl="tawa soweli" m="動物に向かって" />
+  <Word sl="lon ma" m="陸で、国に" />
+  <Word sl="tan tomo" m="家より" />
+</List>
+
+トキポナ語では、前置詞句は二種類の方法で使うことができます。まず、文の最後に前置詞句を付け足して、場所や向きなどの意味を加えることができます。
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="私は鳥を木に（向かって）置いた。" />
+  <Sentence sl="waso li awen lon kasi." m="鳥は木にとどまった。" />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="あなたは鳥を木から取り除いた。"
+  />
+</List>
+
+また、場所や向きなどの意味だけを伝えたいときは、前置詞句を **󱤧 li** の直後に置いて、直接述語として扱うことができます。前置詞句が述語になった場合、意味は **󱥩 tawa** 「～へ行く」、**󱤬 lon** 「～にいる、～にある」、**󱥧 tan** 「～から来る、～にちなむ、～に基づく」という意味がある。
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="エマさんは日本に行った。" />
+  <Sentence sl="jan Nina li lon ma Lusi." m="ニーナさんはロシアにいる。" />
+  <Sentence sl="jan Mili li tan ma Kanse." m="ミリーさんはフランスから来た。" />
+</List>
+
+例文で練習しましょう。
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="わたしは植物の場に行く。<br />（「植物の場」は文脈によって森を表すかもしれませんし、野原を表すかもしれません。とにかく緑豊かな場所のことですね。）"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="知識は私から去ってしまいました。<br />（＝ 私は忘れました。）"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="かわいい動物は私にとって良い。<br />（＝ 私はかわいい動物が好きだ。）"
+  />
+
+{/* A note for translators */}
+{/*
+  Some languages have a verb "I like ...",
+  other languages have a verb more like "to me it is nice ...".
+  If your language is more like the second group,
+  you might not need the text in brackets.
+*/}
+
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="ノアさんはエマさんに話す。" />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="人はドイツではドイツ語を話す。"
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## See also
+* [Q. 言語や国の固有名詞は覚えないといけないの？](/jp/languages-countries/)
+* [Q. *jan li toki Inli* って、文法おかしくないの？](/jp/named-verbs/)
