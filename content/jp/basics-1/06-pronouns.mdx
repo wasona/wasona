@@ -1,0 +1,147 @@
+---
+slug: "jp/06"
+title: "第 6 講　代名詞"
+description: "ni・mi・sina・ona を覚えよう！"
+practice:
+- title: "1. 語彙"
+  tasks:
+  - l1: "これ"
+    l2: "ni"
+    junkChips: ["mi", "sina", "ona"]
+  - l1: "私"
+    l2: "mi"
+    junkChips: ["ni", "sina", "ona"]
+  - l1: "あなた"
+    l2: "sina"
+    junkChips: ["ni", "mi", "ona"]
+  - l1: "あれ"
+    l2: "ona"
+    junkChips: ["ni", "mi", "sina"]
+- title: "2. 復習"
+  tasks:
+  - l1: "これは甘い草だ。"
+    l2: "ni li kasi suwi."
+    junkChips: ["e"]
+  - l1: "これらは大きな目だ。"
+    l2: "ni li lukin suli."
+    junkChips: ["e"]
+  - l1: "あなたの目は大きい。"
+    l2: "lukin sina li suli."
+    junkChips: ["e"]
+  - l1: "あの鳥は小さい。"
+    l2: "waso ni li lili."
+    junkChips: ["e"]
+  - l1: "意地悪な虫が私の草をむしった。"
+    l2: "pipi ike li moku e kasi mi."
+    junkChips: ["ona"]
+  - l1: "あなたはかわいい。"
+    l2: "sina suwi."
+    junkChips: ["li"]
+  - l1: "私はあの人を見る。"
+    l2: "mi lukin e ona."
+    junkChips: ["li"]
+  - l1: "あの人は良く食べる。"
+    l2: "ona li moku pona."
+    junkChips: ["e"]
+- title: "3. More practice"
+  tasks:
+  - l1: "この強いカブトムシ"
+    l2: "pipi wawa ni"
+    junkChips: ["mi"]
+    alsoAccept: ["pipi ni wawa"]
+  - l1: "私はあなたの力を良く知っている。"
+    l2: "mi sona pona e wawa sina."
+    junkChips: ["li"]
+  - l1: "鳥にまつわる知識は重要だ。"
+    l2: "sona waso li suli."
+    junkChips: ["e"]
+  - l1: "あの人の木は大きすぎる。"
+    l2: "kasi ona li suli ike."
+    junkChips: ["e"]
+  - l1: "あなたの助けは私を強めた。"
+    l2: "pona sina li wawa e mi."
+    junkChips: ["ike"]
+  - l1: "私の小さなかわいいハト"
+    l2: "waso lili suwi mi"
+    junkChips: ["e"]
+    alsoAccept: 
+    - "waso lili mi suwi"
+    - "waso suwi lili mi"
+    - "waso suwi mi lili"
+    - "waso mi suwi lili"
+    - "waso mi lili suwi"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+長い文章や品詞の説明は難しかったですかね。今度のレッスンはもう少しわかりやすく、指をさしていきましょう。
+
+{/* A note for translators */}
+{/*
+  By "pointing at things", I mean standing in a room
+  and pointing a finger at objects in your eyesight. 
+*/}
+
+<List>
+  <Word sl="ni" m="これ、これら、この、それ、それら、その、あれ、あれら、あの" />
+  <Sentence sl="ni li soweli." m="これは動物だ。" />
+  <Sentence sl="ni li kasi." m="これは植物だ。" />
+  <Sentence sl="ni li moku suwi." m="これは甘い食べ物だ。" />
+  <Sentence sl="ni li suli." m="これは重要だ。" />
+  <Sentence sl="ni li pona wawa." m="これはすごく良い。" />
+</List>
+
+この文章には目的語が無いので、**󱤉 e** が必要ありません！　また、「だ。」や「だった。」などは、トキポナ語には訳しません。
+
+{/* A note for translators */}
+{/*
+  Your language may not have a verb that is exactly like 'to be'.
+  If your sentences look more like "I animal", "I important", please consider
+  sentences in the past, or future, or commands, or imaginary situations --
+  it is likely that a 'be'-like verb comes up in those.
+*/}
+
+では、ほかの代名詞も見ていきましょう。
+
+<List>
+  <Word sl="mi" m="私、私たち" />
+  <Word sl="sina" m="あなた、あなたたち" />
+  <Word sl="ona" m="彼、彼女、彼ら、あの人、あの物" />
+</List>
+
+{/* A note for translators */}
+{/*
+  List only the pronouns that are commonly used in daily life.
+  It is likely that your language has more translations for "sina"
+  and fewer translations for "ona" than English.
+*/}
+
+**󱤴 mi**、**󱥞 sina**、**󱥆 ona**、**󱥁 ni** を文で使ってみましょう。
+
+<List>
+  <Sentence sl="kasi ni li suli." m="この木は大きい。" />
+  <Sentence sl="sona sina li wawa." m="あなたの知識はすごい。" />
+  <Sentence sl="pipi ni li pipi mi." m="この虫は私の虫だ。" />
+  <Sentence sl="waso sina li lukin e mi." m="あなたの鳥は私を見る。" />
+  <Sentence sl="waso li moku e pipi ni." m="鳥はこの虫を食べる。" />
+  <Sentence sl="soweli mi li moku e kasi ona." m="私の動物はあの人の草を食べる。" />
+</List>
+
+このような文は今まで扱ってきた文と似ていますね。しかし、**󱤴 mi** や **󱥞 sina** が主語になると、構造が変化します。
+
+<List>
+  <Sentence sl="mi wawa." m="私は強い。" />
+  <Sentence sl="sina lukin e moku." m="あなたは食べ物を見る。" />
+  <Sentence sl="mi sona e kasi suli." m="私は大きな木を知っている。" />
+  <Sentence sl="sina sona e suli kasi." m="あなたは木の大きさを知っている。" />
+</List>
+
+トキポナ語では、**󱤴 mi** や **󱥞 sina** が主語である文が多いので、**󱤴 mi** と **󱥞 sina** の後にあるはずの **󱤧 li** は略されます。
+
+<Practice exercises={frontmatter.practice} />
+
+## 参考
+* [Q. li は「が」と同じ意味なの？](/jp/li-and-is/)
