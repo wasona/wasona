@@ -1,0 +1,108 @@
+---
+slug: "ca/05"
+title: "lliçó 5: categories gramaticals"
+description: "Aprèn com funcionen els substantius, verbs, i adjectius!"
+practice:
+- title: "1. Revisa"
+  tasks:
+  - l1: "un insecte fort"
+    l2: "pipi wawa"
+  - l1: "la força de l'insecte"
+    l2: "wawa pipi"
+  - l1: "un ull gran"
+    l2: "lukin suli"
+  - l1: "bon menjar"
+    l2: "moku pona"
+  - l1: "fabulosament bo"
+    l2: "pona wawa"
+  - l1: "la bona mida"
+    l2: "suli pona"
+  - l1: "massa petit"
+    l2: "lili ike"
+  - l1: "El menjar fa millor els ulls."
+    l2: "moku li pona e lukin."
+    junkChips: ["waso"]
+  - l1: "Els animals saben l'adorabilitat dels ocells."
+    l2: "soweli li sona e suwi waso."
+    junkChips: ["suli"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Potser ja hauràs vist que he presentat la paraula **󱥡 sona** dos cops, primer com a verb 'saber, conèixer', i després com a adjectiu 'savi'. Quina de les dues coses és, doncs? I com se sap?
+
+En realitat, pot ser totes dues coses! Si va amb un nom, és un adjectiu. Si **󱤧 li** l'introdueix com a verb, doncs és un verb. Tot depén de com s'ordenen les paraules!
+
+De fet, es pot dir el mateix de _totes_ les paraules: si és un substantiu, un verb, o un adjectiu, pot ser _qualsevol de les tres coses_! Among the words we've already learned, let's look at some examples:
+
+<List>
+  <Word sl="lukin" m="Sub: ull; V: veure" />
+  <Word sl="moku" m="Sub: aliment; V: consumir, menjar" />
+  <Word sl="sona" m="Sub: coneixement, saviesa; V: conèixer, saber; Adj: coneixedor, savi" />
+  <Word sl="suli" m="Sub: mida; V: engrandir, emfasitzar; Adj: gran, important" />
+  <Word sl="pona" m="Sub: bondat; V: millorar; Adj: bo, agradable" />
+  <Word sl="waso" m="Sub: ocell; V: convertir en ocell; Adj: d'un ocell, com un ocell" />
+</List>
+
+Només he posat *algunes* de les paraules que hem aprés -- les que calenper veure que:
+* Quan **un verb es converteix en substantiu**, sol voler dir l'acte de fer alguna cosa (*coneixement*), o una cosa que és una part crucial de l'acció (*aliment, ull*).
+* Quan **un verb es converteix en adjectiu**, vol dir "que fa alguna cosa" (*gent sàvia ~ gent que sap*).
+* Quan **un nom es converteix en verb**, sol voler dir "convertir en" o "aplicar una cosa a una altra" (*convertir en ocell*).
+* Quan **un nom es converteix en adjectiu**, indica possessió o similaritat (*d'un ocell, com un ocell*)
+* Quan **adjectu es converteix en substantiu**, indica una qualitat (*bondat, mida*).
+* Quan **adjectu es converteix en verb**, vol dir "donar una qualitat" (*millorar, engrandir*).
+
+Però, al parlar, els parlants de toki pona gairebé ni pensem en això! Els tipus de paraules es barregen. Arriba un punt en què ja no penses si una paraula era originalmetn un substantiu, un adjectiu, o un verb. Es converteix en un tot coherent!
+
+Practiquem fent servir aquestes paraules com a substantius, verbs, i adjectius:
+
+<List>
+  <Sentence sl="lukin li pona e sona." m="Els ulls milloren el coneixement." />
+  <Sentence sl="moku li suli e pipi." m="El menjar fa crèixer els insectes." />
+  <Sentence
+    sl="moku li wawa e soweli lili."
+    m="El menjar enforteix l'animal petit."
+  />
+</List>
+
+## L'ordre de les paraules importa!
+
+Ara que qualsevol substantiu pot ser un adjectiu, i qualsevol adjectiu pot ser un substantiu, l'ordre importa molt! Mira com aquestes frases tenen significats diferents:
+
+<List>
+  <Word sl="soweli suli" m="animal gran" />
+  <Word sl="suli soweli" m="la mida d'un animal" />
+  <Sentence
+    sl="soweli suli li sona e suli soweli."
+    m="L'animal gran sap la mida d'un animal."
+  />
+</List>
+
+## li i e també importen!
+
+Recordes com semblava una mica que li i e no calien? Ara sabem que totes les paraules amb significat es poden fer servir tant com a substantiu, com a verb, o com a adjectiu, i per fi veiem com d'importants son. Gràcies a li i e, podem distingir aquestes tres frases tant diferents:
+
+<List>
+  <Word sl="soweli sona" m="animal savi" />
+  <Word sl="sona pona" m="bon coneixement; saber bé" />
+  <Word sl="pona waso" m="bondat de l'ocell" />
+  <Sentence
+    sl="soweli sona li pona e waso."
+    m="L'animal savi ajuda l'ocell."
+  />
+  <Sentence
+    sl="soweli li sona pona e waso."
+    m="L'animal coneix bé l'ocell."
+  />
+  <Sentence
+    sl="soweli li sona e pona waso."
+    m="L'animal sap com de bo és l'ocell."
+  />
+</List>
+
+Si mai et confons per com s'escriu o es llegeix una frase, comença preguntant-te: "On és el subjecte? On és el verb? On és l'objecte?", i tot se separa facilment en trossets!
+
+<Practice exercises={frontmatter.practice} />
