@@ -1,0 +1,55 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Word</th>
+      <th>Meaning</th>
+      <th>Helpful tips</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="kon" />
+      <td>空，空气</td>
+      <td>发音其实是相似的，但是拼写有区别。</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="jo" />
+      <td>有</td>
+      <td>发音其实是相似的，但是拼写截然不同！</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="jan" />
+      <td>人</td>
+      <td>道本语中的发音是不变的。</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>数</td>
+      <td>
+        尽管我们拼写上是 *np*，但是一般读作 *mp* 更加通顺。
+      </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>声音</td>
+      <td>尝试把重音读出来。</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>蜥蜴</td>
+      <td>词可以以元音开始。</td>
+    </tr>
+  </tbody>
+</table>
