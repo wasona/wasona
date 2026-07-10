@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Wasona</string>
+    <string name="title_activity_main">Wasona</string>
+    <string name="package_name">com.wasona.app</string>
+    <string name="custom_url_scheme">com.wasona.app</string>
+</resources>
