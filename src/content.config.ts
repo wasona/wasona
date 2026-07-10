@@ -1,10 +1,13 @@
 import { glob } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 
-// Duplicating @/lib/exercise.ts
-// Current version of zod for some reason really hates
-// trying to import {task, exercise} despite them being
-// defined identically.
+// Intentionally duplicates the `task`/`exercise` schema from @/lib/exercise.ts.
+// That file builds its schema with `z` from the standalone "zod" package, but a
+// content-collection schema must be built with the *same* zod instance Astro
+// ships via "astro:content" — passing the foreign instance's schema here fails.
+// A shared makeSchemas(z) factory would dedupe the fields, but its `z` param
+// would have to be untyped, collapsing `z.infer<Task>` to `any` and losing type
+// safety everywhere Task is used. Keeping the small duplication is the better trade.
 const task = z
   .object({
     l1: z.string(),

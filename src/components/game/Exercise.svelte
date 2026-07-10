@@ -107,31 +107,33 @@
     {#if allDone}
       <h2>{_("done")}</h2>
     {:else}
-      {#if currentTask.l2.split(" ").length == 1}
-        <h2>{_("translate_word")}</h2>
-        <h3>{currentTask.l1}</h3>
+      {#key currentIndex}
+        {#if currentTask.l2.split(" ").length == 1}
+          <h2>{_("translate_word")}</h2>
+          <h3>{currentTask.l1}</h3>
 
-        <ChooseTask
-          task={currentTask}
-          setAssembledSentence={(words: string[]) =>
-            (assembledSentence = words)}
-          locked={checked}
-          setKeyCallback={setTaskKeyCallback}
-          checkOrContinueCallback={checkOrContinue}
-        />
-      {:else}
-        <h2>{_("translate")}</h2>
-        <h3>{currentTask.l1}</h3>
+          <ChooseTask
+            task={currentTask}
+            setAssembledSentence={(words: string[]) =>
+              (assembledSentence = words)}
+            locked={checked}
+            setKeyCallback={setTaskKeyCallback}
+            checkOrContinueCallback={checkOrContinue}
+          />
+        {:else}
+          <h2>{_("translate")}</h2>
+          <h3>{currentTask.l1}</h3>
 
-        <ChipTask
-          task={currentTask}
-          setAssembledSentence={(words: string[]) =>
-            (assembledSentence = words)}
-          locked={checked}
-          setKeyCallback={setTaskKeyCallback}
-          checkOrContinueCallback={checkOrContinue}
-        />
-      {/if}
+          <ChipTask
+            task={currentTask}
+            setAssembledSentence={(words: string[]) =>
+              (assembledSentence = words)}
+            locked={checked}
+            setKeyCallback={setTaskKeyCallback}
+            checkOrContinueCallback={checkOrContinue}
+          />
+        {/if}
+      {/key}
 
       <div class="footer">
         <button

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { encode } from "@/lib/ucsur";
-  import { KALAMA } from "@/lib/audio";
+  import { shuffleArray, audioLink, play } from "@/lib/game";
   import type { Task } from "@/lib/exercise";
 
   export let task: Task;
@@ -14,22 +14,8 @@
   let options: string[] = [];
   let selected = "";
 
-  let sfx_yes: HTMLAudioElement | null = null;
-  let sfx_no: HTMLAudioElement | null = null;
-  let sfx_done: HTMLAudioElement | null = null;
-
   // Emit assembled sentence changes
   $: setAssembledSentence([selected]);
-
-  // Shuffle helper
-  function shuffleArray<T>(array: T[]): T[] {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-  }
 
   let input = "";
 
@@ -47,13 +33,11 @@
   function handleCharacterInput(e: Event) {
     if (e.key === "Backspace") input = input.slice(0, -1);
 
-    if (e.key == " " && input != "") e.preventDefault(); // It scrolls by default
+    if (e.key == " ") e.preventDefault(); // It scrolls by default
 
-    console.log(e.key);
     let key = e.key;
     if (key == "Enter") key = " "; // A bit hackish, but it's fine
     if (key.length !== 1) return; // In this case, it must be something non-printable
-    console.log(key);
 
     let candidates = getInputCandidates(input + key);
 
@@ -78,7 +62,6 @@
 
   function handleKeyInput(e) {
     if (e.key == "Enter" && input == "") {
-      console.log(123);
       checkOrContinueCallback();
       return;
     }
@@ -96,23 +79,7 @@
   onMount(() => {
     setKeyCallback(handleKeyInput);
     isMounted = true;
-    if (typeof Audio !== "undefined") {
-      sfx_yes = new Audio(`${KALAMA}/sfx/yes.mp3`);
-      sfx_no = new Audio(`${KALAMA}/sfx/no.mp3`);
-      sfx_done = new Audio(`${KALAMA}/sfx/done.mp3`);
-    }
   });
-
-  function audioLink(word: string) {
-    word = word.replaceAll(/[\.,\?\!\:]/g, "");
-    const dir = word === word.toLowerCase() ? "words" : "names";
-    return `${KALAMA}/jan-lakuse/${dir}/${word}.mp3`;
-  }
-
-  function play(word: string) {
-    const audio = document.getElementById(`audio-${word}`);
-    if (audio instanceof HTMLAudioElement) audio.play();
-  }
 
   function selectOption(option: string) {
     if (locked) return;
@@ -124,7 +91,7 @@
 
 <div class="container">
   {#each options as option, index}
-    <audio id={"audio-" + option} preload="auto" src={audioLink(option)}
+    <audio id={"audio-" + option} preload="none" src={audioLink(option)}
     ></audio>
     {#if selected != option}
       <button class="chip" on:click={() => selectOption(option)}>

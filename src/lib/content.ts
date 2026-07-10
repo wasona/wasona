@@ -4,8 +4,11 @@ import { type CollectionEntry, getCollection } from "astro:content";
 
 export const by =
   <T>(key: (x: T) => any, ascending: boolean = true) =>
-  (a: T, b: T) =>
-    (ascending ? 1 : -1) * (key(a) > key(b) ? 1 : -1);
+  (a: T, b: T) => {
+    const ka = key(a);
+    const kb = key(b);
+    return (ascending ? 1 : -1) * (ka < kb ? -1 : ka > kb ? 1 : 0);
+  };
 
 const POSTS = "content/";
 
@@ -19,13 +22,19 @@ export const posts = await getCollection("content");
 //   return [...rawLangs].sort();
 // })();
 
+export const postsById = new Map(posts.map((post) => [post.id, post]));
+
+// Group posts by lang in a single pass, then build prev/next links per lang.
+const postsByLang = posts.reduce<Record<string, typeof posts>>((acc, post) => {
+  (acc[getLang(post)] ??= []).push(post);
+  return acc;
+}, {});
+
 export const prevnexts = Object.fromEntries(
   langs.map((lang) => {
-    const langPosts = posts
-      .filter((post) => getLang(post) === lang)
-      .sort(by((post) => post.filePath))
-      .filter((post) => post.id.split("/").length > 1)
-      .filter((post) => post.id !== "/"); // filter away landing pages
+    const langPosts = (postsByLang[lang] ?? [])
+      .filter((post) => post.id.split("/").length > 1) // filter away landing pages
+      .sort(by((post) => post.filePath));
     return [
       lang,
       Object.fromEntries(

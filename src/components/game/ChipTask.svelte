@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { tokeniseSentence, type Task } from "@/lib/exercise";
-  import { KALAMA } from "@/lib/audio";
+  import { shuffleArray, audioLink, play } from "@/lib/game";
 
   export let task: Task;
   export let locked: boolean;
@@ -40,7 +40,7 @@
     }
 
     if (locked) return;
-    if (e.key == " " && input != "") e.preventDefault(); // It scrolls by default
+    if (e.key == " ") e.preventDefault(); // It scrolls by default
 
     if (e.key === "Backspace") {
       if (input == "") {
@@ -63,8 +63,7 @@
 
     if (candidates.length === 0) return;
 
-    console.log(e);
-    if (key == " " || key == "Enter") {
+    if (key == " ") {
       if (candidates.length !== 1) return;
       addAssembled(candidates[0]); // It's up to addAssembled to clear the input
       return;
@@ -84,16 +83,6 @@
   // Derived indices of unused words
   $: unused = words.map((_, i) => i).filter((i) => !assembled.includes(i));
 
-  // Shuffle helper
-  function shuffleArray<T>(array: T[]): T[] {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-  }
-
   function appended(array: number[], element: number): number[] {
     return [...array, element];
   }
@@ -106,17 +95,6 @@
 
   function without(array: number[], element: number): number[] {
     return array.filter((c) => c !== element);
-  }
-
-  function play(word: string) {
-    const audio = document.getElementById(`audio-${word}`);
-    if (audio instanceof HTMLAudioElement) audio.play();
-  }
-
-  function audioLink(word: string) {
-    word = word.replaceAll(/[\.,\?\!\:]/g, "");
-    const dir = word === word.toLowerCase() ? "words" : "names";
-    return `${KALAMA}/jan-lakuse/${dir}/${word}.mp3`;
   }
 
   // Initialize on exercise change
@@ -184,7 +162,7 @@
   <!-- Hidden audio elements -->
   <div style="display: none;">
     {#each [...new Set(words)] as word}
-      <audio id={"audio-" + word} preload="auto" src={audioLink(word)}></audio>
+      <audio id={"audio-" + word} preload="none" src={audioLink(word)}></audio>
     {/each}
   </div>
 

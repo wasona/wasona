@@ -51,11 +51,6 @@ const _ = (text: string) => locales[Astro.url.pathname.split("/")[1]][text];
     background-color: var(--bg-2);
   }
 </style>
-<style is:global>
-  tabbed-box *:nth-child(even) {
-    background-color: var(#400);
-  }
-</style>
 <div id={`tabbed-${id}`} class="tabbed-sp">
   <div class="tabbed-selector">
     <button class="button-sp" onclick={onclick("sp")}>sitelen pona</button>

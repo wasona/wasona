@@ -1,5 +1,5 @@
 ---
-import { posts } from "@/lib/content";
+import { postsById } from "@/lib/content";
 
 // import fs from "fs";
 
@@ -16,7 +16,7 @@ const { url } = Astro.props;
 //   : { img: "", title: "", desc: "" };
 
 let img = `/icons/${url.split("/")[1]}.png`;
-let post = posts.find((post) => post.id == url)!;
+let post = postsById.get(url)!;
 let title = post.data.title;
 let desc = post.data.description;
 ---
