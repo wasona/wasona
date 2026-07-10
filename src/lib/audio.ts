@@ -1,4 +1,9 @@
-export const KALAMA = "https://raw.githubusercontent.com/wasona/kalama/main";
+// Base URL for the `kalama` audio assets (words, names, sfx).
+// Defaults to the remote GitHub mirror used by the website. For the Android/app
+// build, set PUBLIC_KALAMA_BASE to a bundled local path so audio works offline.
+export const KALAMA =
+  import.meta.env.PUBLIC_KALAMA_BASE ??
+  "https://raw.githubusercontent.com/wasona/kalama/main";
 
 export const ipaRecordings: Record<string, string> = {
   m: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Bilabial_nasal.ogg",

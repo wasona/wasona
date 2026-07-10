@@ -1,3 +1,26 @@
+/* Self-hosted RTL fonts (replaces the Google Fonts CDN links) so Hebrew and
+   Arabic render offline in the Android/app build. The .woff2 files live in
+   src/styles/fonts/ and are bundled by Vite (which resolves these relative
+   URLs). The unicode-range keeps them from downloading on Latin-only pages. */
+@font-face {
+    font-family: "Noto Sans Hebrew";
+    src: url("./styles/fonts/noto-sans-hebrew.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+@font-face {
+    font-family: "Noto Sans Arabic";
+    src: url("./styles/fonts/noto-sans-arabic.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891,
+        U+0898-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41,
+        U+FB50-FDFF, U+FE70-FEFF;
+}
+
 :root {
     --accent: #d46000;
     --accent-1: #7d3900;
@@ -29,4 +52,12 @@
 
 .inputmatch {
     color: #0eb90e;
+}
+
+/* Keep content clear of the status bar, notch and rounded corners when the
+   app draws edge-to-edge (viewport-fit=cover). Zero on the web, where the
+   safe-area insets resolve to 0. */
+body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+        env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
