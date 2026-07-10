@@ -26,17 +26,31 @@ const prevnext = post.filePath!.includes("index.md")
   description={post.data.description}
   dir={["he", "ar"].includes(lang) ? "rtl" : "ltr"}
 >
-  <!-- Noto Sans Hebrew -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap"
-    rel="stylesheet"
-    slot="head"
-  />
-  <!-- Noto Sans Arabic -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
+  {/* Hebrew (Noto Sans Hebrew) and Arabic (Noto Sans Arabic) are self-hosted
+      via @font-face in global.css, so RTL text renders offline in the app. */}
   <PageNav prevnext={prevnext} current={post.id} slot="pagenav" />
   <Content />
 </Layout>
+
+<script>
+  // Inside the native (Capacitor) shell, open off-origin links in the system
+  // browser instead of navigating the WebView away from the app. Inert on the
+  // plain website — links behave normally there. Uses the Capacitor global so
+  // there is no build-time dependency before Capacitor is installed.
+  document.addEventListener("click", (event) => {
+    const cap = (window as any).Capacitor;
+    if (!cap?.isNativePlatform?.()) return;
+
+    const anchor = (event.target as HTMLElement | null)?.closest?.("a");
+    const href = anchor?.getAttribute("href");
+    if (!href) return;
+
+    const target = new URL(href, window.location.href);
+    if (target.origin === window.location.origin) return; // internal → in-app
+
+    event.preventDefault();
+    const browser = cap.Plugins?.Browser;
+    if (browser?.open) browser.open({ url: target.href });
+    else window.open(target.href, "_blank");
+  });
+</script>
