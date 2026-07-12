@@ -9,7 +9,12 @@
     "astro": "astro",
     "cap:sync": "astro build && cap sync android",
     "cap:open": "cap open android",
-    "cap:run": "astro build && cap sync android && cap run android"
+    "cap:run": "astro build && cap sync android && cap run android",
+    "cap:assets": "capacitor-assets generate --android --iconBackgroundColor '#d46000' --iconBackgroundColorDark '#d46000' --splashBackgroundColor '#ffffff' --splashBackgroundColorDark '#3c200a'",
+    "cap:apk": "npm run cap:sync && android/gradlew -p android assembleDebug",
+    "cap:install": "npm run cap:sync && android/gradlew -p android installDebug",
+    "cap:launch": "adb shell am start -n com.wasona.app/.MainActivity",
+    "cap:deploy": "npm run cap:install && npm run cap:launch"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.4",
@@ -23,6 +28,11 @@
     "svelte": "^5.55.5"
   },
   "devDependencies": {
+    "@capacitor/assets": "github:AcipenserSturio/capacitor-assets#chore/modernize-deps",
     "@capacitor/cli": "^8.4.1"
+  },
+  "allowScripts": {
+    "sharp@0.32.6": true,
+    "sharp@0.34.5": true
   }
 }
