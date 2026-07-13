@@ -1,0 +1,70 @@
+
+<script>
+  // Inside the native (Capacitor) shell, open off-origin links in the system
+  // browser instead of navigating the WebView away from the app. Inert on the
+  // plain website — links behave normally there. Uses the Capacitor global so
+  // there is no build-time dependency before Capacitor is installed.
+  document.addEventListener("click", (event) => {
+    const cap = (window as any).Capacitor;
+    if (!cap?.isNativePlatform?.()) return;
+
+    const anchor = (event.target as HTMLElement | null)?.closest?.("a");
+    if (!anchor?.getAttribute("href")) return;
+
+    // Read the browser-resolved absolute URL off the anchor. Wrap in try/catch
+    // because a malformed href can make the URL parser throw — in that case
+    // just let the WebView handle the click normally.
+    let target: URL;
+    try {
+      target = new URL(anchor.href);
+    } catch {
+      return;
+    }
+
+    // Off-origin → open http(s) in the system browser instead of navigating
+    // the WebView away from the app. Other schemes (mailto:, tel:, …) fall
+    // through to the OS default handler.
+    if (target.origin !== window.location.origin) {
+      if (target.protocol === "http:" || target.protocol === "https:") {
+        event.preventDefault();
+        const browser = cap.Plugins?.Browser;
+        if (browser?.open) browser.open({ url: target.href });
+        else window.open(target.href, "_blank");
+      }
+      return;
+    }
+
+    // Internal → in-app. Capacitor's local asset server serves files by exact
+    // path: it maps "/" to index.html and serves anything with a file
+    // extension, but it does NOT resolve a directory route like "/en/01/" or
+    // "/en/01" to "/en/01/index.html" — its html5mode fallback silently
+    // returns the root page instead. Astro's static build emits extensionless
+    // pretty URLs, so rewrite any internal route without a file extension to
+    // its concrete index.html before navigating. Skip same-page links so
+    // in-page "#" anchors still scroll rather than reload.
+    const path = target.pathname;
+    const lastSegment = path.split("/").pop() ?? "";
+    if (!lastSegment.includes(".") && path !== window.location.pathname) {
+      event.preventDefault();
+      const dir = path.endsWith("/") ? path : path + "/";
+      window.location.assign(dir + "index.html" + target.search + target.hash);
+    }
+  });
+
+  // Hardware back button: navigate WebView history like a browser instead of
+  // Android's default (pop the task → minimise the app). Capacitor core does
+  // nothing with the back button; the @capacitor/app plugin is what forwards
+  // the native press to this "backButton" event. `canGoBack` reflects the
+  // WebView history — at the first page of the session there's nothing to go
+  // back to, so we exit rather than trap the user in the app.
+  {
+    const cap = (window as any).Capacitor;
+    const app = cap?.Plugins?.App;
+    if (cap?.isNativePlatform?.() && app?.addListener) {
+      app.addListener("backButton", ({ canGoBack }: { canGoBack: boolean }) => {
+        if (canGoBack) window.history.back();
+        else app.exitApp();
+      });
+    }
+  }
+</script>

@@ -2,6 +2,8 @@
 import "selo-components/common.css"; // has to be above site-specific css
 
 import PageNav from "@/components/PageNav.astro";
+import SessionRestore from "@/components/capacitor/SessionRestore.astro";
+import AndroidNav from "@/components/capacitor/AndroidNav.astro";
 import "@/global.css";
 import { getLang, posts, prevnexts } from "@/lib/content";
 import { render } from "astro:content";
@@ -26,31 +28,8 @@ const prevnext = post.filePath!.includes("index.md")
   description={post.data.description}
   dir={["he", "ar"].includes(lang) ? "rtl" : "ltr"}
 >
-  {/* Hebrew (Noto Sans Hebrew) and Arabic (Noto Sans Arabic) are self-hosted
-      via @font-face in global.css, so RTL text renders offline in the app. */}
+  <SessionRestore slot="head"></SessionRestore>
   <PageNav prevnext={prevnext} current={post.id} slot="pagenav" />
   <Content />
 </Layout>
-
-<script>
-  // Inside the native (Capacitor) shell, open off-origin links in the system
-  // browser instead of navigating the WebView away from the app. Inert on the
-  // plain website — links behave normally there. Uses the Capacitor global so
-  // there is no build-time dependency before Capacitor is installed.
-  document.addEventListener("click", (event) => {
-    const cap = (window as any).Capacitor;
-    if (!cap?.isNativePlatform?.()) return;
-
-    const anchor = (event.target as HTMLElement | null)?.closest?.("a");
-    const href = anchor?.getAttribute("href");
-    if (!href) return;
-
-    const target = new URL(href, window.location.href);
-    if (target.origin === window.location.origin) return; // internal → in-app
-
-    event.preventDefault();
-    const browser = cap.Plugins?.Browser;
-    if (browser?.open) browser.open({ url: target.href });
-    else window.open(target.href, "_blank");
-  });
-</script>
+<AndroidNav></AndroidNav>

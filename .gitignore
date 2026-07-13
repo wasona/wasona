@@ -1,6 +1,11 @@
 # build output
 dist/
 
+# kalama audio: fetched at build time by scripts/fetch-kalama.mjs, never
+# committed (kept in a separate repo to keep binary blobs out of history)
+/public/kalama/
+/.cache/
+
 # generated types
 .astro/
 

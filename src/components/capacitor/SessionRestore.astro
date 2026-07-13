@@ -1,0 +1,41 @@
+
+{/* Session restore (native app only): reopen the last page the user was on.
+    Runs inline in <head>, synchronously, before the body paints — like the
+    dark-mode script — so a cold start jumps straight to the saved page with
+    no flash of the home page first. Inert on the plain website. */}
+<script is:inline>
+  (function () {
+    const cap = window.Capacitor;
+    // Website shares the wasona.com origin, so only the Capacitor global can
+    // tell app from web. Never touch navigation on the plain site.
+    if (!cap?.isNativePlatform?.()) return;
+
+    const KEY = "wasona:lastPath";
+    const BOOTED = "wasona:booted";
+    const here = location.pathname + location.search + location.hash;
+
+    // Restore only once, on a fresh WebView (cold app start). sessionStorage
+    // is cleared when the WebView is destroyed (app killed) but survives
+    // in-app navigation and background/resume, so it flags "this launch is
+    // already handled" — letting the user browse to the home page mid-session
+    // without being bounced back to their last lesson.
+    if (!sessionStorage.getItem(BOOTED)) {
+      sessionStorage.setItem(BOOTED, "1");
+      const saved = localStorage.getItem(KEY);
+      // Treat "/" and "/index.html" as the same page so we never reload the
+      // landing page onto itself.
+      const canon = (p) =>
+        p.replace(/index\.html$/, "").replace(/\/$/, "") || "/";
+      if (saved && canon(saved.split(/[?#]/)[0]) !== canon(location.pathname)) {
+        // In-app links are already rewritten to concrete ".../index.html"
+        // paths (Capacitor's asset server won't resolve directory routes), so
+        // the saved path is directly servable — replace() straight to it.
+        location.replace(saved);
+        return; // stop before recording the entry page
+      }
+    }
+
+    // Remember where we are for the next cold start.
+    localStorage.setItem(KEY, here);
+  })();
+</script>
