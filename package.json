@@ -22,6 +22,7 @@
     "@astrojs/sitemap": "^3.3.0",
     "@astrojs/svelte": "^8.0.5",
     "@capacitor/android": "^8.4.1",
+    "@capacitor/app": "^8.1.0",
     "@capacitor/core": "^8.4.1",
     "astro": "^6.0.0",
     "selo-components": "github:AcipenserSturio/selo-components",

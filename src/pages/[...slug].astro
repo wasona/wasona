@@ -2,6 +2,8 @@
 import "selo-components/common.css"; // has to be above site-specific css
 
 import PageNav from "@/components/PageNav.astro";
+import SessionRestore from "@/components/capacitor/SessionRestore.astro";
+import AndroidNav from "@/components/capacitor/AndroidNav.astro";
 import "@/global.css";
 import { getLang, posts, prevnexts } from "@/lib/content";
 import { render } from "astro:content";
@@ -26,61 +28,8 @@ const prevnext = post.filePath!.includes("index.md")
   description={post.data.description}
   dir={["he", "ar"].includes(lang) ? "rtl" : "ltr"}
 >
-  {/* Hebrew (Noto Sans Hebrew) and Arabic (Noto Sans Arabic) are self-hosted
-      via @font-face in global.css, so RTL text renders offline in the app. */}
+  <SessionRestore slot="head"></SessionRestore>
   <PageNav prevnext={prevnext} current={post.id} slot="pagenav" />
   <Content />
 </Layout>
-
-<script>
-  // Inside the native (Capacitor) shell, open off-origin links in the system
-  // browser instead of navigating the WebView away from the app. Inert on the
-  // plain website — links behave normally there. Uses the Capacitor global so
-  // there is no build-time dependency before Capacitor is installed.
-  document.addEventListener("click", (event) => {
-    const cap = (window as any).Capacitor;
-    if (!cap?.isNativePlatform?.()) return;
-
-    const anchor = (event.target as HTMLElement | null)?.closest?.("a");
-    if (!anchor?.getAttribute("href")) return;
-
-    // Read the browser-resolved absolute URL off the anchor. Wrap in try/catch
-    // because a malformed href can make the URL parser throw — in that case
-    // just let the WebView handle the click normally.
-    let target: URL;
-    try {
-      target = new URL(anchor.href);
-    } catch {
-      return;
-    }
-
-    // Off-origin → open http(s) in the system browser instead of navigating
-    // the WebView away from the app. Other schemes (mailto:, tel:, …) fall
-    // through to the OS default handler.
-    if (target.origin !== window.location.origin) {
-      if (target.protocol === "http:" || target.protocol === "https:") {
-        event.preventDefault();
-        const browser = cap.Plugins?.Browser;
-        if (browser?.open) browser.open({ url: target.href });
-        else window.open(target.href, "_blank");
-      }
-      return;
-    }
-
-    // Internal → in-app. Capacitor's local asset server serves files by exact
-    // path: it maps "/" to index.html and serves anything with a file
-    // extension, but it does NOT resolve a directory route like "/en/01/" or
-    // "/en/01" to "/en/01/index.html" — its html5mode fallback silently
-    // returns the root page instead. Astro's static build emits extensionless
-    // pretty URLs, so rewrite any internal route without a file extension to
-    // its concrete index.html before navigating. Skip same-page links so
-    // in-page "#" anchors still scroll rather than reload.
-    const path = target.pathname;
-    const lastSegment = path.split("/").pop() ?? "";
-    if (!lastSegment.includes(".") && path !== window.location.pathname) {
-      event.preventDefault();
-      const dir = path.endsWith("/") ? path : path + "/";
-      window.location.assign(dir + "index.html" + target.search + target.hash);
-    }
-  });
-</script>
+<AndroidNav></AndroidNav>
