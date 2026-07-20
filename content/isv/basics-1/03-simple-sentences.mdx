@@ -31,7 +31,7 @@ practice:
   - l1: "Zvěr znaje žuželku."
     l2: "soweli li sona e pipi."
     junkChips: ["waso"]
-  - l1: "Žuželka jě rastliny."
+  - l1: "Žuželka jedaje rastliny."
     l2: "pipi li moku e kasi."
     junkChips: ["soweli"]
   - l1: "Ptica vidi rastliny."
@@ -47,40 +47,40 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-Nyně, kogda znajete, kako čitati toki ponu, čas jest naučiti se slovam i rěčenjam! Tu jest několiko slov za veči:
+Nyně vy znajete, kako čitati toki ponu. Nastal čas že by naučiti se slovam i rěčenjam! Tu jest několiko slov za prědmety:
 
 <List>
-  <Word sl="soweli" m="zvěr (suhozemna životina), napriklad kot, pes, krava, myš, slon" />
+  <Word sl="soweli" m="zvěr, napriklad kot, pes, krava, myš, slon" />
   <Word sl="waso" m="ptica, napriklad golub, gus, sova" />
   <Word sl="pipi" m="žuželka, napriklad žuk, mravka, motylj, pavuk" />
-  <Word sl="kasi" m="rastlina, napriklad koničina, brěza, kaktus, moh" />
+  <Word sl="kasi" m="rastlina, napriklad trava, brěza, kaktus, moh" />
 </List>
 
 A tu jest několiko slov za dějanja:
 
 <List>
-  <Word sl="moku" m="spotrěbovati" />
+  <Word sl="moku" m="spotrěbiti, to jest izpiti ili sjesti" />
   <Word sl="lukin" m="viděti" />
   <Word sl="sona" m="znati" />
 </List>
 
-Velmi česty tip rěčenja zovemo "podmet-glagol-predmet". To znači, že jedna věč (podmet) dělaje něčto drugoj veči (predmetu). Sdělajmo několiko rěčenij:
+Mnogo česty tip rěčenja zovemo "podmet-glagol-prědmet". To znači, že jedna věč (podmet) dělaje něčto drugoj veči (prědmetu). Sdělajmo několiko rěčenij:
 
 <List>
-  <Sentence sl="soweli li moku e kasi." m="Zvěr jě rastliny." />
-  <Sentence sl="waso li moku e pipi." m="Ptica jě žuželky." />
+  <Sentence sl="soweli li moku e kasi." m="Zvěr jedaje rastliny." />
+  <Sentence sl="waso li moku e pipi." m="Ptica jedaje žuželky." />
   <Sentence sl="pipi li lukin e soweli." m="Žuželka vidi zvěra." />
   <Sentence sl="waso li sona e kasi." m="Ptica znaje drěvo." />
 </List>
 
 Tu jest, čto možemo primětiti:
 
-- Poredok slov jest taky sam kako v medžuslovjanskom: podmet, glagol, predmet. (Ale na razliku od medžuslovjanskogo, tutoj poredok jest nezměnny.)
+- Poredok slov jest taky sam kako čěsto v medžuslovjanskom: podmet, glagol, prědmet. (Ale na razliku od medžuslovjanskogo, tutoj poredok jest neizměnlivy.)
 - **󱤧 li** jest čestica, ktora označaje glagol.
-- **󱤉 e** jest čestica, ktora označaje predmet.
+- **󱤉 e** jest čestica, ktora označaje prědmet.
 
-V prěvodu na medžuslovjansky my raz vidimo jedninu, raz množinu, ale to sut toliko domysly! Rěčenje v toki poně ne označaje, či govorimo o jednoj ptici ili o mnogih pticah. Toki pona ne razlikuje čislo, rod ili čas. V dolgšem razgovoru to obyčno jest jasno iz konteksta!
+V prěvodu na medžuslovjansky my poněkogda vidimo jedninu, poněkogda množinu, ale to sut toliko domysly! Rěčenje v toki poně ne označaje, či govorimo o jednoj ptici ili o mnogyh pticah. Toki pona ne izražaje čislo, rod ili čas. V dolgom razgovoru to obyčno jest vědomo iz konteksta!
 
-(**󱤧 li** i **󱤉 e** izprva mogut sdavati se nepotrěbnymi. My uznajemo, začto oni sut potrěbne, ale za to najprvo trěba naučiti se vyše o čestih molvy!)
+(**󱤧 li** i **󱤉 e** izprva mogut sdavati se nepotrěbnymi. My uznajemo, začto oni sut potrěbne, ale za to najprvo trěba naučiti se vyše ob imennikah, glagolah, i pridavnikah!)
 
 <Practice exercises={frontmatter.practice} />
