@@ -1,0 +1,60 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Slovo</th>
+      <th>Značenje</th>
+      <th>Koristne sověty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="jan" />
+      <td>člověk</td>
+      <td>Zapamětajte izgovor bukvy <b>j</b>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="ni" />
+      <td>toto</td>
+      <td>Bukva <b>i</b> ne měkči prědhodeči konsonant — <i>ni</i>, a ne <i>nji</i>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kute" />
+      <td>slyšati</td>
+      <td>Bukva <b>e</b> na koncu jest prava samoglaska!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="wawa" />
+      <td>moč</td>
+      <td>Praktikujte izgovor bukvy <b>w</b>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>čislo</td>
+      <td
+        >Mimohodom, pišemo <b>np</b>, ale obyčno izgovarjamo <b>mp</b>!
+      </td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>zvuk</td>
+      <td>Prověrite, že akcent pade na prvy slog!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>jaščer</td>
+      <td>Slova mogut počinati se samoglaskoju!</td>
+    </tr>
+  </tbody>
+</table>
