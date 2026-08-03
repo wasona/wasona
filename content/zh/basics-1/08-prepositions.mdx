@@ -3,30 +3,30 @@ slug: "zh/08"
 title: "第八课：介词"
 description: "学习这些单词：weka、pana、kama、awen、tawa、lon、和 tan。"
 practice:
-- title: "1. Vocab"
+- title: "1. 词汇回顾"
   tasks:
-  - l1: "to remove"
+  - l1: "移除"
     l2: "weka"
     junkChips: ["pana", "kama", "ma"]
-  - l1: "to give"
+  - l1: "给予"
     l2: "pana"
     junkChips: ["weka", "awen", "sona"]
-  - l1: "to come"
+  - l1: "过来"
     l2: "kama"
     junkChips: ["weka", "awen", "pana"]
-  - l1: "to stay"
+  - l1: "停留"
     l2: "awen"
     junkChips: ["kama", "weka", "pana"]
-  - l1: "towards"
+  - l1: "前往"
     l2: "tawa"
     junkChips: ["lon", "e", "tan"]
-  - l1: "at"
+  - l1: "在"
     l2: "lon"
     junkChips: ["e", "tan", "tawa"]
-  - l1: "from"
+  - l1: "从"
     l2: "tan"
     junkChips: ["tawa", "lon", "e"]
-- title: "2. Revise"
+- title: "2. 练习"
   tasks:
   - l1: "在英格兰"
     l2: "lon ma Inli"
@@ -35,19 +35,19 @@ practice:
   - l1: "你把虫子从房子中移除。"
     l2: "sina weka e pipi tan tomo."
     junkChips: ["li"]
-  - l1: "I like plants. (Plants are good to me.)"
+  - l1: "我喜欢植物。（植物对我来说很好。）"
     l2: "kasi li pona tawa mi."
     junkChips: ["e"]
-  - l1: "I gave the bird a caterpillar."
+  - l1: "我给鸟儿只毛虫。"
     l2: "mi pana e pipi tawa waso."
     junkChips: ["li"]
-  - l1: "People stay in the house."
+  - l1: "People stay in the house.人们留在屋里。"
     l2: "jan li awen lon tomo."
     junkChips: ["e"]
-  - l1: "Noah goes to France."
+  - l1: "Noah前往法国。"
     l2: "jan Nowa li tawa ma Kanse."
     junkChips: ["e"]
-  - l1: "Toronto is in Canada."
+  - l1: "多伦多是在加拿大里。"
     l2: "ma tomo Towano li lon ma Kanata."
     junkChips: ["e"]
     alsoAccept: ["ma Towano li lon ma Kanata."]
@@ -58,21 +58,21 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-Now that we know some countries, let's talk about travel! But how do you say "go to" and "come from"? For that, we will need some verbs:
+我们刚刚认识了一些国家，接着齐来讨论关于旅游吧！但是我们如何表达"前往"和"来自"的意思呢？首先，我们需要认识一些动词：
 
 <List>
-  <Word sl="weka" m="to remove, to go away; absent, away" />
-  <Word sl="pana" m="to give, to put" />
-  <Word sl="kama" m="to come, to arrive" />
-  <Word sl="awen" m="to stay, to remain, to protect" />
+  <Word sl="weka" m="移除，离去；缺席，不在" />
+  <Word sl="pana" m="给予，放置" />
+  <Word sl="kama" m="过来，到达" />
+  <Word sl="awen" m="停留，留下，保护" />
 </List>
 
-Next to these verbs you will often find prepositions:
+很多时候我们会在这些动词后遇到以下的介词：
 
 <List>
-  <Word sl="tawa" m="to, towards" />
-  <Word sl="lon" m="at, on, in" />
-  <Word sl="tan" m="from, because of" />
+  <Word sl="tawa" m="去，往" />
+  <Word sl="lon" m="在，于" />
+  <Word sl="tan" m="从，因为" />
 </List>
 
 {/* A note for translators */}
@@ -83,47 +83,48 @@ Next to these verbs you will often find prepositions:
   especially important to check.
 */}
 
-A _preposition_ is a word that goes before another word. It tells you how it relates to the sentence. A preposition + the word it attaches is called a _prepositional phrase_:
+*介词*放置于另外一组词语之前的时候，能让我们知道这词语和句子的关系。我们把介词跟这词语的组合称为*介词短语*：
 
 <List>
-  <Word sl="tawa soweli" m="towards the animal" />
-  <Word sl="lon ma" m="on land, in the country" />
-  <Word sl="tan tomo" m="from the house" />
+  <Word sl="tawa soweli" m="往只动物" />
+  <Word sl="lon ma" m="在地上，在...国家里" />
+  <Word sl="tan tomo" m="从屋里" />
 </List>
 
-In Toki Pona, prepositional phrases can be used one of two ways. Firstly we can attach them at the end of a sentence. We can use this to mention location and direction of an action:
+在道本语里，介词短语有两个用处。首先，我们可以把它放在句子的*后方*，来表示行动的位置、方向等等额外资讯：
 
 <List>
-  <Sentence sl="mi pana e waso tawa kasi." m="I put a bird onto a tree." />
-  <Sentence sl="waso li awen lon kasi." m="The bird remains on a tree." />
+  <Sentence sl="mi pana e waso tawa kasi." m="我把鸟儿放于树上。" />
+  <Sentence sl="waso li awen lon kasi." m="鸟儿停留在树上。" />
   <Sentence
     sl="sina weka e waso tan kasi."
-    m="You remove the bird from the tree."
+    m="你把鸟儿从树上移除。"
   />
 </List>
 
 Secondly, what if we want to talk about location or direction...without anything else happening? Fortunately, we can do that too. Prepositional phrases can come directly after **󱤧 li**, and act as the verb all by themselves. When prepositions act as verbs, they mean: **󱥩 tawa** 'to go to', **󱤬 lon** 'to be at', **󱥧 tan** 'to come from':
+此外，我们怎么能单单表达某东西的位置或方向呢？为此，我们能把介词短语直接放在**󱤧 li**的后方，独自作为谓语。这时候介词们有以下的意思：**󱥩 tawa**'前往'，**󱤬 lon**'在'，**󱥧 tan**'来自'：
 
 <List>
-  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma goes to Japan." />
-  <Sentence sl="jan Nina li lon ma Lusi." m="Nina is in Russia." />
-  <Sentence sl="jan Mili li tan ma Kanse." m="Millie is from France." />
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma前往日本。" />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Nina正在俄罗斯。" />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Millie来自法国。" />
 </List>
 
-Let's practice with these sentences:
+让我们看看更多示例： 
 
 <List>
   <Sentence
     sl="mi tawa ma kasi."
-    m="I go to the plant land.<br />(Could be a forest, a grassy field, somewhere lush.)"
+    m="我前往植物的地方。<br />（可以是森林、草地、或者其他茂密的地方。）"
   />
   <Sentence
     sl="sona li weka tan mi."
-    m="Knowledge went away from me.<br />(I forgot.)"
+    m="知识从我离去了。<br />（我忘记了。）"
   />
   <Sentence
     sl="soweli suwi li pona tawa mi."
-    m="Cute animals are good to me.<br />(I like cute animals.)"
+    m="可爱的动物对我来说很好。<br />（我喜欢可爱的动物。）"
   />
 
 {/* A note for translators */}
@@ -134,15 +135,15 @@ Let's practice with these sentences:
   you might not need the text in brackets.
 */}
 
-  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah speaks to Emma." />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah对Emma说话。" />
   <Sentence
     sl="jan li toki Tosi lon ma Tosi."
-    m="People speak German in Germany."
+    m="人们在德国说德语。"
   />
 </List>
 
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: do I have to memorise language and country names?](/zh/languages-countries/)
-* [Q: isn't 'jan li toki Inli' a bit strange?](/zh/named-verbs/)
+* [问答：我需要背熟国家和语言的名字吗？](/zh/languages-countries/)
+* [问答：'jan li toki Inli'这句式不是有点儿奇怪吗？](/zh/named-verbs/)
