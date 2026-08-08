@@ -29,6 +29,3 @@ pnpm-debug.log*
 .idea/
 .obsidian/
 agents/
-
-# exclusive to the wasona-pt-patch fork. If this ended up on the upstream, remove immediately.
-content/en
