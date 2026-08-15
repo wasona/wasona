@@ -1,0 +1,24 @@
+{
+  "Index": "目录",
+  "Next": "下一课",
+  "Previous": "上一课",
+  "Translation": "译文",
+
+  "Consonants": "辅音",
+  "Labial": "唇音",
+  "Coronal": "舌冠音",
+  "Dorsal": "舌背音",
+
+  "Vowels": "元音",
+  "Front": "前",
+  "Central": "央",
+  "Back": "后",
+
+  "translate": "翻译：",
+  "translate_word": "Which of these means...",
+  "check": "提交",
+  "continue": "下一题",
+  "incorrect": "❌ 正确答案：",
+  "correct": "✅ 正确！",
+  "done": "🎉 全部完成！"
+}
