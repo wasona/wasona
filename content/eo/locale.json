@@ -2,7 +2,7 @@
   "Index": "Index",
   "Next": "Sekva",
   "Previous": "Lasta",
-  "Translation": "Traduko",
+  "Translation": "Translation",
 
   "Consonants": "Konsonantoj",
   "Labial": "Lipaj",
@@ -14,11 +14,11 @@
   "Central": "Mezaj",
   "Back": "Malantaŭaj",
 
-  "translate": "Translate the sentence",
-  "translate_word": "Which of these means...",
-  "check": "check",
-  "continue": "continue",
-  "incorrect": "❌ Not quite. Correct answer: ",
-  "correct": "✅ Correct! Well done!",
-  "done": "🎉 All exercises completed!"
+  "translate": "Traduku la frazon",
+  "translate_word": "Kiu el tiuj signifas...",
+  "check": "kontrolu",
+  "continue": "daŭrigu",
+  "incorrect": "❌ Ne tiu. Ĝusta respondo: ",
+  "correct": "✅ Ĝuste!",
+  "done": "🎉 Ĉiuj ekzercoj finitaj!"
 }
