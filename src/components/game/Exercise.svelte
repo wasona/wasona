@@ -110,7 +110,7 @@
       {#key currentIndex}
         {#if currentTask.l2.split(" ").length == 1}
           <h2>{_("translate_word")}</h2>
-          <h3>{currentTask.l1}</h3>
+          <h3>{@html currentTask.l1}</h3>
 
           <ChooseTask
             task={currentTask}
@@ -122,7 +122,7 @@
           />
         {:else}
           <h2>{_("translate")}</h2>
-          <h3>{currentTask.l1}</h3>
+          <h3>{@html currentTask.l1}</h3>
 
           <ChipTask
             task={currentTask}
