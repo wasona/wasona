@@ -1,24 +1,44 @@
 ---
 slug: "ko/25"
-title: "lesson 25: numbers"
-description: "Learn nanpa, wan, tu, ale, kipisi!"
+title: "25과: 숫자"
+description: "nanpa, wan, tu, ale, kipisi를 배워봅시다!"
 practice:
-  - l1: "eight"
+- title: "1. 단어"
+  tasks:
+  - l1: "숫자"
+    l2: "nanpa"
+    junkChips: ["mute", "sama", "li"]
+  - l1: "하나"
+    l2: "wan"
+    junkChips: ["pini", "nasin", "ni"]
+  - l1: "둘"
+    l2: "tu"
+    junkChips: ["sama", "mute", "kipisi"]
+  - l1: "모든"
+    l2: "ale"
+    junkChips: ["kala", "linja", "ala"]
+  - l1: "나누다"
+    l2: "kipisi"
+    junkChips: ["anu", "ken", "weka"]
+- title: "2. 복습"
+  tasks:
+  - l1: "여덟"
     l2: "luka tu wan"
     junkChips: ["tu"]
-  - l1: "You slice the bread."
+  - l1: "너는 빵을 자른다."
     l2: "sina kipisi e pan."
     junkChips: ["li"]
-  - l1: "The two of us join together."
+  - l1: "우리 둘은 하나로 합쳐진다."
     l2: "mi tu li kama wan."
     junkChips: ["pi"]
-  - l1: "I can speak three languages."
+  - l1: "나는 세 가지 언어를 말할 수 있다."
     l2: "mi sona e toki tu wan."
     junkChips: ["luka"]
-  - l1: "5 Euro"
+    alsoAccept: ["mi sona toki tu wan."]
+  - l1: "5유로"
     l2: "mani luka pi ma Elopa"
     junkChips: ["tu"]
-  - l1: "April begins."
+  - l1: "4월이 시작된다."
     l2: "tenpo mun nanpa tu tu li open."
     junkChips: ["suno"]
     alsoAccept: ["mun nanpa tu tu li open."]
@@ -29,58 +49,58 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Cardinal numbers
+## 기수
 
-Let's talk numbers!
-
-<List>
-  <Word sl="wan" m="one; united" />
-  <Word sl="tu" m="two; divided" />
-  <Word sl="luka" m="five, hand" />
-  <Word sl="mute" m="many" />
-  <Word sl="ale" m="all, every" />
-  <Word sl="kipisi" m="piece, part; to split" />
-</List>
-
-Toki Pona has words for 1, 2, 5, but not 3 or 4! But this is not so strange. You can imagine **󱥳 wan**, **󱥮 tu**, **󱤭 luka** like coins worth 1, 2, and 5. Let's try counting from 1 to 10:
+숫자에 대해 이야기해봅시다!
 
 <List>
-    <Word sl="wan" m="one" />
-    <Word sl="tu" m="two" />
-    <Word sl="tu wan" m="three" />
-    <Word sl="tu tu" m="four" />
-    <Word sl="luka" m="five" />
-    <Word sl="luka wan" m="six" />
-    <Word sl="luka tu" m="seven" />
-    <Word sl="luka tu wan" m="eight" />
-    <Word sl="luka tu tu" m="nine" />
-    <Word sl="luka luka" m="ten" />
+  <Word sl="wan" m="하나; 하나로 합쳐진" />
+  <Word sl="tu" m="둘; 나뉜" />
+  <Word sl="luka" m="다섯, 손" />
+  <Word sl="mute" m="많은" />
+  <Word sl="ale" m="모든, 전체" />
+  <Word sl="kipisi" m="조각, 부분; 나누다" />
 </List>
 
-In many situations, just knowing small numbers will be enough. But if you want to talk about purchases or the Gregorian calendar, there's an extra page about large numbers below.
-
-## Ordinal numbers
-
-Usually, numbers are just adjectives:
+토키 포나에는 1, 2, 5를 나타내는 단어는 있지만, 3이나 4를 나타내는 단어는 없습니다! 하지만 이는 그리 이상한 일이 아닙니다. **󱥳 wan**, **󱥮 tu**, **󱤭 luka**를 각각 1, 2, 5의 가치를 지닌 동전이라고 생각해보세요. 1부터 10까지 세어봅시다.
 
 <List>
-    <Word sl="kala wan" m="one fish" />
-    <Word sl="soko tu tu" m="four mushrooms" />
-    <Word sl="mun luka" m="five months" />
+    <Word sl="wan" m="하나" />
+    <Word sl="tu" m="둘" />
+    <Word sl="tu wan" m="셋" />
+    <Word sl="tu tu" m="넷" />
+    <Word sl="luka" m="다섯" />
+    <Word sl="luka wan" m="여섯" />
+    <Word sl="luka tu" m="일곱" />
+    <Word sl="luka tu wan" m="여덟" />
+    <Word sl="luka tu tu" m="아홉" />
+    <Word sl="luka luka" m="열" />
 </List>
 
-But these are *cardinal* numbers: numbers that talk about quantity. There are also *ordinal* numbers: those that talk about order. To make ordinal numbers, just use **󱤽 nanpa** + a number:
+대부분의 상황에서는 작은 숫자만 알아도 충분합니다. 하지만 물건을 사거나 그레고리력에 대해 이야기하고 싶다면, 아래에 큰 숫자를 다루는 추가 페이지가 있습니다.
+
+## 서수
+
+보통 숫자는 그저 형용사로 쓰입니다.
 
 <List>
-    <Word sl="nanpa" m="number; the ...-th" />
-    <Word sl="kala nanpa wan" m="the first fish" />
-    <Word sl="soko nanpa tu tu" m="the fourth mushroom" />
-    <Word sl="mun nanpa luka" m="the fifth month" />
+    <Word sl="kala wan" m="물고기 한 마리" />
+    <Word sl="soko tu tu" m="버섯 네 개" />
+    <Word sl="mun luka" m="다섯 달" />
 </List>
 
-(By the way, **󱤽 nanpa** is special! It doesn't need **󱥍 pi**.)
+하지만 이런 숫자는 *기수*, 즉 수량을 나타내는 숫자입니다. 이와 달리 순서를 나타내는 *서수*도 있습니다. 서수를 만들려면 **󱤽 nanpa** 뒤에 숫자를 붙이기만 하면 됩니다.
+
+<List>
+    <Word sl="nanpa" m="숫자; ~번째" />
+    <Word sl="kala nanpa wan" m="첫 번째 물고기" />
+    <Word sl="soko nanpa tu tu" m="네 번째 버섯" />
+    <Word sl="mun nanpa luka" m="다섯 번째 달" />
+</List>
+
+(참고로 **󱤽 nanpa**는 특별합니다! **󱥍 pi**가 필요하지 않습니다.)
 
 <Practice exercises={frontmatter.practice} />
 
-## See also
-* [Q: how do I talk about large numbers?](/ko/large-numbers/)
+## 더 알아보기
+* [질문: 큰 숫자는 어떻게 말하나요?](/ko/large-numbers/)

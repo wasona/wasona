@@ -1,23 +1,24 @@
 {
-  "Index": "Index",
-  "Next": "Next",
-  "Previous": "Previous",
-  "Translation": "Translation",
+  "Index": "목차",
+  "Next": "다음",
+  "Previous": "이전",
+  "Translation": "번역",
 
-  "Consonants": "Consonants",
-  "Labial": "Labial",
-  "Coronal": "Coronal",
-  "Dorsal": "Dorsal",
+  "Consonants": "자음",
+  "Labial": "순음",
+  "Coronal": "치경음",
+  "Dorsal": "연구개음",
 
-  "Vowels": "Vowels",
-  "Front": "Front",
-  "Central": "Central",
-  "Back": "Back",
+  "Vowels": "모음",
+  "Front": "전설",
+  "Central": "중설",
+  "Back": "후설",
 
-  "translate": "Translate the sentence",
-  "check": "check",
-  "continue": "continue",
-  "incorrect": "❌ Not quite. Correct answer: ",
-  "correct": "✅ Correct! Well done!",
-  "done": "🎉 All exercises completed!"
+  "translate": "문장을 번역하세요",
+  "translate_word": "다음 중 뜻이 맞는 것은?",
+  "check": "확인",
+  "continue": "계속",
+  "incorrect": "❌ 아쉽습니다. 정답: ",
+  "correct": "✅ 정답입니다! 잘하셨습니다!",
+  "done": "🎉 모든 연습 문제를 완료했습니다!"
 }

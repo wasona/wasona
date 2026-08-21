@@ -1,27 +1,73 @@
 ---
 slug: "ko/09"
-title: "lesson 9: activities"
-description: "Learn utala, lape, musi, nasa, kalama, wile, ken, alasa!"
+title: "9과: 활동"
+description: "utala, lape, musi, nasa, kalama, wile, ken, alasa를 배워봅시다!"
 practice:
-  - l1: "A cute bird sleeps."
+- title: "1. 단어"
+  tasks:
+  - l1: "싸우다"
+    l2: "utala"
+    junkChips: ["weka", "kalama", "wile"]
+  - l1: "자다"
+    l2: "lape"
+    junkChips: ["ona", "nasa", "musi"]
+  - l1: "재미있는"
+    l2: "musi"
+    junkChips: ["ma", "kalama", "alasa"]
+  - l1: "이상한"
+    l2: "nasa"
+    junkChips: ["ma", "wile", "utala"]
+  - l1: "소리"
+    l2: "kalama"
+    junkChips: ["pana", "sona", "musi"]
+  - l1: "원하다"
+    l2: "wile"
+    junkChips: ["ken", "alasa", "lape"]
+  - l1: "할 수 있다"
+    l2: "ken"
+    junkChips: ["alasa", "waso", "kalama"]
+  - l1: "시도하다"
+    l2: "alasa"
+    junkChips: ["pipi", "ni", "wile"]
+- title: "2. 복습"
+  tasks:
+  - l1: "귀여운 새가 잔다."
     l2: "waso suwi li lape."
     junkChips: ["e"]
-  - l1: "Its name is long."
+  - l1: "그것의 이름은 길다."
     l2: "nimi ona li suli."
     junkChips: ["e"]
-  - l1: "to want to have fun"
+  - l1: "재미있게 놀고 싶다"
     l2: "wile musi"
-  - l1: "to try to sing"
+  - l1: "노래를 부르려고 시도하다"
     l2: "alasa kalama"
-  - l1: "I start to draw the plant."
+  - l1: "나는 식물을 그리기 시작한다."
     l2: "mi kama sitelen e kasi."
     junkChips: ["li"]
-  - l1: "The cub can fight playfully."
+  - l1: "그 새끼는 장난스럽게 싸울 수 있다."
     l2: "soweli lili li ken utala musi."
     junkChips: ["e"]
-  - l1: "I try to go to China."
+  - l1: "나는 중국에 가려고 시도한다."
     l2: "mi alasa tawa ma Sonko."
     junkChips: ["li"]
+- title: "3. 더 연습하기"
+  tasks:
+  - l1: "그 새는 아직도 자고 싶어한다."
+    l2: "waso li awen wile lape."
+    junkChips: ["e"]
+  - l1: "그 벌레는 강해지고 싶어한다."
+    l2: "pipi li wile wawa."
+    junkChips: ["e"]
+  - l1: "싸움에는 힘이 필요하다."
+    l2: "utala li wile e wawa."
+    junkChips: ["pipi"]
+  - l1: "나는 기뻐서 노래를 부르기 시작한다."
+    l2: "mi kama kalama tan musi."
+    junkChips: ["e"]
+  - l1: "그 선수들은 자리에 없는 사람을 찾으려고 시도한다."
+    l2: "jan musi li alasa lukin e jan weka."
+    junkChips: ["li"]
+    alsoAccept: ["jan musi li alasa e jan weka."]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -29,34 +75,32 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Activities
-
-Let's learn some more words for things you can do!
+여러분이 할 수 있는 일을 나타내는 단어를 몇 가지 더 배워봅시다!
 
 <List>
-  <Word sl="utala" m="to fight, to attack" />
-  <Word sl="lape" m="to sleep, to rest" />
-  <Word sl="kalama" m="to produce a sound; sound" />
-  <Word sl="musi" m="to have fun; funny, amusing, interesting" />
-  <Word sl="nasa" m="strange, unusual, silly, drunken" />
+  <Word sl="utala" m="싸우다, 공격하다" />
+  <Word sl="lape" m="자다, 쉬다" />
+  <Word sl="kalama" m="소리를 내다; 소리" />
+  <Word sl="musi" m="재미있게 놀다; 재미있는, 즐거운, 흥미로운" />
+  <Word sl="nasa" m="이상한, 특이한, 우스꽝스러운, 취한" />
 </List>
 
 {/* A note for translators */}
 {/* When translating "nasa", don't use insults. */}
 
-These words are pretty straightforward! Let's use them in sentences:
+이 단어들은 상당히 직관적입니다! 문장에서 사용해봅시다:
 
 <List>
-  <Sentence sl="soweli li utala e jan." m="The animal attacked someone." />
-  <Sentence sl="sina lape lon tomo." m="You sleep at home." />
-  <Sentence sl="nimi ona li nasa tawa mi." m="Her name is strange to me." />
+  <Sentence sl="soweli li utala e jan." m="그 동물이 누군가를 공격했다." />
+  <Sentence sl="sina lape lon tomo." m="너는 집에서 잔다." />
+  <Sentence sl="nimi ona li nasa tawa mi." m="그녀의 이름은 나에게 이상하게 느껴진다." />
   <Sentence
     sl="jan lili li musi tan kalama."
-    m="The child is having fun because of noises."
+    m="그 아이는 소리들 때문에 즐거워하고 있다."
   />
 </List>
 
-## Preverbs
+## 전동사(preverb)
 
 {/* A note for translators */}
 {/*
@@ -65,46 +109,48 @@ These words are pretty straightforward! Let's use them in sentences:
   for the same thing in your language.
 */}
 
-Sometimes we want to talk not only about the activity itself, but about how we relate to it. Maybe we _want to_ do something. Maybe we _can_ do something. Maybe we _start_ or _keep on_ doing something.
+때로는 활동 자체뿐만 아니라, 그 활동과 우리가 어떤 관계를 맺고 있는지도 말하고 싶을 때가 있습니다. 무언가를 _하고 싶을_ 수도 있고, 무언가를 _할 수_ 있을 수도 있습니다. 무언가를 _시작하거나_ _계속_ 할 수도 있지요.
 
-In English, these are known as *auxilliary and modal verbs*. Toki Pona has a similar system, we like to call them _preverbs_! A preverb is an added verb that goes before the main verb. You already know some of them! Let's learn what they mean when they act as preverbs:
+영어에서는 이런 것을 *조동사(auxiliary and modal verb)*라고 부릅니다. 토키포나에도 이와 비슷한 체계가 있는데, 우리는 이를 _전동사(preverb)_라고 부릅니다! 전동사란 본동사 앞에 붙는 추가적인 동사를 말합니다. 여러분은 이미 그중 몇 가지를 알고 있습니다! 이 단어들이 전동사로 쓰일 때 어떤 뜻을 가지는지 배워봅시다:
 
 <List>
-  <Word sl="kama" m="to begin to ..., to become ..." />
-  <Word sl="awen" m="to continue to ..., to still ..." />
+  <Word sl="kama" m="…하기 시작하다, …하게 되다" />
+  <Word sl="awen" m="계속 …하다, 여전히 …하다" />
   {/* <Word sl="sona" m="to know how to ..." /> */}
 </List>
 
-Only a few verbs in Toki Pona are allowed to be preverbs. So let's also learn the remaining ones:
+토키포나에서 전동사가 될 수 있는 동사는 몇 개 되지 않습니다. 그러니 나머지 전동사들도 배워봅시다.
 
 <List>
-  <Word sl="wile" m="to want to ..." />
-  <Word sl="ken" m="to be able to ..." />
-  <Word sl="alasa" m="to try to ..." />
+  <Word sl="wile" m="…하고 싶다; 원하다, 필요로 하다" />
+  <Word sl="ken" m="…할 수 있다; 허락하다, 가능하다" />
+  <Word sl="alasa" m="…하려고 시도하다; 찾다, 사냥하다, 모으다" />
 </List>
 
-Preverbs are very versatile! Let's look at some phrases with preverbs:
+**󱤖 kama**와 **󱤈 awen**처럼, 이 단어들도 전동사이면서 동시에 일반 동사로 쓰일 수 있습니다!
+
+전동사는 매우 다양하게 활용됩니다! 전동사가 들어간 구를 몇 가지 살펴봅시다:
 
 <List>
-  <Word sl="wile lape" m="to want to sleep" />
-  <Word sl="awen pona" m="to continue to be good" />
-  <Word sl="kama sona" m="to become knowledgeable, to learn" />
-  <Word sl="alasa kama wawa" m="to try to become strong" />
+  <Word sl="wile lape" m="자고 싶다" />
+  <Word sl="awen pona" m="계속 좋은 상태이다" />
+  <Word sl="kama sona" m="알게 되다, 배우다" />
+  <Word sl="alasa kama wawa" m="강해지려고 시도하다" />
 </List>
 
-Let's try to use preverbs in sentences:
+이제 전동사를 문장에서 사용해봅시다:
 
 <List>
-  <Sentence sl="waso lili li wile lape." m="The small bird wants to sleep." />
-  <Sentence sl="mi kama sona e toki pona." m="I learn Toki Pona." />
-  <Sentence sl="sina alasa tawa ma Tosi." m="You try to go to Germany." />
+  <Sentence sl="waso lili li wile lape." m="그 작은 새는 자고 싶어한다." />
+  <Sentence sl="mi kama sona e toki pona." m="나는 좋은 언어를 배운다. 나는 토키포나를 배운다." />
+  <Sentence sl="sina alasa tawa ma Tosi." m="너는 독일에 가려고 시도한다." />
   <Sentence
     sl="toki ona li awen nasa tawa mi."
-    m="His speech is still strange to me."
+    m="그의 말투는 여전히 나에게 이상하게 느껴진다."
   />
 </List>
 
 <Practice exercises={frontmatter.practice} />
 
-## See also
-* [Q: are there any more preverbs?](/ko/more-preverbs/)
+## 더 알아보기
+* [Q: 전동사가 더 있나요?](/ko/more-preverbs/)

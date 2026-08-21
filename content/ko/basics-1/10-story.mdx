@@ -1,24 +1,24 @@
 ---
 slug: "ko/10"
-title: "lesson 10: intermission 1"
-description: "Read your first story in Toki Pona!"
+title: "10과: 쉬어가기 1"
+description: "토키 포나로 첫 번째 이야기를 읽어봅시다!"
 ---
 
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
-import { KALAMA } from "@/consts";
+import { KALAMA } from "@/lib/audio";
 
-Nouns, verbs, adjectives, pronouns, prepositions, preverbs -- you have learned a lot by now! Let's slow down. As you know, language learning often focuses on drilling sentence after sentence. But getting good isn't just about repetitive bits of practice. It's also about listening, and reading, and talking to people.
+명사, 동사, 형용사, 대명사, 전치사, 전동사까지, 지금까지 정말 많은 것을 배우셨습니다! 잠시 속도를 늦춰 보겠습니다. 아시다시피 언어 학습은 흔히 문장을 하나씩 반복해서 연습하는 데 초점을 맞추곤 합니다. 하지만 실력이 느는 것은 단순히 반복 연습만으로 이루어지지 않습니다. 듣고, 읽고, 사람들과 이야기하는 것 역시 중요한 부분입니다.
 
-For this lesson, let's read a short story in Toki Pona! It only uses the words and grammar we've learned so far.
+이번 과에서는 토키 포나로 된 짧은 이야기를 읽어봅시다! 지금까지 배운 단어와 문법만을 사용한 이야기입니다.
 
-## part 1: kalama li lon ma
+## 1부: kalama li lon ma
 
-Listen to an audio recording, and follow along in the text. 
+녹음된 음성을 들으며 본문을 따라가 보세요.
 
 <audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
-After you're done listening, try to read the text aloud. See if you can follow the meaning of the text! Once you're done practicing reading and listening, you can check the translation!
+다 들으셨다면 본문을 소리 내어 읽어보세요. 의미를 따라갈 수 있는지 확인해 보세요! 읽기와 듣기 연습을 마쳤다면 번역을 확인할 수 있습니다!
 
 {/* A note for translators */}
 {/*
@@ -27,54 +27,62 @@ After you're done listening, try to read the text aloud. See if you can follow t
 */}
 
 <Tabbed id="1">
-  <Row sl="soweli li lon ma kasi." m="There was a deer in the forest." />
-  <Row sl="nimi ona li soweli Mumu." m="Her name was Mumu." />
-  <Row sl="soweli Mumu li lape pona." m="Mumu was fast asleep." />
-  <Row sl="kasi li awen e lape ona." m="Trees protected her sleep." />
+  <Row sl="soweli li lon ma kasi." m="숲에 사슴 한 마리가 있었습니다." />
+  <Row sl="nimi ona li soweli Mumu." m="그 사슴의 이름은 무무였습니다." />
+  <Row sl="soweli Mumu li lape pona." m="무무는 깊이 잠들어 있었습니다." />
+  <Row sl="kasi li awen e lape ona." m="나무들이 무무의 잠을 지켜주었습니다." />
   <br />
-  <Row sl="kalama nasa suli li kama." m="There came a strange loud noise." />
-  <Row sl="lape li weka tan soweli." m="The deer woke up." />
-  <Row sl="soweli li wile sona e kalama." m="She wanted to find out more about the noise." />
+  <Row sl="kalama nasa suli li kama." m="이상하고 커다란 소리가 들려왔습니다." />
+  <Row sl="lape li weka tan soweli." m="사슴은 잠에서 깨어났습니다." />
+  <Row sl="soweli li wile sona e kalama." m="사슴은 그 소리에 대해 더 알아내고 싶었습니다." />
 </Tabbed>
 
-## part 2: waso li kalama
+## 2부: waso li kalama
 
 <audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
-  <Row sl="waso lili suwi li kama." m="There came a cute little sparrow." />
-  <Row sl="nimi ona li waso Siju." m="His name was Siju." />
-  <Row sl="soweli li lukin e ona." m="The deer looked at the sparrow." />
-  <Row sl="soweli li kama sona e ni:" m="She learned this:" />
-  <Row sl="kalama wawa li tan waso ni." m="the noise came from this bird." />
+  <Row sl="waso lili suwi li kama." m="귀여운 작은 참새 한 마리가 왔습니다." />
+  <Row sl="nimi ona li waso Siju." m="그 참새의 이름은 시주였습니다." />
+  <Row sl="soweli li lukin e ona." m="사슴은 참새를 바라보았습니다." />
+  <Row sl="soweli li kama sona e ni:" m="사슴은 이것을 알게 되었습니다:" />
+  <Row sl="kalama wawa li tan waso ni." m="그 큰 소리는 이 새에게서 나는 것이었습니다." />
   <br />
-  <Row sl="waso li wile moku." m="The sparrow was hungry." />
-  <Row sl="wile ona li suli." m="He was desperate." />
-  <Row sl="ona li kalama suli tan ni." m="And so he cried out." />
+  <Row sl="waso li wile moku." m="참새는 배가 고팠습니다." />
+  <Row sl="wile ona li suli." m="참새의 배고픔은 절박했습니다." />
+  <Row sl="ona li kalama suli tan ni." m="그래서 참새는 크게 울부짖었습니다." />
 </Tabbed>
 
-## part 3: waso li moku pona
+## 3부: waso li moku pona
 
 <audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
-  <Row sl="ni li ike tawa soweli Mumu." m="This saddened Mumu." />
-  <Row sl="soweli li wile pona e waso." m="The deer wanted to help the sparrow." />
-  <Row sl="soweli li pana e pipi suli tawa ona." m="She fed him a large caterpillar." />
+  <Row sl="ni li ike tawa soweli Mumu." m="이 일은 무무를 슬프게 했습니다." />
+  <Row sl="soweli li wile pona e waso." m="사슴은 참새를 돕고 싶었습니다." />
+  <Row sl="soweli li pana e pipi suli tawa ona." m="사슴은 참새에게 커다란 애벌레를 주었습니다." />
   <br />
-  <Row sl="waso li moku e pipi." m="The sparrow ate the bug." />
-  <Row sl="ni li pona tawa ona." m="This satisfied his hunger." />
+  <Row sl="waso li moku e pipi." m="참새는 그 벌레를 먹었습니다." />
+  <Row sl="ni li pona tawa ona." m="이 일은 참새의 배고픔을 채워주었습니다." />
 </Tabbed>
 
-You may notice the translation isn't quite as literal as the example sentences! This is common. Once you have a story that spans several sentences, they start to help each other along.
+토키 포나 문장이나 번역 중에 이해하기 어려운 부분이 있었습니까? 아직 완전히 이해되지 않는 부분이 있을 수도 있습니다. 좋습니다! 그것 역시 학습의 일부입니다. 바로 이럴 때 커뮤니티가 도움이 됩니다. 활발히 활동하는 토키 포나 모임에 참여해서 그 문장들을 보여주고 조언을 구해보세요. 언제나 기꺼이 도와줄 사람들이 있습니다!
 
-Did any Toki Pona sentences or translations give you pause? Perhaps you still don't fully understand them? Good! That, too, is part of learning. This is where the community comes along. Join an active Toki Pona group, show them the sentences, and ask for advice. There are always people who will gladly help!
-
-* [kama sona](https://discord.gg/ChC6qtVsSE) is a Discord server that accommodates new learners!
-* [ma pona](https://discord.gg/6zkugJFU4x) is a more general-purpose Discord server. It's a good place to go for community creations and big events.
+* [kama sona](https://discord.gg/ChC6qtVsSE)는 새로 배우는 사람들을 반겨주는 디스코드 서버입니다!
+* [ma pona](https://discord.gg/6zkugJFU4x)는 좀 더 범용적인 성격의 디스코드 서버입니다. 커뮤니티 창작물이나 큰 행사를 위해 찾아가기 좋은 곳입니다.
 
 {/* A note for translators */}
 {/*
   Please note that these two spaces are mostly English-speaking.
   If your language has a healthy Toki Pona community, you may add it here.
 */}
+
+## 사슴을 가리키는 단어 없이 사슴을 말하는 방법
+
+흥미롭게도 영어와 토키 포나는 정확히 일대일로 대응하지 않습니다! 영어의 사슴과 참새는 토키 포나에서 각각 "동물"과 "새"가 됩니다. 왜 그렇습니까?
+
+우리는 의미를 전달하는 데 중요한 세부 사항만을 남깁니다. 사슴 무무가 소였든 다람쥐였든 원숭이였든 우리 이야기는 달라지지 않았을 것입니다. 독자는 자신이 원하는 어떤 동물이든 떠올릴 수 있습니다. 영어에서도 우리는 이와 비슷한 일을 조금은 합니다. 참새 시주의 깃털이 어떤 색이든 원하는 대로 상상할 수 있는데, 이야기에서 그것이 중요하지 않기 때문입니다.
+
+만약 이야기를 계속 이어가다가 그 세부 사항이 중요해진다면 어떻게 되겠습니까? 그렇다면 새로운 세부 사항이 더해져 그림을 더 선명하게 만들어 줄 것입니다. 예를 들어 이야기 뒷부분에서 참새 시주가 날아간다면, 이제 우리는 그가 타조가 아니라는 것을 알게 됩니다. 또는 사슴 무무의 아빠에게 뿔이 있다면, 이제 우리는 무무가 다람쥐가 아니라는 것을 알게 됩니다.
+
+우리는 이렇게 한 번에 하나씩 새로운 세부 사항을 더해가며 그림을 그려, 충분히 구체적인 모습이 될 때까지 다듬어 갑니다. 이런 방식 덕분에 약 130개의 단어만으로도 무엇이든 묘사할 수 있습니다. 여러분은 이미 그중 40개를 알고 있으니, 계속 나아가 보세요!

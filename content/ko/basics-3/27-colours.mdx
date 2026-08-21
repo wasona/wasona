@@ -1,22 +1,47 @@
 ---
 slug: "ko/27"
-title: "lesson 27: colours"
-description: "Learn kule, walo, pimeja, laso, loje, jelo, kin!"
+title: "27과: 색깔"
+description: "kule, walo, pimeja, laso, loje, jelo, kin을 배워봅시다!"
 practice:
-  - l1: "At night, I party."
+- title: "1. 단어"
+  tasks:
+  - l1: "색깔"
+    l2: "kule"
+    junkChips: ["walo", "pimeja", "misikeke"]
+  - l1: "하얀"
+    l2: "walo"
+    junkChips: ["pimeja", "kule", "mani"]
+  - l1: "검은"
+    l2: "pimeja"
+    junkChips: ["walo", "ala", "kule"]
+  - l1: "청록색의"
+    l2: "laso"
+    junkChips: ["jelo", "loje", "kasi"]
+  - l1: "빨간"
+    l2: "loje"
+    junkChips: ["laso", "jelo", "uta"]
+  - l1: "노란"
+    l2: "jelo"
+    junkChips: ["laso", "loje", "suno"]
+  - l1: "또한"
+    l2: "kin"
+    junkChips: ["a", "o", "lete"]
+- title: "2. 복습"
+  tasks:
+  - l1: "밤이 되면, 나는 논다."
     l2: "tenpo pimeja la mi musi."
     alsoAccept: ["pimeja la mi musi."]
     junkChips: ["jelo"]
-  - l1: "There is yellow dust on the bee."
+  - l1: "벌 위에 노란 가루가 있다."
     l2: "ko jelo li lon pipi."
     junkChips: ["loje"]
-  - l1: "I, too, play with colourful bricks."
+  - l1: "나도 알록달록한 벽돌을 가지고 논다."
     l2: "mi kin li musi kepeken leko kule."
     junkChips: ["e"]
-  - l1: "All this snow is blinding me."
+  - l1: "이 눈이 온통 나를 눈부시게 한다."
     l2: "mi ken ala lukin tan ko walo."
     junkChips: ["seli"]
-  - l1: "Blue, white, and red are on the flag."
+  - l1: "파란색, 하얀색, 빨간색이 깃발에 있다."
     l2: "laso en walo en loje li lon lipu."
     junkChips: ["jelo"]
 ---
@@ -26,30 +51,30 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-Let's talk colours!
+색깔에 대해 이야기해봅시다!
 
 <List>
-  <Word sl="kule" m="colour, kind; colourful" />
-  <Word sl="walo" m="white, pale" />
-  <Word sl="pimeja" m="black, dark" />
-  <Word sl="loje" m="red, magenta" />
-  <Word sl="jelo" m="yellow" />
-  <Word sl="laso" m="green, teal, blue" />
+  <Word sl="kule" m="색깔, 종류; 알록달록한" />
+  <Word sl="walo" m="하얀, 창백한" />
+  <Word sl="pimeja" m="검은, 어두운" />
+  <Word sl="loje" m="빨간, 자홍색의" />
+  <Word sl="jelo" m="노란" />
+  <Word sl="laso" m="초록의, 청록의, 파란" />
 </List>
 
-In *sitelen pona*, many colour words look as if they were *compounds*: they consist of a triangle from **󱤞 kule** combined with another word, like **󱤂 ala**, **󱥰 uta**, **󱥤 suno**, **󱤗 kasi**. There are several other compound glyphs in *sitelen pona*, as well: **󱤶 moku**, **󱥉 pali**, **󱤙 kepeken** have a **󱤭 luka**, and **󱤕 kalama**, **󱥌 pana**, **󱥡 sona**, **󱥬 toki** use three lines we dubbed *'emitters'*. Props to you if you spotted these patterns earlier!
+*시텔렌 포나*에서는 많은 색깔 단어가 마치 *합성 글리프*처럼 보입니다. 이들은 **󱤞 kule**의 삼각형이 **󱤂 ala**, **󱥰 uta**, **󱥤 suno**, **󱤗 kasi** 같은 다른 단어와 결합된 형태로 이루어져 있습니다. *시텔렌 포나*에는 이 밖에도 몇 가지 합성 글리프가 더 있는데, **󱤶 moku**, **󱥉 pali**, **󱤙 kepeken**에는 **󱤭 luka**가 들어 있고, **󱤕 kalama**, **󱥌 pana**, **󱥡 sona**, **󱥬 toki**는 우리가 *'방출체'*라고 이름 붙인 세 개의 선을 사용합니다. 앞에서 이런 패턴을 미리 눈치챘다면 대단한 것입니다!
 
-The colour words, of course, mean a whole *range* of colours, not just the ones listed here. **󱤣 laso** is an especially interesting one: in Toki Pona, green and blue are just shades of one colour, like in Japanese, Vietnamese, Zulu and many other languages. These two sentences together makes sense in Toki Pona, but not in English:
+색깔 단어들은 물론 여기 나열된 것만이 아니라 훨씬 폭넓은 *범위*의 색을 의미합니다. **󱤣 laso**는 특히 흥미로운 단어입니다. 토키 포나에서는 초록색과 파란색이 일본어, 베트남어, 줄루어를 비롯한 여러 언어에서처럼 그저 한 색깔의 서로 다른 색조일 뿐입니다. 다음 두 문장은 토키 포나에서는 함께 말이 되지만, 한국어에서는 그렇지 않습니다.
 
 <List>
-  <Word sl="kin" m="also, too" />
-  <Sentence sl="sewi li laso." m="The sky is blue." />
-  <Sentence sl="kasi kin li laso." m="The grass, too, is green." />
+  <Word sl="kin" m="또한, ~도" />
+  <Sentence sl="sewi li laso." m="하늘은 파랗다." />
+  <Sentence sl="kasi kin li laso." m="풀도 초록색이다." />
 </List>
 
-## Do you need colours?
+## 색깔이 꼭 필요할까요?
 
-Like genders, Toki Pona colours are used less frequently than you might expect. In natural languages, colours often serve as easy shortcuts to mean something much more specific: *a white lie*, *the black market*, *a greenhouse*. Toki Pona doesn't like shortcuts that don't get to the point:
+성별과 마찬가지로, 토키 포나의 색깔 표현은 여러분이 예상하는 것보다 훨씬 드물게 쓰입니다. 자연어에서 색깔은 흔히 훨씬 더 구체적인 의미를 나타내는 손쉬운 지름길 역할을 합니다. *하얀 거짓말*, *암시장*, *온실* 같은 표현이 그렇습니다. 토키 포나는 본질에 이르지 못하는 지름길을 좋아하지 않습니다.
 
 {/* A note for translators */}
 {/*
@@ -58,17 +83,17 @@ Like genders, Toki Pona colours are used less frequently than you might expect. 
 */}
 
 <List>
-  <Sentence sl="tomo laso" m="a green house" />
-  <Sentence sl="tomo kasi" m="a greenhouse" />
+  <Sentence sl="tomo laso" m="초록색 집" />
+  <Sentence sl="tomo kasi" m="온실" />
 </List>
 
-There's a big difference between a white house and the White House:
+하얀 집과 백악관 사이에는 큰 차이가 있습니다.
 
 <List>
-  <Sentence sl="tomo walo" m="a white house" />
-  <Sentence sl="tomo ni la jan li lawa e ma Mewika." m="the White House" />
+  <Sentence sl="tomo walo" m="하얀 집" />
+  <Sentence sl="tomo ni la jan li lawa e ma Mewika." m="백악관" />
 </List>
 
-I only bring it up now, because colours are the most obvious example, but the same actually applies to any phrase! Before using adjectives, it's often useful to stop and think: are these adjectives getting the important part you wanted to talk about, or are they just shorthand for something else?
+지금 이 이야기를 꺼낸 것은 색깔이 가장 알기 쉬운 예시이기 때문이지만, 사실 이는 모든 표현에 똑같이 적용됩니다! 형용사를 쓰기 전에는 잠시 멈추고 생각해 보는 것이 좋습니다. 이 형용사가 정말로 말하고자 하는 중요한 부분을 짚어내고 있는지, 아니면 다른 무언가를 대신하는 간편한 표현일 뿐인지 말입니다.
 
 <Practice exercises={frontmatter.practice} />

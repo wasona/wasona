@@ -1,32 +1,75 @@
 ---
 slug: "ko/13"
-title: "lesson 13: elements"
-description: "Learn kon, telo, ko, kiwen, seli, lete, sewi!"
+title: "13과: 원소"
+description: "kon, telo, ko, kiwen, seli, lete, sewi를 배워봅시다!"
 practice:
-  - l1: "in the sky"
+- title: "1. 어휘"
+  tasks:
+  - l1: "공기"
+    l2: "kon"
+    junkChips: ["telo", "seli", "sewi"]
+  - l1: "물"
+    l2: "telo"
+    junkChips: ["kon", "ijo", "lete"]
+  - l1: "부드러운 고체"
+    l2: "ko"
+    junkChips: ["ijo", "kiwen", "tomo"]
+  - l1: "단단한 고체"
+    l2: "kiwen"
+    junkChips: ["tomo", "ko", "suli"]
+  - l1: "열"
+    l2: "seli"
+    junkChips: ["pana", "toki", "kon"]
+  - l1: "차가움"
+    l2: "lete"
+    junkChips: ["weka", "lili", "kiwen"]
+  - l1: "신성함"
+    l2: "sewi"
+    junkChips: ["seli", "suwi", "suli"]
+- title: "2. 복습"
+  tasks:
+  - l1: "하늘에"
     l2: "lon sewi"
-  - l1: "a cold land"
+  - l1: "추운 땅"
     l2: "ma lete"
-  - l1: "geology"
+  - l1: "지질학"
     l2: "sona kiwen"
-  - l1: "The sky gives off cold water."
+  - l1: "하늘이 차가운 물을 내린다."
     l2: "sewi li pana e telo lete."
     junkChips: ["seli"]
-  - l1: "She likes sweet water."
+  - l1: "그녀는 단물을 좋아한다."
     l2: "telo suwi li pona tawa ona."
     junkChips: ["suli"]
-  - l1: "Clay may harden."
+  - l1: "찰흙이 굳을지도 모른다."
     l2: "ko li ken kama kiwen."
     junkChips: ["kon"]
-  - l1: "Please wash your clothes!"
+  - l1: "옷을 좀 세탁해 주세요!"
     l2: "o telo e len sina!"
     junkChips: ["lete"]
-  - l1: "Learn the meaning of the word!"
+  - l1: "그 단어의 뜻을 배워라!"
     l2: "o kama sona e kon nimi!"
     junkChips: ["ko"]
-  - l1: "Milana studies the holy book."
+  - l1: "밀라나는 그 경전을 공부한다."
     l2: "jan Milana li kama sona e lipu sewi."
     junkChips: ["suwi"]
+- title: "3. 더 연습하기"
+  tasks:
+  - l1: "핀란드는 추운 나라다."
+    l2: "ma Sumi li ma lete."
+    junkChips: ["e"]
+  - l1: "신성한 존재가 그대를 지켜주기를!"
+    l2: "sewi o awen e sina!"
+    junkChips: ["ken"]
+  - l1: "추위 때문에 물이 얼었다."
+    l2: "telo li kama kiwen tan lete."
+    junkChips: ["e"]
+  - l1: "노래하는 사람이 힘차게 숨을 내쉰다."
+    l2: "jan kalama li pana wawa e kon."
+    junkChips: ["tan"]
+  - l1: "이 사악한 문서는 불태워질지어다!"
+    l2: "lipu ike ni o seli!"
+    junkChips: ["li"]
+    alsoAccept: ["lipu ni ike o seli!"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -34,20 +77,20 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-Okay, for this lesson, let's take a break from grammar and instead get philosophical!
+좋습니다, 이번 과에서는 문법에서 잠시 벗어나 철학적인 이야기를 해봅시다!
 
-Since ancient times, people tried to find simpler stuff that all complex stuff consists of, or can be grouped into. The Chinese thought of wood, fire, earth, metal, and water. The Greeks -- of fire, earth, air, and water. Some other systems also included heaven. Even today, as science answered many questions about the world, most things belong to one of 'four states of matter': gas, liquid, solid, plasma.
+아주 오랜 옛날부터 사람들은 모든 복잡한 것들을 이루거나 분류할 수 있는 더 단순한 무언가를 찾으려 했습니다. 중국에서는 나무, 불, 흙, 쇠, 물을 생각했습니다. 그리스인들은 불, 흙, 공기, 물을 꼽았습니다. 어떤 체계들은 여기에 하늘도 포함시켰습니다. 오늘날 과학이 세상에 대한 수많은 질문에 답을 내놓은 지금도, 대부분의 물질은 여전히 '물질의 네 가지 상태' 중 하나에 속합니다: 기체, 액체, 고체, 플라스마.
 
-And of course, those elements, materials, states of matter don't explain the entirety of our complex world. But they help us make sense of it. So let's learn some Toki Pona words that are useful for describing them:
+물론 이런 원소나 재료, 물질의 상태들이 우리의 복잡한 세상을 온전히 설명해 주지는 못합니다. 하지만 그것들은 세상을 이해하는 데 도움을 줍니다. 그러니 이런 것들을 묘사할 때 유용한 토키 포나 단어들을 배워봅시다.
 
 <List>
-  <Word sl="kon" m="air, soul, essence, meaning" />
-  <Word sl="telo" m="water, a thin liquid" />
-  <Word sl="ko" m="a soft solid or thick liquid, like sand, clay, dough, glue" />
-  <Word sl="kiwen" m="a hard solid, like stone, wood, metal" />
-  <Word sl="seli" m="fire, hot, to burn" />
-  <Word sl="lete" m="cold" />
-  <Word sl="sewi" m="sky; high, divine" />
+  <Word sl="kon" m="공기, 영혼, 본질, 의미" />
+  <Word sl="telo" m="물, 묽은 액체" />
+  <Word sl="ko" m="모래, 찰흙, 반죽, 풀처럼 부드러운 고체나 걸쭉한 액체" />
+  <Word sl="kiwen" m="돌, 나무, 금속처럼 단단한 고체" />
+  <Word sl="seli" m="불, 뜨거움, 타다" />
+  <Word sl="lete" m="차가움" />
+  <Word sl="sewi" m="하늘; 높음, 신성함" />
 </List>
 
 {/* A note for translators */}
@@ -57,29 +100,29 @@ And of course, those elements, materials, states of matter don't explain the ent
   Your language may have more specific words for those.
 */}
 
-Just like classical elements, Toki Pona words often feel broad, encompassing many ideas.  
-* **󱥚 sewi** is not just 'the above', but also the reverence we have for something that's always above us and always out of reach.  
-* **󱤝 kon** is not just 'gas', it incorporates the idea of a meaningful soul as something you can't see, as something related to breath.  
-* **󱤛 kiwen**, **󱤜 ko**, **󱥪 telo** don't tell you where the material came from, but they do describe how the material feels to the touch.
+고대의 원소들이 그랬듯, 토키 포나 단어들도 종종 폭넓은 느낌을 주며 여러 개념을 아우릅니다.
+* **󱥚 sewi**는 단순히 '위쪽'만이 아니라, 늘 우리 위에 있으면서도 결코 닿을 수 없는 무언가에 대한 경외심까지 담고 있습니다.
+* **󱤝 kon**은 단순히 '기체'만이 아니라, 눈에 보이지 않는 의미 있는 영혼이라는 개념을 담고 있으며, 숨과도 관련되어 있습니다.
+* **󱤛 kiwen**, **󱤜 ko**, **󱥪 telo**는 그 재료가 어디에서 왔는지는 말해 주지 않지만, 만졌을 때 어떤 느낌인지는 알려줍니다.
 
 {/* A note for translators */}
 {/*
   by "where the material came from", I am referring to rocks, plants, smelting, cooking, etc -- not countries of origin.
 */}
 
-This course just shows you the basics of Toki Pona, so we list every word with a short translation. But the translation only hints at a rough outline of the *semantic space* of a word -- the full range of situations where a word would make sense. Exploring that semantic space will mean exploring the situations! And that comes with time and practice.
+이 강좌는 토키 포나의 기초만을 보여주기 때문에, 모든 단어를 짧은 번역과 함께 나열합니다. 하지만 그 번역은 한 단어의 *의미 영역* -- 즉 그 단어가 자연스럽게 쓰일 수 있는 모든 상황의 범위 -- 을 대략적으로 암시할 뿐입니다. 그 의미 영역을 탐구한다는 것은 곧 그런 상황들을 직접 겪어본다는 뜻입니다! 그리고 그것은 시간과 연습을 통해서만 이루어집니다.
 
-Let's learn to use these words in phrases and sentences:
+이제 이 단어들을 구와 문장 속에서 사용하는 법을 배워봅시다.
 
 <List>
-  <Word sl="kiwen kasi" m="the hard stuff of a plant, wood" />
-  <Word sl="ko lete" m="cold fluff, snow" />
-  <Word sl="kon sewi" m="divine spirit" />
-  <Word sl="telo nasa" m="liquid that causes drunkenness, alcohol" />
-  <Sentence sl="lete li awen e moku." m="Coldness preserves the food." />
-  <Sentence sl="seli li moku e kiwen kasi." m="The fire consumed the wood." />
-  <Sentence sl="telo li kama tan sewi." m="Water is falling from the sky.<br />(It's raining.)" />
-  <Sentence sl="o kama sona e kon toki!" m="Learn the meaning of the speech!" />
+  <Word sl="kiwen kasi" m="식물의 단단한 부분, 나무" />
+  <Word sl="ko lete" m="차가운 솜털, 눈" />
+  <Word sl="kon sewi" m="신성한 영" />
+  <Word sl="telo nasa" m="취하게 만드는 액체, 술" />
+  <Sentence sl="lete li awen e moku." m="차가움이 음식을 보존한다." />
+  <Sentence sl="seli li moku e kiwen kasi." m="불이 나무를 삼켰다." />
+  <Sentence sl="telo li kama tan sewi." m="물이 하늘에서 떨어지고 있다.<br />(비가 온다.)" />
+  <Sentence sl="o kama sona e kon toki!" m="말의 의미를 배워라!" />
 </List>
 
 <Practice exercises={frontmatter.practice} />

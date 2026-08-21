@@ -1,34 +1,79 @@
 ---
 slug: "ko/24"
-title: "lesson 24: body"
-description: "Learn sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
+title: "24과: 신체"
+description: "sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja를 배워봅시다!"
 practice:
-  - l1: "I have a headache."
+- title: "1. 단어"
+  tasks:
+  - l1: "몸"
+    l2: "sijelo"
+    junkChips: ["len", "selo", "supa"]
+  - l1: "손"
+    l2: "luka"
+    junkChips: ["pana", "moku", "pali"]
+  - l1: "발"
+    l2: "noka"
+    junkChips: ["kama", "tawa", "awen"]
+  - l1: "머리"
+    l2: "lawa"
+    junkChips: ["misikeke", "ijo", "moli"]
+  - l1: "귀"
+    l2: "kute"
+    junkChips: ["la", "tenpo", "mun"]
+  - l1: "입"
+    l2: "uta"
+    junkChips: ["kalama", "moku", "soko"]
+  - l1: "돌기"
+    l2: "nena"
+    junkChips: ["palisa", "lupa", "ike"]
+  - l1: "막대"
+    l2: "palisa"
+    junkChips: ["nena", "lupa", "misikeke"]
+  - l1: "끈"
+    l2: "linja"
+    junkChips: ["telo", "kon", "sama"]
+- title: "2. 복습"
+  tasks:
+  - l1: "머리가 아프다."
     l2: "lawa mi li pakala."
     junkChips: ["kala"]
     alsoAccept: ["mi pakala lawa."]
-  - l1: "I heard a faint sound."
-    l2: "mi kute e kalama lili."
-    junkChips: ["li"]
-  - l1: "You obey. I command."
+  - l1: "너는 복종한다. 나는 명령한다."
     l2: "sina kute. mi lawa."
     junkChips: ["luka"]
-  - l1: "Spice feels hot to my mouth."
+  - l1: "향신료는 내 입에 맵게 느껴진다."
     l2: "namako li seli tawa uta mi."
     junkChips: ["e"]
-  - l1: "Please pet the lovely dog!"
+  - l1: "그 사랑스러운 개를 쓰다듬어 주세요!"
     l2: "o luka e soweli suwi!"
     junkChips: ["sewi"]
-  - l1: "Medicine heals her body."
+  - l1: "네덜란드에는 언덕이 있나요?"
+    l2: "nena li lon ala lon ma Netelan?"
+    junkChips: ["e"]
+  - l1: "약이 그녀의 몸을 낫게 한다."
     l2: "misikeke li pona e sijelo ona."
     junkChips: ["pi"]
-  - l1: "Her hair is nice to the touch."
+  - l1: "그녀의 머리카락은 촉감이 좋다."
     l2: "linja lawa ona li pona tawa luka."
     junkChips: ["e"]
     alsoAccept: ["linja ona li pona tawa luka."]
-  - l1: "The mountain is similar to the nose on my face."
+- title: "3. 추가 연습"
+  tasks:
+  - l1: "나는 희미한 소리를 들었다."
+    l2: "mi kute e kalama lili."
+    junkChips: ["li"]
+  - l1: "새는 날개를 이용해 날 수 있나요?"
+    l2: "waso li ken ala ken tawa kepeken luka?"
+    junkChips: ["seme"]
+  - l1: "안나는 독일의 총리가 되고 싶어한다."
+    l2: "jan Ana li wile lawa e ma Tosi."
+    junkChips: ["jan"]
+  - l1: "그 산은 내 얼굴에 있는 코와 비슷하다."
     l2: "nena kiwen li sama nena pi sinpin mi."
     junkChips: ["e"]
+  - l1: "부유한 사람들은 가난한 사람들의 말을 듣지 않는다."
+    l2: "jan pi mani mute li kute ala e jan pi mani lili."
+    junkChips: ["seme"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -36,18 +81,18 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-We already know the words for *eyes*, *heart*, *face*, and *back*, so let's learn the remaining parts of the body!
+우리는 이미 *눈*, *심장*, *얼굴*, *등*을 뜻하는 단어를 알고 있으니, 이제 나머지 신체 부위를 배워봅시다!
 
 <List>
-  <Word sl="lawa" m="head; to lead" />
-  <Word sl="kute" m="ear; to hear" />
-  <Word sl="nena" m="bump, like a nose, hill, breast" />
-  <Word sl="uta" m="mouth, lips; to kiss, to bite" />
-  <Word sl="sijelo" m="body" />
-  <Word sl="luka" m="hand, arm; to touch" />
-  <Word sl="noka" m="foot, leg" />
-  <Word sl="palisa" m="long hard thing, like a branch, rod, staff" />
-  <Word sl="linja" m="long flexible thing, like a string, rope" />
+  <Word sl="lawa" m="머리; 이끌다" />
+  <Word sl="kute" m="귀; 듣다" />
+  <Word sl="nena" m="돌기, 코, 언덕, 가슴처럼 튀어나온 것" />
+  <Word sl="uta" m="입, 입술; 입 맞추다, 물다" />
+  <Word sl="sijelo" m="몸" />
+  <Word sl="luka" m="손, 팔; 만지다" />
+  <Word sl="noka" m="발, 다리" />
+  <Word sl="palisa" m="가지, 막대, 지팡이처럼 길고 단단한 것" />
+  <Word sl="linja" m="끈, 밧줄처럼 길고 유연한 것" />
 </List>
 
 {/* A note for translators */}
@@ -57,14 +102,14 @@ We already know the words for *eyes*, *heart*, *face*, and *back*, so let's lear
   Same applies to "foot, leg".
 */}
 
-Something fun to notice is how many parts of the body have an associated action! The head leads, the eyes see, the ears hear, the mouth kisses, the heart feels, the hands touch.
+재미있게도, 신체 부위 중 상당수는 그에 연관된 동작을 함께 지닙니다! 머리는 이끌고, 눈은 보고, 귀는 듣고, 입은 입맞추고, 심장은 느끼고, 손은 만집니다.
 
 <List>
-    <Sentence sl="mi wile suli e linja lawa mi." m="I want to grow out my hair." />
-  <Sentence sl="jan lawa mi li kute e toki ike mi." m="My boss heard me running my mouth." />
-  <Sentence sl="ilo lukin li pana e sitelen ante." m="The mirror gives off an inverse image." />
-  <Sentence sl="sijelo mi li wile e lape." m="My body requires rest." />
-  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="My fingers are larger than my toes." />
+    <Sentence sl="mi wile suli e linja lawa mi." m="나는 머리카락을 기르고 싶다." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="상사가 내가 함부로 말하는 것을 들었다." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="거울은 좌우가 뒤집힌 상을 만들어낸다." />
+  <Sentence sl="sijelo mi li wile e lape." m="내 몸은 휴식을 필요로 한다." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="내 손가락은 발가락보다 크다." />
 </List>
 
 <Practice exercises={frontmatter.practice} />

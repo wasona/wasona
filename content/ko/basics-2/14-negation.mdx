@@ -1,29 +1,51 @@
 ---
 slug: "ko/14"
-title: "lesson 14: negation"
-description: "Learn ala!"
+title: "14과: 부정"
+description: "ala를 배워봅시다!"
 practice:
-  - l1: "You do not eat bugs."
+- title: "1. 복습"
+  tasks:
+  - l1: "당신은 벌레를 먹지 않는다."
     l2: "sina moku ala e pipi."
     junkChips: ["li"]
-  - l1: "People do not know me."
+  - l1: "사람들은 나를 모른다."
     l2: "jan li sona ala e mi."
     junkChips: ["o"]
-  - l1: "No one knows me."
+  - l1: "아무도 나를 모른다."
     l2: "jan ala li sona e mi."
     junkChips: ["o"]
-  - l1: "Millie does not want the book."
+  - l1: "밀리는 그 책을 원하지 않는다."
     l2: "jan Mili li wile ala e lipu."
     junkChips: ["tawa"]
-  - l1: "Birds cannot draw houses."
+  - l1: "새는 집을 그릴 수 없다."
     l2: "waso li ken ala sitelen e tomo."
     junkChips: ["lon"]
-  - l1: "Anna does not go to Germany."
+  - l1: "안나는 독일에 가지 않는다."
     l2: "jan Ana li tawa ala ma Tosi."
     junkChips: ["e"]
-  - l1: "Iman is not in the US."
+  - l1: "이만은 미국에 있지 않다."
     l2: "jan Iman li lon ala ma Mewika."
     junkChips: ["e"]
+- title: "2. 추가 연습"
+  tasks:
+  - l1: "당신은 잠을 잘 수 없다."
+    l2: "sina ken ala lape."
+    junkChips: ["li"]
+  - l1: "당신은 깨어 있어도 된다."
+    l2: "sina ken lape ala."
+    junkChips: ["li"]
+  - l1: "터키라는 나라는 새가 아니다."
+    l2: "ma Tuki li waso ala."
+    junkChips: ["e"]
+  - l1: "이집트는 유럽에 있지 않다."
+    l2: "ma Masu li lon ala ma Elopa."
+    junkChips: ["Mewika"]
+  - l1: "사람을 우상화하지 마세요."
+    l2: "o sewi ala e jan."
+    junkChips: ["suwi"]
+  - l1: "나라들은 서로 싸우지 말아야 한다!"
+    l2: "ma o utala ala e ma!"
+    junkChips: ["li"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -31,39 +53,37 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Negation
-
-We've just learned how to ask someone to do something. But how do we ask someone *not* to do something? It's time to learn about negation, using **󱤂 ala**:
+방금 우리는 누군가에게 무언가를 하라고 요청하는 법을 배웠습니다. 그런데 누군가에게 *하지 말라고* 요청하려면 어떻게 해야 합니까? 이제 부정을 배울 차례입니다. **󱤂 ala**를 사용합니다:
 
 <List>
-  <Word sl="ala" m="not" />
+  <Word sl="ala" m="아니다, ~하지 않다" />
 </List>
 
-In English, it's kind of a special word. But in Toki Pona, it's a pretty normal adjective! And like any other adjective, it goes after the word. You will often find it on nouns, adjectives, and verbs alike:
+영어에서는 이것이 다소 특별한 단어입니다. 하지만 토키 포나에서는 그저 평범한 형용사입니다! 다른 형용사와 마찬가지로 꾸미는 말 뒤에 옵니다. 명사, 형용사, 동사 어디에서든 이 단어를 볼 수 있습니다:
 
 <List>
-  <Word sl="jan ala" m="no person, not a person" />
-  <Sentence sl="jan ala li wile utala." m="No person wants to fight." />
-  <Word sl="suli ala" m="not big, not important" />
-  <Sentence sl="ni li suli ala tawa mi." m="This is not important to me." />
-  <Word sl="moku ala" m="not to eat" />
-  <Sentence sl="pipi li moku ala e soweli." m="Bugs do not eat animals." />
+  <Word sl="jan ala" m="사람이 아닌 것, 아무도 아님" />
+  <Sentence sl="jan ala li wile utala." m="아무도 싸우고 싶어 하지 않는다." />
+  <Word sl="suli ala" m="크지 않은, 중요하지 않은" />
+  <Sentence sl="ni li suli ala tawa mi." m="이것은 나에게 중요하지 않다." />
+  <Word sl="moku ala" m="먹지 않다" />
+  <Sentence sl="pipi li moku ala e soweli." m="벌레는 동물을 먹지 않는다." />
 </List>
 
-But interestingly, **󱤂 ala** also goes on prepositions and preverbs:
+그런데 흥미롭게도 **󱤂 ala**는 전치사와 전동사에도 붙습니다:
 
 <List>
-  <Word sl="wile ala" m="to not want to ..." />
-  <Sentence sl="sina wile ala moku e suwi." m="You do not want to eat sweets." />
-  <Word sl="tawa ala" m="to not go to ..., not towards ..." />
-  <Sentence sl="pipi li tawa ala kasi." m="The bug does not go to the plant." />
+  <Word sl="wile ala" m="~하고 싶지 않다" />
+  <Sentence sl="sina wile ala moku e suwi." m="당신은 단것을 먹고 싶지 않다." />
+  <Word sl="tawa ala" m="~로 가지 않다, ~쪽으로 가지 않다" />
+  <Sentence sl="pipi li tawa ala kasi." m="벌레는 식물 쪽으로 가지 않는다." />
 </List>
 
-You may notice something interesting. Although **󱤂 ala** can go anywhere that an adjective can, it likes to attach to the first word in the verb:
+흥미로운 점이 하나 있습니다. **󱤂 ala**는 형용사가 올 수 있는 자리라면 어디든 올 수 있지만, 동사의 첫 단어에 붙는 것을 선호합니다:
 * **󱤧󱤶󱤂 li moku ala ...**
 * **󱤧󱥷󱤂 li wile ala ...**
 * **󱤧󱥩󱤂 li tawa ala ...**
 
-This actually makes a lot of sense -- negating the first word in the verb also negates the whole sentence, which we often want!
+이것은 사실 매우 합리적입니다. 동사의 첫 단어를 부정하면 문장 전체가 부정되기 때문이며, 이는 우리가 흔히 원하는 결과입니다!
 
 <Practice exercises={frontmatter.practice} />
