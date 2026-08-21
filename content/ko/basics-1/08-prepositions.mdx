@@ -1,31 +1,76 @@
 ---
 slug: "ko/08"
-title: "lesson 8: prepositions"
-description: "Learn weka, pana, kama, awen, tawa, lon, tan!"
+title: "8과: 전치사"
+description: "weka, pana, kama, awen, tawa, lon, tan를 배워봅시다!"
 practice:
-  - l1: "in England"
+- title: "1. 어휘"
+  tasks:
+  - l1: "없애다"
+    l2: "weka"
+    junkChips: ["pana", "kama", "ma"]
+  - l1: "주다"
+    l2: "pana"
+    junkChips: ["weka", "awen", "sona"]
+  - l1: "오다"
+    l2: "kama"
+    junkChips: ["weka", "awen", "pana"]
+  - l1: "머무르다"
+    l2: "awen"
+    junkChips: ["kama", "weka", "pana"]
+  - l1: "~쪽으로"
+    l2: "tawa"
+    junkChips: ["lon", "e", "tan"]
+  - l1: "~에"
+    l2: "lon"
+    junkChips: ["e", "tan", "tawa"]
+  - l1: "~로부터"
+    l2: "tan"
+    junkChips: ["tawa", "lon", "e"]
+- title: "2. 복습"
+  tasks:
+  - l1: "영국에서"
     l2: "lon ma Inli"
-  - l1: "to Ali"
+  - l1: "알리에게"
     l2: "tawa jan Ali"
-  - l1: "You remove the bug from the house."
+  - l1: "당신은 집에서 벌레를 없앱니다."
     l2: "sina weka e pipi tan tomo."
     junkChips: ["li"]
-  - l1: "I like plants. (Plants are good to me.)"
+  - l1: "저는 식물을 좋아합니다. (식물은 저에게 좋습니다.)"
     l2: "kasi li pona tawa mi."
     junkChips: ["e"]
-  - l1: "I gave the bird a caterpillar."
+  - l1: "저는 새에게 애벌레를 주었습니다."
     l2: "mi pana e pipi tawa waso."
     junkChips: ["li"]
-  - l1: "People stay in the house."
+  - l1: "사람들이 집 안에 머무릅니다."
     l2: "jan li awen lon tomo."
     junkChips: ["e"]
-  - l1: "Noah goes to France."
+  - l1: "노아는 프랑스로 갑니다."
     l2: "jan Nowa li tawa ma Kanse."
     junkChips: ["e"]
-  - l1: "Toronto is in Canada."
+  - l1: "토론토는 캐나다에 있습니다."
     l2: "ma tomo Towano li lon ma Kanata."
     junkChips: ["e"]
     alsoAccept: ["ma Towano li lon ma Kanata."]
+- title: "3. 추가 연습"
+  tasks:
+  - l1: "식당에 새가 있습니다."
+    l2: "waso li lon tomo moku."
+    junkChips: ["e"]
+  - l1: "제 고양이가 저에게서 도망쳤습니다."
+    l2: "soweli mi li weka tan mi."
+    junkChips: ["e"]
+  - l1: "저는 당신 때문에 머무릅니다."
+    l2: "mi awen tan sina."
+    junkChips: ["e"]
+  - l1: "지리는 저에게 중요합니다."
+    l2: "sona ma li suli tawa mi."
+    junkChips: ["e"]
+  - l1: "샌프란시스코는 미국에 있습니다."
+    l2: "ma Sanpansiko li lon ma Mewika."
+    junkChips: ["e"]
+  - l1: "새는 자신의 둥지를 지킵니다."
+    l2: "waso li awen e tomo ona."
+    junkChips: ["tawa"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
@@ -33,18 +78,21 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Prepositions
-
-Now that we know some countries, let's talk about travel! But how do you say "go to" and "come from"? For that, we will need some verbs and prepositions:
+이제 몇몇 나라 이름을 알게 되었으니, 여행에 관해 이야기해봅시다! 그런데 "~로 가다"와 "~에서 오다"는 어떻게 말할까요? 이를 위해서는 몇 가지 동사가 필요합니다:
 
 <List>
-  <Word sl="weka" m="to remove, to go away; absent, away" />
-  <Word sl="pana" m="to give, to put" />
-  <Word sl="kama" m="to come, to arrive" />
-  <Word sl="awen" m="to stay, to remain, to protect" />
-  <Word sl="tawa" m="to, towards" />
-  <Word sl="lon" m="at, on, in" />
-  <Word sl="tan" m="from, because of" />
+  <Word sl="weka" m="없애다, 떠나다; 부재한, 없는" />
+  <Word sl="pana" m="주다, 놓다" />
+  <Word sl="kama" m="오다, 도착하다" />
+  <Word sl="awen" m="머무르다, 남다, 지키다" />
+</List>
+
+이러한 동사 다음에는 흔히 전치사가 따라옵니다:
+
+<List>
+  <Word sl="tawa" m="~로, ~쪽으로" />
+  <Word sl="lon" m="~에, ~위에, ~안에" />
+  <Word sl="tan" m="~로부터, ~때문에" />
 </List>
 
 {/* A note for translators */}
@@ -55,47 +103,47 @@ Now that we know some countries, let's talk about travel! But how do you say "go
   especially important to check.
 */}
 
-A _preposition_ is a word that goes before another word. It tells you how it relates to the sentence. A preposition + the word it attaches is called a _prepositional phrase_:
+_전치사_란 다른 단어 앞에 놓여, 그 단어가 문장과 어떤 관계를 맺는지 알려주는 단어입니다. 전치사와 그것이 붙는 단어를 합쳐 _전치사구_라고 부릅니다:
 
 <List>
-  <Word sl="tawa soweli" m="towards the animal" />
-  <Word sl="lon ma" m="on land, in the country" />
-  <Word sl="tan tomo" m="from the house" />
+  <Word sl="tawa soweli" m="동물 쪽으로" />
+  <Word sl="lon ma" m="땅 위에, 나라 안에" />
+  <Word sl="tan tomo" m="집으로부터" />
 </List>
 
-In Toki Pona, prepositional phrases can be used one of two ways. Firstly we can attach them at the end of a sentence. We can use this to mention location and direction of an action:
+토키 포나에서 전치사구는 두 가지 방식으로 쓰일 수 있습니다. 첫째, 문장 끝에 붙일 수 있습니다. 이렇게 하면 어떤 행동의 장소나 방향을 나타낼 수 있습니다:
 
 <List>
-  <Sentence sl="mi pana e waso tawa kasi." m="I put a bird onto a tree." />
-  <Sentence sl="waso li awen lon kasi." m="The bird remains on a tree." />
+  <Sentence sl="mi pana e waso tawa kasi." m="저는 새를 나무 위에 놓았습니다." />
+  <Sentence sl="waso li awen lon kasi." m="새는 나무 위에 머무릅니다." />
   <Sentence
     sl="sina weka e waso tan kasi."
-    m="You remove the bird from the tree."
+    m="당신은 나무에서 새를 없앱니다."
   />
 </List>
 
-Secondly, what if we want to talk about location or direction...without anything else happening? Fortunately, we can do that too. Prepositional phrases can come directly after **󱤧 li**, and act as the verb all by themselves. When prepositions act as verbs, they mean: **󱥩 tawa** 'to go to', **󱤬 lon** 'to be at', **󱥧 tan** 'to come from':
+둘째, 다른 일이 벌어지지 않고 그저 장소나 방향에 대해서만 말하고 싶다면 어떻게 할까요? 다행히 그것도 가능합니다. 전치사구는 **󱤧 li** 바로 뒤에 와서, 그 자체로 동사 역할을 할 수 있습니다. 전치사가 동사로 쓰일 때는 다음과 같은 뜻을 가집니다: **󱥩 tawa**는 '~로 가다', **󱤬 lon**은 '~에 있다', **󱥧 tan**은 '~에서 오다':
 
 <List>
-  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma goes to Japan." />
-  <Sentence sl="jan Nina li lon ma Lusi." m="Nina is in Russia." />
-  <Sentence sl="jan Mili li tan ma Kanse." m="Millie is from France." />
+  <Sentence sl="jan Ema li tawa ma Nijon." m="에마는 일본으로 갑니다." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="니나는 러시아에 있습니다." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="밀리는 프랑스 출신입니다." />
 </List>
 
-Let's practice with these sentences:
+이 문장들로 연습해봅시다:
 
 <List>
   <Sentence
     sl="mi tawa ma kasi."
-    m="I go to the plant land.<br />(Could be a forest, a grassy field, somewhere lush.)"
+    m="저는 식물의 땅으로 갑니다.<br />(숲, 풀밭, 혹은 초목이 우거진 어딘가일 수 있습니다.)"
   />
   <Sentence
     sl="sona li weka tan mi."
-    m="Knowledge went away from me.<br />(I forgot.)"
+    m="지식이 저에게서 사라졌습니다.<br />(저는 잊어버렸습니다.)"
   />
   <Sentence
     sl="soweli suwi li pona tawa mi."
-    m="Cute animals are good to me.<br />(I like cute animals.)"
+    m="귀여운 동물은 저에게 좋습니다.<br />(저는 귀여운 동물을 좋아합니다.)"
   />
 
 {/* A note for translators */}
@@ -106,15 +154,15 @@ Let's practice with these sentences:
   you might not need the text in brackets.
 */}
 
-  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah speaks to Emma." />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="노아는 에마에게 말합니다." />
   <Sentence
     sl="jan li toki Tosi lon ma Tosi."
-    m="People speak German in Germany."
+    m="사람들은 독일에서 독일어를 말합니다."
   />
 </List>
 
 <Practice exercises={frontmatter.practice} />
 
-## See also
-* [Q: do I have to memorise language and country names?](/ko/languages-countries/)
-* [Q: isn't 'jan li toki Inli' a bit strange?](/ko/named-verbs/)
+## 함께 보기
+* [Q: 언어와 나라 이름을 외워야 하나요?](/ko/languages-countries/)
+* [Q: 'jan li toki Inli'는 조금 이상하지 않나요?](/ko/named-verbs/)

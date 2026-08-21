@@ -1,37 +1,37 @@
 ---
 slug: "ko/fonts"
-title: "Q: how can I type sitelen pona?"
-description: "Learn about fonts!"
+title: "Q: sitelen pona는 어떻게 입력하나요?"
+description: "글꼴에 대해 알아봅시다!"
 ---
 
-*sitelen pona* is really cool! But it is not yet in Unicode. Most fonts only care about characters that Unicode defines. This means that fonts on your device probably don't know anything about sitelen pona.
+*sitelen pona*는 정말 멋지지만, 아직 유니코드에 포함되어 있지 않습니다. 대부분의 글꼴은 유니코드가 정의한 문자만을 다루기 때문에, 여러분의 기기에 설치된 글꼴은 아마 sitelen pona에 대해 전혀 알지 못할 것입니다.
 
-To fix that, you can install a sitelen pona font! There is more than a [hundred](https://linku.la/fonts/) to choose from, so let me highlight a few:
+이를 해결하려면 sitelen pona 글꼴을 설치하면 됩니다! 선택할 수 있는 글꼴이 [백 개](https://linku.la/fonts/) 넘게 있으니, 그중 몇 가지를 소개해 드리겠습니다.
 
-* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) by jan Itan is the font we're using on this website. It has quite a rigid, geometric design.<br /><img src="/example-nasin-nanpa.webp" />
-* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) by jan Lepeka is a more playful, handwritten design.<br /><img src="/example-sitelen-seli-kiwen.webp" />
-* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) is another handwritten design. It uses jan Sonja's handwriting from her 2014 book, plus some newer characters drawn by jan Pensa.<br /><img src="/example-pu-mono.webp" />
+* jan Itan이 만든 [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf)는 이 웹사이트에서 사용하고 있는 글꼴입니다. 상당히 각지고 기하학적인 디자인을 하고 있습니다.<br /><img src="/example-nasin-nanpa.webp" />
+* jan Lepeka가 만든 [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf)은 좀 더 경쾌한 손글씨 느낌의 디자인입니다.<br /><img src="/example-sitelen-seli-kiwen.webp" />
+* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf)도 또 다른 손글씨 느낌의 디자인입니다. 소냐 랑(Sonja Lang)이 2014년 저서에서 사용한 손글씨에, jan Pensa가 그린 몇몇 새로운 글자를 더한 것입니다.<br /><img src="/example-pu-mono.webp" />
 
-You should also know a font of great historic significance:
+역사적으로 중요한 의미를 지닌 글꼴도 하나 알아두시면 좋습니다.
 
-* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) by jan Same. It was made in 2016–2021, and it was the first popular sitelen pona font. It has a slightly non-standard design that looks much wider and more square than most fonts today. While linja pona was popular, *sitelen pona* gained several new glyphs, like **󱦀 kijetesantakalu** and **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
+* jan Same이 만든 [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf)입니다. 2016년부터 2021년 사이에 만들어졌으며, 최초로 널리 사용된 sitelen pona 글꼴이었습니다. 오늘날 대부분의 글꼴보다 훨씬 넓고 각진, 다소 비표준적인 디자인을 하고 있습니다. linja pona가 널리 쓰이던 동안 *sitelen pona*에는 **󱦀 kijetesantakalu**나 **󱥽 monsuta**처럼 새로운 글자가 여럿 추가되었습니다.<br /><img src="/example-linja-pona.webp" />
 
-**On Discord**, we have a bot, ilo Linku, that can draw text in any sitelen pona font onto an image! This way you can chat in sitelen pona without installing anything.  
-**On desktop**, you can download one of the fonts above, and click on it. Then your system will try to install it.  
-**On mobile**, installing fonts is quite difficult. You might want to talk to someone with technical knowledge.
+**디스코드**에는 ilo Linku라는 봇이 있어서, 원하는 sitelen pona 글꼴로 텍스트를 그려서 이미지로 만들어 줍니다! 이 방법을 이용하면 아무것도 설치하지 않고도 sitelen pona로 대화할 수 있습니다.  
+**데스크톱**에서는 위에 소개한 글꼴 중 하나를 내려받아 클릭하기만 하면, 시스템이 알아서 설치를 시도합니다.  
+**모바일**에서는 글꼴을 설치하기가 꽤 까다롭습니다. 기술에 밝은 분에게 도움을 요청하는 것이 좋을 수 있습니다.
 
-## Technical details: ascii vs ucsur fonts
+## 기술적인 이야기: ascii 글꼴과 ucsur 글꼴
 
-There are two main approaches to making a sitelen pona font, which we call **ascii fonts** and **ucsur fonts**.
+sitelen pona 글꼴을 만드는 방식에는 크게 두 가지가 있는데, 이를 **ascii 글꼴**과 **ucsur 글꼴**이라고 부릅니다.
 
-In **ascii fonts**, you type Latin characters, and they get scooped up by the font, and automatically converted to sitelen pona characters while being drawn.
+**ascii 글꼴**에서는 라틴 문자를 입력하면, 글꼴이 이를 받아들여 그리는 과정에서 자동으로 sitelen pona 문자로 변환합니다.
 
-* 🎉 very intuitive to use!
-* 🙁 a lot of work to make.
-* 🙁 this is not how other writing systems work on computers.
+* 🎉 사용하기 매우 직관적입니다!
+* 🙁 만들기가 매우 번거롭습니다.
+* 🙁 다른 문자 체계가 컴퓨터에서 동작하는 방식과 다릅니다.
 
-In **ucsur fonts**, instead of typing Latin characters, you type characters from *a different part of Unicode*. Unicode intentionally left this part blank, so that other people can use it for [their own private purposes](https://en.wikipedia.org/wiki/Private_Use_Areas). So a different organisation, [UCSUR](https://www.kreativekorp.com/ucsur/), decided this part now holds sitelen pona.
+**ucsur 글꼴**에서는 라틴 문자 대신, *유니코드의 다른 영역*에 속한 문자를 입력합니다. 유니코드는 이 영역을 의도적으로 비워 두어, 다른 사람들이 [자신만의 용도](https://en.wikipedia.org/wiki/Private_Use_Areas)로 사용할 수 있게 했습니다. 그래서 [UCSUR](https://www.kreativekorp.com/ucsur/)라는 별도의 단체가 이 영역을 sitelen pona 전용으로 삼기로 결정했습니다.
 
-* 🎉 this is how other writing systems work!
-* 🎉 less work to make!
-* 🙁 harder to use: you need to install an input method similar to the ones that exist for Hanzi, or make a keyboard layout.
+* 🎉 다른 문자 체계가 동작하는 방식과 동일합니다!
+* 🎉 만들기가 더 수월합니다!
+* 🙁 사용하기가 더 어렵습니다. 한자 등에 사용되는 것과 비슷한 입력기를 설치하거나, 키보드 레이아웃을 직접 만들어야 합니다.
