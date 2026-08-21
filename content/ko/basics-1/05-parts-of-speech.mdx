@@ -1,22 +1,28 @@
 ---
 slug: "ko/05"
-title: "lesson 5: parts of speech"
-description: "Learn about nouns, verbs, and adjectives!"
+title: "5과: 품사"
+description: "명사, 동사, 형용사에 대해 배워봅시다!"
 practice:
-  - l1: "a strong bug"
+- title: "1. 복습"
+  tasks:
+  - l1: "강한 벌레"
     l2: "pipi wawa"
-  - l1: "the strength of the bug"
+  - l1: "벌레의 힘"
     l2: "wawa pipi"
-  - l1: "a big eye"
+  - l1: "큰 눈"
     l2: "lukin suli"
-  - l1: "good food"
+  - l1: "좋은 음식"
     l2: "moku pona"
-  - l1: "amazingly good"
+  - l1: "놀랍도록 좋은"
     l2: "pona wawa"
-  - l1: "Food makes eyes better."
+  - l1: "적당한 크기"
+    l2: "suli pona"
+  - l1: "너무 작은"
+    l2: "lili ike"
+  - l1: "음식은 눈을 더 좋게 만든다."
     l2: "moku li pona e lukin."
     junkChips: ["waso"]
-  - l1: "Animals know the cuteness of birds."
+  - l1: "동물은 새의 귀여움을 안다."
     l2: "soweli li sona e suwi waso."
     junkChips: ["suli"]
 ---
@@ -26,81 +32,77 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Parts of speech
+눈치채신 분도 있겠지만, 저는 **󱥡 sona**라는 단어를 두 번 소개했습니다. 처음에는 '알다'라는 동사로 소개했고, 그다음에는 '지혜로운'이라는 형용사로 소개했습니다. 그렇다면 이 단어는 대체 어느 쪽입니까? 그리고 그것을 어떻게 알 수 있습니까?
 
-Some of you may have spotted that I introduced the word **󱥡 sona** twice, first as a verb 'to know', then as an adjective 'wise'. So which is it? And how do you know?
+사실은 둘 다 될 수 있습니다! 명사 뒤에 오면 형용사이고, **󱤧 li**가 그것을 동사로 이끌면 동사입니다. 즉, 모든 것은 문장 안에서의 어순에 달려 있습니다!
 
-In reality, it can be either! If it follows a noun, it's an adjective. If **󱤧 li** introduces it as a verb, then it's a verb. It's all about word order in a sentence!
-
-In fact, the same is true of _all_ words: if something is a noun, verb, or adjective, it can become _any of the three_! Among the words we've already learned, let's look at some examples:
+사실 이것은 _모든_ 단어에 해당하는 사실입니다. 명사든 동사든 형용사든, 그 어떤 단어라도 _세 가지 모두_로 쓰일 수 있습니다! 이미 배운 단어들 중에서 몇 가지 예를 살펴봅시다.
 
 <List>
-  <Word sl="lukin" m="N: eye; V: to see" />
-  <Word sl="moku" m="N: food; V: to consume, to eat" />
-  <Word sl="sona" m="N: knowledge, wisdom; V: to know; Adj: knowledgeable, wise" />
-  <Word sl="suli" m="N: size; V: to make bigger, to emphasize; Adj: big, important" />
-  <Word sl="pona" m="N: goodness; V: to make better, to improve; Adj: good, pleasant" />
-  <Word sl="waso" m="N: bird; V: to make into a bird; Adj: of a bird, bird-like" />
+  <Word sl="lukin" m="명사: 눈; 동사: 보다" />
+  <Word sl="moku" m="명사: 음식; 동사: 먹다, 섭취하다" />
+  <Word sl="sona" m="명사: 지식, 지혜; 동사: 알다; 형용사: 아는, 지혜로운" />
+  <Word sl="suli" m="명사: 크기; 동사: 더 크게 만들다, 강조하다; 형용사: 큰, 중요한" />
+  <Word sl="pona" m="명사: 좋음; 동사: 더 좋게 만들다, 개선하다; 형용사: 좋은, 유쾌한" />
+  <Word sl="waso" m="명사: 새; 동사: 새가 되게 만들다; 형용사: 새의, 새 같은" />
 </List>
 
-I've only listed *some* words we've learned so far -- just enough to see the patterns:
-* When **verbs become nouns**, they usually mean an act of doing something (*knowledge*), or something that forms a crucial part of the act (*food, eye*).
-* When **verbs become adjectives**, they mean those which do something (*wise people ~ people who know*).
-* When **nouns become verbs**, they usually mean to turn into or apply something to something (*to turn into a bird*).
-* When **nouns become adjectives**, they mean possession or similarity (*of a bird, bird-like*)
-* When **adjectives become nouns**, they mean a quality (*goodness, size*).
-* When **adjectives become verbs**, they impart a quality (*to make better, to make bigger*).
+지금까지 배운 단어 중 *일부*만을 골라 보았습니다 -- 이 정도면 규칙을 파악하기에 충분합니다.
+* **동사가 명사가 될 때**, 보통 어떤 행위 그 자체(*지식*)나, 그 행위에서 핵심적인 역할을 하는 것(*음식, 눈*)을 뜻합니다.
+* **동사가 형용사가 될 때**, 그 행위를 하는 것을 뜻합니다(*지혜로운 사람 ~ 아는 사람*).
+* **명사가 동사가 될 때**, 보통 무언가로 변하거나 무언가에 그것을 적용한다는 뜻이 됩니다(*새로 변하다*).
+* **명사가 형용사가 될 때**, 소유나 유사함을 뜻합니다(*새의, 새 같은*).
+* **형용사가 명사가 될 때**, 어떤 성질을 뜻합니다(*좋음, 크기*).
+* **형용사가 동사가 될 때**, 그 성질을 부여하는 것을 뜻합니다(*더 좋게 만들다, 더 크게 만들다*).
 
-But when talking, we Toki Pona speakers don't even have to think about these patterns most of the time! They start to blend into each other. At some point you stop even thinking about whether something was originally a noun or a verb or an adjective. It becomes a coherent whole!
+하지만 실제로 말할 때 토키 포나 화자들은 이런 규칙을 대부분 의식조차 하지 않습니다! 이 구분들은 점점 서로 녹아들어 갑니다. 어느 순간부터는 이 단어가 원래 명사였는지 동사였는지 형용사였는지조차 생각하지 않게 됩니다. 하나의 매끄러운 전체가 되는 것이죠!
 
-Let's practice using these words as nouns, verbs, and adjectives:
+이 단어들을 명사, 동사, 형용사로 사용하는 연습을 해봅시다.
 
 <List>
-  <Sentence sl="lukin li pona e sona." m="Eyes improve knowledge." />
-  <Sentence sl="moku li suli e pipi." m="Food makes the bugs grow bigger." />
+  <Sentence sl="lukin li pona e sona." m="눈은 지식을 향상시킨다." />
+  <Sentence sl="moku li suli e pipi." m="음식은 벌레를 더 크게 만든다." />
   <Sentence
     sl="moku li wawa e soweli lili."
-    m="Food strengthens the small animal."
+    m="음식은 작은 동물을 강하게 만든다."
   />
 </List>
 
-## Word order matters!
+## 어순이 중요합니다!
 
-Since any noun can be an adjective, and any adjective can be a noun, word order really matters! Notice how these two phrases mean different things:
+어떤 명사든 형용사가 될 수 있고, 어떤 형용사든 명사가 될 수 있으므로, 어순이 정말 중요합니다! 다음 두 구가 서로 다른 의미를 가진다는 점에 주목하세요.
 
 <List>
-  <Word sl="soweli suli" m="big animal" />
-  <Word sl="suli soweli" m="the size of an animal" />
+  <Word sl="soweli suli" m="큰 동물" />
+  <Word sl="suli soweli" m="동물의 크기" />
   <Sentence
     sl="soweli suli li sona e suli soweli."
-    m="The big animal knows the size of an animal."
+    m="큰 동물은 동물의 크기를 안다."
   />
 </List>
 
-## li and e matter, too!
+## li와 e도 중요합니다!
 
-Remember how li and e seemed a little unnecessary? Now that we know any meaningful word can be used anywhere, as a noun, verb, or adjective, we can finally see how important they are. Thanks to them, we can distinguish these three very different sentences:
+li와 e가 조금 불필요해 보였던 것을 기억하십니까? 이제 의미를 가진 단어는 무엇이든 명사, 동사, 형용사로 쓰일 수 있다는 것을 알게 되었으니, 비로소 이 둘이 얼마나 중요한지 알 수 있습니다. 이 둘 덕분에 우리는 서로 매우 다른 다음 세 문장을 구별할 수 있습니다.
 
 <List>
-  <Word sl="soweli sona" m="wise animal" />
-  <Word sl="sona pona" m="good knowledge; to know well" />
-  <Word sl="pona waso" m="goodness of the bird" />
+  <Word sl="soweli sona" m="지혜로운 동물" />
+  <Word sl="sona pona" m="좋은 지식; 잘 알다" />
+  <Word sl="pona waso" m="새의 좋음" />
   <Sentence
     sl="soweli sona li pona e waso."
-    m="The wise animal helps the bird."
+    m="지혜로운 동물은 새를 돕는다."
   />
   <Sentence
     sl="soweli li sona pona e waso."
-    m="The animal knows the bird well."
+    m="동물은 새를 잘 안다."
   />
   <Sentence
     sl="soweli li sona e pona waso."
-    m="The animal knows how good the bird is."
+    m="동물은 새가 얼마나 좋은지 안다."
   />
 </List>
 
-If you are ever confused about how to read or write a sentence, start by asking:
-"Where is the subject? Where is the verb? Where is the object?", and everything
-neatly separates into small phrases!
+문장을 읽거나 쓰다가 헷갈릴 때는 항상 이렇게 물어보세요. "주어는 어디에 있습니까? 동사는 어디에 있습니까? 목적어는 어디에 있습니까?" 그러면 모든 것이 작은 구절들로 깔끔하게 나뉩니다!
 
 <Practice exercises={frontmatter.practice} />
