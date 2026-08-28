@@ -1,0 +1,128 @@
+---
+slug: "ko/21"
+title: "21과: 자연"
+description: "akesi, kala, pan, kili, soko, misikeke, namako를 배워봅시다!"
+practice:
+- title: "1. 어휘"
+  tasks:
+  - l1: "도마뱀"
+    l2: "akesi"
+    junkChips: ["pipi", "soweli", "waso"]
+  - l1: "물고기"
+    l2: "kala"
+    junkChips: ["akesi", "lape", "misikeke"]
+  - l1: "빵"
+    l2: "pan"
+    junkChips: ["lili", "suli", "pipi"]
+  - l1: "과일"
+    l2: "kili"
+    junkChips: ["pilin", "wile", "namako"]
+  - l1: "버섯"
+    l2: "soko"
+    junkChips: ["kili", "kalama", "ike"]
+  - l1: "약"
+    l2: "misikeke"
+    junkChips: ["akesi", "kala", "alasa"]
+  - l1: "향신료"
+    l2: "namako"
+    junkChips: ["kili", "ko", "pana"]
+- title: "2. 복습"
+  tasks:
+  - l1: "균류는 죽은 식물을 먹는다."
+    l2: "soko li moku e kasi moli."
+    junkChips: ["mani"]
+  - l1: "반죽을 구우세요."
+    l2: "o seli e ko pan."
+    junkChips: ["sewi"]
+  - l1: "나는 감자를 캐냈다."
+    l2: "mi weka e kili tan ma."
+    junkChips: ["o"]
+  - l1: "식물은 물, 햇빛, 땅을 필요로 한다."
+    l2: "kasi li wile e telo, e suno, e ma."
+    junkChips: ["soko"]
+  - l1: "사람들은 이야기하고, 놀고, 노래하고, 잔다."
+    l2: "jan li toki, li musi, li kalama, li lape."
+    junkChips: ["e"]
+- title: "3. 추가 연습"
+  tasks:
+  - l1: "물고기가 빵을 먹을 수 있나요?"
+    l2: "kala li ken ala ken moku e pan?"
+    junkChips: ["seme"]
+  - l1: "당신의 피자에는 단 과일이 들어가야 할까요?"
+    l2: "pan sina o jo ala jo e kili suwi?"
+    junkChips: ["li"]
+  - l1: "썩은 과일과 이상한 버섯을 먹지 마세요."
+    l2: "o moku ala e kili jaki e soko nasa."
+    junkChips: ["pan"]
+  - l1: "개구리는 물속에도 있고 땅 위에도 있을 수 있다."
+    l2: "akesi li ken lon telo li ken lon ma."
+    junkChips: ["sewi"]
+    alsoAccept: ["akesi li ken lon telo lon ma."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+동물과 식물에 관련된 단어는 대부분 이미 배웠습니다 -- 남은 단어들을 배워봅시다!
+
+<List>
+  <Word sl="akesi" m="파충류나 양서류, 예를 들어 개구리, 도마뱀, 뱀" />
+  <Word
+    sl="kala"
+    m="물고기나 바다 생물, 예를 들어 연어, 고래, 상어, 문어"
+  />
+  <Word sl="pan" m="곡물성 음식, 예를 들어 밀, 쌀, 빵, 파스타" />
+  <Word sl="kili" m="과일, 채소" />
+  <Word sl="soko" m="버섯" />
+  <Word sl="misikeke" m="약" />
+  <Word sl="namako" m="향신료, 고명, 장식" />
+  <Sentence sl="soko li kili nasa." m="버섯은 이상한 과일이다." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="큰 물고기가 작은 물고기를 사냥한다."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="나는 약을 자주 먹어야 한다."
+  />
+</List>
+
+## 재료
+
+빵으로 만든 음식은 흔히 여러 가지 다른 재료를 하나로 묶어 담는 데 쓰입니다:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="이 피자에는 고기가 들어 있다." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="이 피자에는 채소가 들어 있다." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="이 피자에는 양념이 들어 있다." />
+</List>
+
+{/* A note for translators */}
+{/*
+  Your culture may have a different popular food that consists of meat, vegetables, and condiments, put into or onto bread. You are free to replace pizza with that food.
+*/}
+
+그런데 이것들을 하나의 문장으로 합치려면 어떻게 해야 할까요? 사실 이 재료들은 각각 문장의 *목적어*입니다. 한 문장은 *여러 개의 목적어*를 가질 수 있습니다: 즉 여러 개의 **󱤉 e**-구가 그냥 차례로 이어지면 됩니다:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="이 피자에는 고기, 채소, (그리고) 양념이 들어 있다."
+  />
+</List>
+
+이런 방식은 **󱤉 e**에만 해당하는 것이 아닙니다! **󱤧 li**, **󱤡 la**, 그리고 전치사로도 여러 개의 관련된 생각을 하나의 문장으로 합칠 수 있습니다. 우선 **󱤧 li**부터 살펴봅시다:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="그 사람은 물고기를 사냥한다. (= 그 사람은 낚시를 한다.)" />
+  <Sentence sl="jan li seli e ona." m="그 사람은 그것을 요리한다." />
+  <Sentence sl="jan li moku e ona." m="그 사람은 그것을 먹는다." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="그 사람은 물고기를 사냥하고, 그것을 요리하고, 그것을 먹는다." />
+</List>
+
+{/* A note for translators */}
+{/* If your language allows it, please list things without an "and" in between. */}
+
+<Practice exercises={frontmatter.practice} />

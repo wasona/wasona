@@ -1,0 +1,95 @@
+---
+slug: "ko/12"
+title: "12과: 요청"
+description: "o를 배워봅시다!"
+practice:
+- title: "1. 복습"
+  tasks:
+  - l1: "에마, 자려고 노력해 봐!"
+    l2: "jan Ema o alasa lape!"
+    junkChips: ["e"]
+  - l1: "새야, 나에게 노래해 줘!"
+    l2: "waso o kalama tawa mi!"
+    junkChips: ["e"]
+  - l1: "이봐, 켄타!"
+    l2: "jan Kenta o!"
+    junkChips: ["li"]
+  - l1: "니나에게 말을 걸어 봐!"
+    l2: "o toki tawa jan Nina!"
+    junkChips: ["li"]
+  - l1: "이상한 것을 그려 봐!"
+    l2: "o sitelen e ijo nasa!"
+    junkChips: ["li"]
+  - l1: "마야, 나에게 숟가락을 줘!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+    junkChips: ["li"]
+    alsoAccept: ["jan Maja o pana e ilo tawa mi!"]
+- title: "2. 더 연습하기"
+  tasks:
+  - l1: "좋은 것을 노래해 봐!"
+    l2: "o kalama e ijo pona!"
+    junkChips: ["ilo"]
+    alsoAccept: ["o kalama pona!", "o kalama pona e ijo!"]
+  - l1: "동굴에서 나가!"
+    l2: "o weka tan lupa ma!"
+    junkChips: ["e"]
+  - l1: "이 기사는 싱가포르에 대해 다뤄야 한다."
+    l2: "lipu o toki e ma Sinkapo."
+    junkChips: ["li"]
+  - l1: "이봐 노아, 네 강아지가 놀고 싶어 해!"
+    l2: "jan Nowa o, soweli sina li wile musi!"
+    junkChips: ["e"]
+  - l1: "이봐 이만, 부디 침대에 그대로 있어 줘."
+    l2: "jan Iman o awen lon supa lape."
+    junkChips: ["e"]
+    alsoAccept: ["jan Iman o awen lon supa."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+도기 보나에서 **󱤧 li**가 들어간 문장은 사실을 진술하는 문장입니다. 하지만 때로는 사실을 진술하는 대신 요청을 하고 싶을 때가 있습니다. 요청이란 다른 사람에게 우리가 바라는 바를 전하는 방법입니다. 요청을 할 때는 **󱤧 li** 대신 **󱥄 o**를 사용합니다.
+
+{/* A note for translators */}
+{/*
+  By "statement of fact" and "request", I am explaining in simple words
+  the categories of "indicative mood" and "imperative mood". Please check
+  if your language has those. Your audience may or may not know what they are.
+*/}
+
+<List>
+  <Word sl="o" m="요청, 명령, 지시, 바람을 시작함" />
+  <Sentence sl="ilo li sitelen e pipi." m="휴대폰이 벌레를 보여주고 있다." />
+  <Sentence sl="ilo o sitelen e waso!" m="휴대폰아, 부디 새를 보여줘!" />
+</List>
+
+명령을 몇 가지 더 살펴봅시다.
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="여러분, 부디 이 좋은 글을 읽어 주세요!" />
+  <Sentence sl="soweli mi o moku pona!" m="우리 고양이야, 잘 먹으렴!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="당신의 아이가 강해지기를!" />
+  <Sentence sl="pona o tawa sina!" m="선함이 당신에게 향하기를! (축복이 있기를!)" />
+</List>
+
+이 문장들 중 몇몇은 꽤 깔끔하게 두 부분으로 나뉜다는 것을 알아챘을 수도 있습니다.
+* 누군가의 주의를 부르는 부분 (**󱥄 o** 앞부분)
+* 요청 그 자체 (**󱥄 o** 뒷부분)
+
+{/* A note for translators */}
+{/*
+  If your language has "vocative case",
+  "The call for someone's attention" is simply vocative case.
+*/}
+
+이 두 부분은 따로 떼어 쓸 수도 있습니다.
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="에마, 부디 문을 닫아 줘!" />
+  <Sentence sl="jan Ema o!" m="이봐, 에마!" />
+  <Sentence sl="o pini e lupa tomo!" m="부디 문을 닫아 줘!" />
+</List>
+
+<Practice exercises={frontmatter.practice} />

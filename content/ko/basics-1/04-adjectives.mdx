@@ -1,0 +1,112 @@
+---
+slug: "ko/04"
+title: "4과: 형용사"
+description: "suli, lili, pona, ike, wawa, suwi를 배워봅시다!"
+practice:
+- title: "1. 단어"
+  tasks:
+  - l1: "큰"
+    l2: "suli"
+    junkChips: ["lili", "wawa", "sona"]
+  - l1: "작은"
+    l2: "lili"
+    junkChips: ["suli", "suwi", "pona"]
+  - l1: "좋은"
+    l2: "pona"
+    junkChips: ["ike", "kasi", "suwi"]
+  - l1: "나쁜"
+    l2: "ike"
+    junkChips: ["wawa", "pipi", "suli"]
+  - l1: "강한"
+    l2: "wawa"
+    junkChips: ["suli", "soweli", "lili"]
+  - l1: "귀여운"
+    l2: "suwi"
+    junkChips: ["pona", "waso", "lili"]
+- title: "2. 복습"
+  tasks:
+  - l1: "귀여운 동물"
+    l2: "soweli suwi"
+  - l1: "나쁜 곤충"
+    l2: "pipi ike"
+  - l1: "강력한 새"
+    l2: "waso wawa"
+  - l1: "새는 강한 동물을 안다."
+    l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
+  - l1: "작은 곤충이 큰 동물을 본다."
+    l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+이제 명사(사물)와 동사(행동)를 조금 알게 되었습니다. 이번에는 형용사(묘사하는 말)를 더해볼 차례입니다! 몇 가지 단어를 외워봅시다.
+
+<List>
+  <Word sl="suli" m="큰, 중요한" />
+  <Word sl="lili" m="작은, 어린" />
+  <Word sl="pona" m="좋은, 유쾌한" />
+  <Word sl="ike" m="나쁜, 불쾌한" />
+  <Word sl="wawa" m="강력한, 놀라운" />
+  <Word sl="sona" m="아는 것이 많은, 지혜로운" />
+  <Word sl="suwi" m="귀여운, 달콤한" />
+</List>
+
+영어에서는 형용사가 명사 앞에 옵니다. 하지만 도기 보나에서는 항상 명사 뒤에 옵니다.
+
+<List>
+  <Word sl="soweli suli" m="큰 동물" />
+  <Word sl="pipi lili" m="작은 벌레" />
+  <Word sl="waso suwi" m="사랑스러운 새" />
+</List>
+
+영어를 쓰는 사람들은 이 어순을 낯설게 느끼기도 하지만, 프랑스어, 아일랜드어, 아랍어, 말레이어를 비롯한 많은 언어에서 이런 어순은 지극히 자연스럽습니다. 이렇게 생각해 보십시오: 첫 번째 단어가 언제나 가장 중요한 단어입니다!
+
+{/* A note for translators */}
+{/*
+  If your language puts adjectives after nouns, just like Toki Pona,
+  please highlight this as a nice similarity between the two languages.
+*/}
+
+이제 묘사가 담긴 문장을 만들어봅시다.
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="새는 귀여운 동물을 본다."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="강한 동물은 큰 식물을 먹는다."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="나쁜 곤충들이 동물을 조금 문다."
+  />
+</List>
+
+이 문장들이 길고 지루하게 느껴진다면 걱정하지 마십시오! 곧 더 짧은 문장들을 살펴볼 것입니다. 기억하십시오: **󱤧 li**와 **󱤉 e**는 여러분의 친구입니다! 이 둘은 긴 문장을 주어, 동사, 목적어라는 세 조각으로 나눌 수 있게 도와줍니다.
+
+<List>
+  <Word sl="waso sona..." m="지혜로운 새는..."/>
+  <Word sl="...li sona pona..." m="...잘 안다..."/>
+  <Word sl="...e pipi lili." m="...작은 벌레들을."/>
+  <Sentence
+    sl="waso sona li sona pona e pipi lili."
+    m="지혜로운 새는 작은 벌레들을 잘 안다."
+  />
+</List>
+
+흥미로운 점이 있습니다. 영어에서는 형용사가 명사에만 쓰입니다. 하지만 도기 보나에서는 동사에도 쓰일 수 있습니다: _조금 물다_는 _moku lili_로, _잘 알다_는 _sona pona_로 표현합니다. 도기 보나에는 형용사와 부사의 구분이 없습니다.
+
+{/* A note for translators */}
+{/*
+  If your language also uses the same words as adjectives and adverbs,
+  please highlight this as a nice similarity between the two languages.
+*/}
+
+<Practice exercises={frontmatter.practice} />

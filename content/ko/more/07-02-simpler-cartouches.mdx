@@ -1,0 +1,88 @@
+---
+slug: "ko/simpler-cartouches"
+title: "Q: sitelen pona로 쓰면 이름이 너무 길어요. 어떻게 줄일 수 있나요?"
+description: "점, 눈금 표시, 축약형에 대해 알아봅시다!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+_sitelen pona_로 쓴 이름은 꽤 길어질 수 있습니다.
+
+<List>
+  <Sentence sl="lipu Wikipesija" m="위키피디아" />
+  <Sentence sl="ma Antasika" m="남극" />
+  <Sentence sl="ma Kolonpija" m="콜롬비아" />
+</List>
+
+사람들은 이름을 더 쉽게 읽고 쓸 수 있도록 세 가지 주목할 만한 체계를 고안해 냈습니다.
+
+## 1. 점 체계: 󱤿󱥠󱤕
+
+점 체계, 즉 _nasin sitelen kalama_는 2022년 jan Pumiko가 만들었습니다. 도기 보나 화자의 40~60%가 이 체계를 사용하거나 적어도 일부 상황에서 사용한다고 답했습니다. _nasin sitelen kalama_에서는 단어를 _모라(mora)_ 단위로 쪼갭니다. 모라란 음절과 비슷하지만 그보다 더 작은 단위입니다. 하나의 모라는 자음+모음이거나, 모음 뒤에 오는 -n입니다.
+
+- to-ki
+- ja-n
+- a-n-pa
+- si-n-pi-n
+
+문자 뒤에 가운데점을 추가하면, 그 이름에서 발음해야 할 모라의 개수가 하나씩 늘어납니다.
+
+<List>
+  <Word sp="󱦐󱤅󱦑" sl="A" />
+  <Word sp="󱦐󱤅󱦜󱦑" sl="An" />
+  <Word sp="󱦐󱤅󱦜󱦜󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦑" sl="S" />
+  <Word sp="󱦐󱥟󱦜󱦑" sl="Si" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦑" sl="Sin" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦑" sl="Sinpi" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
+</List>
+
+(이 체계에는 재미있는 특징이 하나 있습니다. **󱦐󱤅󱦑**는 그 자체로 완전한 모라를 이루므로, 점을 하나 추가하면 다음 모라인 **-n**이 추가됩니다. 반면 **󱦐󱥟󱦑**는 완전한 모라가 아니므로, 점을 하나 추가해도 첫 모라인 **si**가 완성될 뿐입니다.)
+
+콜론을 사용하면 단어 전체를 발음해야 한다는 뜻이 됩니다.
+
+<List>
+  <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
+</List>
+
+여러 문자를 카르투슈(cartouche) 안에 함께 넣으면 이름을 쓸 수 있습니다.
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅󱦜󱥩󱦜󱥜󱦜󱤔󱦜󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
+</List>
+
+* 🎉 이름 하나를 쓰는 데 필요한 단어 문자 수가 줄어듭니다!
+* 🙁 그래도 카르투슈 자체는 여전히 꽤 깁니다.
+
+## 2. 눈금 체계: 󱤿󱥠󱤕󱥍󱤩󱤨
+
+눈금 체계는 2024년 Sonja Lang이 공식 서신과 책에서 사용하기 위해 만들었습니다. 폭이 좁은 지면에서는 더 짧은 이름이 필요했기 때문입니다. 이 체계에서는 카르투슈 안의 각 문자 아래에 눈금 표시를 붙입니다. 발음하고자 하는 소리 또는 글자마다 눈금 표시를 하나씩 사용합니다.
+
+{/* Note: this section uses non-standard codepoints F19FC-F19FF, which I modded into nasin nanpa. If you ever update nasin nanpa, this section will break. Ideally, nskpll gets standardised later. */}
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡&#xF19FE;󱤜&#xF19FD;󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅&#xF19FD;󱥩&#xF19FD;󱥜&#xF19FD;󱤔&#xF19FD;󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
+</List>
+
+## 3. 첫 글자 체계
+
+이 방법은 2019년 DavidAR가 처음 선보였고, Sonja Lang이 *lipu su*("오즈의 마법사" 도기 보나판)에서 시도해 보았습니다. 처음에는 사람, 언어, 장소를 온전한 이름으로 소개합니다.
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="도로시" />
+</List>
+
+하지만 그다음 문장부터는 이름을 첫 글자만 남기고 줄여서 씁니다.
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="도로시" />
+</List>
