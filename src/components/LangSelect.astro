@@ -1,9 +1,16 @@
 ---
-import { langNames, langs } from "@/lib/i18n";
+import { langs, locales } from "@/lib/i18n";
+import { getRelativeLocaleUrl } from "astro:i18n";
 interface Props {
   current: string;
 }
-const { current } = Astro.props;
+const current = Astro.currentLocale!;
+const langLinks = [];
+for (let lang of langs) {
+  langLinks.push([lang, locales[lang]["lang_name"], getRelativeLocaleUrl(lang)]);
+}
+langLinks.push(["translate", locales[current]["add_language"] ?? "add language", "/translate/"]);
+const highlightLang = Astro.url.pathname === "/translate/" ? "translate" : current;
 ---
 
 <style>
@@ -21,14 +28,12 @@ const { current } = Astro.props;
 
 <nav dir="ltr">
   {
-    langs
-      .map((lang) =>
-        current === lang || (current === "/" && lang === "en") ? (
-          <strong>{langNames[lang]}</strong>
+    langLinks
+    .map(([lang, langName, url]) =>
+        lang === highlightLang ? (
+          <strong>{langName}</strong>
         ) : (
-          <a dir="ltr" href={lang == "en" ? "/" : `/${lang}/`}>
-            {langNames[lang]}
-          </a>
+          <a dir="ltr" href={url}>{langName}</a>
         ),
       )
       .reduce((prev, curr, i) => (

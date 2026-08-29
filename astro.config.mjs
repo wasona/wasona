@@ -13,6 +13,10 @@ const deploy = import.meta.env.PROD
 export default defineConfig({
   ...deploy,
   integrations: [mdx(), sitemap(), svelte()],
+  i18n: {
+    locales: ['en', 'cs', 'da', 'de', 'es', 'fr', 'hu', 'it', 'pl', 'tl', 'ru', 'uk', 'ar', 'he'],
+    defaultLocale: 'en',
+  },
   redirects: {
     "/en/": {
       status: 301,

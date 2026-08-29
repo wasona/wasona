@@ -1,30 +1,8 @@
-import fs from "fs";
-import path from "path";
+import { i18n } from "astro:config/server";
+import { toCodes } from "astro:i18n";
 
-export const langNames: Record<string, string> = {
-  en: "English",
-  cs: "čeština",
-  da: "dansk",
-  de: "Deutsch",
-  es: "español",
-  fr: "français",
-  hu: "magyar",
-  it: "italiano",
-  pl: "polski",
-  pt: "português",
-  tl: "Tagalog",
-  ru: "русский",
-  uk: "українська",
-  ar: "العربية",
-  he: "עברית",
-  jp: "日本語",
-  translate: "add language",
-};
-export const langs = Object.keys(langNames);
-export const locales = Object.fromEntries(
-  langs
-    .map((lang) => [lang, path.join("content", lang, "locale.json")])
-    .filter(([lang, localePath]) => fs.existsSync(localePath))
-    .map(([lang, localePath]) => [lang, fs.readFileSync(localePath, "utf-8")])
-    .map(([lang, locale]) => [lang, JSON.parse(locale)]),
-);
+export const langs = toCodes(i18n!.locales);
+export const locales: Record<string, any> = {};
+for (let lang of langs) {
+  locales[lang] = await import(`../../content/${lang}/locale.json`);
+}
