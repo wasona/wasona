@@ -8,7 +8,7 @@ const { id } = Astro.props;
 const onclick = (option: string) =>
   `document.getElementById("tabbed-${id}").className = "tabbed-${option}";`;
 
-const _ = (text: string) => locales[Astro.url.pathname.split("/")[1]][text];
+const _ = (text: string) => locales[Astro.currentLocale!][text];
 ---
 
 <style>

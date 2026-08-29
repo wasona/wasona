@@ -1,6 +1,7 @@
 ---
 import { locales } from "@/lib/i18n";
 import { type CollectionEntry } from "astro:content";
+import { getRelativeLocaleUrl } from "astro:i18n";
 interface Props {
   prevnext: {
     prev?: CollectionEntry<"content">;
@@ -9,8 +10,7 @@ interface Props {
 }
 const { prevnext } = Astro.props;
 
-const lang = Astro.url.pathname.split("/")[1];
-const _ = (text: string) => locales[lang][text];
+const _ = (text: string) => locales[Astro.currentLocale!][text];
 ---
 
 <style>
@@ -45,7 +45,7 @@ const _ = (text: string) => locales[lang][text];
       <a />
     )
   }
-  <a href={lang == "en" ? "/" : `/${lang}/`}>{_("Index")}</a>
+  <a href={getRelativeLocaleUrl(Astro.currentLocale!, "")}}>{_("Index")}</a>
   {
     prevnext.next ? (
       <a href={"/" + prevnext.next.id + "/"}>
