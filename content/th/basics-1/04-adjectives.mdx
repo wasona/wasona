@@ -1,0 +1,114 @@
+---
+slug: "th/04"
+title: "บทเรียนที่ 4: คำคุณศัพท์"
+description: "เรียนคำว่า suli, lili, pona, ike, wawa, suwi!"
+practice:
+- title: "1. คำศัพท์"
+  tasks:
+  - l1: "ใหญ่"
+    l2: "suli"
+    junkChips: ["lili", "wawa", "sona"]
+  - l1: "เล็ก"
+    l2: "lili"
+    junkChips: ["suli", "suwi", "pona"]
+  - l1: "ดี"
+    l2: "pona"
+    junkChips: ["ike", "kasi", "suwi"]
+  - l1: "เลว"
+    l2: "ike"
+    junkChips: ["wawa", "pipi", "suli"]
+  - l1: "แข็งแรง"
+    l2: "wawa"
+    junkChips: ["suli", "soweli", "lili"]
+  - l1: "น่ารัก"
+    l2: "suwi"
+    junkChips: ["pona", "waso", "lili"]
+- title: "2. ทบทวน"
+  tasks:
+  - l1: "สัตว์ที่น่ารัก"
+    l2: "soweli suwi"
+  - l1: "แมลงที่ไม่ดี"
+    l2: "pipi ike"
+  - l1: "นกที่แข็งแรง"
+    l2: "waso wawa"
+  - l1: "นกรู้จักสัตว์ที่แข็งแรง"
+    l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
+  - l1: "แมลงตัวเล็กดูสัตว์ตัวใหญ่"
+    l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+หลังจากคุณเรียนรู้คำนาม (สิ่งของ) และคำกริยา (การกระทำ) มาบ้างแล้ว เรามาเรียนรู้คำคุณศัพท์ (คำขยายคำนาม) กันต่อ! เริ่มจากจำศัพท์เหล่านี้กัน: 
+
+<List>
+  <Word sl="suli" m="ใหญ่, สำคัญ" />
+  <Word sl="lili" m="เล็ก, เยาว์วัย" />
+  <Word sl="pona" m="ดี, พอใจ" />
+  <Word sl="ike" m="เลว, แย่, ไม่น่าพอใจ" />
+  <Word sl="wawa" m="แข็งแรง, ทรงพลัง, ยอดเยี่ยม" />
+  <Word sl="sona" m="มีความรู้, ฉลาด" />
+  <Word sl="suwi" m="น่ารัก, หวาน" />
+</List>
+ 
+ในภาษา Toki Pona คำคุณศัพท์จะวางไว้ข้างหลังคำนาม เช่นเดียวกับภาษาไทย รวมถึงภาษาฝรั่งเศส ไอริช อารบิก มาเลย์ และภาษาอื่นๆ: 
+
+<List>
+  <Word sl="soweli suli" m="สัตว์ตัวใหญ่" />
+  <Word sl="pipi lili" m="แมลงตัวเล็ก" />
+  <Word sl="waso suwi" m="นกที่น่ารัก" />
+</List>
+
+อย่างไรก็ตาม ข้อสังเกตที่สำคัญคือ Toki Pona ไม่มีคำลักษณะนามเหมือนภาษาไทย ดังนั้น วลี "สัตว์ตัวใหญ่" จึงสามารถแปลได้ว่า "soweli (สัตว์) suli (ใหญ่)" ได้เลยโดยไม่ต้องใส่คำลักษณะนามว่า "ตัว" ไว้ตรงกลาง 
+
+
+{/* A note for translators */}
+{/*
+  If your language puts adjectives after nouns, just like Toki Pona,
+  please highlight this as a nice similarity between the two languages.
+*/}
+
+มาลองดูประโยคที่มีการขยายคำนามกัน: 
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="นกดูสัตว์ที่น่ารัก"
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="สัตว์ที่แข็งแรงกินพืชขนาดใหญ่"
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="แมลงที่ไม่ดีกัดสัตว์ไปนิดหน่อย"
+  />
+</List>
+
+ถ้าคุณรู้สึกว่าประโยคข้างบนนี้ยาวและเข้าใจยากเกินไป ไม่ต้องกังวลไปนะ! เดี๋ยวถัดไปเราจะเปลี่ยนมาเป็นประโยคสั้นขึ้น แต่จำไว้เสมอว่า: **󱤧 li** และ **󱤉 e** เป็นตัวช่วยที่สำคัญของคุณ! มันมีหน้าที่ช่วยตัดประโยคยาวๆ ให้เป็น 3 ส่วน: ประธาน กริยา และกรรม:  
+
+<List>
+  <Word sl="waso sona..." m="นกที่ฉลาด..."/>
+  <Word sl="...li sona pona..." m="...รู้จักดี..."/>
+  <Word sl="...e pipi lili." m="...แมลงตัวเล็ก"/>
+  <Sentence
+    sl="waso sona li sona pona e pipi lili."
+    m="นกที่ฉลาดรู้จักแมลงตัวเล็กดี."
+  />
+</List>
+
+มีสิ่งที่น่าสนใจอีกอย่างหนึ่งคือ: ในภาษา Toki Pona เราสามารถใช้คำคุณศัพท์ขยายได้ทั้งคำนามและคำกริยาด้วย (ทำหน้าที่ทั้ง adjective และ adverb) ซึ่งมีความคล้ายคลีงกับภาษาไทยในบางคำ เช่น _กัดนิดหน่อย_ ~ _moku lili_, _รู้จักดี_ ~ _sona pona_ เราจึงสามารถวางคำขยายไว้หลังคำกริยาได้แบบเดียวกับภาษาไทยเช่นกัน เช่น _กินเยอะ_ ~ _moku suli_
+
+
+{/* A note for translators */}
+{/*
+  If your language also uses the same words as adjectives and adverbs,
+  please highlight this as a nice similarity between the two languages.
+*/}
+
+<Practice exercises={frontmatter.practice} />
