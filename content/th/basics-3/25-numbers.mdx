@@ -1,0 +1,106 @@
+---
+slug: "th/25"
+title: "บทเรียนที่ 25: ตัวเลข"
+description: "เรียนคำว่า nanpa, wan, tu, ale, kipisi!"
+practice:
+- title: "1. คำศัพท์"
+  tasks:
+  - l1: "ตัวเลข"
+    l2: "nanpa"
+    junkChips: ["mute", "sama", "li"]
+  - l1: "หนึ่ง"
+    l2: "wan"
+    junkChips: ["pini", "nasin", "ni"]
+  - l1: "สอง"
+    l2: "tu"
+    junkChips: ["sama", "mute", "kipisi"]
+  - l1: "ทุกอย่าง"
+    l2: "ale"
+    junkChips: ["kala", "linja", "ala"]
+  - l1: "แบ่ง"
+    l2: "kipisi"
+    junkChips: ["anu", "ken", "weka"]
+- title: "2. ทบทวน"
+  tasks:
+  - l1: "แปด"
+    l2: "luka tu wan"
+    junkChips: ["tu"]
+  - l1: "คุณหั่นขนมปัง"
+    l2: "sina kipisi e pan."
+    junkChips: ["li"]
+  - l1: "เราสองคนกลายเป็นหนึ่งเดียว"
+    l2: "mi tu li kama wan."
+    junkChips: ["pi"]
+  - l1: "ฉันรู้สามภาษา"
+    l2: "mi sona e toki tu wan."
+    junkChips: ["luka"]
+    alsoAccept: ["mi sona toki tu wan."]
+  - l1: "เงิน 5 ยูโร"
+    l2: "mani luka pi ma Elopa"
+    junkChips: ["tu"]
+  - l1: "เดือนเมษายนเริ่มขึ้นแล้ว"
+    l2: "tenpo mun nanpa tu tu li open."
+    junkChips: ["suno"]
+    alsoAccept: ["mun nanpa tu tu li open."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## จำนวนนับ
+
+มาเรียนนับจำนวนกัน!
+
+<List>
+  <Word sl="wan" m="หนึ่ง, รวมกัน" />
+  <Word sl="tu" m="สอง, แยกกัน" />
+  <Word sl="luka" m="ห้า, มือ" />
+  <Word sl="mute" m="หลาย" />
+  <Word sl="ale" m="ทั้งหมด, ทุกอย่าง" />
+  <Word sl="kipisi" m="ชิ้น, ส่วน, แบ่ง" />
+</List>
+
+ภาษา Toki Pona มีคำสำหรับเลข 1, 2, 5 แต่ไม่มีเลข 3 กับ 4! แต่ว่านี่ไม่ใช่เรื่องแปลกอะไร ให้คุณจินตนาการว่า **󱥳 wan**, **󱥮 tu**, **󱤭 luka** เป็นเหมือนเหรียญ 1 บาท 2 บาท 5 บาทก็ได้ เราลองมานับเลข 1 ถึง 10 กัน:
+
+<List>
+    <Word sl="wan" m="หนึ่ง" />
+    <Word sl="tu" m="สอง" />
+    <Word sl="tu wan" m="สาม" />
+    <Word sl="tu tu" m="สี่" />
+    <Word sl="luka" m="ห้า" />
+    <Word sl="luka wan" m="หก" />
+    <Word sl="luka tu" m="เจ็ด" />
+    <Word sl="luka tu wan" m="แปด" />
+    <Word sl="luka tu tu" m="เก้า" />
+    <Word sl="luka luka" m="สิบ" />
+</List>
+
+ในสถานการณ์ส่วนใหญ่ แค่รู้เลขจำนวนน้อยก็เพียงพอสำหรับการสื่อสารแล้ว แต่ถ้าคุณต้องการพูดถึงการซื้อขาย หรือวันเดือนปีในปฏิทินเกรกอเรียน เรามีหน้าพิเศษที่พูดถึงเลขจำนวนมากอยู่ข้างล่าง
+
+## เลขลำดับ
+
+โดยทั่วไป ตัวเลขก็ถือว่าเป็นคำคุณศัพท์:
+
+<List>
+    <Word sl="kala wan" m="ปลาหนึ่งตัว" />
+    <Word sl="soko tu tu" m="เห็ดสี่ดอก" />
+    <Word sl="mun luka" m="ห้าเดือน" />
+</List>
+
+แต่ว่าพวกนี้คือ *จำนวนนับ*: ตัวเลขที่บ่งบอกปริมาณ แต่ก็ยังมี *เลขลำดับ* อีกด้วย: ซึ่งเอาไว้บ่งบอกลำดับหรืออันดับที่ของสิ่งต่างๆ ในการบอกลำดับ ให้เราใช้ **󱤽 nanpa** + ตัวเลข:
+
+<List>
+    <Word sl="nanpa" m="ตัวเลข, ลำดับที่..., อันดับที่..." />
+    <Word sl="kala nanpa wan" m="ปลาตัวที่หนึ่ง" />
+    <Word sl="soko nanpa tu tu" m="เห็ดดอกที่สี่" />
+    <Word sl="mun nanpa luka" m="เดือนที่ห้า" />
+</List>
+
+(อีกอย่างนะ **󱤽 nanpa** ถือเป็นคำพิเศษ! ไม่ต้องใช้ **󱥍 pi** ตามหลัง)
+
+<Practice exercises={frontmatter.practice} />
+
+## อ่านเพิ่มเติม
+* [Q: ฉันจะพูดตัวเลขจำนวนมากๆ ได้อย่างไร](/th/large-numbers/)

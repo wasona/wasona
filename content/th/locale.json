@@ -1,0 +1,24 @@
+{
+  "Index": "สารบัญ",
+  "Next": "บทต่อไป",
+  "Previous": "บทก่อนหน้า",
+  "Translation": "คำแปล",
+
+  "Consonants": "พยัญชนะ",
+  "Labial": "ริมฝีปาก (Labial)",
+  "Coronal": "โพรงปาก (Coronal)",
+  "Dorsal": "หลังลิ้น (Dorsal)",
+
+  "Vowels": "สระ",
+  "Front": "หน้า (Front)",
+  "Central": "กลาง (Central)",
+  "Back": "หลัง (Back)",
+
+  "translate": "จงแปลประโยค",
+  "translate_word": "ข้อใดมีความหมายว่า...",
+  "check": "ตรวจคำตอบ",
+  "continue": "ต่อไป",
+  "incorrect": "❌ ยังไม่ถูกนะ คำตอบที่ถูกคือ:",
+  "correct": "✅ ถูกต้อง! เก่งมาก!",
+  "done": "🎉 ทำแบบฝึกหัดครบแล้ว!"
+}

@@ -1,0 +1,58 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>คำศัพท์</th>
+      <th>ความหมาย</th>
+      <th>หมายเหตุเพิ่มเติม</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="mi" />
+      <td>ฉัน</td>
+      <td>ออกเสียงเหมือนคำว่า me (ฉัน) ในภาษาอังกฤษ แต่สะกดไม่เหมือนกันนะ!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="ken" />
+      <td>สามารถ</td>
+      <td>ออกเสียงคล้ายคำว่า can (สามารถ) ในภาษาอังกฤษ แต่สะกดไม่เหมือนกันนะ!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="jan" />
+      <td>คน</td>
+      <td>จำได้ไหมว่า <b>j</b> ต้องออกเสียงอย่างไร!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kute" />
+      <td>ฟัง</td>
+      <td>อย่าลืมออกเสียง -<b>e</b> ที่ท้ายคำด้วยนะ!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>ตัวเลข</td>
+      <td>เพิ่มเติมอีกนิดว่าตัวสะกด <b>np</b> เราจะออกเสียงเป็น <b>mp</b> (นัมปา) นะ!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>เสียง</td>
+      <td>สังเกตว่าการเน้นเสียงจะเริ่มที่พยางค์แรกเสมอ!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>กิ้งก่า</td>
+      <td>คำสามารถเริ่มต้นด้วยเสียงสระได้!</td>
+    </tr>
+  </tbody>
+</table>

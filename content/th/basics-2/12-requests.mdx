@@ -1,0 +1,97 @@
+---
+slug: "th/12"
+title: "บทเรียนที่ 12: ประโยคขอร้อง"
+description: "เรียนคำว่า o!"
+practice:
+- title: "1. ทบทวน"
+  tasks:
+  - l1: "เอมม่า พยายามหลับสิ!"
+    l2: "jan Ema o alasa lape!"
+    junkChips: ["e"]
+  - l1: "นกเอ๋ย จงร้องเพลงให้ฉัน!"
+    l2: "waso o kalama tawa mi!"
+    junkChips: ["e"]
+  - l1: "เฮ่ย เคนตะ!"
+    l2: "jan Kenta o!"
+    junkChips: ["li"]
+  - l1: "คุยกับนีน่าสิ!"
+    l2: "o toki tawa jan Nina!"
+    junkChips: ["li"]
+  - l1: "วาดรูปสิ่งที่แปลกๆ สิ!"
+    l2: "o sitelen e ijo nasa!"
+    junkChips: ["li"]
+  - l1: "มายา เอาช้อนให้ฉันหน่อยสิ!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+    junkChips: ["li"]
+    alsoAccept: ["jan Maja o pana e ilo tawa mi!"]
+- title: "2. ฝึกฝนเพิ่มอีก"
+  tasks:
+  - l1: "ร้องเพลงอะไรก็ได้ที่เพราะๆ หน่อยสิ!"
+    l2: "o kalama e ijo pona!"
+    junkChips: ["ilo"]
+    alsoAccept: ["o kalama pona!", "o kalama pona e ijo!"]
+  - l1: "จงออกไปจากถ้ำซะ!"
+    l2: "o weka tan lupa ma!"
+    junkChips: ["e"]
+  - l1: "บทความนี้ควรพูดเกี่ยวกับประเทศสิงคโปร์"
+    l2: "lipu o toki e ma Sinkapo."
+    junkChips: ["li"]
+  - l1: "เฮ่ย โนอาห์ สุนัขของคุณอยากเล่นสนุกนะ!"
+    l2: "jan Nowa o, soweli sina li wile musi!"
+    junkChips: ["e"]
+  - l1: "นี่อิมาน โปรดพักอยู่ที่เตียงเถอะ"
+    l2: "jan Iman o awen lon supa lape."
+    junkChips: ["e"]
+    alsoAccept: ["jan Iman o awen lon supa."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+ในภาษา Toki Pona ประโยคที่มี **󱤧 li** เป็นประโยคบอกเล่า แต่ว่าบางครั้งเราไม่ต้องการบอกเล่าเหตุการณ์ เราอยากจะขอร้องหรือสั่งคนอื่นแทน
+การขอร้องจะเป็นการบอกให้คนอื่นรู้ถึงสิ่งที่เราอยากให้เกิดขึ้น ในประโยคขอร้อง เราจะแทนที่ **󱤧 li** ด้วย **󱥄 o** แทน:
+
+{/* A note for translators */}
+{/*
+  By "statement of fact" and "request", I am explaining in simple words
+  the categories of "indicative mood" and "imperative mood". Please check
+  if your language has those. Your audience may or may not know what they are.
+*/}
+
+<List>
+  <Word sl="o" m="คำช่วยบอกการขอร้อง, การสั่ง, ความปรารถนา" />
+  <Sentence sl="ilo li sitelen e pipi." m="โทรศัพท์กำลังแสดงรูปแมลง" />
+  <Sentence sl="ilo o sitelen e waso!" m="โทรศัพท์จ๋า แสดงรูปนกให้หน่อย!" />
+</List>
+
+ลองมาดูประโยคคำสั่งอื่นๆ กัน:
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="ประชาชนเอ๋ย จงอ่านหนังสือดีๆ" />
+  <Sentence sl="soweli mi o moku pona!" m="แมวของฉัน โปรดกินเยอะๆ นะ!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="ขอให้ลูกของคุณแข็งแรงขึ้น!" />
+  <Sentence sl="pona o tawa sina!" m="ขอให้เรื่องดีๆ ไปสู่คุณ! (ขออวยพรให้คุณ!)" />
+</List>
+
+คุณอาจสังเกตว่าในบางประโยคเราจะสามารถแบ่งออกมาได้เป็นสองส่วนย่อย:
+* ส่วนที่เรียกให้อีกฝ่ายหันมาสนใจ (ก่อนคำว่า **󱥄 o**) เหมือนภาษาไทยที่ใช้ว่า เฮ่ย..., นี่...,  ...เอ๋ย 
+* ส่วนที่ขอร้อง (หลังคำว่า **󱥄 o**)
+
+
+{/* A note for translators */}
+{/*
+  If your language has "vocative case",
+  "The call for someone's attention" is simply vocative case.
+*/}
+
+เราสามารถใช้แยกส่วนใดส่วนหนึ่งก็ได้: 
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="นี่เอมม่า ปิดประตูหน่อยสิ!" />
+  <Sentence sl="jan Ema o!" m="นี่เอมม่า!" />
+  <Sentence sl="o pini e lupa tomo!" m="ปิดประตูหน่อยสิ!" />
+</List>
+
+<Practice exercises={frontmatter.practice} />
