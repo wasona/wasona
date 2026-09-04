@@ -1,0 +1,169 @@
+---
+slug: "eo/08"
+title: "leciono 8: prepozicioj"
+description: "Lernu weka, pana, kama, awen, tawa, lon, tan!"
+practice:
+- title: "1. Vortoj"
+  tasks:
+  - l1: "forigi"
+    l2: "weka"
+    junkChips: ["pana", "kama", "ma"]
+  - l1: "doni"
+    l2: "pana"
+    junkChips: ["weka", "awen", "sona"]
+  - l1: "veni"
+    l2: "kama"
+    junkChips: ["weka", "awen", "pana"]
+  - l1: "resti"
+    l2: "awen"
+    junkChips: ["kama", "weka", "pana"]
+  - l1: "al"
+    l2: "tawa"
+    junkChips: ["lon", "e", "tan"]
+  - l1: "ĉe"
+    l2: "lon"
+    junkChips: ["e", "tan", "tawa"]
+  - l1: "el"
+    l2: "tan"
+    junkChips: ["tawa", "lon", "e"]
+- title: "2. Revise"
+  tasks:
+  - l1: "en Anglujo"
+    l2: "lon ma Inli"
+  - l1: "al Ali"
+    l2: "tawa jan Ali"
+  - l1: "Vi forigas la insekton el la domo."
+    l2: "sina weka e pipi tan tomo."
+    junkChips: ["li"]
+  - l1: "Mi ŝatas plantojn. (Plantoj estas plaĉaj al mi.)"
+    l2: "kasi li pona tawa mi."
+    junkChips: ["e"]
+  - l1: "Mi donis raŭpon al la birdo."
+    l2: "mi pana e pipi tawa waso."
+    junkChips: ["li"]
+  - l1: "Homoj restas en la domo."
+    l2: "jan li awen lon tomo."
+    junkChips: ["e"]
+  - l1: "Noah iras al Francujo."
+    l2: "jan Nowa li tawa ma Kanse."
+    junkChips: ["e"]
+  - l1: "Toronto estas en Kanado."
+    l2: "ma tomo Towano li lon ma Kanata."
+    junkChips: ["e"]
+    alsoAccept: ["ma Towano li lon ma Kanata."]
+- title: "3. Plia ekzerco"
+  tasks:
+  - l1: "Birdo estas en la manĝejo."
+    l2: "waso li lon tomo moku."
+    junkChips: ["e"]
+  - l1: "Mia kato forkuris de mi."
+    l2: "soweli mi li weka tan mi."
+    junkChips: ["e"]
+  - l1: "Mi restas pro vi."
+    l2: "mi awen tan sina."
+    junkChips: ["e"]
+  - l1: "Geografio estas grava al mi."
+    l2: "sona ma li suli tawa mi."
+    junkChips: ["e"]
+  - l1: "San Francisco estas en Usono."
+    l2: "ma Sanpansiko li lon ma Mewika."
+    junkChips: ["e"]
+  - l1: "La birdo gardas sian neston."
+    l2: "waso li awen e tomo ona."
+    junkChips: ["tawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nun ni konas keljan landojn, do ni parolu pri vojaĝado! Sed kiel oni diru "iri al" kaj "veni de"? Por tio, ni bezonos kelkajn verbojn:
+
+<List>
+  <Word sl="weka" m="forigi, foriri; for" />
+  <Word sl="pana" m="doni, meti" />
+  <Word sl="kama" m="veni" />
+  <Word sl="awen" m="resti, sekurigi; restanta, sekura" />
+</List>
+
+Apud tiuj verboj vi ofte trovas prepoziciojn:
+
+<List>
+  <Word sl="tawa" m="al" />
+  <Word sl="lon" m="ĉe, sur, en" />
+  <Word sl="tan" m="de, el, pro" />
+</List>
+
+{/* A note for translators */}
+{/*
+  If your language has noun case, please think about
+  how "tawa, lon, tan" compare to your noun cases.
+  The terms "dative case" and "locative case" are
+  especially important to check.
+*/}
+
+_Prepozicio_ estas vorto kiu
+A _preposition_ is a word that goes before another word. It tells you how it relates to the sentence. A preposition + the word it attaches is called a _prepositional phrase_:
+
+<List>
+  <Word sl="tawa soweli" m="al la besto" />
+  <Word sl="lon ma" m="sur tero, en kamparo" />
+  <Word sl="tan tomo" m="de la domo" />
+</List>
+
+In Toki Pona, prepositional phrases can be used one of two ways. Firstly we can attach them at the end of a sentence. We can use this to mention location and direction of an action:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="Mi metas birdon sur arbon." />
+  <Sentence sl="waso li awen lon kasi." m="La birdo restas sur arbo." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="Vi forigis la birdon de la arbo."
+  />
+</List>
+
+Secondly, what if we want to talk about location or direction...without anything else happening? Fortunately, we can do that too. Prepositional phrases can come directly after **󱤧 li**, and act as the verb all by themselves. When prepositions act as verbs, they mean: **󱥩 tawa** 'to go to', **󱤬 lon** 'to be at', **󱥧 tan** 'to come from':
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Emma iras al Japanujo." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Nina estas en Rusujo." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Millie venas de Francujo." />
+</List>
+
+Ni ekzercu per tiuj frazoj:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="I go to the plant land.<br />(Could be a forest, a grassy field, somewhere lush.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="Scio foriris de mi.<br />(Mi forgesis.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="Ĉarmaj bestoj plaĉas al mi.<br />(Mi ŝatas ĉarmajn bestojn.)"
+  />
+
+{/* A note for translators */}
+{/*
+  Some languages have a verb "I like ...",
+  other languages have a verb more like "to me it is nice ...".
+  If your language is more like the second group,
+  you might not need the text in brackets.
+*/}
+
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Noah parolas al Emma." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="Homoj parolas la germanan en Germanujo."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## Vidu ankaŭ
+* [Q: ĉu mi devas enmemorigi nomojn de lingvoj kaj landoj?](/en/languages-countries/)
+* [Q: ĉu ne 'jan li toki Inli' iomete strangas?](/en/named-verbs/)
