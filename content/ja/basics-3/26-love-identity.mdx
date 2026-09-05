@@ -1,0 +1,103 @@
+---
+slug: "ja/26"
+title: "第 26 講　恋愛とアイデンティティー"
+description: "olin・unpa・mama・mije・meli・tonsi・en について学ぼう！"
+practice:
+- title: "1. 語彙"
+  tasks:
+  - l1: "恋愛"
+    l2: "olin"
+    junkChips: ["pilin", "wile", "pan"]
+  - l1: "性行為"
+    l2: "unpa"
+    junkChips: ["palisa", "lupa", "pilin"]
+  - l1: "親"
+    l2: "mama"
+    junkChips: ["olin", "jan", "soko"]
+  - l1: "男"
+    l2: "mije"
+    junkChips: ["tonsi", "meli", "suno"]
+  - l1: "女"
+    l2: "meli"
+    junkChips: ["mije", "tonsi", "suno"]
+  - l1: "Ｘジェンダー"
+    l2: "tonsi"
+    junkChips: ["mije", "meli", "suno"]
+  - l1: "（主語結合助詞）"
+    l2: "en"
+    junkChips: ["ala", "lete", "sin"]
+- title: "2. 練習"
+  tasks:
+  - l1: "私の父は私の母を愛する。"
+    l2: "mama mije mi li olin e mama meli mi."
+    junkChips: ["pona"]
+    alsoAccept:
+      - "mama mi mije li olin e mama mi meli."
+      - "mama mi li olin e mama mi." # lol
+  - l1: "私の彼女は優しい。"
+    l2: "meli mi li suwi."
+    junkChips: ["pi"]
+  - l1: "私は男も女もＸジェンダーも好きだ。"
+    l2: "meli en mije en tonsi li pona tawa mi."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+**󱤧󱥔󱥩󱤴 ... li pona tawa mi** は「私は～が好き」を意味することは分かりますよね。そして、**󱥔󱤼 pona mute** と言えば、「かなり好き」も表現できますよね。しかし、これらは「恋愛」とは違う意味になりますよね。だから、恋愛に関する単語、そして恋人の呼び方などを見ていきましょう。
+
+<List>
+  <Word sl="olin" m="恋する、（恋愛的に）愛する" />
+  <Word sl="unpa" m="性行為" />
+  <Word sl="mama" m="親" />
+  <Word sl="mije" m="男性、夫、オス" />
+  <Word sl="meli" m="女性、妻、メス" />
+  <Word sl="tonsi" m="Ｘジェンダー、ノンバイナリーなどといった、男・女以外の性自認・性表現、および（まれに）トランスジェンダー" />
+</List>
+
+{/* A note for translators */}
+{/*
+  The definition for "tonsi" can be difficult to translate.
+  Please check the queer communities in your language, see what words they prefer.
+
+  Although I list "trans" for tonsi, this is not super central to the word.
+  Trans women usually call themselves meli, and trans men usually call themselves mije.
+  In the end, everyone chooses the label they like best.
+*/}
+
+大体、言語学習コースでは男女、父母などといった意味の言葉から始めますが、トキポナ語では性に関する言葉 **󱤵 mije**・**󱤳 meli**・**󱥾 tonsi** はそこまで重要でなく、性という概念に関する議論や、恋愛関係などに関する会話以外、あまり使われません。
+
+<List>
+  <Sentence sl="mi olin e mije mi." m="私は私の彼氏を愛している。"/>
+  <Sentence sl="mama o!" m="お母さん！（または）お父さん！"/>
+  <Sentence sl="mi olin e meli." m="私は女性が好きなの。"/>
+</List>
+
+Ｘジェンダー、ノンバイナリーという、男女に当てはまらない性の概念は、西洋特有だと思いがちですが、実は世界中でこのような概念が存在しているのです。例えば古代スキタイにおける[エナレス](https://en.wikipedia.org/wiki/Enaree)と呼ばれる方や、サモアの[ファアファフィネ](https://ja.wikipedia.org/wiki/ファアファフィネ)と呼ばれる方や、タイの[カトゥーイ](https://en.wikipedia.org/wiki/Kathoey)と呼ばれる方など、様々な場所や文化で男女に当てはまらない人が存在しているのです。**󱥾 tonsi** は、このような人たちをまとめた単語なのです。
+
+性に関する言葉を使う場面を見ていきましょう。
+
+<List>
+  <Sentence sl="len mi li mije." m="私は男っぽい服を着る。" />
+  <Sentence sl="jan olin mi li tonsi." m="私の恋人はＸジェンダーだ。" />
+  <Sentence sl="mi meli e sijelo mi kepeken misikeke." m="私は薬を使って私の体に女性みをつける。" />
+</List>
+
+## 複数の主語
+
+〝**󱤉 e**〟句や〝**󱤧 li**〟句を連ねて文に目的語や述語を複数含むことは学びましたが、主語を複数使いたいときはどうすればいいのでしょうか。主語をそのまま連ねたら、主語の区切りがわからなくなりますので、新たな助詞を使います。
+
+<List>
+  <Word sl="en" m="主語を結合する助詞" />
+  <Sentence sl="mi en ona li toki." m="私の彼女は話している。" />
+  <Sentence sl="soweli en waso li utala." m="獣と鳥が戦っている。" />
+  <Sentence sl="meli en mije li unpa." m="女性と男性が性行為をしている。" />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## 参照
+* [wan Tansin さんによる、トキポナ語と性別に関する深い議論](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/)

@@ -1,0 +1,95 @@
+---
+slug: "ja/12"
+title: "第 12 講　命令文"
+description: "o について学ぼう！"
+practice:
+- title: "1. 復習"
+  tasks:
+  - l1: "エマちゃん、寝なさい！"
+    l2: "jan Ema o alasa lape!"
+    junkChips: ["e"]
+  - l1: "鳥よ、私に歌え！"
+    l2: "waso o kalama tawa mi!"
+    junkChips: ["e"]
+  - l1: "健太！"
+    l2: "jan Kenta o!"
+    junkChips: ["li"]
+  - l1: "ニーナさんに話しなさい！"
+    l2: "o toki tawa jan Nina!"
+    junkChips: ["li"]
+  - l1: "おかしいものを描いてみたら？"
+    l2: "o sitelen e ijo nasa!"
+    junkChips: ["li"]
+  - l1: "マヤさん、あたしにスプーン貸して！"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+    junkChips: ["li"]
+    alsoAccept: ["jan Maja o pana e ilo tawa mi!"]
+- title: "2. さらに演習"
+  tasks:
+  - l1: "素敵なものを歌ってよ。"
+    l2: "o kalama e ijo pona!"
+    junkChips: ["ilo"]
+    alsoAccept: ["o kalama pona!", "o kalama pona e ijo!"]
+  - l1: "土の洞窟から出ろ！"
+    l2: "o weka tan lupa ma!"
+    junkChips: ["e"]
+  - l1: "この記事はシンガポールについて語るべきだ。"
+    l2: "lipu o toki e ma Sinkapo."
+    junkChips: ["li"]
+  - l1: "ノアさん、君の猫は遊びたがっているよ！"
+    l2: "jan Nowa o, soweli sina li wile musi!"
+    junkChips: ["e"]
+  - l1: "イマン君、ベッドで待ってなさい。"
+    l2: "jan Iman o awen lon supa lape."
+    junkChips: ["e"]
+    alsoAccept: ["jan Iman o awen lon supa."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+トキポナ語では、**󱤧 li** を使う文は大体、ある状態を伝える<ruby>平叙文<rt>へいじょぶん</rt></ruby>です。しかし、状態を伝えるより、何かに対して命令をしたいときもあります。命令文では、**󱤧 li** の代わりに **󱥄 o** を使います。
+
+{/* A note for translators */}
+{/*
+  By "statement of fact" and "request", I am explaining in simple words
+  the categories of "indicative mood" and "imperative mood". Please check
+  if your language has those. Your audience may or may not know what they are.
+*/}
+
+<List>
+  <Word sl="o" m="命令や願望などを始める単語" />
+  <Sentence sl="ilo li sitelen e pipi." m="携帯が虫を映している。" />
+  <Sentence sl="ilo o sitelen e waso!" m="携帯よ、鳥を映せ！" />
+</List>
+
+では、命令文を見ていきましょう。
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="人々よ、いい文章を読め！" />
+  <Sentence sl="soweli mi o moku pona!" m="我が猫よ、良く召し上がれ！" />
+  <Sentence sl="jan lili sina o kama wawa!" m="あなたの子供が強くなりますように。" />
+  <Sentence sl="pona o tawa sina!" m="祝福があなたのもとへ行きますように。" />
+</List>
+
+命令文は二つの部分に分けられますよね。
+* 命令が向けられている人を呼ぶ部分（**󱥄 o** の前）
+* 命令の内容の部分（**󱥄 o** の後）
+
+{/* A note for translators */}
+{/*
+  If your language has "vocative case",
+  "The call for someone's attention" is simply vocative case.
+*/}
+
+この二つの部分もそれぞれ文として使えます。
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="エマさん、ドアを閉じてください！" />
+  <Sentence sl="jan Ema o!" m="エマさん！" />
+  <Sentence sl="o pini e lupa tomo!" m="ドアを閉じてください！" />
+</List>
+
+<Practice exercises={frontmatter.practice} />
