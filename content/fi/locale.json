@@ -1,0 +1,26 @@
+{
+  "lang_name": "suomi",
+
+  "Index": "Sisällysluettelo",
+  "Next": "Seuraava",
+  "Previous": "Edellinen",
+  "Translation": "Käännös",
+
+  "Consonants": "Konsonantit",
+  "Labial": "Labiaali",
+  "Coronal": "Koronaali",
+  "Dorsal": "Dorsaali",
+
+  "Vowels": "Vokaalit",
+  "Front": "Etinen",
+  "Central": "Keskinen",
+  "Back": "Takainen",
+
+  "translate": "Käännä lause",
+  "translate_word": "Mikä sanoista on...",
+  "check": "tarkista",
+  "continue": "jatka",
+  "incorrect": "❌ Ei aivan. Oikea vastaus: ",
+  "correct": "✅ Oikein! Hyvin tehty!",
+  "done": "🎉 Kaikki harjoitukset suoritettu!"
+}

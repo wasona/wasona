@@ -1,0 +1,93 @@
+---
+slug: "fi/03"
+title: "Luku 3: Yksinkertaisia lauseita"
+description: "Opi sanat li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
+practice:
+- title: "1. Sanasto"
+  tasks:
+  - l1: "lintu"
+    l2: "waso"
+    junkChips: ["soweli", "pipi", "kasi"]
+  - l1: "maaeläin"
+    l2: "soweli"
+    junkChips: ["waso", "pipi", "kasi"]
+  - l1: "ötökkä"
+    l2: "pipi"
+    junkChips: ["soweli", "waso", "kasi"]
+  - l1: "kasvi"
+    l2: "kasi"
+    junkChips: ["soweli", "pipi", "waso"]
+  - l1: "syödä"
+    l2: "moku"
+    junkChips: ["kasi", "lukin", "sona"]
+  - l1: "nähdä"
+    l2: "lukin"
+    junkChips: ["waso", "moku", "sona"]
+  - l1: "tietää"
+    l2: "sona"
+    junkChips: ["pipi", "moku", "lukin"]
+- title: "2. Kertaus"
+  tasks:
+  - l1: "Eläin tuntee ötökän."
+    l2: "soweli li sona e pipi."
+    junkChips: ["waso"]
+  - l1: "Ötökkä syö kasvia."
+    l2: "pipi li moku e kasi."
+    junkChips: ["soweli"]
+  - l1: "Lintu näkee kasvit."
+    l2: "waso li lukin e kasi."
+    junkChips: ["moku"]
+  - l1: "Lintu tuntee eläimen."
+    l2: "waso li sona e soweli."
+    junkChips: ["pipi"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nyt kun osaat lukea toki ponaa, on aika oppia sanoja ja lauseita!
+Tässä on sanoja asioille:
+
+<List>
+  <Word sl="soweli" m="maaeläin, kuten kissa, koira, lehmä, hiiri tai norsu" />
+  <Word sl="waso" m="lintu, kuten kyyhkynen, hanhi tai pöllö" />
+  <Word sl="pipi" m="hyönteinen, kuten kovakuoriainen, muurahainen, perhonen tai hämähäkki" />
+  <Word sl="kasi" m="kasvi, kuten apila, koivu, kaktus tai sammal" />
+</List>
+
+
+Ja tässä on tekemistä kuvaavia sanoja:
+
+<List>
+  <Word sl="moku" m="syödä" />
+  <Word sl="lukin" m="nähdä" />
+  <Word sl="sona" m="tietää" />
+</List>
+
+Tyypillinen lauseen sanajärjestys on "subjekti-verbi-objekti".
+Tällaisessa lauseessa jokin asia (subjekti) tekee jotain toiselle (objekti).
+Muodostetaampa muutama lause:
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="Eläin syö kasvin." />
+  <Sentence sl="waso li moku e pipi." m="Lintu näkee ötökän." />
+  <Sentence sl="pipi li lukin e soweli." m="Hyönteinen näkee eläimen." />
+  <Sentence sl="waso li sona e kasi." m="Lintu tuntee puun." />
+</List>
+
+Näistä voimme oppia:
+
+- Sanajärjestys on suomessakin yleinen: subjekti, verbi, objekti.
+- **󱤧 li**-partikkeli merkitsee verbin.
+- **󱤉 e**-partikkeli merkitsee objektin.
+
+Toki ponassa sanoilla ei ole erikseen monikkomuotoa, eivätkä lauseet erittele yksikköä tai monikkoa.
+Esimerkkikäännöksissä nämä ovat vain arvauksia.
+Pidemmissä keskusteluissa tämä tulee hyvin selväksi!
+
+(**󱤧 li** ja **󱤉 e** voivat vaikuttaa alkuun turhilta.
+Opimme myöhemmin, miksi niitä tarvitaan, mutta ensin meidän on opittava lisää sanaluokista!)
+
+<Practice exercises={frontmatter.practice} />

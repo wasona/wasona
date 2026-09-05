@@ -14,7 +14,7 @@ export default defineConfig({
   ...deploy,
   integrations: [mdx(), sitemap(), svelte()],
   i18n: {
-    locales: ['en', 'cs', 'da', 'de', 'es', 'fr', 'hu', 'it', 'pl', 'pt', 'tl', 'ru', 'uk', 'ar', 'he', 'jp', 'th'],
+    locales: ['en', 'cs', 'da', 'de', 'es', 'fr', 'hu', 'it', 'pl', 'pt', 'tl', 'ru', 'uk', 'ar', 'he', 'jp', 'th', 'fi'],
     defaultLocale: 'en',
   },
   redirects: {
