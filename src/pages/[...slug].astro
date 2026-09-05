@@ -9,14 +9,35 @@ import { getLang, posts, prevnexts } from "@/lib/content";
 import { render } from "astro:content";
 import { Layout } from "selo-components";
 
-export const getStaticPaths = async () =>
-  posts.map((post) => ({
-    params: { slug: post.id },
-    props: post,
-  }));
+export const langCodeAlts: Record<string, string[]> = {
+  'cs': ['cz'],
+  'uk': ['ua'],
+};
 
-const post = Astro.props;
-const { Content } = await render(Astro.props);
+export async function getStaticPaths() {
+  let paths = [];
+  for (let post of posts) {
+    paths.push({
+      params: { slug: post.id },
+      props: { post },
+    });
+
+    let langCode = post.id.split("/")[0];
+    for (let altCode of langCodeAlts[langCode] ?? []) {
+      let components = post.id.split("/");
+      components[0] = altCode;
+      paths.push({
+        params: { slug: components.join("/") },
+        props: { post, redirect: true },
+      });
+    }
+  }
+  return paths;
+}
+
+const { post, redirect } = Astro.props;
+if (redirect) return Astro.redirect(`/${post.id}`);
+const { Content } = await render(post);
 const lang = getLang(post);
 const prevnext = post.filePath!.includes("index.md")
   ? undefined
