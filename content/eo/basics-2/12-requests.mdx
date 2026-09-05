@@ -1,0 +1,95 @@
+---
+slug: "eo/12"
+title: "leciono 12: petoj"
+description: "Lernu o!"
+practice:
+- title: "1. Revizio"
+  tasks:
+  - l1: "Emma, provu dormi!"
+    l2: "jan Ema o alasa lape!"
+    junkChips: ["e"]
+  - l1: "Ho birdo, kantu al mi!"
+    l2: "waso o kalama tawa mi!"
+    junkChips: ["e"]
+  - l1: "Ho Kenta!"
+    l2: "jan Kenta o!"
+    junkChips: ["li"]
+  - l1: "Parolu al Nina!"
+    l2: "o toki tawa jan Nina!"
+    junkChips: ["li"]
+  - l1: "Desegnu ion strangan!!"
+    l2: "o sitelen e ijo nasa!"
+    junkChips: ["li"]
+  - l1: "Maja, donu al mi la kuleron!!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+    junkChips: ["li"]
+    alsoAccept: ["jan Maja o pana e ilo tawa mi!"]
+- title: "2. Pli da ekzerco"
+  tasks:
+  - l1: "Kantu ion plaĉan!"
+    l2: "o kalama e ijo pona!"
+    junkChips: ["ilo"]
+    alsoAccept: ["o kalama pona!", "o kalama pona e ijo!"]
+  - l1: "Foriru el la kaverno!"
+    l2: "o weka tan lupa ma!"
+    junkChips: ["e"]
+  - l1: "Tiu artikolo menciu Singapuron."
+    l2: "lipu o toki e ma Sinkapo."
+    junkChips: ["li"]
+  - l1: "Ho Noah, via hundo volas amuziĝi!"
+    l2: "jan Nowa o, soweli sina li wile musi!"
+    junkChips: ["e"]
+  - l1: "Ho Iman, bonvole restu enlita."
+    l2: "jan Iman o awen lon supa lape."
+    junkChips: ["e"]
+    alsoAccept: ["jan Iman o awen lon supa."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Tokipone, frazo kun **󱤧 li** asertas fakton, kiel la finaĵo -as sur Esperanta verbo. Sed foje, anstataŭ aserti fakton, ni volas fari peton aŭ ordonon, kiel la Esperanta -u finaĵo. Por peto, anstataŭ **󱤧 li**, ni uzas **󱥄 o**:
+
+{/* A note for translators */}
+{/*
+  By "statement of fact" and "request", I am explaining in simple words
+  the categories of "indicative mood" and "imperative mood". Please check
+  if your language has those. Your audience may or may not know what they are.
+*/}
+
+<List>
+  <Word sl="o" m="-u" />
+  <Sentence sl="ilo li sitelen e pipi." m="La telefono montras birdon." />
+  <Sentence sl="ilo o sitelen e waso!" m="Telefono, montru birdon!" />
+</List>
+
+Ni rigardu iom pli da ordonoj:
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="Homoj, legu la bonan paperon!" />
+  <Sentence sl="soweli mi o moku pona!" m="Mia besto, bonvole manĝu bone!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="Via infano iĝu forta!" />
+  <Sentence sl="pona o tawa sina!" m="Bono iru al vi! (Bonon al vi!)" />
+</List>
+
+Vi eble rimarkus ke kelkaj el tiuj frazoj dividiĝas en do partojn:
+* La voko al iu, atenti la peton (antaŭ **󱥄 o**)
+* La peto mem (post **󱥄 o**)
+
+{/* A note for translators */}
+{/*
+  If your language has "vocative case",
+  "The call for someone's attention" is simply vocative case.
+*/}
+
+Ni povas uzi ilin aparte:
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Ho Emma, bonvole fermu la pordon!" />
+  <Sentence sl="jan Ema o!" m="Ho Emma!" />
+  <Sentence sl="o pini e lupa tomo!" m="Fermu la pordon!" />
+</List>
+
+<Practice exercises={frontmatter.practice} />
