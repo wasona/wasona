@@ -11,6 +11,7 @@ import { Layout } from "selo-components";
 
 export const langCodeAlts: Record<string, string[]> = {
   'cs': ['cz'],
+  'ja': ['jp'],
   'uk': ['ua'],
 };
 
@@ -48,7 +49,7 @@ const prevnext = post.filePath!.includes("index.md")
   title={post.data.title}
   description={post.data.description}
   dir={["he", "ar"].includes(lang) ? "rtl" : "ltr"}
-  lang={["jp"].includes(lang) ? lang : "en"}
+  lang={lang}
 >
   <SessionRestore slot="head"></SessionRestore>
   <PageNav prevnext={prevnext} current={post.id} slot="pagenav" />
