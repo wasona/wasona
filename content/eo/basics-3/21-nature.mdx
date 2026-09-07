@@ -1,0 +1,128 @@
+---
+slug: "eo/21"
+title: "leciono 21: naturo"
+description: "Lernu akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+- title: "1. Vortoj"
+  tasks:
+  - l1: "lacerto"
+    l2: "akesi"
+    junkChips: ["pipi", "soweli", "waso"]
+  - l1: "fiŝo"
+    l2: "kala"
+    junkChips: ["akesi", "lape", "misikeke"]
+  - l1: "pano"
+    l2: "pan"
+    junkChips: ["lili", "suli", "pipi"]
+  - l1: "frukto"
+    l2: "kili"
+    junkChips: ["pilin", "wile", "namako"]
+  - l1: "fungo"
+    l2: "soko"
+    junkChips: ["kili", "kalama", "ike"]
+  - l1: "medikamento"
+    l2: "misikeke"
+    junkChips: ["akesi", "kala", "alasa"]
+  - l1: "spico"
+    l2: "namako"
+    junkChips: ["kili", "ko", "pana"]
+- title: "2. Revise"
+  tasks:
+  - l1: "Fungoj konsumas mortantajn plantojn."
+    l2: "soko li moku e kasi moli."
+    junkChips: ["mani"]
+  - l1: "Baku la panpaston."
+    l2: "o seli e ko pan."
+    junkChips: ["sewi"]
+  - l1: "Mi elfosis la terpomon."
+    l2: "mi weka e kili tan ma."
+    junkChips: ["o"]
+  - l1: "Plantoj bezonas akvon, sunlumon, kaj teron."
+    l2: "kasi li wile e telo, e suno, e ma."
+    junkChips: ["soko"]
+  - l1: "Homoj parolas, amuziĝas, kantas, kaj dormas."
+    l2: "jan li toki, li musi, li kalama, li lape."
+    junkChips: ["e"]
+- title: "3. Pli da ekzerco"
+  tasks:
+  - l1: "Ĉu fiŝoj povas manĝi panon?"
+    l2: "kala li ken ala ken moku e pan?"
+    junkChips: ["seme"]
+  - l1: "Ĉu via pico havu dolĉan frukton?"
+    l2: "pan sina o jo ala jo e kili suwi?"
+    junkChips: ["li"]
+  - l1: "Ne manĝu putrajn fruktojn kaj strangajn fungojn."
+    l2: "o moku ala e kili jaki e soko nasa."
+    junkChips: ["pan"]
+  - l1: "Ranoj povas esti en akvo kaj sur tero."
+    l2: "akesi li ken lon telo li ken lon ma."
+    junkChips: ["sewi"]
+    alsoAccept: ["akesi li ken lon telo lon ma."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Ni jam konas plej multe el la vortoj pri bestoj kaj plantoj -- ni lernu la reston!
+
+<List>
+  <Word sl="akesi" m="reptilio aŭ amfibio, kiel rano, lacerto, serpento" />
+  <Word
+    sl="kala"
+    m="fiŝo aŭ marvivaĵo, kiel salmo, baleno, ŝarko, polpo"
+  />
+  <Word sl="pan" m="starchy food, like wheat, rice, bread, pasta" />
+  <Word sl="kili" m="frukto, legomo" />
+  <Word sl="soko" m="funko" />
+  <Word sl="misikeke" m="medikamento" />
+  <Word sl="namako" m="spico, kromaĵo, aldonaĵo" />
+  <Sentence sl="soko li kili nasa." m="Fungoj estas strangaj fruktoj." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="Granda fiŝo ĉasas malgrandajn fiŝojn."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Mi devas ofte gluti medikamenton."
+  />
+</List>
+
+## Ingredients
+
+Bread products are often used to hold together several different ingredients:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="La pico enhavas viandon." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="La pico enhavas legomojn." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="La pico enhavas spicaĵojn." />
+</List>
+
+{/* A note for translators */}
+{/*
+  Your culture may have a different popular food that consists of meat, vegetables, and condiments, put into or onto bread. You are free to replace pizza with that food.
+*/}
+
+But how do we put them together into a single sentence? Well, each of them is the *object* of a sentence. A sentence can have *several objects*: several **󱤉 e**-phrases, which simply go one after the other:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="The pizza contains meat, vegetables, (and) condiments."
+  />
+</List>
+
+This is not special to just **󱤉 e**! You can combine several related ideas into one sentence with **󱤧 li**, **󱤡 la**, and prepositions too. For now let's just look at **󱤧 li**:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="La homo ĉasas fiŝojn. (= la homo fiŝkaptas)." />
+  <Sentence sl="jan li seli e ona." m="La homo kuiras ilin." />
+  <Sentence sl="jan li moku e ona." m="La homo manĝas ilin." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="La homo ĉasas fiŝojn, kuiras ilin, manĝas ilin." />
+</List>
+
+{/* A note for translators */}
+{/* If your language allows it, please list things without an "and" in between. */}
+
+<Practice exercises={frontmatter.practice} />
