@@ -1,0 +1,123 @@
+---
+slug: "eo/11"
+title: "leciono 11: hejmo"
+description: "Lernu ilo, lipu, poki, supa, lupa, len, open, pini, jo, ijo!"
+practice:
+- title: "1. Vortoj"
+  tasks:
+  - l1: "ilo"
+    l2: "ilo"
+    junkChips: ["lipu", "poki", "open"]
+  - l1: "dokumento"
+    l2: "lipu"
+    junkChips: ["len", "sona", "open"]
+  - l1: "skatolo"
+    l2: "poki"
+    junkChips: ["open", "len", "lipu"]
+  - l1: "breto"
+    l2: "supa"
+    junkChips: ["len", "lon", "pini"]
+  - l1: "truo"
+    l2: "lupa"
+    junkChips: ["pona", "musi", "ijo"]
+  - l1: "kovrilo"
+    l2: "len"
+    junkChips: ["open", "poki", "lipu"]
+  - l1: "malfermi"
+    l2: "open"
+    junkChips: ["ilo", "poki", "jo"]
+  - l1: "fermi"
+    l2: "pini"
+    junkChips: ["pipi", "ilo", "tomo"]
+  - l1: "teni"
+    l2: "jo"
+    junkChips: ["ijo", "musi", "lupa"]
+  - l1: "io"
+    l2: "ijo"
+    junkChips: ["toki", "jan", "lape"]
+- title: "2. Revizio"
+  tasks:
+  - l1: "Vi fermas la pordon."
+    l2: "sina pini e lupa."
+    junkChips: ["supa"]
+  - l1: "Estas kato en mia domo."
+    l2: "soweli li lon tomo mi."
+    junkChips: ["e"]
+  - l1: "Mia domo enhavas katon."
+    l2: "tomo mi li jo e soweli."
+    junkChips: ["ni"]
+  - l1: "Via birdo bezonas manĝaĵon."
+    l2: "waso sina li wile e moku."
+    junkChips: ["ona"]
+  - l1: "Sunita povas bone kanti."
+    l2: "jan Sunita li ken kalama pona."
+    junkChips: ["e"]
+  - l1: "Mi volas paroli pri kudromaŝino."
+    l2: "mi wile toki e ilo len."
+    junkChips: ["li"]
+- title: "3. Pli da ekzerco"
+  tasks:
+  - l1: "Katoj ĉasas birdojn."
+    l2: "soweli li alasa e waso."
+    junkChips: ["wile"]
+  - l1: "Tiu kesto bezonas ŝlosilon."
+    l2: "poki ni li wile e ilo open."
+    junkChips: ["ijo"]
+  - l1: "Ŝi kovris la dormantan infanon (per littuko)."
+    l2: "ona li len e jan lili lape."
+    junkChips: ["lon"]
+    alsoAccept: ["ona li len e jan lape lili."]
+  - l1: "Iu metis la libron pri insektoj sur la labortablon."
+    l2: "jan li pana e lipu pipi tawa supa."
+    junkChips: ["pona"]
+  - l1: "La retejo nomata Vikipedio havigas al ĉiuj utilan scion."
+    l2: "lipu Wikipesija li pana e sona pona."
+    junkChips: ["tawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Estas multege da aĵoj en niaj hejmoj:
+
+<List>
+  <Word sl="ilo" m="ilo, kiel martelo, forko, telefono, aplikaĵo" />
+  <Word sl="lipu" m="plata aĵo por 󱥡 sona, kiel papero, karto, libro, retejo" />
+  <Word sl="poki" m="ujo, kiel skatolo, tirkesto, botelo" />
+  <Word sl="supa" m="ebena surfaco, kiel breto, labortablo, sofo" />
+  <Word sl="lupa" m="truo, kiel pordo, fenestro, aperturo" />
+  <Word sl="len" m="kovrilo, kiel vestaĵo, ŝuo, littuko" />
+</List>
+
+Kaj jen kion ni faras per ili:
+
+<List>
+  <Word sl="open" m="komenci, malfermi, ŝalti" />
+  <Word sl="pini" m="fini, fermi, malŝalti" />
+  <Word sl="jo" m="teni, enhavi" />
+</List>
+
+Ni ekzercu!
+
+<List>
+  <Sentence sl="mi open e lupa." m="Mi malfermas la pordon." />
+  <Sentence sl="jan li pini e poki moku." m="La homo fermas la fridujon." />
+  <Sentence sl="lipu li lon supa lape." m="La libro estas sur la lito." />
+  <Sentence sl="poki mi li ken jo e len." m="Mia tirkesto povas enhavi vestaĵojn." />
+  <Sentence sl="ilo mi li wile e wawa." m="Mia telefono bezonas elektron." />
+</List>
+
+## Io
+
+En ujo, ni povas trovi vestaĵojn, paperojn, ilojn, fotojn... Ĉiajn aĵojn! Kiel ni povas ĝenerale paroli pri ĉio ĉi?
+
+<List>
+  <Word sl="ijo" m="io, afero, aĵo" />
+  <Sentence sl="poki li jo e ijo." m="La skatolo enhavas aĵojn." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="Iu desegnas ion ĉarman." />
+  <Sentence sl="mi wile toki e ijo kasi." m="Mi volas paroli pri io rilate al plantoj." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

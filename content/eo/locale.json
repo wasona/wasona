@@ -1,0 +1,26 @@
+{
+  "lang_name": "Esperanto",
+
+  "Index": "Enhavo",
+  "Next": "Sekva",
+  "Previous": "Antaŭa",
+  "Translation": "Translation",
+
+  "Consonants": "Konsonantoj",
+  "Labial": "Lipaj",
+  "Coronal": "Antaŭlangaj",
+  "Dorsal": "Malantaŭlangaj",
+
+  "Vowels": "Vokaloj",
+  "Front": "Antaŭaj",
+  "Central": "Mezaj",
+  "Back": "Malantaŭaj",
+
+  "translate": "Traduku la frazon",
+  "translate_word": "Kiu el tiuj signifas...",
+  "check": "kontrolu",
+  "continue": "daŭrigu",
+  "incorrect": "❌ Ne tiu. Ĝusta respondo: ",
+  "correct": "✅ Ĝuste! Bone farite!",
+  "done": "🎉 Ĉiuj ekzercoj finitaj!"
+}

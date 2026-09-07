@@ -1,0 +1,112 @@
+---
+slug: "eo/04"
+title: "leciono 4: adjektivoj"
+description: "Lernu suli, lili, pona, ike, wawa, suwi!"
+practice:
+- title: "1. Vortoj"
+  tasks:
+  - l1: "granda"
+    l2: "suli"
+    junkChips: ["lili", "wawa", "sona"]
+  - l1: "malgranda"
+    l2: "lili"
+    junkChips: ["suli", "suwi", "pona"]
+  - l1: "bona"
+    l2: "pona"
+    junkChips: ["ike", "kasi", "suwi"]
+  - l1: "malbona"
+    l2: "ike"
+    junkChips: ["wawa", "pipi", "suli"]
+  - l1: "forta"
+    l2: "wawa"
+    junkChips: ["suli", "soweli", "lili"]
+  - l1: "ĉarma"
+    l2: "suwi"
+    junkChips: ["pona", "waso", "lili"]
+- title: "2. Revizio"
+  tasks:
+  - l1: "ĉarma besto"
+    l2: "soweli suwi"
+  - l1: "malbona insekto"
+    l2: "pipi ike"
+  - l1: "forta birdo"
+    l2: "waso wawa"
+  - l1: "La birdo konas fortan beston."
+    l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
+  - l1: "Malgranda insekto rigardas grandan beston."
+    l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nun vi konas kelkajn substantivojn (aferojn) kaj verbojn (agojn). Ni aldonu adjektivojn (priskribojn)! Ni enmemorigu kelkajn:
+
+<List>
+  <Word sl="suli" m="granda, grava" />
+  <Word sl="lili" m="malgranda, eta, juna" />
+  <Word sl="pona" m="bona, plaĉa" />
+  <Word sl="ike" m="malbona, malplaĉa" />
+  <Word sl="wawa" m="forta, ega, mirinda" />
+  <Word sl="sona" m="klera, saĝa" />
+  <Word sl="suwi" m="ĉarma, dolĉa" />
+</List>
+
+Esperante, adjektivoj plej ofte venas antaŭ la substantivo. Sed Tokipone, ili ĉiam venas poste:
+
+<List>
+  <Word sl="soweli suli" m="granda besto" />
+  <Word sl="pipi lili" m="malgranda insekto" />
+  <Word sl="waso suwi" m="ĉarma birdo" />
+</List>
+
+Kvankam komprenebla, ĉi tiu ordo estas iom nekutima en Esperanto. Estas tamen kutima en la franca, irlanda, araba, malaja, kaj multaj aliaj. Klarigu al vi tiel: la unua vorto ĉiam estas la plej grava!
+
+{/* A note for translators */}
+{/*
+  If your language puts adjectives after nouns, just like Toki Pona,
+  please highlight this as a nice similarity between the two languages.
+*/}
+
+Ni faru kelkajn frazojn kun priskriboj:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="La birdo vidas ĉarman beston."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="La forta besto manĝas grandajn plantojn."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Malafablaj insektoj iomete mordas la beston."
+  />
+</List>
+
+Se vi sentas tiujn frazojn tre longaj kaj lacigaj, ne zorgu! Baldaŭ ni vidos kelkajn malpli longajn frazojn. Memoru: **󱤧 li** kaj **󱤉 e** estas viaj amikoj! Ili helpas vin tranĉi longan frazon en tri partojn: la subjekto, la verbo, kaj la objekto:
+
+<List>
+  <Word sl="waso sona..." m="La saĝa birdo..."/>
+  <Word sl="...li sona pona..." m="...bone konas..."/>
+  <Word sl="...e pipi lili." m="...malgrandajn insektojn."/>
+  <Sentence
+    sl="waso sona li sona pona e pipi lili."
+    m="La saĝa birdo bone konas malgrandajn insektojn."
+  />
+</List>
+
+Jen interesaĵo: Esperante, adjektivo nur funkcias sur substantivo. Sed Tokipone, funkcias sur ankaŭ verbo: _ete mordi_ ~ _moku lili_, _bone koni_ ~ _sona pona_. Ne estas distingo inter adjektivo kaj adverbo en Tokipono.
+
+{/* A note for translators */}
+{/*
+  If your language also uses the same words as adjectives and adverbs,
+  please highlight this as a nice similarity between the two languages.
+*/}
+
+<Practice exercises={frontmatter.practice} />
