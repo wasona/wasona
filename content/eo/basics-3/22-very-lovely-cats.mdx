@@ -1,0 +1,109 @@
+---
+slug: "eo/22"
+title: "leciono 22: tre ĉarmaj katoj"
+description: "Lernu pi!"
+practice:
+- title: "1. Revizio"
+  tasks:
+  - l1: "multe da neĝo"
+    l2: "ko lete mute"
+    junkChips: ["pi"]
+    alsoAccept: ["ko mute lete"]
+  - l1: "tre malvarma neĝo"
+    l2: "ko pi lete mute"
+  - l1: "miaj multaj eraroj"
+    l2: "pakala mi mute"
+    junkChips: ["pi"]
+    alsoAccept: ["pakala mute mi"]
+  - l1: "nia eraro"
+    l2: "pakala pi mi mute"
+  - l1: "la alia libro de lingvo"
+    l2: "lipu toki ante"
+    junkChips: ["pi"]
+    alsoAccept: ["lipu ante toki"]
+  - l1: "libro de alia lingvo"
+    l2: "lipu pi toki ante"
+  - l1: "ies malgranda ĉambro"
+    l2: "tomo jan lili"
+    junkChips: ["pi"]
+    alsoAccept: ["tomo lili jan"]
+  - l1: "ĉambro por iu malgranda"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Ni lastatempe lernis **󱤼 mute**, tre utila vorto!
+
+Ni pensu iom pli pri ĝi. Ni jam scias kiel konstrui tiujn frazojn:
+
+<List>
+  <Word sl="soweli suwi" m="ĉarma kato" />
+  <Word sl="soweli mute" m="multaj katoj" />
+  <Word sl="suwi mute" m="tre ĉarma" />
+</List>
+Sed kio okazus se ni kunmetus ĉiujn ĉi? Ĉu signifus *multaj ĉarmaj katoj* aŭ *tre ĉarma kato*?
+
+<List>
+  <Word sl="soweli suwi mute" m="multaj ĉarmaj katoj" />
+</List>
+
+Tiu frazparto signifas *multaj ĉarmaj katoj*, ĉar **󱥦 suwi** priskribas **󱥢 soweli**, kaj ankaŭ **󱤼 mute** priskribas **󱥢 soweli**.  
+Sed mi opinias ke *mia* kato estas tre ĉarma! Kiel mi parolu pri ĝi? Kion faru se mi volas ke **󱤼 mute** priskribu **󱥦 suwi**, anstataŭ priskribi **󱥢 soweli**?  
+Jen nova vorteto kiu helpas nin:
+
+<List>
+  <Word sl="pi" m="vorteto kiu grupigas adjektivojn" />
+  <Word sl="soweli pi suwi mute" m="tre ĉarma kato" />
+</List>
+
+Hura! Nun ni povas paroli pri **󱥢 soweli** kiu estas **󱥦󱤼 suwi mute**!  
+Se vi ŝatas matematikon, vi povas koncepti ĝin kiel komenci krampujon kiu ŝanĝas la ordon de operacioj: *'kat ĉarm mult'* kompare al *'kat (ĉarm mult)'*.
+
+Ni rigardu alian ekzemplon:
+
+<List>
+  <Word sl="sitelen tomo" m="foto de domo" />
+  <Word sl="sitelen mute" m="fotoj" />
+  <Word sl="tomo mute" m="domoj" />
+  <Word sl="sitelen tomo mute" m="fotoj de domoj" />
+  <Word sl="sitelen pi tomo mute" m="foto de domoj" />
+</List>
+
+Denove, vi povas koncepti ĝin kiel *'fot dom mult'* kompare al *'fot (dom mult)'*.  
+Kompreneble, **󱤼 mute** ne estas la sola vorto pri kiu **󱥍 pi** helpas! Ni rigardu kelkajn aliajn vortojn:
+
+<List>
+  <Word sl="jan pona" m="afabla homo" />
+  <Word sl="jan lili" m="malgranda homo" />
+  <Word sl="pona lili" m="iom afabla" />
+  <Word sl="jan pona lili" m="malgranda afabla homo" />
+  <Word sl="jan pi pona lili" m="iom afabla homo" />
+</List>
+
+*'hom afabl malgrand'* vs *'hom (afabl malgrand)'*.
+
+<List>
+  <Word sl="sona utala" m="milita scio" />
+  <Word sl="sona sin" m="nova scio" />
+  <Word sl="utala sin" m="nova milito" />
+  <Word sl="sona utala sin" m="nova scio pri milito. la scio estas freŝa." />
+  <Word sl="sona pi utala sin" m="nov-milita scio. la milito estas lastatempa." />
+</List>
+
+*'sci milit nov'* vs *'sci (milit nov)'*.
+
+*Why are all the translations to English so different?!*, you might ask! English mainly uses *parts of speech* to tell which word belongs to which other word. *Many* is an adjective, but *very* is an adverb. When parts of speech are all the same, hyphens come to the rescue.
+
+{/* A note for translators */}
+{/*
+  Your language may rely on other methods of distinguishing the two situations.
+  Sorry, translating this paragraph may take some thinking!
+*/}
+
+But in Toki Pona, nouns, verbs, and adjectives can all become one another. So they can't help! Instead, Toki Pona uses just one particle to rebracket.
+
+<Practice exercises={frontmatter.practice} />
