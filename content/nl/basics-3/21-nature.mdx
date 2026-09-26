@@ -1,0 +1,88 @@
+---
+slug: "nl/21"
+title: "les 21: natuur"
+description: "Leer akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+  - l1: "Paddenstoelen consumeren dode planten."
+    l2: "soko li moku e kasi moli."
+    junkChips: ["mani"]
+  - l1: "Bak het deeg."
+    l2: "o seli e ko pan."
+    junkChips: ["sewi"]
+  - l1: "Ik graaf de aardappel op."
+    l2: "mi weka e kili tan ma."
+    junkChips: ["o"]
+  - l1: "Planten hebben water, zonlicht en land nodig."
+    l2: "kasi li wile e telo, e suno, e ma."
+    junkChips: ["soko"]
+  - l1: "Mensen praten, maken plezier, zingen en slapen."
+    l2: "jan li toki, li musi, li kalama, li lape."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+De meeste woorden voor dieren en planten kennen we al -- laten we nu de laatste paar leren!
+
+<List>
+  <Word sl="akesi" m="reptiel of amfibie, zoals een kikker, hagedis, slang" />
+  <Word
+    sl="kala"
+    m="vis of zeedier, zoals een zalm, walvis, haai, octopus"
+  />
+  <Word sl="pan" m="zetmeelhoudend voedsel, zoals graan, rijst, brood, pasta" />
+  <Word sl="kili" m="fruit, groente" />
+  <Word sl="soko" m="paddenstoel" />
+  <Word sl="misikeke" m="medicijn" />
+  <Word sl="namako" m="kruid, toevoeging, versiering" />
+  <Sentence sl="soko li kili nasa." m="Paddenstoelen zijn raar fruit." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="Een grote vis jaagt op kleinere vissen."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Ik moet vaak medicijnen nemen."
+  />
+</List>
+
+## Ingrediënten
+
+Broodproducten worden vaak gebruikt om meerdere ingrediënten samen te houden:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="De pizza bevat vlees." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="De pizza bevat groente." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="De pizza bevat specerijen." />
+</List>
+
+{/* A note for translators */}
+{/*
+  Your culture may have a different popular food that consists of meat, vegetables, and condiments, put into or onto bread. You are free to replace pizza with that food.
+*/}
+
+Maar hoe stoppen we die samen in één enkele zin? Alle ingrediënten zijn het *lijdend voorwerp* van een zin. Een zin kan *meerdere lijdende voorwerpen* hebben: dus meerdere zinsdelen met **󱤉 e**, die simpelweg achter elkaar komen:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="De pizza bevat vlees, groente, (en) specerijen."
+  />
+</List>
+
+En dit werkt niet alleen bij **󱤉 e**! Je kunt samenhangende ideeën ook in één zin combineren met **󱤧 li**, **󱤡 la** en voorzetsels. Voor nu kijken we naar **󱤧 li**:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="De persoon jaagt op vis. (= De persoon vist.)" />
+  <Sentence sl="jan li seli e ona." m="De persoon kookt ze." />
+  <Sentence sl="jan li moku e ona." m="De persoon eet ze." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="De persoon jaagt op vis, kookt ze, eet ze." />
+</List>
+
+{/* A note for translators */}
+{/* If your language allows it, please list things without an "and" in between. */}
+
+<Practice exercises={frontmatter.practice} />

@@ -1,0 +1,80 @@
+---
+slug: "nl/20"
+title: "les 20: tijd"
+description: "Leer la, tenpo, sike, mun, suno, sin, poka!"
+practice:
+  - l1: "Planten doen aan fotosynthese."
+    l2: "kasi li moku e suno."
+    junkChips: ["o"]
+  - l1: "De maan beweegt over een ellips."
+    l2: "mun li tawa lon sike."
+    junkChips: ["suno"]
+    alsoAccept: ["mun li tawa sike."]
+  - l1: "Zij staan aan jouw kant."
+    l2: "ona li lon poka sina."
+    junkChips: ["e"]
+  - l1: "Vroeger was ik een kind."
+    l2: "tenpo pini la mi lili."
+    junkChips: ["li"]
+  - l1: "Grappig genoeg spreekt de vogel net zoals een persoon."
+    l2: "musi la waso li toki sama jan."
+    junkChips: ["e"]
+  - l1: "Als het koud is, verdwijnen de insecten."
+    l2: "kon li lete la, pipi li weka."
+    junkChips: ["seme"]
+  - l1: "Je mag dat doen als je wil."
+    l2: "sina wile la, sina ken."
+    junkChips: ["kon"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Laten we het eens over tijd hebben! Het is je misschien al opgevallen dat ik zinnen niet consistent vertaal: soms gaat het over het heden, soms over het verleden, en soms over de toekomst. Dat komt doordat een Toki-Pona-zin standaard niets zegt over de tijd, dus alles is mogelijk! Maar we kunnen er natuurlijk wel voor kiezen om specifieker te zijn, door tijd-gerelateerde woorden te gebruiken.
+
+Hier zijn er een paar:
+
+<List>
+  <Word sl="tenpo" m="tijd, moment, situatie" />
+  <Word sl="sike" m="rond, zich herhalend, jaarlijks; cirkel, bal" />
+  <Word sl="mun" m="maan, hemellichaam" />
+  <Word sl="suno" m="zon, daglicht; helder" />
+  <Word sl="sin" m="nieuw, vers; opnieuw" />
+  <Word sl="poka" m="zijkant, omgeving; dichtbij" />
+</List>
+
+Je weet al hoe we locaties in de *ruimte* kunnen beschrijven. Locaties in de *tijd* werken net zo:
+
+<List>
+  <Word sl="lon tenpo kama" m="in de komende tijd, in de toekomst" />
+  <Word sl="lon tenpo pini" m="in de afgelopen tijd, in het verleden" />
+  <Word sl="lon tenpo ni" m="gedurende deze tijd" />
+  <Sentence sl="soweli lili mi o kama suli lon tenpo kama!" m="Moge mijn kleine kat in de toekomst groot worden!" />
+  <Sentence sl="ma Loma li ma suli lon tenpo weka." m="Rome was lang geleden een groot rijk." />
+</List>
+
+De tijd dient vaak als een soort “scène” of “context” voor de rest van wat er gezegd wordt. Vaak is het handig om zulke context aan het begin van de zin te zetten, zoals ik net deed in deze zin! Toki Pona heeft een woord dat daarbij helpt:
+
+<List>
+  <Word sl="la" m="wat betreft ..., over ... gesproken, als ... " />
+  <Word sl="ken la" m="misschien ..." />
+  <Word sl="open la" m="om te beginnen ..." />
+  <Word sl="lipu la" m="over het boek gesproken, ..." />
+  <Word sl="tenpo la" m="soms ..." />
+  <Word sl="tenpo pini la" m="in het verleden ..." />
+  <Word sl="tenpo suno kama la" m="de volgende dag ...; morgen ..." />
+  <Sentence sl="sin la mi wile toki e ni:" m="Ik wil nogmaals zeggen dat ..." />
+  <Sentence sl="mi pali e ni lon tenpo kama poka." m="Ik zal hier binnenkort aan werken." />
+</List>
+
+**󱤡 la** kan ook tussen twee zinnen in staan om ze te verbinden. De eerste zin wordt dan een voorwaarde *als ...* en de tweede het resultaat *dan ...*.
+
+<List>
+  <Word sl="suno li pini." m="De zon gaat onder." />
+  <Word sl="mi lape." m="Ik slaap." />
+  <Sentence sl="suno li pini la, mi lape." m="Als de zon ondergaat, dan slaap ik." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
