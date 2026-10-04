@@ -1,0 +1,108 @@
+---
+slug: "nl/22"
+title: "lesson 22: heel schattige katten"
+description: "Leer pi!"
+practice:
+  - l1: "veel sneeuw"
+    l2: "ko lete mute"
+    junkChips: ["pi"]
+    alsoAccept: ["ko mute lete"]
+  - l1: "heel koude sneeuw"
+    l2: "ko pi lete mute"
+  - l1: "mijn vele fouten"
+    l2: "pakala mi mute"
+    junkChips: ["pi"]
+    alsoAccept: ["pakala mute mi"]
+  - l1: "onze fout"
+    l2: "pakala pi mi mute"
+  - l1: "het andere taalboek"
+    l2: "lipu toki ante"
+    junkChips: ["pi"]
+    alsoAccept: ["lipu ante toki"]
+  - l1: "een book in een andere taal"
+    l2: "lipu pi toki ante"
+  - l1: "iemands kleine kamer"
+    l2: "tomo jan lili"
+    junkChips: ["pi"]
+    alsoAccept: ["tomo lili jan"]
+  - l1: "een kamer voor een klein iemand"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Een tijdje geleden hebben we **󱤼 mute** geleerd, en dat is een heel nuttig woord!
+
+Laten we nog wat meer nadenken hierover. We weten al hoe je de volgende dingen zegt:
+
+<List>
+  <Word sl="soweli suwi" m="een schattige kat" />
+  <Word sl="soweli mute" m="veel katten" />
+  <Word sl="suwi mute" m="heel schattig" />
+</List>
+
+Maar wat als je ze allemaal bij elkaar zet? Krijgen we dan *veel schattige katten* of *een heel schattige kat*?
+
+<List>
+  <Word sl="soweli suwi mute" m="veel schattige katten" />
+</List>
+
+Dit betekent *veel schattige katten*, want **󱥦 suwi** beschrijft **󱥢 soweli**, en **󱤼 mute** beschrijft ook **󱥢 soweli**.  
+Maar ik vind *mijn* kat heel schattig! Hoe praat ik daarover? Wat als ik wil dat **󱤼 mute** het woord **󱥦 suwi** beschrijft, in plaats van **󱥢 soweli** te beschrijven?  
+Daarvoor hebben we een nieuw partikel nodig:
+
+<List>
+  <Word sl="pi" m="een partikel dat bijvoeglijke naamwoorden groepeert" />
+  <Word sl="soweli pi suwi mute" m="een heel schattige kat" />
+</List>
+
+Hoera! Nu kunnen we het hebben over een **󱥢 soweli** die **󱥦󱤼 suwi mute** is!  
+Mocht je van wiskunde houden, dan kun je je dit voorstellen als een haakje openen waarmee je de volgorde van operaties aanpast: *'kat schattig veel'* wordt *'kat (schattig veel)'*.
+
+Hier is nog een voorbeeld:
+
+<List>
+  <Word sl="sitelen tomo" m="een foto van een huis" />
+  <Word sl="sitelen mute" m="foto's" />
+  <Word sl="tomo mute" m="huizen" />
+  <Word sl="sitelen tomo mute" m="foto's van een huis" />
+  <Word sl="sitelen pi tomo mute" m="een foto van huizen" />
+</List>
+
+Je kunt je dit opnieuw voorstellen als *'foto huis veel'* in tegenstelling tot *'foto (huis veel)'*.
+Natuurlijk is **󱤼 mute** niet het enige woord waarbij **󱥍 pi** behulpzaam is! Hier zien we een paar andere:
+
+<List>
+  <Word sl="jan pona" m="een aardige persoon" />
+  <Word sl="jan lili" m="een kleine persoon" />
+  <Word sl="pona lili" m="enigszins aardig" />
+  <Word sl="jan pona lili" m="een kleine, aardige persoon" />
+  <Word sl="jan pi pona lili" m="een enigszins aardige persoon" />
+</List>
+
+*'persoon aardig klein'* in tegenstelling tot *'persoon (aardig klein)'*.
+
+<List>
+  <Word sl="sona utala" m="kennis over een oorlog" />
+  <Word sl="sona sin" m="nieuwe kennis" />
+  <Word sl="utala sin" m="nieuwe oorlog" />
+  <Word sl="sona utala sin" m="nieuwe kennis over een oorlog (De kennis is recent.)" />
+  <Word sl="sona pi utala sin" m="kennis over een nieuwe oorlog (De oorlog is recent.)" />
+</List>
+
+*'kennis oorlog nieuw'* in tegenstelling tot *'kennis (oorlog nieuw)'*.
+
+Je vraagt je misschien af: *waarom zijn alle Nederlandse vertalingen zo verschillend?!* In het Nederlands gebruiken we *woordtypes* om aan te geven welk woord bij welk ander woord hoort. *Veel* is een bijvoeglijk naamwoord, maar *heel* (als in “heel schattig”) is een bijwoord. En als de woordtypes geen uitkomst bieden, dan kun je woorden aan elkaar schrijven of streepjes gebruiken om te verduidelijken wat bij elkaar hoort.
+
+{/* A note for translators */}
+{/*
+  Your language may rely on other methods of distinguishing the two situations.
+  Sorry, translating this paragraph may take some thinking!
+*/}
+
+Maar in het Toki Pona kunnen werkwoorden en zelfstandige en bijvoeglijke naamwoorden elkaars plaats innemen. Dus de woordtypes helpen hier niet! In plaats daarvan gebruikt het Toki Pona daarom een partikel om in gedachten de haakjes te zetten.
+
+<Practice exercises={frontmatter.practice} />
