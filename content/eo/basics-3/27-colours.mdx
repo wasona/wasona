@@ -1,0 +1,100 @@
+---
+slug: "eo/27"
+title: "leciono 27: koloroj"
+description: "Lernu kule, walo, pimeja, laso, loje, jelo, kin!"
+practice:
+- title: "1. Vortoj"
+  tasks:
+  - l1: "koloro"
+    l2: "kule"
+    junkChips: ["walo", "pimeja", "misikeke"]
+  - l1: "blanka"
+    l2: "walo"
+    junkChips: ["pimeja", "kule", "mani"]
+  - l1: "nigra"
+    l2: "pimeja"
+    junkChips: ["walo", "ala", "kule"]
+  - l1: "cejana"
+    l2: "laso"
+    junkChips: ["jelo", "loje", "kasi"]
+  - l1: "ruĝas"
+    l2: "loje"
+    junkChips: ["laso", "jelo", "uta"]
+  - l1: "flava"
+    l2: "jelo"
+    junkChips: ["laso", "loje", "suno"]
+  - l1: "ankaŭ"
+    l2: "kin"
+    junkChips: ["a", "o", "lete"]
+- title: "2. Revizio"
+  tasks:
+  - l1: "Nokte, mi festas."
+    l2: "tenpo pimeja la mi musi."
+    alsoAccept: ["pimeja la mi musi."]
+    junkChips: ["jelo"]
+  - l1: "Estas flava pulvoro sur la abelo."
+    l2: "ko jelo li lon pipi."
+    junkChips: ["loje"]
+  - l1: "Ankaŭ mi ludas per diverskoloraj brikoj."
+    l2: "mi kin li musi kepeken leko kule."
+    junkChips: ["e"]
+  - l1: "Ĉi tiu neĝo malebligas al mi vidi."
+    l2: "mi ken ala lukin tan ko walo."
+    junkChips: ["seli"]
+  - l1: "Bluo, blanko, kaj flavo estas sur la flago."
+    l2: "laso en walo en loje li lon lipu."
+    junkChips: ["jelo"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Ni parolu pri koloroj!
+
+<List>
+  <Word sl="kule" m="koloro, speco; kolora" />
+  <Word sl="walo" m="blanka, hela" />
+  <Word sl="pimeja" m="nigra, malhela" />
+  <Word sl="loje" m="ruĝa, maĝenta" />
+  <Word sl="jelo" m="flava" />
+  <Word sl="laso" m="verda, cejana, blua" />
+</List>
+
+En *sitelen pona*, multaj koloraj vortoj aspektas kiel *kunmetaĵoj*: ili konsistas el triangulo de **󱤞 kule** kunmetita kun ala vorto, kiel **󱤂 ala**, **󱥰 uta**, **󱥤 suno**, **󱤗 kasi**. Estas kelkaj aliaj kunmetitaj signoj: **󱤶 moku**, **󱥉 pali**, **󱤙 kepeken** havas **󱤭 luka**, kaj **󱤕 kalama**, **󱥌 pana**, **󱥡 sona**, **󱥬 toki** uzas tri streketojn kiujn ni nomis *'eliguloj'*. Gratulon al vi se vi rimarkis tiujn [patterns] antaŭe!
+
+La koloraj vortoj, kompreneble, signifas tutan *gamon* de koloroj, ne nur tiuj listigitaj ĉi tie. **󱤣 laso** estas aparte interesa: Tokipone, verdo kaj bluo estas nur nuancoj de unu koloro, kiel en la japana, la vietnama, la zulua kaj multaj aliaj. Tiuj du frazoj kune sencas tokipone, sed ne angle:
+
+<List>
+  <Word sl="kin" m="ankaŭ" />
+  <Sentence sl="sewi li laso." m="La ĉiel estas blua." />
+  <Sentence sl="kasi kin li laso." m="Ankaŭ la herbo estas verda." />
+</List>
+
+## Ĉu oni bezonas kolorojn?
+
+Kiel genroj, tokiponaj koloroj uziĝas malpli ofte ol vi atendus. En naturaj lingvoj, koloroj ofte rolas kiel mallongaĵoj por signifi ion multe pli specifan: *a white lie*, *la nigra merkato*, *a greenhouse*. Tokipono ne ŝatas mallongaĵoj kiuj ne trafas la punkton:
+
+{/* A note for translators */}
+{/*
+  "white lie, black market, greenhouse" may not make sense in your language.
+  You may replace them with similar colour-noun pairs that are more suitable.
+*/}
+
+elektu bonan ekzemplon kiu funkcias ne nur en la angla
+<List>
+  <Sentence sl="tomo laso" m="a green house" />
+  <Sentence sl="tomo kasi" m="a greenhouse" />
+</List>
+
+Estas granda malsamo inter blanka domo kaj la Blanka Domo:
+
+<List>
+  <Sentence sl="tomo walo" m="blanka domo" />
+  <Sentence sl="tomo ni la jan li lawa e ma Mewika." m="la Blanka Domo" />
+</List>
+
+Mi nur mencias tion nun, ĉar koloroj estas la plej klara ekzemplo, sed la sama principo aplikas al iu ajn frazo! Antaŭ uzi adjektivon, ofte utilas paŭzi kaj pensi: ĉu tiuj adjektivoj trafas la gravan punkton, kiun vi celis priparoli, aŭ estas simple mallongaĵo por signifi iun alian?
+
+<Practice exercises={frontmatter.practice} />
