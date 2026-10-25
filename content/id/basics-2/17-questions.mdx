@@ -3,7 +3,15 @@ slug: "id/17"
 title: "pelajaran 17: pertanyaan"
 description: "Pelajari anu, seme!"
 practice:
-- title: "1. Latihan"
+- title: "1. Kosakata"
+  tasks:
+  - l1: "atau"
+    l2: "anu"
+    junkChips: ["ala", "lete", "ante"]
+  - l1: "apa"
+    l2: "seme"
+    junkChips: ["jo", "esun", "o"]
+- title: "2. Ulasan"
   tasks:
   - l1: "Apakah tembakau membuat udara menjadi kotor?"
     l2: "kasi nasa li ike ala ike e kon?"
@@ -36,14 +44,35 @@ practice:
     l2: "sina wile moku e seme?"
     junkChips: ["li"]
     alsoAccept: ["sina wile e moku seme?"]
+- title: "3. Latihan tambahan"
+  tasks:
+  - l1: "Kematian itu buruk, kan?"
+    l2: "moli li ike anu seme?"
+    junkChips: ["ala"]
+  - l1: "Hewan mana yang memakan tumbuhanku?"
+    l2: "soweli seme li moku e kasi mi?"
+    junkChips: ["anu"]
+  - l1: "Apakah radio itu membutuhkan listrik?"
+    l2: "ilo kalama li wile ala wile e wawa?"
+    junkChips: ["seme"]
+  - l1: "Apakah kamu pergi ke Korea?"
+    l2: "sina tawa ala tawa ma Anku?"
+    junkChips: ["e"]
+  - l1: "Apakah ini sendok?"
+    l2: "ni li ilo ala ilo moku?"
+    junkChips: ["e"]
+  - l1: "Bahasa apa saja yang kamu sukai?"
+    l2: "toki seme li pona tawa sina?"
+    junkChips: ["anu"]
+  - l1: "Emma bisa berbicara bahasa apa saja?"
+    l2: "jan Ema li ken toki seme?"
+    junkChips: ["e"]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
-
-## Pertanyaan
 
 Pertanyaan biasanya dibagi menjadi dua jenis:
 
@@ -107,6 +136,13 @@ Kita sudah mempelajari bahwa **󱥙 seme** berarti "apa?". Kata ini sangat penti
 </List>
 
 Perhatikan bahwa hanya **󱥙 seme** yang diganti dengan jawabannya. Urutan bagian kalimat lainnya tetap sama! Dalam bahasa Indonesia, kata tanya bisa dipindahkan ke awal kalimat, seperti "Siapa yang diserang hewan itu?". Dalam Toki Pona, **󱥙 seme** tetap berada di tempat informasi yang ditanyakan.
+
+Tips: jika bingung menggunakan **󱥙 seme**, bayangkan dahulu salah satu jawaban yang mungkin diberikan. Lalu, ganti bagian yang ingin kamu tanyakan dengan **󱥙 seme**:
+
+<List>
+  <Sentence sp="󱤛󱤧󱤘󱤖󱤜" sl="kiwen li ken kama <u>ko</u>." m="Batu bisa berubah menjadi pasir." />
+  <Sentence sp="󱤛󱤧󱤘󱤖󱥙" sl="kiwen li ken kama <u>seme</u>?" m="Batu bisa berubah menjadi apa?" />
+</List>
 
 <Practice exercises={frontmatter.practice} />
 

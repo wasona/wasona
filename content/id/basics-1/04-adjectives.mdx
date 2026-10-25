@@ -3,7 +3,27 @@ slug: "id/04"
 title: "pelajaran 4: kata sifat"
 description: "Pelajari suli, lili, pona, ike, wawa, suwi!"
 practice:
-- title: "1. Latihan"
+- title: "1. Kosakata"
+  tasks:
+  - l1: "besar"
+    l2: "suli"
+    junkChips: ["lili", "wawa", "sona"]
+  - l1: "kecil"
+    l2: "lili"
+    junkChips: ["suli", "suwi", "pona"]
+  - l1: "baik"
+    l2: "pona"
+    junkChips: ["ike", "kasi", "suwi"]
+  - l1: "buruk"
+    l2: "ike"
+    junkChips: ["wawa", "pipi", "suli"]
+  - l1: "kuat"
+    l2: "wawa"
+    junkChips: ["suli", "soweli", "lili"]
+  - l1: "lucu"
+    l2: "suwi"
+    junkChips: ["pona", "waso", "lili"]
+- title: "2. Ulasan"
   tasks:
   - l1: "Hewan yang lucu"
     l2: "soweli suwi"
@@ -23,8 +43,6 @@ import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
-
-## Kata sifat
 
 Kamu sudah mengenal beberapa kata benda dan kata kerja (tindakan). Kini saatnya menambahkan kata sifat (deskripsi)!
 
@@ -63,15 +81,18 @@ Ayo kita buat beberapa contoh kalimat dengan kata sifat yang baru kita pelajari:
     sl="pipi ike li moku lili e soweli."
     m="Serangga jahat menggigit hewan itu sedikit."
   />
-  <Sentence
-    sl="waso sona li sona pona e pipi."
-    m="Burung yang cerdas mengenali serangga dengan baik."
-  />
 </List>
 
 Beberapa terjemahan di atas menggunakan kata "yang", tetapi Toki Pona tidak memerlukan kata tambahan seperti itu untuk menghubungkan kata benda dengan kata sifat.
 
-Jika kalimat-kalimat ini terasa panjang, jangan khawatir! Kita akan melihat kalimat yang lebih pendek sebentar lagi. Kamu bisa mengenali subjek, predikat, dan objek dengan bantuan partikel **󱤧 li** dan **󱤉 e**.
+Jika kalimat-kalimat ini terasa panjang, jangan khawatir! Kita akan melihat kalimat yang lebih pendek sebentar lagi. Ingat, **󱤧 li** dan **󱤉 e** membantu kita membaginya menjadi tiga bagian: subjek, predikat, dan objek:
+
+<List>
+  <Word sl="waso sona..." m="Burung yang cerdas..." />
+  <Word sl="...li sona pona..." m="...mengenali dengan baik..." />
+  <Word sl="...e pipi lili." m="...serangga kecil." />
+  <Sentence sl="waso sona li sona pona e pipi lili." m="Burung yang cerdas mengenali serangga kecil dengan baik." />
+</List>
 
 Ada hal menarik: dalam Toki Pona, kata yang menerangkan kata benda juga bisa menerangkan kata kerja. Misalnya, _moku lili_ berarti makan sedikit atau menggigit sedikit, sedangkan _sona pona_ berarti mengetahui dengan baik. Toki Pona tidak membedakan kata sifat dan kata keterangan.
 

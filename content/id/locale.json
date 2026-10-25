@@ -1,4 +1,5 @@
 {
+  "lang_name": "Bahasa Indonesia",
   "Index": "Daftar isi",
   "Next": "Selanjutnya",
   "Previous": "Sebelumnya",
@@ -16,5 +17,6 @@
   "continue": "lanjutkan",
   "incorrect": "❌ Belum tepat. Jawaban yang benar: ",
   "correct": "✅ Benar! Bagus sekali!",
-  "done": "🎉 Semua latihan selesai!"
+  "done": "🎉 Semua latihan selesai!",
+  "translate_word": "Mana yang berarti..."
 }
