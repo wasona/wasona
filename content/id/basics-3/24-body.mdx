@@ -1,34 +1,34 @@
 ---
 slug: "id/24"
-title: "lesson 24: body"
-description: "Learn sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
+title: "pelajaran 24: tubuh"
+description: "Pelajari sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
 practice:
-- title: "1. Revise"
+- title: "1. Latihan"
   tasks:
-  - l1: "I have a headache."
+  - l1: "Kepalaku sakit."
     l2: "lawa mi li pakala."
     junkChips: ["kala"]
     alsoAccept: ["mi pakala lawa."]
-  - l1: "I heard a faint sound."
+  - l1: "Aku mendengar suara pelan."
     l2: "mi kute e kalama lili."
     junkChips: ["li"]
-  - l1: "You obey. I command."
+  - l1: "Kamu menurut. Aku memerintah."
     l2: "sina kute. mi lawa."
     junkChips: ["luka"]
-  - l1: "Spice feels hot to my mouth."
+  - l1: "Bumbu itu terasa panas di mulutku."
     l2: "namako li seli tawa uta mi."
     junkChips: ["e"]
-  - l1: "Please pet the lovely dog!"
+  - l1: "Tolong elus anjing yang lucu itu!"
     l2: "o luka e soweli suwi!"
     junkChips: ["sewi"]
-  - l1: "Medicine heals her body."
+  - l1: "Obat menyembuhkan tubuhnya."
     l2: "misikeke li pona e sijelo ona."
     junkChips: ["pi"]
-  - l1: "Her hair is nice to the touch."
+  - l1: "Rambutnya terasa nyaman disentuh."
     l2: "linja lawa ona li pona tawa luka."
     junkChips: ["e"]
     alsoAccept: ["linja ona li pona tawa luka."]
-  - l1: "The mountain is similar to the nose on my face."
+  - l1: "Gunung itu mirip dengan hidung di wajahku."
     l2: "nena kiwen li sama nena pi sinpin mi."
     junkChips: ["e"]
 ---
@@ -38,35 +38,28 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-We already know the words for *eyes*, *heart*, *face*, and *back*, so let's learn the remaining parts of the body!
+Kita sudah mengenal kata untuk *mata*, *hati*, *wajah*, dan *punggung*. Mari kita pelajari bagian tubuh lainnya!
 
 <List>
-  <Word sl="lawa" m="head; to lead" />
-  <Word sl="kute" m="ear; to hear" />
-  <Word sl="nena" m="bump, like a nose, hill, breast" />
-  <Word sl="uta" m="mouth, lips; to kiss, to bite" />
-  <Word sl="sijelo" m="body" />
-  <Word sl="luka" m="hand, arm; to touch" />
-  <Word sl="noka" m="foot, leg" />
-  <Word sl="palisa" m="long hard thing, like a branch, rod, staff" />
-  <Word sl="linja" m="long flexible thing, like a string, rope" />
+  <Word sl="lawa" m="kepala; memimpin" />
+  <Word sl="kute" m="telinga; mendengar" />
+  <Word sl="nena" m="tonjolan, seperti hidung, bukit, payudara" />
+  <Word sl="uta" m="mulut, bibir; mencium, menggigit" />
+  <Word sl="sijelo" m="tubuh" />
+  <Word sl="luka" m="tangan, lengan; menyentuh" />
+  <Word sl="noka" m="kaki, tungkai" />
+  <Word sl="palisa" m="benda panjang yang keras, seperti dahan, batang, tongkat" />
+  <Word sl="linja" m="benda panjang yang lentur, seperti benang, tali" />
 </List>
 
-{/* A note for translators */}
-{/*
-  Your language may have just one word for "hand, arm".
-  If that's the case, great, simply list the one word.
-  Same applies to "foot, leg".
-*/}
-
-Something fun to notice is how many parts of the body have an associated action! The head leads, the eyes see, the ears hear, the mouth kisses, the heart feels, the hands touch.
+Ada hal menarik: banyak bagian tubuh berkaitan dengan tindakan tertentu! Kepala memimpin, mata melihat, telinga mendengar, mulut mencium, hati merasakan, dan tangan menyentuh.
 
 <List>
-    <Sentence sl="mi wile suli e linja lawa mi." m="I want to grow out my hair." />
-  <Sentence sl="jan lawa mi li kute e toki ike mi." m="My boss heard me running my mouth." />
-  <Sentence sl="ilo lukin li pana e sitelen ante." m="The mirror gives off an inverse image." />
-  <Sentence sl="sijelo mi li wile e lape." m="My body requires rest." />
-  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="My fingers are larger than my toes." />
+    <Sentence sl="mi wile suli e linja lawa mi." m="Aku ingin memanjangkan rambutku." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="Atasanku mendengar ucapanku yang buruk." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="Cermin menampilkan bayangan yang terbalik." />
+  <Sentence sl="sijelo mi li wile e lape." m="Tubuhku membutuhkan istirahat." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Jari tanganku lebih besar daripada jari kakiku." />
 </List>
 
 <Practice exercises={frontmatter.practice} />

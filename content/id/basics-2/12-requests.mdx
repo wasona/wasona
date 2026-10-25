@@ -1,26 +1,26 @@
 ---
 slug: "id/12"
-title: "lesson 12: requests"
-description: "Learn o!"
+title: "pelajaran 12: permintaan"
+description: "Pelajari o!"
 practice:
-- title: "1. Revise"
+- title: "1. Latihan"
   tasks:
-  - l1: "Emma, try to sleep!"
+  - l1: "Emma, cobalah tidur!"
     l2: "jan Ema o alasa lape!"
     junkChips: ["e"]
-  - l1: "Hey bird, sing to me!"
+  - l1: "Hai burung, bernyanyilah untukku!"
     l2: "waso o kalama tawa mi!"
     junkChips: ["e"]
-  - l1: "Hey, Kenta!"
+  - l1: "Hai, Kenta!"
     l2: "jan Kenta o!"
     junkChips: ["li"]
-  - l1: "Talk to Nina!"
+  - l1: "Bicaralah kepada Nina!"
     l2: "o toki tawa jan Nina!"
     junkChips: ["li"]
-  - l1: "Draw something strange!"
+  - l1: "Gambarlah sesuatu yang aneh!"
     l2: "o sitelen e ijo nasa!"
     junkChips: ["li"]
-  - l1: "Maya, give me the spoon!"
+  - l1: "Maya, berikan sendok itu kepadaku!"
     l2: "jan Maja o pana e ilo moku tawa mi!"
     junkChips: ["li"]
     alsoAccept: ["jan Maja o pana e ilo tawa mi!"]
@@ -31,48 +31,36 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Requests
+## Permintaan
 
-In Toki Pona, a sentence with **󱤧 li** is a statement of fact. But sometimes instead of making statements of fact, we want to make requests. Requests are how we tell other people what we want to happen. In a request, instead of **󱤧 li**, we use **󱥄 o**:
-
-{/* A note for translators */}
-{/*
-  By "statement of fact" and "request", I am explaining in simple words
-  the categories of "indicative mood" and "imperative mood". Please check
-  if your language has those. Your audience may or may not know what they are.
-*/}
+Dalam Toki Pona, kalimat dengan **󱤧 li** digunakan untuk menyatakan sesuatu. Tetapi, terkadang kita ingin meminta sesuatu, bukan sekadar membuat pernyataan. Dengan permintaan, kita menyampaikan apa yang kita inginkan terjadi. Untuk itu, kita menggunakan **󱥄 o** sebagai pengganti **󱤧 li**:
 
 <List>
-  <Word sl="o" m="starts a request, command, instruction, wish" />
-  <Sentence sl="ilo li sitelen e pipi." m="The phone is showing a bug." />
-  <Sentence sl="ilo o sitelen e waso!" m="Oh phone, please show a bird!" />
+  <Word sl="o" m="menandai awal permintaan, perintah, petunjuk, atau harapan" />
+  <Sentence sl="ilo li sitelen e pipi." m="Ponsel itu menampilkan gambar serangga." />
+  <Sentence sl="ilo o sitelen e waso!" m="Wahai ponsel, tolong tampilkan gambar burung!" />
 </List>
 
-Let's look at a few more commands:
+Mari kita lihat beberapa contoh lainnya:
 
 <List>
-  <Sentence sl="jan o lukin e lipu pona!" m="People, please read the good paper!" />
-  <Sentence sl="soweli mi o moku pona!" m="My cat, please eat well!" />
-  <Sentence sl="jan lili sina o kama wawa!" m="May your child become strong!" />
-  <Sentence sl="pona o tawa sina!" m="May goodness go to you! (Blessings be upon you!)" />
+  <Sentence sl="jan o lukin e lipu pona!" m="Teman-teman, tolong baca tulisan yang bagus ini!" />
+  <Sentence sl="soweli mi o moku pona!" m="Kucingku, makanlah dengan baik!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="Semoga anakmu tumbuh kuat!" />
+  <Sentence sl="pona o tawa sina!" m="Semoga kebaikan datang kepadamu! (Semoga kamu diberkati!)" />
 </List>
 
-You might notice that some of these sentences separate quite nicely in two parts:
-* The call for someone's attention (before **󱥄 o**)
-* The request itself (after **󱥄 o**)
+Dari contoh-contoh di atas, kita bisa melihat bahwa beberapa kalimat dapat dibagi menjadi dua bagian:
 
-{/* A note for translators */}
-{/*
-  If your language has "vocative case",
-  "The call for someone's attention" is simply vocative case.
-*/}
+* Bagian untuk memanggil atau menarik perhatian seseorang, sebelum **󱥄 o**.
+* Permintaan itu sendiri, setelah **󱥄 o**.
 
-We can use those separately:
+Kita juga bisa menggunakan kedua bagian ini secara terpisah. Untuk memanggil seseorang, kita cukup menyebut namanya lalu menambahkan **󱥄 o**. Untuk menyampaikan permintaan tanpa menyebut siapa yang dituju, kita bisa langsung memulai kalimat dengan **󱥄 o**:
 
 <List>
-  <Sentence sl="jan Ema o pini e lupa tomo!" m="Emma, please close the door!" />
-  <Sentence sl="jan Ema o!" m="Hey, Emma!" />
-  <Sentence sl="o pini e lupa tomo!" m="Please close the door!" />
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Emma, tolong tutup pintunya!" />
+  <Sentence sl="jan Ema o!" m="Hai, Emma!" />
+  <Sentence sl="o pini e lupa tomo!" m="Tolong tutup pintunya!" />
 </List>
 
 <Practice exercises={frontmatter.practice} />
