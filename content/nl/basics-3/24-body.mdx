@@ -1,0 +1,70 @@
+---
+slug: "nl/24"
+title: "les 24: lichaam"
+description: "Learn sijelo, luka, noka, lawa, kute, uta, nena, palisa, linja!"
+practice:
+  - l1: "Ik heb hoofdpijn."
+    l2: "lawa mi li pakala."
+    junkChips: ["kala"]
+    alsoAccept: ["mi pakala lawa."]
+  - l1: "Ik hoorde een zacht geluid."
+    l2: "mi kute e kalama lili."
+    junkChips: ["li"]
+  - l1: "Jij gehoorzaamt. Ik beveel."
+    l2: "sina kute. mi lawa."
+    junkChips: ["luka"]
+  - l1: "Kruiden voelen heet aan aan mijn mond."
+    l2: "namako li seli tawa uta mi."
+    junkChips: ["e"]
+  - l1: "Aai alsjeblieft de schattige hond!"
+    l2: "o luka e soweli suwi!"
+    junkChips: ["sewi"]
+  - l1: "Medicijnen genezen haar lichaam."
+    l2: "misikeke li pona e sijelo ona."
+    junkChips: ["pi"]
+  - l1: "Haar haar voelt prettig aan."
+    l2: "linja lawa ona li pona tawa luka."
+    junkChips: ["e"]
+    alsoAccept: ["linja ona li pona tawa luka."]
+  - l1: "De berg lijkt op de neus op mijn gezicht."
+    l2: "nena kiwen li sama nena pi sinpin mi."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+We kennen de woorden voor *ogen*, *hart*, *gezicht* en *rug*, dus nu is het tijd voor de overige lichaamsdelen!
+
+<List>
+  <Word sl="lawa" m="hoofd; leiden" />
+  <Word sl="kute" m="oor; horen" />
+  <Word sl="nena" m="bult, zoals een neus, heuvel, borst" />
+  <Word sl="uta" m="mond, lippen; kussen, bijten" />
+  <Word sl="sijelo" m="lichaam" />
+  <Word sl="luka" m="hand, arm; aanraken" />
+  <Word sl="noka" m="voet, been" />
+  <Word sl="palisa" m="lang hard ding, zoals een tak, staaf" />
+  <Word sl="linja" m="lang flexibel ding, zoals een snaar, touw" />
+</List>
+
+{/* A note for translators */}
+{/*
+  Your language may have just one word for "hand, arm".
+  If that's the case, great, simply list the one word.
+  Same applies to "foot, leg".
+*/}
+
+Het is grappig dat veel lichaamsdelen ook een bijbehorende handeling hebben! Het hoofd leidt, de ogen zien, de oren horen, de mond kust, het hart voelt en de handen raken aan.
+
+<List>
+    <Sentence sl="mi wile suli e linja lawa mi." m="Ik wil mijn haar langer laten groeien." />
+  <Sentence sl="jan lawa mi li kute e toki ike mi." m="Mijn baas hoorde me mijn mond voorbij praten." />
+  <Sentence sl="ilo lukin li pana e sitelen ante." m="De spiegel geeft een omgedraaid beeld." />
+  <Sentence sl="sijelo mi li wile e lape." m="Mijn lichaam heeft rust nodig." />
+  <Sentence sl="palisa luka mi li suli. palisa noka mi li lili." m="Mijn vingers zijn langer dan mijn tenen." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
