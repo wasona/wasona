@@ -1,37 +1,39 @@
 ---
 slug: "id/fonts"
-title: "Q: how can I type sitelen pona?"
-description: "Learn about fonts!"
+title: "T: Bagaimana cara mengetik menggunakan sitelen pona?"
+description: "Pelajari tentang fon!"
 ---
 
-*sitelen pona* is really cool! But it is not yet in Unicode. Most fonts only care about characters that Unicode defines. This means that fonts on your device probably don't know anything about sitelen pona.
+*Sitelen pona* seru digunakan! Namun, sistem tulisan ini belum menjadi bagian dari standar Unicode. Sebagian besar fon hanya mendukung karakter yang ditetapkan Unicode. Karena itu, fon di perangkatmu mungkin belum bisa menampilkan sitelen pona.
 
-To fix that, you can install a sitelen pona font! There is more than a [hundred](https://linku.la/fonts/) to choose from, so let me highlight a few:
+Kamu bisa mengatasinya dengan memasang fon sitelen pona! Ada lebih dari [seratus pilihan](https://linku.la/fonts/). Berikut beberapa di antaranya:
 
-* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) by jan Itan is the font we're using on this website. It has quite a rigid, geometric design.<br /><img src="/example-nasin-nanpa.webp" />
-* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) by jan Lepeka is a more playful, handwritten design.<br /><img src="/example-sitelen-seli-kiwen.webp" />
-* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) is another handwritten design. It uses Sonja Lang's handwriting from her 2014 book, plus some newer characters drawn by jan Pensa.<br /><img src="/example-pu-mono.webp" />
+* [nasin nanpa](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-nanpa.otf) karya jan Itan digunakan di situs ini. Bentuknya cukup tegas dan geometris.<br /><img src="/example-nasin-nanpa.webp" />
+* [sitelen seli kiwen](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/sitelenselikiwenasuki.ttf) karya jan Lepeka tampak lebih santai, seperti tulisan tangan.<br /><img src="/example-sitelen-seli-kiwen.webp" />
+* [nasin sitelen pu mono](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/nasin-sitelen-pu-mono.otf) juga menggunakan gaya tulisan tangan. Fon ini memakai tulisan tangan Sonja Lang dari bukunya yang terbit pada 2014, ditambah beberapa simbol baru karya jan Pensa.<br /><img src="/example-pu-mono.webp" />
 
-You should also know a font of great historic significance:
+Ada juga fon yang penting dalam sejarah sitelen pona:
 
-* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) by jan Same. It was made in 2016–2021, and it was the first popular sitelen pona font. It has a slightly non-standard design that looks much wider and more square than most fonts today. While linja pona was popular, *sitelen pona* gained several new glyphs, like **󱦀 kijetesantakalu** and **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
+* [linja pona](https://raw.githubusercontent.com/lipu-linku/ijo/main/nasinsitelen/linja-pona.otf) karya jan Same dibuat pada 2016–2021 dan menjadi fon sitelen pona pertama yang populer. Desainnya sedikit berbeda dari kebiasaan sekarang: lebih lebar dan lebih persegi dibandingkan kebanyakan fon masa kini. Selama masa popularitasnya, *sitelen pona* mendapat beberapa simbol baru, seperti **󱦀 kijetesantakalu** dan **󱥽 monsuta**.<br /><img src="/example-linja-pona.webp" />
 
-**On Discord**, we have a bot, ilo Linku, that can draw text in any sitelen pona font onto an image! This way you can chat in sitelen pona without installing anything.  
-**On desktop**, you can download one of the fonts above, and click on it. Then your system will try to install it.  
-**On mobile**, installing fonts is quite difficult. You might want to talk to someone with technical knowledge.
+**Di Discord**, ada bot ilo Linku yang bisa mengubah teks menjadi gambar dengan berbagai fon sitelen pona. Dengan begitu, kamu bisa mengobrol menggunakan sitelen pona tanpa memasang apa pun!
 
-## Technical details: ascii vs ucsur fonts
+**Di komputer**, unduh salah satu fon di atas, lalu klik berkasnya. Sistem perangkatmu akan menawarkan pemasangan fon.
 
-There are two main approaches to making a sitelen pona font, which we call **ascii fonts** and **ucsur fonts**.
+**Di ponsel**, memasang fon bisa lebih sulit. Kamu mungkin perlu meminta bantuan orang yang memahami pengaturan perangkatmu.
 
-In **ascii fonts**, you type Latin characters, and they get scooped up by the font, and automatically converted to sitelen pona characters while being drawn.
+## Penjelasan teknis: fon ASCII dan UCSUR
 
-* 🎉 very intuitive to use!
-* 🙁 a lot of work to make.
-* 🙁 this is not how other writing systems work on computers.
+Ada dua pendekatan utama dalam membuat fon sitelen pona, yaitu **fon ASCII** dan **fon UCSUR**.
 
-In **ucsur fonts**, instead of typing Latin characters, you type characters from *a different part of Unicode*. Unicode intentionally left this part blank, so that other people can use it for [their own private purposes](https://en.wikipedia.org/wiki/Private_Use_Areas). So a different organisation, [UCSUR](https://www.kreativekorp.com/ucsur/), decided this part now holds sitelen pona.
+Dengan **fon ASCII**, kamu mengetik huruf Latin. Saat teks ditampilkan, fon menggabungkan huruf-huruf itu dan mengubah tampilannya menjadi simbol sitelen pona.
 
-* 🎉 this is how other writing systems work!
-* 🎉 less work to make!
-* 🙁 harder to use: you need to install an input method similar to the ones that exist for Hanzi, or make a keyboard layout.
+* 🎉 Mudah digunakan!
+* 🙁 Membutuhkan banyak pekerjaan untuk dibuat.
+* 🙁 Cara ini berbeda dari cara kerja kebanyakan sistem tulisan lain di komputer.
+
+Dengan **fon UCSUR**, kamu mengetik karakter dari *bagian Unicode yang berbeda*, bukan huruf Latin. Unicode sengaja menyediakan bagian kosong untuk [penggunaan pribadi](https://en.wikipedia.org/wiki/Private_Use_Areas). Organisasi lain, [UCSUR](https://www.kreativekorp.com/ucsur/), menetapkan konvensi penempatan karakter sitelen pona di bagian tersebut. Ini merupakan kesepakatan penggunaan area privat, bukan penetapan sitelen pona sebagai bagian resmi standar Unicode.
+
+* 🎉 Cara kerjanya mirip dengan sistem tulisan lain!
+* 🎉 Lebih mudah dibuat!
+* 🙁 Lebih sulit digunakan: kamu perlu memasang metode masukan, seperti yang digunakan untuk Hanzi, atau membuat tata letak papan ketik.

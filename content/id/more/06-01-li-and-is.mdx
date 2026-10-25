@@ -1,65 +1,68 @@
 ---
 slug: "id/li-and-is"
-title: "Q: does 'li' mean 'is'?"
-description: "in short, no! let's talk about why!"
+title: "T: Apakah 'li' berarti 'adalah'?"
+description: "Tidak. Mari kita pelajari perbedaannya!"
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 
-When learning a second language, it's natural to try to find analogues between the words you already know and the words you learn. English learners often look at Toki Pona and think '󱤧 li' and 'is' are the same:
+Saat belajar bahasa baru, wajar jika kita mencoba mencocokkan kosakatanya dengan kata yang sudah dikenal. Penutur bahasa Inggris kadang menganggap **󱤧 li** sama dengan *is*. Pembaca berbahasa Indonesia juga mungkin menganggapnya berarti "adalah":
 
 <List>
-  <Sentence sp="󱥴<b>󱤧</b>󱥔" sl="waso <b>li</b> pona." m="The bird <b>is</b> good." />
+  <Sentence sp="󱥴<b>󱤧</b>󱥔" sl="waso <b>li</b> pona." m="Burung itu baik. (Bahasa Inggris: The bird <b>is</b> good.)" />
 </List>
 
-Unfortunately, this is incorrect! They are different words, and they exist for different purposes. Let's talk about why 'is' and 'li' exist.
+Namun, kata-kata tersebut memiliki fungsi berbeda. Untuk memahaminya, mari kita lihat mengapa bahasa Inggris menggunakan *is* dan mengapa Toki Pona menggunakan **󱤧 li**.
 
-## Why does 'is' exist?
+## Mengapa bahasa Inggris menggunakan is?
 
-In English, all meaningful words are divided into nouns (like '*person*'), adjectives (like '*good*'), and verbs (like '*eat*'). There are other parts of speech too, but we can ignore them now.
+Dalam bahasa Inggris, ada kata benda seperti *person* (orang), kata sifat seperti *good* (baik), dan kata kerja seperti *eat* (makan). Ada jenis kata lain, tetapi untuk sekarang kita cukup membahas ketiganya.
 
-In English, a sentence must have a verb.
-* *The person eats.* (✅ there is a verb!)
-* *The person good.* (❌ no verb! not allowed!)
-* *The person an animal.* (❌ no verb! not allowed!)
+Kalimat lengkap seperti contoh berikut memerlukan kata kerja dalam bahasa Inggris:
 
-So what happens if we want to state a noun or an adjective? Those statements get a linking verb 'is':
+* *The person eats.* — Orang itu makan. (✅ Ada kata kerja!)
+* *The person good.* (❌ Tidak ada kata kerja.)
+* *The person an animal.* (❌ Tidak ada kata kerja.)
 
-* *The person eats.* (✅ there is already a verb! no 'is' necessary!)
-* *The person **is** good.* (✅ there is a verb!)
-* *The person **is** an animal.* (✅ there is a verb!)
+Untuk menyatakan bahwa subjek memiliki sifat atau merupakan sesuatu, bahasa Inggris menggunakan kata penghubung *is*:
 
-Also, 'is' is only one of many forms of the verb 'to be': *be, am, is, are, was, were, been, being*. Other forms fulfil the same purpose, but they also carry other information, for example past tense.
+* *The person eats.* — Orang itu makan. (✅ Sudah ada kata kerja, jadi tidak perlu *is*.)
+* *The person **is** good.* — Orang itu baik. (✅ *Is* mengisi fungsi kata kerja.)
+* *The person **is** an animal.* — Orang itu adalah hewan. (✅ *Is* mengisi fungsi kata kerja.)
 
-## Why does '󱤧 li' exist?
+*Is* adalah salah satu bentuk dari *to be*: *be, am, is, are, was, were, been, being*. Bentuk-bentuk ini menjalankan fungsi serupa, tetapi juga bisa menunjukkan informasi lain, seperti waktu lampau.
 
-**󱤧 li** tells us something is *a statement*:
+Dalam bahasa Indonesia, kita tidak selalu membutuhkan kata penghubung seperti itu. "Orang itu baik" sudah merupakan kalimat lengkap. Kata "adalah" pun tidak bisa selalu digunakan sebagai terjemahan *is*.
+
+## Mengapa Toki Pona menggunakan 󱤧 li?
+
+**󱤧 li** menandai predikat dalam sebuah *pernyataan*:
 
 <List>
-  <Word sl="jan li moku." m="The person eats." />
-  <Word sl="jan li pona." m="The person is good." />
-  <Word sl="jan li soweli." m="The person is an animal." />
+  <Word sl="jan li moku." m="Orang itu makan." />
+  <Word sl="jan li pona." m="Orang itu baik." />
+  <Word sl="jan li soweli." m="Orang itu adalah hewan." />
 </List>
 
-The opposite of **󱤧 li** is **󱥄 o** -- instead of a *statement*, it's a *command*:
+Untuk membuat *permintaan atau perintah*, kita menggunakan **󱥄 o** sebagai penggantinya:
 
 <List>
-  <Word sl="jan o moku!" m="Person, eat!" />
-  <Word sl="jan o pona!" m="Person, be good!" />
-  <Word sl="jan o soweli!" m="Person, be an animal!" />
+  <Word sl="jan o moku!" m="Hei, makanlah!" />
+  <Word sl="jan o pona!" m="Hei, jadilah baik!" />
+  <Word sl="jan o soweli!" m="Hei, jadilah hewan!" />
 </List>
 
-## Aren't these questions the same thing?
+## Apakah kedua fungsi itu sama?
 
-Nope! "*Is this a verb or a noun/adjective?*" and "*Is this a statement or a command?*" are two questions that exist *independent* of one another! Let's take a closer look at these four sentences:
+Tidak. Pertanyaan "Apakah predikatnya berupa kata kerja, kata benda, atau kata sifat?" berbeda dari "Apakah kalimatnya berupa pernyataan atau perintah?". Mari kita lihat keempat contoh ini:
 
 <List>
-  <Word sl="jan li moku." m="The person eats.<br />Statement → 󱤧 li. Verb → no 'to be'." />
-  <Word sl="jan li pona." m="The person is good.<br />Statement → 󱤧 li. Adjective → needs 'to be'." />
-  <Word sl="jan o moku!" m="Person, eat!<br />Command → 󱥄 o. Verb → no 'to be'." />
-  <Word sl="jan o pona!" m="Person, be good!<br />Command → 󱥄 o. Adjective → needs 'to be'." />
+  <Word sl="jan li moku." m="Orang itu makan.<br />Pernyataan → 󱤧 li. Dalam bahasa Inggris, eat sudah berupa kata kerja, jadi tidak perlu to be." />
+  <Word sl="jan li pona." m="Orang itu baik.<br />Pernyataan → 󱤧 li. Dalam bahasa Inggris, good berupa kata sifat, jadi perlu to be." />
+  <Word sl="jan o moku!" m="Hei, makanlah!<br />Perintah → 󱥄 o. Dalam bahasa Inggris, eat sudah berupa kata kerja, jadi tidak perlu to be." />
+  <Word sl="jan o pona!" m="Hei, jadilah baik!<br />Perintah → 󱥄 o. Dalam bahasa Inggris, good berupa kata sifat, jadi perlu be." />
 </List>
 
-Now you know that a sentence can have 'li' and no 'to be', and it can have 'to be' and no 'li'. So, there is no relation between the two!
+Jadi, kalimat Toki Pona bisa memakai **󱤧 li** walaupun terjemahan bahasa Inggrisnya tidak memakai *to be*. Sebaliknya, terjemahan bahasa Inggris bisa memakai *to be* walaupun kalimat Toki Pona menggunakan **󱥄 o**. **󱤧 li** bukan padanan *is* ataupun "adalah"!

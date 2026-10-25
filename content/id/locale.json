@@ -1,23 +1,22 @@
 {
-  "Index": "Index",
-  "Next": "Next",
-  "Previous": "Previous",
-  "Translation": "Translation",
-
-  "Consonants": "Consonants",
+  "lang_name": "Bahasa Indonesia",
+  "Index": "Daftar isi",
+  "Next": "Selanjutnya",
+  "Previous": "Sebelumnya",
+  "Translation": "Terjemahan",
+  "Consonants": "Konsonan",
   "Labial": "Labial",
-  "Coronal": "Coronal",
+  "Coronal": "Koronal",
   "Dorsal": "Dorsal",
-
-  "Vowels": "Vowels",
-  "Front": "Front",
-  "Central": "Central",
-  "Back": "Back",
-
-  "translate": "Translate the sentence",
-  "check": "check",
-  "continue": "continue",
-  "incorrect": "❌ Not quite. Correct answer: ",
-  "correct": "✅ Correct! Well done!",
-  "done": "🎉 All exercises completed!"
+  "Vowels": "Vokal",
+  "Front": "Depan",
+  "Central": "Tengah",
+  "Back": "Belakang",
+  "translate": "Terjemahkan kalimat ini",
+  "check": "periksa",
+  "continue": "lanjutkan",
+  "incorrect": "❌ Belum tepat. Jawaban yang benar: ",
+  "correct": "✅ Benar! Bagus sekali!",
+  "done": "🎉 Semua latihan selesai!",
+  "translate_word": "Mana yang berarti..."
 }

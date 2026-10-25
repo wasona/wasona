@@ -3,18 +3,41 @@ slug: "id/03"
 title: "pelajaran 3: kalimat sederhana"
 description: "Pelajari li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
 practice:
-- title: "1. Revise"
+- title: "1. Kosakata"
   tasks:
-  - l1: "Hewan mengetahui serangganya."
+  - l1: "burung"
+    l2: "waso"
+    junkChips: ["soweli", "pipi", "kasi"]
+  - l1: "hewan darat"
+    l2: "soweli"
+    junkChips: ["waso", "pipi", "kasi"]
+  - l1: "serangga"
+    l2: "pipi"
+    junkChips: ["soweli", "waso", "kasi"]
+  - l1: "tumbuhan"
+    l2: "kasi"
+    junkChips: ["soweli", "pipi", "waso"]
+  - l1: "makan"
+    l2: "moku"
+    junkChips: ["kasi", "lukin", "sona"]
+  - l1: "melihat"
+    l2: "lukin"
+    junkChips: ["waso", "moku", "sona"]
+  - l1: "mengetahui"
+    l2: "sona"
+    junkChips: ["pipi", "moku", "lukin"]
+- title: "2. Ulasan"
+  tasks:
+  - l1: "Hewan itu mengenali serangga itu."
     l2: "soweli li sona e pipi."
     junkChips: ["waso"]
-  - l1: "Serangga memakan tanamannya."
+  - l1: "Serangga memakan tumbuhan."
     l2: "pipi li moku e kasi."
     junkChips: ["soweli"]
-  - l1: "Burung melihat tanamannya."
+  - l1: "Burung melihat tumbuhan."
     l2: "waso li lukin e kasi."
     junkChips: ["moku"]
-  - l1: "Burung mengenal hewannya."
+  - l1: "Burung itu mengenali hewan itu."
     l2: "waso li sona e soweli."
     junkChips: ["pipi"]
 ---
@@ -24,37 +47,40 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Kalimat sederhana
-
-Karena kamu telah mengetahui caranya untuk membaca Toki Pona, Waktunya untuk mempelajari kata-kata dan kalimatnya!  
-Inilah beberapa kata-kata untuk benda dan tindakan:
+Kamu sudah tahu cara membaca Toki Pona. Kini saatnya mempelajari kosakata dan kalimat!
+Inilah beberapa kata untuk benda:
 
 <List>
-  <Word sl="soweli" m="hewan darat, seperti kucing, anjing, sapi, tikus, dan gajah" />
+  <Word sl="soweli" m="hewan darat, seperti kucing, anjing, sapi, tikus, gajah" />
   <Word sl="waso" m="burung, seperti merpati, angsa, burung hantu" />
   <Word sl="pipi" m="serangga, seperti kumbang, semut, kupu-kupu, laba-laba" />
-  <Word sl="kasi" m="tanaman, seperti pohon, kaktus, lumut" />
-  <Word sl="moku" m="mengonsumsi, layaknya makan atau minum" />
-  <Word sl="lukin" m="melihat" />
-  <Word sl="sona" m="mengetahui, layaknya paham atau kenal" />
+  <Word sl="kasi" m="tumbuhan, seperti pohon, kaktus, lumut" />
 </List>
 
-Susunan kalimat yang paling umum ialah kalimat "subjek-predikat-objek". Artinya, satu benda (subjek) melakukan sesuatu kepada benda lainnya (the object). Ayo kita buat beberapa kalimat:
+Berikut beberapa kata untuk tindakan:
 
 <List>
-  <Sentence sl="soweli li moku e kasi." m="Hewan memakan tanamannya." />
-  <Sentence sl="waso li moku e pipi." m="Burungnya memakan seekor serangga." />
-  <Sentence sl="pipi li lukin e soweli." m="Serangga melihat hewan." />
-  <Sentence sl="waso li sona e kasi." m="Burung mengenal pohonnya." />
+  <Word sl="moku" m="mengonsumsi, seperti makan atau minum" />
+  <Word sl="lukin" m="melihat" />
+  <Word sl="sona" m="mengetahui, memahami, mengenali" />
+</List>
+
+Salah satu pola kalimat yang umum adalah "subjek-predikat-objek". Dalam pola ini, subjek melakukan suatu tindakan yang dijelaskan oleh predikat, dan objek adalah sasaran tindakan tersebut. Ayo kita buat beberapa contoh kalimat:
+
+<List>
+  <Sentence sl="soweli li moku e kasi." m="Hewan memakan tumbuhan." />
+  <Sentence sl="waso li moku e pipi." m="Burung memakan serangga." />
+  <Sentence sl="pipi li lukin e soweli." m="Serangga melihat seekor hewan." />
+  <Sentence sl="waso li sona e kasi." m="Burung itu mengenali pohon itu." />
 </List>
 
 Hal yang bisa kita pelajari:
 
-- Susunan kalimat pada Toki Pona sama seperti Bahasa Indonesia, yaitu: subjek-predikat-objek.
-- **󱤧 li** adalah Partikel yang menunjukkan predikat atau aksi yang dilakukan terhadap objek.
-- **󱤉 e** adalah Partikel yang menunjukkan objek sebagai penerima terhadap predikat.
-- Ketika menerjemahkan kalimat-kalimat di atas, memang terlihat ada kata seperti "nya" atau "seekor". Namun, sebenarnya Toki Pona tidak memiliki kata-kata tersebut. Semuanya akan terlihat jelas ketika kamu mempunyai percakapan yang lebih panjang. 
+- Pola kalimat pada contoh-contoh di atas sama seperti dalam bahasa Indonesia: subjek-predikat-objek.
+- **󱤧 li** adalah partikel yang menandai awal predikat. Pada contoh-contoh di atas, predikatnya berupa kata kerja.
+- **󱤉 e** adalah partikel yang menandai awal objek.
+Kata seperti "seekor" atau "itu" dalam terjemahan merupakan pilihan berdasarkan konteks. Kalimat Toki Pona di atas tidak menentukan apakah yang dimaksud adalah "*seekor* burung" atau "burung *itu*". Dalam percakapan yang lebih panjang, konteksnya akan membantu kita memahami maksudnya.
 
-(**󱤧 li** dan **󱤉 e** awalnya mungkin tampak tidak penting. Kedepannya, Kita akan mempelajari mengapa kita masih membutuhkannya, untuk itu, kita perlu mempelajari bagian-bagian penting lainnya dari Toki Pona terlebih dahulu!)
+(**󱤧 li** dan **󱤉 e** mungkin terasa tidak perlu pada awalnya. Kita akan mempelajari mengapa keduanya penting dalam pelajaran berikutnya. Untuk itu, kita perlu mengenal jenis-jenis kata terlebih dahulu!)
 
 <Practice exercises={frontmatter.practice} />
