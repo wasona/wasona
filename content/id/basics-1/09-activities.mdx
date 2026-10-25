@@ -3,7 +3,33 @@ slug: "id/09"
 title: "pelajaran 9: aktivitas"
 description: "Pelajari utala, lape, musi, nasa, kalama, wile, ken, alasa!"
 practice:
-- title: "1. Latihan"
+- title: "1. Kosakata"
+  tasks:
+  - l1: "bertarung"
+    l2: "utala"
+    junkChips: ["weka", "kalama", "wile"]
+  - l1: "tidur"
+    l2: "lape"
+    junkChips: ["ona", "nasa", "musi"]
+  - l1: "lucu"
+    l2: "musi"
+    junkChips: ["ma", "kalama", "alasa"]
+  - l1: "aneh"
+    l2: "nasa"
+    junkChips: ["ma", "wile", "utala"]
+  - l1: "bunyi"
+    l2: "kalama"
+    junkChips: ["pana", "sona", "musi"]
+  - l1: "ingin"
+    l2: "wile"
+    junkChips: ["ken", "alasa", "lape"]
+  - l1: "bisa"
+    l2: "ken"
+    junkChips: ["alasa", "waso", "kalama"]
+  - l1: "mencoba"
+    l2: "alasa"
+    junkChips: ["pipi", "ni", "wile"]
+- title: "2. Ulasan"
   tasks:
   - l1: "Burung yang lucu sedang tidur."
     l2: "waso suwi li lape."
@@ -24,14 +50,30 @@ practice:
   - l1: "Aku mencoba untuk pergi ke Tiongkok."
     l2: "mi alasa tawa ma Sonko."
     junkChips: ["li"]
+- title: "3. Latihan tambahan"
+  tasks:
+  - l1: "Burung itu masih ingin tidur."
+    l2: "waso li awen wile lape."
+    junkChips: ["e"]
+  - l1: "Serangga itu ingin menjadi kuat."
+    l2: "pipi li wile wawa."
+    junkChips: ["e"]
+  - l1: "Bertarung membutuhkan kekuatan."
+    l2: "utala li wile e wawa."
+    junkChips: ["pipi"]
+  - l1: "Aku mulai bernyanyi karena gembira."
+    l2: "mi kama kalama tan musi."
+    junkChips: ["e"]
+  - l1: "Para pemain mencoba menemukan orang yang tidak ada di sana."
+    l2: "jan musi li alasa lukin e jan weka."
+    junkChips: ["li"]
+    alsoAccept: ["jan musi li alasa e jan weka."]
 ---
 
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
-
-## Aktivitas
 
 Mari kita pelajari beberapa kata untuk aktivitas yang bisa kamu lakukan!
 
@@ -71,10 +113,12 @@ Dalam bahasa Indonesia, kata seperti "ingin" atau "bisa" membantu menjelaskan ka
 Hanya beberapa kata dalam Toki Pona yang bisa digunakan sebagai kata kerja bantu. Mari kita pelajari beberapa lagi:
 
 <List>
-  <Word sl="wile" m="ingin ..." />
-  <Word sl="ken" m="bisa ..." />
-  <Word sl="alasa" m="mencoba ..." />
+  <Word sl="wile" m="ingin ...; menginginkan, membutuhkan" />
+  <Word sl="ken" m="bisa ...; mengizinkan, mungkin" />
+  <Word sl="alasa" m="mencoba ...; mencari, berburu, mengumpulkan" />
 </List>
+
+Seperti **󱤖 kama** dan **󱤈 awen**, kata-kata ini bisa menjadi kata kerja bantu maupun kata kerja utama!
 
 Kata kerja bantu sangat serbaguna dalam Toki Pona! Mari kita lihat beberapa frasa dengan kata kerja bantu:
 
@@ -91,7 +135,7 @@ Ayo kita gunakan kata kerja bantu dalam beberapa contoh kalimat:
 <List>
   <Sentence sl="waso lili li wile lape." m="Burung yang kecil ingin tidur." />
   {/* <Sentence sl="jan li sona moku e kasi." m="Orang-orang tahu caranya untuk memakan tumbuhan." /> */}
-  <Sentence sl="mi kama sona e toki pona." m="Aku belajar Toki Pona." />
+  <Sentence sl="mi kama sona e toki pona." m="Aku mempelajari bahasa yang baik. Aku belajar Toki Pona." />
   <Sentence sl="sina alasa tawa ma Tosi." m="Kamu mencoba untuk pergi ke Jerman." />
   <Sentence
     sl="toki ona li awen nasa tawa mi."
