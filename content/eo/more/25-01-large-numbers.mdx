@@ -1,0 +1,48 @@
+---
+slug: "eo/large-numbers"
+title: "D: kiel mi parolu pri grandaj nombroj?"
+description: ""
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+La kurioza afero pri grandaj nombroj estas ke vi bezonas ilin malpli ofte ol vi pensas.
+
+Estas granda, sigifoplena malsamo intero *'Tigro pretas ataki nin!'* kaj *'Du tigroj pretas ataki nin!'* Eble vi povas forbatali unu tigron, sed estus senespere kontraŭ du.
+
+Sed komparu *'77 tigroj pretas ataki nin!'* kaj *'78 tigroj pretas ataki nin!'* -- ĉu vere gravas? Ajnokaze viaj decidoj kaj via sorto estus pli-malpli same. Do plej ofte, ni nur vere bezonas tri nombrovortojn: **󱥳 wan**, **󱥮 tu**, **󱤼 mute**.
+
+Kiam temas pri malgrandaj monsumoj, pli da precizeco povas efektive helpi. Eble vi povas aĉeti ion kio kostas $77, sed se ĝi kostus $78, mankus al vi unu dolaro. Por nombroj sub aŭ ĉirkaŭ cent, ni uzas vortojn **󱥳 wan**, **󱥮 tu**, **󱤭 luka**, **󱤼 mute**, **󱤄 ale**, kvazaŭ ili estus moneroj kun valoroj 1, 2, 5, 20, kaj 100:
+
+<List>
+    <Sentence sl="mute mute mute luka luka luka tu wan" m="78 (= 20 + 20 + 20 + 5 + 5 + 5 + 2 + 1)" />
+</List>
+
+Sed super 100, tiu sistemo rapide iĝas teda:
+
+<List>
+    <Sentence sl="ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale" m="1500 (= 100 + 100 + 100 + ...)" />
+</List>
+
+En 2021, jan Kapilu kaj jan Tepo elpensis [sistemon etenditan kaj retrokongruan](https://sona.pona.la/wiki/nasin_nanpa_pona) (angla artikolo) por priskribi grandajn nombrojn: **󱤄 ale**, anstataŭ aldoni 100 al la ĝisnuna nombro, ĝin obligas per 100.
+
+<List>
+    <Sentence sl="luka luka luka ale" m="1500 (= (5 + 5 + 5) * 100)" />
+</List>
+
+Tio estas utila por jaroj en la Gregoria kalendaro, kaj aparte oportuna por la nuna jarmilo:
+
+<List>
+    <Sentence sl="mute ale mute luka" m="2025 (= 20 * 100 + 20 + 5)" />
+</List>
+
+Utilaĵo: vi povas imagi disigi nombrojn en duopojn de ciferoj: 2025 -> 20,25, 123456789 -> 1,23,45,67,89, traduki ĉiun nombron kiel 23 kaj 67, kaj unuigi ilin per **󱤄 ale**. "Obligi per 100" nur alimaniere priskribas la saman operacion!
+
+Skribante per latinaj literoj, vi povas ankau mallongigi grandajn nombron per W, T, L, M, A:
+
+<List>
+    <Sentence sp="󱥫󱥜󱤽󱤭󱤭󱤭󱥮󱥮󱤄󱤼󱤭󱤭󱤭󱥮󱥮󱤡<br />󱥫󱤺󱤽󱤭󱥮󱥮󱤡<br />󱥫󱥤󱤽󱥳󱤡<br />󱤰󱦐󱥨󱥇󱥣󱤍󱦑<br />󱤧󱤖󱥱󱤉󱤰󱦐󱥎󱥄󱥖󱥱󱤟󱤈󱦑<br />" sl="tenpo sike #LLLTTAMLLLTT la, tenpo mun #LTT la, tenpo suno #W la, ma Tosi li kama utala e ma Posuka." m="La 1-an de Septembro 1939, Germanujo invadis Pollandon." />
+</List>
