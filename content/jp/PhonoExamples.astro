@@ -1,0 +1,53 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>単語</th>
+      <th>意味</th>
+      <th>発音のコツ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="sina" />
+      <td>あなた</td>
+      <td>si は英語みたいに「スィ」</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="tu" />
+      <td>二</td>
+      <td>tu は「ツ」ではなく「トゥ」</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="jan" />
+      <td>人</td>
+      <td>j はヤ行で発音</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="lili" />
+      <td>小さい</td>
+      <td>l は英語の l のような発音（ラ行も可）</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>音</td>
+      <td>それぞれの単語の第一音にアクセントが来るよ！</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>トカゲ</td>
+      <td>母音から始まる単語もあるよ！</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,24 @@
+{
+  "Index": "目次",
+  "Next": "次",
+  "Previous": "前",
+  "Translation": "翻訳",
+
+  "Consonants": "子音",
+  "Labial": "唇",
+  "Coronal": "舌頂",
+  "Dorsal": "舌背",
+
+  "Vowels": "子音",
+  "Front": "前舌",
+  "Central": "中舌",
+  "Back": "後舌",
+
+  "translate": "この分を翻訳してみましょう。",
+  "translate_word": "以下の意味の言葉を選んでください。",
+  "check": "確認",
+  "continue": "次",
+  "incorrect": "❌ 少し違います。答えは、",
+  "correct": "✅ 正解！　よくできました！",
+  "done": "🎉 練習完了！"
+}
