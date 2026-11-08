@@ -1,0 +1,106 @@
+---
+slug: "isv/25"
+title: "lekcija 25: čisla"
+description: "Naučite se nanpa, wan, tu, ale, kipisi!"
+practice:
+- title: "1. Slova"
+  tasks:
+  - l1: "čislo"
+    l2: "nanpa"
+    junkChips: ["mute", "sama", "li"]
+  - l1: "jedin"
+    l2: "wan"
+    junkChips: ["pini", "nasin", "ni"]
+  - l1: "dva"
+    l2: "tu"
+    junkChips: ["sama", "mute", "kipisi"]
+  - l1: "vsaky"
+    l2: "ale"
+    junkChips: ["kala", "linja", "ala"]
+  - l1: "razděliti"
+    l2: "kipisi"
+    junkChips: ["anu", "ken", "weka"]
+- title: "2. Povtorjenje"
+  tasks:
+  - l1: "osm"
+    l2: "luka tu wan"
+    junkChips: ["tu"]
+  - l1: "Ty krojiš hlěb."
+    l2: "sina kipisi e pan."
+    junkChips: ["li"]
+  - l1: "My dvoje sjedinjajemo se."
+    l2: "mi tu li kama wan."
+    junkChips: ["pi"]
+  - l1: "Ja znaju tri jezyky."
+    l2: "mi sona e toki tu wan."
+    junkChips: ["luka"]
+    alsoAccept: ["mi sona toki tu wan."]
+  - l1: "5 evro"
+    l2: "mani luka pi ma Elopa"
+    junkChips: ["tu"]
+  - l1: "Aprilj počinaje se."
+    l2: "tenpo mun nanpa tu tu li open."
+    junkChips: ["suno"]
+    alsoAccept: ["mun nanpa tu tu li open."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Kolikostne čislovniky
+
+Pogovorimo o čislah!
+
+<List>
+  <Word sl="wan" m="jedin; sjedinjeny" />
+  <Word sl="tu" m="dva; razděleny" />
+  <Word sl="luka" m="pet, ruka" />
+  <Word sl="mute" m="mnogo" />
+  <Word sl="ale" m="vse, vsaky" />
+  <Word sl="kipisi" m="kus, čest; razděliti" />
+</List>
+
+Toki pona imaje slova za 1, 2, 5, ale ne za 3 ili 4! To ne jest tako stranno. Možete prědstaviti sobě **󱥳 wan**, **󱥮 tu**, **󱤭 luka** kako monety s cěnoju 1, 2 i 5. Poprobujmo sčitati od 1 do 10:
+
+<List>
+    <Word sl="wan" m="jedin" />
+    <Word sl="tu" m="dva" />
+    <Word sl="tu wan" m="tri" />
+    <Word sl="tu tu" m="četyri" />
+    <Word sl="luka" m="pet" />
+    <Word sl="luka wan" m="šest" />
+    <Word sl="luka tu" m="sedm" />
+    <Word sl="luka tu wan" m="osm" />
+    <Word sl="luka tu tu" m="devet" />
+    <Word sl="luka luka" m="deset" />
+</List>
+
+V mnogyh situacijah bude stačiti prosto znati male čisla. Ale jestli hčete govoriti o pokupkah ili o gregorijanskom kalendaru, niže jest dodatočna stranica o velikyh čislah.
+
+## Poredkove čislovniky
+
+Tipično čisla sut prosto pridavniky:
+
+<List>
+    <Word sl="kala wan" m="jedna ryba" />
+    <Word sl="soko tu tu" m="četyri griby" />
+    <Word sl="mun luka" m="pet měsecev" />
+</List>
+
+Ale to sut *kolikostne* čislovniky: čisla, ktore govoret o kolikosti. Sut takože *poredkove* čislovniky: te, ktore govoret o poredku. Da by stvoriti poredkovy čislovnik, prosto koristajte **󱤽 nanpa** + čislo:
+
+<List>
+    <Word sl="nanpa" m="čislo; ...-ty" />
+    <Word sl="kala nanpa wan" m="prva ryba" />
+    <Word sl="soko nanpa tu tu" m="četvrty grib" />
+    <Word sl="mun nanpa luka" m="pety měsec" />
+</List>
+
+(Mimohodom, **󱤽 nanpa** jest osoblivo! Ne potrěbuje **󱥍 pi**.)
+
+<Practice exercises={frontmatter.practice} />
+
+## Čitaj takože
+* [P: kako govoriti o velikyh čislah? [ang]](/en/large-numbers/)

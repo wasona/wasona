@@ -1,0 +1,93 @@
+---
+slug: "isv/27"
+title: "lekcija 27: barvy"
+description: "Naučite se kule, walo, pimeja, laso, loje, jelo, kin!"
+practice:
+- title: "1. Slova"
+  tasks:
+  - l1: "barva"
+    l2: "kule"
+    junkChips: ["walo", "pimeja", "misikeke"]
+  - l1: "běly"
+    l2: "walo"
+    junkChips: ["pimeja", "kule", "mani"]
+  - l1: "črny"
+    l2: "pimeja"
+    junkChips: ["walo", "ala", "kule"]
+  - l1: "sinje-zeleny"
+    l2: "laso"
+    junkChips: ["jelo", "loje", "kasi"]
+  - l1: "črveny"
+    l2: "loje"
+    junkChips: ["laso", "jelo", "uta"]
+  - l1: "žolty"
+    l2: "jelo"
+    junkChips: ["laso", "loje", "suno"]
+  - l1: "takože"
+    l2: "kin"
+    junkChips: ["a", "o", "lete"]
+- title: "2. Povtorjenje"
+  tasks:
+  - l1: "Nočeju ja zabavjaju se."
+    l2: "tenpo pimeja la mi musi."
+    alsoAccept: ["pimeja la mi musi."]
+    junkChips: ["jelo"]
+  - l1: "Na pčelě jest žolty pyl."
+    l2: "ko jelo li lon pipi."
+    junkChips: ["loje"]
+  - l1: "Ja takože igraju s mnogobarvnymi ceglami."
+    l2: "mi kin li musi kepeken leko kule."
+    junkChips: ["e"]
+  - l1: "Ja ne mogu viděti vslěd vsego tutogo sněga."
+    l2: "mi ken ala lukin tan ko walo."
+    junkChips: ["seli"]
+  - l1: "Modra, běla i črvena sut na zastavě."
+    l2: "laso en walo en loje li lon lipu."
+    junkChips: ["jelo"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Pogovorimo o barvah!
+
+<List>
+  <Word sl="kule" m="barva, tip; mnogobarvny" />
+  <Word sl="walo" m="běly, blědy" />
+  <Word sl="pimeja" m="črny, temny" />
+  <Word sl="loje" m="črveny, purpurny" />
+  <Word sl="jelo" m="žolty" />
+  <Word sl="laso" m="zeleny, sinje-zeleny, modry" />
+</List>
+
+V *sitelen pona* mnoge slova za barvy izgledajut, kako by byli *složene*: skladajut se iz trikutnika od **󱤞 kule**, sjedinjenogo s inym slovom, kako **󱤂 ala**, **󱥰 uta**, **󱥤 suno**, **󱤗 kasi**. V *sitelen pona* jest takože několiko drugyh složenyh značkov: **󱤶 moku**, **󱥉 pali**, **󱤙 kepeken** imajut **󱤭 luka**, a **󱤕 kalama**, **󱥌 pana**, **󱥡 sona**, **󱥬 toki** koristajut tri linije, ktore zovemo *„emitery“*. Bravo, jestli jeste primětili tute obrazce uže raněje!
+
+Slova za barvy, razuměje se, označajut cěly *spektr* barv, ne toliko te, ktore jesmo tut nazvali. **󱤣 laso** jest osoblivo interesno: v toki poně zelena i modra sut toliko odtěnky jednoj barvy, kako v japonskom, vietnamskom, zulu i mnogyh drugyh jezykah. Tute dva rěčenja razom imajut smysl v toki poně, ale ne v medžuslovjanskom:
+
+<List>
+  <Word sl="kin" m="takože" />
+  <Sentence sl="sewi li laso." m="Nebo jest modro." />
+  <Sentence sl="kasi kin li laso." m="Trava takože jest zelena." />
+</List>
+
+## Či potrěbujete barvy?
+
+Kako i rod, barvy v toki poně koristajut se menje često, neželi byste očekyvali. V prirodnyh jezykah barvy često služet kako legke skračenja za něčto mnogo konkretnějše: *črny trg*, *běla vrana*, anglijsky *greenhouse* („zeleny dom“, to jest teplica). Toki pona ne ljubi skračenij, ktore ne idut prěmo k sučnosti:
+
+<List>
+  <Sentence sl="tomo laso" m="zeleny dom" />
+  <Sentence sl="tomo kasi" m="teplica (dom za rastliny)" />
+</List>
+
+Jest velika razlika medžu bělym domom i Bělym domom:
+
+<List>
+  <Sentence sl="tomo walo" m="běly dom" />
+  <Sentence sl="tomo ni la jan li lawa e ma Mewika." m="Běly dom" />
+</List>
+
+Spominaju to toliko nyně, ibo barvy sut najočevidnějši priměr, ale to samo zapravdu jest istinno za vsaku frazu! Prěd koristanjem pridavnikov često jest koristno zaustaviti se i pomysliti: či tute pridavniky izražajut važnu čest togo, o čem jeste htěli govoriti, ili sut toliko skračenje za něčto drugo?
+
+<Practice exercises={frontmatter.practice} />

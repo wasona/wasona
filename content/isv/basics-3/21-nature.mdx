@@ -1,0 +1,120 @@
+---
+slug: "isv/21"
+title: "lekcija 21: priroda"
+description: "Naučite se akesi, kala, pan, kili, soko, misikeke, namako!"
+practice:
+- title: "1. Slova"
+  tasks:
+  - l1: "jaščer"
+    l2: "akesi"
+    junkChips: ["pipi", "soweli", "waso"]
+  - l1: "ryba"
+    l2: "kala"
+    junkChips: ["akesi", "lape", "misikeke"]
+  - l1: "hlěb"
+    l2: "pan"
+    junkChips: ["lili", "suli", "pipi"]
+  - l1: "ovoč"
+    l2: "kili"
+    junkChips: ["pilin", "wile", "namako"]
+  - l1: "grib"
+    l2: "soko"
+    junkChips: ["kili", "kalama", "ike"]
+  - l1: "lěk"
+    l2: "misikeke"
+    junkChips: ["akesi", "kala", "alasa"]
+  - l1: "specija"
+    l2: "namako"
+    junkChips: ["kili", "ko", "pana"]
+- title: "2. Povtorjenje"
+  tasks:
+  - l1: "Griby spotrěbujut mrtve rastliny."
+    l2: "soko li moku e kasi moli."
+    junkChips: ["mani"]
+  - l1: "Izpecite těsto."
+    l2: "o seli e ko pan."
+    junkChips: ["sewi"]
+  - l1: "Ja izkopala kartofelj."
+    l2: "mi weka e kili tan ma."
+    junkChips: ["o"]
+  - l1: "Rastliny potrěbujut vodu, solnečno světlo, zemju."
+    l2: "kasi li wile e telo, e suno, e ma."
+    junkChips: ["soko"]
+  - l1: "Ljudi govoret, zabavjajut se, pěvajut, spet."
+    l2: "jan li toki, li musi, li kalama, li lape."
+    junkChips: ["e"]
+- title: "3. Dalša praktika"
+  tasks:
+  - l1: "Či ryby mogut jedati hlěb?"
+    l2: "kala li ken ala ken moku e pan?"
+    junkChips: ["seme"]
+  - l1: "Či vaša pica jest dolžna vključati sladke ovoče?"
+    l2: "pan sina o jo ala jo e kili suwi?"
+    junkChips: ["li"]
+  - l1: "Ne jedajte gnilyh ovočev, strannyh gribov."
+    l2: "o moku ala e kili jaki e soko nasa."
+    junkChips: ["pan"]
+  - l1: "Žaby mogut byti v vodě, mogut byti na zemji."
+    l2: "akesi li ken lon telo li ken lon ma."
+    junkChips: ["sewi"]
+    alsoAccept: ["akesi li ken lon telo lon ma."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Uže znajemo množinstvo slov za zvěrev i rastliny -- naučimo se ostalym!
+
+<List>
+  <Word sl="akesi" m="gad ili vodozemec, kako žaba, jaščer, zmija" />
+  <Word
+    sl="kala"
+    m="ryba ili morsko stvorjenje, kako losos, kyt, akula, osmonog"
+  />
+  <Word sl="pan" m="skrobna jeda, kako pšenica, ryž, hlěb, makarony" />
+  <Word sl="kili" m="ovoč, zelenina" />
+  <Word sl="soko" m="grib" />
+  <Word sl="misikeke" m="lěk" />
+  <Word sl="namako" m="specija, dodatok, ozdoba" />
+  <Sentence sl="soko li kili nasa." m="Griby sut stranne ovoče." />
+  <Sentence
+    sl="kala suli li alasa e kala lili."
+    m="Velika ryba lovi menše ryby."
+  />
+  <Sentence
+    sl="mi o moku e misikeke lon tenpo mute."
+    m="Ja jesm dolžna često prijmati lěky."
+  />
+</List>
+
+## Ingredienty
+
+Produkty iz hlěba često služet, da by držati vkupě několiko raznyh ingredientov:
+
+<List>
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="Pica sodrži meso." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="Pica sodrži zeleninu." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="Pica sodrži specije." />
+</List>
+
+Ale kako možemo objediniti jih v jedno rěčenje? Nu, každy iz njih jest *prědmet* rěčenja. Rěčenje može iměti *několiko prědmetov*: několiko fraz s **󱤉 e**, ktore prosto idut jedna za drugoju:
+
+<List>
+  <Sentence
+    sl="pan li jo e soweli e kili e namako."
+    m="Pica sodrži meso, zeleninu, specije."
+  />
+</List>
+
+To ne jest osoblivost toliko **󱤉 e**! Možete objediniti několiko svezanyh idej v jedno rěčenje takože s **󱤧 li**, **󱤡 la** i prědlogami. Nyně pogledajmo toliko na **󱤧 li**:
+
+<List>
+  <Sentence sl="jan li alasa e kala." m="Člověk lovi ryby. (= člověk rybari)." />
+  <Sentence sl="jan li seli e ona." m="Člověk vari jih." />
+  <Sentence sl="jan li moku e ona." m="Člověk jedaje jih." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Člověk lovi ryby, vari jih, jedaje jih." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

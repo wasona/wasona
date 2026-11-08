@@ -1,0 +1,104 @@
+---
+slug: "isv/22"
+title: "lekcija 22: mnogo mili koti"
+description: "Naučite se pi!"
+practice:
+- title: "1. Povtorjenje"
+  tasks:
+  - l1: "mnogo sněga"
+    l2: "ko lete mute"
+    junkChips: ["pi"]
+    alsoAccept: ["ko mute lete"]
+  - l1: "mnogo studeny sněg"
+    l2: "ko pi lete mute"
+  - l1: "moje mnoge grěšky"
+    l2: "pakala mi mute"
+    junkChips: ["pi"]
+    alsoAccept: ["pakala mute mi"]
+  - l1: "naša grěška"
+    l2: "pakala pi mi mute"
+  - l1: "druga kniga o jezyku"
+    l2: "lipu toki ante"
+    junkChips: ["pi"]
+    alsoAccept: ["lipu ante toki"]
+  - l1: "kniga na drugom jezyku"
+    l2: "lipu pi toki ante"
+  - l1: "něčija mala komnata"
+    l2: "tomo jan lili"
+    junkChips: ["pi"]
+    alsoAccept: ["tomo lili jan"]
+  - l1: "komnata za někogo malogo"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nedavno jesmo naučili se slovu **󱤼 mute**, ktoro jest mnogo koristno!
+
+Pomyslimo o njem ješče malo. Uže znajemo, kako tvoriti tute frazy:
+
+<List>
+  <Word sl="soweli suwi" m="mily kot" />
+  <Word sl="soweli mute" m="mnogo kotov" />
+  <Word sl="suwi mute" m="mnogo mily" />
+</List>
+
+Ale čto bude, jestli sjedinimo jih vse? To bude *mnogo milyh kotov* ili *mnogo mily kot*?
+
+<List>
+  <Word sl="soweli suwi mute" m="mnogo milyh kotov" />
+</List>
+
+Tuta fraza znači *mnogo milyh kotov*, ibo **󱥦 suwi** opisyvaje **󱥢 soweli**, i **󱤼 mute** takože opisyvaje **󱥢 soweli**.  
+Ale ja myslim, že *moj* kot jest mnogo mily! Kako mogu o tom govoriti? Čto jestli hču, da by **󱤼 mute** opisyvalo **󱥦 suwi**, a ne **󱥢 soweli**?  
+Tut nam pomože nova čestica:
+
+<List>
+  <Word sl="pi" m="čestica, ktora grupuje pridavniky" />
+  <Word sl="soweli pi suwi mute" m="mnogo mily kot" />
+</List>
+
+Hura! Nyně možemo govoriti o **󱥢 soweli**, ktory jest **󱥦󱤼 suwi mute**!  
+Jestli ljubite matematiku, možete prědstaviti sobě, že otvarjajemo zatvorku i měnimo poredok operacij: *„kot mily mnogo“* protiv *„kot (mily mnogo)“*.
+
+Pogledajmo na drugy priměr:
+
+<List>
+  <Word sl="sitelen tomo" m="fotografija doma" />
+  <Word sl="sitelen mute" m="fotografije" />
+  <Word sl="tomo mute" m="domy" />
+  <Word sl="sitelen tomo mute" m="mnogo fotografij jednogo doma" />
+  <Word sl="sitelen pi tomo mute" m="jedna fotografija mnogyh domov" />
+</List>
+
+Opet možete prědstaviti sobě *„fotografija dom mnogo“* protiv *„fotografija (dom mnogo)“*.  
+Očevidno, **󱤼 mute** ne jest jedino slovo, s ktorym **󱥍 pi** pomagaje! Pogledajmo na několiko drugyh slov:
+
+<List>
+  <Word sl="jan pona" m="dobry člověk" />
+  <Word sl="jan lili" m="maly člověk" />
+  <Word sl="pona lili" m="slegka dobry" />
+  <Word sl="jan pona lili" m="maly dobry člověk" />
+  <Word sl="jan pi pona lili" m="slegka dobry člověk" />
+</List>
+
+*„člověk dobry maly“* protiv *„člověk (dobry maly)“*.
+
+<List>
+  <Word sl="sona utala" m="znanje o vojně" />
+  <Word sl="sona sin" m="novo znanje" />
+  <Word sl="utala sin" m="nova vojna" />
+  <Word sl="sona utala sin" m="novo znanje o vojně. znanje jest novo." />
+  <Word sl="sona pi utala sin" m="znanje o novoj vojně. vojna jest nova." />
+</List>
+
+*„znanje vojna novy“* protiv *„znanje (vojna novy)“*.
+
+*Začto vse prěvody na medžuslovjansky sut tako različne?!*, možete zapytati! Medžuslovjansky glavno koristaje *česti rěči*, da by pokazati, ktoro slovo opisyvaje ktoro drugo: *maly* jest pridavnik, a *slegka* jest prislovnik. Kogda česti rěči sut jednake, na pomoč prihodet *rod* i *padež*: *novo znanje o vojně*, ale *znanje o novoj vojně*. I daže slovo *mnogo* može opisyvati ili imennik (*mnogo milyh kotov*), ili pridavnik (*mnogo mily kot*) — to pokazyvaje padež.
+
+Ale v toki poně imenniky, glagoly i pridavniky mogut prěměniti se jedne v druge, a rodov i padežev ona ne imaje. Zatom to vse ne može pomogti! Vměsto togo toki pona koristaje jedino jednu česticu, da by prěgrupovati slova.
+
+<Practice exercises={frontmatter.practice} />
