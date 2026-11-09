@@ -4,6 +4,7 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import { config } from "selo-components/config";
 import svelte from "@astrojs/svelte";
+import { readdirSync } from "node:fs";
 
 const deploy = import.meta.env.PROD
   ? { site: `https://${config.hostname}/` }
@@ -14,7 +15,10 @@ export default defineConfig({
   ...deploy,
   integrations: [mdx(), sitemap(), svelte()],
   i18n: {
-    locales: ['en', 'cs', 'da', 'de', 'es', 'fr', 'hu', 'it', 'pl', 'pt', 'tl', 'ru', 'uk', 'ar', 'he', 'ja', 'th'],
+    locales: readdirSync(new URL("./content/", import.meta.url), { withFileTypes: true })
+      .filter((entry) => entry.isDirectory() && entry.name !== "translate")
+      .map((entry) => entry.name)
+      .sort(),
     defaultLocale: 'en',
   },
   redirects: {

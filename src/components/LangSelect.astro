@@ -9,6 +9,9 @@ const langLinks = [];
 for (let lang of langs) {
   langLinks.push([lang, locales[lang]["lang_name"], getRelativeLocaleUrl(lang)]);
 }
+langLinks.sort((a, b) =>
+  a[0] === "en" ? -1 : b[0] === "en" ? 1 : a[1].localeCompare(b[1], undefined, { sensitivity: "base" })
+);
 langLinks.push(["translate", "add language", "/translate/"]);
 const highlightLang = Astro.url.pathname === "/translate/" ? "translate" : current;
 ---
