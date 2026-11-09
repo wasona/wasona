@@ -1,6 +1,4 @@
 {
-  "lang_name": "日本語",
-
   "Index": "目次",
   "Next": "次",
   "Previous": "前",
@@ -11,12 +9,12 @@
   "Coronal": "舌頂",
   "Dorsal": "舌背",
 
-  "Vowels": "母音",
+  "Vowels": "子音",
   "Front": "前舌",
   "Central": "中舌",
   "Back": "後舌",
 
-  "translate": "この文を翻訳してみましょう。",
+  "translate": "この分を翻訳してみましょう。",
   "translate_word": "以下の意味の言葉を選んでください。",
   "check": "確認",
   "continue": "次",
