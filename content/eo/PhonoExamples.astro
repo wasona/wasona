@@ -1,0 +1,43 @@
+---
+import Audio from "@/components/Audio.astro";
+---
+
+<style>
+  table {
+    text-align: center;
+  }
+  td:last-child() {
+    text-align: initial;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Vorto</th>
+      <th>Signifo</th>
+      <th>Konsiloj</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <Audio td from="linku/asi" file="suno" />
+      <td>suno</td>
+      <td>Io konata!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="nanpa" />
+      <td>nombro</td>
+      <td>Ni skribas <b>np</b>, sed plej ofte elparolas <b>mp</b>!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="kalama" />
+      <td>sono</td>
+      <td>Ekzercu akcenti la unuan silabon!</td>
+    </tr>
+    <tr>
+      <Audio td from="linku/asi" file="akesi" />
+      <td>lacerto</td>
+      <td>Vortoj povas komenciĝi per vokalo!</td>
+    </tr>
+  </tbody>
+</table>
