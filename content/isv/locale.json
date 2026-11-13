@@ -1,26 +1,26 @@
 {
-  "lang_name": "medžuslovjansky",
+  "lang_name": "Medžuslovjansky",
 
-  "Index": "Index",
-  "Next": "Next",
-  "Previous": "Previous",
-  "Translation": "Translation",
+  "Index": "Sodržanje",
+  "Next": "Dalje",
+  "Previous": "Nazad",
+  "Translation": "Prěklad",
 
-  "Consonants": "Consonants",
-  "Labial": "Labial",
-  "Coronal": "Coronal",
-  "Dorsal": "Dorsal",
+  "Consonants": "Konsonanty",
+  "Labial": "Gubne",
+  "Coronal": "Koronalne",
+  "Dorsal": "Dorzalne",
 
-  "Vowels": "Vowels",
-  "Front": "Front",
-  "Central": "Central",
-  "Back": "Back",
+  "Vowels": "Samoglasky",
+  "Front": "Prědne",
+  "Central": "Srědne",
+  "Back": "Zadne",
 
-  "translate": "Translate the sentence",
-  "translate_word": "Which of these means...",
-  "check": "check",
-  "continue": "continue",
-  "incorrect": "❌ Not quite. Correct answer: ",
-  "correct": "✅ Correct! Well done!",
-  "done": "🎉 All exercises completed!"
+  "translate": "Prěvedite rěčenje",
+  "translate_word": "Ktore iz tutyh slov znači...",
+  "check": "prověriti",
+  "continue": "prodolžiti",
+  "incorrect": "❌ Ne sovsěm. Pravilny odgovor: ",
+  "correct": "✅ Pravilno! Dobro sdělano!",
+  "done": "🎉 Vse zadanja sut završene!"
 }
