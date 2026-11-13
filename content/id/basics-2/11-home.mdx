@@ -1,0 +1,123 @@
+---
+slug: "id/11"
+title: "pelajaran 11: rumah"
+description: "Pelajari ilo, lipu, poki, supa, lupa, len, open, pini, jo, ijo!"
+practice:
+- title: "1. Kosakata"
+  tasks:
+  - l1: "alat"
+    l2: "ilo"
+    junkChips: ["lipu", "poki", "open"]
+  - l1: "dokumen"
+    l2: "lipu"
+    junkChips: ["len", "sona", "open"]
+  - l1: "kotak"
+    l2: "poki"
+    junkChips: ["open", "len", "lipu"]
+  - l1: "rak"
+    l2: "supa"
+    junkChips: ["len", "lon", "pini"]
+  - l1: "lubang"
+    l2: "lupa"
+    junkChips: ["pona", "musi", "ijo"]
+  - l1: "penutup"
+    l2: "len"
+    junkChips: ["open", "poki", "lipu"]
+  - l1: "membuka"
+    l2: "open"
+    junkChips: ["ilo", "poki", "jo"]
+  - l1: "menutup"
+    l2: "pini"
+    junkChips: ["pipi", "ilo", "tomo"]
+  - l1: "memegang"
+    l2: "jo"
+    junkChips: ["ijo", "musi", "lupa"]
+  - l1: "sesuatu"
+    l2: "ijo"
+    junkChips: ["toki", "jan", "lape"]
+- title: "2. Ulasan"
+  tasks:
+  - l1: "Kamu menutup pintu."
+    l2: "sina pini e lupa."
+    junkChips: ["supa"]
+  - l1: "Ada seekor kucing di rumahku."
+    l2: "soweli li lon tomo mi."
+    junkChips: ["e"]
+  - l1: "Rumahku berisi seekor kucing."
+    l2: "tomo mi li jo e soweli."
+    junkChips: ["ni"]
+  - l1: "Burungmu membutuhkan makanan."
+    l2: "waso sina li wile e moku."
+    junkChips: ["ona"]
+  - l1: "Kezia bisa bernyanyi dengan baik."
+    l2: "jan Kesija li ken kalama pona."
+    junkChips: ["e"]
+  - l1: "Aku ingin membicarakan mesin jahit."
+    l2: "mi wile toki e ilo len."
+    junkChips: ["li"]
+- title: "3. Latihan tambahan"
+  tasks:
+  - l1: "Kucing memburu burung."
+    l2: "soweli li alasa e waso."
+    junkChips: ["wile"]
+  - l1: "Peti ini membutuhkan kunci."
+    l2: "poki ni li wile e ilo open."
+    junkChips: ["ijo"]
+  - l1: "Dia menyelimuti anak yang sedang tidur."
+    l2: "ona li len e jan lili lape."
+    junkChips: ["lon"]
+    alsoAccept: ["ona li len e jan lape lili."]
+  - l1: "Seseorang meletakkan buku tentang serangga di atas meja."
+    l2: "jan li pana e lipu pipi tawa supa."
+    junkChips: ["pona"]
+  - l1: "Situs bernama Wikipedia membagikan pengetahuan yang berguna."
+    l2: "lipu Wikipesija li pana e sona pona."
+    junkChips: ["tawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Di rumah, kita bisa menemukan berbagai macam benda. Mari kita pelajari beberapa kata untuk membicarakannya:
+
+<List>
+  <Word sl="ilo" m="alat, seperti palu, garpu, ponsel, aplikasi" />
+  <Word sl="lipu" m="benda datar untuk menyimpan atau menyampaikan pengetahuan (󱥡 sona), seperti kertas, kartu, buku, situs web" />
+  <Word sl="poki" m="wadah, seperti kotak, laci, botol" />
+  <Word sl="supa" m="permukaan mendatar, seperti rak, meja, sofa" />
+  <Word sl="lupa" m="bukaan, seperti pintu, jendela, lubang" />
+  <Word sl="len" m="penutup, seperti pakaian, sepatu, selimut" />
+</List>
+
+Inilah beberapa kata untuk tindakan yang bisa kita lakukan dengan benda-benda tersebut:
+
+<List>
+  <Word sl="open" m="memulai, membuka, menyalakan" />
+  <Word sl="pini" m="mengakhiri, menutup, mematikan" />
+  <Word sl="jo" m="memegang, berisi, mencakup" />
+</List>
+
+Ayo kita buat beberapa contoh kalimat:
+
+<List>
+  <Sentence sl="mi open e lupa." m="Aku membuka pintu." />
+  <Sentence sl="jan li pini e poki moku." m="Orang itu menutup kulkas." />
+  <Sentence sl="lipu li lon supa lape." m="Buku itu ada di atas tempat tidur." />
+  <Sentence sl="poki mi li ken jo e len." m="Laciku mungkin berisi pakaian." />
+  <Sentence sl="ilo mi li wile e wawa." m="Ponselku membutuhkan listrik." />
+</List>
+
+## Sesuatu
+
+Di dalam kotak, kita mungkin menemukan pakaian, kertas, alat, foto... Ada berbagai macam benda! Bagaimana cara membicarakan semuanya secara umum?
+
+<List>
+  <Word sl="ijo" m="sesuatu, benda, hal" />
+  <Sentence sl="poki li jo e ijo." m="Kotak itu berisi barang." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="Seseorang sedang menggambar sesuatu yang lucu." />
+  <Sentence sl="mi wile toki e ijo kasi." m="Aku ingin membicarakan sesuatu yang berkaitan dengan tumbuhan." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

@@ -1,0 +1,106 @@
+---
+slug: "id/25"
+title: "pelajaran 25: bilangan"
+description: "Pelajari nanpa, wan, tu, ale, kipisi!"
+practice:
+- title: "1. Kosakata"
+  tasks:
+  - l1: "bilangan"
+    l2: "nanpa"
+    junkChips: ["mute", "sama", "li"]
+  - l1: "satu"
+    l2: "wan"
+    junkChips: ["pini", "nasin", "ni"]
+  - l1: "dua"
+    l2: "tu"
+    junkChips: ["sama", "mute", "kipisi"]
+  - l1: "setiap"
+    l2: "ale"
+    junkChips: ["kala", "linja", "ala"]
+  - l1: "membagi"
+    l2: "kipisi"
+    junkChips: ["anu", "ken", "weka"]
+- title: "2. Ulasan"
+  tasks:
+  - l1: "delapan"
+    l2: "luka tu wan"
+    junkChips: ["tu"]
+  - l1: "Kamu mengiris roti."
+    l2: "sina kipisi e pan."
+    junkChips: ["li"]
+  - l1: "Kita berdua bersatu."
+    l2: "mi tu li kama wan."
+    junkChips: ["pi"]
+  - l1: "Aku menguasai tiga bahasa."
+    l2: "mi sona e toki tu wan."
+    junkChips: ["luka"]
+    alsoAccept: ["mi sona toki tu wan."]
+  - l1: "5 euro"
+    l2: "mani luka pi ma Elopa"
+    junkChips: ["tu"]
+  - l1: "Bulan April dimulai."
+    l2: "tenpo mun nanpa tu tu li open."
+    junkChips: ["suno"]
+    alsoAccept: ["mun nanpa tu tu li open."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+## Bilangan jumlah
+
+Mari kita membicarakan bilangan!
+
+<List>
+  <Word sl="wan" m="satu; bersatu" />
+  <Word sl="tu" m="dua; terbagi" />
+  <Word sl="luka" m="lima, tangan" />
+  <Word sl="mute" m="banyak" />
+  <Word sl="ale" m="semua, setiap" />
+  <Word sl="kipisi" m="potongan, bagian; membagi, memotong" />
+</List>
+
+Toki Pona memiliki kata untuk 1, 2, dan 5, tetapi tidak untuk 3 atau 4! Bagaimana cara menghitungnya? Bayangkan **󱥳 wan**, **󱥮 tu**, dan **󱤭 luka** seperti koin bernilai 1, 2, dan 5. Nilai-nilai itu dijumlahkan. Mari kita coba menghitung dari 1 sampai 10:
+
+<List>
+    <Word sl="wan" m="satu" />
+    <Word sl="tu" m="dua" />
+    <Word sl="tu wan" m="tiga" />
+    <Word sl="tu tu" m="empat" />
+    <Word sl="luka" m="lima" />
+    <Word sl="luka wan" m="enam" />
+    <Word sl="luka tu" m="tujuh" />
+    <Word sl="luka tu wan" m="delapan" />
+    <Word sl="luka tu tu" m="sembilan" />
+    <Word sl="luka luka" m="sepuluh" />
+</List>
+
+Dalam banyak situasi, bilangan kecil saja sudah cukup. Tetapi, jika ingin membicarakan harga belanja atau kalender Masehi, kamu bisa membaca halaman tambahan tentang bilangan besar pada tautan di bawah.
+
+## Bilangan urutan
+
+Biasanya, bilangan digunakan seperti kata sifat:
+
+<List>
+    <Word sl="kala wan" m="satu ikan" />
+    <Word sl="soko tu tu" m="empat jamur" />
+    <Word sl="mun luka" m="lima bulan" />
+</List>
+
+Contoh-contoh tadi menggunakan *bilangan jumlah*, atau bilangan kardinal, yang menjelaskan banyaknya sesuatu. Ada juga *bilangan urutan*, atau bilangan ordinal, seperti pertama, kedua, dan seterusnya. Untuk membuatnya, kita cukup menggunakan **󱤽 nanpa** diikuti bilangan:
+
+<List>
+    <Word sl="nanpa" m="bilangan, nomor; ke-..." />
+    <Word sl="kala nanpa wan" m="ikan pertama" />
+    <Word sl="soko nanpa tu tu" m="jamur keempat" />
+    <Word sl="mun nanpa luka" m="bulan kelima" />
+</List>
+
+(Ada aturan khusus untuk **󱤽 nanpa**: kita tidak perlu menambahkan **󱥍 pi**!)
+
+<Practice exercises={frontmatter.practice} />
+
+## Lihat juga
+* [T: Bagaimana cara membicarakan bilangan besar?](/id/large-numbers/)
