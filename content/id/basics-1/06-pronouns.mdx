@@ -1,0 +1,128 @@
+---
+slug: "id/06"
+title: "pelajaran 6: kata ganti"
+description: "Pelajari ni, mi, sina, ona!"
+practice:
+- title: "1. Kosakata"
+  tasks:
+  - l1: "ini"
+    l2: "ni"
+    junkChips: ["mi", "sina", "ona"]
+  - l1: "aku"
+    l2: "mi"
+    junkChips: ["ni", "sina", "ona"]
+  - l1: "kamu"
+    l2: "sina"
+    junkChips: ["ni", "mi", "ona"]
+  - l1: "mereka"
+    l2: "ona"
+    junkChips: ["ni", "mi", "sina"]
+- title: "2. Ulasan"
+  tasks:
+  - l1: "Ini adalah tumbuhan yang manis."
+    l2: "ni li kasi suwi."
+    junkChips: ["e"]
+  - l1: "Ini adalah mata yang besar."
+    l2: "ni li lukin suli."
+    junkChips: ["e"]
+  - l1: "Matamu besar."
+    l2: "lukin sina li suli."
+    junkChips: ["e"]
+  - l1: "Burung ini kecil."
+    l2: "waso ni li lili."
+    junkChips: ["e"]
+  - l1: "Serangga yang jahat memakan tumbuhanku."
+    l2: "pipi ike li moku e kasi mi."
+    junkChips: ["ona"]
+  - l1: "Kamu lucu."
+    l2: "sina suwi."
+    junkChips: ["li"]
+  - l1: "Aku melihat mereka."
+    l2: "mi lukin e ona."
+    junkChips: ["li"]
+  - l1: "Mereka makan dengan baik."
+    l2: "ona li moku pona."
+    junkChips: ["e"]
+- title: "3. Latihan tambahan"
+  tasks:
+  - l1: "kumbang kuat ini"
+    l2: "pipi wawa ni"
+    junkChips: ["mi"]
+    alsoAccept: ["pipi ni wawa"]
+  - l1: "Aku mengetahui kekuatanmu dengan baik."
+    l2: "mi sona pona e wawa sina."
+    junkChips: ["li"]
+  - l1: "Pengetahuan tentang burung itu penting."
+    l2: "sona waso li suli."
+    junkChips: ["e"]
+  - l1: "Pohon mereka terlalu besar."
+    l2: "kasi ona li suli ike."
+    junkChips: ["e"]
+  - l1: "Bantuanmu telah membuatku lebih kuat."
+    l2: "pona sina li wawa e mi."
+    junkChips: ["ike"]
+  - l1: "merpati kecilku yang lucu"
+    l2: "waso lili suwi mi"
+    junkChips: ["e"]
+    alsoAccept:
+    - "waso lili mi suwi"
+    - "waso suwi lili mi"
+    - "waso suwi mi lili"
+    - "waso mi suwi lili"
+    - "waso mi lili suwi"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Mungkin kamu sudah lelah dengan kalimat-kalimat panjang dari pelajaran sebelumnya. Mari kita gunakan kalimat yang lebih pendek dengan menunjuk benda-benda:
+
+<List>
+  <Word sl="ni" m="ini, itu" />
+  <Sentence sl="ni li soweli." m="Ini adalah seekor hewan." />
+  <Sentence sl="ni li kasi." m="Itu adalah tumbuhan." />
+  <Sentence sl="ni li moku suwi." m="Ini adalah makanan yang manis." />
+  <Sentence sl="ni li suli." m="Ini penting." />
+  <Sentence sl="ni li pona wawa." m="Ini sangat baik." />
+</List>
+
+Contoh-contoh di atas adalah kalimat pertama kita _tanpa objek_. Karena itu, kita tidak menggunakan **󱤉 e**!
+
+Dalam pelajaran 3, predikat pada contoh-contoh kita berupa kata kerja. Namun, predikat tidak selalu menjelaskan tindakan. Dalam Toki Pona, kata benda dan kata sifat juga bisa menjadi predikat tanpa kata tambahan seperti "adalah". Jadi, **󱥢 soweli** bisa berarti "merupakan hewan", sedangkan **󱥣 suli** bisa berarti "besar" atau "penting". Ini mirip dengan bahasa Indonesia: kita bisa mengatakan "Ini hewan" atau "Ini penting".
+
+Kita sudah mengenal satu kata ganti. Mari kita pelajari beberapa lagi:
+
+<List>
+  <Word sl="mi" m="aku, kita, kami; milikku, milik kita, milik kami" />
+  <Word sl="sina" m="kamu, kalian; milikmu, milik kalian" />
+  <Word sl="ona" m="dia, mereka; miliknya, milik mereka" />
+</List>
+
+Mari kita berlatih menggunakan **󱤴 mi**, **󱥞 sina**, **󱥆 ona**, dan **󱥁 ni** pada kalimat-kalimat:
+
+<List>
+  <Sentence sl="kasi ni li suli." m="Tumbuhan ini besar." />
+  <Sentence sl="sona sina li wawa." m="Pengetahuanmu luar biasa." />
+  <Sentence sl="pipi ni li pipi mi." m="Serangga ini adalah seranggaku." />
+  <Sentence sl="waso sina li lukin e mi." m="Burungmu melihatku." />
+  <Sentence sl="waso li moku e pipi ni." m="Burung memakan serangga ini." />
+  <Sentence sl="soweli mi li moku e kasi ona." m="Hewanku memakan tumbuhannya." />
+</List>
+
+Kalimat-kalimat seperti ini tentu sudah terasa akrab! Di sini, kata ganti dapat berfungsi sebagai kata benda atau menerangkan kata benda. Tetapi, ada aturan khusus ketika **󱤴 mi** atau **󱥞 sina** merupakan subjek dari kalimatnya:
+
+<List>
+  <Sentence sl="mi wawa." m="Aku kuat." />
+  <Sentence sl="sina lukin e moku." m="Kamu melihat makanan." />
+  <Sentence sl="mi sona e kasi suli." m="Aku mengenali tumbuhan besar." />
+  <Sentence sl="sina sona e suli kasi." m="Kamu mengetahui ukuran tumbuhan itu." />
+</List>
+
+Toki Pona memiliki aturan khusus: ketika subjek kalimat hanya berupa **󱤴 mi** atau **󱥞 sina**, partikel **󱤧 li** tidak digunakan. Ini karena kalimat dengan penggunaan **󱤴 mi** atau **󱥞 sina** sangatlah umum!
+
+<Practice exercises={frontmatter.practice} />
+
+## Lihat juga
+* [T: Apakah 'li' berarti 'adalah'?](/id/li-and-is/)
