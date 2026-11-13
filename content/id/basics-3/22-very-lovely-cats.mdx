@@ -1,0 +1,102 @@
+---
+slug: "id/22"
+title: "pelajaran 22: kucing yang sangat lucu"
+description: "Pelajari pi!"
+practice:
+- title: "1. Ulasan"
+  tasks:
+  - l1: "banyak salju"
+    l2: "ko lete mute"
+    junkChips: ["pi"]
+    alsoAccept: ["ko mute lete"]
+  - l1: "salju yang sangat dingin"
+    l2: "ko pi lete mute"
+  - l1: "banyak kesalahanku"
+    l2: "pakala mi mute"
+    junkChips: ["pi"]
+    alsoAccept: ["pakala mute mi"]
+  - l1: "kesalahan kita"
+    l2: "pakala pi mi mute"
+  - l1: "buku bahasa yang lain"
+    l2: "lipu toki ante"
+    junkChips: ["pi"]
+    alsoAccept: ["lipu ante toki"]
+  - l1: "buku dalam bahasa lain"
+    l2: "lipu pi toki ante"
+  - l1: "kamar kecil milik seseorang"
+    l2: "tomo jan lili"
+    junkChips: ["pi"]
+    alsoAccept: ["tomo lili jan"]
+  - l1: "kamar untuk orang kecil"
+    l2: "tomo pi jan lili"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Kita baru mempelajari **󱤼 mute**, kata yang sangat berguna!
+
+Mari kita perhatikan kata ini lebih lanjut. Kita sudah tahu cara membuat frasa-frasa berikut:
+
+<List>
+  <Word sl="soweli suwi" m="kucing yang lucu" />
+  <Word sl="soweli mute" m="banyak kucing" />
+  <Word sl="suwi mute" m="sangat lucu" />
+</List>
+
+Tetapi, bagaimana jika kita menggabungkan semuanya? Apakah artinya *banyak kucing yang lucu* atau *kucing yang sangat lucu*?
+
+<List>
+  <Word sl="soweli suwi mute" m="banyak kucing yang lucu" />
+</List>
+
+Frasa ini berarti *banyak kucing yang lucu*, karena **󱥦 suwi** menjelaskan **󱥢 soweli**, dan **󱤼 mute** juga menjelaskan **󱥢 soweli**.
+
+Tetapi, menurutku kucingku *sangat lucu*! Bagaimana cara mengatakannya? Bagaimana jika kita ingin **󱤼 mute** menjelaskan **󱥦 suwi**, bukan **󱥢 soweli**? Untuk itu, kita memerlukan partikel baru:
+
+<List>
+  <Word sl="pi" m="partikel yang mengelompokkan kata-kata penjelas" />
+  <Word sl="soweli pi suwi mute" m="kucing yang sangat lucu" />
+</List>
+
+Kini kita bisa membicarakan **󱥢 soweli** yang **󱥦󱤼 suwi mute**! Jika kamu menyukai matematika, bayangkan kita menambahkan tanda kurung untuk mengubah pengelompokannya: *soweli suwi mute* dibandingkan dengan *soweli (suwi mute)*.
+
+Mari kita lihat contoh lainnya:
+
+<List>
+  <Word sl="sitelen tomo" m="foto sebuah rumah" />
+  <Word sl="sitelen mute" m="banyak foto" />
+  <Word sl="tomo mute" m="banyak rumah" />
+  <Word sl="sitelen tomo mute" m="banyak foto sebuah rumah" />
+  <Word sl="sitelen pi tomo mute" m="foto beberapa rumah" />
+</List>
+
+Sekali lagi, bayangkan perbedaan antara *sitelen tomo mute* dan *sitelen (tomo mute)*. Tentu saja, **󱥍 pi** tidak hanya berguna bersama **󱤼 mute**! Mari kita lihat beberapa kata lainnya:
+
+<List>
+  <Word sl="jan pona" m="orang yang baik" />
+  <Word sl="jan lili" m="orang kecil" />
+  <Word sl="pona lili" m="agak baik" />
+  <Word sl="jan pona lili" m="orang kecil yang baik" />
+  <Word sl="jan pi pona lili" m="orang yang agak baik" />
+</List>
+
+*jan pona lili* dibandingkan dengan *jan (pona lili)*.
+
+<List>
+  <Word sl="sona utala" m="pengetahuan tentang perang" />
+  <Word sl="sona sin" m="pengetahuan baru" />
+  <Word sl="utala sin" m="perang baru" />
+  <Word sl="sona utala sin" m="pengetahuan baru tentang perang. Yang baru adalah pengetahuannya." />
+  <Word sl="sona pi utala sin" m="pengetahuan tentang perang baru. Yang baru adalah perangnya." />
+</List>
+
+*sona utala sin* dibandingkan dengan *sona (utala sin)*.
+
+Kamu mungkin bertanya: mengapa terjemahan bahasa Indonesianya berbeda-beda? Dalam bahasa Indonesia, kita membedakan "banyak" dan "sangat", atau mengubah urutan kata serta menambahkan kata seperti "yang" dan "tentang". Dengan begitu, kita bisa memahami bagian mana yang dijelaskan oleh kata lainnya.
+
+Dalam Toki Pona, satu kata bisa menjadi kata benda, kata kerja, atau kata sifat. Karena itu, jenis kata saja tidak cukup untuk membedakan pengelompokannya. Toki Pona menggunakan partikel **󱥍 pi** untuk mengelompokkan ulang kata-kata tersebut!
+
+<Practice exercises={frontmatter.practice} />

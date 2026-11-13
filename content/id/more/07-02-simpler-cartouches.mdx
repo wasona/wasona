@@ -1,0 +1,88 @@
+---
+slug: "id/simpler-cartouches"
+title: "T: Dalam sitelen pona, nama terlihat panjang. Bagaimana cara membuatnya lebih pendek?"
+description: "Pelajari sistem titik, garis hitung, dan singkatan!"
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nama dalam _sitelen pona_ bisa cukup panjang:
+
+<List>
+  <Sentence sl="lipu Wikipesija" m="Wikipedia" />
+  <Sentence sl="ma Antasika" m="Antarktika" />
+  <Sentence sl="ma Kolonpija" m="Kolombia" />
+</List>
+
+Ada tiga sistem yang dikembangkan agar nama lebih mudah dibaca dan ditulis.
+
+## 1. Sistem titik: 󱤿󱥠󱤕
+
+Sistem titik, atau _nasin sitelen kalama_, dibuat oleh jan Pumiko pada 2022. Sekitar 40–60% penutur melaporkan menggunakannya, setidaknya dalam situasi tertentu. Dalam sistem ini, kata dibagi menjadi _mora_, satuan bunyi yang mirip dengan suku kata tetapi bisa lebih kecil. Satu mora bisa berupa konsonan dan vokal, vokal tanpa konsonan awal, atau n yang menutup suku kata:
+
+- to-ki
+- ja-n
+- a-n-pa
+- si-n-pi-n
+
+Dengan menambahkan titik tengah setelah simbol, kamu menambah jumlah mora yang dibaca dalam nama:
+
+<List>
+  <Word sp="󱦐󱤅󱦑" sl="A" />
+  <Word sp="󱦐󱤅󱦜󱦑" sl="An" />
+  <Word sp="󱦐󱤅󱦜󱦜󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦑" sl="S" />
+  <Word sp="󱦐󱥟󱦜󱦑" sl="Si" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦑" sl="Sin" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦑" sl="Sinpi" />
+  <Word sp="󱦐󱥟󱦜󱦜󱦜󱦜󱦑" sl="Sinpin" />
+</List>
+
+(Ada hal menarik: **󱦐󱤅󱦑** sudah mewakili satu mora penuh, yaitu a. Titik berikutnya menambahkan mora **-n**. Namun, **󱦐󱥟󱦑** baru mewakili s, belum satu mora penuh. Karena itu, titik pertama melengkapinya menjadi **si**.)
+
+Kamu juga bisa menggunakan titik dua untuk menunjukkan bahwa seluruh kata harus dibaca:
+
+<List>
+  <Word sp="󱦐󱤅󱦝󱦑" sl="Anpa" />
+  <Word sp="󱦐󱥟󱦝󱦑" sl="Sinpin" />
+</List>
+
+Gabungkan beberapa simbol dalam satu cartouche untuk menulis nama:
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡󱦜󱤿󱤜󱦜󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅󱦜󱥩󱦜󱥜󱦜󱤔󱦜󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜󱦝󱤬󱦝󱥍󱦝󱤑󱦜󱦑" sl="ma Kolonpija" />
+</List>
+
+* 🎉 Lebih sedikit simbol kata diperlukan untuk menulis satu nama!
+* 🙁 Cartouche-nya masih cukup panjang.
+
+## 2. Sistem garis hitung: 󱤿󱥠󱤕󱥍󱤩󱤨
+
+Sistem garis hitung dibuat oleh Sonja Lang pada 2024 untuk surat dan buku resmi, yang halaman sempitnya memerlukan penulisan nama lebih pendek. Setiap simbol dalam cartouche diberi garis hitung di bawahnya. Satu garis mewakili satu bunyi atau huruf yang ingin dibaca:
+
+{/* Note: this section uses non-standard codepoints F19FC-F19FF, which I modded into nasin nanpa. If you ever update nasin nanpa, this section will break. Ideally, nskpll gets standardised later. */}
+
+<List>
+  <Sentence sp="󱤰󱦐󱥡&#xF19FE;󱤜&#xF19FD;󱦑" sl="ma Sonko" />
+  <Sentence sp="󱤰󱦐󱤅&#xF19FD;󱥩&#xF19FD;󱥜&#xF19FD;󱤔&#xF19FD;󱦑" sl="ma Antasika" />
+  <Sentence sp="󱤰󱦐󱤜&#xF19FD;󱤬&#xF19FE;󱥍&#xF19FD;󱤑&#xF19FD;󱦑" sl="ma Kolonpija" />
+</List>
+
+## 3. Sistem inisial
+
+Cara ini diperkenalkan oleh DavidAR pada 2019, lalu dicoba oleh Sonja Lang dalam *lipu su*, yaitu *The Wonderful Wizard of Oz* edisi Toki Pona. Saat pertama kali menyebut orang, bahasa, atau tempat, kamu menuliskan nama lengkapnya:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱥅󱥷󱤃󱥦󱤌󱦑" sl="jan Towasi" m="Dorothy" />
+</List>
+
+Dalam kalimat berikutnya, nama cukup disingkat dengan simbol pertamanya:
+
+<List>
+  <Sentence sp="󱤑󱦐󱥭󱦑" sl="jan T." m="Dorothy" />
+</List>
