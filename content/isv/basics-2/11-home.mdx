@@ -1,0 +1,123 @@
+---
+slug: "isv/11"
+title: "lekcija 11: dom"
+description: "Naučite se ilo, lipu, poki, supa, lupa, len, open, pini, jo, ijo!"
+practice:
+- title: "1. Slova"
+  tasks:
+  - l1: "orudje"
+    l2: "ilo"
+    junkChips: ["lipu", "poki", "open"]
+  - l1: "dokument"
+    l2: "lipu"
+    junkChips: ["len", "sona", "open"]
+  - l1: "krabka"
+    l2: "poki"
+    junkChips: ["open", "len", "lipu"]
+  - l1: "polica"
+    l2: "supa"
+    junkChips: ["len", "lon", "pini"]
+  - l1: "otvor"
+    l2: "lupa"
+    junkChips: ["pona", "musi", "ijo"]
+  - l1: "pokrytje"
+    l2: "len"
+    junkChips: ["open", "poki", "lipu"]
+  - l1: "otvarjati"
+    l2: "open"
+    junkChips: ["ilo", "poki", "jo"]
+  - l1: "zatvarjati"
+    l2: "pini"
+    junkChips: ["pipi", "ilo", "tomo"]
+  - l1: "držati"
+    l2: "jo"
+    junkChips: ["ijo", "musi", "lupa"]
+  - l1: "něčto"
+    l2: "ijo"
+    junkChips: ["toki", "jan", "lape"]
+- title: "2. Povtorjenje"
+  tasks:
+  - l1: "Vy zatvarjajete dveri."
+    l2: "sina pini e lupa."
+    junkChips: ["supa"]
+  - l1: "V mojem domu jest kot."
+    l2: "soweli li lon tomo mi."
+    junkChips: ["e"]
+  - l1: "Moj dom sodrži kota."
+    l2: "tomo mi li jo e soweli."
+    junkChips: ["ni"]
+  - l1: "Vaša ptica potrěbuje jedu."
+    l2: "waso sina li wile e moku."
+    junkChips: ["ona"]
+  - l1: "Sunita može dobro spěvati."
+    l2: "jan Sunita li ken kalama pona."
+    junkChips: ["e"]
+  - l1: "Ja hču govoriti o mašině za šitje."
+    l2: "mi wile toki e ilo len."
+    junkChips: ["li"]
+- title: "3. Dalša praktika"
+  tasks:
+  - l1: "Koti lovet ptice."
+    l2: "soweli li alasa e waso."
+    junkChips: ["wile"]
+  - l1: "Ta skrinja potrěbuje ključ."
+    l2: "poki ni li wile e ilo open."
+    junkChips: ["ijo"]
+  - l1: "Ona pokryla děte, ktore spało (pokryvoju)."
+    l2: "ona li len e jan lili lape."
+    junkChips: ["lon"]
+    alsoAccept: ["ona li len e jan lape lili."]
+  - l1: "Někto položil knigu o žuželkah na stol."
+    l2: "jan li pana e lipu pipi tawa supa."
+    junkChips: ["pona"]
+  - l1: "Vebsajt nazvany Wikipedija děli se koristnym znanjem."
+    l2: "lipu Wikipesija li pana e sona pona."
+    junkChips: ["tawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+V naših domah jest mnogo věčij:
+
+<List>
+  <Word sl="ilo" m="instrument, orudje, kako mlatok ili kladivo, vilica, telefon, programa" />
+  <Word sl="lipu" m="ploska věč za 󱥡 sona, kako papir, karta, kniga, vebsajt" />
+  <Word sl="poki" m="sodržnik ili kontejner, kako krabka, zasuvka, butylka" />
+  <Word sl="supa" m="vodoravna povrhnja, kako polica, stol, divan" />
+  <Word sl="lupa" m="otvor, kako dveri, okno, dira" />
+  <Word sl="len" m="pokrytje, kako oděža, obuvka, pokryva" />
+</List>
+
+A tut jest to, čto s njimi dělajemo:
+
+<List>
+  <Word sl="open" m="počinati, otvarjati, vključati (něčto)" />
+  <Word sl="pini" m="končati, zatvarjati, izključati" />
+  <Word sl="jo" m="držati, sodrživati, vključati (v sebe)" />
+</List>
+
+Praktikujmo!
+
+<List>
+  <Sentence sl="mi open e lupa." m="Ja otvarjaju dveri." />
+  <Sentence sl="jan li pini e poki moku." m="Člověk zatvarjaje hladilnik." />
+  <Sentence sl="lipu li lon supa lape." m="Kniga jest na ložu." />
+  <Sentence sl="poki mi li ken jo e len." m="Moja zasuvka može sodrživati oděžu." />
+  <Sentence sl="ilo mi li wile e wawa." m="Moj telefon potrěbuje električnost." />
+</List>
+
+## Něčto
+
+Vnutri krabki možemo najdti oděžu, papiry, instrumenty, fotografije... Razne věči! Kako možemo govoriti o vsem tom voobče?
+
+<List>
+  <Word sl="ijo" m="něčto, věč" />
+  <Sentence sl="poki li jo e ijo." m="Krabka sodrži věči." />
+  <Sentence sl="jan li sitelen e ijo suwi." m="Někto rysuje něčto milo." />
+  <Sentence sl="mi wile toki e ijo kasi." m="Ja by htěl govoriti o něčem rastlinnom." />
+</List>
+
+<Practice exercises={frontmatter.practice} />

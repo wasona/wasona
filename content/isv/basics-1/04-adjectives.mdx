@@ -1,0 +1,100 @@
+---
+slug: "isv/04"
+title: "lekcija 4: pridavniky"
+description: "Naučite se: suli, lili, pona, ike, wawa, suwi!"
+practice:
+- title: "1. Slova"
+  tasks:
+  - l1: "veliky"
+    l2: "suli"
+    junkChips: ["lili", "wawa", "sona"]
+  - l1: "maly"
+    l2: "lili"
+    junkChips: ["suli", "suwi", "pona"]
+  - l1: "dobry"
+    l2: "pona"
+    junkChips: ["ike", "kasi", "suwi"]
+  - l1: "zly"
+    l2: "ike"
+    junkChips: ["wawa", "pipi", "suli"]
+  - l1: "silny"
+    l2: "wawa"
+    junkChips: ["suli", "soweli", "lili"]
+  - l1: "mily"
+    l2: "suwi"
+    junkChips: ["pona", "waso", "lili"]
+- title: "2. Povtorjenje"
+  tasks:
+  - l1: "mily zvěr"
+    l2: "soweli suwi"
+  - l1: "zla žuželka"
+    l2: "pipi ike"
+  - l1: "močna ptica"
+    l2: "waso wawa"
+  - l1: "Ptica znaje silnogo zvěra."
+    l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
+  - l1: "Mala žuželka gledaje na velikogo zvěra."
+    l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nyně vy znajete několiko imennikov (věči) i glagolov (dějanja). Nastal čas dodati pridavniky (opisy)! Zapametajmo si několiko iz njih:
+
+<List>
+  <Word sl="suli" m="veliky, važny" />
+  <Word sl="lili" m="maly, mlady" />
+  <Word sl="pona" m="dobry, prijemny" />
+  <Word sl="ike" m="zly, neprijemny" />
+  <Word sl="wawa" m="močny, čudny" />
+  <Word sl="sona" m="znajuči, mudry" />
+  <Word sl="suwi" m="mily, sladky" />
+</List>
+
+V Medžuslovjanskom pridavniky stojet prěd imennikom. Ale v toki poně oni vsegda stojet za nim:
+
+<List>
+  <Word sl="soweli suli" m="veliky zvěr" />
+  <Word sl="pipi lili" m="mala žuželka" />
+  <Word sl="waso suwi" m="mila ptica" />
+</List>
+
+Slovjanam (kromě poljakov) tutoj poredok može izgledati neobyčno, ale on jest normalny vo francuzskom, irlandskom, arabskom, malajskom i mnogyh inyh jezykah. Pomyslite o tom tako: prvo slovo jest vsegda najvažnějše!
+
+Sdělajmo několiko rěčenij s opisami:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="Ptica vidi milogo zvěra."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="Močny zvěr jedaje velike rastliny."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Zle žuželky malo kusajut zvěra."
+  />
+</List>
+
+Jestli tute rěčenja po vašemu mněnju sut dolge i umarjajuče, ne bojte se! Skoro pogledajmo na kratše rěčenja. Zapametajte: **󱤧 li** i **󱤉 e** sut vaši dobri prijateli! Oni pomagajut vam razděliti dolgo rěčenje na tri česti: podmet, glagol i prědmet:
+
+<List>
+  <Word sl="waso sona..." m="Mudra ptica..."/>
+  <Word sl="...li sona pona..." m="...dobro znaje..."/>
+  <Word sl="...e pipi lili." m="...male žuželky."/>
+  <Sentence
+    sl="waso sona li sona pona e pipi lili."
+    m="Mudra ptica znaje male žuželky dobro."
+  />
+</List>
+
+Tu jest něčto interesno: v Medžuslovjanskom pridavniky odnoset se toliko k imennikam. Ale v toki poně oni mogut odnositi se takože k glagolam: _malo kusati_ ~ _moku lili_, _dobro znati_ ~ _sona pona_. V toki poně ne jest razliky medžu pridavnikami i prislovnikami.
+
+<Practice exercises={frontmatter.practice} />
