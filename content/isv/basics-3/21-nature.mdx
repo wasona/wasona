@@ -23,7 +23,7 @@ practice:
   - l1: "lěk"
     l2: "misikeke"
     junkChips: ["akesi", "kala", "alasa"]
-  - l1: "specija"
+  - l1: "priprava"
     l2: "namako"
     junkChips: ["kili", "ko", "pana"]
 - title: "2. Povtorjenje"
@@ -31,7 +31,7 @@ practice:
   - l1: "Griby spotrěbujut mrtve rastliny."
     l2: "soko li moku e kasi moli."
     junkChips: ["mani"]
-  - l1: "Izpecite těsto."
+  - l1: "Izpečite těsto."
     l2: "o seli e ko pan."
     junkChips: ["sewi"]
   - l1: "Ja izkopala kartofelj."
@@ -65,7 +65,7 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-Uže znajemo množinstvo slov za zvěrev i rastliny -- naučimo se ostalym!
+Uže znajemo množinstvo slov za zvěrev i rastliny -- naučimo se ostatnym!
 
 <List>
   <Word sl="akesi" m="gad ili vodozemec, kako žaba, jaščer, zmija" />
@@ -73,11 +73,11 @@ Uže znajemo množinstvo slov za zvěrev i rastliny -- naučimo se ostalym!
     sl="kala"
     m="ryba ili morsko stvorjenje, kako losos, kyt, akula, osmonog"
   />
-  <Word sl="pan" m="skrobna jeda, kako pšenica, ryž, hlěb, makarony" />
-  <Word sl="kili" m="ovoč, zelenina" />
+  <Word sl="pan" m="mučna ili skrobna jeda, kako pšenica, ryž, hlěb, makarony" />
+  <Word sl="kili" m="ovoč, zelenina, plod" />
   <Word sl="soko" m="grib" />
   <Word sl="misikeke" m="lěk" />
-  <Word sl="namako" m="specija, dodatok, ozdoba" />
+  <Word sl="namako" m="priprava, dodatok, ukrašenje ili ozdoba" />
   <Sentence sl="soko li kili nasa." m="Griby sut stranne ovoče." />
   <Sentence
     sl="kala suli li alasa e kala lili."
@@ -96,7 +96,7 @@ Produkty iz hlěba često služet, da by držati vkupě několiko raznyh ingredi
 <List>
   <Sentence sp="󱥋󱤧󱤓󱤉󱥢" sl="pan li jo <u>e soweli</u>." m="Pica sodrži meso." />
   <Sentence sp="󱥋󱤧󱤓󱤉󱤚" sl="pan li jo <u>e kili</u>." m="Pica sodrži zeleninu." />
-  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="Pica sodrži specije." />
+  <Sentence sp="󱥋󱤧󱤓󱤉󱥸" sl="pan li jo <u>e namako</u>." m="Pica sodrži pripravu." />
 </List>
 
 Ale kako možemo objediniti jih v jedno rěčenje? Nu, každy iz njih jest *prědmet* rěčenja. Rěčenje može iměti *několiko prědmetov*: několiko fraz s **󱤉 e**, ktore prosto idut jedna za drugoju:
@@ -104,17 +104,17 @@ Ale kako možemo objediniti jih v jedno rěčenje? Nu, každy iz njih jest *prě
 <List>
   <Sentence
     sl="pan li jo e soweli e kili e namako."
-    m="Pica sodrži meso, zeleninu, specije."
+    m="Pica sodrži meso, zeleninu, pripravu."
   />
 </List>
 
 To ne jest osoblivost toliko **󱤉 e**! Možete objediniti několiko svezanyh idej v jedno rěčenje takože s **󱤧 li**, **󱤡 la** i prědlogami. Nyně pogledajmo toliko na **󱤧 li**:
 
 <List>
-  <Sentence sl="jan li alasa e kala." m="Člověk lovi ryby. (= člověk rybari)." />
-  <Sentence sl="jan li seli e ona." m="Člověk vari jih." />
-  <Sentence sl="jan li moku e ona." m="Člověk jedaje jih." />
-  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Člověk lovi ryby, vari jih, jedaje jih." />
+  <Sentence sl="jan li alasa e kala." m="Člověk lovi rybu." />
+  <Sentence sl="jan li seli e ona." m="Člověk ju vari." />
+  <Sentence sl="jan li moku e ona." m="Člověk ju jedaje." />
+  <Sentence sl="jan li alasa e kala, li seli e ona, li moku e ona." m="Člověk lovi rybu, ju vari, ju jedaje." />
 </List>
 
 <Practice exercises={frontmatter.practice} />
