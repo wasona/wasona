@@ -1,0 +1,99 @@
+---
+slug: "id/04"
+title: "pelajaran 4: kata sifat"
+description: "Pelajari suli, lili, pona, ike, wawa, suwi!"
+practice:
+- title: "1. Kosakata"
+  tasks:
+  - l1: "besar"
+    l2: "suli"
+    junkChips: ["lili", "wawa", "sona"]
+  - l1: "kecil"
+    l2: "lili"
+    junkChips: ["suli", "suwi", "pona"]
+  - l1: "baik"
+    l2: "pona"
+    junkChips: ["ike", "kasi", "suwi"]
+  - l1: "buruk"
+    l2: "ike"
+    junkChips: ["wawa", "pipi", "suli"]
+  - l1: "kuat"
+    l2: "wawa"
+    junkChips: ["suli", "soweli", "lili"]
+  - l1: "lucu"
+    l2: "suwi"
+    junkChips: ["pona", "waso", "lili"]
+- title: "2. Ulasan"
+  tasks:
+  - l1: "Hewan yang lucu"
+    l2: "soweli suwi"
+  - l1: "Serangga yang buruk"
+    l2: "pipi ike"
+  - l1: "Burung yang kuat"
+    l2: "waso wawa"
+  - l1: "Burung mengenali hewan yang kuat."
+    l2: "waso li sona e soweli wawa."
+    junkChips: ["lili"]
+  - l1: "Serangga kecil melihat hewan yang besar."
+    l2: "pipi lili li lukin e soweli suli."
+    junkChips: ["wawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Kamu sudah mengenal beberapa kata benda dan kata kerja (tindakan). Kini saatnya menambahkan kata sifat (deskripsi)!
+
+Mari kita pelajari beberapa di antaranya:
+
+<List>
+  <Word sl="suli" m="besar, penting" />
+  <Word sl="lili" m="kecil, muda" />
+  <Word sl="pona" m="baik, ramah" />
+  <Word sl="ike" m="buruk, tak ramah" />
+  <Word sl="wawa" m="kuat, luar biasa" />
+  <Word sl="sona" m="berpengetahuan, cerdas" />
+  <Word sl="suwi" m="lucu, manis" />
+</List>
+
+Kata sifat dalam Toki Pona diletakkan setelah kata benda yang dijelaskannya, sama seperti dalam bahasa Indonesia. Contohnya, pada "hewan besar", kata "besar" menjelaskan kata "hewan":
+
+<List>
+  <Word sl="soweli suli" m="Hewan besar" />
+  <Word sl="pipi lili" m="Serangga kecil" />
+  <Word sl="waso suwi" m="Burung yang lucu" />
+</List>
+
+Ayo kita buat beberapa contoh kalimat dengan kata sifat yang baru kita pelajari:
+
+<List>
+  <Sentence
+    sl="waso li lukin e soweli suwi."
+    m="Burung melihat hewan yang lucu."
+  />
+  <Sentence
+    sl="soweli wawa li moku e kasi suli."
+    m="Hewan yang kuat memakan tumbuhan yang besar."
+  />
+  <Sentence
+    sl="pipi ike li moku lili e soweli."
+    m="Serangga jahat menggigit hewan itu sedikit."
+  />
+</List>
+
+Beberapa terjemahan di atas menggunakan kata "yang", tetapi Toki Pona tidak memerlukan kata tambahan seperti itu untuk menghubungkan kata benda dengan kata sifat.
+
+Jika kalimat-kalimat ini terasa panjang, jangan khawatir! Kita akan melihat kalimat yang lebih pendek sebentar lagi. Ingat, **󱤧 li** dan **󱤉 e** membantu kita membaginya menjadi tiga bagian: subjek, predikat, dan objek:
+
+<List>
+  <Word sl="waso sona..." m="Burung yang cerdas..." />
+  <Word sl="...li sona pona..." m="...mengenali dengan baik..." />
+  <Word sl="...e pipi lili." m="...serangga kecil." />
+  <Sentence sl="waso sona li sona pona e pipi lili." m="Burung yang cerdas mengenali serangga kecil dengan baik." />
+</List>
+
+Ada hal menarik: dalam Toki Pona, kata yang menerangkan kata benda juga bisa menerangkan kata kerja. Misalnya, _moku lili_ berarti makan sedikit atau menggigit sedikit, sedangkan _sona pona_ berarti mengetahui dengan baik. Toki Pona tidak membedakan kata sifat dan kata keterangan.
+
+<Practice exercises={frontmatter.practice} />
