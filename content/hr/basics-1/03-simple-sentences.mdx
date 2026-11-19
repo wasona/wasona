@@ -1,20 +1,17 @@
 ---
-slug: "en/03"
-title: "lesson 3: simple sentences"
-description: "Learn li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
+slug: "hr/03"
+title: "lekcija 3: lagane rečenice"
+description: "Nauči li, e, soweli, waso, pipi, kasi, moku, lukin, sona!"
 practice:
-- title: "1. Revise"
+- title: "1. Ponovi"
   tasks:
-  - l1: "The animal knows the bug."
+  - l1: "Životinja zna bubu."
     l2: "soweli li sona e pipi."
-    junkChips: ["waso"]
-  - l1: "The bug eats plants."
+  - l1: "Kukac jede biljke."
     l2: "pipi li moku e kasi."
-    junkChips: ["soweli"]
-  - l1: "The bird sees plants."
+  - l1: "Ptica gleda biljke."
     l2: "waso li lukin e kasi."
-    junkChips: ["moku"]
-  - l1: "The bird knows the animal."
+  - l1: "Ptica zna životinju."
     l2: "waso li sona e soweli."
     junkChips: ["pipi"]
 ---
@@ -24,19 +21,19 @@ import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
 import Practice from "@/components/Practice.astro";
 
-## Simple sentences
+## Lagane rečenice
 
-Now that you know how to read Toki Pona, it's time to learn words and sentences!  
-Here are some words for things and actions:
+Sada da znaš kako čitati Toki Ponu, vrijeme je da učiš riječi i rečenice!
+Evo neke riječi za stvari i radnje:
 
 <List>
-  <Word sl="soweli" m="land animal, like a cat, dog, cow, mouse, elephant" />
-  <Word sl="waso" m="bird, like a pigeon, goose, owl" />
-  <Word sl="pipi" m="insect, like a beetle, ant, butterfly, spider" />
-  <Word sl="kasi" m="plant, like a clover, birch tree, cactus, moss" />
-  <Word sl="moku" m="to consume" />
-  <Word sl="lukin" m="to see" />
-  <Word sl="sona" m="to know" />
+  <Word sl="soweli" m="životinja, kao mačka, pas, krava, miš, slon..." />
+  <Word sl="waso" m="ptica, kao golub, guska, sova..." />
+  <Word sl="pipi" m="kukac, kao kornjaš, mrav, leptir, pauk..." />
+  <Word sl="kasi" m="biljka, kao djetelina, breza, kaktus, mahovina..." />
+  <Word sl="moku" m="jesti" />
+  <Word sl="lukin" m="gledati" />
+  <Word sl="sona" m="znati" />
 </List>
 
 {/* A note for translators */}
@@ -45,7 +42,7 @@ Here are some words for things and actions:
   it's better to use everyday words rather than scientific ones.
 */}
 
-A very common kind of sentence is called a "subject-verb-object" sentence. This means that one thing (the subject) does something to another thing (the object). Let's make a few sentences:
+Jako česta vrsta rečenice je nazvana "subjekt-glagol-objekt" rečenica. To znači da jedna stvar (subjekt) radi nešto na drugu stvar (objekt). Idemo praviti nekoliko rečenica:
 
 {/* A note for translators */}
 {/*
@@ -54,18 +51,18 @@ A very common kind of sentence is called a "subject-verb-object" sentence. This 
 */}
 
 <List>
-  <Sentence sl="soweli li moku e kasi." m="The animal eats plants." />
-  <Sentence sl="waso li moku e pipi." m="The bird eats bugs." />
-  <Sentence sl="pipi li lukin e soweli." m="The insect sees an animal." />
-  <Sentence sl="waso li sona e kasi." m="The bird knows the tree." />
+  <Sentence sl="soweli li moku e kasi." m="Životinja jede biljke" />
+  <Sentence sl="waso li moku e pipi." m="Ptica jede bube." />
+  <Sentence sl="pipi li lukin e soweli." m="Buba gleda životinju." />
+  <Sentence sl="waso li sona e kasi." m="Ptica zna drveće." />
 </List>
 
-Here's what we can learn:
+Evo što možemo učiti:
 
-- The word order is the same as in English: subject, verb, object.
-- **󱤧 li** is a particle that starts the verb.
-- **󱤉 e** is a particle that starts the object.
-- The English translation includes words and word-pieces like "the", "an", "-s", but those are guesses! The Toki Pona sentence doesn't specify if we're talking about "_a_ bird" or "_the_ bird". In longer conversations, it becomes pretty clear!
+- Red riječi je isti kao i u hrvatskom jeziku: subjekt, glagol, objekt.
+- **󱤧 li** je čestica koja ide prije glagola.
+- **󱤉 e** je čestica koja ide prije objekta.
+- Hrvatski prijevod ima riječi i dio riječi kao "-u", "-e", "-i", ali to su pogađanja! Toki Pona rečenica ne kaže ako mi pričamo o "ptic_i_" ili "ptic_e_". U dužim konverzacijama, to postane jako vidljivo!
 
 {/* A note for translators */}
 {/*
@@ -73,6 +70,6 @@ Here's what we can learn:
   You can adjust the bullet point above to better suit your language.
 */}
 
-(**󱤧 li** and **󱤉 e** may seem unnecessary at first. We will learn about why they are required, but to do that, we first need to learn more about parts of speech!)
+(**󱤧 li** i **󱤉 e** možda izgledaju nepotrebno na prvo. Mi čemo naučiti zašto su potrebne, ali da to radimo, prvo moramo naučiti više o djelima govora!)
 
 <Practice exercises={frontmatter.practice} />
