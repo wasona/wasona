@@ -1,0 +1,153 @@
+---
+slug: "isv/08"
+title: "lekcija 8: prědlogy"
+description: "Naučite se weka, pana, kama, awen, tawa, lon, tan!"
+practice:
+- title: "1. Slova"
+  tasks:
+  - l1: "odstranjati"
+    l2: "weka"
+    junkChips: ["pana", "kama", "ma"]
+  - l1: "davati"
+    l2: "pana"
+    junkChips: ["weka", "awen", "sona"]
+  - l1: "prihoditi"
+    l2: "kama"
+    junkChips: ["weka", "awen", "pana"]
+  - l1: "ostavati"
+    l2: "awen"
+    junkChips: ["kama", "weka", "pana"]
+  - l1: "k, do"
+    l2: "tawa"
+    junkChips: ["lon", "e", "tan"]
+  - l1: "v, na"
+    l2: "lon"
+    junkChips: ["e", "tan", "tawa"]
+  - l1: "od, iz"
+    l2: "tan"
+    junkChips: ["tawa", "lon", "e"]
+- title: "2. Povtorjenje"
+  tasks:
+  - l1: "v Angliji"
+    l2: "lon ma Inli"
+  - l1: "k Aliju"
+    l2: "tawa jan Ali"
+  - l1: "Vy odstranjajete žuželku iz doma."
+    l2: "sina weka e pipi tan tomo."
+    junkChips: ["li"]
+  - l1: "Rastliny podobajut se mně."
+    l2: "kasi li pona tawa mi."
+    junkChips: ["e"]
+  - l1: "Ja dala ptici gusenicu."
+    l2: "mi pana e pipi tawa waso."
+    junkChips: ["li"]
+  - l1: "Ljudi ostavajut v domu."
+    l2: "jan li awen lon tomo."
+    junkChips: ["e"]
+  - l1: "Nowa ide do Francije."
+    l2: "jan Nowa li tawa ma Kanse."
+    junkChips: ["e"]
+  - l1: "Toronto jest v Kanadě."
+    l2: "ma tomo Towano li lon ma Kanata."
+    junkChips: ["e"]
+    alsoAccept: ["ma Towano li lon ma Kanata."]
+- title: "3. Dalša praktika"
+  tasks:
+  - l1: "V restoranu jest ptica."
+    l2: "waso li lon tomo moku."
+    junkChips: ["e"]
+  - l1: "Moj kot uběgl od mene."
+    l2: "soweli mi li weka tan mi."
+    junkChips: ["e"]
+  - l1: "Ja ostavaju vslěd vas."
+    l2: "mi awen tan sina."
+    junkChips: ["e"]
+  - l1: "Geografija jest važna za mene."
+    l2: "sona ma li suli tawa mi."
+    junkChips: ["e"]
+  - l1: "San Francisco jest v Amerikě."
+    l2: "ma Sanpansiko li lon ma Mewika."
+    junkChips: ["e"]
+  - l1: "Ptica ohranjaje svoje gnězdo."
+    l2: "waso li awen e tomo ona."
+    junkChips: ["tawa"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+Nyně, kogda znajemo několiko krajev, pogovorimo o putovanju! Ale kako skazati „iti do“ i „pohoditi iz“? Za to budemo potrěbovati několiko glagolov:
+
+<List>
+  <Word sl="weka" m="odstranjati, odhoditi; odsutny, proč" />
+  <Word sl="pana" m="davati, klasti" />
+  <Word sl="kama" m="prihoditi, pribyvati" />
+  <Word sl="awen" m="ostavati, ohranjati" />
+</List>
+
+Pri tutyh glagolah često najdete prědlogy:
+
+<List>
+  <Word sl="tawa" m="k, do (k +dat, do +gen)" />
+  <Word sl="lon" m="v, na (+loc)" />
+  <Word sl="tan" m="od, iz, vslěd" />
+</List>
+
+Toki pona ne imaje gramatičnyh padov. Tam, kde Medžuslovjansky koristaje pad, toki pona često koristaje prědlog: **tawa** odgovarjaje dativu (_komu? čemu?_), **lon** lokativu (_v čem? na čem?_), a **tan** genitivu s _od_ ili _iz_ (_od čego? iz čego?_).
+
+_Prědlog_ jest slovo, ktore stoji prěd drugym slovom. Ono pokazyvaje, kako tuto drugo slovo jest svezano s rěčenjem. Prědlog + slovo, ktore on prisjedinjaje, jest _prědložna fraza_:
+
+<List>
+  <Word sl="tawa soweli" m="k zvěru" />
+  <Word sl="lon ma" m="na zemji, v kraju" />
+  <Word sl="tan tomo" m="iz doma" />
+</List>
+
+V toki poně prědložne frazy mogut koristati se na dva sposoby. Prvo, možemo dodati jih na konec rěčenja. Tako možemo spomněti město i směr dějanja:
+
+<List>
+  <Sentence sl="mi pana e waso tawa kasi." m="Ja posadila pticu na drěvo." />
+  <Sentence sl="waso li awen lon kasi." m="Ptica ostavaje na drěvu." />
+  <Sentence
+    sl="sina weka e waso tan kasi."
+    m="Vy snimajete pticu s drěva."
+  />
+</List>
+
+Vtoro, čto jestli hčemo govoriti o městu ili směru... bez ktorogo-libo inogo dějanja? Na ščestje, to takože možemo sdělati. Prědložne frazy mogut stati premo za **󱤧 li** i samo izpolnjati rolju glagola. Kogda prědlogy izpolnjajut rolju glagola, oni značet: **󱥩 tawa** 'iti do', **󱤬 lon** 'byti v', **󱥧 tan** 'pohoditi iz':
+
+<List>
+  <Sentence sl="jan Ema li tawa ma Nijon." m="Ema ide do Japonije." />
+  <Sentence sl="jan Nina li lon ma Lusi." m="Nina jest v Rosiji." />
+  <Sentence sl="jan Mili li tan ma Kanse." m="Mili jest iz Francije." />
+</List>
+
+Praktikujmo s tutymi rěčenjami:
+
+<List>
+  <Sentence
+    sl="mi tawa ma kasi."
+    m="Ja idu do rastlinnoj zemje.<br />(To može byti lěs, polje s travoju, ktore-libo město s zelenju.)"
+  />
+  <Sentence
+    sl="sona li weka tan mi."
+    m="Znanje ušlo od mene.<br />(Ja zabyla.)"
+  />
+  <Sentence
+    sl="soweli suwi li pona tawa mi."
+    m="Mili zvěri sut dobri za mene.<br />(Mili zvěri podobajut se mně.)"
+  />
+  <Sentence sl="jan Nowa li toki tawa jan Ema." m="Nowa govori Emě." />
+  <Sentence
+    sl="jan li toki Tosi lon ma Tosi."
+    m="Ljudi govoret němečsky v Němciji."
+  />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## Čitaj takože
+* [P: či trěba zapametati imena jezykov i krajev? [ang]](/en/languages-countries/)
+* [P: či 'jan li toki Inli' ne jest malo stranno? [ang]](/en/named-verbs/)

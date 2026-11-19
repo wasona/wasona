@@ -1,0 +1,82 @@
+---
+slug: "isv/12"
+title: "lekcija 12: prosby"
+description: "Naučite se o!"
+practice:
+- title: "1. Povtorjenje"
+  tasks:
+  - l1: "Emo, poprobuj zaspati!"
+    l2: "jan Ema o alasa lape!"
+    junkChips: ["e"]
+  - l1: "Ej, ptico, spěvaj mi!"
+    l2: "waso o kalama tawa mi!"
+    junkChips: ["e"]
+  - l1: "Ej, Kento!"
+    l2: "jan Kenta o!"
+    junkChips: ["li"]
+  - l1: "Pogovorite s Ninoju!"
+    l2: "o toki tawa jan Nina!"
+    junkChips: ["li"]
+  - l1: "Narysujte něčto divno!"
+    l2: "o sitelen e ijo nasa!"
+    junkChips: ["li"]
+  - l1: "Majo, daj mi ložicu!"
+    l2: "jan Maja o pana e ilo moku tawa mi!"
+    junkChips: ["li"]
+    alsoAccept: ["jan Maja o pana e ilo tawa mi!"]
+- title: "2. Dalša praktika"
+  tasks:
+  - l1: "Spěvajte něčto dobro!"
+    l2: "o kalama e ijo pona!"
+    junkChips: ["ilo"]
+    alsoAccept: ["o kalama pona!", "o kalama pona e ijo!"]
+  - l1: "Vyjdite iz jamy!"
+    l2: "o weka tan lupa ma!"
+    junkChips: ["e"]
+  - l1: "Članok jest dolžen govoriti o Singapuru."
+    l2: "lipu o toki e ma Sinkapo."
+    junkChips: ["li"]
+  - l1: "Ej Nowa, vaš pes hče zabavjati se!"
+    l2: "jan Nowa o, soweli sina li wile musi!"
+    junkChips: ["e"]
+  - l1: "Ej Iman, prošu, ostavaj na postelji."
+    l2: "jan Iman o awen lon supa lape."
+    junkChips: ["e"]
+    alsoAccept: ["jan Iman o awen lon supa."]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+V toki poně rěčenje s **󱤧 li** jest tvrdženje fakta. Ale poněkogda, vměsto tvrdženja faktov, hčemo izraziti prosbu. Prosbami govorimo drugym ljudam, čto hčemo, da by se stalo. V prosbě, vměsto **󱤧 li**, koristajemo **󱥄 o**:
+
+<List>
+  <Word sl="o" m="počinaje prosbu, prikaz, poučenje, želanje" />
+  <Sentence sl="ilo li sitelen e pipi." m="Telefon pokazuje insekta." />
+  <Sentence sl="ilo o sitelen e waso!" m="Telefone, pokaži pticu!" />
+</List>
+
+Pogledajmo na několiko dalšyh prikazov:
+
+<List>
+  <Sentence sl="jan o lukin e lipu pona!" m="Ljudi, čitajte dobry papir!" />
+  <Sentence sl="soweli mi o moku pona!" m="Moj kote, jedaj dobro!" />
+  <Sentence sl="jan lili sina o kama wawa!" m="Nehaj vaše děte stane se silnym!" />
+  <Sentence sl="pona o tawa sina!" m="Nehaj dobro prijde k vam! (Nehaj budete blagoslovjeny!)" />
+</List>
+
+Možete primětiti, že někoje iz tyh rěčenij dělet se prekrasno na dvě česti:
+* prizyv vnimanja někogo (prěd **󱥄 o**)
+* sama prosba (po **󱥄 o**)
+
+Možemo koristati jih oddělno:
+
+<List>
+  <Sentence sl="jan Ema o pini e lupa tomo!" m="Emo, zatvori dveri!" />
+  <Sentence sl="jan Ema o!" m="Ej, Emo!" />
+  <Sentence sl="o pini e lupa tomo!" m="Zatvori dveri!" />
+</List>
+
+<Practice exercises={frontmatter.practice} />
