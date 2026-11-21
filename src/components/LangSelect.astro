@@ -32,6 +32,9 @@ const languageLinks = langs
     border-top: 2px solid var(--accent);
     border-bottom: 2px solid var(--accent);
   }
+  nav a {
+      text-decoration: none;
+  }
   .selector-actions,
   .selector-actions details,
   .selector-actions summary,
@@ -40,13 +43,13 @@ const languageLinks = langs
   }
   .all-language-list {
     display: block;
-    padding-top: 0.7rem;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 3px dotted var(--accent);
   }
   summary {
     cursor: pointer;
     color: var(--accent);
-    text-decoration: underline dotted;
-    text-underline-position: under;
     font-weight: bold;
     list-style: none;
     white-space: nowrap;
@@ -80,7 +83,7 @@ const languageLinks = langs
     }
     <span class="recommendations" data-recommendations></span>
     <b class="separator" aria-hidden="true">{" · "}</b>
-    <details>
+    <details data-language-details>
       <summary>All languages ({langs.length})</summary>
       <div class="all-language-list">
         {
@@ -111,8 +114,25 @@ import fallbackLanguagesByZone from "@/data/timezone-language-fallbacks.json";
 import { recommendLanguages, type LanguageMetadata } from "@/lib/language-recommendations";
 
   const constructedLanguages = ["isv", "eo"];
+  const detailsStorageKey = "wasona:language-selector:open";
 
   document.querySelectorAll<HTMLElement>("[data-language-selector]").forEach((selector) => {
+    const details = selector.querySelector<HTMLDetailsElement>("[data-language-details]");
+    if (details) {
+      try {
+        details.open = localStorage.getItem(detailsStorageKey) === "true";
+      } catch {
+        // The selector still works when browser storage is unavailable.
+      }
+      details.addEventListener("toggle", () => {
+        try {
+          localStorage.setItem(detailsStorageKey, String(details.open));
+        } catch {
+          // Keep the disclosure usable when browser storage is unavailable.
+        }
+      });
+    }
+
     const languages = JSON.parse(selector.dataset.languages ?? "{}") as Record<string, LanguageMetadata>;
     const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone ?? "";
     const browserLanguages = navigator.languages?.length
