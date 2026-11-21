@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "test:languages": "node --experimental-strip-types tests/language-recommendations.test.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "cap:sync": "node scripts/fetch-kalama.mjs && PUBLIC_KALAMA_BASE=/kalama astro build && cap sync android",

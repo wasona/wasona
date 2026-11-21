@@ -1,48 +1,186 @@
 ---
-import { langs, locales } from "@/lib/i18n";
+import { langs, languageMetadata } from "@/lib/i18n";
 import { getRelativeLocaleUrl } from "astro:i18n";
+import { randomUUID } from "node:crypto";
+
 interface Props {
   current: string;
 }
-const current = Astro.currentLocale!;
-const langLinks = [];
-for (let lang of langs) {
-  langLinks.push([lang, locales[lang]["lang_name"], getRelativeLocaleUrl(lang)]);
-}
-langLinks.sort((a, b) =>
-  a[0] === "en" ? -1 : b[0] === "en" ? 1 : a[1].localeCompare(b[1], undefined, { sensitivity: "base" })
-);
-langLinks.push(["translate", "add language", "/translate/"]);
-const highlightLang = Astro.url.pathname === "/translate/" ? "translate" : current;
+
+const currentPageLang = Astro.url.pathname.startsWith("/translate/")
+  ? "translate"
+  : (Astro.currentLocale ?? "en");
+const disclosureId = randomUUID();
+const toggleId = `all-languages-toggle-${disclosureId}`;
+const listId = `all-language-list-${disclosureId}`;
+const languageLinks = langs
+  .map((code) => ({
+    code,
+    name: languageMetadata[code].endonym,
+    url: getRelativeLocaleUrl(code),
+  }))
+  .sort((a, b) =>
+    a.code === "en"
+      ? -1
+      : b.code === "en"
+        ? 1
+        : a.name.localeCompare(b.name, undefined, { sensitivity: "base" }),
+  );
 ---
 
 <style>
   nav {
     width: 100%;
-    padding: 20px 0px;
+    padding: 20px 0;
     text-align: center;
     border-top: 2px solid var(--accent);
     border-bottom: 2px solid var(--accent);
+  }
+  nav a {
+    text-decoration: none;
+  }
+  .selector-actions,
+  .recommendations {
+    display: inline;
+  }
+  .all-language-list {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 3px dotted var(--accent);
+  }
+  :global(html.language-selector-js) .all-language-list:not([data-open]) {
+    display: none;
+  }
+  :global(html:not(.language-selector-js)) .all-languages-toggle,
+  :global(html:not(.language-selector-js)) .toggle-separator {
+    display: none;
+  }
+  .all-languages-toggle {
+    display: inline;
+    border: 0;
+    padding: 0;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+    color: var(--accent);
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .all-languages-toggle:active,
+  .all-languages-toggle:hover {
+    color: var(--accent-1) !important;
   }
   a {
     white-space: nowrap;
   }
 </style>
 
-<nav dir="ltr">
-  {
-    langLinks
-    .map(([lang, langName, url]) =>
-        lang === highlightLang ? (
-          <strong>{langName}</strong>
-        ) : (
-          <a dir="ltr" href={url}>{langName}</a>
-        ),
+<script is:inline>document.documentElement.classList.add("language-selector-js");</script>
+
+<nav
+  aria-label="Course languages"
+  dir="ltr"
+  data-language-selector
+  data-languages={JSON.stringify(languageMetadata)}
+>
+  <div class="selector-actions">
+    {
+      currentPageLang === "en" ? (
+        <strong lang="en">English</strong>
+      ) : (
+        <a href={getRelativeLocaleUrl("en")} lang="en">English</a>
       )
-      .reduce((prev, curr, i) => (
-        <>
-          {prev} <b>{" · "}</b> {curr}
-        </>
-      ))
-  }
+    }
+    <span class="recommendations" data-recommendations></span>
+    <b class="separator toggle-separator" aria-hidden="true">{" · "}</b>
+    <button type="button" class="all-languages-toggle" id={toggleId} aria-controls={listId} aria-expanded="false" data-language-toggle>All languages ({langs.length})</button>
+    <b class="separator" aria-hidden="true">{" · "}</b>
+    {currentPageLang === "translate"
+      ? <strong>Add language</strong>
+      : <a href="/translate/">Add language</a>}
+    <div class="all-language-list" id={listId} role="region" aria-labelledby={toggleId} data-all-language-list>
+      {
+        languageLinks
+          .map(({ code, name, url }) =>
+            code === currentPageLang ? (
+              <strong lang={code} dir="auto" data-language-option={code}>{name}</strong>
+            ) : (
+              <a href={url} lang={code} dir="auto" data-language-option={code}>{name}</a>
+            ),
+          )
+          .reduce((previous, current) => (
+            <>{previous}<b class="separator" aria-hidden="true">{" · "}</b>{current}</>
+          ))
+      }
+    </div>
+  </div>
 </nav>
+
+<script>
+  import timeZoneData from "@/data/timezone-countries.json";
+  import fallbackLanguagesByZone from "@/data/timezone-language-fallbacks.json";
+  import { recommendLanguages, type LanguageMetadata } from "@/lib/language-recommendations";
+
+  const constructedLanguages = ["isv", "eo"];
+  const disclosureStorageKey = "wasona:language-selector:open";
+  const selectors = document.querySelectorAll<HTMLElement>("[data-language-selector]");
+  document.documentElement.classList.add("language-selector-js");
+
+  function setOpen(open: boolean) {
+    for (const selector of selectors) {
+      const toggle = selector.querySelector<HTMLButtonElement>("[data-language-toggle]");
+      const list = selector.querySelector<HTMLElement>("[data-all-language-list]");
+      if (!toggle || !list) continue;
+      toggle.setAttribute("aria-expanded", String(open));
+      list.toggleAttribute("data-open", open);
+    }
+  }
+
+  let savedOpen = false;
+  try {
+    savedOpen = localStorage.getItem(disclosureStorageKey) === "true";
+  } catch {
+    // The selector still works when browser storage is unavailable.
+  }
+  setOpen(savedOpen);
+
+  selectors.forEach((selector) => {
+    const toggle = selector.querySelector<HTMLButtonElement>("[data-language-toggle]");
+    toggle?.addEventListener("click", () => {
+      const open = toggle.getAttribute("aria-expanded") !== "true";
+      setOpen(open);
+      try {
+        localStorage.setItem(disclosureStorageKey, String(open));
+      } catch {
+        // Keep the disclosure usable when browser storage is unavailable.
+      }
+    });
+
+    const languages = JSON.parse(selector.dataset.languages ?? "{}") as Record<string, LanguageMetadata>;
+    const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone ?? "";
+    const browserLanguages = navigator.languages?.length
+      ? navigator.languages
+      : [navigator.language];
+    const recommendations = recommendLanguages({
+      languages,
+      constructedLanguages,
+      browserLanguages,
+      timeZone,
+      countriesByZone: timeZoneData.zones,
+      fallbackLanguagesByZone,
+      fallbackAliases: timeZoneData.fallbackAliases,
+    });
+    const container = selector.querySelector<HTMLElement>("[data-recommendations]");
+    if (!container) return;
+
+    for (const code of recommendations) {
+      const option = selector.querySelector<HTMLElement>(`[data-language-option="${code}"]`);
+      if (!option) continue;
+      const separator = document.createElement("b");
+      separator.className = "separator";
+      separator.setAttribute("aria-hidden", "true");
+      separator.textContent = " · ";
+      container.append(separator, option.cloneNode(true));
+    }
+  });
+</script>
