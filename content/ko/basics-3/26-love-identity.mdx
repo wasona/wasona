@@ -1,0 +1,103 @@
+---
+slug: "ko/26"
+title: "26과: 사랑과 정체성"
+description: "olin, unpa, mama, mije, meli, tonsi, en을 배워봅시다!"
+practice:
+- title: "1. 단어"
+  tasks:
+  - l1: "사랑하다"
+    l2: "olin"
+    junkChips: ["pilin", "wile", "pan"]
+  - l1: "성관계"
+    l2: "unpa"
+    junkChips: ["palisa", "lupa", "pilin"]
+  - l1: "부모"
+    l2: "mama"
+    junkChips: ["olin", "jan", "soko"]
+  - l1: "남자"
+    l2: "mije"
+    junkChips: ["tonsi", "meli", "suno"]
+  - l1: "여자"
+    l2: "meli"
+    junkChips: ["mije", "tonsi", "suno"]
+  - l1: "논바이너리"
+    l2: "tonsi"
+    junkChips: ["mije", "meli", "suno"]
+  - l1: "(주어 연결사)"
+    l2: "en"
+    junkChips: ["ala", "lete", "sin"]
+- title: "2. 복습"
+  tasks:
+  - l1: "우리 아빠는 우리 엄마를 사랑합니다."
+    l2: "mama mije mi li olin e mama meli mi."
+    junkChips: ["pona"]
+    alsoAccept:
+      - "mama mi mije li olin e mama mi meli."
+      - "mama mi li olin e mama mi." # lol
+  - l1: "내 여자친구는 다정합니다."
+    l2: "meli mi li suwi."
+    junkChips: ["pi"]
+  - l1: "나는 여자, 남자, 논바이너리인 사람 모두를 좋아합니다."
+    l2: "meli en mije en tonsi li pona tawa mi."
+    junkChips: ["e"]
+---
+
+import Sentence from "@/components/Sentence.astro";
+import List from "@/components/List.astro";
+import Word from "@/components/Word.astro";
+import Practice from "@/components/Practice.astro";
+
+여러분은 이미 **󱤧󱥔󱥩󱤴 ... li pona tawa mi**가 '*나는 ...을 좋아한다*'는 뜻으로 흔히 쓰인다는 것을 배웠습니다. 그리고 물론, **󱥔󱤼 pona mute**라고 하면 누군가를 *아주 많이* 좋아한다는 뜻도 나타낼 수 있죠. 하지만 이것은 누군가를 *사랑하는* 것과는 다릅니다! 그러니 이제 사랑에 관한 단어들과, 사랑하는 사람을 어떻게 부르는지 살펴봅시다.
+
+<List>
+  <Word sl="olin" m="사랑하다" />
+  <Word sl="unpa" m="성관계를 하다" />
+  <Word sl="mama" m="부모" />
+  <Word sl="mije" m="남자, 남성적인 사람, 남편; 수컷" />
+  <Word sl="meli" m="여자, 여성적인 사람, 아내; 암컷" />
+  <Word sl="tonsi" m="논바이너리, 젠더 비순응자; 트랜스젠더" />
+</List>
+
+{/* A note for translators */}
+{/*
+  The definition for "tonsi" can be difficult to translate.
+  Please check the queer communities in your language, see what words they prefer.
+
+  Although I list "trans" for tonsi, this is not super central to the word.
+  Trans women usually call themselves meli, and trans men usually call themselves mije.
+  In the end, everyone chooses the label they like best.
+*/}
+
+많은 언어 강좌는 "남자, 여자, 소녀, 소년, 어머니, 아버지" 같은 단어들로 시작합니다. 도기 보나에서는 성별이 그렇게 중요하지 않습니다. **󱤵 mije**, **󱤳 meli**, **󱥾 tonsi**가 모든 문장에 등장하지는 않습니다. 이 단어들은 주로 성별에 대한 사회적 기대나, 특히 연애 관계를 이야기할 때 등장합니다.
+
+<List>
+  <Sentence sl="mi olin e mije mi." m="나는 내 남자친구를 사랑합니다."/>
+  <Sentence sl="mama o!" m="엄마! (또는) 아빠!"/>
+  <Sentence sl="mi olin e meli." m="나는 여자를 좋아합니다."/>
+</List>
+
+'논바이너리'라는 말은 근래의 서구 문화에서 나왔지만, 남성과 여성 어느 쪽으로도 분류되지 않는 정체성은 스키타이의 [에나레이(enarei)](https://en.wikipedia.org/wiki/Enaree), 사모아의 [파아파피네(fa'afafine)](https://en.wikipedia.org/wiki/Fa%CA%BBafafine), 태국의 [카터이(kathoey)](https://en.wikipedia.org/wiki/Kathoey)처럼 여러 다른 시대, 다른 문화 속에도 존재해 왔습니다. **󱥾 tonsi**는 이런 이들 모두를 가리킬 수 있는 단어이며, 특정 문화를 전제하지 않습니다.
+
+성별이 관련될 수 있는 상황의 예를 몇 가지 더 살펴봅시다.
+
+<List>
+  <Sentence sl="len mi li mije." m="나는 남성적으로 옷을 입습니다." />
+  <Sentence sl="jan olin mi li tonsi." m="내 연인은 논바이너리입니다." />
+  <Sentence sl="mi meli e sijelo mi kepeken misikeke." m="나는 약물로 내 몸을 더 여성스럽게 만듭니다." />
+</List>
+
+## 여러 개의 주어
+
+우리는 이미 *'e ... e ...'*로 문장에 여러 목적어를 넣는 법과, *'li ... li ...'*로 여러 동사를 넣는 법을 배웠습니다. 하지만 주어 두 개를 그냥 나란히 붙일 수는 없습니다. 어디까지가 한 주어이고 어디서부터 다음 주어가 시작되는지 알 수 없기 때문입니다. 이 문제를 해결하기 위해, 우리는 그 사이에 새로운 소사를 사용합니다.
+
+<List>
+  <Word sl="en" m="주어를 연결한다" />
+  <Sentence sl="mi en ona li toki." m="나와 그녀는 이야기하고 있습니다." />
+  <Sentence sl="soweli en waso li utala." m="그 동물과 새가 싸우고 있습니다." />
+  <Sentence sl="meli en mije li unpa." m="그 여자와 남자가 성관계를 하고 있습니다." />
+</List>
+
+<Practice exercises={frontmatter.practice} />
+
+## 더 알아보기
+* [wan Tansin의 젠더와 도기 보나에 관한 심도 있는 글 (영어)](https://www.tamz.in/toki_mi/there-is-no-gender-in-toki-pona/)
