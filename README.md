@@ -1,6 +1,6 @@
 # Wasona
 
-A crash course in [Toki Pona](https://tokipona.net/). Includes interactive exercises, audio, the [sitelen pona](https://sitelenpona.net/) writing system, and more. Available in 10+ languages!
+A crash course in [Toki Pona](https://tokipona.net/). Includes interactive exercises, audio, the [sitelen pona](https://sitelenpona.net/) writing system, and more. Available in 20 languages!
 
 ## Contributing
 
