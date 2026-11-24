@@ -31,10 +31,21 @@ const fallback = target === englishId && lang !== "en";
 const label = text ?? postsById.get(target)!.data.title;
 ---
 
-<a href={`/${target}/${query}${hash}`}>{label}{fallback && <sup> [eng]</sup>}</a>
+<a href={`/${target}/${query}${hash}`}><span class="label">{label}</span>{fallback && <sup> [eng]</sup>}</a>
 
 <style>
+  a {
+    text-decoration: none;
+  }
+  .label {
+    text-decoration: underline dotted;
+    text-underline-position: under;
+  }
   sup {
     font-size: 0.7em;
+    line-height: 0;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.5em;
   }
 </style>
