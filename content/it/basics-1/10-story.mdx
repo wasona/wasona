@@ -7,6 +7,7 @@ description: "Leggiamo la nostra prima soria in toki pona!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Sostantivi, verbi, aggettivi, pronomi, preposizioni, preverbi -- a questo punto avete imparato parecchia roba! Prendiamo un po' fiato. Come si sa, spesso l'aprendimento delle lingue dà rilievo alla pratica ripetitiva di frase dopo frase; ma il miglioramento non dipende solo da quella: si ottiene anche ascoltando, leggendo e parlando con altre persone.
 
@@ -16,7 +17,7 @@ Per questa lezione, leggiamo una breve storia in toki pona! Essa utilizza solo i
 
 Ascoltate la registrazione audio e intanto seguite il testo leggendo. 
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Quando avete finito di ascoltare, provate a leggere il testo ad alta voce. Vedete se riuscite a seguire il senso del testo! Quando avete finito di praticare la lettura e l'ascolto, potete controllare la traduzione!
 
@@ -39,7 +40,7 @@ Quando avete finito di ascoltare, provate a leggere il testo ad alta voce. Vedet
 
 ## parte 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="Arrivò un grazioso passerotto." />
@@ -55,7 +56,7 @@ Quando avete finito di ascoltare, provate a leggere il testo ad alta voce. Vedet
 
 ## parte 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Questo rattristò Mumu." />

@@ -7,6 +7,7 @@ description: "ลองอ่านเรื่องสั้นในภาษ
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 ที่ผ่านมาคุณได้เรียนทั้งคำนาม คำกริยา คำคุณศัพท์ คำสรรพนาม คำบุพบท และคำกริยาช่วยมาแล้ว เรามาพักหายใจกันสักหน่อย แม้ว่าการเรียนรู้ภาษาโดยทั่วไปมักจะต้องนั่งอ่านวิเคราะห์ประโยคทีละประโยคเรื่อยๆ แต่ว่าการพัฒนาสกิลภาษาไม่ใช่แค่การฝึกฝนซ้ำๆ เพียงอย่างเดียว แต่ว่าจะต้องผสมผสานระหว่างการฟัง การอ่านและการสนทนากับคนอื่นด้วย 
 
@@ -16,7 +17,7 @@ import { KALAMA } from "@/lib/audio";
 
 ฟังเสียงบรรยาย และอ่านข้อความไปด้วยกัน
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 หลังจากที่คุณฟังจบแล้ว ลองอ่านข้อความออกมาดังๆ และดูว่าคุณสามารถเข้าใจความหมายของเรื่องได้หรือไม่! หลังจากที่ฝึกอ่านและฟังจบแล้ว ค่อยเปิดดูคำแปลอีกทีนะ!
 
@@ -39,7 +40,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## บทที่ 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="นกกระจอกตัวน้อยน่ารักบินมา" />
@@ -55,7 +56,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## บทที่ 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="นี่เป็นเรื่องเศร้าสำหรับเจ้ามูมู" />

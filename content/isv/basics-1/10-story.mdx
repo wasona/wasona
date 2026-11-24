@@ -7,6 +7,7 @@ description: "Pročitajte svoju prvu povědku na Toki Poně!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Imenniky, glagoly, pridavniky, městoimenja, prědlogy, prědglagoly -- uže jeste mnogo naučili se! Zamedlimo tempo. Kako znajete, učenje jezyka jest često nacěleno na povtarjanje rěčenja za rěčenjem. Ale da by dobro znati jezyk, ne jest dost toliko povtarjati kratke zadanja. Trěba takože slušati, čitati i razgovarjati s ljudmi.
 
@@ -16,7 +17,7 @@ V tutoj lekciji pročitajmo kratku povědku na Toki Poně! Ona koristaje toliko 
 
 Poslušajte zapis i slědite za tekstom.
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Poslě slušanja poprobujte pročitati tekst na glas. Pogledajte, či možete slědovati za smyslom teksta! Kogda skončite praktikovati čitanje i slušanje, možete prověriti prěklad!
 
@@ -33,7 +34,7 @@ Poslě slušanja poprobujte pročitati tekst na glas. Pogledajte, či možete sl
 
 ## čest 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="Prišel mily maly vrabec." />
@@ -49,7 +50,7 @@ Poslě slušanja poprobujte pročitati tekst na glas. Pogledajte, či možete sl
 
 ## čest 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Črěz to Mumu byla smutna." />

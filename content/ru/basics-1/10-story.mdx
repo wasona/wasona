@@ -7,6 +7,7 @@ description: "Прочитаем наш первый рассказ на ток�
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Существительные, глаголы, прилагательные, местоимения, предлоги, модальные глаголы -- вы уже много чего узнали! Давайте сбавим обороты. Как вы знаете, обучение языку зачастую сосредоточено на многократном повторении предложений, одного за другим. Но чтобы действительно продвигаться вперёд, зазубривания недостаточно. Не менее важно слушать, читать и общаться.
 
@@ -14,7 +15,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## часть 1: kalama li lon ma  
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Слушайте запись и параллельно читайте про себя текст. После прослушивания попробуйте прочитать текст вслух. Получается ли уловить смысл? Когда закончите практиковаться, можете проверить перевод!
 
@@ -31,7 +32,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## часть 2: waso li kalama  
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="Появился милый воробушек." />
@@ -47,7 +48,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## часть 3: waso li moku pona  
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Муму от этого загрустила." />

@@ -7,6 +7,7 @@ description: "Baca cerita pertamamu dalam Toki Pona!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Kata benda, kata kerja, kata sifat, kata ganti, kata depan, kata kerja bantu -- kamu sudah mempelajari banyak hal! Sekarang, mari kita pelan-pelan dulu. Saat belajar bahasa, kita sering berfokus pada latihan kalimat demi kalimat. Namun, untuk menjadi lancar, kita tidak cukup hanya mengulang latihan. Kita juga perlu mendengarkan, membaca, dan berbincang dengan orang lain.
 
@@ -16,7 +17,7 @@ Dalam pelajaran ini, mari kita baca cerita pendek dalam Toki Pona! Cerita ini ha
 
 Dengarkan rekamannya sambil mengikuti teks di bawah ini.
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Setelah selesai mendengarkan, cobalah membaca teksnya dengan lantang. Apakah kamu bisa memahami maknanya? Setelah berlatih mendengarkan dan membaca, kamu bisa melihat terjemahannya!
 
@@ -33,7 +34,7 @@ Setelah selesai mendengarkan, cobalah membaca teksnya dengan lantang. Apakah kam
 
 ## Bagian 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="Datanglah seekor burung gereja yang kecil dan lucu." />
@@ -49,7 +50,7 @@ Setelah selesai mendengarkan, cobalah membaca teksnya dengan lantang. Apakah kam
 
 ## Bagian 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Itu membuat Mumu sedih." />

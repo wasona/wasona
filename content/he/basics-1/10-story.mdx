@@ -7,6 +7,7 @@ description: בשיעור הזה נקרא סיפור!
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 שמות עצם, פעלים, שמות תואר, כינויי גוף, מילות יחס, פעלי עזר... מסתבר שלמדנו די הרבה עד עכשיו! הגיע הזמן לעצור לרגע את הלימוד והתרגול. חלק מהלימוד של השפה הוא להאזין, לקרוא ולשוחח.
 
@@ -16,7 +17,7 @@ import { KALAMA } from "@/lib/audio";
 
 האזינו לקטע המוקלט ונסו לעקוב אחרי הטקסט של הסיפור.
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 אחרי שסיימתם/ן להאזין, נסו לקרוא בקול את הטקסט, ושימו לב אם אתם מצליחים להבין אותו. לאחר מכן בידקו את עצמכם מול התרגום לעברית: 
 
@@ -33,7 +34,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## חלק 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="ציפור קטנה וחמודה הופיעה." />
@@ -49,7 +50,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## חלק 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="זה העציב את הצבי." />

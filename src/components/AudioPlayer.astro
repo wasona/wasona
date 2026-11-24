@@ -1,0 +1,304 @@
+---
+interface Props {
+  src: string;
+}
+
+const { src } = Astro.props;
+---
+
+<div class="audio-player" data-audio-player data-play-label="Play recording" data-pause-label="Pause recording">
+  <audio controls preload="metadata" src={src}></audio>
+  <div class="controls" hidden>
+    <button class="play" type="button" aria-label="Play recording" data-play>
+      <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7z" /></svg>
+      <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3v14H7zm7 0h3v14h-3z" /></svg>
+      <span class="loading-icon" aria-hidden="true"></span>
+    </button>
+    <div class="waveform" data-waveform>
+      <div class="bars" aria-hidden="true" data-bars></div>
+      <input class="seek" type="range" min="0" max="1" step="0.1" value="0" aria-label="Seek in recording" disabled data-seek />
+    </div>
+    <output class="time" aria-label="Remaining time" aria-live="off" data-time>–:––</output>
+    <button class="volume" type="button" aria-label="100%" data-volume>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 9h4l5-4v14l-5-4H4z" />
+        <path class="wave-one" d="M16 9a4 4 0 0 1 0 6" />
+        <path class="wave-two" d="M19 6a8 8 0 0 1 0 12" />
+        <path class="muted-x" d="m16 9 6 6m0-6-6 6" />
+      </svg>
+    </button>
+    <button class="speed" type="button" aria-label="x1" data-speed>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 18a9 9 0 1 1 16 0M7 20h10" />
+        <path class="needle" d="M12 12V6" />
+        <circle cx="12" cy="12" r="1" />
+      </svg>
+    </button>
+  </div>
+  <p class="error" role="alert" hidden data-error>Audio could not be played.</p>
+</div>
+
+<style>
+  .audio-player {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 18px 0;
+    padding: 8px 10px;
+    border: 1px solid var(--grey);
+    border-radius: 999px;
+    color: var(--txt);
+    background-color: var(--bg-1);
+  }
+  audio { max-width: 100%; }
+  .controls { display: flex; align-items: center; gap: 5px; width: 100%; height: 40px; }
+  .controls[hidden], .error[hidden] { display: none; }
+  button { color: inherit; font: inherit; }
+  button {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+  }
+  button:hover { background: var(--bg-2); }
+  button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  svg { width: 26px; height: 26px; fill: currentColor; }
+  .play { color: var(--txt); }
+  .play:hover {background-color: inherit; color: var(--accent);}
+  .pause-icon, .loading-icon { display: none; }
+  .play[data-playing] .play-icon { display: none; }
+  .play[data-playing] .pause-icon { display: block; }
+  .play[data-loading] :is(.play-icon, .pause-icon) { display: none; }
+  .play[data-loading] .loading-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .volume, .speed { color: var(--txt); }
+  .volume:hover, .speed:hover { color: var(--accent); background-color: inherit; }
+  .volume svg, .speed svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .volume .wave-one, .volume .wave-two, .volume .muted-x { display: none; }
+  .volume[data-level="0"] .muted-x,
+  .volume[data-level="1"] .wave-one,
+  .volume[data-level="2"] :is(.wave-one, .wave-two) { display: block; }
+  .speed .needle { transform: rotate(var(--needle-angle, 0deg)); transform-origin: 12px 12px; }
+  .waveform {
+    position: relative;
+    flex: 1;
+    min-width: 40px;
+    height: 36px;
+    direction: ltr;
+    cursor: pointer;
+    touch-action: none;
+  }
+  .waveform:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .waveform audio { display: block; position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; opacity: 0; }
+  .bars { display: flex; align-items: center; gap: 1px; width: 100%; height: 100%; pointer-events: none; }
+  .bars :global(.bar) { flex: 1; height: var(--height); background: var(--grey-1); }
+  .bars :global(.bar.played) { background: var(--accent); }
+  .waveform[data-fallback] .bars {
+    height: 4px;
+    margin-top: 16px;
+    background: linear-gradient(to right, var(--accent) var(--progress, 0%), var(--grey-1) var(--progress, 0%));
+  }
+  .waveform[data-fallback] .bars :global(.bar) { display: none; }
+  .seek { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; pointer-events: none; }
+  .time { flex: none; direction: ltr; white-space: nowrap; font-size: 14px; font-variant-numeric: tabular-nums; color: var(--grey); }
+  .error { margin: 4px 0; color: var(--accent-1); font-size: 14px; }
+  @media (max-width: 390px) { .controls { gap: 3px; } .time { font-size: 12px; } }
+  @media (prefers-reduced-motion: reduce) {
+    .play[data-loading] .loading-icon { animation: none; border-right-color: currentColor; }
+  }
+</style>
+
+<script>
+  const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5];
+  function formatTime(seconds: number): string {
+    if (!Number.isFinite(seconds)) return "–:––";
+    const whole = Math.floor(seconds);
+    return `${Math.floor(whole / 60)}:${String(whole % 60).padStart(2, "0")}`;
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-audio-player]").forEach((player) => {
+    const audio = player.querySelector("audio");
+    const controls = player.querySelector<HTMLElement>(".controls");
+    const play = player.querySelector<HTMLButtonElement>("[data-play]");
+    const waveform = player.querySelector<HTMLElement>("[data-waveform]");
+    const bars = player.querySelector<HTMLElement>("[data-bars]");
+    const seek = player.querySelector<HTMLInputElement>("[data-seek]");
+    const time = player.querySelector<HTMLOutputElement>("[data-time]");
+    const volume = player.querySelector<HTMLButtonElement>("[data-volume]");
+    const speed = player.querySelector<HTMLButtonElement>("[data-speed]");
+    const error = player.querySelector<HTMLElement>("[data-error]");
+    if (!audio || !controls || !play || !waveform || !bars || !seek || !time || !volume || !speed || !error) return;
+
+    // Native controls remain available when JavaScript is disabled.
+    audio.controls = false;
+    audio.setAttribute("aria-hidden", "true");
+    audio.tabIndex = -1;
+    waveform.prepend(audio);
+    controls.hidden = false;
+
+    let barElements: HTMLSpanElement[] = [];
+    let waveformSamples: Float32Array | undefined;
+
+    function renderLevels() {
+      if (!waveformSamples) return;
+      const samples = waveformSamples;
+      const count = barElements.length;
+      const levels = barElements.map((_, index) => {
+        const start = Math.floor(index * samples.length / count);
+        const end = Math.floor((index + 1) * samples.length / count);
+        const step = Math.max(1, Math.floor((end - start) / 400));
+        let sum = 0, sampled = 0;
+        for (let i = start; i < end; i += step) { sum += samples[i] * samples[i]; sampled++; }
+        return Math.sqrt(sum / Math.max(1, sampled));
+      });
+      const maximum = Math.max(...levels, 0.001);
+      levels.forEach((level, index) => {
+        barElements[index].style.setProperty("--height", `${Math.max(10, Math.round((level / maximum) ** 0.65 * 100))}%`);
+      });
+    }
+
+    function renderBars() {
+      const count = Math.max(8, Math.floor(waveform!.clientWidth / 5));
+      if (count === barElements.length) return;
+      bars!.replaceChildren();
+      barElements = Array.from({ length: count }, () => {
+        const bar = document.createElement("span");
+        bar.className = "bar";
+        bar.style.setProperty("--height", "20%");
+        bars!.append(bar);
+        return bar;
+      });
+      renderLevels();
+      updateTime();
+    }
+
+    function updateTime() {
+      const duration = audio!.duration;
+      const valid = Number.isFinite(duration) && duration > 0;
+      const progress = valid ? Math.min(audio!.currentTime / duration, 1) : 0;
+      seek!.disabled = !valid;
+      seek!.max = valid ? String(duration) : "1";
+      seek!.value = String(valid ? Math.min(audio!.currentTime, duration) : 0);
+      if (valid) seek!.setAttribute("aria-valuetext", `${formatTime(audio!.currentTime)}/${formatTime(duration)}`);
+      else seek!.removeAttribute("aria-valuetext");
+      time!.value = formatTime(valid ? Math.max(0, Math.ceil(duration - audio!.currentTime)) : NaN);
+      waveform!.style.setProperty("--progress", `${progress * 100}%`);
+      barElements.forEach((bar, index) => bar.classList.toggle("played", (index + 0.5) / barElements.length <= progress));
+    }
+    function updatePlay() {
+      const playing = !audio!.paused && !audio!.ended;
+      play!.toggleAttribute("data-playing", playing);
+      play!.setAttribute("aria-label", playing ? player.dataset.pauseLabel! : player.dataset.playLabel!);
+    }
+    function updateVolume() {
+      const level = audio!.muted || audio!.volume === 0 ? 0 : audio!.volume < 0.75 ? 1 : 2;
+      volume!.dataset.level = String(level);
+      const label = `${level * 50}%`;
+      volume!.setAttribute("aria-label", label);
+      volume!.title = label;
+    }
+    function updateSpeed() {
+      const value = audio!.playbackRate;
+      const index = SPEEDS.reduce((closest, rate, i) => Math.abs(rate - value) < Math.abs(SPEEDS[closest] - value) ? i : closest, 0);
+      speed!.style.setProperty("--needle-angle", `${(index - 2) * 30}deg`);
+      const label = `x${value}`;
+      speed!.setAttribute("aria-label", label);
+      speed!.title = label;
+    }
+    function seekFromPointer(event: PointerEvent) {
+      if (seek!.disabled) return;
+      const rect = waveform!.getBoundingClientRect();
+      const fraction = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
+      audio!.currentTime = fraction * audio!.duration;
+      updateTime();
+    }
+    waveform.addEventListener("pointerdown", (event) => {
+      if (event.button !== 0 || seek.disabled) return;
+      waveform.setPointerCapture(event.pointerId);
+      seekFromPointer(event);
+    });
+    waveform.addEventListener("pointermove", (event) => { if (event.buttons & 1) seekFromPointer(event); });
+    waveform.addEventListener("pointerup", (event) => {
+      if (waveform.hasPointerCapture(event.pointerId)) waveform.releasePointerCapture(event.pointerId);
+    });
+    seek.addEventListener("input", () => { audio.currentTime = Number(seek.value); updateTime(); });
+    seek.addEventListener("keydown", (event) => {
+      if (seek.disabled || (event.key !== "ArrowLeft" && event.key !== "ArrowRight")) return;
+      event.preventDefault();
+      audio.currentTime = Math.max(0, Math.min(audio.duration, audio.currentTime + (event.key === "ArrowRight" ? 5 : -5)));
+      updateTime();
+    });
+    play.addEventListener("click", () => {
+      error.hidden = true;
+      if (audio.paused) {
+        play.setAttribute("data-loading", "");
+        audio.play().catch(() => { play.removeAttribute("data-loading"); error.hidden = false; updatePlay(); });
+      }
+      else audio.pause();
+    });
+    volume.addEventListener("click", (event) => {
+      const next = (Number(volume.dataset.level) + (event.shiftKey ? 2 : 1)) % 3;
+      audio.muted = next === 0;
+      if (next > 0) audio.volume = next / 2;
+      updateVolume();
+    });
+    speed.addEventListener("click", (event) => {
+      const index = SPEEDS.indexOf(audio.playbackRate);
+      audio.playbackRate = SPEEDS[(index + (event.shiftKey ? SPEEDS.length - 1 : 1)) % SPEEDS.length];
+      updateSpeed();
+    });
+
+    async function loadWaveform() {
+      try {
+        const response = await fetch(audio!.currentSrc || audio!.src);
+        if (!response.ok) throw new Error("Waveform download failed");
+        const context = new AudioContext();
+        let buffer: AudioBuffer;
+        try { buffer = await context.decodeAudioData(await response.arrayBuffer()); }
+        finally { await context.close(); }
+        waveformSamples = buffer.getChannelData(0);
+        renderLevels();
+      } catch {
+        waveform!.setAttribute("data-fallback", "");
+      }
+    }
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) { observer.disconnect(); loadWaveform(); }
+      }, { rootMargin: "200px" });
+      observer.observe(player);
+    } else loadWaveform();
+
+    renderBars();
+    if ("ResizeObserver" in window) new ResizeObserver(renderBars).observe(waveform);
+    else window.addEventListener("resize", renderBars);
+
+    audio.addEventListener("durationchange", updateTime);
+    audio.addEventListener("timeupdate", updateTime);
+    audio.addEventListener("play", updatePlay);
+    audio.addEventListener("pause", updatePlay);
+    audio.addEventListener("ended", updatePlay);
+    audio.addEventListener("playing", () => { play.toggleAttribute("data-loading", false); });
+    audio.addEventListener("pause", () => { play.toggleAttribute("data-loading", false); });
+    audio.addEventListener("volumechange", updateVolume);
+    audio.addEventListener("ratechange", updateSpeed);
+    audio.addEventListener("error", () => { play.toggleAttribute("data-loading", false); error.hidden = false; });
+    updateTime();
+    updatePlay();
+    updateVolume();
+    updateSpeed();
+  });
+</script>

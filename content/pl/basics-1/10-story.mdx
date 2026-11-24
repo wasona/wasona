@@ -7,6 +7,7 @@ description: "Przeczytaj swoją pierwszą historyjkę w toki ponie!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Rzeczowniki, czasowniki, przymiotniki, zaimki, przyimki, czasowniki posiłkowe -- już się dużo nauczyłeś! Już zwolnijmy. Już wiesz, że nauka języka często skupia się na ćwiczeniu zdania po zdaniu. Ale bycie dobrym nie polega jedynie na powtarzaniu. To także słuchanie, czytanie i rozmawianie z ludźmi.
 
@@ -16,7 +17,7 @@ Na tej lekcji przeczytamy krótką historyjkę w toki ponie! Używa jedynie sł�
 
 Posłuchaj nagrania i podążaj za nim w tekście.
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Gdy już skończyłeś słuchać, spróbuj przeczytać tekst na głos. Zobacz, czy możesz podążać za znaczeniem tekstu! Gdy już skończyłeś ćwiczyć czytanie i słuchanie, możesz sprawdzić tłumaczenie!
 
@@ -33,7 +34,7 @@ Gdy już skończyłeś słuchać, spróbuj przeczytać tekst na głos. Zobacz, c
 
 ## część 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="Przyleciał mały, uroczy wróbel." />
@@ -49,7 +50,7 @@ Gdy już skończyłeś słuchać, spróbuj przeczytać tekst na głos. Zobacz, c
 
 ## część 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Mumu poczuła się z tym smutna." />

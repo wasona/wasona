@@ -7,6 +7,7 @@ description: "اقرأ قصّتك الأولى في التوكي بونا!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 أسماء، أفعال، صفات، ضمائر، حروف جر، أفعال مساعدة -- لقد تعلّمتَ الكثير حتّى الآن! لنُبطّئ. كما تعْلم، في معظم الأحيان، يركّز تعلّم اللغات على التدريب مع جملة بعد جملة. لكن التحسّن ليس فقط عن التمارين المتكررة. بل إنّه أيضًا عن الاستماع، والقراءة، والتحدّث.
 
@@ -16,7 +17,7 @@ import { KALAMA } from "@/lib/audio";
 
 استمع إلى هذا التسجيل وتابع في النص.
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 بعد أن تنتهي من الاستماع، حاول أن تقرأ النص بصوت عال. انظر إذا كان بإمكانك متابعة معنى النص! وبعد أن تنتهي من تدريب القراءة والاستماع، يمكنك النظر إلى الترجمة!
 
@@ -33,7 +34,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## الجزء الثاني: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="جاء عصفور صغير لطيف." />
@@ -49,7 +50,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## الجزء الثالث: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="هذا أحزن مومو." />

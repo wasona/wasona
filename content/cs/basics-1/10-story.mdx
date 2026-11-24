@@ -7,6 +7,7 @@ description: "Přečtěte si svůj první příběh v toki poně!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Postatná jména, přídavná jména, zájmena, slovesa, předslovesa, příslovce -- už toho umíte hodně! Zpomalme na chvilku. Jak jistě víte, učení jazyka se často soustředí na drtětí jedné věty za druhou. Ale zlepšování se není jen o opakovaném cvičení. Je to také o poslechu, čtení a mluvení s lidmi.
 
@@ -16,7 +17,7 @@ Přečtěme si v téhle lekci krátký příběh v toki poně! Obsahuje jenom sl
 
 Poslechněte si audio nahrávku a sleduj text.
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Až si ji doposlechnete, zkuste si ji přečíst nahlas. Zkuste, jestli textu rozumíte! Až skončíte s procvičováním čtení a poslouchání, zkontrolujte si překlad!
 
@@ -33,7 +34,7 @@ Až si ji doposlechnete, zkuste si ji přečíst nahlas. Zkuste, jestli textu ro
 
 ## část 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="Přiskákal roztomilý malý vrabec." />
@@ -49,7 +50,7 @@ Až si ji doposlechnete, zkuste si ji přečíst nahlas. Zkuste, jestli textu ro
 
 ## část 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="To Mumu přišlo smutné." />

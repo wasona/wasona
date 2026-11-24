@@ -7,6 +7,7 @@ description: "Læs din første historie på toki pona!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Navneord, udsagnsord, adjektiver, stedord, forholdsord, præverbier -- du har lært en masse nu! Lad os sætte farten ned. Som du ved, fokuserer sprogindlæring på at øve sætning efter sætning. Men at blive god handler ikke kun om gentagne øvelser. Det handler også om at lytte, at læse og at snakke med folk.
 
@@ -16,7 +17,7 @@ I denne lektion læser vi en kort historie på toki pona! Den bruger kun de ord 
 
 Lyt til lydoptagelsen og følg med i teksten. 
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Når du er færdig med at lytte, prøv at læse teksten højt. Se, om du kan følge betydningen af teksten. Når du er færdig med at læse og lytte, kan du tjekke oversættelsen!
 
@@ -33,7 +34,7 @@ Når du er færdig med at lytte, prøv at læse teksten højt. Se, om du kan fø
 
 ## del 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="Der kom en nuttet lille spurv." />
@@ -49,7 +50,7 @@ Når du er færdig med at lytte, prøv at læse teksten højt. Se, om du kan fø
 
 ## del 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Dette gjorde Mumu trist." />

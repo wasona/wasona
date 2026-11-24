@@ -7,6 +7,7 @@ description: "Magbasa ng iyong unang maikling kuwento sa Toki Pona!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Mga pangngalan, pandiwa, pang-uri, panghalip, pang-ukol, mgq preverb -- marami ka nang natutunan! Ngayon, bagal-bagalan naman natin. Alam mo nama, ang pag-aaral ng mga wika ay nakapokus sa walang hanggang pangungusap. Pero hindi naman sa paulit-ulit kang masasanay. Para sumanay, kailangan mo ring makinig, magsalita't magbasa.
 
@@ -16,7 +17,7 @@ Para sa araling ito, magbasa tayo ng isang maikling kuwento sa Toki Pona! Gumaga
 
 Makinig na muna tayo sa isang audio recording, at sumunod sa teksto . 
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Pagkatop na makining, subukan mong basahin nang malakas ang teksto. Tignan mo kung kaya mong sundan ang nais ipahiwatig ng teksto! At pagkatapos mo dito, tignan mo ang isinaling bersyon ng teksto!
 
@@ -33,7 +34,7 @@ Pagkatop na makining, subukan mong basahin nang malakas ang teksto. Tignan mo ku
 
 ## ika-2 yugto: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="May dumating isang cute at maliit na maya." />
@@ -49,7 +50,7 @@ Pagkatop na makining, subukan mong basahin nang malakas ang teksto. Tignan mo ku
 
 ## ika-3 yugto: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Nakalungkot ito kay Mumu." />

@@ -7,6 +7,7 @@ description: "¡Lee tu primer cuento en Toki Pona!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Sustantivos, verbos, adjetivos, pronombres, preposiciones, preverbos... ¡ya has aprendido mucho! Tomémosnos un respiro. Como sabes, aprender idiomas a menudo se centra en grabarse en la cabeza frase tras frase. Pero mejorar no solo se trata de practicar trozos repetitivos. También implica escuchar, leer y hablar con gente.  
 
@@ -16,7 +17,7 @@ En esta lección, ¡vamos a leer un cuento corto en toki pona! Solo utiliza las 
 
 Escucha una grabación de audio y sigue el texto.
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Cuando acabes de escuchar, intenta leer el texto en voz alta. ¡Mira si puedes seguir el significado del texto! En cuanto termines de practicar leer y escuchar, ¡puedes comprobar la traducción!
 
@@ -33,7 +34,7 @@ Cuando acabes de escuchar, intenta leer el texto en voz alta. ¡Mira si puedes s
 
 ## Parte 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="Vino un gorrión pequeñín y adorable." />
@@ -49,7 +50,7 @@ Cuando acabes de escuchar, intenta leer el texto en voz alta. ¡Mira si puedes s
 
 ## Parte 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Esto entristeció a Mumu." />

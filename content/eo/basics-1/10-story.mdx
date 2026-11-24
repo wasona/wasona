@@ -7,6 +7,7 @@ description: "Legu vian unuan rakonton en Tokipono!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Substantivojn, verbojn, adjektivojn, pronomojn, prepoziciojn, antaŭverbojn -- vi jam lernis multe! Ni paŭzu. Kiel vi scias, lingvolernado ofte koncentriĝas pri ekzercado per frazo post frazo. Sed lertiĝi ne temas nur pri ripetada ekzercado. Ĝi ankaŭ temas pri aŭskultado, kaj legado, kaj parolado kun homoj.
 
@@ -16,7 +17,7 @@ Por ĉi tiu leciono, ni legu rakonteton en Tokipono! Ĝi uzas nur la vortojn kaj
 
 Aŭskultu sonregistraĵon, kaj samtempe legu la tekston.
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Post kiam vi finos aŭskulti, provu laŭtlegi la tekston. Vidu ĉu vi povas sekvi la signifon de la teksto! Post kiam vi finos ekzerci vin legi kaj aŭskulti, vi povos kontroli la tradukon!
 
@@ -39,7 +40,7 @@ Post kiam vi finos aŭskulti, provu laŭtlegi la tekston. Vidu ĉu vi povas sekv
 
 ## part 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="Venis ĉarma eta pasero." />
@@ -55,7 +56,7 @@ Post kiam vi finos aŭskulti, provu laŭtlegi la tekston. Vidu ĉu vi povas sekv
 
 ## part 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Tio malfeliĉigis Mumu." />

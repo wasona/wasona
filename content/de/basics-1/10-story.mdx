@@ -7,6 +7,7 @@ description: "Lies deine erste Geschichte auf Toki Pona!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Nomen, Verben, Adjektive, Pronomen, Präpositionen, Präverben — du hast schon viel gelernt! Entschleunigen wir mal. Wie du weißt, konzentriert man sich beim Sprachenlernen oft darauf, Satz nach Satz einzuüben. Aber wenn man gut werden will, geht es nicht nur darum, wiederholt zu üben. Es geht auch darum, zuzuhören, zu lesen, und mit Leuten zu reden.
 
@@ -16,7 +17,7 @@ In dieser Lektion kannst du eine kurze Geschichte auf Toki Pona lesen! Sie nutzt
 
 Höre dir eine Audioaufnahme an, und folge dabei dem Text.
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Nachdem du fertig gehört hast, versuche, den Text laut vorzulesen. Schaue, ob du der Bedeutung des Textes folgen kannst! Wenn du mit dem Lesen und Zuhören fertig bist, kannst du dir die Übersetzung anschauen!
 
@@ -33,7 +34,7 @@ Nachdem du fertig gehört hast, versuche, den Text laut vorzulesen. Schaue, ob d
 
 ## part 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="Es kam ein kleiner süßer Spatz." />
@@ -49,7 +50,7 @@ Nachdem du fertig gehört hast, versuche, den Text laut vorzulesen. Schaue, ob d
 
 ## part 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Das hat Mumu traurig gemacht." />

@@ -7,6 +7,7 @@ description: "Прочитаймо нашу першу розповідь ток
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Іменники, дієслова, прикметники, займенники, прийменники, допоміжні дієслова -- ви вже багато чого знаєте! Нумо трохи пригальмуємо. Як вам відомо, вивчення мови часто зосереджено на тому, що ви по кілька разів повторюєте речення, одне за одним. Але самого повторювання не буде достатньо для того, щоб освоїти мову. Варто також слухати, читати та говорити з людьми.
 
@@ -16,7 +17,7 @@ import { KALAMA } from "@/lib/audio";
 
 Послухайте запис, слідкуючи за текстом.
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Коли дослухаєте, спробуйте прочитати текст уголос. Погляньте, чи зможете ви зрозуміти сенс? Коли ви завершите практикування з читанням і слуханням, можете глянути на переклад!
 
@@ -33,7 +34,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## part 2: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="З'явився маленький милий горобчик." />
@@ -49,7 +50,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## part 3: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Муму засмутилась через це." />

@@ -7,6 +7,7 @@ description: "トキポナのお話を読もう！"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 名詞、動詞、形容詞、代名詞、前置詞、助動詞！　いっぱい習いましたね！　ここでちょっと休憩しましょう。言語学習は、文章をひたすら繰り返し練習することが重視されていますが、聞くこと、読むこと、人と話すことも、必要不可欠な言語学習の側面です。
 
@@ -16,7 +17,7 @@ import { KALAMA } from "@/lib/audio";
 
 音声を聞きながら、文章を読みましょう。
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 聴き終わったら、音読して、意味を頑張って把握してみましょう！　読み聞きを終えたら、翻訳で意味を確認しましょう。
 
@@ -39,7 +40,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## パート 2　waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="小さなかわいいスズメが来ました。" />
@@ -55,7 +56,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## パート 3　waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="これはムムを悲しませました。" />

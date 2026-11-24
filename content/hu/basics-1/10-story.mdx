@@ -7,6 +7,7 @@ description: "Olvasd el az első toki pona sztoridat!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 Főnevek, igék, melléknevek, névmások, elöljárószók, előigék... sokat tanultál eddig! Lassuljunk le. Ahogy tudhatod, a nyelvtanulás sokszor csak mondatokra fókuszál. De a nyelv elsajátításához nem elég ez a repetitív gyakorlás: szükség van hallgatásra, olvasásra, és emberekkel történő beszélgetésekre.
 
@@ -16,7 +17,7 @@ Ebben a leckében egy rövid toki pona sztorit fogsz olvasni. Csak olyan szavaka
 
 Hallgasd meg a hanganyagot és kövesd a szöveget! 
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 Miután meghallgattad, próbáld meg hangosan felolvasni a szöveget! Nézd meg, hogy tudod-e értelmezni a szöveget! Miután gyakoroltad az olvasást és a hallgatást, megnézheted a fordítást.
 
@@ -33,7 +34,7 @@ Miután meghallgattad, próbáld meg hangosan felolvasni a szöveget! Nézd meg,
 
 ## 2. rész: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="Jött egy kicsi cuki veréb." />
@@ -49,7 +50,7 @@ Miután meghallgattad, próbáld meg hangosan felolvasni a szöveget! Nézd meg,
 
 ## 3. rész: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="Ez elszomorította Mumut." />
