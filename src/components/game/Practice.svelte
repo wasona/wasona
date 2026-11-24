@@ -37,13 +37,16 @@
 <div class="tabbed-box">
   <!-- Tab buttons -->
   {#if exercises.length > 1}
-    <div class="tabbed-selector" style={`--cols:${exercises.length}`}>
+    <div
+      class="tabbed-selector"
+      style={`--cols:${exercises.length};--active-index:${activeIndex}`}
+    >
       {#each exercises as exercise, i}
         <button
           class:active={i === activeIndex}
           on:click={() => setActiveTab(i)}
         >
-          {exercise.title}
+          <span>{exercise.title}</span>
         </button>
       {/each}
     </div>
@@ -68,32 +71,59 @@
   .tabbed-selector {
     display: grid;
     position: sticky;
+    isolation: isolate;
     top: 0;
     grid-template-columns: repeat(var(--cols), 1fr);
+    border-bottom: 1px solid var(--grey);
+    background-color: var(--bg-1);
+  }
+  .tabbed-selector::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    inset-block-end: -1px;
+    inset-inline-start: 0;
+    width: calc(100% / var(--cols));
+    box-sizing: border-box;
+    border: 1px solid var(--grey);
+    border-bottom-color: var(--bg);
+    background-color: var(--bg);
+    z-index: 1;
+    pointer-events: none;
+    transform: translateX(calc(var(--active-index) * 100%));
+    transition:
+      transform 0.15s ease-out,
+      background-color 0.2s,
+      border-color 0.2s;
+  }
+  .tabbed-selector:dir(rtl)::before {
+    transform: translateX(calc(var(--active-index) * -100%));
   }
   button {
+    position: relative;
     padding: 10px;
-    border: 0;
+    border: 1px solid transparent;
     font-family: inherit;
     font-size: inherit;
     color: var(--grey);
-    background-color: var(--bg-1);
-    border-bottom: 1px solid var(--grey);
-    border-top: 1px solid var(--bg-1); /* this is just to freeze text in place */
-    border-left: 1px solid var(--bg-1);
-    border-right: 1px solid var(--bg-1);
-    transition: background-color 0.1s ease-out;
+    background-color: transparent;
+  }
+  button span {
+    position: relative;
+    z-index: 2;
   }
   button.active {
     color: var(--txt);
-    border-bottom: 1px solid var(--bg);
-    border-top: 1px solid var(--grey);
-    border-left: 1px solid var(--grey);
-    border-right: 1px solid var(--grey);
-    background-color: var(--bg);
   }
   button:not(.active):hover {
     background-color: var(--bg-2);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tabbed-selector::before {
+      transition:
+        background-color 0.2s,
+        border-color 0.2s;
+    }
   }
   .tab-content {
     padding: 10px;

@@ -21,41 +21,78 @@ const _ = (text: string) => locales[Astro.currentLocale!][text];
   .tabbed-selector {
     display: grid;
     position: sticky;
+    isolation: isolate;
     top: 0;
     grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid var(--grey);
+    background-color: var(--bg-1);
+  }
+  .tabbed-selector::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    inset-block-end: -1px;
+    inset-inline-start: 0;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    border: 1px solid var(--grey);
+    border-bottom-color: var(--bg);
+    background-color: var(--bg);
+    z-index: 1;
+    pointer-events: none;
+    transition:
+      transform 0.15s ease-out,
+      background-color 0.2s,
+      border-color 0.2s;
+  }
+  .tabbed-sl .tabbed-selector::before {
+    transform: translateX(100%);
+  }
+  .tabbed-m .tabbed-selector::before {
+    transform: translateX(200%);
+  }
+  .tabbed-sl .tabbed-selector:dir(rtl)::before {
+    transform: translateX(-100%);
+  }
+  .tabbed-m .tabbed-selector:dir(rtl)::before {
+    transform: translateX(-200%);
   }
   button {
+    position: relative;
     padding: 10px;
-    border: 0;
+    border: 1px solid transparent;
     font-family: inherit;
     font-size: inherit;
     color: var(--grey);
-    background-color: var(--bg-1);
-    border-bottom: 1px solid var(--grey);
-    border-top: 1px solid var(--bg-1); /* this is just to freeze text in place */
-    border-left: 1px solid var(--bg-1);
-    border-right: 1px solid var(--bg-1);
-    transition: background-color 0.1s ease-out;
+    background-color: transparent;
+  }
+  button span {
+    position: relative;
+    z-index: 2;
   }
   .tabbed-sp .button-sp,
   .tabbed-sl .button-sl,
   .tabbed-m .button-m {
     color: var(--txt);
-    border-bottom: 1px solid var(--bg);
-    border-top: 1px solid var(--grey);
-    border-left: 1px solid var(--grey);
-    border-right: 1px solid var(--grey);
-    background-color: var(--bg);
   }
-  button:not(.active):hover {
+  .tabbed-sp button:not(.button-sp):hover,
+  .tabbed-sl button:not(.button-sl):hover,
+  .tabbed-m button:not(.button-m):hover {
     background-color: var(--bg-2);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tabbed-selector::before {
+      transition:
+        background-color 0.2s,
+        border-color 0.2s;
+    }
   }
 </style>
 <div id={`tabbed-${id}`} class="tabbed-sp">
   <div class="tabbed-selector">
-    <button class="button-sp" onclick={onclick("sp")}>sitelen pona</button>
-    <button class="button-sl" onclick={onclick("sl")}>sitelen Lasina</button>
-    <button class="button-m" onclick={onclick("m")}>{_("Translation")}</button>
+    <button class="button-sp" onclick={onclick("sp")}><span>sitelen pona</span></button>
+    <button class="button-sl" onclick={onclick("sl")}><span>sitelen Lasina</span></button>
+    <button class="button-m" onclick={onclick("m")}><span>{_("Translation")}</span></button>
   </div>
   <div class="tabbed-box">
     <slot />
