@@ -46,6 +46,8 @@ practice:
     l2: "ma tomo Towano li lon ma Kanata."
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -115,5 +117,5 @@ Vamos praticar com essas frases:
 <Practice exercises={frontmatter.practice} />
 
 ## Veja também
-* [P: eu tenho de decorar nomes de idiomas e países?](/pt/languages-countries/)
-* [P: 'jan li toki Inli' não é um pouco estranho?](/pt/named-verbs/)
+* <Link url="languages-countries" text="P: eu tenho de decorar nomes de idiomas e países?" />
+* <Link url="named-verbs" />

@@ -26,6 +26,8 @@ practice:
     junkChips: ["li"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -102,4 +104,4 @@ Et voici quelques exemples dans des phrases complètes :
 <Practice exercises={frontmatter.practice} />
 
 ## Voir aussi
-* [FAQ: Existe-il d'autres préverbes ?](/fr/more-preverbs)
+* <Link url="more-preverbs" text="FAQ: Existe-il d'autres préverbes ?" />

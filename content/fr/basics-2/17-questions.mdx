@@ -38,6 +38,8 @@ practice:
     alsoAccept: ["sina wile e moku seme?"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -112,4 +114,4 @@ Vous pouvez voir que **󱥙 seme** remplace la réponse -- le reste de la phrase
 <Practice exercises={frontmatter.practice} />
 
 ## Voir aussi
-* [FAQ : Comment dire 'faire' ?](/fr/doing/)
+* <Link url="doing" />

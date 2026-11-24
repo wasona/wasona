@@ -70,6 +70,8 @@ practice:
     alsoAccept: ["jan musi li alasa e jan weka."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -145,4 +147,4 @@ import Practice from "@/components/Practice.astro";
 <Practice exercises={frontmatter.practice} />
 
 ## לקריאה נוספת
-* [שאלה: האם יש פעלי עזר נוספים חוץ מאלה שהכרנו?](/he/more-preverbs)
+* <Link url="more-preverbs" />

@@ -29,6 +29,8 @@ practice:
       - "sina wile e moku seme?"
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -102,5 +104,5 @@ Csak a **󱥙 seme** cserélődik ki a válaszra, minden más marad ugyanabban a
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Hogy mondod azt, hogy "csinálni"?](/hu/doing/)
+* <Link url="doing" text={"Hogy mondod azt, hogy \"csinálni\"?"} />
 

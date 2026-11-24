@@ -73,6 +73,8 @@ practice:
     junkChips: ["tawa"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -147,5 +149,5 @@ _Прийменник_ -- це слово, що йде перед іншим с�
 <Practice exercises={frontmatter.practice} />
 
 ## Див. також
-* [Q: чи треба мені запам'ятовувати назви країни та мов?](/en/languages-countries/)
-* [Q: чи не є 'jan li toki Inli' трохи дивним?](/en/named-verbs/)
+* <Link url="languages-countries" text="Q: чи треба мені запам'ятовувати назви країни та мов?" />
+* <Link url="named-verbs" />

@@ -73,6 +73,8 @@ practice:
     junkChips: ["tawa"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -148,5 +150,5 @@ Lad os øve os med disse sætninger:
 <Practice exercises={frontmatter.practice} />
 
 ## Se også
-* [Q: behøver jeg at lære navnene på sprog og lande udenad?](/da/languages-countries/)
-* [Q: er 'jan li toki Inli' ikke lidt mærkeligt?](/da/named-verbs/)
+* <Link url="languages-countries" text="Q: behøver jeg at lære navnene på sprog og lande udenad?" />
+* <Link url="named-verbs" />

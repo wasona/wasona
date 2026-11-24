@@ -40,6 +40,8 @@ practice:
     junkChips: ["pona"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -113,6 +115,6 @@ Hindi mo yata alam ang salitang **󱦅 lanpan**, pero nakikita mo ang pagsasalin
 <Practice exercises={frontmatter.practice} />
 
 ## Puwede mo rin tignan ang...
-* [Q: Anong, mga iba pang di-karaniwang salita na sakali ko bang matagpuan?](/en/uncommon-words/)
+* <Link url="uncommon-words" />
 * [ano na bang ginagawa ni Sonja Lang sa mga araw na ito?](https://tokipona.org/madame_lang)
 * [Nakakatawang panoorin: ang lahat ng tunog ng hayop ay **󱤹 mu**](https://www.youtube.com/watch?v=zh-kLJI43xw)

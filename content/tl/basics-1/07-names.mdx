@@ -71,6 +71,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -136,5 +138,5 @@ Magsanay tayo sa paggamit ng mga bagong salita't pangalan sa mga pangungusap:
 <Practice exercises={frontmatter.practice} />
 
 ## Puwede mo rin tignan ang...
-* [Q: Ano ang pangalan ko sa Toki Pona?](/en/make-a-name/)
-* [Q: Mukhang malaki ang pangalan sa sitelen pona. Paano ko ito mapapaliit?](/en/simpler-cartouches/)
+* <Link url="make-a-name" />
+* <Link url="simpler-cartouches" text="Q: Mukhang malaki ang pangalan sa sitelen pona. Paano ko ito mapapaliit?" />

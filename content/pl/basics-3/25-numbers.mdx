@@ -43,6 +43,8 @@ practice:
     alsoAccept: ["mun nanpa tu tu li open."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -102,4 +104,4 @@ Ale to są liczby *główne*, które mówią o ilości. Są też liczby *porząd
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [P: jak komunikować duże liczby?](/pl/large-numbers/)
+* <Link url="large-numbers" />

@@ -43,6 +43,8 @@ practice:
     alsoAccept: ["mun nanpa tu tu li open."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -102,4 +104,4 @@ Pero, iyon ay halimbawa ng bilang na *kardinal/paulat*: mga bilang na sinasabi a
 <Practice exercises={frontmatter.practice} />
 
 ## Pwede mo rin tingnan ang…
-* [Q: Paano ko pag-uusapan ang mga malalaking bilang?](/en/large-numbers/)
+* <Link url="large-numbers" />

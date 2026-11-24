@@ -71,6 +71,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -136,5 +138,5 @@ import Practice from "@/components/Practice.astro";
 <Practice exercises={frontmatter.practice} />
 
 ## См. также
-* [Q: как будет моё имя на токи поне?](/ru/make-a-name/)
-* [Q: имена в sitelen pona выглядят длинными. Как их сократить?](/ru/simpler-cartouches/)
+* <Link url="make-a-name" text="Q: как будет моё имя на токи поне?" />
+* <Link url="simpler-cartouches" text="Q: имена в sitelen pona выглядят длинными. Как их сократить?" />

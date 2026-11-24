@@ -20,6 +20,8 @@ practice:
     junkChips: ["ona"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -92,6 +94,6 @@ Vous ne connaissez probablement pas le mot **󱦅 lanpan**, mais vous pouvez reg
 <Practice exercises={frontmatter.practice} />
 
 ## Voir aussi
-* [FAQ : Quels sont les autres mots rares que je pourrais rencontrer ?](/fr/uncommon-words/)
+* <Link url="uncommon-words" />
 * [Que devient Sonja Lang maintenant ?](https://tokipona.org/madame_lang)
 * [Vidéo: tous les animaux font **󱤹 mu**](https://www.youtube.com/watch?v=zh-kLJI43xw)

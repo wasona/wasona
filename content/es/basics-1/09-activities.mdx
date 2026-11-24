@@ -21,6 +21,8 @@ practice:
     l2: "mi alasa tawa ma Sonko."
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -97,4 +99,4 @@ Probemos a usarlos en oraciones:
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: ¿Existe algún preverbo más?](/es/more-preverbs//)
+* <Link url="more-preverbs" />

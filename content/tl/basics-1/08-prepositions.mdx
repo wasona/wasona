@@ -73,6 +73,8 @@ practice:
     junkChips: ["tawa"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -147,5 +149,5 @@ Magsanay tayo gamit nitong mga pangungusap:
 <Practice exercises={frontmatter.practice} />
 
 ## Puwede mo rin tignan ang...
-* [Q: Kailangan ko bang kabisaduhin ang mga pangalan ng mga bansa't wika?](/en/languages-countries/)
-* [Q: Hindi pa ba nakakaiba ang 'jan li toki Inli'?](/en/named-verbs/)
+* <Link url="languages-countries" text="Q: Kailangan ko bang kabisaduhin ang mga pangalan ng mga bansa't wika?" />
+* <Link url="named-verbs" text="Q: Hindi pa ba nakakaiba ang 'jan li toki Inli'?" />

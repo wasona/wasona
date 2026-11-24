@@ -69,6 +69,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -155,4 +157,4 @@ Professionelt tip: hvis du nogensinde er i tvivl om, hvordan man bruger **󱥙 s
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: hvordan siger man 'at lave'?](/da/doing/)
+* <Link url="doing" />

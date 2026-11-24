@@ -17,6 +17,8 @@ practice:
     l2: "taso sina wile ala la, ale li pona."
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -89,6 +91,6 @@ Lehet, hogy nem ismered a **󱦅 lanpan** szót, de láthatod a fordítást, és
 <Practice exercises={frontmatter.practice} />
 
 ## Lásd még
-* [Milyen más, ritka szavakkal találkozhatok?](/hu/uncommon-words)
+* <Link url="uncommon-words" />
 * [Mit csinál Sonja Lang manapság?](/hu/jan-sonja)
 * [Vicces videó: minden állati hang **󱤹 mu**](https://www.youtube.com/watch?v=zh-kLJI43xw)

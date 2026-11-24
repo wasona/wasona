@@ -73,6 +73,8 @@ practice:
     junkChips: ["tawa"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -148,5 +150,5 @@ _حروف الجر_ هي الكلمات التي تسبق كلماتًا أخر�
 <Practice exercises={frontmatter.practice} />
 
 ## اقرأ أيضًا
-* [سؤال: هل أحتاج عن حفظ أسماء اللغات والدول؟](/en/languages-countries/)
-* [سؤال: ليست الجملة "jan li toki Inli." غريبة؟](/en/named-verbs/)
+* <Link url="languages-countries" text="سؤال: هل أحتاج عن حفظ أسماء اللغات والدول؟" />
+* <Link url="named-verbs" text={"سؤال: ليست الجملة \"jan li toki Inli.\" غريبة؟"} />

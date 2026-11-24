@@ -71,6 +71,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -134,5 +136,5 @@ Praktikujmo koristanje novyh slov i imen v rěčenjah:
 <Practice exercises={frontmatter.practice} />
 
 ## Čitaj takože
-* [Q: kako zvuči moje ime v Toki Poně? [eng]](/en/make-a-name/)
-* [Q: v sitelen pona imena izgledajut dolge. Kako mogu jih skratiti? [eng]](/en/simpler-cartouches/)
+* <Link url="make-a-name" text="Q: kako zvuči moje ime v Toki Poně?" />
+* <Link url="simpler-cartouches" text="Q: v sitelen pona imena izgledajut dolge. Kako mogu jih skratiti?" />

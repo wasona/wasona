@@ -69,6 +69,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -155,4 +157,4 @@ Protip: kung sakali na hindi ka sure kung paano gamitin ang **󱥙 seme**, mag-i
 <Practice exercises={frontmatter.practice} />
 
 ## Puwede mo rin tignan ang...
-* [Q: Paano ko sasabihin ang 'ginagawa'?](/en/doing/)
+* <Link url="doing" text="Q: Paano ko sasabihin ang 'ginagawa'?" />

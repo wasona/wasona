@@ -70,6 +70,8 @@ practice:
     alsoAccept: ["jan musi li alasa e jan weka."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -154,4 +156,4 @@ import Practice from "@/components/Practice.astro";
 <Practice exercises={frontmatter.practice} />
 
 ## อ่านเพิ่มเติมSee also
-* [Q: มีคำกริยาช่วยอื่นๆ อีกไหม](/th/more-preverbs/)
+* <Link url="more-preverbs" />

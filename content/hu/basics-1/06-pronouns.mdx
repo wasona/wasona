@@ -23,6 +23,8 @@ practice:
     l2: "ona li moku pona."
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -78,5 +80,5 @@ A toki ponában van egy szabály: ha az alany pontosan **󱤴 mi** vagy **󱥞 s
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [A "li" azt jelenti, hogy "van"?](/hu/li-and-is/)
+* <Link url="li-and-is" />
 

@@ -40,6 +40,8 @@ practice:
     junkChips: ["pona"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -113,6 +115,6 @@ Možlivo ne znajete slovo **󱦅 lanpan**, ale vidite prěklad i uže znajete do
 <Practice exercises={frontmatter.practice} />
 
 ## Čitaj takože
-* [Q: ktore ine, neobyčne slova mogu zastati? [eng]](/en/uncommon-words/)
+* <Link url="uncommon-words" text="Q: ktore ine, neobyčne slova mogu zastati?" />
 * [čto nyně dělaje Sonja Lang? [eng]](https://tokipona.org/madame_lang)
 * [zabavno video: vse zvuky zvěrev sut **󱤹 mu**](https://www.youtube.com/watch?v=zh-kLJI43xw)

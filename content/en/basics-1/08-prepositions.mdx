@@ -73,6 +73,8 @@ practice:
     junkChips: ["tawa"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -164,5 +166,5 @@ Let's practice with these sentences:
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: do I have to memorise language and country names?](/en/languages-countries/)
-* [Q: isn't 'jan li toki Inli' a bit strange?](/en/named-verbs/)
+* <Link url="languages-countries" />
+* <Link url="named-verbs" />

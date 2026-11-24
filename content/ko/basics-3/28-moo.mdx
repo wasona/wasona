@@ -40,6 +40,8 @@ practice:
     junkChips: ["pona"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -113,6 +115,6 @@ import Practice from "@/components/Practice.astro";
 <Practice exercises={frontmatter.practice} />
 
 ## 더 알아보기
-* [Q: 그 밖에 자주 쓰이지 않는 단어들은 무엇인가요?](/ko/uncommon-words/)
+* <Link url="uncommon-words" />
 * [소냐 랭은 요즘 무엇을 하고 있나요?](https://tokipona.org/madame_lang)
 * [재미있는 영상: 동물 소리는 다 **󱤹 mu**](https://www.youtube.com/watch?v=zh-kLJI43xw)

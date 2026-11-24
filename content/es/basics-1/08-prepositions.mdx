@@ -23,6 +23,8 @@ practice:
     l2: "ma tomo Towano li lon ma Kanata."
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -94,5 +96,5 @@ Practiquemos con estas frases:
 <Practice exercises={frontmatter.practice} />
 
 ## Véase también
-* [Q: ¿Me tengo que memorizar los nombres de idiomas y países?](/es/languages-countries/)
-* [Q: ¿'jan li toki Inli' no es un poco raro?](/es/named-verbs/)
+* <Link url="languages-countries" />
+* <Link url="named-verbs" />

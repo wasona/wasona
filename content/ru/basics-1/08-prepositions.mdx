@@ -73,6 +73,8 @@ practice:
     junkChips: ["tawa"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -147,5 +149,5 @@ _Предлог_ — это слово, которое ставится пере
 <Practice exercises={frontmatter.practice} />
 
 ## См. также
-* [Q: нужно ли заучивать названия стран и языков?](/ru/languages-countries/)
-* [Q: не звучит ли 'jan li musi Manka' как-то странно?](/ru/named-verbs/)
+* <Link url="languages-countries" text="Q: нужно ли заучивать названия стран и языков?" />
+* <Link url="named-verbs" text="Q: не звучит ли 'jan li musi Manka' как-то странно?" />

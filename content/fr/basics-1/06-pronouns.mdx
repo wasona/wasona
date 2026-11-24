@@ -31,6 +31,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -88,4 +90,4 @@ Le toki pona a une règle spéciale : quand **󱤴 mi** et **󱥞 sina** sont l
 <Practice exercises={frontmatter.practice} />
 
 ## Voir aussi
-* [FAQ: Est-ce que 'li' signifie 'être'  ?](/fr/li-and-is)
+* <Link url="li-and-is" text="FAQ: Est-ce que 'li' signifie 'être'  ?" />

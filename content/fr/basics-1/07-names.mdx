@@ -29,6 +29,8 @@ practice:
     junkChips: ["li"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -98,5 +100,5 @@ Entraînons-nous à utiliser les nouveaux mots :
 <Practice exercises={frontmatter.practice} />
 
 ## Voir aussi
-* [FAQ: Quel est mon nom en toki pona ?](/fr/make-a-name)
-* [FAQ: En sitelen pona, les noms propres sont très longs. Comment faire pour les raccourcir ?](/fr/simpler-cartouches)
+* <Link url="make-a-name" text="FAQ: Quel est mon nom en toki pona ?" />
+* <Link url="simpler-cartouches" text="FAQ: En sitelen pona, les noms propres sont très longs. Comment faire pour les raccourcir ?" />

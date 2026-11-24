@@ -40,6 +40,8 @@ practice:
     junkChips: ["pona"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -113,6 +115,6 @@ Du kender nok ikke ordet **󱦅 lanpan**, men du kan se oversættelsen, og du ve
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: hvilke andre ualmindelige ord kan jeg støde på?](/da/uncommon-words/)
+* <Link url="uncommon-words" />
 * [hvad laver Sonja Lang nu om dage?](https://tokipona.org/madame_lang)
 * [sjov video: alle dyrelyde er **󱤹 mu**](https://www.youtube.com/watch?v=zh-kLJI43xw)

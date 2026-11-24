@@ -40,6 +40,8 @@ practice:
     junkChips: ["pona"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -113,6 +115,6 @@ Kamu mungkin belum mengenal **󱦅 lanpan**, tetapi dari terjemahannya kamu bisa
 <Practice exercises={frontmatter.practice} />
 
 ## Lihat juga
-* [T: Kata-kata lain apa yang mungkin kutemui?](/id/uncommon-words/)
+* <Link url="uncommon-words" />
 * [Apa yang sedang dikerjakan Sonja Lang?](https://tokipona.org/madame_lang)
 * [Video lucu: semua bunyi hewan adalah **󱤹 mu**](https://www.youtube.com/watch?v=zh-kLJI43xw)

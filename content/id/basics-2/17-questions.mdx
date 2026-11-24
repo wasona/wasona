@@ -69,6 +69,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -147,4 +149,4 @@ Tips: jika bingung menggunakan **󱥙 seme**, bayangkan dahulu salah satu jawaba
 <Practice exercises={frontmatter.practice} />
 
 ## Lihat juga
-* [T: Bagaimana cara menyebut suatu aktivitas secara umum?](/id/doing/)
+* <Link url="doing" />

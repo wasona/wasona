@@ -72,6 +72,8 @@ practice:
     - "waso mi lili suwi"
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -146,4 +148,4 @@ Toki Pona has a special rule: when **󱤴 mi** or **󱥞 sina** is the subject o
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: does 'li' mean 'is'?](/en/li-and-is/)
+* <Link url="li-and-is" />

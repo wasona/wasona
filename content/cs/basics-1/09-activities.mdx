@@ -26,6 +26,8 @@ practice:
     junkChips: ["li"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -99,4 +101,4 @@ Zkusme použít předslovesa ve větách:
 <Practice exercises={frontmatter.practice} />
 
 ## Viz také
-* [O: existují ještě nějaká předslovesa? [eng]](/en/more-preverbs/)
+* <Link url="more-preverbs" text="O: existují ještě nějaká předslovesa?" />

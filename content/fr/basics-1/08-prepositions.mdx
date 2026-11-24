@@ -30,6 +30,8 @@ practice:
     alsoAccept: ["ma Towano li lon ma Kanata."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -101,5 +103,5 @@ Entraînons-nous avec d'autres phrases :
 <Practice exercises={frontmatter.practice} />
 
 ## Voir aussi
-* [FAQ: Est-ce que je dois apprendre les noms des langues et des pays ?](/fr/languages-countries)
-* [FAQ: Est-ce que la phrase 'jan li toki Inli' est bizarre ?](/fr/named-verbs)
+* <Link url="languages-countries" text="FAQ: Est-ce que je dois apprendre les noms des langues et des pays ?" />
+* <Link url="named-verbs" text="FAQ: Est-ce que la phrase 'jan li toki Inli' est bizarre ?" />

@@ -23,6 +23,8 @@ practice:
     l2: "ma tomo Towano li lon ma Kanata."
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -94,6 +96,6 @@ Gyakoroljunk ezekkel a mondatokkal:
 <Practice exercises={frontmatter.practice} />
 
 ## Lásd még
-* [Memorizálnom kell az összes nyelv- és országnevet?](/hu/languages-countries/)
-* [A "jan li toki Inli" nem furcsa egy kicsit?](/hu/named-verbs/)
+* <Link url="languages-countries" />
+* <Link url="named-verbs" text={"A \"jan li toki Inli\" nem furcsa egy kicsit?"} />
 

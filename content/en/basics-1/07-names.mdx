@@ -71,6 +71,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -147,5 +149,5 @@ Let's practice using the new words and names in sentences:
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: what's my name in Toki Pona?](/en/make-a-name/)
-* [Q: in sitelen pona, names look long. How can I make them shorter?](/en/simpler-cartouches/)
+* <Link url="make-a-name" />
+* <Link url="simpler-cartouches" />

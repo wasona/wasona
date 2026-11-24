@@ -44,6 +44,8 @@ practice:
     alsoAccept: ["mun nanpa tu tu li open."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -103,4 +105,4 @@ Contoh-contoh tadi menggunakan *bilangan jumlah*, atau bilangan kardinal, yang m
 <Practice exercises={frontmatter.practice} />
 
 ## Lihat juga
-* [T: Bagaimana cara membicarakan bilangan besar?](/id/large-numbers/)
+* <Link url="large-numbers" />

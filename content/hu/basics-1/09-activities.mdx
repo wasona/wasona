@@ -21,6 +21,8 @@ practice:
     l2: "mi alasa tawa ma Sonko."
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -95,5 +97,5 @@ Használjunk előigéket mondatokban:
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Van több előige?](/hu/more-preverbs/)
+* <Link url="more-preverbs" />
 

@@ -73,6 +73,8 @@ practice:
     junkChips: ["tawa"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -164,5 +166,5 @@ import Practice from "@/components/Practice.astro";
 <Practice exercises={frontmatter.practice} />
 
 ## 더 알아보기
-* [Q: 언어와 국가 이름을 다 외워야 하나요?](/ko/languages-countries/)
-* [Q: 'jan li toki Inli'는 좀 이상하지 않나요?](/ko/named-verbs/)
+* <Link url="languages-countries" />
+* <Link url="named-verbs" />

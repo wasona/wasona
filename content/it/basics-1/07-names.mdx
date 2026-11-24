@@ -71,6 +71,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -148,5 +150,5 @@ Proviamo a far pratica dell'uso delle nuove parole e dei nomi propri nelle frasi
 <Practice exercises={frontmatter.practice} />
 
 ## Vedi anche
-* [D: com'è il mio nome in toki pona?](/it/make-a-name/)
-* [D: in sitelen pona i nomi propri paiono lunghi. Come si possono accorciare?](/it/simpler-cartouches/)
+* <Link url="make-a-name" text="D: com'è il mio nome in toki pona?" />
+* <Link url="simpler-cartouches" text="D: in sitelen pona i nomi propri paiono lunghi. Come si possono accorciare?" />

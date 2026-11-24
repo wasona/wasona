@@ -69,6 +69,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -157,4 +159,4 @@ import Practice from "@/components/Practice.astro";
 <Practice exercises={frontmatter.practice} />
 
 ## إقرأ أيضًا
-* [سؤال: كيف تقول "يفعل"؟](/en/doing/)
+* <Link url="doing" text={"سؤال: كيف تقول \"يفعل\"؟"} />

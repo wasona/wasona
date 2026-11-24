@@ -72,6 +72,8 @@ practice:
     - "waso mi lili suwi"
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -125,4 +127,4 @@ Mayroong isang eksepsyon ang Toki Pona: kung ang **󱤴 mi** o ang **󱥞 sina**
 <Practice exercises={frontmatter.practice} />
 
 ## Puwede mo rin tignan ang...
-* [Q: magkaparehas lang ba ang "li" at "ay"/"maging"?](/en/li-and-is/)
+* <Link url="li-and-is" text={"Q: magkaparehas lang ba ang \"li\" at \"ay\"/\"maging\"?"} />

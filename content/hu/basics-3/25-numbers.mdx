@@ -21,6 +21,8 @@ practice:
       - "mun nanpa tu tu li open."
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -80,4 +82,4 @@ De ezek a számok *mennyiséget* jeleznek. De vannak *sorszámok* is. Ezek elé 
 <Practice exercises={frontmatter.practice} />
 
 ## Lásd még
-* [Hogy beszélek nagy számokról?](/hu/large-numbers)
+* <Link url="large-numbers" />

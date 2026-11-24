@@ -71,6 +71,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -136,5 +138,5 @@ Ayo kita buat beberapa contoh kalimat dengan kosakata dan nama yang baru kita pe
 <Practice exercises={frontmatter.practice} />
 
 ## Lihat juga
-* [T: Seperti apa namaku di Toki Pona?](/id/make-a-name/)
-* [T: Dalam sitelen pona, nama-nama terlihat panjang. Bagaimana cara untuk membuatnya lebih pendek?](/id/simpler-cartouches/)
+* <Link url="make-a-name" text="T: Seperti apa namaku di Toki Pona?" />
+* <Link url="simpler-cartouches" text="T: Dalam sitelen pona, nama-nama terlihat panjang. Bagaimana cara untuk membuatnya lebih pendek?" />

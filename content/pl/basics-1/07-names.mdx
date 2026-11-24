@@ -71,6 +71,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -138,5 +140,5 @@ Poćwiczmy używanie nowych słów i imion w zdaniach:
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [P: jak mam na imię w toki ponie?](/pl/make-a-name/)
-* [P: w sitelen ponie imiona wyglądają na długie. Jak mogę je skrócić?](/pl/simpler-cartouches/)
+* <Link url="make-a-name" />
+* <Link url="simpler-cartouches" />

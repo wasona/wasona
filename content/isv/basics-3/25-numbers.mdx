@@ -44,6 +44,8 @@ practice:
     alsoAccept: ["mun nanpa tu tu li open."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -103,4 +105,4 @@ Ale to sut *kolikostne* čislovniky. Sut takože *poredkove* čislovniky. Da by 
 <Practice exercises={frontmatter.practice} />
 
 ## Čitaj takože
-* [Q: kako govoriti o velikyh čislah? [eng]](/en/large-numbers/)
+* <Link url="large-numbers" text="Q: kako govoriti o velikyh čislah?" />

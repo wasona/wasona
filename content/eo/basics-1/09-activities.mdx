@@ -70,6 +70,8 @@ practice:
     alsoAccept: ["jan musi li alasa e jan weka."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -153,4 +155,4 @@ Ni provu uzi antaŭverbojn en frazoj:
 <Practice exercises={frontmatter.practice} />
 
 ## Vidu ankaŭ
-* [D: ĉu ekzistas ankoraŭ pli da antaŭverboj?](/en/more-preverbs/) (tradukota)
+* <Link url="more-preverbs" text="D: ĉu ekzistas ankoraŭ pli da antaŭverboj?" /> (tradukota)

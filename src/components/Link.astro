@@ -1,0 +1,40 @@
+---
+import { postsById } from "@/lib/content";
+
+interface Props {
+  url: string;
+  text?: string;
+}
+
+const { url, text } = Astro.props;
+const lang = Astro.currentLocale ?? "en";
+const match = /^([^?#/][^?#]*?)(\?[^#]*)?(#.*)?$/.exec(url);
+if (!match) {
+  throw new Error(`<Link> expects a page path without a language prefix: ${JSON.stringify(url)}`);
+}
+
+const [, rawPath, query = "", hash = ""] = match;
+const path = rawPath.replace(/\/+$/, "");
+const localId = `${lang}/${path}`;
+const englishId = `en/${path}`;
+const target = postsById.has(localId)
+  ? localId
+  : postsById.has(englishId)
+    ? englishId
+    : undefined;
+
+if (!target) {
+  throw new Error(`<Link url=${JSON.stringify(url)}> has no page in ${lang} or English`);
+}
+
+const fallback = target === englishId && lang !== "en";
+const label = text ?? postsById.get(target)!.data.title;
+---
+
+<a href={`/${target}/${query}${hash}`}>{label}{fallback && <sup> [eng]</sup>}</a>
+
+<style>
+  sup {
+    font-size: 0.7em;
+  }
+</style>

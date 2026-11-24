@@ -41,6 +41,8 @@ practice:
     l2: "mi lukin e sitelen Kililisa."
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -106,5 +108,5 @@ Vamos praticar usando as novas palavras e nomes em frases:
 <Practice exercises={frontmatter.practice} />
 
 ## Veja também
-* [P: qual o meu nome em toki pona?](/pt/make-a-name/)
-* [P: em sitelen pona, nomes são longos. Como eu posso encurtá-los?](/pt/simpler-cartouches/)
+* <Link url="make-a-name" text="P: qual o meu nome em toki pona?" />
+* <Link url="simpler-cartouches" text="P: em sitelen pona, nomes são longos. Como eu posso encurtá-los?" />

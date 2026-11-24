@@ -44,6 +44,8 @@ practice:
     alsoAccept: ["mun nanpa tu tu li open."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -104,5 +106,5 @@ import Practice from "@/components/Practice.astro";
 <Practice exercises={frontmatter.practice} />
 
 ## לקריאה נוספת
-* [שאלה: איך אפשר ליצור שמות של מספרים שגדולים מ-10?](/he/large-numbers/)
+* <Link url="large-numbers" text="שאלה: איך אפשר ליצור שמות של מספרים שגדולים מ-10?" />
 

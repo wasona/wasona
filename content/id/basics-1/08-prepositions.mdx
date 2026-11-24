@@ -73,6 +73,8 @@ practice:
     junkChips: ["tawa"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -147,5 +149,5 @@ Mari kita berlatih menggunakan kalimat-kalimat di bawah ini:
 <Practice exercises={frontmatter.practice} />
 
 ## Lihat juga
-* [T: Apakah aku harus menghafalkan nama-nama bahasa dan negara?](/id/languages-countries/)
-* [T: Bukankah 'jan li toki Inli' agak aneh?](/id/named-verbs/)
+* <Link url="languages-countries" />
+* <Link url="named-verbs" />

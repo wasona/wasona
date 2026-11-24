@@ -21,6 +21,8 @@ practice:
     l2: "mi lukin e sitelen Kililisa."
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -88,6 +90,6 @@ Tanuljuk meg az új szavak használatát mondatokban:
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Mi a nevem toki ponául?](/hu/make-a-name/)
-* [Sitelen ponával túl hosszúak a nevek. Hogyan lehet lerövidíteni őket?](/hu/simpler-cartouches/)
+* <Link url="make-a-name" />
+* <Link url="simpler-cartouches" text="Sitelen ponával túl hosszúak a nevek. Hogyan lehet lerövidíteni őket?" />
 

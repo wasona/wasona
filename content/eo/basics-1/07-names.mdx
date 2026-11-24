@@ -71,6 +71,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -147,5 +149,5 @@ Ni ekzercu nin uzi la novajn vortojn kaj nomojn en frazoj:
 <Practice exercises={frontmatter.practice} />
 
 ## Vidu ankaŭ
-* [D: kiel mi nomiĝus tokipone?](/en/make-a-name/) (tradukota)
-* [D: sitelenpone, nomoj aspektas longaj. kiel mi povus mallongigi ilin?](/en/simpler-cartouches/) (tradukota)
+* <Link url="make-a-name" text="D: kiel mi nomiĝus tokipone?" /> (tradukota)
+* <Link url="simpler-cartouches" text="D: sitelenpone, nomoj aspektas longaj. kiel mi povus mallongigi ilin?" /> (tradukota)

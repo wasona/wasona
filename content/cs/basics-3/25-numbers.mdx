@@ -27,6 +27,8 @@ practice:
     alsoAccept: ["mun nanpa tu tu li open."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -86,4 +88,4 @@ Ale tohle jsou *základní* číslovky: čísla, která označují množství. E
 <Practice exercises={frontmatter.practice} />
 
 ## Viz také
-* [O: jak mluvit o velkých číslech? [eng]](/en/large-numbers/)
+* <Link url="large-numbers" text="O: jak mluvit o velkých číslech?" />

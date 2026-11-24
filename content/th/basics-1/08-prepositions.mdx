@@ -73,6 +73,8 @@ practice:
     junkChips: ["tawa"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -172,5 +174,5 @@ _คำบุพบท_ คือคำที่อยู่ก่อนหน�
 <Practice exercises={frontmatter.practice} />
 
 ## อ่านเพิ่มเติม See also
-* [Q: ฉันต้องจำชื่อเฉพาะของภาษาและประเทศต่างๆ ไหม](/th/languages-countries/)
-* [Q: ประโยค 'jan li toki Inli' มันฟังดูแปลกๆ ไหม](/th/named-verbs/)
+* <Link url="languages-countries" />
+* <Link url="named-verbs" />

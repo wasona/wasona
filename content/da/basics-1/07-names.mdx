@@ -71,6 +71,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -134,5 +136,5 @@ Lad os øve os i at bruge de nye ord og navne i nogle sætninger:
 <Practice exercises={frontmatter.practice} />
 
 ## Se også
-* [Q: hvad er mit navn på toki pona?](/da/make-a-name/)
-* [Q: navnene ser lange ud i sitelen pona. hvordan kan jeg forkorte dem?](/da/simpler-cartouches/)
+* <Link url="make-a-name" />
+* <Link url="simpler-cartouches" />

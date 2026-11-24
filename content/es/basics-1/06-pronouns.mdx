@@ -23,6 +23,8 @@ practice:
     l2: "ona li moku pona."
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -78,4 +80,4 @@ El toki pona tiene una regla especial: cuando **󱤴 mi** o **󱥞 sina** es el 
 <Practice exercises={frontmatter.practice} />
 
 ## Véase también
-* [Q: ¿Acaso 'li' significa 'es'?](/es/li-and-is/)
+* <Link url="li-and-is" />

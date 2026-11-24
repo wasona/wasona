@@ -43,6 +43,8 @@ practice:
     alsoAccept: ["mun nanpa tu tu li open."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -102,4 +104,4 @@ Ma questi sono numeri *cardinali*: numeri che esprimono una quantità. Ci sono a
 <Practice exercises={frontmatter.practice} />
 
 ## Vedi anche
-* [D: come si fa a parlare di numeri grandi?](/it/large-numbers/)
+* <Link url="large-numbers" />

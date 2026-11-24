@@ -30,6 +30,8 @@ practice:
     alsoAccept: ["ma Towano li lon ma Kanata."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -102,5 +104,5 @@ Procvičme si to s těmito větami:
 <Practice exercises={frontmatter.practice} />
 
 ## Viz také
-* [O: musím si zapamatovat názvy jazyků a zemí? [eng]](/en/languages-countries/)
-* [O: není 'jan li toki Inli' trochu zvláštní? [eng]](/en/named-verbs/)
+* <Link url="languages-countries" text="O: musím si zapamatovat názvy jazyků a zemí?" />
+* <Link url="named-verbs" text="O: není 'jan li toki Inli' trochu zvláštní?" />

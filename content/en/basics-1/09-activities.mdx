@@ -70,6 +70,8 @@ practice:
     alsoAccept: ["jan musi li alasa e jan weka."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -153,4 +155,4 @@ Let's try to use preverbs in sentences:
 <Practice exercises={frontmatter.practice} />
 
 ## See also
-* [Q: are there any more preverbs?](/en/more-preverbs/)
+* <Link url="more-preverbs" />

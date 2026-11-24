@@ -70,6 +70,8 @@ practice:
     alsoAccept: ["jan musi li alasa e jan weka."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -146,4 +148,4 @@ Ayo kita gunakan kata kerja bantu dalam beberapa contoh kalimat:
 <Practice exercises={frontmatter.practice} />
 
 ## Lihat juga
-* [T: Apakah ada kata kerja bantu lainnya?](/id/more-preverbs/)
+* <Link url="more-preverbs" />

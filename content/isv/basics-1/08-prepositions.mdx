@@ -73,6 +73,8 @@ practice:
     junkChips: ["tawa"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -149,5 +151,5 @@ Praktikujmo s tutymi rěčenjami:
 <Practice exercises={frontmatter.practice} />
 
 ## Čitaj takože
-* [Q: či trěba zapametati imena jezykov i krajev? [eng]](/en/languages-countries/)
-* [Q: či 'jan li toki Inli' ne jest malo stranno? [eng]](/en/named-verbs/)
+* <Link url="languages-countries" text="Q: či trěba zapametati imena jezykov i krajev?" />
+* <Link url="named-verbs" text="Q: či 'jan li toki Inli' ne jest malo stranno?" />

@@ -27,6 +27,8 @@ practice:
     alsoAccept: ["mun nanpa tu tu li open."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -86,4 +88,4 @@ NB: **󱤽 nanpa** est spécial. Il n'a pas besoin de la particule **󱥍 pi**.
 <Practice exercises={frontmatter.practice} />
 
 ## Voir aussi
-* [FAQ : Comment parler de nombres plus grands ?](/fr/large-numbers/)
+* <Link url="large-numbers" />

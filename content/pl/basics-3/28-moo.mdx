@@ -40,6 +40,8 @@ practice:
     junkChips: ["pona"] 
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -112,6 +114,6 @@ Być może nie znasz słowa **󱦅 lanpan**, ale widzisz tłumaczenie i teraz wi
 <Practice exercises={frontmatter.practice} />
 
 ## Zobacz też
-* [P: jakie są inne niezbyt częste słowa, które mogę napotkać?](/pl/uncommon-words/)
+* <Link url="uncommon-words" />
 * [czym się obecnie zajmuje Sonja Lang?](https://tokipona.org/madame_lang)
 * [śmieszny klip wideo: wszystkie dźwięki zwierząt to **󱤹 mu**](https://www.youtube.com/watch?v=zh-kLJI43xw)

@@ -69,6 +69,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -162,7 +164,7 @@ Suggerimento: se si hanno dubbi su come usare **󱥙 seme**, basta prima immagin
 <Practice exercises={frontmatter.practice} />
 
 ## Vedi anche
-* [D: come si dice 'fare'?](/it/doing/)
+* <Link url="doing" />
 
 {/* A note for translators */}
 {/* By "to do", I mean a generic activity. See above. */}

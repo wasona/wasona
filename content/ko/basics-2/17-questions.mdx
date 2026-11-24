@@ -69,6 +69,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -161,7 +163,7 @@ import Practice from "@/components/Practice.astro";
 <Practice exercises={frontmatter.practice} />
 
 ## 더 알아보기
-* [Q: '하다'는 어떻게 말하나요?](/ko/doing/)
+* <Link url="doing" />
 
 {/* A note for translators */}
 {/* By "to do", I mean a generic activity. See above. */}

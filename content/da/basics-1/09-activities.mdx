@@ -70,6 +70,8 @@ practice:
     alsoAccept: ["jan musi li alasa e jan weka."]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -143,4 +145,4 @@ Lad os prøve at bruge præverbier i nogle sætninger:
 <Practice exercises={frontmatter.practice} />
 
 ## Se også
-* [Q: er der flere præverbier?](/da/more-preverbs/)
+* <Link url="more-preverbs" />

@@ -71,6 +71,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -134,5 +136,5 @@ Diese Namen sagen uns mehr darüber, wie ein Toki-Pona-Name gemacht wird:
 <Practice exercises={frontmatter.practice} />
 
 ## Siehe auch
-* [F: Wie heiße ich auf Toki Pona?](/de/make-a-name/)
-* [F: Mit sitelen pona sehen Namen lang aus. Wie kann ich sie verkürzen?](/de/simpler-cartouches/)
+* <Link url="make-a-name" />
+* <Link url="simpler-cartouches" />

@@ -72,6 +72,8 @@ practice:
     - "waso mi lili suwi"
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -125,4 +127,4 @@ Toki Pona imaje osoblivo pravilo: kogda **󱤴 mi** ili **󱥞 sina** jest podme
 <Practice exercises={frontmatter.practice} />
 
 ## Čitaj takože
-* [Q: či **li** znači „jest“? [eng]](/en/li-and-is/)
+* <Link url="li-and-is" text="Q: či li znači „jest“?" />

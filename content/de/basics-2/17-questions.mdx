@@ -69,6 +69,8 @@ practice:
     junkChips: ["e"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -161,4 +163,4 @@ Tipp: Wenn du dir mal unsicher bist, wie man **󱥙 seme** benutzen soll, stell 
 <Practice exercises={frontmatter.practice} />
 
 ## Siehe auch
-* [F: Wie sagt man "machen"?](/de/doing/)
+* <Link url="doing" text={"F: Wie sagt man \"machen\"?"} />

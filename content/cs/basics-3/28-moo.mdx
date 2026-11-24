@@ -20,6 +20,8 @@ practice:
     junkChips: ["ona"]
 ---
 
+import Link from "@/components/Link.astro";
+
 import Sentence from "@/components/Sentence.astro";
 import List from "@/components/List.astro";
 import Word from "@/components/Word.astro";
@@ -89,6 +91,6 @@ Asi neznáte slovo **󱦅 lanpan**, ale vidíte překlad a už víte dostatek, a
 <Practice exercises={frontmatter.practice} />
 
 ## Viz také
-* [O: na jaká jiná neobvyklá slova můžu narazit? [eng]](/en/uncommon-words/)
+* <Link url="uncommon-words" text="O: na jaká jiná neobvyklá slova můžu narazit?" />
 * [co dělá Sonja Lang v dnešní době? [eng]](https://tokipona.org/madame_lang)
 * [vtipné video: všechny zvířecí zvuky jsou **󱤹 mu**](https://www.youtube.com/watch?v=zh-kLJI43xw)
