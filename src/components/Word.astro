@@ -1,5 +1,6 @@
 ---
 import { encode } from "@/lib/ucsur";
+import linkuCsv from "@/data/linku.csv?raw";
 interface Props {
   // sitelen pona
   sp?: string;
@@ -7,12 +8,21 @@ interface Props {
   sl: string;
   // translation
   m: string;
+  // append Linku usage percentage
+  linku?: boolean;
   // spoiler shield for practice
   hide?: "sp" | "sl" | "m";
 }
 const onclick = "this.classList.toggle('revealed')";
-const { sp, sl, m, hide } = Astro.props;
+const { sp, sl, m, hide, linku = false } = Astro.props;
 const sp_ = sp || encode(sl);
+const linkuData = Object.fromEntries(
+  linkuCsv.trim().split("\n").slice(1).map((row) => {
+    const [word, percentage] = row.split(",");
+    return [word, Number(percentage)];
+  }),
+);
+const m_ = linku ? `${m} (${linkuData[sl]}%)` : m;
 ---
 
 <style>
@@ -39,6 +49,6 @@ const sp_ = sp || encode(sl);
   <div>
     <span dir="ltr" class="sl" set:html={sl} />
     <br />
-    <span set:html={m} />
+    <span set:html={m_} />
   </div>
 </div>
