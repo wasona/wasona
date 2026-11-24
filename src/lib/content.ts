@@ -33,7 +33,7 @@ const postsByLang = posts.reduce<Record<string, typeof posts>>((acc, post) => {
 export const prevnexts = Object.fromEntries(
   langs.map((lang) => {
     const langPosts = (postsByLang[lang] ?? [])
-      .filter((post) => post.id.split("/").length > 1) // filter away landing pages
+      .filter((post) => !/\/index\.mdx?$/.test(post.filePath!)) // filter away landing pages
       .sort(by((post) => post.filePath));
     return [
       lang,
