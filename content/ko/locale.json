@@ -8,8 +8,8 @@
 
   "Consonants": "자음",
   "Labial": "순음",
-  "Coronal": "치경음",
-  "Dorsal": "연구개음",
+  "Coronal": "설정음",
+  "Dorsal": "설배음",
 
   "Vowels": "모음",
   "Front": "전설",
@@ -17,7 +17,7 @@
   "Back": "후설",
 
   "translate": "문장을 번역하세요",
-  "translate_word": "다음 중 뜻이 맞는 것은?",
+  "translate_word": "다음 뜻에 해당하는 단어는?",
   "check": "확인",
   "continue": "계속",
   "incorrect": "❌ 아쉽습니다. 정답: ",
