@@ -7,6 +7,7 @@ description: "도기 보나로 첫 번째 이야기를 읽어 봅시다!"
 import Tabbed from "@/components/Tabbed.astro";
 import Row from "@/components/Row.astro";
 import { KALAMA } from "@/lib/audio";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 
 명사, 동사, 형용사, 대명사, 전치사, 전동사까지, 지금까지 정말 많은 것을 배우셨습니다! 잠시 속도를 늦춰 보겠습니다. 아시다시피 언어 학습은 흔히 문장을 하나씩 반복해서 연습하는 데 초점을 맞추곤 합니다. 하지만 실력이 느는 것은 단순히 반복 연습만으로 이루어지지 않습니다. 듣고, 읽고, 사람들과 이야기하는 것 역시 중요한 부분입니다.
 
@@ -16,7 +17,7 @@ import { KALAMA } from "@/lib/audio";
 
 녹음된 음성을 들으며 본문을 따라가 보세요.
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/1.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/1.mp3`} />
 
 다 들었다면 본문을 소리 내어 읽어 보세요. 의미를 따라갈 수 있는지 확인해 보세요! 읽기와 듣기 연습을 마쳤다면 번역을 확인할 수 있습니다!
 
@@ -39,7 +40,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## 2부: waso li kalama
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/2.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/2.mp3`} />
 
 <Tabbed id="2">
   <Row sl="waso lili suwi li kama." m="귀여운 작은 참새 한 마리가 왔습니다." />
@@ -55,7 +56,7 @@ import { KALAMA } from "@/lib/audio";
 
 ## 3부: waso li moku pona
 
-<audio controls preload src={`${KALAMA}/kala-asi/story/3.mp3`} />
+<AudioPlayer src={`${KALAMA}/kala-asi/story/3.mp3`} />
 
 <Tabbed id="3">
   <Row sl="ni li ike tawa soweli Mumu." m="이 일은 무무를 슬프게 했습니다." />
