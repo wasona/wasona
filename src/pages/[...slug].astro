@@ -2,8 +2,8 @@
 import "selo-components/common.css"; // has to be above site-specific css
 
 import PageNav from "@/components/PageNav.astro";
-import SessionRestore from "@/components/capacitor/SessionRestore.astro";
 import AndroidNav from "@/components/capacitor/AndroidNav.astro";
+import SessionRestore from "@/components/capacitor/SessionRestore.astro";
 import "@/global.css";
 import { getLang, posts, prevnexts } from "@/lib/content";
 import { render } from "astro:content";
@@ -12,6 +12,7 @@ import { Layout } from "selo-components";
 export const langCodeAlts: Record<string, string[]> = {
   'cs': ['cz'],
   'ja': ['jp'],
+  'ko': ['kr'],
   'uk': ['ua'],
 };
 
