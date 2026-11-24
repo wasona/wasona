@@ -6,7 +6,7 @@ interface Props {
 const { src } = Astro.props;
 ---
 
-<div class="audio-player" data-audio-player data-play-label="Play recording" data-pause-label="Pause recording">
+<div class="audio-player" dir="ltr" data-audio-player data-play-label="Play recording" data-pause-label="Pause recording">
   <audio controls preload="metadata" src={src}></audio>
   <div class="controls" hidden>
     <button class="play" type="button" aria-label="Play recording" data-play>
